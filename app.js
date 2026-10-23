@@ -19,10 +19,8 @@ function showHome() {
     app.innerHTML = '<p style="color:red">Ошибка: файл data.js не загружен.</p>';
     return;
   }
-
   const levels = getLevels();
   let html = '<h1>Выберите уровень</h1><div class="grid">';
-  
   if (!levels.length) {
     html += '<p>В <code>data.js</code> пока нет материалов.</p>';
   } else {
@@ -80,6 +78,13 @@ function showArticle(id) {
   const a = MATERIALS.find(m => m.id === id);
   if (!a) { app.innerHTML = '<p>Материал не найден.</p>'; return; }
   
+  let content = a.content;
+
+  
+  if (a.category === 'practice' && content.includes('[[')) {
+    content = renderInteractive(content);
+  }
+
   app.innerHTML = `
     <div class="crumbs">
       <a href="#" onclick="showHome(); return false;">Главная</a> /
@@ -87,12 +92,54 @@ function showArticle(id) {
       ${a.category === 'theory' ? 'Теория' : 'Практика'}
     </div>
     <h1>${a.title}</h1>
-    <div class="article-content">${a.content}</div>
+    <div class="article-content">${content}</div>
     <div style="margin-top: 30px;">
         <button class="btn" onclick="showLevel('${a.level}')">← Назад в раздел</button>
+        ${a.category === 'practice' ? '<button class="btn" onclick="checkAllInputs()" style="background:#27ae60; margin-left:10px;">Проверить все ответы</button>' : ''}
     </div>
   `;
   window.scrollTo(0, 0);
+}
+
+
+function renderInteractive(html) {
+  let counter = 0;
+  // Ищем [[ответ]] и заменяем на input
+  let processed = html.replace(/\[\[(.*?)\]\]/g, (match, answer) => {
+    counter++;
+    
+    let cleanAnswer = answer.trim().split('|')[0]; 
+    return `<input type="text" class="quiz-input" id="input-${counter}" data-answer="${cleanAnswer}" placeholder="..." autocomplete="off">`;
+  });
+  
+ 
+  return processed + `<div id="score-display" style="display:none; margin-top:20px; padding:15px; background:#e8f4fd; border-radius:8px; font-size:18px; color:#2980b9;"></div>`;
+}
+
+function checkAllInputs() {
+  const inputs = document.querySelectorAll('.quiz-input');
+  let correctCount = 0;
+  
+  inputs.forEach(input => {
+    
+    const userAnswer = input.value.trim().toLowerCase();
+    const correctAnswer = input.dataset.answer.trim().toLowerCase();
+    
+    input.classList.remove('correct', 'incorrect');
+    
+    if (userAnswer === correctAnswer) {
+      input.classList.add('correct');
+      correctCount++;
+    } else if (userAnswer !== "") {
+      input.classList.add('incorrect');
+    }
+  });
+
+  const scoreDisplay = document.getElementById('score-display');
+  if (scoreDisplay) {
+    scoreDisplay.style.display = 'block';
+    scoreDisplay.innerHTML = `Ваш результат: <b>${correctCount} из ${inputs.length}</b>`;
+  }
 }
 
 

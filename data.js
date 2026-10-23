@@ -1,5 +1,5 @@
 const MATERIALS = [
-  // ================== A2: ТЕОРИЯ ==================
+
   { id: 101, level: "A2", category: "theory", topic: "articles", title: "Артикли a/an/the", content: `
 <p>Артикль — слово перед существительным, которого в русском языке нет. Он отвечает на вопрос: предмет «какой-то один из многих» или «тот самый, конкретный»?</p>
 <h3>a / an / the / нулевой</h3>
@@ -122,7 +122,67 @@ const MATERIALS = [
 <div class="warn"><b>Типичная ошибка русскоговорящих:</b> «If it will rain…» — нельзя. В if-части всегда Present Simple.</div>
 ` },
 
-  // ================== A2: ПРАКТИКА ==================
+ 
+  { id: 107, level: "A2", category: "theory", topic: "passive", title: "Пассивный залог (Passive Voice)", content: `
+<h3>1. Формула: be + третья форма глагола (V3)</h3>
+<p>Пассив строится как <b>is / are / was / will be / can be + V3</b>. Подлежащее — то, над чем совершают действие, а исполнителя часто нет вовсе.</p>
+<div class="example"><div class="en">You <b>are given</b> an array of n integers.</div><div class="ru">Вам дан массив из n чисел. (самая частая фраза в условиях задач)</div></div>
+<div class="example"><div class="en">The vertices <b>are numbered</b> from 1 to n.</div><div class="ru">Вершины пронумерованы от 1 до n.</div></div>
+<div class="example"><div class="en">It <b>is guaranteed</b> that the answer exists.</div><div class="ru">Гарантируется, что ответ существует.</div></div>
+<h3>2. Определения через пассив</h3>
+<div class="example"><div class="en">An array <b>is called</b> good if all its elements are even.</div><div class="ru">Массив называется хорошим, если все его элементы чётны.</div></div>
+<div class="example"><div class="en">The length of s <b>is denoted by</b> |s|.</div><div class="ru">Длина s обозначается |s|.</div></div>
+<h3>3. can be + V3 (возможность)</h3>
+<div class="example"><div class="en">String t <b>can be obtained</b> from s by deleting some characters.</div><div class="ru">Строку t можно получить из s удалением символов.</div></div>
+<h3>4. Нужные неправильные глаголы</h3>
+<table>
+<tr><th>Глагол</th><th>V3 (Past Participle)</th><th>Пример</th></tr>
+<tr><td>give</td><td>given</td><td>you are given</td></tr>
+<tr><td>choose</td><td>chosen</td><td>the chosen element</td></tr>
+<tr><td>write</td><td>written</td><td>numbers are written on the board</td></tr>
+<tr><td>take</td><td>taken</td><td>no element can be taken twice</td></tr>
+<tr><td>show</td><td>shown</td><td>it can be shown that</td></tr>
+</table>
+` },
+  { id: 108, level: "A2", category: "theory", topic: "conditionals", title: "Условия: if, unless, otherwise", content: `
+<h3>1. if, only if, if and only if</h3>
+<div class="example"><div class="en">Print YES <b>if</b> the array is sorted.</div><div class="ru">Выведите YES, если массив отсортирован.</div></div>
+<div class="example"><div class="en">A move is allowed <b>only if</b> the target cell is empty.</div><div class="ru">Ход разрешён, только если целевая клетка пуста. (необходимое условие)</div></div>
+<div class="example"><div class="en">A number is good <b>if and only if</b> it is divisible by 3.</div><div class="ru">Число хорошее тогда и только тогда, когда делится на 3. (в обе стороны)</div></div>
+<h3>2. unless — «если не»</h3>
+<div class="example"><div class="en">The robot moves to the right <b>unless</b> the next cell is blocked.</div><div class="ru">Робот идёт вправо, если следующая клетка не занята.</div></div>
+<div class="warn"><i>unless X</i> = <i>if not X</i>. В коде это <code>if (!X)</code>. Перепутать — значит инвертировать всю логику.</div>
+<h3>3. otherwise</h3>
+<div class="example"><div class="en">Print YES if s is a palindrome, and NO <b>otherwise</b>.</div><div class="ru">Выведите YES, если s — палиндром, и NO в противном случае.</div></div>
+<h3>4. Условия времени</h3>
+<table>
+<tr><th>Фраза</th><th>Перевод</th><th>В коде</th></tr>
+<tr><td>provided that X</td><td>при условии, что X</td><td><code>if (X)</code></td></tr>
+<tr><td>as long as X</td><td>пока X</td><td><code>while (X)</code></td></tr>
+<tr><td>as soon as X</td><td>как только X</td><td><code>if (X) break;</code></td></tr>
+<tr><td>until X</td><td>пока не X</td><td><code>while (!X)</code></td></tr>
+</table>
+` },
+  { id: 109, level: "A2", category: "theory", topic: "suchthat", title: "Such that и длинные конструкции", content: `
+<h3>1. such that — «такой, что»</h3>
+<p><i>such that</i> — главный оператор формулировок: он задаёт условие, которому должен удовлетворять объект.</p>
+<div class="example"><div class="en">Find the minimum k <b>such that</b> a<sub>k</sub> ≥ 10.</div><div class="ru">Найдите минимальное k, такое что a<sub>k</sub> ≥ 10.</div></div>
+<div class="example"><div class="en">Count the pairs (i, j) <b>such that</b> i &lt; j and a<sub>i</sub> + a<sub>j</sub> = s.</div><div class="ru">Посчитайте пары (i, j), для которых i &lt; j и a<sub>i</sub> + a<sub>j</sub> = s.</div></div>
+<h3>2. Придаточные: where, which, whose</h3>
+<table>
+<tr><th>Слово</th><th>Перевод</th></tr>
+<tr><td>where</td><td>где (уточнение)</td></tr>
+<tr><td>which / that</td><td>который</td></tr>
+<tr><td>whose</td><td>чей, у которого</td></tr>
+<tr><td>for which</td><td>для которого</td></tr>
+</table>
+<div class="example"><div class="en">Count the subarrays <b>whose</b> sum is even.</div><div class="ru">Посчитайте подмассивы, сумма которых чётна.</div></div>
+<h3>3. Разбор длинной фразы: «голова и хвосты»</h3>
+<p><b>Голова</b> — главное существительное после глагола. <b>Хвосты</b> — уточнения после предлогов of, in, after, with.</p>
+<div class="example"><div class="en">Find <b>the maximum possible number</b> of pairwise distinct elements in the array after performing at most k operations.</div><div class="ru">Голова: количество. Чего? различных элементов. Где? в массиве. Когда? после ≤ k операций.</div></div>
+` },
+
+  
   { id: 201, level: "A2", category: "practice", topic: "articles", title: "Артикли: упражнения (25)", content: `
 <p>Вставь нужный артикль (a / an / the) или прочерк (--).</p>
 <ol>
@@ -488,12 +548,12 @@ const MATERIALS = [
 <p><b>Ответы:</b> 1 rains / will stay; 2 study / will pass; 3 will be / are; 4 hurry / won't miss; 5 doesn't call / will call; 6 will feel / get; 7 win / will celebrate; 8 will help / need; 9 is / will go; 10 Will you be / leave; 11 doesn't finish / will have to; 12 will miss / don't leave; 13 eat / will feel; 14 Will he be / arrive; 15 changes / will be; 16 won't go / costs; 17 need / ask; 18 will be / doesn't work; 19 sees / will tell; 20 won't have / starts; 21 If it rains, I will stay home.; 22 If it rains, I will stay home.; 23 If you don't hurry, you will miss the train.; 24 If you study hard, you will pass the exam.; 25 She will be upset if you don't come to the party.</p>
 ` },
 
-  // ================== B1 / B2 / C1: ЗАГОТОВКИ ==================
+  
   { id: 301, level: "B1", category: "theory", topic: "intro", title: "Раздел B1 — в разработке", content: `<p>Здесь будут материалы уровня B1: Conditionals 2/3, Passive Voice, Reported Speech, Relative Clauses.</p>` },
   { id: 401, level: "B2", category: "theory", topic: "intro", title: "Раздел B2 — в разработке", content: `<p>Здесь будут материалы уровня B2: Inversion, Mixed Conditionals, Advanced Modals, Phrasal Verbs.</p>` },
   { id: 501, level: "C1", category: "theory", topic: "intro", title: "Раздел C1 — в разработке", content: `<p>Здесь будут материалы уровня C1: Cleft Sentences, Subjunctive, Nominalisation, Academic Writing.</p>` },
 
-  // ================== ICPC: ТЕОРИЯ ==================
+  
   { id: 601, level: "ICPC", category: "theory", topic: "anatomy", title: "1.1 Анатомия условия задачи", content: `
 <p>Условие — это 1–2 страницы английского текста, и время на чтение идёт в штраф. Хорошая новость: почти все условия собраны из одних и тех же блоков и шаблонных фраз.</p>
 <h3>1. Из чего состоит условие</h3>
@@ -705,64 +765,7 @@ const MATERIALS = [
 <div class="example"><div class="en">Alice and Bob play a game. They <b>take turns</b>, and Alice <b>moves first</b>.</div><div class="ru">Алиса и Боб играют. Ходят по очереди, Алиса ходит первой.</div></div>
 <div class="example"><div class="en">Determine the <b>winner</b> if both players <b>play optimally</b>.</div><div class="ru">Определите победителя, если оба играют оптимально.</div></div>
 ` },
-  { id: 608, level: "ICPC", category: "theory", topic: "passive", title: "2.1 Пассивный залог", content: `
-<h3>1. Формула: be + третья форма глагола</h3>
-<p>Пассив строится как <b>is / are / was / will be / can be + V3</b>.</p>
-<div class="example"><div class="en">You <b>are given</b> an array of n integers.</div><div class="ru">Вам дан массив из n чисел.</div></div>
-<div class="example"><div class="en">The vertices <b>are numbered</b> from 1 to n.</div><div class="ru">Вершины пронумерованы от 1 до n.</div></div>
-<div class="example"><div class="en">It <b>is guaranteed</b> that the answer exists.</div><div class="ru">Гарантируется, что ответ существует.</div></div>
-<h3>2. Определения через пассив</h3>
-<div class="example"><div class="en">An array <b>is called</b> good if all its elements are even.</div><div class="ru">Массив называется хорошим, если все его элементы чётны.</div></div>
-<div class="example"><div class="en">The length of s <b>is denoted by</b> |s|.</div><div class="ru">Длина s обозначается |s|.</div></div>
-<h3>3. can be + V3</h3>
-<div class="example"><div class="en">String t <b>can be obtained</b> from s by deleting some characters.</div><div class="ru">Строку t можно получить из s удалением символов.</div></div>
-<h3>4. Нужные неправильные глаголы</h3>
-<table>
-<tr><th>Глагол</th><th>V3</th><th>Пример</th></tr>
-<tr><td>give</td><td>given</td><td>you are given</td></tr>
-<tr><td>choose</td><td>chosen</td><td>the chosen element</td></tr>
-<tr><td>write</td><td>written</td><td>numbers are written on the board</td></tr>
-<tr><td>take</td><td>taken</td><td>no element can be taken twice</td></tr>
-<tr><td>show</td><td>shown</td><td>it can be shown that</td></tr>
-</table>
-` },
-  { id: 609, level: "ICPC", category: "theory", topic: "conditionals", title: "2.2 Условия: if, unless, otherwise", content: `
-<h3>1. if, only if, if and only if</h3>
-<div class="example"><div class="en">Print YES <b>if</b> the array is sorted.</div><div class="ru">Выведите YES, если массив отсортирован.</div></div>
-<div class="example"><div class="en">A move is allowed <b>only if</b> the target cell is empty.</div><div class="ru">Ход разрешён, только если целевая клетка пуста.</div></div>
-<div class="example"><div class="en">A number is good <b>if and only if</b> it is divisible by 3.</div><div class="ru">Число хорошее тогда и только тогда, когда делится на 3.</div></div>
-<h3>2. unless — «если не»</h3>
-<div class="example"><div class="en">The robot moves to the right <b>unless</b> the next cell is blocked.</div><div class="ru">Робот идёт вправо, если следующая клетка не занята.</div></div>
-<div class="warn"><i>unless X</i> = <i>if not X</i>. В коде это <code>if (!X)</code>. Перепутать — значит инвертировать всю логику.</div>
-<h3>3. otherwise</h3>
-<div class="example"><div class="en">Print YES if s is a palindrome, and NO <b>otherwise</b>.</div><div class="ru">Выведите YES, если s — палиндром, и NO в противном случае.</div></div>
-<h3>4. Условия времени</h3>
-<table>
-<tr><th>Фраза</th><th>Перевод</th><th>В коде</th></tr>
-<tr><td>provided that X</td><td>при условии, что X</td><td><code>if (X)</code></td></tr>
-<tr><td>as long as X</td><td>пока X</td><td><code>while (X)</code></td></tr>
-<tr><td>as soon as X</td><td>как только X</td><td><code>if (X) break;</code></td></tr>
-<tr><td>until X</td><td>пока не X</td><td><code>while (!X)</code></td></tr>
-</table>
-` },
-  { id: 610, level: "ICPC", category: "theory", topic: "suchthat", title: "2.3 such that и длинные конструкции", content: `
-<h3>1. such that — «такой, что»</h3>
-<div class="example"><div class="en">Find the minimum k <b>such that</b> a<sub>k</sub> ≥ 10.</div><div class="ru">Найдите минимальное k, такое что a<sub>k</sub> ≥ 10.</div></div>
-<div class="example"><div class="en">Count the pairs (i, j) <b>such that</b> i &lt; j and a<sub>i</sub> + a<sub>j</sub> = s.</div><div class="ru">Посчитайте пары (i, j), для которых i &lt; j и a<sub>i</sub> + a<sub>j</sub> = s.</div></div>
-<h3>2. Придаточные: where, which, whose</h3>
-<table>
-<tr><th>Слово</th><th>Перевод</th></tr>
-<tr><td>where</td><td>где (уточнение)</td></tr>
-<tr><td>which / that</td><td>который</td></tr>
-<tr><td>whose</td><td>чей, у которого</td></tr>
-<tr><td>for which</td><td>для которого</td></tr>
-</table>
-<div class="example"><div class="en">Count the subarrays <b>whose</b> sum is even.</div><div class="ru">Посчитайте подмассивы, сумма которых чётна.</div></div>
-<h3>3. Разбор длинной фразы: «голова и хвосты»</h3>
-<p><b>Голова</b> — главное существительное после глагола. <b>Хвосты</b> — уточнения после предлогов of, in, after, with.</p>
-<div class="example"><div class="en">Find <b>the maximum possible number</b> of pairwise distinct elements in the array after performing at most k operations.</div><div class="ru">Голова: количество. Чего? различных элементов. Где? в массиве. Когда? после ≤ k операций.</div></div>
-` },
-  { id: 611, level: "ICPC", category: "theory", topic: "quantifiers", title: "2.4 Кванторы", content: `
+  { id: 608, level: "ICPC", category: "theory", topic: "quantifiers", title: "2.1 Кванторы", content: `
 <h3>1. each, every, all</h3>
 <div class="example"><div class="en"><b>For each</b> i from 1 to n, print a<sub>i</sub> + 1.</div><div class="ru">Для каждого i от 1 до n выведите a<sub>i</sub> + 1.</div></div>
 <div class="example"><div class="en"><b>Every</b> student must be in exactly one team.</div><div class="ru">Каждый студент должен быть ровно в одной команде.</div></div>
@@ -784,7 +787,7 @@ const MATERIALS = [
 </table>
 <div class="warn">«not all» ≠ «none». Первое — «хотя бы один не такой», второе — «ни одного такого».</div>
 ` },
-  { id: 612, level: "ICPC", category: "theory", topic: "modals_icpc", title: "2.5 Модальные глаголы", content: `
+  { id: 609, level: "ICPC", category: "theory", topic: "modals_icpc", title: "2.2 Модальные глаголы в условиях", content: `
 <h3>1. Обязательно: must, have to</h3>
 <div class="example"><div class="en">Each team <b>must</b> consist of exactly three people.</div><div class="ru">Каждая команда обязана состоять ровно из трёх человек.</div></div>
 <div class="example"><div class="en">You <b>have to</b> use all the cards.</div><div class="ru">Вы должны использовать все карты.</div></div>
@@ -798,7 +801,7 @@ const MATERIALS = [
 <div class="example"><div class="en">You <b>do not have to</b> minimize the number of operations.</div><div class="ru">Не обязательно минимизировать число операций.</div></div>
 <div class="warn"><i>must not</i> — «нельзя», <i>do not have to</i> — «можно не делать». Если перепутать, вы будете решать задачу с лишним ограничением или без нужного.</div>
 ` },
-  { id: 613, level: "ICPC", category: "theory", topic: "extremes", title: "2.6 Сравнения и экстремумы", content: `
+  { id: 610, level: "ICPC", category: "theory", topic: "extremes", title: "2.3 Сравнения и экстремумы", content: `
 <h3>1. minimum, maximum</h3>
 <div class="example"><div class="en">Find the <b>minimum possible</b> value of the sum.</div><div class="ru">Найдите минимально возможное значение суммы.</div></div>
 <div class="example"><div class="en">You want to <b>maximize</b> your score.</div><div class="ru">Вы хотите максимизировать свои очки.</div></div>
@@ -809,7 +812,7 @@ const MATERIALS = [
 <div class="example"><div class="en">Split the array into k parts so as to <b>minimize the maximum</b> sum of a part.</div><div class="ru">Разбейте массив на k частей так, чтобы минимизировать максимальную сумму части.</div></div>
 <div class="warn">«minimize the maximum» / «maximize the minimum» — почти всегда бинарный поиск по ответу.</div>
 ` },
-  { id: 614, level: "ICPC", category: "theory", topic: "reading_order", title: "3.1 Порядок чтения условия", content: `
+  { id: 611, level: "ICPC", category: "theory", topic: "reading_order", title: "3.1 Порядок чтения условия", content: `
 <h3>1. Порядок чтения за 6 шагов</h3>
 <ol>
 <li><b>Шапка (5 секунд).</b> TL, ML, stdin или файл.</li>
@@ -832,7 +835,7 @@ const MATERIALS = [
 <li><b>Ловушки</b> — повторы, границы, формат вывода.</li>
 </ul>
 ` },
-  { id: 615, level: "ICPC", category: "theory", topic: "traps", title: "3.2 Ловушки формулировок", content: `
+  { id: 612, level: "ICPC", category: "theory", topic: "traps", title: "3.2 Ловушки формулировок", content: `
 <h3>1. Повторы и пустые объекты</h3>
 <div class="example"><div class="en">The elements are <b>not necessarily distinct</b>.</div><div class="ru">Повторы будут.</div></div>
 <div class="example"><div class="en">You can delete some characters (<b>possibly zero</b>).</div><div class="ru">Можно не удалять ничего.</div></div>
@@ -849,7 +852,7 @@ const MATERIALS = [
 <div class="example"><div class="en">Print the indices <b>in any order</b>.</div><div class="ru">Сортировать не нужно.</div></div>
 <div class="example"><div class="en">Print the answer <b>in increasing order</b> of indices.</div><div class="ru">А здесь сортировать нужно.</div></div>
 ` },
-  { id: 616, level: "ICPC", category: "theory", topic: "legend", title: "3.3 Отсеивание легенды", content: `
+  { id: 613, level: "ICPC", category: "theory", topic: "legend", title: "3.3 Отсеивание легенды", content: `
 <h3>1. Словарь «сюжет → модель»</h3>
 <table>
 <tr><th>В легенде</th><th>Обычно это</th></tr>
@@ -866,7 +869,7 @@ const MATERIALS = [
 <h3>3. Разобранная легенда</h3>
 <div class="example"><div class="en">Vasya has n cats, and the i-th cat weighs w<sub>i</sub>. His basket can hold at most W grams. He wants to take as many cats as possible.</div><div class="ru"><b>Модель:</b> выбрать максимальное количество чисел из w с суммой ≤ W. Решение: сортировка и жадный выбор самых лёгких.</div></div>
 ` },
-  { id: 617, level: "ICPC", category: "theory", topic: "examples", title: "3.4 Работа с примерами и Note", content: `
+  { id: 614, level: "ICPC", category: "theory", topic: "examples", title: "3.4 Работа с примерами и Note", content: `
 <h3>1. Ручной прогон</h3>
 <ol>
 <li>Возьмите первый тест первого примера.</li>
@@ -881,7 +884,7 @@ const MATERIALS = [
 <div class="example"><div class="en"><b>Thus</b>, the answer is 5.</div><div class="ru">Таким образом, ответ равен 5.</div></div>
 ` },
 
-  // ================== ICPC: ПРАКТИКА ==================
+ 
   { id: 651, level: "ICPC", category: "practice", topic: "anatomy_q", title: "Практика: анатомия условия", content: `
 <p><b>Вопрос 1.</b> <code>time limit per test: 2 seconds</code>. Что это значит?</p>
 <ul>

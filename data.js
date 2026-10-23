@@ -1,5 +1,4 @@
 const MATERIALS = [
-
   { id: 101, level: "A2", category: "theory", topic: "articles", title: "Артикли a/an/the", content: `
 <p>Артикль — слово перед существительным, которого в русском языке нет. Он отвечает на вопрос: предмет «какой-то один из многих» или «тот самый, конкретный»?</p>
 <h3>a / an / the / нулевой</h3>
@@ -65,7 +64,21 @@ const MATERIALS = [
 </table>
 <p><b>mustn't ≠ отрицание уверенности.</b> «Я уверен, что это не так» — это <i>can't</i>, а не <i>mustn't</i>.</p>
 ` },
-  { id: 104, level: "A2", category: "theory", topic: "prepositions", title: "Предлоги in / on / at", content: `
+  { id: 104, level: "A2", category: "theory", topic: "modals_icpc", title: "Модальные глаголы в условиях", content: `
+<h3>1. Обязательно: must, have to</h3>
+<div class="example"><div class="en">Each team <b>must</b> consist of exactly three people.</div><div class="ru">Каждая команда обязана состоять ровно из трёх человек.</div></div>
+<div class="example"><div class="en">You <b>have to</b> use all the cards.</div><div class="ru">Вы должны использовать все карты.</div></div>
+<h3>2. Разрешено: can, may, is allowed</h3>
+<div class="example"><div class="en">You <b>can</b> choose any two elements.</div><div class="ru">Можно выбрать любые два элемента.</div></div>
+<div class="example"><div class="en">You <b>are allowed to</b> skip at most one level.</div><div class="ru">Разрешено пропустить не более одного уровня.</div></div>
+<h3>3. Запрещено: cannot, must not</h3>
+<div class="example"><div class="en">You <b>cannot</b> move through walls.</div><div class="ru">Проходить сквозь стены нельзя.</div></div>
+<div class="example"><div class="en">Two adjacent cells <b>must not</b> have the same color.</div><div class="ru">Две соседние клетки не должны быть одного цвета.</div></div>
+<h3>4. Не обязательно: do not have to</h3>
+<div class="example"><div class="en">You <b>do not have to</b> minimize the number of operations.</div><div class="ru">Не обязательно минимизировать число операций.</div></div>
+<div class="warn"><i>must not</i> — «нельзя», <i>do not have to</i> — «можно не делать». Если перепутать, вы будете решать задачу с лишним ограничением или без нужного.</div>
+` },
+  { id: 105, level: "A2", category: "theory", topic: "prepositions", title: "Предлоги in / on / at", content: `
 <p>Логика параллельна: от широкого (in) к точечному (at).</p>
 <h3>Время</h3>
 <table>
@@ -86,7 +99,7 @@ const MATERIALS = [
 <div class="example"><div class="en">The meeting is at 5 o'clock.</div><div class="ru">Точное время — at.</div></div>
 <div class="warn"><b>Разница с русским:</b> «в понедельник» по-русски — «в», а по-английски — <i>on</i>. Это нужно запоминать, логики «один русский предлог = один английский» нет.</div>
 ` },
-  { id: 105, level: "A2", category: "theory", topic: "tenses", title: "Времена: Present Simple / Continuous, Past Simple, Present Perfect", content: `
+  { id: 106, level: "A2", category: "theory", topic: "tenses", title: "Времена: Present Simple / Continuous, Past Simple, Present Perfect", content: `
 <p>В английском почти всегда важно <b>откуда</b> мы смотрим на действие.</p>
 <h3>Сводная таблица</h3>
 <table>
@@ -106,7 +119,7 @@ const MATERIALS = [
 <div class="example"><div class="en">I have visited Paris.</div><div class="ru">Опыт, время не важно — Present Perfect.</div></div>
 <div class="warn"><b>Главное правило:</b> есть конкретное время → Past Simple. Нет времени, важен факт/результат → Present Perfect. Если в условной части будущее — будет ошибкой: <i>If it will rain</i> ✗, нужно <i>If it rains</i> ✔.</div>
 ` },
-  { id: 106, level: "A2", category: "theory", topic: "tenses2", title: "Future will / going to, Past Continuous, First Conditional", content: `
+  { id: 107, level: "A2", category: "theory", topic: "tenses2", title: "Future will / going to, Past Continuous, First Conditional", content: `
 <h3>will vs going to</h3>
 <table>
 <tr><th></th><th>will</th><th>going to</th></tr>
@@ -122,7 +135,6 @@ const MATERIALS = [
 <div class="warn"><b>Типичная ошибка русскоговорящих:</b> «If it will rain…» — нельзя. В if-части всегда Present Simple.</div>
 ` },
 
-  
   { id: 201, level: "A2", category: "practice", topic: "articles", title: "Артикли: упражнения (25)", content: `
 <p>Вставь нужный артикль (a / an / the) или напиши <code>--</code>, если артикль не нужен.</p>
 <ol>
@@ -389,12 +401,10 @@ const MATERIALS = [
 </ol>
 ` },
 
-  
   { id: 301, level: "B1", category: "theory", topic: "intro", title: "Раздел B1 — в разработке", content: `<p>Здесь будут материалы уровня B1: Conditionals 2/3, Passive Voice, Reported Speech, Relative Clauses.</p>` },
   { id: 401, level: "B2", category: "theory", topic: "intro", title: "Раздел B2 — в разработке", content: `<p>Здесь будут материалы уровня B2: Inversion, Mixed Conditionals, Advanced Modals, Phrasal Verbs.</p>` },
   { id: 501, level: "C1", category: "theory", topic: "intro", title: "Раздел C1 — в разработке", content: `<p>Здесь будут материалы уровня C1: Cleft Sentences, Subjunctive, Nominalisation, Academic Writing.</p>` },
 
-  
   { id: 601, level: "ICPC", category: "theory", topic: "anatomy", title: "1.1 Анатомия условия задачи", content: `
 <p>Условие — это 1–2 страницы английского текста, и время на чтение идёт в штраф. Хорошая новость: почти все условия собраны из одних и тех же блоков и шаблонных фраз.</p>
 <h3>1. Из чего состоит условие</h3>
@@ -628,21 +638,7 @@ const MATERIALS = [
 </table>
 <div class="warn">«not all» ≠ «none». Первое — «хотя бы один не такой», второе — «ни одного такого».</div>
 ` },
-  { id: 609, level: "ICPC", category: "theory", topic: "modals_icpc", title: "2.2 Модальные глаголы в условиях", content: `
-<h3>1. Обязательно: must, have to</h3>
-<div class="example"><div class="en">Each team <b>must</b> consist of exactly three people.</div><div class="ru">Каждая команда обязана состоять ровно из трёх человек.</div></div>
-<div class="example"><div class="en">You <b>have to</b> use all the cards.</div><div class="ru">Вы должны использовать все карты.</div></div>
-<h3>2. Разрешено: can, may, is allowed</h3>
-<div class="example"><div class="en">You <b>can</b> choose any two elements.</div><div class="ru">Можно выбрать любые два элемента.</div></div>
-<div class="example"><div class="en">You <b>are allowed to</b> skip at most one level.</div><div class="ru">Разрешено пропустить не более одного уровня.</div></div>
-<h3>3. Запрещено: cannot, must not</h3>
-<div class="example"><div class="en">You <b>cannot</b> move through walls.</div><div class="ru">Проходить сквозь стены нельзя.</div></div>
-<div class="example"><div class="en">Two adjacent cells <b>must not</b> have the same color.</div><div class="ru">Две соседние клетки не должны быть одного цвета.</div></div>
-<h3>4. Не обязательно: do not have to</h3>
-<div class="example"><div class="en">You <b>do not have to</b> minimize the number of operations.</div><div class="ru">Не обязательно минимизировать число операций.</div></div>
-<div class="warn"><i>must not</i> — «нельзя», <i>do not have to</i> — «можно не делать». Если перепутать, вы будете решать задачу с лишним ограничением или без нужного.</div>
-` },
-  { id: 610, level: "ICPC", category: "theory", topic: "extremes", title: "2.3 Сравнения и экстремумы", content: `
+  { id: 609, level: "ICPC", category: "theory", topic: "extremes", title: "2.2 Сравнения и экстремумы", content: `
 <h3>1. minimum, maximum</h3>
 <div class="example"><div class="en">Find the <b>minimum possible</b> value of the sum.</div><div class="ru">Найдите минимально возможное значение суммы.</div></div>
 <div class="example"><div class="en">You want to <b>maximize</b> your score.</div><div class="ru">Вы хотите максимизировать свои очки.</div></div>
@@ -653,7 +649,7 @@ const MATERIALS = [
 <div class="example"><div class="en">Split the array into k parts so as to <b>minimize the maximum</b> sum of a part.</div><div class="ru">Разбейте массив на k частей так, чтобы минимизировать максимальную сумму части.</div></div>
 <div class="warn">«minimize the maximum» / «maximize the minimum» — почти всегда бинарный поиск по ответу.</div>
 ` },
-  { id: 611, level: "ICPC", category: "theory", topic: "reading_order", title: "3.1 Порядок чтения условия", content: `
+  { id: 610, level: "ICPC", category: "theory", topic: "reading_order", title: "3.1 Порядок чтения условия", content: `
 <h3>1. Порядок чтения за 6 шагов</h3>
 <ol>
 <li><b>Шапка (5 секунд).</b> TL, ML, stdin или файл.</li>
@@ -676,7 +672,7 @@ const MATERIALS = [
 <li><b>Ловушки</b> — повторы, границы, формат вывода.</li>
 </ul>
 ` },
-  { id: 612, level: "ICPC", category: "theory", topic: "traps", title: "3.2 Ловушки формулировок", content: `
+  { id: 611, level: "ICPC", category: "theory", topic: "traps", title: "3.2 Ловушки формулировок", content: `
 <h3>1. Повторы и пустые объекты</h3>
 <div class="example"><div class="en">The elements are <b>not necessarily distinct</b>.</div><div class="ru">Повторы будут.</div></div>
 <div class="example"><div class="en">You can delete some characters (<b>possibly zero</b>).</div><div class="ru">Можно не удалять ничего.</div></div>
@@ -693,7 +689,7 @@ const MATERIALS = [
 <div class="example"><div class="en">Print the indices <b>in any order</b>.</div><div class="ru">Сортировать не нужно.</div></div>
 <div class="example"><div class="en">Print the answer <b>in increasing order</b> of indices.</div><div class="ru">А здесь сортировать нужно.</div></div>
 ` },
-  { id: 613, level: "ICPC", category: "theory", topic: "legend", title: "3.3 Отсеивание легенды", content: `
+  { id: 612, level: "ICPC", category: "theory", topic: "legend", title: "3.3 Отсеивание легенды", content: `
 <h3>1. Словарь «сюжет → модель»</h3>
 <table>
 <tr><th>В легенде</th><th>Обычно это</th></tr>
@@ -710,7 +706,7 @@ const MATERIALS = [
 <h3>3. Разобранная легенда</h3>
 <div class="example"><div class="en">Vasya has n cats, and the i-th cat weighs w<sub>i</sub>. His basket can hold at most W grams. He wants to take as many cats as possible.</div><div class="ru"><b>Модель:</b> выбрать максимальное количество чисел из w с суммой ≤ W. Решение: сортировка и жадный выбор самых лёгких.</div></div>
 ` },
-  { id: 614, level: "ICPC", category: "theory", topic: "examples", title: "3.4 Работа с примерами и Note", content: `
+  { id: 613, level: "ICPC", category: "theory", topic: "examples", title: "3.4 Работа с примерами и Note", content: `
 <h3>1. Ручной прогон</h3>
 <ol>
 <li>Возьмите первый тест первого примера.</li>
@@ -725,7 +721,6 @@ const MATERIALS = [
 <div class="example"><div class="en"><b>Thus</b>, the answer is 5.</div><div class="ru">Таким образом, ответ равен 5.</div></div>
 ` },
 
- 
   { id: 651, level: "ICPC", category: "practice", topic: "anatomy_q", title: "Практика: анатомия условия", content: `
 <p><b>Вопрос 1.</b> <code>time limit per test: 2 seconds</code>. Что это значит? (напиши <code>1</code>, <code>2</code> или <code>3</code>)</p>
 <ul>
@@ -774,7 +769,7 @@ const MATERIALS = [
 <p>Ответ: [[2]] (non-decreasing разрешает равных соседей)</p>
 ` },
   { id: 654, level: "ICPC", category: "practice", topic: "graphs_q", title: "Практика: графы", content: `
-<p><b>Вопрос 1.</b> Единственное число от «vertices»? (введи слово)</p>
+<p><b>Вопрос 1.</b> Единственное число от «vertices»? (введи цифру)</p>
 <ul><li>1) vertice</li><li>2) vertex</li><li>3) vertic</li></ul>
 <p>Ответ: [[2]] (vertex → vertices)</p>
 <p><b>Вопрос 2.</b> <code>The graph is undirected. The i-th edge connects u<sub>i</sub> and v<sub>i</sub>.</code> Можно ли пройти из v<sub>i</sub> в u<sub>i</sub>? (напиши <code>yes</code> или <code>no</code>)</p>

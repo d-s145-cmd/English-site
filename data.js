@@ -787,4 +787,81 @@ const MATERIALS = [
 <p><b>Вопрос 3.</b> <code>Print YES if s is a palindrome, and NO otherwise.</code> s = "ab". Что вывести? (введи слово)</p>
 <p>Ответ: [[no]] («ab» не палиндром)</p>
 ` }
+  ,
+  { id: 251, level: "A2", category: "vocabulary", topic: "travel", title: "Путешествия (Travel)", content: `
+<p><b>Тема:</b> Аэропорт, отель, транспорт.</p>
+<table>
+<tr><th>Слово / Фраза</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>boarding pass</b></td><td>посадочный талон</td><td>Please show your boarding pass.</td></tr>
+<tr><td><b>luggage / baggage</b></td><td>багаж</td><td>Where can I collect my luggage?</td></tr>
+<tr><td><b>round-trip ticket</b></td><td>билет туда-обратно</td><td>I bought a round-trip ticket to Paris.</td></tr>
+<tr><td><b>one-way ticket</b></td><td>билет в одну сторону</td><td>He needs a one-way ticket.</td></tr>
+<tr><td><b>to check in</b></td><td>регистрироваться (в отеле/аэропорту)</td><td>We need to check in at 3 pm.</td></tr>
+<tr><td><b>to check out</b></td><td>выписываться из отеля</td><td>Check out is at 12 noon.</td></tr>
+<tr><td><b>delay</b></td><td>задержка</td><td>The flight has a 2-hour delay.</td></tr>
+<tr><td><b>gate</b></td><td>выход на посадку</td><td>Flight 203 departs from gate 5.</td></tr>
+</table>
+` },
+  { id: 252, level: "A2", category: "vocabulary", topic: "food", title: "Еда и рестораны (Food & Restaurants)", content: `
+<p><b>Тема:</b> Заказ еды, меню, оплата.</p>
+<table>
+<tr><th>Слово / Фраза</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>appetizer / starter</b></td><td>закуска</td><td>I'll have a salad as a starter.</td></tr>
+<tr><td><b>main course</b></td><td>основное блюдо</td><td>For the main course, I'd like fish.</td></tr>
+<tr><td><b>dessert</b></td><td>десерт</td><td>Do you want dessert?</td></tr>
+<tr><td><b>bill / check</b></td><td>счёт</td><td>Can we have the bill, please?</td></tr>
+<tr><td><b>tip</b></td><td>чаевые</td><td>We left a 10% tip.</td></tr>
+<tr><td><b>to order</b></td><td>заказывать</td><td>Are you ready to order?</td></tr>
+<tr><td><b>vegetarian</b></td><td>вегетарианское (блюдо)</td><td>Do you have vegetarian options?</td></tr>
+<tr><td><b>spicy / mild</b></td><td>острый / неострый</td><td>Is this dish spicy?</td></tr>
+</table>
+` },
+
+
+  { id: 351, level: "B1", category: "vocabulary", topic: "work", title: "Работа и карьера (Work & Career)", content: `
+<p><b>Тема:</b> Собеседования, офис, обязанности.</p>
+<table>
+<tr><th>Слово / Фраза</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>resume / CV</b></td><td>резюме</td><td>Please send your CV by Friday.</td></tr>
+<tr><td><b>job interview</b></td><td>собеседование</td><td>I have a job interview tomorrow.</td></tr>
+<tr><td><b>salary</b></td><td>зарплата (оклад)</td><td>The salary is negotiable.</td></tr>
+<tr><td><b>deadline</b></td><td>срок сдачи</td><td>We have a tight deadline.</td></tr>
+<tr><td><b>to be in charge of</b></td><td>отвечать за что-то</td><td>She is in charge of the marketing team.</td></tr>
+<tr><td><b>promotion</b></td><td>повышение</td><td>He got a promotion last month.</td></tr>
+<tr><td><b>to resign / to quit</b></td><td>уволиться</td><td>She decided to resign.</td></tr>
+<tr><td><b>overtime</b></td><td>сверхурочные</td><td>I had to work overtime yesterday.</td></tr>
+</table>
+` },
+
+
+  { id: 451, level: "B2", category: "vocabulary", topic: "environment", title: "Окружающая среда (Environment)", content: `
+<p><b>Тема:</b> Экология, климат, проблемы.</p>
+<table>
+<tr><th>Слово / Фраза</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>climate change</b></td><td>изменение климата</td><td>Climate change is a global issue.</td></tr>
+<tr><td><b>global warming</b></td><td>глобальное потепление</td><td>Global warming affects the polar ice caps.</td></tr>
+<tr><td><b>pollution</b></td><td>загрязнение</td><td>Air pollution in cities is increasing.</td></tr>
+<tr><td><b>renewable energy</b></td><td>возобновляемая энергия</td><td>We need to invest in renewable energy.</td></tr>
+<tr><td><b>carbon footprint</b></td><td>углеродный след</td><td>Try to reduce your carbon footprint.</td></tr>
+<tr><td><b>sustainable</b></td><td>устойчивый, экологичный</td><td>Sustainable development is important.</td></tr>
+<tr><td><b>deforestation</b></td><td>вырубка лесов</td><td>Deforestation destroys habitats.</td></tr>
+<tr><td><b>to conserve</b></td><td>сохранять, беречь</td><td>We must conserve water.</td></tr>
+</table>
+` },
+
+
+  { id: 551, level: "C1", category: "vocabulary", topic: "academic", title: "Академический английский (Academic English)", content: `
+<p><b>Тема:</b> Слова для эссе, научных работ, дебатов.</p>
+<table>
+<tr><th>Слово / Фраза</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>to substantiate</b></td><td>обосновывать (доводами)</td><td>You need to substantiate your claim.</td></tr>
+<tr><td><b>to scrutinize</b></td><td>тщательно изучать</td><td>The committee will scrutinize the proposal.</td></tr>
+<tr><td><b>inevitable</b></td><td>неизбежный</td><td>Change is inevitable.</td></tr>
+<tr><td><b>ambiguous</b></td><td>двусмысленный</td><td>The results are somewhat ambiguous.</td></tr>
+<tr><td><b>to imply</b></td><td>подразумевать</td><td>Are you implying that I lied?</td></tr>
+<tr><td><b>to infer</b></td><td>делать вывод</td><td>We can infer from the data that…</td></tr>
+<tr><td><b>comprehensive</b></td><td>всеобъемлющий</td><td>A comprehensive study is needed.</td></tr>
+<tr><td><b>plausible</b></td><td>правдоподобный</td><td>That is a plausible explanation.</td></tr>
+</table>
+` }
 ];

@@ -1,5 +1,5 @@
 const MATERIALS = [
-    
+    // ================== A1: ТЕОРИЯ ==================
   { id: 1, level: "A1", category: "theory", topic: "pronouns", title: "01. Личные местоимения и глагол to be", content: `
 <h3>Личные местоимения</h3>
 <table>
@@ -437,6 +437,773 @@ const MATERIALS = [
 <li>for us — для нас</li>
 <li>to them — им/к ним</li>
 </ul>
+` },
+{ id: 1, level: "A1", category: "theory", topic: "pronouns", title: "01. Личные местоимения и глагол to be", content: `
+<h3>Личные местоимения</h3>
+<table>
+<tr><th>English</th><th>По-русски</th><th>Пример</th></tr>
+<tr><td>I</td><td>я</td><td>I am Anna.</td></tr>
+<tr><td>you</td><td>ты / вы</td><td>You are here.</td></tr>
+<tr><td>he</td><td>он</td><td>He is my brother.</td></tr>
+<tr><td>she</td><td>она</td><td>She is a teacher.</td></tr>
+<tr><td>it</td><td>оно; предмет/животное</td><td>It is a cat.</td></tr>
+<tr><td>we</td><td>мы</td><td>We are friends.</td></tr>
+<tr><td>they</td><td>они</td><td>They are at home.</td></tr>
+</table>
+<h3>Формы to be в настоящем времени</h3>
+<table>
+<tr><th>Утверждение</th><th>Краткая форма</th></tr>
+<tr><td>I am</td><td>I'm</td></tr>
+<tr><td>You are</td><td>You're</td></tr>
+<tr><td>He is / She is / It is</td><td>He's / She's / It's</td></tr>
+<tr><td>We are / They are</td><td>We're / They're</td></tr>
+</table>
+<p><b>Примеры:</b> I'm 20. She's happy. We're from Spain. They are at home.</p>
+<h3>Отрицание</h3>
+<p>Поставьте <b>not</b> после am/is/are:</p>
+<ul>
+<li>I am not tired. = I'm not tired.</li>
+<li>He is not here. = He isn't here.</li>
+<li>They are not late. = They aren't late.</li>
+</ul>
+<h3>Вопрос</h3>
+<p>Поставьте am/is/are перед подлежащим:</p>
+<ul>
+<li>Are you ready? — Yes, I am. / No, I'm not.</li>
+<li>Is she your sister? — Yes, she is.</li>
+<li>Are they at home? — No, they aren't.</li>
+</ul>
+<h3>Краткие ответы</h3>
+<p>В ответе обычно повторяем <b>to be</b>, а не всё предложение: Is he a student? — Yes, he is. Are you tired? — No, I'm not.</p>
+<h3>Полезные модели</h3>
+<ul>
+<li>I'm from Russia.</li>
+<li>I'm a student.</li>
+<li>She's 25 years old.</li>
+<li>It's cold today.</li>
+<li>We're happy.</li>
+<li>They aren't at school.</li>
+</ul>
+` },
+  { id: 2, level: "A1", category: "theory", topic: "articles_nouns", title: "02. Артикли, существительные и указательные слова", content: `
+<h3>A и an</h3>
+<p><b>A/an</b> ставится перед одним исчисляемым существительным в единственном числе, когда говорим о предмете не как о конкретном известном объекте.</p>
+<ul>
+<li>a book, a car, a teacher</li>
+<li>an apple, an egg, an orange</li>
+</ul>
+<p>Выбираем по звуку: <b>an</b> перед гласным звуком, <b>a</b> перед согласным звуком.</p>
+<ul>
+<li>a university (начинается со звука /j/)</li>
+<li>an hour (h не произносится)</li>
+</ul>
+<p><b>Примеры:</b> I'm a doctor. It's an old house.</p>
+<h3>The</h3>
+<p><b>The</b> употребляется, когда понятно, о каком именно предмете говорим:</p>
+<ul>
+<li>I have a cat. The cat is black.</li>
+<li>Close the door, please. (понятно, какая дверь)</li>
+</ul>
+<h3>Множественное число</h3>
+<p>Обычно добавляем <b>-s</b>: book → books, friend → friends</p>
+<p>Добавляем <b>-es</b> после некоторых окончаний: bus → buses, box → boxes, watch → watches</p>
+<p>Если слово заканчивается на согласную + <b>y</b>, часто y меняется на <b>-ies</b>: baby → babies, city → cities</p>
+<p>Неправильные формы: child → children, man → men, woman → women, person → people</p>
+<h3>This, that, these, those</h3>
+<table>
+<tr><th>Слово</th><th>Значение</th><th>Пример</th></tr>
+<tr><td>this</td><td>этот/эта/это, рядом, ед. число</td><td>This is my bag.</td></tr>
+<tr><td>that</td><td>тот/та/то, дальше, ед. число</td><td>That is our house.</td></tr>
+<tr><td>these</td><td>эти, рядом, мн. число</td><td>These are my keys.</td></tr>
+<tr><td>those</td><td>те, дальше, мн. число</td><td>Those are your shoes.</td></tr>
+</table>
+<h3>Притяжательные прилагательные</h3>
+<table>
+<tr><th>Местоимение</th><th>Форма</th><th>Пример</th></tr>
+<tr><td>I</td><td>my</td><td>my phone</td></tr>
+<tr><td>you</td><td>your</td><td>your name</td></tr>
+<tr><td>he</td><td>his</td><td>his car</td></tr>
+<tr><td>she</td><td>her</td><td>her bag</td></tr>
+<tr><td>it</td><td>its</td><td>its name</td></tr>
+<tr><td>we</td><td>our</td><td>our house</td></tr>
+<tr><td>they</td><td>their</td><td>their children</td></tr>
+</table>
+<p>Перед существительным используем <b>my/your/his...</b>: This is my book. Не говорим ❌ <i>This is mine book</i> на этом этапе.</p>
+` },
+  { id: 3, level: "A1", category: "theory", topic: "present_simple", title: "03. Present Simple: привычки и факты", content: `
+<h3>Когда используем</h3>
+<p>Present Simple нужен для привычек, повторяющихся действий, фактов и простых описаний.</p>
+<ul>
+<li>I live in Berlin.</li>
+<li>We work every day.</li>
+<li>The shop opens at nine.</li>
+<li>He likes music.</li>
+</ul>
+<h3>Утверждение</h3>
+<table>
+<tr><th>Подлежащее</th><th>Формула</th><th>Пример</th></tr>
+<tr><td>I / you / we / they</td><td>глагол в обычной форме</td><td>I work. They play tennis.</td></tr>
+<tr><td>he / she / it</td><td>глагол + <b>-s/-es</b></td><td>She works. He watches TV.</td></tr>
+</table>
+<p>Окончание: work → works; go → goes; watch → watches; study → studies</p>
+<h3>Отрицание</h3>
+<p>Используем <b>don't</b> или <b>doesn't</b> + обычная форма глагола:</p>
+<ul>
+<li>I don't drink coffee.</li>
+<li>They don't live here.</li>
+<li>She doesn't work on Sunday.</li>
+<li>He doesn't like fish.</li>
+</ul>
+<p>После <b>doesn't</b> не добавляем -s: ✅ <i>She doesn't like it.</i></p>
+<h3>Вопрос</h3>
+<p><b>Do/Does + подлежащее + глагол?</b></p>
+<ul>
+<li>Do you speak English?</li>
+<li>Do they play football?</li>
+<li>Does he work here?</li>
+<li>Does Anna like tea?</li>
+</ul>
+<p>Краткие ответы: Do you live here? — Yes, I do. / No, I don't. Does she drive? — Yes, she does. / No, she doesn't.</p>
+<h3>Частотные слова</h3>
+<ul>
+<li>always — всегда</li>
+<li>usually — обычно</li>
+<li>often — часто</li>
+<li>sometimes — иногда</li>
+<li>never — никогда</li>
+<li>every day — каждый день</li>
+</ul>
+<p>Частотное наречие обычно стоит перед смысловым глаголом: I <b>often go</b> by bus. С глаголом <b>to be</b> — после него: She <b>is always</b> busy.</p>
+<h3>Вопросительные слова</h3>
+<ul>
+<li>What — что / какой</li>
+<li>Where — где / куда</li>
+<li>When — когда</li>
+<li>Who — кто</li>
+<li>Why — почему</li>
+<li>How — как</li>
+<li>How often — как часто</li>
+</ul>
+<p>Примеры: Where do you live? What does he do? How often do you study?</p>
+` },
+  { id: 4, level: "A1", category: "theory", topic: "questions_numbers", title: "04. Вопросы, числа, время и даты", content: `
+<h3>Порядок слов в вопросах</h3>
+<p><b>С глаголом to be:</b> Am/Is/Are + подлежащее...?</p>
+<ul>
+<li>Are you tired?</li>
+<li>Is he at home?</li>
+<li>Where are they?</li>
+</ul>
+<p><b>С обычным глаголом в Present Simple:</b> Do/Does + подлежащее + глагол...?</p>
+<ul>
+<li>Do you work here?</li>
+<li>Does she speak English?</li>
+<li>Where does he live?</li>
+</ul>
+<h3>Вопросительные слова</h3>
+<table>
+<tr><th>English</th><th>Значение</th><th>Пример</th></tr>
+<tr><td>What</td><td>что / какой</td><td>What's your name?</td></tr>
+<tr><td>Where</td><td>где / куда</td><td>Where do you live?</td></tr>
+<tr><td>When</td><td>когда</td><td>When is your birthday?</td></tr>
+<tr><td>Who</td><td>кто</td><td>Who is that?</td></tr>
+<tr><td>Why</td><td>почему</td><td>Why are you sad?</td></tr>
+<tr><td>How</td><td>как</td><td>How are you?</td></tr>
+<tr><td>How old</td><td>сколько лет</td><td>How old are you?</td></tr>
+<tr><td>How much</td><td>сколько (цена/неисчисляемое)</td><td>How much is it?</td></tr>
+<tr><td>How many</td><td>сколько (исчисляемое)</td><td>How many books?</td></tr>
+</table>
+<h3>Числа</h3>
+<p>Запомните отдельно:</p>
+<ul>
+<li>13 thirteen, 30 thirty</li>
+<li>14 fourteen, 40 forty</li>
+<li>15 fifteen, 50 fifty</li>
+<li>18 eighteen, 80 eighty</li>
+</ul>
+<p>В числах 21–99 обычно ставится дефис: twenty-one, thirty-five.</p>
+<h3>Время</h3>
+<ul>
+<li>7:00 — seven o'clock</li>
+<li>7:15 — seven fifteen / quarter past seven</li>
+<li>7:30 — seven thirty / half past seven</li>
+<li>7:45 — seven forty-five / quarter to eight</li>
+</ul>
+<p>Для начала можно уверенно пользоваться цифровым способом: seven fifteen, seven thirty.</p>
+<h3>Дни недели</h3>
+<p>Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday. Названия дней и месяцев пишутся с большой буквы.</p>
+<h3>Месяцы</h3>
+<p>January, February, March, April, May, June, July, August, September, October, November, December.</p>
+<h3>Представиться</h3>
+<ul>
+<li>What's your name? — My name is Alex.</li>
+<li>Where are you from? — I'm from Poland.</li>
+<li>How old are you? — I'm 22.</li>
+<li>What do you do? — I'm a student.</li>
+<li>What time is it? — It's half past six.</li>
+</ul>
+` },
+  { id: 5, level: "A1", category: "theory", topic: "there_is", title: "05. There is / There are и have got", content: `
+<h3>There is / There are</h3>
+<p>Используем, когда говорим, что где-то что-то есть или находится.</p>
+<table>
+<tr><th>Единственное число</th><th>Множественное число</th></tr>
+<tr><td>There is a chair in the room.</td><td>There are two chairs in the room.</td></tr>
+<tr><td>There's a shop near here.</td><td>There are some shops near here.</td></tr>
+</table>
+<h3>Отрицание</h3>
+<ul>
+<li>There isn't a bathroom upstairs.</li>
+<li>There aren't any apples.</li>
+</ul>
+<h3>Вопрос</h3>
+<ul>
+<li>Is there a bank near here? — Yes, there is. / No, there isn't.</li>
+<li>Are there any chairs? — Yes, there are. / No, there aren't.</li>
+</ul>
+<h3>Have got</h3>
+<p><b>Have got</b> часто используется для владения, семьи и описания внешности.</p>
+<ul>
+<li>I have got a brother. / I've got a brother.</li>
+<li>She has got blue eyes.</li>
+<li>We have got a small flat.</li>
+</ul>
+<table>
+<tr><th>Утверждение</th><th>Отрицание</th><th>Вопрос</th></tr>
+<tr><td>I/you/we/they have got</td><td>haven't got</td><td>Have ... got?</td></tr>
+<tr><td>he/she/it has got</td><td>hasn't got</td><td>Has ... got?</td></tr>
+</table>
+<p><b>Примеры:</b> Have you got a car? — Yes, I have. / No, I haven't. Has he got a sister? — Yes, he has. They haven't got a garden.</p>
+<p>В современном английском также часто говорят <b>have</b> без got: I have a car. Для A1 полезно узнавать обе формы.</p>
+<h3>Описание комнаты</h3>
+<ul>
+<li>There is a bed next to the window.</li>
+<li>There are two pictures on the wall.</li>
+<li>I've got a desk and a chair.</li>
+<li>My room hasn't got a TV.</li>
+</ul>
+` },
+  { id: 6, level: "A1", category: "theory", topic: "can_imperatives", title: "06. Can, просьбы и повелительные фразы", content: `
+<h3>Can / can't</h3>
+<p><b>Can</b> выражает умение или возможность:</p>
+<ul>
+<li>I can swim.</li>
+<li>She can speak English.</li>
+<li>We can't come today.</li>
+</ul>
+<p>После can используется обычная форма глагола без <b>to</b> и без <b>-s</b>: He can drive. (не ❌ <i>can drives</i>)</p>
+<h3>Вопросы и короткие ответы</h3>
+<ul>
+<li>Can you help me? — Yes, I can. / No, I can't.</li>
+<li>Can she cook? — Yes, she can.</li>
+<li>Can I sit here? — Yes, of course.</li>
+</ul>
+<p><b>Can I...?</b> — попросить разрешение. <b>Can you...?</b> — попросить кого-то что-то сделать.</p>
+<h3>Вежливые фразы</h3>
+<ul>
+<li>Can you help me, please? — Вы можете мне помочь?</li>
+<li>Can I have a coffee, please? — Можно мне кофе?</li>
+<li>Could you repeat that, please? — Не могли бы вы повторить? (вежливая фраза, полезная для запоминания)</li>
+<li>Sorry, I don't understand.</li>
+<li>Could you speak more slowly, please?</li>
+<li>Thank you. / You're welcome.</li>
+</ul>
+<h3>Повелительное наклонение</h3>
+<p>Используем глагол в начальной форме:</p>
+<ul>
+<li>Open the book.</li>
+<li>Turn left.</li>
+<li>Please sit down.</li>
+</ul>
+<p>Отрицание: <b>Don't + глагол</b></p>
+<ul>
+<li>Don't run.</li>
+<li>Don't worry.</li>
+<li>Don't open the window.</li>
+</ul>
+<h3>Полезные инструкции</h3>
+<ul>
+<li>Listen and repeat.</li>
+<li>Read the text.</li>
+<li>Write your name.</li>
+<li>Look at the picture.</li>
+<li>Choose the correct answer.</li>
+<li>Match the words.</li>
+</ul>
+` },
+  { id: 7, level: "A1", category: "theory", topic: "present_continuous", title: "07. Present Continuous: что происходит сейчас", content: `
+<h3>Когда используем</h3>
+<p>Для действия, которое происходит сейчас, в момент речи:</p>
+<ul>
+<li>I'm reading now.</li>
+<li>She's cooking.</li>
+<li>They are playing football.</li>
+</ul>
+<h3>Формула</h3>
+<p><b>am / is / are + глагол-ing</b></p>
+<table>
+<tr><th>Подлежащее</th><th>Форма</th></tr>
+<tr><td>I</td><td>am working</td></tr>
+<tr><td>he / she / it</td><td>is working</td></tr>
+<tr><td>you / we / they</td><td>are working</td></tr>
+</table>
+<h3>Отрицание</h3>
+<ul>
+<li>I'm not sleeping.</li>
+<li>He isn't listening.</li>
+<li>We aren't watching TV.</li>
+</ul>
+<h3>Вопрос</h3>
+<p><b>Am/Is/Are + подлежащее + глагол-ing?</b></p>
+<ul>
+<li>Are you studying? — Yes, I am.</li>
+<li>Is she working? — No, she isn't.</li>
+<li>What are they doing? — They're eating.</li>
+</ul>
+<h3>Как добавить -ing</h3>
+<ul>
+<li>work → working</li>
+<li>read → reading</li>
+<li>make → making (убираем конечную немую -e)</li>
+<li>run → running (удваиваем согласную в некоторых коротких словах)</li>
+</ul>
+<h3>Слова-подсказки</h3>
+<p>now, right now, at the moment, today.</p>
+<h3>Present Simple или Present Continuous?</h3>
+<ul>
+<li>I work in a shop. — Это моя работа вообще.</li>
+<li>I'm working now. — Я работаю в данный момент.</li>
+<li>She usually walks to school. — Привычка.</li>
+<li>She's walking to school now. — Действие сейчас.</li>
+</ul>
+` },
+  { id: 8, level: "A1", category: "theory", topic: "past_simple", title: "08. Past Simple: базовый рассказ о прошлом", content: `
+<p>На A1 достаточно начать с частых форм и простых предложений о вчерашнем дне, выходных или прошлой поездке.</p>
+<h3>Глагол to be в прошлом</h3>
+<ul>
+<li>I / he / she / it <b>was</b></li>
+<li>you / we / they <b>were</b></li>
+</ul>
+<p><b>Примеры:</b></p>
+<ul>
+<li>I was at home yesterday.</li>
+<li>They were tired.</li>
+<li>She wasn't at work.</li>
+<li>Were you at school? — Yes, I was.</li>
+</ul>
+<h3>Правильные глаголы</h3>
+<p>Часто добавляем <b>-ed</b>:</p>
+<ul>
+<li>work → worked</li>
+<li>play → played</li>
+<li>watch → watched</li>
+</ul>
+<p>Если глагол заканчивается на согласную + y: study → studied. Некоторые формы меняют написание: live → lived.</p>
+<h3>Частые неправильные глаголы</h3>
+<table>
+<tr><th>Present</th><th>Past</th><th>Значение</th></tr>
+<tr><td>go</td><td>went</td><td>идти/ехать</td></tr>
+<tr><td>have</td><td>had</td><td>иметь</td></tr>
+<tr><td>do</td><td>did</td><td>делать</td></tr>
+<tr><td>get</td><td>got</td><td>получать/добраться</td></tr>
+<tr><td>see</td><td>saw</td><td>видеть</td></tr>
+<tr><td>eat</td><td>ate</td><td>есть</td></tr>
+<tr><td>come</td><td>came</td><td>приходить</td></tr>
+<tr><td>buy</td><td>bought</td><td>покупать</td></tr>
+<tr><td>make</td><td>made</td><td>делать/создавать</td></tr>
+<tr><td>take</td><td>took</td><td>брать</td></tr>
+<tr><td>be</td><td>was/were</td><td>быть</td></tr>
+</table>
+<h3>Утверждение</h3>
+<ul>
+<li>I watched a film yesterday.</li>
+<li>We went to the park.</li>
+<li>She had breakfast at eight.</li>
+</ul>
+<h3>Отрицание</h3>
+<p><b>didn't + обычная форма глагола</b></p>
+<ul>
+<li>I didn't watch TV.</li>
+<li>He didn't go to work.</li>
+</ul>
+<p>После didn't используем начальную форму: didn't go, не ❌ <i>didn't went</i>.</p>
+<h3>Вопрос</h3>
+<p><b>Did + подлежащее + обычная форма?</b></p>
+<ul>
+<li>Did you enjoy the film? — Yes, I did. / No, I didn't.</li>
+<li>Where did they go?</li>
+<li>What did you eat?</li>
+</ul>
+<h3>Слова о прошлом</h3>
+<p>yesterday, last night, last week, last year, two days ago.</p>
+` },
+  { id: 9, level: "A1", category: "theory", topic: "prepositions", title: "09. Предлоги места и времени и повседневные фразы", content: `
+<h3>Предлоги места</h3>
+<table>
+<tr><th>Предлог</th><th>Значение</th><th>Пример</th></tr>
+<tr><td>in</td><td>внутри</td><td>The keys are in the bag.</td></tr>
+<tr><td>on</td><td>на поверхности</td><td>The book is on the table.</td></tr>
+<tr><td>under</td><td>под</td><td>The cat is under the chair.</td></tr>
+<tr><td>next to</td><td>рядом с</td><td>The bank is next to the shop.</td></tr>
+<tr><td>behind</td><td>позади</td><td>The car is behind the house.</td></tr>
+<tr><td>in front of</td><td>перед</td><td>I'm in front of the station.</td></tr>
+<tr><td>between</td><td>между</td><td>The café is between the bank and the hotel.</td></tr>
+<tr><td>opposite</td><td>напротив</td><td>The school is opposite the park.</td></tr>
+</table>
+<h3>Предлоги времени</h3>
+<ul>
+<li><b>at</b> + точное время: at six, at 8:30</li>
+<li><b>on</b> + день/дата: on Monday, on 12 June</li>
+<li><b>in</b> + месяц/год/часть дня: in May, in 2025, in the morning</li>
+<li>at night — ночью</li>
+<li>at the weekend — на выходных (часто в британском английском); on the weekend также используется в американском английском.</li>
+</ul>
+<h3>Местоимения после предлогов</h3>
+<ul>
+<li>with me — со мной</li>
+<li>for you — для тебя/вас</li>
+<li>to him — ему/к нему</li>
+<li>with her — с ней</li>
+<li>for us — для нас</li>
+<li>to them — им/к ним</li>
+</ul>
+` },
+  { id: 11, level: "A1", category: "practice", topic: "p1", title: "01. Местоимения и to be", content: `
+<h3>A. Вставьте am/is/are</h3>
+<ol>
+<li>I [[am]] happy.</li>
+<li>They [[are]] at home.</li>
+<li>She [[is]] my sister.</li>
+<li>We [[are]] not late.</li>
+<li>[[Is]] he a student?</li>
+<li>Where [[are]] you from?</li>
+</ol>
+<h3>B. Сделайте отрицание</h3>
+<ol>
+<li>He is tired. → [[He isn't tired|He is not tired]]</li>
+<li>I'm from Spain. → [[I'm not from Spain|I am not from Spain]]</li>
+<li>They are ready. → [[They aren't ready|They are not ready]]</li>
+</ol>
+<h3>C. Переведите</h3>
+<ol>
+<li>Я студент. → [[I'm a student|I am a student]]</li>
+<li>Она не дома. → [[She isn't at home|She is not at home]]</li>
+<li>Вы готовы? → [[Are you ready?]]</li>
+<li>Мы из Польши. → [[We're from Poland|We are from Poland]]</li>
+</ol>
+` },
+  { id: 12, level: "A1", category: "practice", topic: "p2", title: "02. Артикли, множественное число и притяжательные", content: `
+<h3>A. Вставьте a/an/the</h3>
+<ol>
+<li>She's [[a]] teacher.</li>
+<li>I eat [[an]] apple every day.</li>
+<li>[[The]] sun is bright.</li>
+<li>He has [[a]] dog. [[The]] dog is black.</li>
+<li>It's [[an]] old house.</li>
+</ol>
+<h3>B. Напишите множественное число</h3>
+<ol>
+<li>book → [[books]]</li>
+<li>bus → [[buses]]</li>
+<li>city → [[cities]]</li>
+<li>child → [[children]]</li>
+<li>box → [[boxes]]</li>
+<li>woman → [[women]]</li>
+</ol>
+<h3>C. Выберите вариант</h3>
+<ol>
+<li>This is (my/mine) phone. → [[my]]</li>
+<li>(This/These) are my shoes. → [[These]]</li>
+<li>That is (his/he) car. → [[his]]</li>
+<li>(These/This) is my key. → [[This]]</li>
+</ol>
+<h3>D. Переведите</h3>
+<ol>
+<li>Это моя сумка. → [[This is my bag|This is my handbag]]</li>
+<li>Он учитель. → [[He is a teacher|He's a teacher]]</li>
+<li>Эти дети мои друзья. → [[These children are my friends]]</li>
+</ol>
+` },
+  { id: 13, level: "A1", category: "practice", topic: "p3", title: "03. Present Simple", content: `
+<h3>A. Поставьте глагол в нужную форму</h3>
+<ol>
+<li>She [[works]] (work) in a shop.</li>
+<li>I [[go]] (go) to school by bus.</li>
+<li>Tom [[studies]] (study) English.</li>
+<li>They [[don't like]] (not/like) coffee.</li>
+<li>He [[doesn't play]] (not/play) tennis.</li>
+</ol>
+<h3>B. Составьте вопросы</h3>
+<ol>
+<li>you / speak English → [[Do you speak English?]]</li>
+<li>she / live here → [[Does she live here?]]</li>
+<li>where / they / work → [[Where do they work?]]</li>
+<li>what time / he / get up → [[What time does he get up?]]</li>
+</ol>
+<h3>C. Переведите</h3>
+<ol>
+<li>Я обычно пью чай утром. → [[I usually drink tea in the morning]]</li>
+<li>Она не работает по воскресеньям. → [[She doesn't work on Sundays|She does not work on Sundays]]</li>
+<li>Где ты живёшь? → [[Where do you live?]]</li>
+<li>Мой брат ездит на работу на автобусе. → [[My brother goes to work by bus]]</li>
+</ol>
+` },
+  { id: 14, level: "A1", category: "practice", topic: "p4", title: "04. Вопросы, время, даты и предлоги", content: `
+<h3>A. Составьте вопросы</h3>
+<ol>
+<li>your name / what → [[What is your name?|What's your name?]]</li>
+<li>you / where / live → [[Where do you live?]]</li>
+<li>she / how old → [[How old is she?]]</li>
+<li>the lesson / what time / start → [[What time does the lesson start?]]</li>
+<li>he / speak English → [[Does he speak English?]]</li>
+</ol>
+<h3>B. Вставьте at/on/in</h3>
+<ol>
+<li>[[on]] Monday</li>
+<li>[[at]] 8 o'clock</li>
+<li>[[in]] July</li>
+<li>[[in]] the morning</li>
+<li>[[at]] night</li>
+<li>[[on]] 12 June</li>
+</ol>
+<h3>C. Напишите время словами</h3>
+<ol>
+<li>7:00 → [[seven o'clock]]</li>
+<li>7:15 → [[seven fifteen|quarter past seven]]</li>
+<li>9:30 → [[nine thirty|half past nine]]</li>
+<li>10:45 → [[ten forty-five|quarter to eleven]]</li>
+</ol>
+<h3>D. Переведите</h3>
+<ol>
+<li>Как тебя зовут? → [[What is your name?|What's your name?]]</li>
+<li>Во сколько начинается урок? → [[What time does the lesson start?]]</li>
+<li>Мой день рождения в июне. → [[My birthday is in June]]</li>
+<li>Сколько это стоит? → [[How much is it?]]</li>
+</ol>
+` },
+  { id: 15, level: "A1", category: "practice", topic: "p5", title: "05. There is/are, have got и предлоги места", content: `
+<h3>A. Вставьте there is/there are/is there/are there</h3>
+<ol>
+<li>[[There is]] a shop near my house.</li>
+<li>[[There are]] two bedrooms in the flat.</li>
+<li>[[Is there]] a bank near here?</li>
+<li>[[Are there]] any chairs in the room?</li>
+</ol>
+<h3>B. Вставьте have got/has got</h3>
+<ol>
+<li>I [[have got]] a sister.</li>
+<li>Mark [[has got]] blue eyes.</li>
+<li>[[Have]] you [[got]] a pet?</li>
+<li>She [[hasn't got|has not got]] a car.</li>
+</ol>
+<h3>C. Вставьте предлог</h3>
+<ol>
+<li>The book is [[on]] the table.</li>
+<li>The cat is [[under]] the chair (ниже).</li>
+<li>The bank is [[between]] the café and the hotel.</li>
+<li>The school is [[opposite]] the park (на другой стороне).</li>
+<li>My keys are [[in]] my bag.</li>
+</ol>
+<h3>D. Переведите</h3>
+<ol>
+<li>В квартире две спальни. → [[There are two bedrooms in the flat|There are two bedrooms in the apartment]]</li>
+<li>У тебя есть брат? → [[Have you got a brother?]]</li>
+<li>Кафе рядом с банком. → [[The café is next to the bank|The cafe is next to the bank]]</li>
+<li>Телефон в сумке. → [[The phone is in the bag]]</li>
+</ol>
+` },
+  { id: 16, level: "A1", category: "practice", topic: "p6", title: "06. Can/can't, просьбы и инструкции", content: `
+<h3>A. Вставьте can/can't</h3>
+<ol>
+<li>Birds [[can]] fly.</li>
+<li>I [[can't]] drive; I haven't got a licence.</li>
+<li>[[Can]] you help me, please?</li>
+<li>[[Can]] I sit here?</li>
+</ol>
+<h3>B. Сделайте команды отрицательными</h3>
+<ol>
+<li>Run! → [[Don't run!|Do not run!]]</li>
+<li>Open the window! → [[Don't open the window!]]</li>
+<li>Worry! → [[Don't worry!]]</li>
+<li>Touch that! → [[Don't touch that!]]</li>
+</ol>
+<h3>C. Переведите</h3>
+<ol>
+<li>Я умею плавать, но не умею водить машину. → [[I can swim, but I can't drive|I can swim, but I cannot drive]]</li>
+<li>Откройте книгу, пожалуйста. → [[Open the book, please]]</li>
+<li>Можно мне стакан воды? → [[Can I have a glass of water, please?]]</li>
+<li>Повторите, пожалуйста, медленнее. → [[Could you repeat that more slowly, please?]]</li>
+</ol>
+` },
+  { id: 17, level: "A1", category: "practice", topic: "p7", title: "07. Present Continuous", content: `
+<h3>A. Поставьте глагол в Present Continuous</h3>
+<ol>
+<li>I [[am reading]] (read) now.</li>
+<li>She [[is cooking]] (cook) dinner.</li>
+<li>They [[are playing]] (play) football at the moment.</li>
+<li>We [[aren't watching]] (not/watch) TV now.</li>
+<li>[[Are]] you [[listening]] (listen) to me?</li>
+</ol>
+<h3>B. Выберите Present Simple или Present Continuous</h3>
+<ol>
+<li>He usually (walk / is walking) to work. → [[walks]]</li>
+<li>Look! It (rains / is raining). → [[is raining]]</li>
+<li>I (study / am studying) every Monday. → [[study]]</li>
+<li>They (have / are having) lunch right now. → [[are having]]</li>
+</ol>
+<h3>C. Переведите</h3>
+<ol>
+<li>Я сейчас читаю. → [[I'm reading now|I am reading now]]</li>
+<li>Она работает в магазине (вообще). → [[She works in a shop]]</li>
+<li>Что ты делаешь сейчас? → [[What are you doing now?]]</li>
+<li>Мы не смотрим телевизор в данный момент. → [[We aren't watching TV at the moment|We are not watching TV at the moment]]</li>
+</ol>
+` },
+  { id: 18, level: "A1", category: "practice", topic: "p8", title: "08. Past Simple", content: `
+<h3>A. Вставьте was/were</h3>
+<ol>
+<li>I [[was]] at home yesterday.</li>
+<li>They [[were]] tired.</li>
+<li>[[Was]] she at work?</li>
+<li>Where [[were]] you last night?</li>
+</ol>
+<h3>B. Поставьте глагол в Past Simple</h3>
+<ol>
+<li>We [[visited]] (visit) our friends last week.</li>
+<li>He [[went]] (go) to town yesterday.</li>
+<li>I [[saw]] (see) Anna.</li>
+<li>She [[didn't buy]] (not/buy) bread.</li>
+<li>[[Did]] you [[watch]] (watch) the film?</li>
+<li>Where [[did]] they [[go]] (go)?</li>
+</ol>
+<h3>C. Исправьте ошибки</h3>
+<ol>
+<li>She didn't went home. → [[She didn't go home]]</li>
+<li>Did you saw him? → [[Did you see him?]]</li>
+<li>They was tired. → [[They were tired]]</li>
+</ol>
+<h3>D. Переведите</h3>
+<ol>
+<li>Вчера я был дома. → [[I was at home yesterday]]</li>
+<li>Мы ходили в парк на прошлой неделе. → [[We went to the park last week]]</li>
+<li>Она не купила хлеб. → [[She didn't buy any bread|She didn't buy bread]]</li>
+<li>Ты видел этот фильм? → [[Did you see this film?|Did you see this movie?]]</li>
+</ol>
+` },
+  { id: 19, level: "A1", category: "practice", topic: "p9", title: "09. Повседневная лексика и общение", content: `
+<h3>A. Вставьте слово</h3>
+<p>Слова: kitchen, thirsty, sister, bus, breakfast, bedroom, tired, water.</p>
+<ol>
+<li>I eat [[breakfast]] in the morning.</li>
+<li>I'm [[thirsty]]; I'd like a drink.</li>
+<li>My mother's daughter is my [[sister]].</li>
+<li>I go to work by [[bus]].</li>
+<li>I sleep in my [[bedroom]].</li>
+<li>I'm very [[tired]] after work.</li>
+<li>I cook in the [[kitchen]].</li>
+<li>Can I have some [[water]]?</li>
+</ol>
+<h3>B. Выберите ответ (напишите букву a или b)</h3>
+<ol>
+<li>“How are you?” — a) I'm fine, thanks. b) I'm 25. → [[a]]</li>
+<li>“How much is it?” — a) It's Monday. b) It's five euros. → [[b]]</li>
+<li>“Where are you from?” — a) I'm from Italy. b) I'm at home. → [[a]]</li>
+<li>“Thank you.” — a) You're welcome. b) Excuse me. → [[a]]</li>
+</ol>
+<h3>C. Переведите</h3>
+<ol>
+<li>Извините, где вокзал? → [[Excuse me, where is the station?]]</li>
+<li>Я хотел(а) бы чашку чая, пожалуйста. → [[I'd like a cup of tea, please|I would like a cup of tea, please]]</li>
+<li>Я не понимаю. → [[I don't understand|I do not understand]]</li>
+<li>Я живу в небольшой квартире с сестрой. → [[I live in a small flat with my sister|I live in a small apartment with my sister]]</li>
+</ol>
+` },
+  { id: 20, level: "A1", category: "practice", topic: "p10", title: "10. Смешанная грамматика", content: `
+<h3>A. Поставьте глагол в правильную форму</h3>
+<ol>
+<li>My sister usually [[gets up]] (get up) at seven.</li>
+<li>Look! The children [[are playing]] (play) in the garden.</li>
+<li>We [[went]] (go) to the cinema yesterday.</li>
+<li>He [[doesn't like]] (not/like) fish.</li>
+<li>I [[was]] (be) at home last night.</li>
+<li>[[Do]] you [[speak]] (speak) English?</li>
+<li>She [[isn't watching]] (not/watch) TV now.</li>
+<li>Tom [[bought]] (buy) a phone last week.</li>
+<li>Where [[are]] your parents [[now]] (be) now?</li>
+<li>My dad [[drives]] (drive) to work every morning.</li>
+<li>I [[didn't go]] (not/go) to school yesterday.</li>
+<li>Listen! Someone [[is singing]] (sing).</li>
+<li>[[Was]] she [[at]] (be) at work yesterday?</li>
+<li>We usually [[don't eat]] (not/eat) dinner late.</li>
+<li>They [[have]] (have) breakfast at eight every day.</li>
+</ol>
+<h3>B. Выберите правильный вариант (напишите выбранное слово)</h3>
+<ol>
+<li>He (works/is working) every Saturday. → [[works]]</li>
+<li>I (do/am doing) homework right now. → [[am doing]]</li>
+<li>They (was/were) happy yesterday. → [[were]]</li>
+<li>(Do/Are) you like coffee? → [[Do]]</li>
+<li>Did she (call/called) you? → [[call]]</li>
+<li>There (is/are) three apples. → [[are]]</li>
+<li>My brother (can/cans) swim. → [[can]]</li>
+<li>She doesn't (play/plays) tennis. → [[play]]</li>
+<li>We (have got/has got) a dog. → [[have got]]</li>
+<li>The keys are (in/at) my bag. → [[in]]</li>
+</ol>
+<h3>C. Исправьте ошибки (введите правильное предложение)</h3>
+<ol>
+<li>She go to work every day. → [[She goes to work every day]]</li>
+<li>I am play football now. → [[I am playing football now|I'm playing football now]]</li>
+<li>Did you went home? → [[Did you go home?]]</li>
+<li>He don't like tea. → [[He doesn't like tea]]</li>
+<li>There is two bedrooms. → [[There are two bedrooms]]</li>
+<li>They was at the cinema yesterday. → [[They were at the cinema yesterday]]</li>
+<li>Does he works here? → [[Does he work here?]]</li>
+<li>I didn't saw her. → [[I didn't see her]]</li>
+<li>She can to swim. → [[She can swim]]</li>
+<li>These is my books. → [[These are my books]]</li>
+</ol>
+` },
+  { id: 21, level: "A1", category: "practice", topic: "p11", title: "11. Итоговый тест A1", content: `
+<h3>A. Грамматика</h3>
+<ol>
+<li>I [[am]] from Germany.</li>
+<li>She [[has got]] two brothers.</li>
+<li>He [[doesn't work]] (not/work) on Sundays.</li>
+<li>[[Do]] you speak English?</li>
+<li>Look! It [[is raining]] (rain).</li>
+<li>We [[were]] at home yesterday.</li>
+<li>Did they [[visit]] (visit) you?</li>
+<li>There [[are]] three books on the desk.</li>
+<li>My birthday is [[in]] May.</li>
+<li>The cat is [[under]] the table (ниже стола).</li>
+<li>She can [[swim]] (swim).</li>
+<li>These [[are]] my keys.</li>
+<li>I [[watch]] (watch) TV every evening.</li>
+<li>They [[aren't sleeping]] (not/sleep) now.</li>
+<li>[[Is]] there a shop near here?</li>
+</ol>
+<h3>B. Переведите</h3>
+<ol>
+<li>Я студент. → [[I'm a student|I am a student]]</li>
+<li>Она не любит кофе. → [[She doesn't like coffee|She does not like coffee]]</li>
+<li>Где ты работаешь? → [[Where do you work?]]</li>
+<li>Сейчас мы готовим ужин. → [[We're cooking dinner now|We are cooking dinner now]]</li>
+<li>Вчера они были дома. → [[They were at home yesterday]]</li>
+<li>Ты купил хлеб вчера? → [[Did you buy bread yesterday?]]</li>
+<li>В моей квартире две комнаты. → [[There are two rooms in my flat|There are two rooms in my apartment]]</li>
+<li>Я умею плавать. → [[I can swim]]</li>
+<li>Мой отец обычно ездит на работу на автобусе. → [[My father usually goes to work by bus]]</li>
+<li>Повторите, пожалуйста. → [[Could you repeat that, please?|Could you repeat that please]]</li>
+</ol>
+<h3>C. Исправьте ошибку</h3>
+<ol>
+<li>He don't like apples. → [[He doesn't like apples]]</li>
+<li>She is work now. → [[She is working now]]</li>
+<li>Did you saw him? → [[Did you see him?]]</li>
+<li>There is three books. → [[There are three books]]</li>
+<li>They was tired yesterday. → [[They were tired yesterday]]</li>
+</ol>
 ` },  
   { id: 101, level: "A2", category: "theory", topic: "articles", title: "Артикли a/an/the", content: `
 <p>Артикль — слово перед существительным, которого в русском языке нет. Он отвечает на вопрос: предмет «какой-то один из многих» или «тот самый, конкретный»?</p>
@@ -842,7 +1609,7 @@ const MATERIALS = [
 
   { id: 301, level: "B1", category: "theory", topic: "intro", title: "Раздел B1 — в разработке", content: `<p>Здесь будут материалы уровня B1: Conditionals 2/3, Passive Voice, Reported Speech, Relative Clauses.</p>` },
   { id: 401, level: "B2", category: "theory", topic: "intro", title: "Раздел B2 — в разработке", content: `<p>Здесь будут материалы уровня B2: Inversion, Mixed Conditionals, Advanced Modals, Phrasal Verbs.</p>` },
-  { id: 501, level: "C1", category: "theory", topic: "intro", title: "Раздел C1 — в разработке", content: `<p>Здесь будут материалы уровня C1: Cleft Sentences, Subjunctive, Nominalisation, Academic Writing.</p>` },
+  { id: 501, level: "C1-C2", category: "theory", topic: "intro", title: "Раздел C1 — в разработке", content: `<p>Здесь будут материалы уровня C1-C2: Cleft Sentences, Subjunctive, Nominalisation, Academic Writing.</p>` },
 
   { id: 601, level: "ICPC", category: "theory", topic: "anatomy", title: "1.1 Анатомия условия задачи", content: `
 <p>Условие — это 1–2 страницы английского текста, и время на чтение идёт в штраф. Хорошая новость: почти все условия собраны из одних и тех же блоков и шаблонных фраз.</p>
@@ -1303,4 +2070,8 @@ const MATERIALS = [
 <tr><td><b>plausible</b></td><td>правдоподобный</td><td>That is a plausible explanation.</td></tr>
 </table>
 ` }
+
+
+
+
 ];

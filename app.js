@@ -2,7 +2,6 @@ const app = document.getElementById('app');
 
 const LEVELS = ['A2', 'B1', 'B2', 'C1', 'ICPC'];
 
-
 function getLevels() {
   if (typeof MATERIALS === 'undefined') return [];
   const set = new Set(MATERIALS.map(m => m.level));
@@ -40,10 +39,11 @@ function showHome() {
 function showLevel(level) {
   const theory = articlesOf(level, 'theory');
   const practice = articlesOf(level, 'practice');
+  const vocab = articlesOf(level, 'vocabulary');
 
   let html = `<div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> / ${level}</div>
               <h1>Раздел ${level}</h1>
-              <div class="grid">
+              <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
                 <div class="card" onclick="showLevelTab('${level}','theory')">
                   <h3>📚 Теория</h3>
                   <p>${theory.length} материалов</p>
@@ -51,15 +51,29 @@ function showLevel(level) {
                 <div class="card" onclick="showLevelTab('${level}','practice')">
                   <h3>✍️ Практика</h3>
                   <p>${practice.length} материалов</p>
-                </div>
-              </div>`;
+                </div>`;
+  
+
+  if (level !== 'ICPC') {
+    html += `<div class="card" onclick="showLevelTab('${level}','vocabulary')">
+                  <h3>📖 Лексика</h3>
+                  <p>${vocab.length} материалов</p>
+                </div>`;
+  }
+
+  html += `</div>`;
   app.innerHTML = html;
 }
 
 function showLevelTab(level, tab) {
   const items = articlesOf(level, tab);
-  let html = `<div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> / <a href="#" onclick="showLevel('${level}'); return false;">${level}</a> / ${tab === 'theory' ? 'Теория' : 'Практика'}</div>
-              <h1>${level} — ${tab === 'theory' ? 'Теория' : 'Практика'}</h1>`;
+  let tabName = '';
+  if (tab === 'theory') tabName = 'Теория';
+  else if (tab === 'practice') tabName = 'Практика';
+  else if (tab === 'vocabulary') tabName = 'Лексика';
+
+  let html = `<div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> / <a href="#" onclick="showLevel('${level}'); return false;">${level}</a> / ${tabName}</div>
+              <h1>${level} — ${tabName}</h1>`;
   
   if (!items.length) {
     html += `<div class="locked">Пока нет материалов в этой категории.</div>`;
@@ -73,23 +87,27 @@ function showLevelTab(level, tab) {
   app.innerHTML = html;
 }
 
-
 function showArticle(id) {
   const a = MATERIALS.find(m => m.id === id);
   if (!a) { app.innerHTML = '<p>Материал не найден.</p>'; return; }
   
   let content = a.content;
 
-  
+  // Если это практика и в тексте есть маркеры [[ответ]], запускаем интерактив
   if (a.category === 'practice' && content.includes('[[')) {
     content = renderInteractive(content);
   }
+
+  let catName = '';
+  if (a.category === 'theory') catName = 'Теория';
+  else if (a.category === 'practice') catName = 'Практика';
+  else if (a.category === 'vocabulary') catName = 'Лексика';
 
   app.innerHTML = `
     <div class="crumbs">
       <a href="#" onclick="showHome(); return false;">Главная</a> /
       <a href="#" onclick="showLevel('${a.level}'); return false;">${a.level}</a> /
-      ${a.category === 'theory' ? 'Теория' : 'Практика'}
+      ${catName}
     </div>
     <h1>${a.title}</h1>
     <div class="article-content">${content}</div>
@@ -101,18 +119,13 @@ function showArticle(id) {
   window.scrollTo(0, 0);
 }
 
-
 function renderInteractive(html) {
   let counter = 0;
-  // Ищем [[ответ]] и заменяем на input
   let processed = html.replace(/\[\[(.*?)\]\]/g, (match, answer) => {
     counter++;
-    
     let cleanAnswer = answer.trim().split('|')[0]; 
     return `<input type="text" class="quiz-input" id="input-${counter}" data-answer="${cleanAnswer}" placeholder="..." autocomplete="off">`;
   });
-  
- 
   return processed + `<div id="score-display" style="display:none; margin-top:20px; padding:15px; background:#e8f4fd; border-radius:8px; font-size:18px; color:#2980b9;"></div>`;
 }
 
@@ -121,7 +134,6 @@ function checkAllInputs() {
   let correctCount = 0;
   
   inputs.forEach(input => {
-    
     const userAnswer = input.value.trim().toLowerCase();
     const correctAnswer = input.dataset.answer.trim().toLowerCase();
     
@@ -141,6 +153,5 @@ function checkAllInputs() {
     scoreDisplay.innerHTML = `Ваш результат: <b>${correctCount} из ${inputs.length}</b>`;
   }
 }
-
 
 document.addEventListener("DOMContentLoaded", showHome);

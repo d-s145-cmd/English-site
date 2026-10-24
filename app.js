@@ -2,20 +2,24 @@ const app = document.getElementById('app');
 
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1–C2', 'ICPC'];
 
+
 function getLevels() {
   if (typeof MATERIALS === 'undefined') return [];
   const rawLevels = new Set(MATERIALS.map(m => m.level));
-  if (rawLevels.has('C1') || rawLevels.has('C2')) {
+  
+  
+  if (rawLevels.has('C1') || rawLevels.has('C2') || rawLevels.has('C1–C2')) {
     rawLevels.add('C1–C2');
     rawLevels.delete('C1');
     rawLevels.delete('C2');
   }
+  
   return LEVELS.filter(l => rawLevels.has(l));
 }
 
 function articlesOf(level, category) {
   if (level === 'C1–C2') {
-    return MATERIALS.filter(m => (m.level === 'C1' || m.level === 'C2') && m.category === category);
+    return MATERIALS.filter(m => (m.level === 'C1' || m.level === 'C2' || m.level === 'C1–C2') && m.category === category);
   }
   return MATERIALS.filter(m => m.level === level && m.category === category);
 }
@@ -34,10 +38,11 @@ function showHome() {
     levels.forEach(l => {
       let count = 0;
       if (l === 'C1–C2') {
-        count = MATERIALS.filter(m => m.level === 'C1' || m.level === 'C2').length;
+        count = MATERIALS.filter(m => m.level === 'C1' || m.level === 'C2' || m.level === 'C1–C2').length;
       } else {
         count = MATERIALS.filter(m => m.level === l).length;
       }
+      
       html += `<div class="card" onclick="showLevel('${l}')">
                  <h3>${l}</h3>
                  <div class="muted">${count} материалов</div>
@@ -106,6 +111,7 @@ function showArticle(id) {
   
   let content = a.content;
 
+  // Если это практика и в тексте есть маркеры [[ответ]], запускаем интерактив
   if (a.category === 'practice' && content.includes('[[')) {
     content = renderInteractive(content);
   }
@@ -115,6 +121,7 @@ function showArticle(id) {
   else if (a.category === 'practice') catName = 'Практика';
   else if (a.category === 'vocabulary') catName = 'Лексика';
 
+  
   let backLevel = a.level;
   if (a.level === 'C1' || a.level === 'C2') backLevel = 'C1–C2';
 
@@ -137,14 +144,12 @@ function showArticle(id) {
 
 function renderInteractive(html) {
   let counter = 0;
-  
   let processed = html.replace(/\[\[(.*?)\]\]/g, (match, answer) => {
     counter++;
     
     let parts = answer.split('|').map(s => s.trim());
     let mainAnswer = parts[0];
     let altAnswers = parts.slice(1).join('|');
-    
     
     let widthClass = mainAnswer.length > 15 ? 'quiz-input wide' : 'quiz-input';
     
@@ -158,7 +163,6 @@ function checkAllInputs() {
   let correctCount = 0;
   
   inputs.forEach(input => {
-    
     let userAnswer = input.value.trim().toLowerCase().replace(/\.$/, '');
     
     let validAnswers = [input.dataset.answer.trim().toLowerCase()];

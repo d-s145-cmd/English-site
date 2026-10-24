@@ -3,7 +3,11 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #e0f2fe 0%, #f4f7fb 50%, #e0e7ff 100%);
+  background-color: #e0f2fe;
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Ctext x='30' y='80' font-size='60' opacity='0.15' fill='%232980b9'%3E%F0%9F%95%B0%EF%B8%8F%3C/text%3E%3Ctext x='250' y='150' font-size='50' opacity='0.15' fill='%232980b9'%3E%F0%9F%87%AC%F0%9F%87%A7%3C/text%3E%3Ctext x='100' y='280' font-size='55' opacity='0.15' fill='%232980b9'%3E%E2%98%95%3C/text%3E%3Ctext x='320' y='350' font-size='45' opacity='0.15' fill='%232980b9'%3E%F0%9F%9A%8D%3C/text%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 400px 400px;
   background-attachment: fixed;
   color: #2c3e50;
   line-height: 1.6;
@@ -27,21 +31,7 @@ header {
   justify-content: space-between;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   position: relative;
-  overflow: hidden;
-}
-
-header::after {
-  content: '';
-  position: absolute;
-  right: 20px;
-  bottom: -10px;
-  width: 120px;
-  height: 120px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M12 2L9 5v2h6V5l-3-3zM9 8h6v12H9V8zm-2 0h2v12H7V8zm10 0h-2v12h2V8zM5 20h14v2H5v-2zm2-12h2v10H7V8z'/%3E%3C/svg%3E");
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0.1;
-  pointer-events: none;
+  z-index: 2;
 }
 
 header h1 {
@@ -50,36 +40,31 @@ header h1 {
   display: flex;
   align-items: center;
   gap: 12px;
-  z-index: 1;
 }
 
 header h1::before {
-  content: '';
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ecf0f1'%3E%3Cpath d='M12 2L9 5v2h6V5l-3-3zM9 8h6v12H9V8zm-2 0h2v12H7V8zm10 0h-2v12h2V8zM5 20h14v2H5v-2zm2-12h2v10H7V8z'/%3E%3C/svg%3E");
-  background-size: contain;
-  background-repeat: no-repeat;
+  content: "🇬🇧";
+  font-size: 28px;
 }
 
 header h1 a {
   color: #fff;
   text-decoration: none;
-  z-index: 1;
 }
 
 .wrap {
   max-width: 1000px;
   margin: 30px auto;
   padding: 0 20px;
+  position: relative;
+  z-index: 1;
 }
 
 main {
   background: #fff;
   border-radius: 16px;
   padding: 35px;
-  box-shadow: 0 8px 30px rgba(44, 62, 80, 0.08);
+  box-shadow: 0 8px 30px rgba(44, 62, 80, 0.1);
   min-height: 400px;
   position: relative;
   border-top: 5px solid #2c3e50;
@@ -104,19 +89,21 @@ main {
   overflow: hidden;
 }
 
-.card::before {
-  content: '';
+.card::after {
+  content: "🚍";
   position: absolute;
-  bottom: -10px;
-  right: -10px;
-  width: 80px;
-  height: 80px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232980b9'%3E%3Cpath d='M18 4H6c-1.1 0-2 .9-2 2v10c0 .55.45 1 1 1h2c0 1.1.9 2 2 2s2-.9 2-2h4c0 1.1.9 2 2 2s2-.9 2-2h2c.55 0 1-.45 1-1V6c0-1.1-.9-2-2-2zM6 15H4V6h2v9zm11 0c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm1-9h-4V4h4v2zm-6 0H6V4h6v2zm6 5h-4v-2h4v2z'/%3E%3C/svg%3E");
-  background-size: contain;
-  background-repeat: no-repeat;
+  bottom: 5px;
+  right: 10px;
+  font-size: 40px;
   opacity: 0.15;
   pointer-events: none;
 }
+
+.card:nth-child(2)::after { content: "☕"; left: 10px; right: auto; transform: rotate(-15deg); }
+.card:nth-child(3)::after { content: "🕰️"; top: 10px; right: 10px; bottom: auto; }
+.card:nth-child(4)::after { content: "🇬🇧"; bottom: 10px; left: 10px; right: auto; }
+.card:nth-child(5)::after { content: "🚍"; top: 10px; left: 10px; bottom: auto; right: auto; transform: scaleX(-1); }
+.card:nth-child(6)::after { content: "☕"; bottom: 10px; right: 10px; transform: rotate(15deg); }
 
 .card:hover {
   transform: translateY(-5px);
@@ -312,9 +299,5 @@ pre code { background: transparent; color: inherit; padding: 0; }
     
     .grid {
         grid-template-columns: 1fr;
-    }
-    
-    header::after {
-        display: none;
     }
 }

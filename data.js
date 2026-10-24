@@ -1,5 +1,4 @@
 const MATERIALS = [
-  
   { id: 1, level: "A1", category: "theory", topic: "pronouns", title: "01. Личные местоимения и глагол to be", content: `
 <h3>Личные местоимения</h3>
 <table>
@@ -431,7 +430,6 @@ const MATERIALS = [
 </ul>
 ` },
 
-  
   { id: 11, level: "A1", category: "practice", topic: "p1", title: "01. Местоимения и to be", content: `
 <h3>A. Вставьте am/is/are</h3>
 <ol>
@@ -770,7 +768,6 @@ const MATERIALS = [
 </ol>
 ` },
 
-  
   { id: 31, level: "A1", category: "vocabulary", topic: "greetings", title: "Приветствия и базовые фразы", content: `
 <p>Самые нужные фразы для начала общения.</p>
 <table>
@@ -885,144 +882,783 @@ const MATERIALS = [
 </table>
 ` },
 
-  
-  { id: 101, level: "A2", category: "theory", topic: "articles", title: "Артикли a/an/the", content: `
-<p>Артикль — слово перед существительным, которого в русском языке нет. Он отвечает на вопрос: предмет «какой-то один из многих» или «тот самый, конкретный»?</p>
-<h3>a / an / the / нулевой</h3>
-<table>
-<tr><th>Артикль</th><th>Когда</th><th>Примеры</th></tr>
-<tr><td>a</td><td>неопределённый, перед согласным звуком</td><td>a dog, a university, a European city</td></tr>
-<tr><td>an</td><td>неопределённый, перед гласным звуком</td><td>an apple, an hour, an umbrella</td></tr>
-<tr><td>the</td><td>конкретный предмет, повторное упоминание, уникальные объекты, превосходная степень</td><td>the dog (тот самый), the sun, the best</td></tr>
-<tr><td>∅</td><td>мн. число и неисчисляемые в общем смысле, имена, языки, приёмы пищи</td><td>Cats are cute. I love music. We have breakfast at 8.</td></tr>
-</table>
-<p><b>Важно:</b> a/an зависит от <b>звука</b>, а не от буквы: <i>a university</i> (звук «ю» — согласный), но <i>an hour</i> (h немое).</p>
-<h3>Примеры</h3>
-<div class="example"><div class="en">I saw a dog in the park. The dog was brown.</div><div class="ru">Первое упоминание — a, повторное — the.</div></div>
-<div class="example"><div class="en">The sun rises in the east.</div><div class="ru">Уникальные объекты — the.</div></div>
-<div class="example"><div class="en">I study at a university.</div><div class="ru">Звук «ю» — a, несмотря на букву u.</div></div>
-<h3>Когда the НЕ ставим</h3>
+  { id: 101, level: "A2", category: "theory", topic: "present_tenses", title: "01. Present tenses: расширение A2", content: `
+<h3>1. Краткое повторение A1</h3>
 <ul>
-<li>Страны, города, континенты: Russia, London, Europe.</li>
-<li>Отдельные горы и озёра: Everest, Lake Baikal (но цепи гор: the Alps).</li>
-<li>Приёмы пищи: have breakfast / lunch / dinner.</li>
-<li>Учреждения по функции: go to school / university / hospital / bed.</li>
-<li>Транспорт: by bus / car / train, on foot.</li>
-<li>next / last + время: next week, last year (но <i>the next chapter</i> — порядок).</li>
+<li><b>Present Simple:</b> привычки, факты, регулярные действия. <i>I usually walk to work.</i></li>
+<li><b>Present Continuous:</b> действие происходит сейчас или в текущий период. <i>I'm studying for an exam this week.</i></li>
 </ul>
-<div class="warn"><b>Разница с русским:</b> в русском артиклей нет вовсе. Типичные ошибки: пропуск артикля («I saw dog») или лишний the («I like the music»).</div>
+<h3>2. Как выбрать время</h3>
+<table>
+<tr><th>Ситуация</th><th>Время</th><th>Пример</th></tr>
+<tr><td>Привычка или расписание</td><td>Present Simple</td><td>She works on Mondays.</td></tr>
+<tr><td>Действие прямо сейчас</td><td>Present Continuous</td><td>I'm cooking now.</td></tr>
+<tr><td>Временная ситуация</td><td>Present Continuous</td><td>He's staying with friends this month.</td></tr>
+<tr><td>Изменение или развитие</td><td>Present Continuous</td><td>The days are getting longer.</td></tr>
+<tr><td>Состояние, мнение, чувство</td><td>Обычно Present Simple</td><td>I know the answer.</td></tr>
+</table>
+<h3>3. Глаголы состояния (stative verbs)</h3>
+<p>Обычно не употребляются в Continuous, когда описывают состояние:</p>
+<ul>
+<li>know, understand, believe, remember</li>
+<li>like, love, hate, prefer, need, want</li>
+<li>belong, own, seem</li>
+<li>mean, agree</li>
+</ul>
+<p>Правильно: <i>I understand you.</i> Необычно в обычном значении: <i>I'm understanding you.</i></p>
+<p>Некоторые глаголы меняют значение:</p>
+<ul>
+<li><i>I think you're right.</i> — я считаю.</li>
+<li><i>I'm thinking about the problem.</i> — я обдумываю.</li>
+<li><i>This soup tastes salty.</i> — у супа солёный вкус.</li>
+<li><i>The chef is tasting the soup.</i> — повар пробует суп.</li>
+</ul>
+<h3>4. Частотные слова</h3>
+<ul>
+<li>Present Simple: always, usually, often, sometimes, hardly ever, never.</li>
+<li>Present Continuous: now, right now, at the moment, today, this week.</li>
+</ul>
+<p>Частотное наречие обычно стоит перед смысловым глаголом: <i>I often read.</i> С <b>be</b> оно стоит после глагола: <i>She is usually busy.</i></p>
+<h3>5. Типичные ошибки</h3>
+<ul>
+<li>She works (не She work).</li>
+<li>I'm working (не I working).</li>
+<li>I don't understand (не I'm not understanding, если речь о состоянии).</li>
+<li>What are you doing? — сейчас; What do you do? — работа/занятие вообще.</li>
+</ul>
+<h3>6. Практика</h3>
+<p>Выбери форму:</p>
+<ol>
+<li>I usually ___ (take) the bus, but today I ___ (walk).</li>
+<li>He ___ (not/like) coffee.</li>
+<li>Why ___ you ___ (wear) a coat indoors?</li>
+<li>The price ___ (go) up every year.</li>
+<li>I ___ (think) this film is great.</li>
+</ol>
+<p><b>Ответы:</b> 1. take, am walking; 2. doesn't like; 3. are, wearing; 4. goes; 5. think.</p>
 ` },
-  { id: 102, level: "A2", category: "theory", topic: "comparatives", title: "Степени сравнения", content: `
-<p>Comparative — «больше/меньше чем». Superlative — «самый».</p>
-<h3>Формула</h3>
-<table>
-<tr><th>Тип прилагательного</th><th>Comparative</th><th>Superlative</th></tr>
-<tr><td>Короткие: big, fast, nice</td><td>bigger, faster, nicer</td><td>the biggest, the fastest</td></tr>
-<tr><td>Длинные: expensive, interesting</td><td>more expensive</td><td>the most expensive</td></tr>
-<tr><td>Исключения</td><td>good → better, bad → worse, far → farther/further</td><td>the best, the worst, the farthest</td></tr>
-</table>
-<p>Орфография: big → bigger (удвоение), nice → nicer (-e убираем), happy → happier (y → i).</p>
-<div class="example"><div class="en">This car is faster than that one.</div><div class="ru">Сравнение двух объектов.</div></div>
-<div class="example"><div class="en">She is the tallest girl in the class.</div><div class="ru">Превосходная степень — the + -est.</div></div>
-<div class="warn"><b>Разница с русским:</b> выбор между -er и more — жёсткое правило по числу слогов, а не стиль. Ошибки «more big», «fastest» без the звучат явно неверно.</div>
+  { id: 102, level: "A2", category: "theory", topic: "past_tenses", title: "02. Past tenses: Past Simple и Past Continuous", content: `
+<h3>1. Краткое повторение A1: Past Simple</h3>
+<p>Используем для завершённых действий в прошлом:</p>
+<ul>
+<li>We visited York last year.</li>
+<li>She didn't call me.</li>
+<li>Did they arrive on time?</li>
+</ul>
+<p>После did/didn't используем начальную форму: Did you go?</p>
+<h3>2. Past Continuous</h3>
+<p><b>Форма:</b> was/were + verb-ing</p>
+<ul>
+<li>I/he/she/it was working</li>
+<li>you/we/they were working</li>
+<li>отрицание: wasn't/weren't working</li>
+<li>вопрос: Were you working?</li>
+</ul>
+<p>Используем, когда действие было в процессе в определённый момент прошлого: <i>At 8 p.m. I was having dinner.</i></p>
+<h3>3. Past Simple или Past Continuous?</h3>
+<ul>
+<li>Длительный фон + короткое событие: <i>I was walking home when it started to rain.</i></li>
+<li>Два действия шли одновременно: <i>While I was cooking, my brother was setting the table.</i></li>
+<li>Последовательность завершённых событий: <i>I opened the door, went in and sat down.</i></li>
+</ul>
+<p>Часто:</p>
+<ul>
+<li>when вводит событие, которое произошло;</li>
+<li>while подчёркивает длительность/параллельное действие.</li>
+</ul>
+<p>Это не жёсткое правило: выбирай время по смыслу.</p>
+<h3>4. Важные маркеры</h3>
+<p>Past Simple: yesterday, last week, two days ago, in 2020.<br>Past Continuous: at 7 o'clock, while, when — если подчёркивается процесс.</p>
+<h3>5. Типичные ошибки</h3>
+<ul>
+<li>I was watching TV (не I watching TV).</li>
+<li>They were playing (не They was playing).</li>
+<li>When I arrived, they were eating. — они уже были в процессе.</li>
+<li>Не ставь did вместе с формой прошедшего времени: Did she see?</li>
+</ul>
+<h3>6. Практика</h3>
+<ol>
+<li>I ___ (drive) home when I ___ (see) the accident.</li>
+<li>While we ___ (wait), it ___ (start) to snow.</li>
+<li>At 9 yesterday, they ___ (study).</li>
+<li>She ___ (open) the window and ___ (look) outside.</li>
+</ol>
+<p><b>Ответы:</b> 1. was driving, saw; 2. were waiting, started; 3. were studying; 4. opened, looked.</p>
 ` },
-  { id: 103, level: "A2", category: "theory", topic: "modals", title: "Модальные глаголы: can, must, should", content: `
-<p>Модальные глаголы добавляют к действию отношение: возможность, необходимость, совет.</p>
-<h3>Формула</h3>
-<table>
-<tr><th></th><th>Утверждение</th><th>Отрицание</th><th>Вопрос</th></tr>
-<tr><td>can</td><td>She can swim.</td><td>She can't swim.</td><td>Can she swim?</td></tr>
-<tr><td>could</td><td>He could run fast.</td><td>He couldn't run fast.</td><td>Could he run fast?</td></tr>
-<tr><td>must</td><td>You must go.</td><td>You mustn't smoke here.</td><td>Must I go?</td></tr>
-<tr><td>have to</td><td>She has to work.</td><td>She doesn't have to work.</td><td>Does she have to work?</td></tr>
-<tr><td>should</td><td>You should rest.</td><td>You shouldn't rest.</td><td>Should I rest?</td></tr>
-</table>
-<div class="warn"><b>Главная ловушка:</b> <i>mustn't</i> = запрещено; <i>don't have to</i> = не обязательно. Это почти противоположности.</div>
-<div class="example"><div class="en">You must wear a seatbelt.</div><div class="ru">Личное убеждение/правило.</div></div>
-<div class="example"><div class="en">I have to finish this report by Friday.</div><div class="ru">Внешняя необходимость (начальник).</div></div>
-<div class="example"><div class="en">You should see a doctor.</div><div class="ru">Совет.</div></div>
-<h3>Степень уверенности: must / might / can't / should</h3>
-<table>
-<tr><th>Уверенность</th><th>Глагол</th><th>Пример</th></tr>
-<tr><td>~100% да</td><td>must</td><td>She must be at home — her car is outside.</td></tr>
-<tr><td>высокая</td><td>should</td><td>The package should arrive tomorrow.</td></tr>
-<tr><td>~50%</td><td>might / may / could</td><td>He might be busy right now.</td></tr>
-<tr><td>~100% нет</td><td>can't</td><td>She can't be at home — her car isn't here.</td></tr>
-</table>
-<p><b>mustn't ≠ отрицание уверенности.</b> «Я уверен, что это не так» — это <i>can't</i>, а не <i>mustn't</i>.</p>
+  { id: 103, level: "A2", category: "theory", topic: "present_perfect", title: "03. Present Perfect", content: `
+<p>Форма: have/has + V3. I have visited London. She has lost her keys.</p>
+<h3>Использование</h3>
+<ul>
+<li>Опыт без точного времени: I've been to Spain.</li>
+<li>Результат сейчас: She's lost her phone.</li>
+<li>Недавно: I've just finished.</li>
+<li>Период ещё не закончился: I've had two coffees today.</li>
+</ul>
+<h3>Слова</h3>
+<ul>
+<li>ever — когда-либо: Have you ever tried sushi?</li>
+<li>never — никогда: I've never flown.</li>
+<li>just — только что; already — уже; yet — уже/ещё, обычно в вопросах и отрицаниях.</li>
+</ul>
+<h3>Present Perfect vs Past Simple</h3>
+<p>Have you ever been to Paris? (опыт)<br>When did you go? (конкретное прошлое)</p>
+<p>Не используйте Present Perfect с yesterday/last year/in 2020: ✅ I saw him yesterday.</p>
+<h3>Been/gone</h3>
+<p>She's been to the shop — сходила и вернулась/имеет опыт; she's gone to the shop — ушла и ещё не вернулась.</p>
+<p>Частые V3: been, gone, done, seen, eaten, drunk, written, read, bought, made, had, taken.</p>
 ` },
-  { id: 104, level: "A2", category: "theory", topic: "modals_icpc", title: "Модальные глаголы в условиях", content: `
-<h3>1. Обязательно: must, have to</h3>
-<div class="example"><div class="en">Each team <b>must</b> consist of exactly three people.</div><div class="ru">Каждая команда обязана состоять ровно из трёх человек.</div></div>
-<div class="example"><div class="en">You <b>have to</b> use all the cards.</div><div class="ru">Вы должны использовать все карты.</div></div>
-<h3>2. Разрешено: can, may, is allowed</h3>
-<div class="example"><div class="en">You <b>can</b> choose any two elements.</div><div class="ru">Можно выбрать любые два элемента.</div></div>
-<div class="example"><div class="en">You <b>are allowed to</b> skip at most one level.</div><div class="ru">Разрешено пропустить не более одного уровня.</div></div>
-<h3>3. Запрещено: cannot, must not</h3>
-<div class="example"><div class="en">You <b>cannot</b> move through walls.</div><div class="ru">Проходить сквозь стены нельзя.</div></div>
-<div class="example"><div class="en">Two adjacent cells <b>must not</b> have the same color.</div><div class="ru">Две соседние клетки не должны быть одного цвета.</div></div>
-<h3>4. Не обязательно: do not have to</h3>
-<div class="example"><div class="en">You <b>do not have to</b> minimize the number of operations.</div><div class="ru">Не обязательно минимизировать число операций.</div></div>
-<div class="warn"><i>must not</i> — «нельзя», <i>do not have to</i> — «можно не делать». Если перепутать, вы будете решать задачу с лишним ограничением или без нужного.</div>
+  { id: 104, level: "A2", category: "theory", topic: "future_forms", title: "04. Будущее: going to, will и планы", content: `
+<h3>Going to</h3>
+<p>Планы/намерения и прогноз по видимым признакам: I'm going to study tonight. Look at the clouds! It's going to rain.</p>
+<p>Форма: am/is/are + going to + V1.</p>
+<h3>Will</h3>
+<p>Решение в момент речи, обещание, помощь, мнение: I'll answer the phone. I'll help you. I think you'll like it.</p>
+<p>will + V1, без to и без -s.</p>
+<h3>Present Continuous для договорённостей</h3>
+<p>I'm meeting Jane at six. We're flying on Friday.</p>
+<h3>Present Simple для расписаний</h3>
+<p>The train leaves at 7:15.</p>
+<h3>Сравните</h3>
+<p>I'm going to learn to drive (намерение); I'll get it (решение сейчас); I'm seeing the dentist tomorrow (договорённость).</p>
+<p>Ошибки: ❌ She will goes → ✅ She will go; ❌ I'm going study → ✅ I'm going to study.</p>
 ` },
-  { id: 105, level: "A2", category: "theory", topic: "prepositions", title: "Предлоги in / on / at", content: `
-<p>Логика параллельна: от широкого (in) к точечному (at).</p>
-<h3>Время</h3>
-<table>
-<tr><th>Предлог</th><th>Для чего</th><th>Примеры</th></tr>
-<tr><td>in</td><td>месяцы, годы, века, части дня, сезоны</td><td>in May, in 2010, in the morning, in summer</td></tr>
-<tr><td>on</td><td>дни недели, даты, особые дни</td><td>on Monday, on 5th May, on my birthday</td></tr>
-<tr><td>at</td><td>точное время, night, weekend, Christmas</td><td>at 5 o'clock, at night, at the weekend</td></tr>
-</table>
-<h3>Место</h3>
-<table>
-<tr><th>Предлог</th><th>Для чего</th><th>Примеры</th></tr>
-<tr><td>in</td><td>внутри объёма, город, страна</td><td>in the box, in London, in the room</td></tr>
-<tr><td>on</td><td>на поверхности</td><td>on the table, on the wall, on the second floor</td></tr>
-<tr><td>at</td><td>точка/адрес/событие</td><td>at the bus stop, at school, at 25 Baker Street</td></tr>
-</table>
-<div class="example"><div class="en">I was born in 1995, in May, in the morning.</div><div class="ru">Год, месяц, часть дня — in.</div></div>
-<div class="example"><div class="en">See you on Monday.</div><div class="ru">День недели — on.</div></div>
-<div class="example"><div class="en">The meeting is at 5 o'clock.</div><div class="ru">Точное время — at.</div></div>
-<div class="warn"><b>Разница с русским:</b> «в понедельник» по-русски — «в», а по-английски — <i>on</i>. Это нужно запоминать, логики «один русский предлог = один английский» нет.</div>
+  { id: 105, level: "A2", category: "theory", topic: "questions_negatives", title: "05. Questions and negatives: расширение A2", content: `
+<h3>1. Краткое повторение A1</h3>
+<p>Базовые модели:</p>
+<ul>
+<li>Are you ready?</li>
+<li>Do you live here?</li>
+<li>Did he call?</li>
+<li>She doesn't drive.</li>
+</ul>
+<p>В вопросах с do/does/did смысловой глагол стоит в начальной форме.</p>
+<h3>2. Вопросы с Present Perfect</h3>
+<ul>
+<li>Have you ever been to Italy? — Ты когда-нибудь был в Италии?</li>
+<li>Have you finished yet? — Ты уже закончил?</li>
+<li>I've just arrived. / I haven't finished yet.</li>
+<li>How long have you lived here? — Как долго ты здесь живёшь?</li>
+</ul>
+<p>ever часто используется в вопросах об опыте; never — «никогда»; yet — обычно в вопросах и отрицаниях; already — «уже»; just — «только что».</p>
+<h3>3. Вопросы с предлогом в конце</h3>
+<p>В разговорном английском предлог часто остаётся в конце:</p>
+<ul>
+<li>Who are you talking to?</li>
+<li>What are you looking for?</li>
+<li>Which hotel did you stay at?</li>
+</ul>
+<h3>4. Косвенные вопросы (polite indirect questions)</h3>
+<p>Более вежливые варианты:</p>
+<ul>
+<li>Could you tell me where the station is?</li>
+<li>Do you know what time the shop closes?</li>
+<li>Can you tell me how much it costs?</li>
+</ul>
+<p>После вводной фразы используем порядок слов обычного утверждения: where the station is, не where is the station.</p>
+<h3>5. Вопросы-переспросы и короткие реакции</h3>
+<ul>
+<li>Really? — Правда?</li>
+<li>Sorry, what was that? — Простите, что вы сказали?</li>
+<li>You did? — Правда, ты это сделал?</li>
+<li>Didn't you? / Isn't it? — короткие вопросы-хвостики; изучай частые формы как готовые выражения.</li>
+</ul>
+<h3>6. Практика</h3>
+<ol>
+<li>Have you ___ eaten sushi? (ever/yet)</li>
+<li>Could you tell me where ___? (the bank is / is the bank)</li>
+<li>How long ___ you ___ here? (live)</li>
+<li>What are you looking ___?</li>
+<li>I haven't called her ___. (already/yet)</li>
+</ol>
+<p><b>Ответы:</b> 1. ever; 2. the bank is; 3. have, lived; 4. for; 5. yet.</p>
 ` },
-  { id: 106, level: "A2", category: "theory", topic: "tenses", title: "Времена: Present Simple / Continuous, Past Simple, Present Perfect", content: `
-<p>В английском почти всегда важно <b>откуда</b> мы смотрим на действие.</p>
-<h3>Сводная таблица</h3>
-<table>
-<tr><th>Время</th><th>Формула</th><th>Маркеры</th><th>Суть</th></tr>
-<tr><td>Present Simple</td><td>V(s)</td><td>always, usually, every day</td><td>факт, привычка, расписание</td></tr>
-<tr><td>Present Continuous</td><td>am/is/are + V-ing</td><td>now, at the moment</td><td>процесс сейчас</td></tr>
-<tr><td>Past Simple</td><td>V2</td><td>yesterday, last year, in 2010</td><td>завершённое действие с конкретным временем</td></tr>
-<tr><td>Present Perfect</td><td>have/has + V3</td><td>ever, just, since, for</td><td>опыт, результат сейчас</td></tr>
-<tr><td>Future (will)</td><td>will + V</td><td>tomorrow</td><td>предсказание/спонтанное решение</td></tr>
-<tr><td>Future (going to)</td><td>am/is/are going to + V</td><td>tomorrow</td><td>план/предсказание с доказательством</td></tr>
-<tr><td>Past Continuous</td><td>was/were + V-ing</td><td>at 5 o'clock yesterday, while</td><td>процесс в конкретный момент прошлого</td></tr>
-<tr><td>First Conditional</td><td>If + Present Simple, will + V</td><td>if</td><td>реальное условие в будущем</td></tr>
-</table>
-<div class="example"><div class="en">She works at a hospital.</div><div class="ru">Факт, Present Simple.</div></div>
-<div class="example"><div class="en">She is working right now.</div><div class="ru">Процесс сейчас, Present Continuous.</div></div>
-<div class="example"><div class="en">I visited London last year.</div><div class="ru">Конкретное время — Past Simple.</div></div>
-<div class="example"><div class="en">I have visited Paris.</div><div class="ru">Опыт, время не важно — Present Perfect.</div></div>
-<div class="warn"><b>Главное правило:</b> есть конкретное время → Past Simple. Нет времени, важен факт/результат → Present Perfect. Если в условной части будущее — будет ошибкой: <i>If it will rain</i> ✗, нужно <i>If it rains</i> ✔.</div>
+  { id: 106, level: "A2", category: "theory", topic: "nouns_quantifiers", title: "06. Nouns and quantifiers: количество на уровне A2", content: `
+<h3>2. Исчисляемые и неисчисляемые</h3>
+<p><b>Исчисляемые:</b> a book, two apples, many people<br><b>Неисчисляемые:</b> water, money, information, advice, furniture</p>
+<p>Не говорим an advice или informations. Используй:</p>
+<ul>
+<li>a piece of advice</li>
+<li>some information</li>
+<li>two bottles of water</li>
+</ul>
+<h3>3. Some, any, no</h3>
+<ul>
+<li>some — обычно в утвердительных предложениях: We have some bread.</li>
+<li>any — обычно в вопросах и отрицаниях: Do you have any questions?</li>
+<li>no — без дополнительного отрицания: There is no milk. / There isn't any milk.</li>
+</ul>
+<p>some возможно в предложениях-предложениях/просьбах: Would you like some tea?</p>
+<h3>4. Much, many, a lot of</h3>
+<ul>
+<li>many + исчисляемое множественное: many books</li>
+<li>much + неисчисляемое: much time</li>
+<li>a lot of + оба типа: a lot of people / a lot of work</li>
+</ul>
+<p>В утвердительной разговорной речи часто естественнее a lot of.</p>
+<h3>5. Few, a few, little, a little</h3>
+<ul>
+<li>a few — несколько, достаточно для чего-то: I have a few friends here.</li>
+<li>few — мало, почти недостаточно: Few people understood.</li>
+<li>a little — немного: We have a little time.</li>
+<li>little — мало, почти недостаточно: We have little time left.</li>
+</ul>
+<h3>6. Too much / too many / enough</h3>
+<ul>
+<li>too much + неисчисляемое: too much sugar</li>
+<li>too many + исчисляемое: too many messages</li>
+<li>adjective + enough: warm enough</li>
+<li>enough + noun: enough chairs</li>
+<li>too + adjective: too expensive</li>
+</ul>
+<h3>7. Практика</h3>
+<ol>
+<li>There aren't ___ chairs for everyone.</li>
+<li>We have ___ time, so let's hurry. (little/a little — смысл «почти нет»)</li>
+<li>You put ___ sugar in my tea!</li>
+<li>Do you have ___ information?</li>
+<li>This room isn't big ___.</li>
+</ol>
+<p><b>Ответы:</b> 1. enough; 2. little; 3. too much; 4. any; 5. enough.</p>
 ` },
-  { id: 107, level: "A2", category: "theory", topic: "tenses2", title: "Future will / going to, Past Continuous, First Conditional", content: `
-<h3>will vs going to</h3>
+  { id: 107, level: "A2", category: "theory", topic: "pronouns_possessives", title: "07. Pronouns: дополнительные конструкции A2", content: `
+<h3>1. Краткое повторение A1</h3>
+<p>Личные и притяжательные формы: I/me/my/mine, you/you/your/yours, he/him/his, she/her/hers, we/us/our/ours, they/them/their/theirs.</p>
+<h3>2. Возвратные местоимения (reflexive pronouns)</h3>
+<p>myself, yourself, himself, herself, itself, ourselves, yourselves, themselves</p>
+<ul>
+<li>I cut myself. — Я порезался.</li>
+<li>She taught herself English. — Она самостоятельно выучила английский.</li>
+<li>We enjoyed ourselves. — Мы хорошо провели время.</li>
+</ul>
+<p>Для «самостоятельно / сам» можно использовать by myself: I went there by myself.</p>
+<h3>3. One / ones</h3>
+<p>Используем, чтобы не повторять существительное:</p>
+<ul>
+<li>I like the blue one. (= the blue shirt)</li>
+<li>Which shoes do you want? The black ones.</li>
+<li>This one is cheaper than that one.</li>
+</ul>
+<h3>4. Both, either, neither</h3>
+<ul>
+<li>Both options are good. — оба варианта.</li>
+<li>You can take either bus. — любой из двух.</li>
+<li>Neither answer is correct. — ни один из двух.</li>
+</ul>
+<p>На уровне A2 достаточно уверенно понимать и использовать эти выражения в коротких фразах.</p>
+<h3>5. Something, anything, nothing, someone</h3>
+<ul>
+<li>something / someone — обычно в утверждениях;</li>
+<li>anything / anyone — часто в вопросах и отрицаниях;</li>
+<li>nothing / nobody уже содержит отрицательное значение: I saw nothing (не I didn't see nothing в стандартном английском).</li>
+</ul>
+<p>Примеры: Would you like something to eat? / I don't know anyone here.</p>
+<h3>6. Практика</h3>
+<ol>
+<li>I made this cake by ___.</li>
+<li>Which bag is yours? The red ___.</li>
+<li>___ of my parents speak English. (оба)</li>
+<li>I didn't see ___ at the bus stop.</li>
+<li>You can choose ___ of these two desserts.</li>
+</ol>
+<p><b>Ответы:</b> 1. myself; 2. one; 3. Both; 4. anyone; 5. either.</p>
+` },
+  { id: 108, level: "A2", category: "theory", topic: "modals_requests_advice", title: "08. Модальные глаголы, просьбы и советы", content: `
+<ul>
+<li>can: умение/возможность: I can swim.</li>
+<li>could: вежливая просьба или умение в прошлом: Could you help me? I could swim when I was five.</li>
+<li>must: сильная необходимость: You must wear a seat belt.</li>
+<li>mustn't: запрещено: You mustn't smoke here.</li>
+<li>have to: необходимость: I have to get up early.</li>
+<li>don't have to: нет необходимости: You don't have to come early.</li>
+</ul>
+<p><b>Важно:</b> mustn't = нельзя; don't have to = не обязательно.</p>
+<ul>
+<li>should/shouldn't: совет: You should see a doctor. You shouldn't worry.</li>
+<li>may/might (часто A2+): May I come in? It might rain later.</li>
+</ul>
+<p>Предложения: Let's go for a walk. Why don't we try this café? How about going by bus?</p>
+<p>После модальных глаголов — V1 без to: She should rest, не *should to rest*.</p>
+` },
+  { id: 109, level: "A2", category: "theory", topic: "comparatives_superlatives", title: "09. Сравнительная и превосходная степени", content: `
+<p>Сравнительные конструкции помогают сравнивать людей, предметы, места, события и действия. В английском важно выбрать правильную форму прилагательного и не забыть слова than или the, если они нужны.</p>
+<h3>1. Comparative — сравнительная степень</h3>
+<p>Используем, когда сравниваем <b>два</b> предмета или человека. Часто переводится как «-ее», «более…».</p>
+<h4>Короткие прилагательные: adjective + -er</h4>
+<p>Обычно это односложные прилагательные:</p>
+<ul>
+<li>small → smaller — маленький → меньше;</li>
+<li>cheap → cheaper — дешёвый → дешевле;</li>
+<li>fast → faster — быстрый → быстрее;</li>
+<li>young → younger — молодой → моложе.</li>
+</ul>
+<p>Пример: My room is smaller than yours. — Моя комната меньше твоей.</p>
+<h4>Орфографические правила</h4>
+<ol>
+<li>Большинство коротких прилагательных: добавляем -er: tall → taller.</li>
+<li>Если слово заканчивается на -e, добавляем только -r: nice → nicer.</li>
+<li>Если короткое слово заканчивается на согласную + y, меняем y на i: happy → happier, easy → easier.</li>
+<li>В некоторых коротких словах с ударением на последнем согласном удваиваем согласную: big → bigger, hot → hotter, thin → thinner.</li>
+</ol>
+<h4>Длинные прилагательные: more + adjective</h4>
+<p>Чаще всего используем more с длинными прилагательными:</p>
+<ul>
+<li>more expensive — дороже;</li>
+<li>more interesting — интереснее;</li>
+<li>more comfortable — удобнее;</li>
+<li>more difficult — труднее.</li>
+</ul>
+<p>Пример: This exercise is more difficult than the last one.</p>
+<p>Не используй одновременно more и окончание -er: не more cheaper, а cheaper.</p>
+<h4>Исключения</h4>
 <table>
-<tr><th></th><th>will</th><th>going to</th></tr>
-<tr><td>Предсказание</td><td>без доказательств: I think it will rain.</td><td>с доказательством: Look at the clouds! It's going to rain.</td></tr>
-<tr><td>Решение</td><td>спонтанно: The phone is ringing. — I'll get it!</td><td>заранее: She's going to travel to Spain next month.</td></tr>
+<tr><th>Обычная форма</th><th>Сравнительная</th><th>Пример</th></tr>
+<tr><td>good</td><td>better</td><td>This book is better than that one.</td></tr>
+<tr><td>bad</td><td>worse</td><td>The weather is worse today.</td></tr>
+<tr><td>far</td><td>farther/further</td><td>The station is farther away.</td></tr>
+<tr><td>little (количество)</td><td>less</td><td>I have less time today.</td></tr>
+<tr><td>much/many</td><td>more</td><td>We need more chairs.</td></tr>
 </table>
-<h3>Past Continuous</h3>
-<p>was/were + V-ing. Процесс в конкретный момент прошлого или фон для короткого события.</p>
-<div class="example"><div class="en">I was reading when the phone rang.</div><div class="ru">Длинный фон + короткое событие.</div></div>
-<h3>First Conditional</h3>
-<p><b>If + Present Simple, will + V.</b> В if-части будущее <b>запрещено</b>.</p>
-<div class="example"><div class="en">If it rains tomorrow, I will stay home.</div><div class="ru">Реальное условие в будущем.</div></div>
-<div class="warn"><b>Типичная ошибка русскоговорящих:</b> «If it will rain…» — нельзя. В if-части всегда Present Simple.</div>
+<p>Farther чаще относится к физическому расстоянию; further также часто означает «дальнейший/дополнительный». В повседневной речи значения могут пересекаться.</p>
+<h4>Сравнение с than</h4>
+<p>После сравнительной степени часто ставим than — «чем»:</p>
+<ul>
+<li>A train is faster than a bus.</li>
+<li>This café is more popular than that one.</li>
+<li>Today is better than yesterday.</li>
+</ul>
+<p>Если вторая часть понятна, существительное можно заменить местоимением: My bag is heavier than yours. (= your bag)</p>
+<h3>2. Superlative — превосходная степень</h3>
+<p>Используем, когда выделяем одного человека или предмет из <b>группы из трёх или более</b>. Часто переводится как «самый…».</p>
+<h4>Короткие прилагательные: the + adjective-est</h4>
+<ul>
+<li>small → the smallest;</li>
+<li>fast → the fastest;</li>
+<li>big → the biggest;</li>
+<li>happy → the happiest.</li>
+</ul>
+<p>Орфографические изменения такие же, как в сравнительной степени: nice → the nicest, hot → the hottest.</p>
+<h4>Длинные прилагательные: the most + adjective</h4>
+<ul>
+<li>the most interesting;</li>
+<li>the most expensive;</li>
+<li>the most comfortable.</li>
+</ul>
+<p>Пример: It's the most interesting museum in the city.</p>
+<h4>Исключения</h4>
+<ul>
+<li>good → the best;</li>
+<li>bad → the worst;</li>
+<li>far → the farthest/furthest;</li>
+<li>little → the least;</li>
+<li>much/many → the most.</li>
+</ul>
+<h4>Артикль the</h4>
+<p>Перед превосходной степенью обычно используем the:</p>
+<ul>
+<li>She is the tallest student in our class.</li>
+<li>This is the best restaurant here.</li>
+</ul>
+<p>С притяжательным словом the не нужен: my best friend, а не the my best friend.</p>
+<h4>in и of</h4>
+<ul>
+<li>in часто указывает на место или группу: the oldest building in the town;</li>
+<li>of часто вводит конкретную группу/набор: the cheapest of the three.</li>
+</ul>
+<h3>3. Конструкция as ... as</h3>
+<p>Используем для равенства или похожей степени:</p>
+<ul>
+<li>My bag is as heavy as yours. — Моя сумка такая же тяжёлая, как твоя.</li>
+<li>This film is as interesting as the book.</li>
+</ul>
+<p>Отрицательная форма not as ... as означает «не такой… как»:</p>
+<ul>
+<li>This exercise isn't as difficult as the last one.</li>
+<li>The blue car isn't as expensive as the black car.</li>
+</ul>
+<p>Между as ставим обычную форму прилагательного, не сравнительную: as tall as, не as taller as.</p>
+<h3>4. Too и enough</h3>
+<p>Эти слова помогают описать чрезмерную степень или достаточность.</p>
+<h4>too + adjective</h4>
+<p>Too означает «слишком», часто подразумевает проблему:</p>
+<ul>
+<li>It's too cold to swim. — Слишком холодно, чтобы плавать.</li>
+<li>This box is too heavy for me. — Эта коробка слишком тяжёлая для меня.</li>
+</ul>
+<h4>adjective + enough</h4>
+<p>Enough после прилагательного означает «достаточно»:</p>
+<ul>
+<li>The room is warm enough.</li>
+<li>Are you old enough to drive?</li>
+<li>I'm not tall enough to reach the shelf.</li>
+</ul>
+<h4>enough + noun</h4>
+<p>Перед существительным ставим enough:</p>
+<ul>
+<li>We have enough time.</li>
+<li>There aren't enough chairs.</li>
+<li>Do you have enough money?</li>
+</ul>
+<p>Не путай порядок: good enough, но enough food.</p>
+<h3>5. Усиление и смягчение сравнения</h3>
+<p>На A2 полезно использовать:</p>
+<ul>
+<li>much/far + comparative: much cheaper, far better — намного дешевле/лучше;</li>
+<li>a little/a bit + comparative: a little colder, a bit more expensive — немного холоднее/дороже.</li>
+</ul>
+<p>Примеры:</p>
+<ul>
+<li>The train is much faster than the bus.</li>
+<li>This phone is a bit more expensive.</li>
+</ul>
+<h3>6. Типичные ошибки</h3>
+<ul>
+<li>❌ more easier → ✅ easier</li>
+<li>❌ the most fastest → ✅ the fastest</li>
+<li>❌ as taller as → ✅ as tall as</li>
+<li>❌ She is tallest in the class → обычно ✅ She is the tallest in the class</li>
+<li>❌ enough big → ✅ big enough</li>
+<li>❌ enough chairs not → ✅ not enough chairs</li>
+</ul>
+` },
+  { id: 110, level: "A2", category: "theory", topic: "infinitive_gerund", title: "10. Инфинитив с to и форма -ing", content: `
+<p>После английских глаголов могут идти разные формы следующего глагола: to + verb, форма с -ing или начальная форма без to. Часто выбор зависит от первого глагола, поэтому полезно учить выражения целиком.</p>
+<h3>1. Инфинитив с to</h3>
+<p>Форма: <b>to + начальная форма глагола</b> — to go, to study, to be.</p>
+<h4>Частые модели verb + to + verb</h4>
+<ul>
+<li>want to do — хотеть сделать;</li>
+<li>need to do — нужно сделать;</li>
+<li>would like to do — хотел(а) бы сделать;</li>
+<li>hope to do — надеяться сделать;</li>
+<li>plan to do — планировать сделать;</li>
+<li>decide to do — решить сделать;</li>
+<li>learn to do — учиться делать;</li>
+<li>promise to do — обещать сделать;</li>
+<li>forget to do — забыть сделать;</li>
+<li>try to do — пытаться сделать.</li>
+</ul>
+<p>Примеры:</p>
+<ul>
+<li>I want to learn English.</li>
+<li>We decided to stay at home.</li>
+<li>She hopes to find a new job.</li>
+</ul>
+<h4>Инфинитив после прилагательного</h4>
+<p>Часто используем adjective + to + verb:</p>
+<ul>
+<li>It's easy to use.</li>
+<li>I'm happy to help.</li>
+<li>It's difficult to understand this rule.</li>
+<li>This bag is too heavy to carry.</li>
+</ul>
+<h4>Инфинитив цели: «чтобы»</h4>
+<p>Инфинитив может объяснять, зачем человек что-то делает:</p>
+<ul>
+<li>I went to the shop to buy some milk. — Я пошёл в магазин, чтобы купить молока.</li>
+<li>She called me to ask a question. — Она позвонила, чтобы задать вопрос.</li>
+</ul>
+<h3>2. Глагол + -ing</h3>
+<p>Форма verb + -ing может работать как существительное или как форма после определённых глаголов.</p>
+<h4>Частые модели verb + -ing</h4>
+<ul>
+<li>enjoy doing — получать удовольствие от;</li>
+<li>finish doing — закончить;</li>
+<li>don't mind doing — не возражать;</li>
+<li>avoid doing — избегать;</li>
+<li>keep doing — продолжать;</li>
+<li>suggest doing — предлагать;</li>
+<li>practise doing — практиковать;</li>
+<li>like/love/hate doing — любить/не любить делать.</li>
+</ul>
+<p>Примеры:</p>
+<ul>
+<li>I enjoy reading before bed.</li>
+<li>She finished cleaning the kitchen.</li>
+<li>Would you mind opening the window?</li>
+<li>He keeps asking the same question.</li>
+</ul>
+<p>После enjoy нельзя ставить to + verb в стандартной модели: I enjoy reading.</p>
+<h3>3. После предлогов используем -ing</h3>
+<p>Если после предлога идёт глагол, обычно он принимает форму -ing:</p>
+<ul>
+<li>good at cooking;</li>
+<li>interested in learning English;</li>
+<li>before leaving;</li>
+<li>after eating;</li>
+<li>without saying goodbye;</li>
+<li>Thank you for helping me.</li>
+</ul>
+<p>Сравни:</p>
+<ul>
+<li>I'm interested in music. — после in существительное;</li>
+<li>I'm interested in learning music. — после in форма -ing.</li>
+</ul>
+<p>В выражении look forward to слово to является предлогом, поэтому дальше используется -ing: I look forward to seeing you. Это полезное расширение, которое можно запомнить готовой фразой.</p>
+<h3>4. Когда возможны обе формы</h3>
+<p>После like, love, hate, prefer часто возможны обе формы:</p>
+<ul>
+<li>I like swimming.</li>
+<li>I like to walk in the morning.</li>
+</ul>
+<p>Разница часто небольшая. Форма -ing нередко описывает занятие в целом, а to + verb может подчёркивать привычку или конкретный выбор, но в обычной речи это не абсолютное правило.</p>
+<h3>5. Глагол без to после модальных глаголов</h3>
+<p>После can, could, should, must, might ставим начальную форму без to:</p>
+<ul>
+<li>I can swim.</li>
+<li>You should rest.</li>
+<li>We must leave now.</li>
+<li>It might rain later.</li>
+</ul>
+<p>Не говорим can to swim или should resting.</p>
+<p>Исключение для запоминания: have to — это отдельная конструкция, после которой используется инфинитив с to: I have to work.</p>
+<h3>6. Как запоминать модель</h3>
+<p>Запоминай не только глагол, а всё сочетание:</p>
+<ul>
+<li>want to learn;</li>
+<li>enjoy learning;</li>
+<li>good at learning;</li>
+<li>can learn.</li>
+</ul>
+<p>Универсального правила, которое предсказывает форму после любого глагола, нет. Если сомневаешься, проверяй словарный пример.</p>
+` },
+  { id: 111, level: "A2", category: "theory", topic: "prepositions_phrasal_verbs", title: "11. Предлоги, устойчивые сочетания и фразовые глаголы A2", content: `
+<h3>2. Устойчивые сочетания с предлогами</h3>
+<p>Некоторые прилагательные и глаголы обычно требуют определённого предлога. Лучше учить сочетание целиком.</p>
+<h4>Прилагательное + предлог</h4>
+<ul>
+<li>interested in — интересоваться: I'm interested in music.</li>
+<li>good at — хорошо уметь: She's good at cooking.</li>
+<li>afraid of — бояться: He's afraid of dogs.</li>
+<li>different from — отличаться от: This is different from mine.</li>
+<li>worried about — беспокоиться о: I'm worried about the exam.</li>
+<li>proud of — гордиться: They're proud of their daughter.</li>
+<li>famous for — быть известным благодаря: The town is famous for its cheese.</li>
+<li>kind to — быть добрым к: Be kind to people.</li>
+</ul>
+<h4>Глагол + предлог</h4>
+<ul>
+<li>wait for — ждать: I'm waiting for the bus.</li>
+<li>listen to — слушать: Listen to this song.</li>
+<li>look at — смотреть на: Look at the picture.</li>
+<li>look for — искать: I'm looking for my keys.</li>
+<li>talk to someone — разговаривать с кем-то;</li>
+<li>talk about something — говорить о чём-то;</li>
+<li>depend on — зависеть от: It depends on the weather.</li>
+<li>belong to — принадлежать: This bag belongs to me.</li>
+<li>pay for — платить за: I paid for lunch.</li>
+<li>think about — обдумывать: I'll think about your idea.</li>
+<li>ask for — просить: She asked for help.</li>
+</ul>
+<h4>Arrive in и arrive at</h4>
+<ul>
+<li>arrive in + город/страна: We arrived in Berlin.</li>
+<li>arrive at + конкретное место/здание: We arrived at the station.</li>
+</ul>
+<p>Обычно не говорят arrive to London; говорят arrive in London.</p>
+<h3>3. Предлог + существительное или -ing</h3>
+<p>После предлога, если дальше стоит глагол, обычно используем -ing:</p>
+<ul>
+<li>before leaving;</li>
+<li>after having dinner;</li>
+<li>without saying anything;</li>
+<li>good at drawing;</li>
+<li>interested in learning.</li>
+</ul>
+<p>Пример: She left without saying goodbye.</p>
+<h3>4. Что такое фразовый глагол?</h3>
+<p>Фразовый глагол обычно состоит из глагола и короткого слова (up, off, on, out, back и т. п.). Вместе они образуют значение, которое не всегда понятно из отдельных частей:</p>
+<ul>
+<li>get — получать; get up — вставать;</li>
+<li>turn — поворачивать; turn off — выключать;</li>
+<li>find — находить; find out — выяснять.</li>
+</ul>
+<p>Один фразовый глагол может иметь несколько значений. Ориентируйся на контекст и учи частые значения.</p>
+<h3>5. Частые фразовые глаголы A2</h3>
+<table>
+<tr><th>Фразовый глагол</th><th>Значение</th><th>Пример</th></tr>
+<tr><td>wake up</td><td>просыпаться</td><td>I wake up at seven.</td></tr>
+<tr><td>get up</td><td>вставать с постели</td><td>I get up at half past seven.</td></tr>
+<tr><td>turn on</td><td>включать</td><td>Turn on the light.</td></tr>
+<tr><td>turn off</td><td>выключать</td><td>Turn off the TV.</td></tr>
+<tr><td>put on</td><td>надевать</td><td>Put on your coat.</td></tr>
+<tr><td>take off</td><td>снимать одежду; взлетать</td><td>Take off your shoes.</td></tr>
+<tr><td>pick up</td><td>поднять; забрать</td><td>I'll pick you up at six.</td></tr>
+<tr><td>look for</td><td>искать</td><td>I'm looking for my phone.</td></tr>
+<tr><td>find out</td><td>выяснить</td><td>I need to find out the time.</td></tr>
+<tr><td>come back</td><td>возвращаться</td><td>What time did you come back?</td></tr>
+<tr><td>give back</td><td>вернуть</td><td>Please give back my book.</td></tr>
+<tr><td>go out</td><td>выходить, проводить время вне дома</td><td>We went out on Friday.</td></tr>
+<tr><td>run out of</td><td>исчерпать запас</td><td>We've run out of milk.</td></tr>
+<tr><td>try on</td><td>примерить одежду</td><td>Can I try on this jacket?</td></tr>
+<tr><td>look after</td><td>присматривать за</td><td>She looks after her little brother.</td></tr>
+</table>
+<h3>6. Отделяемые и неотделяемые фразовые глаголы</h3>
+<p>У некоторых фразовых глаголов дополнение можно поставить между глаголом и частицей:</p>
+<ul>
+<li>Turn off the light.</li>
+<li>Turn the light off.</li>
+</ul>
+<p>Если дополнение — местоимение (it, them, him, her), у отделяемого глагола оно ставится в середину:</p>
+<ul>
+<li>Turn it off. ✅</li>
+<li>Turn off it. ❌</li>
+</ul>
+<p>Ещё примеры:</p>
+<ul>
+<li>Put on your coat. / Put your coat on. / Put it on.</li>
+<li>Pick up the bag. / Pick the bag up. / Pick it up.</li>
+</ul>
+<p>Некоторые сочетания не отделяются:</p>
+<ul>
+<li>look after the child — не look the child after;</li>
+<li>look for my keys — не look my keys for.</li>
+</ul>
+<p>На A2 полезнее запоминать модель вместе с примером, чем пытаться вывести её из одного общего правила.</p>
+<h3>7. Как учить предлоги и фразовые глаголы</h3>
+<ol>
+<li>Записывай выражение полностью: good at drawing, а не только good.</li>
+<li>Добавляй свой пример.</li>
+<li>Группируй по ситуации: дом, работа, поездки, общение.</li>
+<li>Повторяй выражение в разные дни.</li>
+<li>Проверяй предлог: например, listen to, но hear a sound без to.</li>
+</ol>
+<h3>8. Типичные ошибки</h3>
+<ul>
+<li>❌ listen music → ✅ listen to music</li>
+<li>❌ married with (в значении «женат/замужем») → обычно ✅ married to</li>
+<li>❌ arrive to London → ✅ arrive in London</li>
+<li>❌ Turn off it → ✅ Turn it off</li>
+<li>❌ interested on → ✅ interested in</li>
+</ul>
+<h3>9. Практика</h3>
+<p>Вставь подходящее слово:</p>
+<ol>
+<li>I'm interested ___ art.</li>
+<li>Please turn ___ the lights before you leave.</li>
+<li>I'm looking ___ my passport.</li>
+<li>Can you pick me ___ at six?</li>
+<li>He is good ___ languages.</li>
+<li>We arrived ___ Paris late at night.</li>
+<li>She looks ___ her younger brother after school.</li>
+<li>We've run ___ ___ coffee.</li>
+</ol>
+<p><b>Ответы:</b> 1. in; 2. off; 3. for; 4. up; 5. at; 6. in; 7. after; 8. out of.</p>
+` },
+  { id: 112, level: "A2", category: "theory", topic: "conditionals_connectors", title: "12. Условные предложения и связки", content: `
+<p>Условные предложения описывают, что происходит при определённом условии. Связки помогают соединять идеи и показывать причину, результат, последовательность или противопоставление.</p>
+<h3>1. Zero Conditional — общие факты и закономерности</h3>
+<p>Используем для научных фактов, правил, привычных результатов и ситуаций, которые обычно происходят одинаково.</p>
+<p><b>Формула:</b> If + Present Simple, Present Simple</p>
+<ul>
+<li>If you heat ice, it melts. — Если нагреть лёд, он тает.</li>
+<li>If I don't sleep enough, I feel tired. — Если я недостаточно сплю, я чувствую усталость.</li>
+<li>Plants die if they don't get water. — Растения погибают, если не получают воду.</li>
+</ul>
+<p>Вместо if в некоторых предложениях можно использовать when, если речь о том, что происходит регулярно: When I drink coffee late, I can't sleep.</p>
+<h3>2. First Conditional — реальная возможность в будущем</h3>
+<p>Используем, когда условие может выполниться в будущем и мы говорим о вероятном результате.</p>
+<p><b>Формула:</b> If + Present Simple, will + начальная форма глагола</p>
+<ul>
+<li>If it rains, we'll stay at home. — Если пойдёт дождь, мы останемся дома.</li>
+<li>I'll call you if I have time. — Я позвоню тебе, если у меня будет время.</li>
+<li>If you study, you'll do better in the test.</li>
+</ul>
+<p>В части с if обычно используем Present Simple, даже если смысл относится к будущему:</p>
+<ul>
+<li>✅ If she comes, I'll tell her.</li>
+<li>❌ If she will come, I'll tell her.</li>
+</ul>
+<p>В главной части часто используется will, но возможны также повелительная форма или модальный глагол:</p>
+<ul>
+<li>If you see Tom, tell him to call me.</li>
+<li>If you feel ill, you should see a doctor.</li>
+</ul>
+<h3>3. Где ставить часть с if</h3>
+<p>Условие можно поставить в начале или в конце:</p>
+<ul>
+<li>If I'm tired, I'll go to bed early.</li>
+<li>I'll go to bed early if I'm tired.</li>
+</ul>
+<p>Если предложение начинается с части if, обычно ставим запятую после неё. Если условие стоит в конце, запятая обычно не нужна.</p>
+<h3>4. When и if: в чём разница?</h3>
+<ul>
+<li>when — говорящий ожидает, что событие произойдёт, и говорит о времени;</li>
+<li>if — событие возможно, но не гарантировано.</li>
+</ul>
+<p>Сравни:</p>
+<ul>
+<li>When I get home, I'll make dinner. — Когда я приду домой, приготовлю ужин (ожидаю, что приду).</li>
+<li>If I get home early, I'll make dinner. — Если я приду домой рано, приготовлю ужин (не уверен, что это будет рано).</li>
+</ul>
+<p>В придаточной части времени с будущим значением также обычно используем Present Simple: When I arrive, I'll text you.</p>
+<h3>5. Связки причины, результата и противопоставления</h3>
+<h4>Причина: because</h4>
+<p>Because отвечает на вопрос «почему?»:</p>
+<ul>
+<li>I stayed at home because I was tired.</li>
+<li>She took a taxi because it was late.</li>
+</ul>
+<h4>Результат: so</h4>
+<p>So показывает результат:</p>
+<ul>
+<li>I was tired, so I went to bed early.</li>
+<li>The bus was late, so we walked.</li>
+</ul>
+<p>Не путай:</p>
+<ul>
+<li>because + причина;</li>
+<li>so + результат.</li>
+</ul>
+<h4>Добавление и противопоставление</h4>
+<ul>
+<li>and — и: I bought bread and milk.</li>
+<li>but — но: I was tired, but I finished the work.</li>
+<li>or — или: Would you like tea or coffee?</li>
+</ul>
+<h4>Последовательность</h4>
+<ul>
+<li>first — сначала;</li>
+<li>then / next — затем;</li>
+<li>after that — после этого;</li>
+<li>finally — наконец.</li>
+</ul>
+<p>Пример: First, we bought tickets. Then, we got on the train. Finally, we arrived at the hotel.</p>
+<h4>Время: before, after, when, while</h4>
+<ul>
+<li>Wash your hands before you eat.</li>
+<li>We went for a walk after we had lunch.</li>
+<li>Call me when you arrive.</li>
+<li>While I was cooking, my friend set the table.</li>
+</ul>
+<p>Когда говорим о будущем после when, before, after или as soon as, в придаточной части обычно используем Present Simple: I'll call you as soon as I arrive.</p>
+<h3>6. Although — хотя (A2+)</h3>
+<p>Although показывает контраст:</p>
+<ul>
+<li>Although it was cold, we went for a walk.</li>
+<li>I enjoyed the trip although the hotel was noisy.</li>
+</ul>
+<p>Не используй одновременно although и but в одной и той же конструкции:</p>
+<ul>
+<li>✅ Although it was raining, we went out.</li>
+<li>✅ It was raining, but we went out.</li>
+<li>❌ Although it was raining, but we went out.</li>
+</ul>
+<h3>7. Как соединить несколько идей</h3>
+<p>Вместо отдельных коротких предложений используй связки:</p>
+<ul>
+<li>I was late. The bus didn't come. → I was late because the bus didn't come.</li>
+<li>It was cold. We went for a walk. → Although it was cold, we went for a walk.</li>
+<li>I'll finish work. Then I'll call you. → I'll call you when I finish work.</li>
+</ul>
+<h3>8. Типичные ошибки</h3>
+<ul>
+<li>❌ If it will rain, we'll stay home. → ✅ If it rains, we'll stay home.</li>
+<li>❌ Because I was tired, so I went home. → выбери because или so.</li>
+<li>❌ Although it was late, but we stayed. → убери but.</li>
+<li>❌ When I will arrive, I'll call. → ✅ When I arrive, I'll call.</li>
+</ul>
 ` },
 
- 
   { id: 201, level: "A2", category: "practice", topic: "articles", title: "Артикли: упражнения (25)", content: `
 <p>Вставь нужный артикль (a / an / the) или напиши <code>--</code>, если артикль не нужен.</p>
 <ol>
@@ -1289,11 +1925,10 @@ const MATERIALS = [
 </ol>
 ` },
 
-  
   { id: 301, level: "B1", category: "theory", topic: "intro", title: "Раздел B1 — в разработке", content: `<p>Здесь будут материалы уровня B1: Conditionals 2/3, Passive Voice, Reported Speech, Relative Clauses.</p>` },
   { id: 401, level: "B2", category: "theory", topic: "intro", title: "Раздел B2 — в разработке", content: `<p>Здесь будут материалы уровня B2: Inversion, Mixed Conditionals, Advanced Modals, Phrasal Verbs.</p>` },
   { id: 501, level: "C1", category: "theory", topic: "intro", title: "Раздел C1–C2 — в разработке", content: `<p>Здесь будут материалы уровней C1–C2: Cleft Sentences, Subjunctive, Nominalisation, Academic Writing, Inversion, Advanced Idioms.</p>` },
-  
+
   { id: 601, level: "ICPC", category: "theory", topic: "anatomy", title: "1.1 Анатомия условия задачи", content: `
 <p>Условие — это 1–2 страницы английского текста, и время на чтение идёт в штраф. Хорошая новость: почти все условия собраны из одних и тех же блоков и шаблонных фраз.</p>
 <h3>1. Из чего состоит условие</h3>
@@ -1610,7 +2245,6 @@ const MATERIALS = [
 <div class="example"><div class="en"><b>Thus</b>, the answer is 5.</div><div class="ru">Таким образом, ответ равен 5.</div></div>
 ` },
 
-  
   { id: 651, level: "ICPC", category: "practice", topic: "anatomy_q", title: "Практика: анатомия условия", content: `
 <p><b>Вопрос 1.</b> <code>time limit per test: 2 seconds</code>. Что это значит? (напиши <code>1</code>, <code>2</code> или <code>3</code>)</p>
 <ul>

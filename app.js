@@ -5,19 +5,16 @@ const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1–C2', 'ICPC'];
 function getLevels() {
   if (typeof MATERIALS === 'undefined') return [];
   const rawLevels = new Set(MATERIALS.map(m => m.level));
-  
   if (rawLevels.has('C1') || rawLevels.has('C2')) {
     rawLevels.add('C1–C2');
     rawLevels.delete('C1');
     rawLevels.delete('C2');
   }
-  
   return LEVELS.filter(l => rawLevels.has(l));
 }
 
 function articlesOf(level, category) {
   if (level === 'C1–C2') {
-  
     return MATERIALS.filter(m => (m.level === 'C1' || m.level === 'C2') && m.category === category);
   }
   return MATERIALS.filter(m => m.level === level && m.category === category);
@@ -41,7 +38,6 @@ function showHome() {
       } else {
         count = MATERIALS.filter(m => m.level === l).length;
       }
-      
       html += `<div class="card" onclick="showLevel('${l}')">
                  <h3>${l}</h3>
                  <div class="muted">${count} материалов</div>
@@ -51,6 +47,7 @@ function showHome() {
   html += '</div>';
   app.innerHTML = html;
 }
+
 
 function showLevel(level) {
   const theory = articlesOf(level, 'theory');
@@ -102,6 +99,7 @@ function showLevelTab(level, tab) {
   app.innerHTML = html;
 }
 
+
 function showArticle(id) {
   const a = MATERIALS.find(m => m.id === id);
   if (!a) { app.innerHTML = '<p>Материал не найден.</p>'; return; }
@@ -135,12 +133,22 @@ function showArticle(id) {
   `;
   window.scrollTo(0, 0);
 }
+
+
 function renderInteractive(html) {
   let counter = 0;
+  
   let processed = html.replace(/\[\[(.*?)\]\]/g, (match, answer) => {
     counter++;
-    let cleanAnswer = answer.trim().split('|')[0]; 
-    return `<input type="text" class="quiz-input" id="input-${counter}" data-answer="${cleanAnswer}" placeholder="..." autocomplete="off">`;
+    
+    let parts = answer.split('|').map(s => s.trim());
+    let mainAnswer = parts[0];
+    let altAnswers = parts.slice(1).join('|');
+    
+    
+    let widthClass = mainAnswer.length > 15 ? 'quiz-input wide' : 'quiz-input';
+    
+    return `<input type="text" class="${widthClass}" id="input-${counter}" data-answer="${mainAnswer}" data-alt="${altAnswers}" placeholder="..." autocomplete="off">`;
   });
   return processed + `<div id="score-display" style="display:none; margin-top:20px; padding:15px; background:#e8f4fd; border-radius:8px; font-size:18px; color:#2980b9;"></div>`;
 }
@@ -150,12 +158,17 @@ function checkAllInputs() {
   let correctCount = 0;
   
   inputs.forEach(input => {
-    const userAnswer = input.value.trim().toLowerCase();
-    const correctAnswer = input.dataset.answer.trim().toLowerCase();
+    
+    let userAnswer = input.value.trim().toLowerCase().replace(/\.$/, '');
+    
+    let validAnswers = [input.dataset.answer.trim().toLowerCase()];
+    if (input.dataset.alt) {
+      validAnswers = validAnswers.concat(input.dataset.alt.split('|').map(s => s.trim().toLowerCase()));
+    }
     
     input.classList.remove('correct', 'incorrect');
     
-    if (userAnswer === correctAnswer) {
+    if (validAnswers.includes(userAnswer)) {
       input.classList.add('correct');
       correctCount++;
     } else if (userAnswer !== "") {

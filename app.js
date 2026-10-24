@@ -1,14 +1,25 @@
 const app = document.getElementById('app');
 
-const LEVELS = ['A2', 'B1', 'B2', 'C1', 'ICPC'];
+const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1–C2', 'ICPC'];
 
 function getLevels() {
   if (typeof MATERIALS === 'undefined') return [];
-  const set = new Set(MATERIALS.map(m => m.level));
-  return LEVELS.filter(l => set.has(l));
+  const rawLevels = new Set(MATERIALS.map(m => m.level));
+  
+  if (rawLevels.has('C1') || rawLevels.has('C2')) {
+    rawLevels.add('C1–C2');
+    rawLevels.delete('C1');
+    rawLevels.delete('C2');
+  }
+  
+  return LEVELS.filter(l => rawLevels.has(l));
 }
 
 function articlesOf(level, category) {
+  if (level === 'C1–C2') {
+  
+    return MATERIALS.filter(m => (m.level === 'C1' || m.level === 'C2') && m.category === category);
+  }
   return MATERIALS.filter(m => m.level === level && m.category === category);
 }
 
@@ -24,7 +35,13 @@ function showHome() {
     html += '<p>В <code>data.js</code> пока нет материалов.</p>';
   } else {
     levels.forEach(l => {
-      const count = MATERIALS.filter(m => m.level === l).length;
+      let count = 0;
+      if (l === 'C1–C2') {
+        count = MATERIALS.filter(m => m.level === 'C1' || m.level === 'C2').length;
+      } else {
+        count = MATERIALS.filter(m => m.level === l).length;
+      }
+      
       html += `<div class="card" onclick="showLevel('${l}')">
                  <h3>${l}</h3>
                  <div class="muted">${count} материалов</div>
@@ -34,7 +51,6 @@ function showHome() {
   html += '</div>';
   app.innerHTML = html;
 }
-
 
 function showLevel(level) {
   const theory = articlesOf(level, 'theory');
@@ -53,7 +69,6 @@ function showLevel(level) {
                   <p>${practice.length} материалов</p>
                 </div>`;
   
-
   if (level !== 'ICPC') {
     html += `<div class="card" onclick="showLevelTab('${level}','vocabulary')">
                   <h3>📖 Лексика</h3>
@@ -93,7 +108,6 @@ function showArticle(id) {
   
   let content = a.content;
 
-  // Если это практика и в тексте есть маркеры [[ответ]], запускаем интерактив
   if (a.category === 'practice' && content.includes('[[')) {
     content = renderInteractive(content);
   }
@@ -103,22 +117,24 @@ function showArticle(id) {
   else if (a.category === 'practice') catName = 'Практика';
   else if (a.category === 'vocabulary') catName = 'Лексика';
 
+  let backLevel = a.level;
+  if (a.level === 'C1' || a.level === 'C2') backLevel = 'C1–C2';
+
   app.innerHTML = `
     <div class="crumbs">
       <a href="#" onclick="showHome(); return false;">Главная</a> /
-      <a href="#" onclick="showLevel('${a.level}'); return false;">${a.level}</a> /
+      <a href="#" onclick="showLevel('${backLevel}'); return false;">${backLevel}</a> /
       ${catName}
     </div>
     <h1>${a.title}</h1>
     <div class="article-content">${content}</div>
     <div style="margin-top: 30px;">
-        <button class="btn" onclick="showLevel('${a.level}')">← Назад в раздел</button>
+        <button class="btn" onclick="showLevel('${backLevel}')">← Назад в раздел</button>
         ${a.category === 'practice' ? '<button class="btn" onclick="checkAllInputs()" style="background:#27ae60; margin-left:10px;">Проверить все ответы</button>' : ''}
     </div>
   `;
   window.scrollTo(0, 0);
 }
-
 function renderInteractive(html) {
   let counter = 0;
   let processed = html.replace(/\[\[(.*?)\]\]/g, (match, answer) => {

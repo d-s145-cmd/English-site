@@ -1659,270 +1659,678 @@ const MATERIALS = [
 </ul>
 ` },
 
-  { id: 201, level: "A2", category: "practice", topic: "articles", title: "Артикли: упражнения (25)", content: `
-<p>Вставь нужный артикль (a / an / the) или напиши <code>--</code>, если артикль не нужен.</p>
+  { id: 201, level: "A2", category: "practice", topic: "present_tenses", title: "01. Практика: Present tenses", content: `
+<p>Выбери правильную форму (Present Simple или Present Continuous).</p>
 <ol>
-<li>I saw [[a]] dog in the park.</li>
-<li>She is [[a]] doctor.</li>
-<li>[[The]] sun rises in the east.</li>
-<li>I need [[an]] umbrella — it's raining.</li>
-<li>He is [[the]] best student in the class.</li>
-<li>I study at [[a]] university.</li>
-<li>It took me [[an]] hour to finish.</li>
-<li>I love [[--]] music.</li>
-<li>Can you pass me [[the]] salt, please?</li>
-<li>This is [[an]] interesting book.</li>
-<li>I bought [[a]] book yesterday. [[The]] book was expensive.</li>
-<li>[[The]] Earth goes round [[the]] Sun.</li>
-<li>My brother is [[an]] engineer, and my sister is [[an]] artist.</li>
-<li>We had [[a]] great time at [[the]] party last night.</li>
-<li>[[--]] cats are independent animals.</li>
-<li>He plays [[the]] guitar every evening.</li>
-<li>She's reading [[a]] book about [[the]] history of [[--]] Rome.</li>
-<li>Can you open [[the]] door, please?</li>
-<li>I had [[an]] egg and [[an]] apple for breakfast.</li>
-<li>He is [[the]] most talented musician I know.</li>
+<li>I usually [[take]] (take) the bus, but today I [[am walking]] (walk).</li>
+<li>He [[doesn't like]] (not/like) coffee.</li>
+<li>Why [[are]] you [[wearing]] (wear) a coat indoors?</li>
+<li>The price [[goes]] (go) up every year.</li>
+<li>I [[think]] (think) this film is great.</li>
+<li>She [[is staying]] (stay) with friends this month.</li>
+<li>The days [[are getting]] (get) longer.</li>
+<li>I [[know]] (know) the answer.</li>
+<li>She [[is usually]] busy. (be/usually) <i>Введите оба слова через пробел</i></li>
+<li>I [[often read]] (often/read).</li>
 </ol>
 ` },
-  { id: 202, level: "A2", category: "practice", topic: "comparatives", title: "Степени сравнения: упражнения (25)", content: `
+  { id: 202, level: "A2", category: "practice", topic: "past_tenses", title: "02. Практика: Past tenses", content: `
+<p>Поставь глаголы в Past Simple или Past Continuous.</p>
 <ol>
-<li>This car is [[faster]] (fast) than that one.</li>
-<li>She is the [[tallest]] (tall) girl in the class.</li>
-<li>This book is [[more interesting]] (interesting) than that film.</li>
-<li>Health is the [[most important]] (important) thing in life.</li>
+<li>I [[was driving]] (drive) home when I [[saw]] (see) the accident.</li>
+<li>While we [[were waiting]] (wait), it [[started]] (start) to snow.</li>
+<li>At 9 yesterday, they [[were studying]] (study).</li>
+<li>She [[opened]] (open) the window and [[looked]] (look) outside.</li>
+<li>I [[was walking]] (walk) home when it [[started]] (start) to rain.</li>
+<li>While I [[was cooking]] (cook), my brother [[was setting]] (set) the table.</li>
+<li>I [[opened]] (open) the door, [[went]] (go) in and [[sat]] (sit) down.</li>
+<li>At 8 p.m. I [[was having]] (have) dinner.</li>
+<li>We [[visited]] (visit) York last year.</li>
+<li>She [[didn't call]] (not/call) me.</li>
+</ol>
+` },
+  { id: 203, level: "A2", category: "practice", topic: "present_perfect", title: "03. Практика: Present Perfect", content: `
+<p>Вставь правильную форму Present Perfect или Past Simple.</p>
+<ol>
+<li>I [[have visited]] (visit) London.</li>
+<li>She [[has lost]] (lose) her keys.</li>
+<li>Have you ever [[tried]] (try) sushi?</li>
+<li>I've never [[flown]] (fly).</li>
+<li>I've just [[finished]] (finish).</li>
+<li>I've [[had]] (have) two coffees today.</li>
+<li>I [[saw]] (see) him yesterday.</li>
+<li>She's [[been]] (be) to the shop.</li>
+<li>She's [[gone]] (go) to the shop.</li>
+<li>When did you [[go]] (go)?</li>
+</ol>
+` },
+  { id: 204, level: "A2", category: "practice", topic: "future_forms", title: "04. Практика: Future forms", content: `
+<p>Вставь правильную форму будущего (will, going to, Present Continuous, Present Simple).</p>
+<ol>
+<li>I'm [[going to study]] (study) tonight.</li>
+<li>Look at the clouds! It's [[going to rain]] (rain).</li>
+<li>I [[will answer|'ll answer]] (answer) the phone.</li>
+<li>I [[will help|'ll help]] (help) you.</li>
+<li>I think you [[will like|'ll like]] (like) it.</li>
+<li>I'm [[meeting]] (meet) Jane at six.</li>
+<li>We're [[flying]] (fly) on Friday.</li>
+<li>The train [[leaves]] (leave) at 7:15.</li>
+<li>I'm [[seeing]] (see) the dentist tomorrow.</li>
+<li>She [[will go]] (go) tomorrow. <i>(Простое будущее)</i></li>
+</ol>
+` },
+  { id: 205, level: "A2", category: "practice", topic: "questions_negatives", title: "05. Практика: Questions and negatives", content: `
+<p>Вставь правильное слово или форму.</p>
+<ol>
+<li>Have you [[ever]] eaten sushi? (ever/yet)</li>
+<li>Could you tell me where [[the bank is]]? (the bank is / is the bank)</li>
+<li>How long [[have]] you [[lived]] here? (live)</li>
+<li>What are you looking [[for]]?</li>
+<li>I haven't called her [[yet]]. (already/yet)</li>
+<li>Have you [[ever]] been to Italy?</li>
+<li>Have you finished [[yet]]?</li>
+<li>I've [[just]] arrived.</li>
+<li>Who are you talking [[to]]?</li>
+<li>Which hotel did you stay [[at]]?</li>
+</ol>
+` },
+  { id: 206, level: "A2", category: "practice", topic: "nouns_quantifiers", title: "06. Практика: Nouns and quantifiers", content: `
+<p>Вставь правильное слово.</p>
+<ol>
+<li>There aren't [[enough]] chairs for everyone.</li>
+<li>We have [[little]] time, so let's hurry. (мало, почти нет)</li>
+<li>You put [[too much]] sugar in my tea!</li>
+<li>Do you have [[any]] information?</li>
+<li>This room isn't big [[enough]].</li>
+<li>We have [[some]] bread.</li>
+<li>Would you like [[some]] tea?</li>
+<li>I have [[a few]] friends here.</li>
+<li>[[Few]] people understood.</li>
+<li>We have [[little]] time left.</li>
+</ol>
+` },
+  { id: 207, level: "A2", category: "practice", topic: "pronouns_possessives", title: "07. Практика: Pronouns", content: `
+<p>Вставь правильное местоимение.</p>
+<ol>
+<li>I made this cake by [[myself]].</li>
+<li>Which bag is yours? The red [[one]].</li>
+<li>[[Both]] of my parents speak English. (оба)</li>
+<li>I didn't see [[anyone]] at the bus stop.</li>
+<li>You can choose [[either]] of these two desserts.</li>
+<li>I cut [[myself]].</li>
+<li>She taught [[herself]] English.</li>
+<li>We enjoyed [[ourselves]].</li>
+<li>I went there by [[myself]].</li>
+<li>I like the blue [[one]].</li>
+</ol>
+` },
+  { id: 208, level: "A2", category: "practice", topic: "modals_requests_advice", title: "08. Практика: Модальные глаголы", content: `
+<p>Вставь правильный модальный глагол (can, could, must, mustn't, have to, don't have to, should, shouldn't).</p>
+<ol>
+<li>I [[can]] swim.</li>
+<li>[[Could]] you help me?</li>
+<li>I [[could]] swim when I was five.</li>
+<li>You [[must]] wear a seat belt.</li>
+<li>You [[mustn't]] smoke here.</li>
+<li>I [[have to]] get up early.</li>
+<li>You [[don't have to]] come early.</li>
+<li>You [[should]] see a doctor.</li>
+<li>You [[shouldn't]] worry.</li>
+<li>[[May]] I come in?</li>
+</ol>
+` },
+  { id: 209, level: "A2", category: "practice", topic: "comparatives_superlatives", title: "09. Практика: Comparatives and Superlatives", content: `
+<p>Поставь прилагательное в правильную форму.</p>
+<ol>
+<li>My room is [[smaller]] (small) than yours.</li>
+<li>This exercise is [[more difficult]] (difficult) than the last one.</li>
+<li>This book is [[better]] (good) than that one.</li>
+<li>The weather is [[worse]] (bad) today.</li>
+<li>The station is [[farther]] (far) away.</li>
+<li>I have [[less]] (little) time today.</li>
+<li>We need [[more]] (many) chairs.</li>
 <li>My bag is [[heavier]] (heavy) than yours.</li>
-<li>This is the [[most expensive]] (expensive) restaurant in town.</li>
-<li>Winter is [[colder]] (cold) than autumn.</li>
-<li>He is the [[best]] (good) player on the team.</li>
-<li>This exercise is [[easier]] (easy) than the last one.</li>
-<li>That was the [[worst]] (bad) film I've ever seen.</li>
-<li>This flat is [[bigger]] (big) than the one we saw yesterday, but it's [[more expensive]] (expensive) too.</li>
-<li>Of all my friends, she is the [[funniest]] (funny).</li>
-<li>The new phone is [[thinner]] (thin) and [[lighter]] (light) than the old model.</li>
-<li>This is by far the [[most difficult]] (difficult) exam I've taken this year.</li>
-<li>My brother is [[older]] (old) than me, but I am [[taller]] (tall) than him.</li>
-<li>This café serves the [[most delicious]] (delicious) coffee in the city.</li>
-<li>Traveling by train is usually [[more comfortable]] (comfortable) than by bus.</li>
-<li>She works [[harder]] (hard) than anyone else in the office.</li>
-<li>Of the three routes, this one is the [[shortest]] (short).</li>
-<li>The weather today is [[worse]] (bad) than yesterday, but it's not the [[worst]] (bad) this month.</li>
+<li>She is the [[tallest]] (tall) student in our class.</li>
+<li>This is the [[best]] (good) restaurant here.</li>
+<li>It's the [[most interesting]] (interesting) museum in the city.</li>
+<li>My bag is as [[heavy]] (heavy) as yours.</li>
+<li>This exercise isn't as [[difficult]] (difficult) as the last one.</li>
+<li>It's [[too]] cold to swim.</li>
+<li>This box is [[too]] heavy for me.</li>
+<li>The room is warm [[enough]].</li>
+<li>We have [[enough]] time.</li>
+<li>The train is [[much]] faster than the bus.</li>
+<li>This phone is [[a bit]] more expensive.</li>
 </ol>
 ` },
-  { id: 203, level: "A2", category: "practice", topic: "modals", title: "Модальные глаголы: упражнения (25)", content: `
+  { id: 210, level: "A2", category: "practice", topic: "infinitive_gerund", title: "10. Практика: Infinitives and Gerunds", content: `
+<p>Выбери правильную форму (to + verb или -ing).</p>
 <ol>
-<li>She [[can speak]] (can / speak) three languages.</li>
-<li>[[Can I open]] (can / open) the window?</li>
-<li>He [[couldn't swim]] (can / not / swim) when he was a child.</li>
-<li>You [[must wear]] (must / wear) a seatbelt in the car.</li>
-<li>I [[have to finish]] (have to / finish) this report by Friday.</li>
-<li>You [[should see]] (should / see) a doctor.</li>
-<li>You [[shouldn't eat]] (should / not / eat) so much sugar.</li>
-<li>We [[don't have to hurry]] (have to / not / hurry), we have plenty of time.</li>
-<li>[[Does he have to work]] (have to / work) on Saturdays?</li>
-<li>You [[mustn't smoke]] (must / not / smoke) here.</li>
-<li>I [[couldn't sleep]] (could / not / sleep) last night — too much noise.</li>
-<li>[[Could you help]] (could / help) me with this bag, please?</li>
-<li>You look exhausted — you [[must be]] (must / be) tired after that flight.</li>
-<li>You [[don't have to come]] (don't have to / come) if you're busy.</li>
-<li>Employees [[mustn't use]] (must / not / use) their phones during meetings.</li>
-<li>She [[has to renew]] (have to / renew) her passport — it expires next month.</li>
-<li>[[Must we bring]] (must / bring) our own equipment?</li>
-<li>You [[shouldn't ignore]] (should / not / ignore) his advice.</li>
-<li>I [[can't believe]] (can / not / believe) this is happening!</li>
-<li>As a child, I [[could climb]] (could / climb) trees really fast.</li>
+<li>I want [[to learn]] (learn) English.</li>
+<li>We decided [[to stay]] (stay) at home.</li>
+<li>She hopes [[to find]] (find) a new job.</li>
+<li>I enjoy [[reading]] (read) before bed.</li>
+<li>She finished [[cleaning]] (clean) the kitchen.</li>
+<li>Would you mind [[opening]] (open) the window?</li>
+<li>He keeps [[asking]] (ask) the same question.</li>
+<li>I'm good at [[cooking]] (cook).</li>
+<li>I'm interested in [[learning]] (learn) English.</li>
+<li>Thank you for [[helping]] (help) me.</li>
+<li>I look forward to [[seeing]] (see) you.</li>
+<li>I can [[swim]] (swim).</li>
+<li>You should [[rest]] (rest).</li>
+<li>I have to [[work]] (work).</li>
 </ol>
 ` },
-  { id: 204, level: "A2", category: "practice", topic: "prepositions", title: "Предлоги in / on / at: упражнения (25)", content: `
+  { id: 211, level: "A2", category: "practice", topic: "prepositions_phrasal_verbs", title: "11. Практика: Prepositions and Phrasal Verbs", content: `
+<p>Вставь подходящий предлог или частицу.</p>
 <ol>
-<li>I was born [[in]] 1995.</li>
-<li>See you [[on]] Monday.</li>
-<li>The meeting is [[at]] 5 o'clock.</li>
-<li>She lives [[in]] London.</li>
-<li>The keys are [[on]] the table.</li>
-<li>We'll meet [[at]] the bus stop.</li>
-<li>My birthday is [[in]] May.</li>
-<li>I usually wake up early [[in]] the morning.</li>
-<li>The party is [[on]] Saturday evening.</li>
-<li>He works [[at]] a big company [[in]] Berlin.</li>
-<li>I'll see you [[at]] the weekend — we're meeting [[at]] 3 pm [[at]] my house.</li>
-<li>The book is [[on]] the shelf, [[on]] the second floor of the library.</li>
-<li>She was born [[on]] the 5th of May, [[in]] 1998, [[in]] the morning.</li>
-<li>We always have a big dinner [[at]] Christmas.</li>
-<li>The conference starts [[at]] 9 am [[on]] Monday [[in]] the city centre.</li>
-<li>He's waiting for you [[at]] the reception, not [[in]] the café.</li>
-<li>[[At]] night the streets [[in]] this town are very quiet.</li>
-<li>I left my umbrella [[in]] the office, [[at]] my desk.</li>
-<li>The exam is [[on]] the 20th of June, [[at]] 10 o'clock, [[in]] Room 204.</li>
-<li>They got married [[in]] a small church [[in]] the countryside.</li>
+<li>I'm interested [[in]] art.</li>
+<li>Please turn [[off]] the lights before you leave.</li>
+<li>I'm looking [[for]] my passport.</li>
+<li>Can you pick me [[up]] at six?</li>
+<li>He is good [[at]] languages.</li>
+<li>We arrived [[in]] Paris late at night.</li>
+<li>She looks [[after]] her younger brother after school.</li>
+<li>We've run [[out]] [[of]] coffee.</li>
+<li>I'm waiting [[for]] the bus.</li>
+<li>Listen [[to]] this song.</li>
+<li>Look [[at]] the picture.</li>
+<li>I'm looking [[for]] my keys.</li>
+<li>It depends [[on]] the weather.</li>
+<li>This bag belongs [[to]] me.</li>
+<li>I paid [[for]] lunch.</li>
+<li>I'll think [[about]] your idea.</li>
+<li>She asked [[for]] help.</li>
+<li>We arrived [[at]] the station.</li>
+<li>She left without [[saying]] (say) goodbye.</li>
+<li>Can I try [[on]] this jacket?</li>
 </ol>
 ` },
-  { id: 205, level: "A2", category: "practice", topic: "present_simple", title: "Present Simple: упражнения (25)", content: `
+  { id: 212, level: "A2", category: "practice", topic: "conditionals_connectors", title: "12. Практика: Conditionals and Connectors", content: `
+<p>Вставь правильную форму глагола или связку.</p>
 <ol>
-<li>She [[works]] (work) at a hospital.</li>
-<li>They [[live]] (live) in London.</li>
-<li>He [[doesn't like]] (not / like) coffee.</li>
-<li>I [[go]] (go) to school every day.</li>
-<li>My brother [[plays]] (play) football on Sundays.</li>
-<li>We [[don't have]] (not / have) a car.</li>
-<li>[[Does she speak]] (she / speak) French?</li>
-<li>The shop [[opens]] (open) at 9 am.</li>
-<li>Cats [[sleep]] (sleep) a lot.</li>
-<li>My father [[drives]] (drive) to work.</li>
-<li>Look! It [[is raining]] (rain).</li>
-<li>Water [[boils]] (boil) at 100°C.</li>
-<li>I [[am not watching]] (not / watch) TV now, I [[am reading]] (read) a book.</li>
-<li>He usually [[takes]] (take) the bus, but today he [[is walking]] (walk).</li>
-<li>[[Do you understand]] (you / understand) this rule?</li>
-<li>She [[isn't working]] (not / work) today because she [[is]] (be) ill.</li>
-<li>The Earth [[goes]] (go) round the Sun.</li>
-<li>Why [[is he shouting]] (he / shout) right now?</li>
-<li>We [[meet]] (meet) every Friday, but this week we [[are meeting]] (meet) on Thursday.</li>
-<li>My parents [[are currently staying]] (currently / stay) with us this month.</li>
+<li>If you heat ice, it [[melts]] (melt).</li>
+<li>If I don't sleep enough, I [[feel]] (feel) tired.</li>
+<li>Plants die if they [[don't get]] (not/get) water.</li>
+<li>If it [[rains]] (rain), we'll stay at home.</li>
+<li>I'll call you if I [[have]] (have) time.</li>
+<li>If you [[study]] (study), you'll do better in the test.</li>
+<li>If she [[comes]] (come), I'll tell her.</li>
+<li>If I'm tired, I'll [[go]] (go) to bed early.</li>
+<li>When I [[get]] (get) home, I'll make dinner.</li>
+<li>When I [[arrive]] (arrive), I'll text you.</li>
+<li>I stayed at home [[because]] I was tired.</li>
+<li>I was tired, [[so]] I went to bed early.</li>
+<li>I bought bread [[and]] milk.</li>
+<li>I was tired, [[but]] I finished the work.</li>
+<li>Would you like tea [[or]] coffee?</li>
+<li>First, we bought tickets. [[Then]], we got on the train.</li>
+<li>[[Finally]], we arrived at the hotel.</li>
+<li>Wash your hands [[before]] you eat.</li>
+<li>We went for a walk [[after]] we had lunch.</li>
+<li>Call me [[when]] you arrive.</li>
+<li>While I [[was cooking]] (cook), my friend set the table.</li>
+<li>I'll call you as soon as I [[arrive]] (arrive).</li>
+<li>[[Although]] it was cold, we went for a walk.</li>
+<li>I enjoyed the trip [[although]] the hotel was noisy.</li>
 </ol>
 ` },
-  { id: 206, level: "A2", category: "practice", topic: "present_continuous", title: "Present Continuous: упражнения (25)", content: `
+  ,
+  { id: 213, level: "A2", category: "practice", topic: "mixed_tenses", title: "13. Смешанная практика: времена", content: `
+<p>Поставьте глагол в правильную форму (Present Simple, Present Continuous, Past Simple, Past Continuous или Present Perfect).</p>
 <ol>
-<li>I [[am writing]] (write) an email right now.</li>
-<li>She [[is reading]] (read) a book at the moment.</li>
-<li>They [[are playing]] (play) football now.</li>
-<li>We [[aren't working]] (not / work) today.</li>
-<li>[[Are you listening]] (you / listen) to me?</li>
-<li>He [[is sleeping]] (sleep) right now.</li>
-<li>The children [[are watching]] (watch) cartoons.</li>
-<li>I [[am not eating]] (not / eat) breakfast now.</li>
-<li>[[Is it raining]] (it / rain) outside?</li>
-<li>My sister [[is studying]] (study) for her exam at the moment.</li>
-<li>I usually [[drive]] (drive) to work, but this week I [[am taking]] (take) the bus.</li>
-<li>She [[is living]] (live) with her parents while her flat [[is]] (be) renovated.</li>
-<li>He [[is always leaving]] (always / leave) his socks on the floor!</li>
-<li>Why [[are you looking]] (you / look) at me like that?</li>
-<li>We [[don't usually eat]] (not / usually / eat) out, but tonight we [[are eating]] (eat) at a restaurant.</li>
-<li>[[Is she still waiting]] (she / still / wait) for the bus?</li>
-<li>The company [[is currently developing]] (currently / develop) a new app.</li>
-<li>He [[isn't working]] (not / work) at the moment — he's on holiday.</li>
-<li>Look, the sun [[is setting]] (set)!</li>
-<li>They [[are building]] (build) a new bridge near our house this year.</li>
-</ol>
-` },
-  { id: 207, level: "A2", category: "practice", topic: "past_simple", title: "Past Simple: упражнения (25)", content: `
-<ol>
+<li>She usually [[walks]] (walk) to school, but today she [[is taking]] (take) the bus.</li>
+<li>Look! The cat [[is climbing]] (climb) the tree.</li>
 <li>I [[visited]] (visit) my grandmother last weekend.</li>
-<li>She [[went]] (go) to Paris in 2018.</li>
-<li>They [[didn't watch]] (not / watch) the film yesterday.</li>
-<li>[[Did you see]] (you / see) that movie?</li>
-<li>He [[bought]] (buy) a new car last month.</li>
-<li>We [[had]] (have) dinner at 7 pm yesterday.</li>
-<li>My father [[built]] (build) this house in 1990.</li>
-<li>She [[didn't come]] (not / come) to the party.</li>
-<li>I [[got]] (get) up early yesterday.</li>
-<li>They [[made]] (make) a cake for the party.</li>
-<li>When [[did you arrive]] (you / arrive) in London?</li>
-<li>He [[didn't know]] (not / know) the answer, so he [[asked]] (ask) the teacher.</li>
-<li>She [[lived]] (live) in Rome for two years, then she [[moved]] (move) to Milan.</li>
-<li>[[Did they finish]] (they / finish) the project before the deadline?</li>
-<li>Yesterday I [[took]] (take) an exam at 5 pm.</li>
-<li>We [[didn't have]] (not / have) time to visit the museum last time.</li>
-<li>He [[came]] (come) home late and [[went]] (go) straight to bed.</li>
-<li>Where [[were]] (be) you born?</li>
-<li>She [[won]] (win) the competition last year.</li>
-<li>I [[didn't understand]] (not / understand) the question, so I [[raised]] (raise) my hand.</li>
-</ol>
-` },
-  { id: 208, level: "A2", category: "practice", topic: "present_perfect", title: "Present Perfect: упражнения (25)", content: `
-<ol>
-<li>I [[have visited]] (visit) Paris. (когда именно — не важно)</li>
-<li>She [[has just finished]] (just / finish) her homework.</li>
-<li>They [[haven't seen]] (not / see) that film yet.</li>
-<li>[[Have you ever been]] (you ever / be) to Japan?</li>
-<li>He [[has lost]] (lose) his keys.</li>
-<li>We [[have already done]] (already / do) the shopping.</li>
-<li>She [[hasn't called]] (not / call) me yet.</li>
-<li>[[Has he finished]] (he / finish) his homework yet?</li>
-<li>I [[have never tried]] (never / try) sushi.</li>
-<li>They [[have just arrived]] (just / arrive).</li>
+<li>They [[were playing]] (play) football when it [[started]] (start) to rain.</li>
+<li>I [[have never seen]] (never / see) such a beautiful sunset.</li>
 <li>He [[has lived]] (live) here since 2015.</li>
-<li>I [[have known]] (know) her for ten years.</li>
-<li>[[Have you finished]] (you / finish) your homework yet?</li>
-<li>She [[hasn't eaten]] (not / eat) anything since breakfast.</li>
-<li>We [[have been]] (be) friends since childhood.</li>
-<li>He [[has just left]] (just / leave) the office — you can still catch him.</li>
-<li>I [[have never seen]] (never / see) such a beautiful sunset before.</li>
-<li>[[Have they already moved]] (they / already / move) into the new house?</li>
-<li>She [[has worked]] (work) here for three months.</li>
-<li>This is the best film I [[have ever watched]] (ever / watch).</li>
+<li>We [[were having]] (have) dinner when the phone [[rang]] (ring).</li>
+<li>She [[works]] (work) in a bank, but this month she [[is working]] (work) from home.</li>
+<li>I [[haven't finished]] (not / finish) my homework yet.</li>
+<li>My brother [[goes]] (go) to the gym every Monday.</li>
+<li>While I [[was waiting]] (wait) for the bus, I [[saw]] (see) an old friend.</li>
+<li>We [[have known]] (know) each other for ten years.</li>
+<li>Look! It [[is raining]] (rain).</li>
+<li>He [[didn't go]] (not / go) to work yesterday because he [[was]] (be) ill.</li>
+<li>I [[have already done]] (already / do) the shopping.</li>
 </ol>
 ` },
-  { id: 209, level: "A2", category: "practice", topic: "past_continuous", title: "Past Continuous: упражнения (25)", content: `
+  { id: 214, level: "A2", category: "practice", topic: "final_test", title: "14. Итоговый тест по разделу A2", content: `
+<p>Проверьте свои знания по всем темам раздела A2.</p>
+<h3>Блок 1. Времена</h3>
 <ol>
-<li>At 5 o'clock yesterday, I [[was watching]] (watch) TV.</li>
-<li>She [[was reading]] (read) a book all evening yesterday.</li>
-<li>They [[weren't sleeping]] (not / sleep) at midnight.</li>
-<li>[[Were you working]] (you / work) at 9 am yesterday?</li>
-<li>He [[was cooking]] (cook) dinner at 7 pm.</li>
-<li>We [[weren't listening]] (not / listen) to music then.</li>
-<li>[[Was it raining]] (it / rain) at that moment?</li>
-<li>I [[was doing]] (do) my homework all day yesterday.</li>
-<li>The children [[were playing]] (play) in the garden at noon.</li>
-<li>She [[wasn't working]] (not / work) at 6 pm yesterday.</li>
-<li>I [[was reading]] (read) a book when the phone [[rang]] (ring).</li>
-<li>While she [[was cooking]] (cook), he [[was cleaning]] (clean) the kitchen.</li>
-<li>What [[were you doing]] (you / do) when I called you yesterday?</li>
-<li>He [[was walking]] (walk) home when he [[saw]] (see) an old friend.</li>
-<li>They [[weren't paying]] (not / pay) attention when the teacher [[was explaining]] (explain) the rule.</li>
-<li>While I [[was waiting]] (wait) for the bus, it [[started]] (start) to rain.</li>
-<li>[[Was she driving]] (she / drive) when the accident [[happened]] (happen)?</li>
-<li>We [[were having]] (have) dinner when the lights [[went]] (go) out.</li>
-<li>He [[wasn't listening]] (not / listen) when she [[was telling]] (tell) him the news.</li>
-<li>I [[had just left]] (just / leave) the house when it [[started]] (start) to snow.</li>
-</ol>
-` },
-  { id: 210, level: "A2", category: "practice", topic: "future_will_going_to", title: "Future will / going to: упражнения (25)", content: `
-<ol>
+<li>He [[doesn't like]] (not / like) coffee.</li>
+<li>They [[are playing]] (play) football right now.</li>
+<li>I [[have visited]] (visit) Paris.</li>
+<li>She [[was reading]] (read) when the phone rang.</li>
+<li>We [[will go]] (go) to the beach if the weather is nice.</li>
 <li>I think it [[will rain]] (rain) tomorrow.</li>
 <li>Look at those clouds! It [[is going to rain]] (rain).</li>
-<li>The phone is ringing. — I [[will get]] (get) it!</li>
-<li>She [[is going to travel]] (travel) to Spain next month. She already bought tickets.</li>
-<li>I promise I [[will help]] (help) you tomorrow.</li>
-<li>[[Will you help]] (you / help) me carry this bag?</li>
-<li>He [[is going to study]] (study) medicine after school. It's his plan for years.</li>
-<li>I [[am not going to go]] (not / go) to the party, I've already decided.</li>
-<li>Maybe I [[will call]] (call) you later.</li>
-<li>We [[won't be]] (not / be) late, I promise.</li>
-<li>The shelf looks like it's about to fall! — I [[will fix]] (fix) it right now.</li>
-<li>I [[am going to meet]] (meet) my friend at 6 pm. We arranged it yesterday.</li>
-<li>[[Will you be]] (you / be) free this weekend?</li>
-<li>She's got her suitcase ready — she [[is going to leave]] (leave) soon.</li>
-<li>I don't know yet. Maybe I [[will stay]] (stay) home this weekend.</li>
-<li>We [[aren't going to go]] (not / go) out tonight — let's decide now: we [[will stay]] (stay) in.</li>
-<li>According to the forecast, it [[will be]] (be) sunny tomorrow.</li>
-<li>He looks exhausted — he [[is going to fall]] (fall) asleep any minute.</li>
-<li>I [[will probably see]] (probably / see) you next week.</li>
-<li>They [[are going to get]] (get) married in June — the invitations are already sent.</li>
+</ol>
+<h3>Блок 2. Вопросы и отрицания</h3>
+<ol start="8">
+<li>[[Have]] you ever [[been]] (be) to Italy?</li>
+<li>Could you tell me where [[the station is]] (the station is / is the station)?</li>
+<li>I haven't called her [[yet]].</li>
+<li>What are you looking [[for]]?</li>
+</ol>
+<h3>Блок 3. Существительные и количество</h3>
+<ol start="12">
+<li>There aren't [[enough]] chairs.</li>
+<li>We have [[little]] time left. (почти нет)</li>
+<li>You put [[too much]] sugar in my tea!</li>
+<li>I have [[a few]] friends here.</li>
+</ol>
+<h3>Блок 4. Модальные глаголы и местоимения</h3>
+<ol start="16">
+<li>You [[mustn't]] smoke here.</li>
+<li>You [[don't have to]] come early.</li>
+<li>You [[should]] see a doctor.</li>
+<li>I made this cake by [[myself]].</li>
+<li>[[Both]] of my parents speak English.</li>
+</ol>
+<h3>Блок 5. Сравнения и конструкции</h3>
+<ol start="21">
+<li>This book is [[better]] (good) than that one.</li>
+<li>She is the [[tallest]] (tall) student in our class.</li>
+<li>It's [[too]] cold to swim.</li>
+<li>I want [[to learn]] (learn) English.</li>
+<li>I enjoy [[reading]] (read) before bed.</li>
+</ol>
+<h3>Блок 6. Предлоги и связки</h3>
+<ol start="26">
+<li>I'm interested [[in]] art.</li>
+<li>We arrived [[in]] Paris late at night.</li>
+<li>I stayed at home [[because]] I was tired.</li>
+<li>I was tired, [[so]] I went to bed early.</li>
+<li>[[Although]] it was cold, we went for a walk.</li>
 </ol>
 ` },
-  { id: 211, level: "A2", category: "practice", topic: "first_conditional", title: "First Conditional: упражнения (25)", content: `
-<ol>
-<li>If it [[rains]] (rain) tomorrow, I [[will stay]] (stay) home.</li>
-<li>If you [[study]] (study) hard, you [[will pass]] (pass) the exam.</li>
-<li>She [[will be]] (be) angry if you [[are]] (be) late.</li>
-<li>If we [[hurry]] (hurry), we [[won't miss]] (not / miss) the train.</li>
-<li>If he [[doesn't call]] (not / call) me, I [[will call]] (call) him.</li>
-<li>You [[will feel]] (feel) better if you [[get]] (get) some rest.</li>
-<li>If they [[win]] (win), everyone [[will celebrate]] (celebrate).</li>
-<li>I [[will help]] (help) you if you [[need]] (need) it.</li>
-<li>If it [[is]] (be) sunny tomorrow, we [[will go]] (go) to the beach.</li>
-<li>[[Will you be]] (you / be) upset if I [[leave]] (leave) early?</li>
-<li>If she [[doesn't finish]] (not / finish) the report tonight, she [[will have to]] (have to) stay late tomorrow.</li>
-<li>We [[will miss]] (miss) the flight if we [[don't leave]] (not / leave) now.</li>
-<li>If you [[eat]] (eat) too much, you [[will feel]] (feel) sick.</li>
-<li>[[Will he be]] (he / be) surprised if we [[arrive]] (arrive) early?</li>
-<li>If the weather [[changes]] (change), the match [[will be]] (be) cancelled.</li>
-<li>I [[won't go]] (not / go) if it [[costs]] (cost) too much.</li>
-<li>If you [[need]] (need) anything, just [[ask]] (ask) me.</li>
-<li>They [[will be]] (be) disappointed if the plan [[doesn't work]] (not / work).</li>
-<li>If she [[sees]] (see) him, she [[will tell]] (tell) him the news.</li>
-<li>We [[won't have]] (not / have) enough time if the meeting [[starts]] (start) late.</li>
-</ol>
+
+  { id: 221, level: "A2", category: "vocabulary", topic: "people_home", title: "Люди, отношения, дом и повседневная жизнь", content: `
+<h3>Люди и характер</h3>
+<table>
+<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>friendly</b></td><td>дружелюбный</td><td>Our neighbours are friendly.</td></tr>
+<tr><td><b>polite</b></td><td>вежливый</td><td>Please be polite.</td></tr>
+<tr><td><b>honest</b></td><td>честный</td><td>He's an honest person.</td></tr>
+<tr><td><b>patient</b></td><td>терпеливый</td><td>You need to be patient.</td></tr>
+<tr><td><b>shy</b></td><td>застенчивый</td><td>I was shy at school.</td></tr>
+<tr><td><b>confident</b></td><td>уверенный в себе</td><td>She feels confident now.</td></tr>
+<tr><td><b>hard-working</b></td><td>трудолюбивый</td><td>He's very hard-working.</td></tr>
+<tr><td><b>reliable</b></td><td>надёжный</td><td>She's a reliable friend.</td></tr>
+<tr><td><b>sociable</b></td><td>общительный</td><td>My cousin is sociable.</td></tr>
+<tr><td><b>generous</b></td><td>щедрый</td><td>It was generous of you.</td></tr>
+<tr><td><b>colleague</b></td><td>коллега</td><td>My colleagues are helpful.</td></tr>
+<tr><td><b>neighbour</b></td><td>сосед</td><td>Our neighbour is kind.</td></tr>
+<tr><td><b>relationship</b></td><td>отношения</td><td>They have a good relationship.</td></tr>
+<tr><td><b>argue</b></td><td>спорить, ссориться</td><td>They argue about money.</td></tr>
+<tr><td><b>invite</b></td><td>приглашать</td><td>I invited her to dinner.</td></tr>
+</table>
+<h3>Дом и быт</h3>
+<table>
+<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>flat/apartment</b></td><td>квартира</td><td>They rent a small flat.</td></tr>
+<tr><td><b>landlord</b></td><td>арендодатель</td><td>I called the landlord.</td></tr>
+<tr><td><b>rent</b></td><td>арендовать; аренда</td><td>We rent a house.</td></tr>
+<tr><td><b>bill</b></td><td>счёт к оплате</td><td>The electricity bill is high.</td></tr>
+<tr><td><b>shelf</b></td><td>полка</td><td>Put it on the shelf.</td></tr>
+<tr><td><b>cupboard</b></td><td>шкафчик</td><td>The cups are in the cupboard.</td></tr>
+<tr><td><b>drawer</b></td><td>выдвижной ящик</td><td>My keys are in the drawer.</td></tr>
+<tr><td><b>sink</b></td><td>раковина</td><td>The plates are in the sink.</td></tr>
+<tr><td><b>tidy</b></td><td>прибранный; убирать</td><td>Keep your room tidy.</td></tr>
+<tr><td><b>messy</b></td><td>неубранный</td><td>My desk is messy.</td></tr>
+<tr><td><b>repair</b></td><td>ремонтировать</td><td>They need to repair the door.</td></tr>
+<tr><td><b>do the laundry</b></td><td>стирать вещи</td><td>I do the laundry on Sundays.</td></tr>
+<tr><td><b>make the bed</b></td><td>заправлять кровать</td><td>I make the bed every morning.</td></tr>
+<tr><td><b>take out the rubbish</b></td><td>выносить мусор</td><td>Take out the rubbish, please.</td></tr>
+<tr><td><b>get ready</b></td><td>собираться</td><td>I get ready in ten minutes.</td></tr>
+<tr><td><b>be in a hurry</b></td><td>спешить</td><td>I'm in a hurry.</td></tr>
+<tr><td><b>stay up late</b></td><td>поздно ложиться</td><td>I stayed up late last night.</td></tr>
+<tr><td><b>run out of</b></td><td>остаться без запаса</td><td>We've run out of coffee.</td></tr>
+</table>
+<h3>Полезные сочетания</h3>
+<ul>
+<li>make friends — заводить друзей</li>
+<li>keep in touch — поддерживать связь</li>
+<li>get on well with — ладить с</li>
+<li>spend time with someone — проводить время с кем-то</li>
+<li>do someone a favour — оказать услугу</li>
+<li>make a mess — устроить беспорядок</li>
+<li>save time — экономить время</li>
+<li>waste time — тратить время впустую</li>
+</ul>
+` },
+  { id: 222, level: "A2", category: "vocabulary", topic: "food_work_study", title: "Еда, покупки, работа и учёба", content: `
+<h3>Еда и приготовление</h3>
+<table>
+<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>ingredient</b></td><td>ингредиент</td><td>What ingredients do we need?</td></tr>
+<tr><td><b>recipe</b></td><td>рецепт</td><td>This recipe is easy.</td></tr>
+<tr><td><b>meal</b></td><td>приём пищи</td><td>Lunch is my biggest meal.</td></tr>
+<tr><td><b>snack</b></td><td>перекус</td><td>I have a snack at four.</td></tr>
+<tr><td><b>dish</b></td><td>блюдо</td><td>It's a local dish.</td></tr>
+<tr><td><b>spicy</b></td><td>острый</td><td>The curry is too spicy.</td></tr>
+<tr><td><b>sour</b></td><td>кислый</td><td>These lemons are sour.</td></tr>
+<tr><td><b>fresh</b></td><td>свежий</td><td>Do you have fresh bread?</td></tr>
+<tr><td><b>frozen</b></td><td>замороженный</td><td>We bought frozen vegetables.</td></tr>
+<tr><td><b>boil</b></td><td>варить</td><td>Boil the potatoes.</td></tr>
+<tr><td><b>fry</b></td><td>жарить</td><td>Fry the onions.</td></tr>
+<tr><td><b>bake</b></td><td>печь, запекать</td><td>I baked a cake.</td></tr>
+<tr><td><b>order</b></td><td>заказывать</td><td>I'd like to order a salad.</td></tr>
+</table>
+<h3>Покупки и услуги</h3>
+<table>
+<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>discount</b></td><td>скидка</td><td>Is there a discount?</td></tr>
+<tr><td><b>receipt</b></td><td>чек</td><td>Keep the receipt.</td></tr>
+<tr><td><b>cash</b></td><td>наличные</td><td>Can I pay in cash?</td></tr>
+<tr><td><b>change</b></td><td>сдача</td><td>Here's your change.</td></tr>
+<tr><td><b>afford</b></td><td>позволить себе по деньгам</td><td>I can't afford a new phone.</td></tr>
+<tr><td><b>borrow</b></td><td>брать взаймы</td><td>Can I borrow your pen?</td></tr>
+<tr><td><b>lend</b></td><td>давать взаймы</td><td>Could you lend me ten euros?</td></tr>
+<tr><td><b>refund</b></td><td>возврат денег</td><td>Can I get a refund?</td></tr>
+<tr><td><b>exchange</b></td><td>обменивать</td><td>Can I exchange this shirt?</td></tr>
+<tr><td><b>size</b></td><td>размер</td><td>Do you have a larger size?</td></tr>
+<tr><td><b>fit</b></td><td>подходить по размеру</td><td>These shoes don't fit me.</td></tr>
+<tr><td><b>customer</b></td><td>покупатель, клиент</td><td>The customer asked for help.</td></tr>
+<tr><td><b>complain</b></td><td>жаловаться</td><td>I want to complain about the service.</td></tr>
+<tr><td><b>delivery</b></td><td>доставка</td><td>The delivery arrived late.</td></tr>
+<tr><td><b>queue</b></td><td>очередь</td><td>We waited in a queue.</td></tr>
+</table>
+<h3>Работа</h3>
+<table>
+<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>career</b></td><td>карьера</td><td>She wants a career in design.</td></tr>
+<tr><td><b>full-time</b></td><td>полный рабочий день</td><td>He works full-time.</td></tr>
+<tr><td><b>part-time</b></td><td>неполный рабочий день</td><td>I have a part-time job.</td></tr>
+<tr><td><b>shift</b></td><td>смена</td><td>I work the evening shift.</td></tr>
+<tr><td><b>salary</b></td><td>зарплата</td><td>The salary is good.</td></tr>
+<tr><td><b>earn</b></td><td>зарабатывать</td><td>She earns enough money.</td></tr>
+<tr><td><b>meeting</b></td><td>совещание, встреча</td><td>We have a meeting at ten.</td></tr>
+<tr><td><b>task</b></td><td>задача</td><td>I finished the task.</td></tr>
+<tr><td><b>deadline</b></td><td>крайний срок</td><td>The deadline is Friday.</td></tr>
+<tr><td><b>apply for a job</b></td><td>подавать заявку на работу</td><td>I'm applying for a job.</td></tr>
+<tr><td><b>experience</b></td><td>опыт</td><td>Do you have any experience?</td></tr>
+<tr><td><b>unemployed</b></td><td>безработный</td><td>He was unemployed for six months.</td></tr>
+</table>
+<h3>Учёба</h3>
+<table>
+<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>subject</b></td><td>учебный предмет</td><td>My favourite subject is history.</td></tr>
+<tr><td><b>timetable</b></td><td>расписание</td><td>Check the timetable.</td></tr>
+<tr><td><b>pass an exam</b></td><td>сдать экзамен</td><td>She passed the exam.</td></tr>
+<tr><td><b>fail an exam</b></td><td>провалить экзамен</td><td>He failed his driving test.</td></tr>
+<tr><td><b>revise for a test</b></td><td>повторять к тесту</td><td>I need to revise for the test.</td></tr>
+<tr><td><b>take notes</b></td><td>делать записи</td><td>I take notes in class.</td></tr>
+<tr><td><b>hand in homework</b></td><td>сдавать домашнюю работу</td><td>Hand in your homework tomorrow.</td></tr>
+<tr><td><b>improve</b></td><td>улучшать</td><td>I want to improve my English.</td></tr>
+<tr><td><b>skill</b></td><td>навык</td><td>Listening is an important skill.</td></tr>
+<tr><td><b>make progress</b></td><td>делать успехи</td><td>You're making progress.</td></tr>
+</table>
+<h3>Фразы</h3>
+<ul>
+<li>Could I have ...? — Можно мне…?</li>
+<li>I'd like to return this. — Я хотел(а) бы вернуть это.</li>
+<li>It doesn't fit. — Это не подходит по размеру.</li>
+<li>Could we have the bill, please? — Можно счёт?</li>
+<li>pay attention — обращать внимание</li>
+<li>make a mistake — совершить ошибку</li>
+<li>study for an exam — готовиться к экзамену</li>
+</ul>
+` },
+  { id: 223, level: "A2", category: "vocabulary", topic: "travel_health", title: "Путешествия, город, здоровье и погода", content: `
+<h3>Путешествия и транспорт</h3>
+<table>
+<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>journey</b></td><td>поездка, путь</td><td>The journey took three hours.</td></tr>
+<tr><td><b>destination</b></td><td>место назначения</td><td>What's your destination?</td></tr>
+<tr><td><b>luggage</b></td><td>багаж</td><td>My luggage is heavy.</td></tr>
+<tr><td><b>suitcase</b></td><td>чемодан</td><td>I packed my suitcase.</td></tr>
+<tr><td><b>booking</b></td><td>бронирование</td><td>I have a hotel booking.</td></tr>
+<tr><td><b>reception</b></td><td>стойка регистрации</td><td>Ask at reception.</td></tr>
+<tr><td><b>check in</b></td><td>зарегистрироваться</td><td>We checked in online.</td></tr>
+<tr><td><b>check out</b></td><td>выписаться из отеля</td><td>We check out at eleven.</td></tr>
+<tr><td><b>platform</b></td><td>платформа</td><td>The train leaves from platform four.</td></tr>
+<tr><td><b>return ticket</b></td><td>билет туда и обратно</td><td>A return ticket, please.</td></tr>
+<tr><td><b>delay</b></td><td>задержка</td><td>The train has a delay.</td></tr>
+<tr><td><b>cancel</b></td><td>отменять</td><td>They cancelled the flight.</td></tr>
+<tr><td><b>miss a bus</b></td><td>опоздать на автобус</td><td>I missed the last bus.</td></tr>
+<tr><td><b>catch a train</b></td><td>успеть на поезд</td><td>We ran to catch the train.</td></tr>
+<tr><td><b>traffic jam</b></td><td>пробка</td><td>We were stuck in a traffic jam.</td></tr>
+<tr><td><b>hire a car</b></td><td>арендовать машину</td><td>We hired a car at the airport.</td></tr>
+</table>
+<h3>Город и направления</h3>
+<ul>
+<li>town/city centre — центр города</li>
+<li>neighbourhood — район</li>
+<li>square — площадь</li>
+<li>crossing — переход</li>
+<li>pavement/sidewalk — тротуар</li>
+<li>corner — угол улицы</li>
+<li>roundabout — круговое движение</li>
+<li>entrance / exit — вход / выход</li>
+<li>car park/parking lot — парковка</li>
+<li>pharmacy/chemist's — аптека</li>
+<li>go straight on — идти прямо</li>
+<li>turn left/right — повернуть налево/направо</li>
+<li>go past — пройти мимо</li>
+<li>go across — пересечь</li>
+<li>at the end of the street — в конце улицы</li>
+<li>on your left/right — слева/справа</li>
+<li>opposite — напротив</li>
+<li>nearby — поблизости</li>
+</ul>
+<p>Фразы:</p>
+<ul>
+<li>Excuse me, how do I get to the station? — Как пройти к вокзалу?</li>
+<li>Is it far from here? — Это далеко отсюда?</li>
+<li>It's about five minutes on foot. — Это примерно пять минут пешком.</li>
+</ul>
+<h3>Здоровье и самочувствие</h3>
+<table>
+<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>feel unwell</b></td><td>плохо себя чувствовать</td><td>I feel unwell today.</td></tr>
+<tr><td><b>headache</b></td><td>головная боль</td><td>I've got a headache.</td></tr>
+<tr><td><b>stomach ache</b></td><td>боль в животе</td><td>He has a stomach ache.</td></tr>
+<tr><td><b>sore throat</b></td><td>боль в горле</td><td>I have a sore throat.</td></tr>
+<tr><td><b>cough</b></td><td>кашель; кашлять</td><td>She has a bad cough.</td></tr>
+<tr><td><b>fever/temperature</b></td><td>температура</td><td>He has a temperature.</td></tr>
+<tr><td><b>appointment</b></td><td>запись на приём</td><td>I have a doctor's appointment.</td></tr>
+<tr><td><b>medicine</b></td><td>лекарство</td><td>Take your medicine as directed.</td></tr>
+<tr><td><b>rest</b></td><td>отдыхать; отдых</td><td>You need some rest.</td></tr>
+<tr><td><b>recover</b></td><td>выздоравливать</td><td>It took a week to recover.</td></tr>
+<tr><td><b>worried</b></td><td>обеспокоенный</td><td>I'm worried about the test.</td></tr>
+<tr><td><b>nervous</b></td><td>нервничающий</td><td>I get nervous before interviews.</td></tr>
+<tr><td><b>excited</b></td><td>радостно взволнованный</td><td>I'm excited about the trip.</td></tr>
+<tr><td><b>disappointed</b></td><td>разочарованный</td><td>We were disappointed.</td></tr>
+<tr><td><b>proud</b></td><td>гордый</td><td>I'm proud of you.</td></tr>
+<tr><td><b>exhausted</b></td><td>совершенно уставший</td><td>I'm exhausted after work.</td></tr>
+</table>
+<h3>Одежда и погода</h3>
+<ul>
+<li>tight — тесный</li>
+<li>loose — свободный</li>
+<li>suit someone — идти кому-то (об одежде)</li>
+<li>cloudy — облачный</li>
+<li>foggy — туманный</li>
+<li>storm — буря, гроза</li>
+<li>thunder — гром</li>
+<li>lightning — молния</li>
+<li>shower — кратковременный дождь</li>
+<li>freezing — очень холодный</li>
+<li>boiling — очень жаркий</li>
+<li>mild — умеренный</li>
+<li>forecast — прогноз погоды</li>
+<li>coast — побережье</li>
+<li>forest — лес</li>
+<li>waterfall — водопад</li>
+<li>environment — окружающая среда</li>
+<li>recycle — перерабатывать</li>
+<li>pollution — загрязнение</li>
+</ul>
+` },
+  { id: 224, level: "A2", category: "vocabulary", topic: "free_time_tech", title: "Досуг, технологии, мнения и общение", content: `
+<h3>Свободное время и культура</h3>
+<table>
+<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>hobby</b></td><td>хобби</td><td>Photography is my hobby.</td></tr>
+<tr><td><b>join</b></td><td>присоединяться</td><td>Would you like to join us?</td></tr>
+<tr><td><b>take up</b></td><td>начать заниматься</td><td>I took up swimming last year.</td></tr>
+<tr><td><b>give up</b></td><td>бросить, отказаться</td><td>He gave up smoking.</td></tr>
+<tr><td><b>performance</b></td><td>выступление</td><td>The performance was excellent.</td></tr>
+<tr><td><b>exhibition</b></td><td>выставка</td><td>We visited an exhibition.</td></tr>
+<tr><td><b>audience</b></td><td>публика, зрители</td><td>The audience clapped.</td></tr>
+<tr><td><b>entrance fee</b></td><td>плата за вход</td><td>Is there an entrance fee?</td></tr>
+<tr><td><b>recommend</b></td><td>рекомендовать</td><td>Can you recommend a film?</td></tr>
+<tr><td><b>review</b></td><td>отзыв, рецензия</td><td>I read a review online.</td></tr>
+<tr><td><b>plot</b></td><td>сюжет</td><td>The plot was easy to follow.</td></tr>
+<tr><td><b>character</b></td><td>персонаж</td><td>My favourite character is the detective.</td></tr>
+<tr><td><b>ending</b></td><td>концовка</td><td>I didn't like the ending.</td></tr>
+<tr><td><b>documentary</b></td><td>документальный фильм</td><td>We watched a documentary.</td></tr>
+<tr><td><b>subtitles</b></td><td>субтитры</td><td>I watched it with subtitles.</td></tr>
+</table>
+<h3>Технологии и интернет</h3>
+<ul>
+<li>device — устройство</li>
+<li>screen — экран</li>
+<li>charger — зарядное устройство</li>
+<li>battery — аккумулятор</li>
+<li>download / upload — скачивать / загружать в интернет</li>
+<li>attachment — вложение</li>
+<li>password — пароль</li>
+<li>account — аккаунт</li>
+<li>website — сайт</li>
+<li>search for — искать</li>
+<li>save a file — сохранить файл</li>
+<li>delete — удалить</li>
+<li>connection — соединение, связь</li>
+<li>log in / log out — войти / выйти из аккаунта</li>
+<li>send an attachment — отправить вложение</li>
+</ul>
+<p>Примеры:</p>
+<ul>
+<li>My battery is low.</li>
+<li>The internet connection is slow.</li>
+<li>I deleted the message by mistake.</li>
+</ul>
+<h3>Мнения и реакции</h3>
+<ul>
+<li>In my opinion, ... — по моему мнению…</li>
+<li>I agree. / I don't agree. — Я согласен/не согласен.</li>
+<li>I'm not sure. — Я не уверен(а).</li>
+<li>It depends. — Это зависит.</li>
+<li>That sounds good. — Звучит хорошо.</li>
+<li>I see what you mean. — Понимаю, что ты имеешь в виду.</li>
+<li>I'd rather ... — Я бы предпочёл…</li>
+<li>I prefer A to B. — Я предпочитаю A варианту B.</li>
+<li>I'm keen on ... — Я увлекаюсь…</li>
+<li>I don't mind ... — Я не против…</li>
+<li>I can't stand ... — Терпеть не могу…</li>
+<li>What a pity! — Как жаль!</li>
+<li>Never mind. — Ничего страшного.</li>
+<li>I'm sorry to hear that. — Мне жаль это слышать.</li>
+<li>Congratulations! — Поздравляю!</li>
+<li>Good luck! — Удачи!</li>
+</ul>
+<h3>Вежливое общение</h3>
+<ul>
+<li>Could you help me, please? — Не могли бы вы мне помочь?</li>
+<li>Would you mind opening the window? — Не возражаете открыть окно?</li>
+<li>Would you like to ...? — Хотите…?</li>
+<li>Shall we ...? — Может, давай…?</li>
+<li>Why don't we ...? — Почему бы нам не…?</li>
+<li>How about + -ing? — Как насчёт…?</li>
+<li>Could you repeat that, please? — Не могли бы вы повторить?</li>
+<li>Could you speak more slowly? — Не могли бы вы говорить медленнее?</li>
+<li>What does this word mean? — Что означает это слово?</li>
+<li>How do you spell that? — Как это пишется по буквам?</li>
+</ul>
+` },
+  { id: 225, level: "A2", category: "vocabulary", topic: "verbs_linkers", title: "Частые глаголы, сочетания, наречия и связки", content: `
+<h3>Частые глаголы</h3>
+<table>
+<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>decide</b></td><td>решать</td><td>We decided to stay.</td></tr>
+<tr><td><b>agree</b></td><td>соглашаться</td><td>I agree with you.</td></tr>
+<tr><td><b>suggest</b></td><td>предлагать</td><td>She suggested going by train.</td></tr>
+<tr><td><b>explain</b></td><td>объяснять</td><td>Can you explain the rule?</td></tr>
+<tr><td><b>expect</b></td><td>ожидать</td><td>I expect he'll be late.</td></tr>
+<tr><td><b>seem</b></td><td>казаться</td><td>You seem tired.</td></tr>
+<tr><td><b>happen</b></td><td>происходить</td><td>What happened yesterday?</td></tr>
+<tr><td><b>manage</b></td><td>суметь, справиться</td><td>I managed to finish on time.</td></tr>
+<tr><td><b>avoid</b></td><td>избегать</td><td>Try to avoid mistakes.</td></tr>
+<tr><td><b>refuse</b></td><td>отказываться</td><td>He refused to answer.</td></tr>
+<tr><td><b>offer</b></td><td>предлагать</td><td>She offered to help.</td></tr>
+<tr><td><b>promise</b></td><td>обещать</td><td>I promise to call.</td></tr>
+<tr><td><b>prefer</b></td><td>предпочитать</td><td>I prefer walking.</td></tr>
+<tr><td><b>miss</b></td><td>скучать; пропускать</td><td>I missed the bus.</td></tr>
+<tr><td><b>spend</b></td><td>тратить; проводить время</td><td>I spent two hours studying.</td></tr>
+</table>
+<h3>Фразовые глаголы</h3>
+<table>
+<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>get on with</b></td><td>ладить с</td><td>I get on with my neighbours.</td></tr>
+<tr><td><b>look after</b></td><td>присматривать за</td><td>Can you look after the dog?</td></tr>
+<tr><td><b>look for</b></td><td>искать</td><td>I'm looking for my keys.</td></tr>
+<tr><td><b>find out</b></td><td>выяснять</td><td>Let's find out the answer.</td></tr>
+<tr><td><b>put off</b></td><td>откладывать</td><td>Don't put off your homework.</td></tr>
+<tr><td><b>carry on</b></td><td>продолжать</td><td>Please carry on reading.</td></tr>
+<tr><td><b>pick up</b></td><td>поднять; забрать</td><td>I'll pick you up at seven.</td></tr>
+<tr><td><b>set off</b></td><td>отправляться в путь</td><td>We set off early.</td></tr>
+<tr><td><b>get back</b></td><td>возвращаться</td><td>What time did you get back?</td></tr>
+<tr><td><b>try on</b></td><td>примерить</td><td>Try on these shoes.</td></tr>
+<tr><td><b>work out</b></td><td>тренироваться; получаться</td><td>I work out twice a week.</td></tr>
+<tr><td><b>turn on/off</b></td><td>включить/выключить</td><td>Turn off the TV.</td></tr>
+<tr><td><b>take off</b></td><td>снять; взлететь</td><td>Take off your shoes.</td></tr>
+<tr><td><b>run out of</b></td><td>исчерпать запас</td><td>We've run out of bread.</td></tr>
+</table>
+<h3>Словосочетания — учи целиком</h3>
+<ul>
+<li>make a decision — принять решение</li>
+<li>make a mistake — совершить ошибку</li>
+<li>make friends — подружиться</li>
+<li>do your best — сделать всё возможное</li>
+<li>have a good time — хорошо провести время</li>
+<li>have a rest — отдохнуть</li>
+<li>take a break — сделать перерыв</li>
+<li>take a photo — сделать фото</li>
+<li>catch a bus/train — успеть на автобус/поезд</li>
+<li>miss a bus/train — опоздать на автобус/поезд</li>
+<li>keep in touch — поддерживать связь</li>
+<li>save money — экономить/копить деньги</li>
+<li>spend money on — тратить деньги на</li>
+<li>pay attention to — обращать внимание на</li>
+<li>tell the truth — говорить правду</li>
+<li>give someone a hand — помочь кому-то</li>
+<li>book a room — забронировать номер</li>
+<li>pass/fail an exam — сдать/провалить экзамен</li>
+</ul>
+<h3>Наречия и связки</h3>
+<ul>
+<li>recently — недавно</li>
+<li>already — уже</li>
+<li>yet — уже/ещё (часто вопрос/отрицание)</li>
+<li>just — только что</li>
+<li>still — всё ещё</li>
+<li>soon — скоро</li>
+<li>during — во время + существительное</li>
+<li>while — пока/в то время как + предложение</li>
+<li>until — до тех пор пока</li>
+<li>as soon as — как только</li>
+<li>at first — сначала</li>
+<li>in the end — в итоге</li>
+<li>finally — наконец</li>
+<li>almost — почти</li>
+<li>enough — достаточно</li>
+<li>quite — довольно</li>
+<li>hardly ever — почти никогда</li>
+<li>although — хотя</li>
+<li>for example — например</li>
+<li>first of all — прежде всего</li>
+</ul>
 ` },
 
   { id: 301, level: "B1", category: "theory", topic: "intro", title: "Раздел B1 — в разработке", content: `<p>Здесь будут материалы уровня B1: Conditionals 2/3, Passive Voice, Reported Speech, Relative Clauses.</p>` },
@@ -2310,390 +2718,5 @@ const MATERIALS = [
 <p>Ответ: [[1]] (Клетка не занята — условие «unless» не сработало)</p>
 <p><b>Вопрос 3.</b> <code>Print YES if s is a palindrome, and NO otherwise.</code> s = "ab". Что вывести? (введи слово)</p>
 <p>Ответ: [[no]] («ab» не палиндром)</p>
-` }
-  ,
-
-  { id: 221, level: "A2", category: "vocabulary", topic: "people_home", title: "Люди, отношения, дом и повседневная жизнь", content: `
-<h3>Люди и характер</h3>
-<table>
-<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
-<tr><td><b>friendly</b></td><td>дружелюбный</td><td>Our neighbours are friendly.</td></tr>
-<tr><td><b>polite</b></td><td>вежливый</td><td>Please be polite.</td></tr>
-<tr><td><b>honest</b></td><td>честный</td><td>He's an honest person.</td></tr>
-<tr><td><b>patient</b></td><td>терпеливый</td><td>You need to be patient.</td></tr>
-<tr><td><b>shy</b></td><td>застенчивый</td><td>I was shy at school.</td></tr>
-<tr><td><b>confident</b></td><td>уверенный в себе</td><td>She feels confident now.</td></tr>
-<tr><td><b>hard-working</b></td><td>трудолюбивый</td><td>He's very hard-working.</td></tr>
-<tr><td><b>reliable</b></td><td>надёжный</td><td>She's a reliable friend.</td></tr>
-<tr><td><b>sociable</b></td><td>общительный</td><td>My cousin is sociable.</td></tr>
-<tr><td><b>generous</b></td><td>щедрый</td><td>It was generous of you.</td></tr>
-<tr><td><b>colleague</b></td><td>коллега</td><td>My colleagues are helpful.</td></tr>
-<tr><td><b>neighbour</b></td><td>сосед</td><td>Our neighbour is kind.</td></tr>
-<tr><td><b>relationship</b></td><td>отношения</td><td>They have a good relationship.</td></tr>
-<tr><td><b>argue</b></td><td>спорить, ссориться</td><td>They argue about money.</td></tr>
-<tr><td><b>invite</b></td><td>приглашать</td><td>I invited her to dinner.</td></tr>
-</table>
-<h3>Дом и быт</h3>
-<table>
-<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
-<tr><td><b>flat/apartment</b></td><td>квартира</td><td>They rent a small flat.</td></tr>
-<tr><td><b>landlord</b></td><td>арендодатель</td><td>I called the landlord.</td></tr>
-<tr><td><b>rent</b></td><td>арендовать; аренда</td><td>We rent a house.</td></tr>
-<tr><td><b>bill</b></td><td>счёт к оплате</td><td>The electricity bill is high.</td></tr>
-<tr><td><b>shelf</b></td><td>полка</td><td>Put it on the shelf.</td></tr>
-<tr><td><b>cupboard</b></td><td>шкафчик</td><td>The cups are in the cupboard.</td></tr>
-<tr><td><b>drawer</b></td><td>выдвижной ящик</td><td>My keys are in the drawer.</td></tr>
-<tr><td><b>sink</b></td><td>раковина</td><td>The plates are in the sink.</td></tr>
-<tr><td><b>tidy</b></td><td>прибранный; убирать</td><td>Keep your room tidy.</td></tr>
-<tr><td><b>messy</b></td><td>неубранный</td><td>My desk is messy.</td></tr>
-<tr><td><b>repair</b></td><td>ремонтировать</td><td>They need to repair the door.</td></tr>
-<tr><td><b>do the laundry</b></td><td>стирать вещи</td><td>I do the laundry on Sundays.</td></tr>
-<tr><td><b>make the bed</b></td><td>заправлять кровать</td><td>I make the bed every morning.</td></tr>
-<tr><td><b>take out the rubbish</b></td><td>выносить мусор</td><td>Take out the rubbish, please.</td></tr>
-<tr><td><b>get ready</b></td><td>собираться</td><td>I get ready in ten minutes.</td></tr>
-<tr><td><b>be in a hurry</b></td><td>спешить</td><td>I'm in a hurry.</td></tr>
-<tr><td><b>stay up late</b></td><td>поздно ложиться</td><td>I stayed up late last night.</td></tr>
-<tr><td><b>run out of</b></td><td>остаться без запаса</td><td>We've run out of coffee.</td></tr>
-</table>
-<h3>Полезные сочетания</h3>
-<ul>
-<li>make friends — заводить друзей</li>
-<li>keep in touch — поддерживать связь</li>
-<li>get on well with — ладить с</li>
-<li>spend time with someone — проводить время с кем-то</li>
-<li>do someone a favour — оказать услугу</li>
-<li>make a mess — устроить беспорядок</li>
-<li>save time — экономить время</li>
-<li>waste time — тратить время впустую</li>
-</ul>
-` },
-  { id: 222, level: "A2", category: "vocabulary", topic: "food_work_study", title: "Еда, покупки, работа и учёба", content: `
-<h3>Еда и приготовление</h3>
-<table>
-<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
-<tr><td><b>ingredient</b></td><td>ингредиент</td><td>What ingredients do we need?</td></tr>
-<tr><td><b>recipe</b></td><td>рецепт</td><td>This recipe is easy.</td></tr>
-<tr><td><b>meal</b></td><td>приём пищи</td><td>Lunch is my biggest meal.</td></tr>
-<tr><td><b>snack</b></td><td>перекус</td><td>I have a snack at four.</td></tr>
-<tr><td><b>dish</b></td><td>блюдо</td><td>It's a local dish.</td></tr>
-<tr><td><b>spicy</b></td><td>острый</td><td>The curry is too spicy.</td></tr>
-<tr><td><b>sour</b></td><td>кислый</td><td>These lemons are sour.</td></tr>
-<tr><td><b>fresh</b></td><td>свежий</td><td>Do you have fresh bread?</td></tr>
-<tr><td><b>frozen</b></td><td>замороженный</td><td>We bought frozen vegetables.</td></tr>
-<tr><td><b>boil</b></td><td>варить</td><td>Boil the potatoes.</td></tr>
-<tr><td><b>fry</b></td><td>жарить</td><td>Fry the onions.</td></tr>
-<tr><td><b>bake</b></td><td>печь, запекать</td><td>I baked a cake.</td></tr>
-<tr><td><b>order</b></td><td>заказывать</td><td>I'd like to order a salad.</td></tr>
-</table>
-<h3>Покупки и услуги</h3>
-<table>
-<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
-<tr><td><b>discount</b></td><td>скидка</td><td>Is there a discount?</td></tr>
-<tr><td><b>receipt</b></td><td>чек</td><td>Keep the receipt.</td></tr>
-<tr><td><b>cash</b></td><td>наличные</td><td>Can I pay in cash?</td></tr>
-<tr><td><b>change</b></td><td>сдача</td><td>Here's your change.</td></tr>
-<tr><td><b>afford</b></td><td>позволить себе по деньгам</td><td>I can't afford a new phone.</td></tr>
-<tr><td><b>borrow</b></td><td>брать взаймы</td><td>Can I borrow your pen?</td></tr>
-<tr><td><b>lend</b></td><td>давать взаймы</td><td>Could you lend me ten euros?</td></tr>
-<tr><td><b>refund</b></td><td>возврат денег</td><td>Can I get a refund?</td></tr>
-<tr><td><b>exchange</b></td><td>обменивать</td><td>Can I exchange this shirt?</td></tr>
-<tr><td><b>size</b></td><td>размер</td><td>Do you have a larger size?</td></tr>
-<tr><td><b>fit</b></td><td>подходить по размеру</td><td>These shoes don't fit me.</td></tr>
-<tr><td><b>customer</b></td><td>покупатель, клиент</td><td>The customer asked for help.</td></tr>
-<tr><td><b>complain</b></td><td>жаловаться</td><td>I want to complain about the service.</td></tr>
-<tr><td><b>delivery</b></td><td>доставка</td><td>The delivery arrived late.</td></tr>
-<tr><td><b>queue</b></td><td>очередь</td><td>We waited in a queue.</td></tr>
-</table>
-<h3>Работа</h3>
-<table>
-<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
-<tr><td><b>career</b></td><td>карьера</td><td>She wants a career in design.</td></tr>
-<tr><td><b>full-time</b></td><td>полный рабочий день</td><td>He works full-time.</td></tr>
-<tr><td><b>part-time</b></td><td>неполный рабочий день</td><td>I have a part-time job.</td></tr>
-<tr><td><b>shift</b></td><td>смена</td><td>I work the evening shift.</td></tr>
-<tr><td><b>salary</b></td><td>зарплата</td><td>The salary is good.</td></tr>
-<tr><td><b>earn</b></td><td>зарабатывать</td><td>She earns enough money.</td></tr>
-<tr><td><b>meeting</b></td><td>совещание, встреча</td><td>We have a meeting at ten.</td></tr>
-<tr><td><b>task</b></td><td>задача</td><td>I finished the task.</td></tr>
-<tr><td><b>deadline</b></td><td>крайний срок</td><td>The deadline is Friday.</td></tr>
-<tr><td><b>apply for a job</b></td><td>подавать заявку на работу</td><td>I'm applying for a job.</td></tr>
-<tr><td><b>experience</b></td><td>опыт</td><td>Do you have any experience?</td></tr>
-<tr><td><b>unemployed</b></td><td>безработный</td><td>He was unemployed for six months.</td></tr>
-</table>
-<h3>Учёба</h3>
-<table>
-<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
-<tr><td><b>subject</b></td><td>учебный предмет</td><td>My favourite subject is history.</td></tr>
-<tr><td><b>timetable</b></td><td>расписание</td><td>Check the timetable.</td></tr>
-<tr><td><b>pass an exam</b></td><td>сдать экзамен</td><td>She passed the exam.</td></tr>
-<tr><td><b>fail an exam</b></td><td>провалить экзамен</td><td>He failed his driving test.</td></tr>
-<tr><td><b>revise for a test</b></td><td>повторять к тесту</td><td>I need to revise for the test.</td></tr>
-<tr><td><b>take notes</b></td><td>делать записи</td><td>I take notes in class.</td></tr>
-<tr><td><b>hand in homework</b></td><td>сдавать домашнюю работу</td><td>Hand in your homework tomorrow.</td></tr>
-<tr><td><b>improve</b></td><td>улучшать</td><td>I want to improve my English.</td></tr>
-<tr><td><b>skill</b></td><td>навык</td><td>Listening is an important skill.</td></tr>
-<tr><td><b>make progress</b></td><td>делать успехи</td><td>You're making progress.</td></tr>
-</table>
-<h3>Фразы</h3>
-<ul>
-<li>Could I have ...? — Можно мне…?</li>
-<li>I'd like to return this. — Я хотел(а) бы вернуть это.</li>
-<li>It doesn't fit. — Это не подходит по размеру.</li>
-<li>Could we have the bill, please? — Можно счёт?</li>
-<li>pay attention — обращать внимание</li>
-<li>make a mistake — совершить ошибку</li>
-<li>study for an exam — готовиться к экзамену</li>
-</ul>
-` },
-  { id: 223, level: "A2", category: "vocabulary", topic: "travel_health", title: "Путешествия, город, здоровье и погода", content: `
-<h3>Путешествия и транспорт</h3>
-<table>
-<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
-<tr><td><b>journey</b></td><td>поездка, путь</td><td>The journey took three hours.</td></tr>
-<tr><td><b>destination</b></td><td>место назначения</td><td>What's your destination?</td></tr>
-<tr><td><b>luggage</b></td><td>багаж</td><td>My luggage is heavy.</td></tr>
-<tr><td><b>suitcase</b></td><td>чемодан</td><td>I packed my suitcase.</td></tr>
-<tr><td><b>booking</b></td><td>бронирование</td><td>I have a hotel booking.</td></tr>
-<tr><td><b>reception</b></td><td>стойка регистрации</td><td>Ask at reception.</td></tr>
-<tr><td><b>check in</b></td><td>зарегистрироваться</td><td>We checked in online.</td></tr>
-<tr><td><b>check out</b></td><td>выписаться из отеля</td><td>We check out at eleven.</td></tr>
-<tr><td><b>platform</b></td><td>платформа</td><td>The train leaves from platform four.</td></tr>
-<tr><td><b>return ticket</b></td><td>билет туда и обратно</td><td>A return ticket, please.</td></tr>
-<tr><td><b>delay</b></td><td>задержка</td><td>The train has a delay.</td></tr>
-<tr><td><b>cancel</b></td><td>отменять</td><td>They cancelled the flight.</td></tr>
-<tr><td><b>miss a bus</b></td><td>опоздать на автобус</td><td>I missed the last bus.</td></tr>
-<tr><td><b>catch a train</b></td><td>успеть на поезд</td><td>We ran to catch the train.</td></tr>
-<tr><td><b>traffic jam</b></td><td>пробка</td><td>We were stuck in a traffic jam.</td></tr>
-<tr><td><b>hire a car</b></td><td>арендовать машину</td><td>We hired a car at the airport.</td></tr>
-</table>
-<h3>Город и направления</h3>
-<ul>
-<li>town/city centre — центр города</li>
-<li>neighbourhood — район</li>
-<li>square — площадь</li>
-<li>crossing — переход</li>
-<li>pavement/sidewalk — тротуар</li>
-<li>corner — угол улицы</li>
-<li>roundabout — круговое движение</li>
-<li>entrance / exit — вход / выход</li>
-<li>car park/parking lot — парковка</li>
-<li>pharmacy/chemist's — аптека</li>
-<li>go straight on — идти прямо</li>
-<li>turn left/right — повернуть налево/направо</li>
-<li>go past — пройти мимо</li>
-<li>go across — пересечь</li>
-<li>at the end of the street — в конце улицы</li>
-<li>on your left/right — слева/справа</li>
-<li>opposite — напротив</li>
-<li>nearby — поблизости</li>
-</ul>
-<p>Фразы:</p>
-<ul>
-<li>Excuse me, how do I get to the station? — Как пройти к вокзалу?</li>
-<li>Is it far from here? — Это далеко отсюда?</li>
-<li>It's about five minutes on foot. — Это примерно пять минут пешком.</li>
-</ul>
-<h3>Здоровье и самочувствие</h3>
-<table>
-<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
-<tr><td><b>feel unwell</b></td><td>плохо себя чувствовать</td><td>I feel unwell today.</td></tr>
-<tr><td><b>headache</b></td><td>головная боль</td><td>I've got a headache.</td></tr>
-<tr><td><b>stomach ache</b></td><td>боль в животе</td><td>He has a stomach ache.</td></tr>
-<tr><td><b>sore throat</b></td><td>боль в горле</td><td>I have a sore throat.</td></tr>
-<tr><td><b>cough</b></td><td>кашель; кашлять</td><td>She has a bad cough.</td></tr>
-<tr><td><b>fever/temperature</b></td><td>температура</td><td>He has a temperature.</td></tr>
-<tr><td><b>appointment</b></td><td>запись на приём</td><td>I have a doctor's appointment.</td></tr>
-<tr><td><b>medicine</b></td><td>лекарство</td><td>Take your medicine as directed.</td></tr>
-<tr><td><b>rest</b></td><td>отдыхать; отдых</td><td>You need some rest.</td></tr>
-<tr><td><b>recover</b></td><td>выздоравливать</td><td>It took a week to recover.</td></tr>
-<tr><td><b>worried</b></td><td>обеспокоенный</td><td>I'm worried about the test.</td></tr>
-<tr><td><b>nervous</b></td><td>нервничающий</td><td>I get nervous before interviews.</td></tr>
-<tr><td><b>excited</b></td><td>радостно взволнованный</td><td>I'm excited about the trip.</td></tr>
-<tr><td><b>disappointed</b></td><td>разочарованный</td><td>We were disappointed.</td></tr>
-<tr><td><b>proud</b></td><td>гордый</td><td>I'm proud of you.</td></tr>
-<tr><td><b>exhausted</b></td><td>совершенно уставший</td><td>I'm exhausted after work.</td></tr>
-</table>
-<h3>Одежда и погода</h3>
-<ul>
-<li>tight — тесный</li>
-<li>loose — свободный</li>
-<li>suit someone — идти кому-то (об одежде)</li>
-<li>cloudy — облачный</li>
-<li>foggy — туманный</li>
-<li>storm — буря, гроза</li>
-<li>thunder — гром</li>
-<li>lightning — молния</li>
-<li>shower — кратковременный дождь</li>
-<li>freezing — очень холодный</li>
-<li>boiling — очень жаркий</li>
-<li>mild — умеренный</li>
-<li>forecast — прогноз погоды</li>
-<li>coast — побережье</li>
-<li>forest — лес</li>
-<li>waterfall — водопад</li>
-<li>environment — окружающая среда</li>
-<li>recycle — перерабатывать</li>
-<li>pollution — загрязнение</li>
-</ul>
-` },
-  { id: 224, level: "A2", category: "vocabulary", topic: "free_time_tech", title: "Досуг, технологии, мнения и общение", content: `
-<h3>Свободное время и культура</h3>
-<table>
-<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
-<tr><td><b>hobby</b></td><td>хобби</td><td>Photography is my hobby.</td></tr>
-<tr><td><b>join</b></td><td>присоединяться</td><td>Would you like to join us?</td></tr>
-<tr><td><b>take up</b></td><td>начать заниматься</td><td>I took up swimming last year.</td></tr>
-<tr><td><b>give up</b></td><td>бросить, отказаться</td><td>He gave up smoking.</td></tr>
-<tr><td><b>performance</b></td><td>выступление</td><td>The performance was excellent.</td></tr>
-<tr><td><b>exhibition</b></td><td>выставка</td><td>We visited an exhibition.</td></tr>
-<tr><td><b>audience</b></td><td>публика, зрители</td><td>The audience clapped.</td></tr>
-<tr><td><b>entrance fee</b></td><td>плата за вход</td><td>Is there an entrance fee?</td></tr>
-<tr><td><b>recommend</b></td><td>рекомендовать</td><td>Can you recommend a film?</td></tr>
-<tr><td><b>review</b></td><td>отзыв, рецензия</td><td>I read a review online.</td></tr>
-<tr><td><b>plot</b></td><td>сюжет</td><td>The plot was easy to follow.</td></tr>
-<tr><td><b>character</b></td><td>персонаж</td><td>My favourite character is the detective.</td></tr>
-<tr><td><b>ending</b></td><td>концовка</td><td>I didn't like the ending.</td></tr>
-<tr><td><b>documentary</b></td><td>документальный фильм</td><td>We watched a documentary.</td></tr>
-<tr><td><b>subtitles</b></td><td>субтитры</td><td>I watched it with subtitles.</td></tr>
-</table>
-<h3>Технологии и интернет</h3>
-<ul>
-<li>device — устройство</li>
-<li>screen — экран</li>
-<li>charger — зарядное устройство</li>
-<li>battery — аккумулятор</li>
-<li>download / upload — скачивать / загружать в интернет</li>
-<li>attachment — вложение</li>
-<li>password — пароль</li>
-<li>account — аккаунт</li>
-<li>website — сайт</li>
-<li>search for — искать</li>
-<li>save a file — сохранить файл</li>
-<li>delete — удалить</li>
-<li>connection — соединение, связь</li>
-<li>log in / log out — войти / выйти из аккаунта</li>
-<li>send an attachment — отправить вложение</li>
-</ul>
-<p>Примеры:</p>
-<ul>
-<li>My battery is low.</li>
-<li>The internet connection is slow.</li>
-<li>I deleted the message by mistake.</li>
-</ul>
-<h3>Мнения и реакции</h3>
-<ul>
-<li>In my opinion, ... — по моему мнению…</li>
-<li>I agree. / I don't agree. — Я согласен/не согласен.</li>
-<li>I'm not sure. — Я не уверен(а).</li>
-<li>It depends. — Это зависит.</li>
-<li>That sounds good. — Звучит хорошо.</li>
-<li>I see what you mean. — Понимаю, что ты имеешь в виду.</li>
-<li>I'd rather ... — Я бы предпочёл…</li>
-<li>I prefer A to B. — Я предпочитаю A варианту B.</li>
-<li>I'm keen on ... — Я увлекаюсь…</li>
-<li>I don't mind ... — Я не против…</li>
-<li>I can't stand ... — Терпеть не могу…</li>
-<li>What a pity! — Как жаль!</li>
-<li>Never mind. — Ничего страшного.</li>
-<li>I'm sorry to hear that. — Мне жаль это слышать.</li>
-<li>Congratulations! — Поздравляю!</li>
-<li>Good luck! — Удачи!</li>
-</ul>
-<h3>Вежливое общение</h3>
-<ul>
-<li>Could you help me, please? — Не могли бы вы мне помочь?</li>
-<li>Would you mind opening the window? — Не возражаете открыть окно?</li>
-<li>Would you like to ...? — Хотите…?</li>
-<li>Shall we ...? — Может, давай…?</li>
-<li>Why don't we ...? — Почему бы нам не…?</li>
-<li>How about + -ing? — Как насчёт…?</li>
-<li>Could you repeat that, please? — Не могли бы вы повторить?</li>
-<li>Could you speak more slowly? — Не могли бы вы говорить медленнее?</li>
-<li>What does this word mean? — Что означает это слово?</li>
-<li>How do you spell that? — Как это пишется по буквам?</li>
-</ul>
-` },
-  { id: 225, level: "A2", category: "vocabulary", topic: "verbs_linkers", title: "Частые глаголы, сочетания, наречия и связки", content: `
-<h3>Частые глаголы</h3>
-<table>
-<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
-<tr><td><b>decide</b></td><td>решать</td><td>We decided to stay.</td></tr>
-<tr><td><b>agree</b></td><td>соглашаться</td><td>I agree with you.</td></tr>
-<tr><td><b>suggest</b></td><td>предлагать</td><td>She suggested going by train.</td></tr>
-<tr><td><b>explain</b></td><td>объяснять</td><td>Can you explain the rule?</td></tr>
-<tr><td><b>expect</b></td><td>ожидать</td><td>I expect he'll be late.</td></tr>
-<tr><td><b>seem</b></td><td>казаться</td><td>You seem tired.</td></tr>
-<tr><td><b>happen</b></td><td>происходить</td><td>What happened yesterday?</td></tr>
-<tr><td><b>manage</b></td><td>суметь, справиться</td><td>I managed to finish on time.</td></tr>
-<tr><td><b>avoid</b></td><td>избегать</td><td>Try to avoid mistakes.</td></tr>
-<tr><td><b>refuse</b></td><td>отказываться</td><td>He refused to answer.</td></tr>
-<tr><td><b>offer</b></td><td>предлагать</td><td>She offered to help.</td></tr>
-<tr><td><b>promise</b></td><td>обещать</td><td>I promise to call.</td></tr>
-<tr><td><b>prefer</b></td><td>предпочитать</td><td>I prefer walking.</td></tr>
-<tr><td><b>miss</b></td><td>скучать; пропускать</td><td>I missed the bus.</td></tr>
-<tr><td><b>spend</b></td><td>тратить; проводить время</td><td>I spent two hours studying.</td></tr>
-</table>
-<h3>Фразовые глаголы</h3>
-<table>
-<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
-<tr><td><b>get on with</b></td><td>ладить с</td><td>I get on with my neighbours.</td></tr>
-<tr><td><b>look after</b></td><td>присматривать за</td><td>Can you look after the dog?</td></tr>
-<tr><td><b>look for</b></td><td>искать</td><td>I'm looking for my keys.</td></tr>
-<tr><td><b>find out</b></td><td>выяснять</td><td>Let's find out the answer.</td></tr>
-<tr><td><b>put off</b></td><td>откладывать</td><td>Don't put off your homework.</td></tr>
-<tr><td><b>carry on</b></td><td>продолжать</td><td>Please carry on reading.</td></tr>
-<tr><td><b>pick up</b></td><td>поднять; забрать</td><td>I'll pick you up at seven.</td></tr>
-<tr><td><b>set off</b></td><td>отправляться в путь</td><td>We set off early.</td></tr>
-<tr><td><b>get back</b></td><td>возвращаться</td><td>What time did you get back?</td></tr>
-<tr><td><b>try on</b></td><td>примерить</td><td>Try on these shoes.</td></tr>
-<tr><td><b>work out</b></td><td>тренироваться; получаться</td><td>I work out twice a week.</td></tr>
-<tr><td><b>turn on/off</b></td><td>включить/выключить</td><td>Turn off the TV.</td></tr>
-<tr><td><b>take off</b></td><td>снять; взлететь</td><td>Take off your shoes.</td></tr>
-<tr><td><b>run out of</b></td><td>исчерпать запас</td><td>We've run out of bread.</td></tr>
-</table>
-<h3>Словосочетания — учи целиком</h3>
-<ul>
-<li>make a decision — принять решение</li>
-<li>make a mistake — совершить ошибку</li>
-<li>make friends — подружиться</li>
-<li>do your best — сделать всё возможное</li>
-<li>have a good time — хорошо провести время</li>
-<li>have a rest — отдохнуть</li>
-<li>take a break — сделать перерыв</li>
-<li>take a photo — сделать фото</li>
-<li>catch a bus/train — успеть на автобус/поезд</li>
-<li>miss a bus/train — опоздать на автобус/поезд</li>
-<li>keep in touch — поддерживать связь</li>
-<li>save money — экономить/копить деньги</li>
-<li>spend money on — тратить деньги на</li>
-<li>pay attention to — обращать внимание на</li>
-<li>tell the truth — говорить правду</li>
-<li>give someone a hand — помочь кому-то</li>
-<li>book a room — забронировать номер</li>
-<li>pass/fail an exam — сдать/провалить экзамен</li>
-</ul>
-<h3>Наречия и связки</h3>
-<ul>
-<li>recently — недавно</li>
-<li>already — уже</li>
-<li>yet — уже/ещё (часто вопрос/отрицание)</li>
-<li>just — только что</li>
-<li>still — всё ещё</li>
-<li>soon — скоро</li>
-<li>during — во время + существительное</li>
-<li>while — пока/в то время как + предложение</li>
-<li>until — до тех пор пока</li>
-<li>as soon as — как только</li>
-<li>at first — сначала</li>
-<li>in the end — в итоге</li>
-<li>finally — наконец</li>
-<li>almost — почти</li>
-<li>enough — достаточно</li>
-<li>quite — довольно</li>
-<li>hardly ever — почти никогда</li>
-<li>although — хотя</li>
-<li>for example — например</li>
-<li>first of all — прежде всего</li>
-</ul>
 ` }
 ];

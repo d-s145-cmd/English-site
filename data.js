@@ -1,5 +1,4 @@
 const MATERIALS = [
-    // ================== A1: ТЕОРИЯ ==================
   { id: 1, level: "A1", category: "theory", topic: "pronouns", title: "01. Личные местоимения и глагол to be", content: `
 <h3>Личные местоимения</h3>
 <table>

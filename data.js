@@ -1,4 +1,5 @@
 const MATERIALS = [
+    // ================== A1: ТЕОРИЯ ==================
   { id: 1, level: "A1", category: "theory", topic: "pronouns", title: "01. Личные местоимения и глагол to be", content: `
 <h3>Личные местоимения</h3>
 <table>
@@ -1203,7 +1204,123 @@ const MATERIALS = [
 <li>There is three books. → [[There are three books]]</li>
 <li>They was tired yesterday. → [[They were tired yesterday]]</li>
 </ol>
-` },  
+` },
+
+    ,
+  // ================== A1: ЛЕКСИКА ==================
+  { id: 31, level: "A1", category: "vocabulary", topic: "greetings", title: "Приветствия и базовые фразы", content: `
+<p>Самые нужные фразы для начала общения.</p>
+<table>
+<tr><th>Фраза</th><th>Перевод</th><th>Когда использовать</th></tr>
+<tr><td><b>Hello! / Hi!</b></td><td>Привет!</td><td>Неформальное приветствие.</td></tr>
+<tr><td><b>Good morning.</b></td><td>Доброе утро.</td><td>До полудня.</td></tr>
+<tr><td><b>How are you?</b></td><td>Как дела?</td><td>Стандартный вопрос.</td></tr>
+<tr><td><b>I'm fine, thanks.</b></td><td>Хорошо, спасибо.</td><td>Стандартный ответ.</td></tr>
+<tr><td><b>Excuse me.</b></td><td>Извините (чтобы обратиться).</td><td>Если нужно спросить незнакомца.</td></tr>
+<tr><td><b>I'm sorry.</b></td><td>Простите.</td><td>Если вы в чем-то виноваты.</td></tr>
+<tr><td><b>Where is the toilet?</b></td><td>Где туалет?</td><td>Жизненно важный вопрос.</td></tr>
+<tr><td><b>How much is it?</b></td><td>Сколько это стоит?</td><td>В магазине или кафе.</td></tr>
+<tr><td><b>I'd like a coffee, please.</b></td><td>Я бы хотел(а) кофе.</td><td>Вежливый заказ.</td></tr>
+<tr><td><b>Can you help me?</b></td><td>Вы можете мне помочь?</td><td>Просьба о помощи.</td></tr>
+<tr><td><b>I don't know.</b></td><td>Я не знаю.</td><td>Честный ответ.</td></tr>
+<tr><td><b>Could you repeat that, please?</b></td><td>Повторите, пожалуйста.</td><td>Если не расслышали.</td></tr>
+<tr><td><b>See you later.</b></td><td>До встречи.</td><td>Прощание.</td></tr>
+</table>
+` },
+  { id: 32, level: "A1", category: "vocabulary", topic: "family", title: "Семья (Family)", content: `
+<p>Основные слова для рассказа о своей семье.</p>
+<table>
+<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>mother</b></td><td>мама</td><td>My mother is a teacher.</td></tr>
+<tr><td><b>father</b></td><td>папа</td><td>His father works here.</td></tr>
+<tr><td><b>parents</b></td><td>родители</td><td>My parents live in London.</td></tr>
+<tr><td><b>sister</b></td><td>сестра</td><td>I have one sister.</td></tr>
+<tr><td><b>brother</b></td><td>брат</td><td>She has two brothers.</td></tr>
+<tr><td><b>husband</b></td><td>муж</td><td>Her husband is a doctor.</td></tr>
+<tr><td><b>wife</b></td><td>жена</td><td>My wife likes tea.</td></tr>
+<tr><td><b>child</b></td><td>ребёнок</td><td>They have one child.</td></tr>
+<tr><td><b>children</b></td><td>дети</td><td>How many children do you have?</td></tr>
+</table>
+` },
+  { id: 33, level: "A1", category: "vocabulary", topic: "house", title: "Дом (House)", content: `
+<p>Предметы и комнаты в доме или квартире.</p>
+<table>
+<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>house</b></td><td>дом</td><td>I live in a big house.</td></tr>
+<tr><td><b>flat / apartment</b></td><td>квартира</td><td>We have a small flat.</td></tr>
+<tr><td><b>room</b></td><td>комната</td><td>There are two rooms.</td></tr>
+<tr><td><b>kitchen</b></td><td>кухня</td><td>I cook in the kitchen.</td></tr>
+<tr><td><b>bathroom</b></td><td>ванная</td><td>The bathroom is upstairs.</td></tr>
+<tr><td><b>bedroom</b></td><td>спальня</td><td>I sleep in my bedroom.</td></tr>
+<tr><td><b>door</b></td><td>дверь</td><td>Close the door, please.</td></tr>
+<tr><td><b>window</b></td><td>окно</td><td>Open the window.</td></tr>
+<tr><td><b>table</b></td><td>стол</td><td>The keys are on the table.</td></tr>
+<tr><td><b>chair</b></td><td>стул</td><td>Sit on the chair.</td></tr>
+<tr><td><b>bed</b></td><td>кровать</td><td>The bed is next to the window.</td></tr>
+</table>
+` },
+  { id: 34, level: "A1", category: "vocabulary", topic: "food", title: "Еда и напитки (Food & Drinks)", content: `
+<p>Продукты и приёмы пищи.</p>
+<table>
+<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>water</b></td><td>вода</td><td>Can I have some water?</td></tr>
+<tr><td><b>tea</b></td><td>чай</td><td>I drink tea in the morning.</td></tr>
+<tr><td><b>coffee</b></td><td>кофе</td><td>She likes coffee.</td></tr>
+<tr><td><b>bread</b></td><td>хлеб</td><td>I buy bread every day.</td></tr>
+<tr><td><b>rice</b></td><td>рис</td><td>We eat rice for dinner.</td></tr>
+<tr><td><b>milk</b></td><td>молоко</td><td>Do you like milk?</td></tr>
+<tr><td><b>apple</b></td><td>яблоко</td><td>An apple a day is good.</td></tr>
+<tr><td><b>egg</b></td><td>яйцо</td><td>I had an egg for breakfast.</td></tr>
+<tr><td><b>chicken</b></td><td>курица</td><td>We had chicken and rice.</td></tr>
+<tr><td><b>fish</b></td><td>рыба</td><td>He doesn't eat fish.</td></tr>
+<tr><td><b>breakfast</b></td><td>завтрак</td><td>What did you have for breakfast?</td></tr>
+<tr><td><b>lunch</b></td><td>обед</td><td>Let's have lunch.</td></tr>
+<tr><td><b>dinner</b></td><td>ужин</td><td>Dinner is at 7 pm.</td></tr>
+</table>
+` },
+  { id: 35, level: "A1", category: "vocabulary", topic: "verbs", title: "Повседневные глаголы", content: `
+<p>Самые частые действия, которые мы совершаем каждый день.</p>
+<table>
+<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>be</b></td><td>быть</td><td>I am happy.</td></tr>
+<tr><td><b>have</b></td><td>иметь</td><td>I have a car.</td></tr>
+<tr><td><b>live</b></td><td>жить</td><td>We live in London.</td></tr>
+<tr><td><b>work</b></td><td>работать</td><td>She works in a bank.</td></tr>
+<tr><td><b>study</b></td><td>учиться</td><td>He studies English.</td></tr>
+<tr><td><b>like</b></td><td>нравиться</td><td>I like music.</td></tr>
+<tr><td><b>want</b></td><td>хотеть</td><td>I want a coffee.</td></tr>
+<tr><td><b>need</b></td><td>нуждаться</td><td>I need help.</td></tr>
+<tr><td><b>go</b></td><td>идти / ехать</td><td>They go to school.</td></tr>
+<tr><td><b>come</b></td><td>приходить</td><td>Come here, please.</td></tr>
+<tr><td><b>eat</b></td><td>есть</td><td>We eat at 7.</td></tr>
+<tr><td><b>drink</b></td><td>пить</td><td>I drink water.</td></tr>
+<tr><td><b>read</b></td><td>читать</td><td>He reads books.</td></tr>
+<tr><td><b>write</b></td><td>писать</td><td>I write emails.</td></tr>
+<tr><td><b>speak</b></td><td>говорить</td><td>Do you speak English?</td></tr>
+<tr><td><b>listen</b></td><td>слушать</td><td>Listen to me.</td></tr>
+<tr><td><b>watch</b></td><td>смотреть</td><td>We watch TV.</td></tr>
+<tr><td><b>play</b></td><td>играть</td><td>They play football.</td></tr>
+</table>
+` },
+  { id: 36, level: "A1", category: "vocabulary", topic: "adjectives", title: "Прилагательные (Adjectives)", content: `
+<p>Слова для описания людей, предметов и ситуаций.</p>
+<table>
+<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>good</b></td><td>хороший</td><td>It's a good book.</td></tr>
+<tr><td><b>bad</b></td><td>плохой</td><td>That's a bad idea.</td></tr>
+<tr><td><b>big</b></td><td>большой</td><td>They have a big house.</td></tr>
+<tr><td><b>small</b></td><td>маленький</td><td>It's a small flat.</td></tr>
+<tr><td><b>old</b></td><td>старый / пожилой</td><td>My grandfather is old.</td></tr>
+<tr><td><b>new</b></td><td>новый</td><td>I have a new phone.</td></tr>
+<tr><td><b>young</b></td><td>молодой</td><td>She is very young.</td></tr>
+<tr><td><b>happy</b></td><td>счастливый</td><td>We are happy today.</td></tr>
+<tr><td><b>tired</b></td><td>уставший</td><td>I'm tired after work.</td></tr>
+<tr><td><b>hungry</b></td><td>голодный</td><td>Are you hungry?</td></tr>
+<tr><td><b>thirsty</b></td><td>испытывающий жажду</td><td>I'm thirsty.</td></tr>
+<tr><td><b>easy</b></td><td>лёгкий</td><td>The test is easy.</td></tr>
+<tr><td><b>difficult</b></td><td>трудный</td><td>English is not difficult.</td></tr>
+</table>
+` },
   { id: 101, level: "A2", category: "theory", topic: "articles", title: "Артикли a/an/the", content: `
 <p>Артикль — слово перед существительным, которого в русском языке нет. Он отвечает на вопрос: предмет «какой-то один из многих» или «тот самый, конкретный»?</p>
 <h3>a / an / the / нулевой</h3>

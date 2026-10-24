@@ -429,7 +429,6 @@ const MATERIALS = [
 <li>to them — им/к ним</li>
 </ul>
 ` },
-
   { id: 11, level: "A1", category: "practice", topic: "p1", title: "01. Местоимения и to be", content: `
 <h3>A. Вставьте am/is/are</h3>
 <ol>
@@ -767,7 +766,6 @@ const MATERIALS = [
 <li>They was tired yesterday. → [[They were tired yesterday]]</li>
 </ol>
 ` },
-
   { id: 31, level: "A1", category: "vocabulary", topic: "greetings", title: "Приветствия и базовые фразы", content: `
 <p>Самые нужные фразы для начала общения.</p>
 <table>
@@ -1658,7 +1656,6 @@ const MATERIALS = [
 <li>❌ When I will arrive, I'll call. → ✅ When I arrive, I'll call.</li>
 </ul>
 ` },
-
   { id: 201, level: "A2", category: "practice", topic: "present_tenses", title: "01. Практика: Present tenses", content: `
 <p>Выбери правильную форму (Present Simple или Present Continuous).</p>
 <ol>
@@ -1876,8 +1873,7 @@ const MATERIALS = [
 <li>I enjoyed the trip [[although]] the hotel was noisy.</li>
 </ol>
 ` },
-  ,
-  { id: 213, level: "A2", category: "practice", topic: "mixed_tenses", title: "13. Смешанная практика: времена", content: `
+  { id: 300, level: "A2", category: "practice", topic: "mixed_tenses", title: "13. Смешанная практика: времена", content: `
 <p>Поставьте глагол в правильную форму (Present Simple, Present Continuous, Past Simple, Past Continuous или Present Perfect).</p>
 <ol>
 <li>She usually [[walks]] (walk) to school, but today she [[is taking]] (take) the bus.</li>
@@ -1897,7 +1893,7 @@ const MATERIALS = [
 <li>I [[have already done]] (already / do) the shopping.</li>
 </ol>
 ` },
-  { id: 214, level: "A2", category: "practice", topic: "final_test", title: "14. Итоговый тест по разделу A2", content: `
+  { id: 301, level: "A2", category: "practice", topic: "final_test", title: "14. Итоговый тест по разделу A2", content: `
 <p>Проверьте свои знания по всем темам раздела A2.</p>
 <h3>Блок 1. Времена</h3>
 <ol>
@@ -2333,9 +2329,9 @@ const MATERIALS = [
 </ul>
 ` },
 
-  { id: 301, level: "B1", category: "theory", topic: "intro", title: "Раздел B1 — в разработке", content: `<p>Здесь будут материалы уровня B1: Conditionals 2/3, Passive Voice, Reported Speech, Relative Clauses.</p>` },
-  { id: 401, level: "B2", category: "theory", topic: "intro", title: "Раздел B2 — в разработке", content: `<p>Здесь будут материалы уровня B2: Inversion, Mixed Conditionals, Advanced Modals, Phrasal Verbs.</p>` },
-  { id: 501, level: "C1", category: "theory", topic: "intro", title: "Раздел C1–C2 — в разработке", content: `<p>Здесь будут материалы уровней C1–C2: Cleft Sentences, Subjunctive, Nominalisation, Academic Writing, Inversion, Advanced Idioms.</p>` },
+  { id: 401, level: "B1", category: "theory", topic: "intro", title: "Раздел B1 — в разработке", content: `<p>Здесь будут материалы уровня B1: Conditionals 2/3, Passive Voice, Reported Speech, Relative Clauses.</p>` },
+  { id: 402, level: "B2", category: "theory", topic: "intro", title: "Раздел B2 — в разработке", content: `<p>Здесь будут материалы уровня B2: Inversion, Mixed Conditionals, Advanced Modals, Phrasal Verbs.</p>` },
+  { id: 403, level: "C1", category: "theory", topic: "intro", title: "Раздел C1–C2 — в разработке", content: `<p>Здесь будут материалы уровней C1–C2: Cleft Sentences, Subjunctive, Nominalisation, Academic Writing, Inversion, Advanced Idioms.</p>` },
 
   { id: 601, level: "ICPC", category: "theory", topic: "anatomy", title: "1.1 Анатомия условия задачи", content: `
 <p>Условие — это 1–2 страницы английского текста, и время на чтение идёт в штраф. Хорошая новость: почти все условия собраны из одних и тех же блоков и шаблонных фраз.</p>

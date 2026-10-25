@@ -49,7 +49,7 @@ function showHome() {
 }
 
 function showSection(category) {
-  highlightNav(category);
+  highlightNav(category); // Подсвечиваем кнопку в шапке
   const names = { theory: 'Теория', practice: 'Практика', vocabulary: 'Словарь' };
   const name = names[category] || 'Материалы';
   const levels = getLevels().filter(level => articlesOf(level, category).length > 0);
@@ -80,7 +80,7 @@ function showSection(category) {
 }
 
 function showLevel(level) {
-  highlightNav(''); // Снимаем подсветку со всех кнопок, так как мы на обзоре
+  highlightNav(''); // На обзоре уровня кнопки в шапке не подсвечиваются
   const theory = articlesOf(level, 'theory');
   const practice = articlesOf(level, 'practice');
   const vocab = articlesOf(level, 'vocabulary');
@@ -108,7 +108,7 @@ function showLevel(level) {
 }
 
 function showLevelTab(level, tab) {
-  highlightNav(tab); // Подсвечиваем нужную вкладку
+  highlightNav(tab); // Подсвечиваем нужный раздел
   const items = articlesOf(level, tab);
   let tabName = tab === 'theory' ? 'Теория' : tab === 'practice' ? 'Практика' : 'Лексика';
 
@@ -131,7 +131,7 @@ function showArticle(id) {
   const a = MATERIALS.find(m => m.id === id);
   if (!a) { app.innerHTML = '<p>Материал не найден.</p>'; return; }
   
-  highlightNav(a.category); // Оставляем подсветку на текущем разделе
+  highlightNav(a.category); // Оставляем подсветку
 
   let content = a.content;
   if (a.category === 'practice' && content.includes('[[')) {

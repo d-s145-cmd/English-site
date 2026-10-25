@@ -1656,6 +1656,7 @@ const MATERIALS = [
 <li>❌ When I will arrive, I'll call. → ✅ When I arrive, I'll call.</li>
 </ul>
 ` },
+
   { id: 201, level: "A2", category: "practice", topic: "present_tenses", title: "01. Практика: Present tenses", content: `
 <p>Выбери правильную форму (Present Simple или Present Continuous).</p>
 <ol>
@@ -2329,11 +2330,381 @@ const MATERIALS = [
 </ul>
 ` },
 
-  { id: 401, level: "B1", category: "theory", topic: "intro", title: "Раздел B1 — в разработке", content: `<p>Здесь будут материалы уровня B1: Conditionals 2/3, Passive Voice, Reported Speech, Relative Clauses.</p>` },
-  { id: 402, level: "B2", category: "theory", topic: "intro", title: "Раздел B2 — в разработке", content: `<p>Здесь будут материалы уровня B2: Inversion, Mixed Conditionals, Advanced Modals, Phrasal Verbs.</p>` },
-  { id: 403, level: "C1", category: "theory", topic: "intro", title: "Раздел C1–C2 — в разработке", content: `<p>Здесь будут материалы уровней C1–C2: Cleft Sentences, Subjunctive, Nominalisation, Academic Writing, Inversion, Advanced Idioms.</p>` },
+  { id: 401, level: "B1", category: "theory", topic: "past_perfect", title: "01. Past Perfect — более раннее прошлое", content: `
+<p><b>Past Perfect = had + V3.</b> Показывает, что одно действие произошло раньше другого момента или действия в прошлом.</p>
+<ul>
+<li>When we arrived, the film <b>had started</b>. — Когда мы приехали, фильм уже начался.</li>
+<li>She was nervous because she <b>had never flown</b> before. — Она нервничала, потому что раньше никогда не летала.</li>
+<li>By the time I got to the station, the train <b>had left</b>. — К тому времени, когда я добрался до станции, поезд уже ушёл.</li>
+</ul>
+<h3>Формы</h3>
+<ul>
+<li>Утверждение: subject + <b>had + V3</b> — They had finished.</li>
+<li>Отрицание: subject + <b>hadn't + V3</b> — They hadn't finished.</li>
+<li>Вопрос: <b>Had + subject + V3?</b> — Had they finished?</li>
+</ul>
+<h3>Past Perfect и Past Simple</h3>
+<p>Past Simple сообщает о событии в прошлом. Past Perfect подчёркивает, что событие произошло ещё раньше:</p>
+<ul>
+<li>When I arrived, he <b>had left</b>. — Когда я приехал, он уже ушёл.</li>
+</ul>
+<p>Не нужно использовать Past Perfect для каждого действия в прошлом. Он нужен, когда важно показать предшествование.</p>
+<h3>Маркеры</h3>
+<p><b>already, just, never, before, after, by the time</b> часто встречаются с Past Perfect, если речь идёт о более раннем действии.</p>
+` },
+  { id: 402, level: "B1", category: "theory", topic: "present_perfect_continuous", title: "02. Present Perfect Continuous", content: `
+<p><b>have/has been + V-ing</b> подчёркивает длительность процесса, начавшегося в прошлом и продолжающегося сейчас, или недавнюю деятельность с заметным результатом.</p>
+<ul>
+<li>I’ve been learning English for three years. — Я изучаю английский три года.</li>
+<li>She’s tired because she’s been running. — Она устала, потому что бегала.</li>
+<li>How long have you been waiting? — Как долго ты ждёшь?</li>
+</ul>
+<h3>Сравнение</h3>
+<p>Present Perfect часто акцентирует результат/количество; Present Perfect Continuous — процесс.</p>
+<ul>
+<li>I’ve read three chapters. — Я прочитал три главы.</li>
+<li>I’ve been reading for two hours. — Я читаю уже два часа.</li>
+</ul>
+<p>С глаголами состояния обычно используйте Present Perfect: I’ve known her for years, не I’ve been knowing her.</p>
+` },
+  { id: 403, level: "B1", category: "theory", topic: "future_continuous", title: "03. Future Continuous и временные придаточные о будущем", content: `
+<h3>Future Continuous</h3>
+<p><b>Форма: will be + V-ing.</b> Используется, когда действие будет в процессе в определённый момент будущего.</p>
+<ul>
+<li>This time tomorrow, I'll be flying to Rome. — Завтра в это время я буду лететь в Рим.</li>
+<li>At eight tonight, we'll be having dinner. — Сегодня в восемь мы будем ужинать.</li>
+</ul>
+<p>Вопрос: <b>Will + subject + be + V-ing?</b> — Will you be working at six?<br>Отрицание: <b>won't be + V-ing</b> — I won't be working tomorrow evening.</p>
+<p>Future Continuous также помогает вежливо спросить о планах: <b>Will you be using the car tonight?</b> — Ты будешь пользоваться машиной сегодня вечером?</p>
+<h3>Будущее после when, as soon as, until, before и after</h3>
+<p>Если речь о будущем, в придаточной части времени обычно используется <b>Present Simple</b>, а не will.</p>
+<ul>
+<li>I'll call you when I arrive. — Я позвоню тебе, когда приеду.</li>
+<li>We'll wait until she comes. — Мы подождём, пока она не придёт.</li>
+<li>I'll send the message as soon as I get home. — Я отправлю сообщение, как только доберусь домой.</li>
+</ul>
+` },
+  { id: 404, level: "B1", category: "theory", topic: "modals_deduction", title: "04. Модальные глаголы B1: вероятность и выводы о прошлом", content: `
+<h3>Вероятность в настоящем</h3>
+<ul>
+<li><b>may / might / could + V1</b> — возможно.</li>
+<li><b>must + V1</b> — говорящий почти уверен.</li>
+<li><b>can't + V1</b> — говорящий считает это невозможным.</li>
+</ul>
+<ul>
+<li>She might be at home. — Возможно, она дома.</li>
+<li>He must be tired after the trip. — Должно быть, он устал после поездки.</li>
+<li>That can't be true. — Это не может быть правдой.</li>
+</ul>
+<p>Здесь <b>must</b> выражает логический вывод, а не обязанность.</p>
+<h3>Выводы о прошлом</h3>
+<p>Используйте <b>modal verb + have + V3</b>:</p>
+<ul>
+<li><b>must have + V3</b> — должно быть, произошло.</li>
+<li><b>might/may/could have + V3</b> — возможно, произошло.</li>
+<li><b>can't have + V3</b> — не могло произойти.</li>
+<li><b>should have + V3</b> — следовало сделать, но не сделал; сожаление или критика.</li>
+</ul>
+<ul>
+<li>She must have forgotten the meeting. — Должно быть, она забыла о встрече.</li>
+<li>They might have taken a taxi. — Возможно, они взяли такси.</li>
+<li>He can't have seen us. — Он не мог нас видеть.</li>
+<li>I should have checked the address. — Мне следовало проверить адрес.</li>
+</ul>
+<p><b>Must have done</b> — вывод о прошлом; <b>had to do</b> — необходимость в прошлом:</p>
+<ul>
+<li>He must have left. — Должно быть, он ушёл.</li>
+<li>He had to leave early. — Ему пришлось уйти рано.</li>
+</ul>
+` },
+  { id: 405, level: "B1", category: "theory", topic: "conditionals_2_3", title: "05. Условные предложения B1: Second и Third Conditional", content: `
+<h3>Second Conditional — воображаемое настоящее или будущее</h3>
+<p><b>If + Past Simple, would + V1.</b> Используется для гипотетической ситуации или совета.</p>
+<ul>
+<li>If I had more time, I would travel more. — Если бы у меня было больше времени, я бы больше путешествовал.</li>
+<li>If I were you, I'd apologise. — На твоём месте я бы извинился.</li>
+</ul>
+<p>Хотя используется Past Simple, речь обычно не о прошлом, а о воображаемой ситуации сейчас или в будущем.</p>
+<h3>Third Conditional — нереальное прошлое</h3>
+<p><b>If + Past Perfect, would have + V3.</b> Говорим о прошлом, которое уже нельзя изменить.</p>
+<ul>
+<li>If we had left earlier, we would have caught the train. — Если бы мы вышли раньше, мы бы успели на поезд.</li>
+<li>If she had studied harder, she might have passed the exam. — Если бы она занималась усерднее, возможно, она сдала бы экзамен.</li>
+</ul>
+<h3>Unless</h3>
+<p><b>Unless = if…not</b> («если не»).</p>
+<ul>
+<li>I won't go unless you come. — Я не пойду, если ты не придёшь.</li>
+<li>Unless we hurry, we'll miss the bus. — Если мы не поторопимся, мы опоздаем на автобус.</li>
+</ul>
+` },
+  { id: 406, level: "B1", category: "theory", topic: "passive_voice", title: "06. Passive Voice — пассивный залог", content: `
+<p>Пассив нужен, когда важнее действие или объект, чем исполнитель. Форма: <b>be в нужном времени + V3</b>.</p>
+<ul>
+<li>Present Simple: The rooms are cleaned daily. — Комнаты убирают каждый день.</li>
+<li>Past Simple: The bridge was built in 1998. — Мост построили в 1998 году.</li>
+<li>Present Perfect: The email has been sent. — Письмо отправлено.</li>
+<li>Future: The results will be announced tomorrow. — Результаты объявят завтра.</li>
+<li>Modal: This problem can be solved. — Эту проблему можно решить.</li>
+</ul>
+<p>Актив: Someone stole my phone. Пассив: My phone was stolen. Исполнитель с <b>by</b> добавляется, если он важен: The novel was written by Orwell.</p>
+<p>Не все глаголы допускают пассив: arrive, sleep, happen обычно не имеют прямого дополнения.</p>
+` },
+  { id: 407, level: "B1", category: "theory", topic: "reported_speech", title: "07. Reported Speech — косвенная речь", content: `
+<p>Косвенная речь передаёт смысл, а не точную цитату.<br>Direct: Tom said, “I am tired.” → Tom said (that) he was tired. — Том сказал, что устал.</p>
+<h3>Частый сдвиг времён</h3>
+<p>Present Simple → Past Simple; Present Continuous → Past Continuous; Past Simple → Past Perfect; will → would; can → could; may → might. Сдвиг зависит от контекста и не всегда обязателен, если информация актуальна.</p>
+<p>Слова времени и места могут меняться: today → that day, tomorrow → the next day, here → there, this → that.</p>
+<h3>Вопросы</h3>
+<p>Общий вопрос: ask + if/whether + прямой порядок слов. “Are you busy?” → She asked if I was busy.<br>Специальный вопрос: ask + question word + subject + verb. “Where do you live?” → He asked where I lived. Не: where did I live.</p>
+<h3>Просьбы</h3>
+<p>tell/ask + object + (not) to + V1: “Please wait.” → He asked me to wait. “Don’t touch it.” → She told us not to touch it.</p>
+<h3>Say / tell</h3>
+<p>say something; tell someone something. She said she was busy. / She told me she was busy.</p>
+` },
+  { id: 408, level: "B1", category: "theory", topic: "relative_clauses", title: "08. Relative Clauses", content: `
+<p>Относительные придаточные уточняют человека, предмет, место или время.</p>
+<ul>
+<li><b>who</b> — люди: The woman who lives next door is a doctor. — Женщина, которая живёт по соседству, врач.</li>
+<li><b>which</b> — предметы: The book which I bought is useful. — Книга, которую я купил, полезная.</li>
+<li><b>that</b> — люди/предметы в ограничительных придаточных.</li>
+<li><b>whose</b> — принадлежность: the boy whose bike was stolen — мальчик, чей велосипед украли.</li>
+<li><b>where</b> — место; <b>when</b> — время.</li>
+</ul>
+<p>Defining clause необходима для смысла, без запятых: The students who passed can leave. Non-defining добавляет информацию и выделяется запятыми: My brother, who lives in Canada, is visiting us. В non-defining обычно не используется that.</p>
+<p>Если местоимение — дополнение, его можно опустить: The film (that) we saw was excellent. Если это подлежащее, опускать нельзя: The man who called is here.</p>
+` },
+  { id: 409, level: "B1", category: "theory", topic: "indirect_questions_tags", title: "09. Косвенные вопросы и Question Tags", content: `
+<h3>Косвенные вопросы</h3>
+<p>Косвенные вопросы звучат вежливее и часто начинаются с <b>Could you tell me…?</b>, <b>Do you know…?</b>, <b>I wonder…</b>. Внутри используется прямой порядок слов; вспомогательный do/does/did обычно исчезает.</p>
+<ul>
+<li>Where is the station? → Could you tell me <b>where the station is</b>? — Не могли бы вы сказать, где станция?</li>
+<li>What time does it start? → Do you know <b>what time it starts</b>? — Вы знаете, во сколько это начинается?</li>
+<li>Did she call? → Do you know <b>if/whether she called</b>? — Вы знаете, звонила ли она?</li>
+</ul>
+<p>Если исходный вопрос предполагает ответ «да/нет», используйте <b>if</b> или <b>whether</b>.</p>
+<h3>Question tags — разделительные вопросы</h3>
+<p>Короткие хвостики соответствуют русскому «не так ли?», «правда?».</p>
+<ul>
+<li>Утверждение + отрицательный хвостик: You're tired, <b>aren't you?</b></li>
+<li>Отрицание + положительный хвостик: She doesn't drive, <b>does she?</b></li>
+</ul>
+<p>В хвостике повторяется вспомогательный или модальный глагол:</p>
+<ul>
+<li>They can swim, can't they? — Они умеют плавать, не так ли?</li>
+<li>He went home, didn't he? — Он пошёл домой, не так ли?</li>
+</ul>
+<p>Особые формы: <b>Let's go, shall we?</b> и <b>I'm late, aren't I?</b></p>
+` },
+  { id: 410, level: "B1", category: "theory", topic: "used_to", title: "10. Used to / be used to / get used to", content: `
+<p><b>used to + V1</b> — прежняя привычка или состояние, которых теперь нет: I used to live in a village. — Раньше я жил в деревне.</p>
+<p><b>be used to + noun/V-ing</b> — быть привычным к чему-то: I’m used to cold weather. — Я привык к холодной погоде. Здесь to — предлог, поэтому нужен -ing.</p>
+<p><b>get used to + noun/V-ing</b> — привыкать постепенно: I’m getting used to my new job. — Я привыкаю к новой работе.</p>
+<p>Сравните: I used to wake up at ten. — Раньше я просыпался в десять. I’m used to waking up at six. — Я привык просыпаться в шесть.</p>
+` },
+  { id: 411, level: "B1", category: "theory", topic: "word_formation", title: "11. Словообразование", content: `
+<p>Суффиксы помогают распознавать части речи:</p>
+<ul>
+<li>существительные: -tion (information), -ment (development), -ness (kindness), -er (teacher), -ity (possibility);</li>
+<li>прилагательные: -ful (useful), -less (careless), -ous (dangerous), -able (comfortable), -ive (creative);</li>
+<li>наречия: -ly (carefully), но fast/hard/well имеют особые формы.</li>
+</ul>
+<p>Семейства: decide → decision → decisive; succeed → success → successful → successfully; care → careful/careless; possible → possibility/impossible.</p>
+<p>Приставки: un- (unhappy), im-/in-/ir-/il- (impossible, incorrect, irregular, illegal), dis- (disagree), re- (rewrite), mis- (misunderstand).</p>
+<p>Составные прилагательные: a five-year-old child; a ten-minute walk. Но: The child is five years old.</p>
+` },
+  { id: 412, level: "B1", category: "theory", topic: "functional_english", title: "12. Functional English — реальные ситуации", content: `
+<h3>Мнение</h3>
+<p>I think/believe that… — Я думаю/считаю, что…; In my opinion… — По моему мнению…; As far as I’m concerned… — Что касается меня…</p>
+<h3>Согласие/несогласие</h3>
+<p>Exactly. — Именно. / I see your point, but… — Я понимаю твою точку зрения, но… / I’m afraid I disagree. — Боюсь, я не согласен. / I agree up to a point. — Отчасти я согласен.</p>
+<h3>Просьба и предложение</h3>
+<p>Could you possibly help me? — Не могли бы вы помочь? / Would you mind sending it again? — Вы не возражаете отправить ещё раз? / Why don’t we take a break? — Почему бы нам не сделать перерыв? / How about going for a walk? — Как насчёт прогулки?</p>
+<h3>Извинение и уточнение</h3>
+<p>I’m sorry for being late. — Извини, что опоздал. / I didn’t mean to upset you. — Я не хотел тебя расстроить. / Could you say that again? — Не могли бы вы повторить? / What I’m trying to say is… — Я пытаюсь сказать, что…</p>
+` },
+  { id: 413, level: "B1", category: "theory", topic: "writing", title: "13. Письмо B1", content: `
+<h3>Неофициальное письмо</h3>
+<p>Структура: приветствие → дружелюбное вступление → ответ на вопросы/детали → встречный вопрос → завершение.<br>Фразы: Thanks for your message! / It was great to hear from you. / Write back soon! / Best wishes,</p>
+<h3>Формальное письмо</h3>
+<p>Dear Sir or Madam; I am writing to enquire about…; Could you please provide…?; I would be grateful if…; I look forward to hearing from you. Если имя неизвестно: Yours faithfully; если известно: Yours sincerely.</p>
+<h3>Рассказ</h3>
+<p>Past Simple — основные события; Past Continuous — фон; Past Perfect — более раннее событие. Связки: at first, suddenly, a few minutes later, fortunately, in the end.</p>
+<h3>Отзыв</h3>
+<p>Что оцениваете → краткое описание → плюсы/минусы → рекомендация. Фразы: What I liked most was…; One drawback is…; Overall, I would recommend it.</p>
+<h3>Эссе-мнение</h3>
+<p>Вступление → аргумент 1 → аргумент 2/контраргумент → вывод. Связки: Firstly, On the other hand, In addition, To sum up.</p>
+<h3>Проверка</h3>
+<p>Ответил ли я на все пункты? Есть ли абзацы и связки? Проверены ли времена, артикли, порядок слов и орфография?</p>
+` },
+  { id: 451, level: "B1", category: "practice", topic: "past_perfect", title: "01. Практика: Past Perfect", content: `
+<p>Вставьте правильную форму глагола (Past Simple или Past Perfect).</p>
+<ol>
+<li>By the time we arrived, the shop [[had closed]] (close).</li>
+<li>When I called Anna, she [[had]] already [[gone]] (go) to bed.</li>
+<li>Переведите: «Когда я пришёл, они уже ушли» → [[When I arrived, they had already left.]]</li>
+<li>When we arrived, the film [[had started]] (start).</li>
+<li>She was nervous because she [[had never flown]] (never/fly) before.</li>
+<li>By the time I got to the station, the train [[had left]] (leave).</li>
+</ol>
+` },
+  { id: 452, level: "B1", category: "practice", topic: "present_perfect_continuous", title: "02. Практика: Present Perfect Continuous", content: `
+<p>Выберите правильную форму или переведите.</p>
+<ol>
+<li>Выберите: I’ve written / I’ve been writing emails all morning. → [[I've been writing]]</li>
+<li>Переведите: «Как долго ты ждёшь?» → [[How long have you been waiting?]]</li>
+<li>Переведите: «Я сделал домашнее задание» → [[I have done my homework.|I've done my homework.]]</li>
+<li>I [[have been learning]] (learn) English for three years.</li>
+<li>She’s tired because she [[has been running]] (run).</li>
+<li>I [[have known]] (know) her for years.</li>
+</ol>
+` },
+  { id: 453, level: "B1", category: "practice", topic: "future_continuous", title: "03. Практика: Future Continuous", content: `
+<p>Вставьте правильную форму (Future Continuous или Present Simple).</p>
+<ol>
+<li>This time next week, we [[will be lying]] (lie) on the beach.</li>
+<li>Will you [[be using]] (use) the computer at 7 p.m.?</li>
+<li>Переведите: «Я позвоню, как только закончу работу» → [[I will call you as soon as I finish work.]]</li>
+<li>This time tomorrow, I [[will be flying]] (fly) to Rome.</li>
+<li>At eight tonight, we [[will be having]] (have) dinner.</li>
+<li>I [[won't be working]] (not/work) tomorrow evening.</li>
+<li>I'll call you when I [[arrive]] (arrive).</li>
+<li>We'll wait until she [[comes]] (come).</li>
+<li>I'll send the message as soon as I [[get]] (get) home.</li>
+</ol>
+` },
+  { id: 454, level: "B1", category: "practice", topic: "modals_deduction", title: "04. Практика: Модальные глаголы", content: `
+<p>Вставьте правильный модальный глагол (must, might, can't, should).</p>
+<ol>
+<li>The lights are off. They [[must]] have gone to bed.</li>
+<li>She [[might]] have missed the train; I'm not sure.</li>
+<li>You [[should]] have called me earlier. I was worried.</li>
+<li>Переведите: «Должно быть, они забыли наш адрес» → [[They must have forgotten our address.]]</li>
+<li>She might [[be]] at home.</li>
+<li>He must [[be]] tired after the trip.</li>
+<li>That [[can't]] be true.</li>
+<li>She must [[have forgotten]] (forget) the meeting.</li>
+<li>They might [[have taken]] (take) a taxi.</li>
+<li>He can't [[have seen]] (see) us.</li>
+<li>I should [[have checked]] (check) the address.</li>
+</ol>
+` },
+  { id: 455, level: "B1", category: "practice", topic: "conditionals_2_3", title: "05. Практика: Second и Third Conditional", content: `
+<p>Вставьте правильную форму глагола.</p>
+<ol>
+<li>If I [[were]] (be) you, I [[would talk]] (talk) to her.</li>
+<li>If they had booked earlier, they [[would have paid]] (pay) less.</li>
+<li>Переведите: «Если бы я знал об этом, я бы тебе позвонил» → [[If I had known about it, I would have called you.]]</li>
+<li>If I [[had]] more time, I [[would travel]] (travel) more.</li>
+<li>If I were you, I [[would apologise|'d apologise]] (apologise).</li>
+<li>If we [[had left]] (leave) earlier, we [[would have caught]] (catch) the train.</li>
+<li>If she had studied harder, she [[might have passed]] (pass) the exam.</li>
+<li>I won't go [[unless]] you come.</li>
+<li>[[Unless]] we hurry, we'll miss the bus.</li>
+</ol>
+` },
+  { id: 456, level: "B1", category: "practice", topic: "passive_voice", title: "06. Практика: Passive Voice", content: `
+<p>Преобразуйте предложения в пассивный залог.</p>
+<ol>
+<li>They make these shoes in Italy. → [[These shoes are made in Italy.]]</li>
+<li>Someone has broken the window. → [[The window has been broken.]]</li>
+<li>They will publish the report next week. → [[The report will be published next week.]]</li>
+<li>The rooms are cleaned daily. (Перевод: Комнаты убирают каждый день.)</li>
+<li>The bridge was built in 1998. (Перевод: Мост построили в 1998 году.)</li>
+<li>The email has been sent. (Перевод: Письмо отправлено.)</li>
+</ol>
+` },
+  { id: 457, level: "B1", category: "practice", topic: "reported_speech", title: "07. Практика: Reported Speech", content: `
+<p>Передайте косвенно.</p>
+<ol>
+<li>“I can help you,” Mark said. → [[Mark said he could help me.]]</li>
+<li>“Where are you going?” she asked me. → [[She asked me where I was going.]]</li>
+<li>“Don’t be late,” Dad told us. → [[Dad told us not to be late.]]</li>
+<li>Tom said, “I am tired.” → [[Tom said (that) he was tired.]]</li>
+<li>“Are you busy?” → [[She asked if I was busy.]]</li>
+<li>“Please wait.” → [[He asked me to wait.]]</li>
+<li>“Don’t touch it.” → [[She told us not to touch it.]]</li>
+</ol>
+` },
+  { id: 458, level: "B1", category: "practice", topic: "relative_clauses", title: "08. Практика: Relative Clauses", content: `
+<p>Вставьте who/which/whose/where.</p>
+<ol>
+<li>The person [[who]] helped me was kind.</li>
+<li>This is the house [[where]] I grew up.</li>
+<li>The woman [[whose]] car was damaged called the police.</li>
+<li>The woman [[who]] lives next door is a doctor.</li>
+<li>The book [[which]] I bought is useful.</li>
+<li>the boy [[whose]] bike was stolen</li>
+</ol>
+` },
+  { id: 459, level: "B1", category: "practice", topic: "indirect_questions_tags", title: "09. Практика: Косвенные вопросы и Tags", content: `
+<ol>
+<li>Сделайте вопрос косвенным: Where does he work? → [[Do you know where he works?]]</li>
+<li>Сделайте вопрос косвенным: Is the shop open? → [[Could you tell me if the shop is open?]]</li>
+<li>Добавьте tag: You haven't seen her, ___? → [[have you]]</li>
+<li>Добавьте tag: Let's start, ___? → [[shall we]]</li>
+<li>Could you tell me [[where the station is]] (where is the station / where the station is)?</li>
+<li>Do you know [[what time it starts]] (what time does it start / what time it starts)?</li>
+<li>Do you know [[if]] she called? (if/that)</li>
+<li>You're tired, [[aren't you]]?</li>
+<li>She doesn't drive, [[does she]]?</li>
+<li>They can swim, [[can't they]]?</li>
+</ol>
+` },
+  { id: 460, level: "B1", category: "practice", topic: "used_to", title: "10. Практика: Used to", content: `
+<ol>
+<li>I’m used to [[working]] (work/working) at night.</li>
+<li>We used to [[go]] (go/going) there.</li>
+<li>Переведите: «Я постепенно привыкаю говорить по-английски» → [[I'm getting used to speaking English.]]</li>
+<li>I [[used to]] live in a village. (раньше жил)</li>
+<li>I’m used to [[cold]] weather. (холодная погода)</li>
+<li>I’m getting used to my [[new]] job. (новая работа)</li>
+<li>I used to [[wake]] up at ten. (просыпался раньше)</li>
+<li>I’m used to [[waking]] up at six. (привык просыпаться)</li>
+</ol>
+` },
+  { id: 461, level: "B1", category: "practice", topic: "word_formation", title: "11. Практика: Словообразование", content: `
+<ol>
+<li>Образуйте существительное от decide: [[decision]]</li>
+<li>Образуйте существительное от improve: [[improvement]]</li>
+<li>Образуйте существительное от kind: [[kindness]]</li>
+<li>Образуйте существительное от possible: [[possibility]]</li>
+<li>She explained it very [[clearly]] (clear).</li>
+<li>It was a difficult [[decision]] (decide).</li>
+<li>un- (unhappy), im- (impossible), dis- (disagree), re- (rewrite).</li>
+<li>a five-[[year]]-old child (years/year)</li>
+<li>a ten-[[minute]] walk (minutes/minute)</li>
+</ol>
+` },
+  { id: 462, level: "B1", category: "practice", topic: "functional_english", title: "12. Практика: Functional English", content: `
+<p>Дополните фразы.</p>
+<ol>
+<li>Мнение: [[In my opinion|I think]] ...</li>
+<li>Согласие: [[Exactly]].</li>
+<li>Несогласие: I’m afraid I [[disagree]].</li>
+<li>Просьба: [[Could]] you possibly help me?</li>
+<li>Предложение: How [[about]] going for a walk?</li>
+<li>Извинение: I’m sorry [[for]] being late.</li>
+<li>Уточнение: [[What]] I’m trying to say is…</li>
+</ol>
+` },
+  { id: 463, level: "B1", category: "practice", topic: "writing", title: "13. Практика: Письмо", content: `
+<p>Вставьте подходящие фразы.</p>
+<ol>
+<li>Неофициальное приветствие: [[Thanks for your message!]]</li>
+<li>Ответ на вопросы и детали: [[It was great to hear from you.|It was great to hear from you!]]</li>
+<li>Завершение: [[Write back soon!]]</li>
+<li>Формальное приветствие (если имя неизвестно): [[Dear Sir or Madam]]</li>
+<li>Формальное завершение (если имя неизвестно): [[Yours faithfully]]</li>
+<li>Формальное завершение (если имя известно): [[Yours sincerely]]</li>
+<li>Эссе-мнение (вступление): [[Firstly|To sum up]] ...</li>
+<li>Эссе-мнение (вывод): [[To sum up]] ...</li>
+</ol>
+` },
+  { id: 501, level: "B2", category: "theory", topic: "intro", title: "Раздел B2 — в разработке", content: `<p>Здесь будут материалы уровня B2: Inversion, Mixed Conditionals, Advanced Modals, Phrasal Verbs.</p>` },
+  { id: 601, level: "C1", category: "theory", topic: "intro", title: "Раздел C1–C2 — в разработке", content: `<p>Здесь будут материалы уровней C1–C2: Cleft Sentences, Subjunctive, Nominalisation, Academic Writing, Inversion, Advanced Idioms.</p>` },
 
-  { id: 601, level: "ICPC", category: "theory", topic: "anatomy", title: "1.1 Анатомия условия задачи", content: `
+  { id: 701, level: "ICPC", category: "theory", topic: "anatomy", title: "1.1 Анатомия условия задачи", content: `
 <p>Условие — это 1–2 страницы английского текста, и время на чтение идёт в штраф. Хорошая новость: почти все условия собраны из одних и тех же блоков и шаблонных фраз.</p>
 <h3>1. Из чего состоит условие</h3>
 <table>
@@ -2374,7 +2745,7 @@ const MATERIALS = [
 <div class="example"><div class="en"><b>If there are multiple answers, print any of them.</b></div><div class="ru">Если ответов несколько, выведите любой.</div></div>
 <div class="example"><div class="en"><b>If there is no answer, print −1.</b></div><div class="ru">Если ответа нет, выведите −1.</div></div>
 ` },
-  { id: 602, level: "ICPC", category: "theory", topic: "numbers", title: "1.2 Числа, ограничения, количества", content: `
+  { id: 702, level: "ICPC", category: "theory", topic: "numbers", title: "1.2 Числа, ограничения, количества", content: `
 <p>Ограничения — самая «денежная» часть условия: по ним выбирается алгоритм и тип данных. Ошибиться в одном слове (<i>positive</i> vs <i>non-negative</i>) — значит получить WA или TL.</p>
 <h3>1. Какие бывают числа</h3>
 <table>
@@ -2414,7 +2785,7 @@ const MATERIALS = [
 <div class="example"><div class="en">It is guaranteed that <b>the sum of n over all test cases</b> does not exceed 2·10<sup>5</sup>.</div><div class="ru">Гарантируется, что сумма n по всем тестам ≤ 2·10<sup>5</sup>.</div></div>
 <div class="warn">Обнулять глобальный массив на каждый тест — это TL. Очищайте только первые n элементов.</div>
 ` },
-  { id: 603, level: "ICPC", category: "theory", topic: "arithmetic", title: "1.3 Арифметика и теория чисел", content: `
+  { id: 703, level: "ICPC", category: "theory", topic: "arithmetic", title: "1.3 Арифметика и теория чисел", content: `
 <h3>1. Делимость</h3>
 <table>
 <tr><th>Фраза</th><th>Значение</th><th>В коде</th></tr>
@@ -2453,7 +2824,7 @@ const MATERIALS = [
 <tr><td>absolute value, |x|</td><td>модуль числа</td></tr>
 </table>
 ` },
-  { id: 604, level: "ICPC", category: "theory", topic: "arrays", title: "1.4 Массивы, строки, последовательности", content: `
+  { id: 704, level: "ICPC", category: "theory", topic: "arrays", title: "1.4 Массивы, строки, последовательности", content: `
 <h3>1. Главная четвёрка: sub-что?</h3>
 <table>
 <tr><th>Термин</th><th>Что это</th><th>Подряд?</th></tr>
@@ -2479,7 +2850,7 @@ const MATERIALS = [
 <p>Строка a лексикографически меньше b, если a — префикс b (и a ≠ b), или в первой различной позиции буква у a раньше по алфавиту.</p>
 <div class="example"><div class="en">Find the <b>lexicographically smallest</b> string.</div><div class="ru">Найдите лексикографически минимальную строку.</div></div>
 ` },
-  { id: 605, level: "ICPC", category: "theory", topic: "graphs", title: "1.5 Графы и деревья", content: `
+  { id: 705, level: "ICPC", category: "theory", topic: "graphs", title: "1.5 Графы и деревья", content: `
 <h3>1. Вершины и рёбра</h3>
 <table>
 <tr><th>Термин</th><th>Перевод</th></tr>
@@ -2509,7 +2880,7 @@ const MATERIALS = [
 <div class="example"><div class="en">You are given a <b>grid</b> with n <b>rows</b> and m <b>columns</b>.</div><div class="ru">Дано поле из n строк и m столбцов.</div></div>
 <div class="example"><div class="en">In one move, you can go to a <b>side-adjacent</b> cell.</div><div class="ru">За ход можно перейти в соседнюю по стороне клетку — 4 направления.</div></div>
 ` },
-  { id: 606, level: "ICPC", category: "theory", topic: "geometry", title: "1.6 Геометрия и координаты", content: `
+  { id: 706, level: "ICPC", category: "theory", topic: "geometry", title: "1.6 Геометрия и координаты", content: `
 <h3>1. Точки и линии</h3>
 <table>
 <tr><th>Термин</th><th>Перевод</th></tr>
@@ -2532,7 +2903,7 @@ const MATERIALS = [
 </table>
 <div class="warn">Сравнивайте евклидовы расстояния через квадраты — без <code>sqrt</code> и без погрешности.</div>
 ` },
-  { id: 607, level: "ICPC", category: "theory", topic: "operations", title: "1.7 Операции, запросы, игры", content: `
+  { id: 707, level: "ICPC", category: "theory", topic: "operations", title: "1.7 Операции, запросы, игры", content: `
 <h3>1. Операции</h3>
 <div class="example"><div class="en">You can perform the following operation <b>any number of times (possibly zero)</b>.</div><div class="ru">Можно выполнять операцию сколько угодно раз (возможно, ни разу).</div></div>
 <div class="example"><div class="en"><b>choose an index</b> i and <b>replace</b> a<sub>i</sub> <b>with</b> a<sub>i</sub> + 1.</div><div class="ru">выбрать индекс i и заменить a<sub>i</sub> на a<sub>i</sub> + 1.</div></div>
@@ -2544,7 +2915,7 @@ const MATERIALS = [
 <div class="example"><div class="en">Alice and Bob play a game. They <b>take turns</b>, and Alice <b>moves first</b>.</div><div class="ru">Алиса и Боб играют. Ходят по очереди, Алиса ходит первой.</div></div>
 <div class="example"><div class="en">Determine the <b>winner</b> if both players <b>play optimally</b>.</div><div class="ru">Определите победителя, если оба играют оптимально.</div></div>
 ` },
-  { id: 608, level: "ICPC", category: "theory", topic: "quantifiers", title: "2.1 Кванторы", content: `
+  { id: 708, level: "ICPC", category: "theory", topic: "quantifiers", title: "2.1 Кванторы", content: `
 <h3>1. each, every, all</h3>
 <div class="example"><div class="en"><b>For each</b> i from 1 to n, print a<sub>i</sub> + 1.</div><div class="ru">Для каждого i от 1 до n выведите a<sub>i</sub> + 1.</div></div>
 <div class="example"><div class="en"><b>Every</b> student must be in exactly one team.</div><div class="ru">Каждый студент должен быть ровно в одной команде.</div></div>
@@ -2566,7 +2937,7 @@ const MATERIALS = [
 </table>
 <div class="warn">«not all» ≠ «none». Первое — «хотя бы один не такой», второе — «ни одного такого».</div>
 ` },
-  { id: 609, level: "ICPC", category: "theory", topic: "extremes", title: "2.2 Сравнения и экстремумы", content: `
+  { id: 709, level: "ICPC", category: "theory", topic: "extremes", title: "2.2 Сравнения и экстремумы", content: `
 <h3>1. minimum, maximum</h3>
 <div class="example"><div class="en">Find the <b>minimum possible</b> value of the sum.</div><div class="ru">Найдите минимально возможное значение суммы.</div></div>
 <div class="example"><div class="en">You want to <b>maximize</b> your score.</div><div class="ru">Вы хотите максимизировать свои очки.</div></div>
@@ -2577,7 +2948,7 @@ const MATERIALS = [
 <div class="example"><div class="en">Split the array into k parts so as to <b>minimize the maximum</b> sum of a part.</div><div class="ru">Разбейте массив на k частей так, чтобы минимизировать максимальную сумму части.</div></div>
 <div class="warn">«minimize the maximum» / «maximize the minimum» — почти всегда бинарный поиск по ответу.</div>
 ` },
-  { id: 610, level: "ICPC", category: "theory", topic: "reading_order", title: "3.1 Порядок чтения условия", content: `
+  { id: 710, level: "ICPC", category: "theory", topic: "reading_order", title: "3.1 Порядок чтения условия", content: `
 <h3>1. Порядок чтения за 6 шагов</h3>
 <ol>
 <li><b>Шапка (5 секунд).</b> TL, ML, stdin или файл.</li>
@@ -2600,7 +2971,7 @@ const MATERIALS = [
 <li><b>Ловушки</b> — повторы, границы, формат вывода.</li>
 </ul>
 ` },
-  { id: 611, level: "ICPC", category: "theory", topic: "traps", title: "3.2 Ловушки формулировок", content: `
+  { id: 711, level: "ICPC", category: "theory", topic: "traps", title: "3.2 Ловушки формулировок", content: `
 <h3>1. Повторы и пустые объекты</h3>
 <div class="example"><div class="en">The elements are <b>not necessarily distinct</b>.</div><div class="ru">Повторы будут.</div></div>
 <div class="example"><div class="en">You can delete some characters (<b>possibly zero</b>).</div><div class="ru">Можно не удалять ничего.</div></div>
@@ -2617,7 +2988,7 @@ const MATERIALS = [
 <div class="example"><div class="en">Print the indices <b>in any order</b>.</div><div class="ru">Сортировать не нужно.</div></div>
 <div class="example"><div class="en">Print the answer <b>in increasing order</b> of indices.</div><div class="ru">А здесь сортировать нужно.</div></div>
 ` },
-  { id: 612, level: "ICPC", category: "theory", topic: "legend", title: "3.3 Отсеивание легенды", content: `
+  { id: 712, level: "ICPC", category: "theory", topic: "legend", title: "3.3 Отсеивание легенды", content: `
 <h3>1. Словарь «сюжет → модель»</h3>
 <table>
 <tr><th>В легенде</th><th>Обычно это</th></tr>
@@ -2634,7 +3005,7 @@ const MATERIALS = [
 <h3>3. Разобранная легенда</h3>
 <div class="example"><div class="en">Vasya has n cats, and the i-th cat weighs w<sub>i</sub>. His basket can hold at most W grams. He wants to take as many cats as possible.</div><div class="ru"><b>Модель:</b> выбрать максимальное количество чисел из w с суммой ≤ W. Решение: сортировка и жадный выбор самых лёгких.</div></div>
 ` },
-  { id: 613, level: "ICPC", category: "theory", topic: "examples", title: "3.4 Работа с примерами и Note", content: `
+  { id: 713, level: "ICPC", category: "theory", topic: "examples", title: "3.4 Работа с примерами и Note", content: `
 <h3>1. Ручной прогон</h3>
 <ol>
 <li>Возьмите первый тест первого примера.</li>
@@ -2649,7 +3020,7 @@ const MATERIALS = [
 <div class="example"><div class="en"><b>Thus</b>, the answer is 5.</div><div class="ru">Таким образом, ответ равен 5.</div></div>
 ` },
 
-  { id: 651, level: "ICPC", category: "practice", topic: "anatomy_q", title: "Практика: анатомия условия", content: `
+  { id: 751, level: "ICPC", category: "practice", topic: "anatomy_q", title: "Практика: анатомия условия", content: `
 <p><b>Вопрос 1.</b> <code>time limit per test: 2 seconds</code>. Что это значит? (напиши <code>1</code>, <code>2</code> или <code>3</code>)</p>
 <ul>
 <li>1) 2 секунды на все тесты вместе</li>
@@ -2672,7 +3043,7 @@ const MATERIALS = [
 </ul>
 <p>Ответ: [[2]] (any of them = «любой из них»)</p>
 ` },
-  { id: 652, level: "ICPC", category: "practice", topic: "numbers_q", title: "Практика: числа и ограничения", content: `
+  { id: 752, level: "ICPC", category: "practice", topic: "numbers_q", title: "Практика: числа и ограничения", content: `
 <p><b>Вопрос 1.</b> <code>You are given a positive integer n.</code> Может ли n быть 0? (напиши <code>yes</code> или <code>no</code>)</p>
 <p>Ответ: [[no]] (positive — строго больше нуля)</p>
 <p><b>Вопрос 2.</b> <code>You can perform at most k operations.</code> Сколько операций можно сделать? (введи цифру)</p>
@@ -2685,7 +3056,7 @@ const MATERIALS = [
 <p><b>Вопрос 3.</b> <code>Find the number of indices i such that a<sub>i</sub> is strictly greater than a<sub>i−1</sub>.</code> Если a<sub>i</sub> = a<sub>i−1</sub>, индекс засчитывается? (напиши <code>yes</code> или <code>no</code>)</p>
 <p>Ответ: [[no]] (strictly — строго)</p>
 ` },
-  { id: 653, level: "ICPC", category: "practice", topic: "arrays_q", title: "Практика: массивы и строки", content: `
+  { id: 753, level: "ICPC", category: "practice", topic: "arrays_q", title: "Практика: массивы и строки", content: `
 <p><b>Вопрос 1.</b> Что из этого — subarray массива [1, 2, 3, 4, 5]? (введи цифру)</p>
 <ul><li>1) [1, 3, 5]</li><li>2) [2, 3, 4]</li><li>3) [4, 2]</li></ul>
 <p>Ответ: [[2]] (subarray — элементы подряд)</p>
@@ -2696,7 +3067,7 @@ const MATERIALS = [
 <ul><li>1) [1, 2, 3]</li><li>2) [1, 1, 2]</li><li>3) [3, 2, 1]</li></ul>
 <p>Ответ: [[2]] (non-decreasing разрешает равных соседей)</p>
 ` },
-  { id: 654, level: "ICPC", category: "practice", topic: "graphs_q", title: "Практика: графы", content: `
+  { id: 754, level: "ICPC", category: "practice", topic: "graphs_q", title: "Практика: графы", content: `
 <p><b>Вопрос 1.</b> Единственное число от «vertices»? (введи цифру)</p>
 <ul><li>1) vertice</li><li>2) vertex</li><li>3) vertic</li></ul>
 <p>Ответ: [[2]] (vertex → vertices)</p>
@@ -2705,7 +3076,7 @@ const MATERIALS = [
 <p><b>Вопрос 3.</b> Сколько рёбер в tree из 7 вершин? (введи цифру)</p>
 <p>Ответ: [[6]] (В дереве из n вершин ровно n − 1 ребро)</p>
 ` },
-  { id: 655, level: "ICPC", category: "practice", topic: "conditionals_q", title: "Практика: условия", content: `
+  { id: 755, level: "ICPC", category: "practice", topic: "conditionals_q", title: "Практика: условия", content: `
 <p><b>Вопрос 1.</b> «unless X» означает… (введи цифру)</p>
 <ul><li>1) if X</li><li>2) if not X</li><li>3) because X</li></ul>
 <p>Ответ: [[2]] (unless = «если не»)</p>
@@ -2714,5 +3085,322 @@ const MATERIALS = [
 <p>Ответ: [[1]] (Клетка не занята — условие «unless» не сработало)</p>
 <p><b>Вопрос 3.</b> <code>Print YES if s is a palindrome, and NO otherwise.</code> s = "ab". Что вывести? (введи слово)</p>
 <p>Ответ: [[no]] («ab» не палиндром)</p>
+` },
+  { id: 470, level: "B1", category: "practice", topic: "grammar_practice", title: "Грамматическая практика B1", content: `
+<ol>
+<li>She usually [[takes]] (take) the bus, but today she [[is walking]] (walk).</li>
+<li>I [[haven't finished]] (not finish) the report yet.</li>
+<li>I [[was cooking]] (cook) when the alarm went off.</li>
+<li>By the time we arrived, the train [[had left]] (leave).</li>
+<li>This time tomorrow, I [[will be flying]] (fly) to Lisbon.</li>
+<li>I [[have known]] (know) him since school.</li>
+<li>You [[mustn't]] (must/not) smoke here; it’s forbidden.</li>
+<li>You [[don't have to]] (not have to) bring food; there will be a buffet.</li>
+<li>If it [[rains]] (rain), we’ll stay home.</li>
+<li>If I [[had]] (have) more time, I would travel.</li>
+<li>If they had left earlier, they [[wouldn't have missed]] (not miss) the train.</li>
+<li>The office [[is cleaned]] (clean) every evening. (passive)</li>
+<li>“I can help,” Mark said. → Mark said that he [[could]] help.</li>
+<li>I enjoy [[reading]] (read) detective stories.</li>
+<li>There isn’t [[much]] (much/any) information available.</li>
+<li>This exercise is [[easier]] (easy) than the last one.</li>
+<li>Could you tell me where the station [[is]]?</li>
+<li>I’m used to [[working]] (work) at night.</li>
+<li>I’ll call you when I [[arrive]] (arrive).</li>
+<li>Переведите: «Мне следовало проверить билет» → [[I should have checked the ticket.]]</li>
+</ol>
+` },
+  { id: 471, level: "B1", category: "practice", topic: "vocab_speaking", title: "Лексика и говорение B1", content: `
+<h3>Вставьте слово</h3>
+<p>Слова: deadline, after, colleague, out, salary.</p>
+<ol>
+<li>A person you work with is a [[colleague]].</li>
+<li>To discover information: find [[out]].</li>
+<li>To take care of a pet: look [[after]] it.</li>
+<li>A date by which work must be done: [[deadline]].</li>
+<li>Money received for work: [[salary]].</li>
+</ol>
+<h3>Переведите</h3>
+<ol>
+<li>Я подал заявку на работу. → [[I applied for a job.]]</li>
+<li>Нам нужно уложиться в срок. → [[We need to meet the deadline.]]</li>
+<li>Мы хорошо ладим с соседями. → [[We get on well with our neighbours.]]</li>
+<li>Рейс задержали из-за тумана. → [[The flight was delayed because of the fog.]]</li>
+<li>Я постепенно привыкаю вставать рано. → [[I'm getting used to getting up early.]]</li>
+<li>Я разочарован результатом. → [[I'm disappointed with the result.]]</li>
+<li>Не могли бы вы повторить? → [[Could you say that again, please?]]</li>
+</ol>
+<h3>Говорение — 1–2 минуты на тему</h3>
+<ul>
+<li>Describe a person you admire.</li>
+<li>Talk about a trip that did not go as planned.</li>
+<li>What are the advantages and disadvantages of working from home?</li>
+<li>How has technology changed the way people study?</li>
+<li>What do you do to stay healthy?</li>
+</ul>
+` },
+  { id: 472, level: "B1", category: "practice", topic: "mixed_practice_b1", title: "Смешанная практика B1", content: `
+<h3>Переведите</h3>
+<ol>
+<li>Я никогда не был в Шотландии. → [[I've never been to Scotland.]]</li>
+<li>Когда я шёл домой, я встретил старого друга. → [[I was walking home when I met an old friend.]]</li>
+<li>Если завтра будет хорошая погода, мы поедем за город. → [[If the weather is good tomorrow, we'll go to the countryside.]]</li>
+<li>Она сказала, что устала. → [[She said she was tired.]]</li>
+<li>Этот дом построили более ста лет назад. → [[This house was built more than a hundred years ago.]]</li>
+<li>Я привык работать в шумном офисе. → [[I'm used to working in a noisy office.]]</li>
+<li>Тебе не нужно покупать хлеб — я уже купил его. → [[You don't have to buy bread — I've already bought it.]]</li>
+<li>Если бы мы забронировали билеты раньше, они были бы дешевле. → [[If we had booked earlier, the tickets would have been cheaper.]]</li>
+<li>Позвони мне, как только закончишь. → [[Call me as soon as you finish.]]</li>
+<li>Я ищу ключи уже двадцать минут. → [[I've been looking for my keys for twenty minutes.]]</li>
+</ol>
+<h3>Исправьте ошибки</h3>
+<ol>
+<li>She don’t like spicy food. → [[She doesn't like spicy food.]]</li>
+<li>I have bought this yesterday. → [[I bought this yesterday.]]</li>
+<li>If it will be sunny, we’ll go out. → [[If it is sunny, we'll go out.]]</li>
+<li>He asked me where was I going. → [[He asked me where I was going.]]</li>
+<li>I’m interested to learn Spanish. → [[I'm interested in learning Spanish.]]</li>
+<li>There are too much people here. → [[There are too many people here.]]</li>
+<li>The room cleans every day. → [[The room is cleaned every day.]]</li>
+<li>I used to getting up early. → [[I used to get up early.]]</li>
+<li>Despite it was cold, we went swimming. → [[Although it was cold, we went swimming.]]</li>
+<li>She speaks English more fluent than me. → [[She speaks English more fluently than me.]]</li>
+</ol>
+<h3>Письмо</h3>
+<p>Напишите 100–140 слов о том, как изменился ваш распорядок за последний год. Используйте Present Perfect, Past Simple, used to и минимум три связки.</p>
+` },
+  { id: 480, level: "B1", category: "practice", topic: "mid_test", title: "Промежуточный тест B1", content: `
+<h3>Грамматика</h3>
+<ol>
+<li>I [[haven't seen]] (not see) her since Monday.</li>
+<li>While we [[were driving]] (drive), we saw an accident.</li>
+<li>If I [[were]] (be) you, I’d ask for help.</li>
+<li>The package [[was delivered]] (deliver) yesterday.</li>
+<li>He asked me where I [[worked]] (work).</li>
+<li>You [[mustn't]] (must / not) smoke here; it’s prohibited.</li>
+<li>I enjoy [[learning]] (learn) languages.</li>
+<li>By the time she arrived, we [[had finished]] (finish) dinner.</li>
+<li>I’ll call you when I [[get]] (get) home.</li>
+<li>This is the person [[who]] helped me.</li>
+</ol>
+<h3>Исправьте</h3>
+<ol>
+<li>I have met him last week. → [[I met him last week.]]</li>
+<li>If it will be sunny, we’ll go out. → [[If it is sunny, we’ll go out.]]</li>
+<li>She asked me what did I want. → [[She asked me what I wanted.]]</li>
+<li>He suggested to take a taxi. → [[He suggested taking a taxi.]]</li>
+<li>The documents sent yesterday. → [[The documents were sent yesterday.]]</li>
+</ol>
+<h3>Перевод</h3>
+<ol>
+<li>Я работаю здесь с 2020 года. → [[I have been working here since 2020.|I have worked here since 2020.]]</li>
+<li>Если бы у меня было больше времени, я бы занимался спортом. → [[If I had more time, I would do sports.]]</li>
+<li>Мне следовало сказать правду. → [[I should have told the truth.]]</li>
+<li>Не могли бы вы сказать, как добраться до центра? → [[Could you tell me how to get to the centre?|Could you tell me how to get to the center?]]</li>
+<li>Когда мы приехали, фильм уже начался. → [[When we arrived, the film had already started.]]</li>
+</ol>
+<h3>Письмо</h3>
+<p>100–140 слов на тему “A change in my life”.</p>
+` },
+  { id: 481, level: "B1", category: "practice", topic: "final_test", title: "Итоговый тест B1", content: `
+<h3>A. Грамматика и лексика</h3>
+<ol>
+<li>I [[have been studying]] (study) for two hours and need a break.</li>
+<li>She [[has already sent]] (already/send) the email.</li>
+<li>When I arrived, they [[were discussing]] (discuss) the problem.</li>
+<li>If you [[don't hurry]] (not hurry), you’ll miss the bus.</li>
+<li>If I had known, I [[would have told]] (tell) you.</li>
+<li>This building [[was built]] (build) in the 19th century.</li>
+<li>He promised [[to help]] (help) us.</li>
+<li>I remember [[meeting]] (meet) her at the conference.</li>
+<li>Could you tell me where the nearest bank [[is]]?</li>
+<li>The film was [[so]] interesting that I watched it twice.</li>
+</ol>
+<h3>B. Перефразируйте</h3>
+<ol>
+<li>Someone has damaged the car. → The car [[has been damaged]].</li>
+<li>“I am leaving tomorrow,” she said. → She said that [[she was leaving the next day|she was leaving tomorrow]].</li>
+<li>It’s a good idea to rest. → You [[should rest]].</li>
+<li>I started working here in 2021. → I have [[worked here since 2021|been working here since 2021]].</li>
+<li>If he had studied, he [[would have passed]] (pass) the exam.</li>
+</ol>
+<h3>C. Перевод</h3>
+<ol>
+<li>Я никогда не летал на самолёте. → [[I have never flown on a plane.|I have never flown.]]</li>
+<li>Пока я готовил, мой брат накрывал на стол. → [[While I was cooking, my brother was setting the table.]]</li>
+<li>Если завтра будет дождь, мы останемся дома. → [[If it rains tomorrow, we will stay at home.]]</li>
+<li>Она спросила меня, видел ли я её ключи. → [[She asked me if I had seen her keys.]]</li>
+<li>Тебе не нужно приходить раньше. → [[You don't have to come earlier.]]</li>
+` },
+  { id: 491, level: "B1", category: "vocabulary", topic: "people_relationships", title: "Люди и отношения", content: `
+<h3>Характер</h3>
+<table>
+<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>reliable</b></td><td>надёжный</td><td>He is a reliable friend.</td></tr>
+<tr><td><b>honest</b></td><td>честный</td><td>She is an honest person.</td></tr>
+<tr><td><b>generous</b></td><td>щедрый</td><td>It was generous of you to help.</td></tr>
+<tr><td><b>selfish</b></td><td>эгоистичный</td><td>Don't be so selfish.</td></tr>
+<tr><td><b>patient</b></td><td>терпеливый</td><td>You need to be patient with children.</td></tr>
+<tr><td><b>confident</b></td><td>уверенный</td><td>She feels confident before the exam.</td></tr>
+<tr><td><b>shy</b></td><td>застенчивый</td><td>He was too shy to speak.</td></tr>
+<tr><td><b>outgoing</b></td><td>общительный</td><td>She has an outgoing personality.</td></tr>
+<tr><td><b>stubborn</b></td><td>упрямый</td><td>He is too stubborn to change his mind.</td></tr>
+<tr><td><b>considerate</b></td><td>внимательный к другим</td><td>It was very considerate of you.</td></tr>
+<tr><td><b>ambitious</b></td><td>амбициозный</td><td>She is an ambitious young lawyer.</td></tr>
+<tr><td><b>easy-going</b></td><td>лёгкий в общении</td><td>My boss is very easy-going.</td></tr>
+</table>
+<h3>Отношения</h3>
+<table>
+<tr><th>Фраза</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>get on well with</b></td><td>ладить с</td><td>I get on well with my colleagues.</td></tr>
+<tr><td><b>fall out with</b></td><td>поссориться</td><td>We fell out over money.</td></tr>
+<tr><td><b>make up</b></td><td>помириться</td><td>They argued but later made up.</td></tr>
+<tr><td><b>keep in touch</b></td><td>поддерживать связь</td><td>Let's keep in touch.</td></tr>
+<tr><td><b>lose touch</b></td><td>потерять связь</td><td>We lost touch after school.</td></tr>
+<tr><td><b>rely on</b></td><td>полагаться на</td><td>You can rely on me.</td></tr>
+<tr><td><b>apologise</b></td><td>извиняться</td><td>He apologised for being late.</td></tr>
+<tr><td><b>forgive</b></td><td>прощать</td><td>Please forgive me.</td></tr>
+<tr><td><b>bring up children</b></td><td>воспитывать детей</td><td>It's hard to bring up children alone.</td></tr>
+<tr><td><b>grow up</b></td><td>вырасти</td><td>I grew up in a small town.</td></tr>
+<tr><td><b>take after</b></td><td>быть похожим на родственника</td><td>She takes after her mother.</td></tr>
+</table>
+` },
+  { id: 492, level: "B1", category: "vocabulary", topic: "work_study_tech", title: "Работа, учёба и технологии", content: `
+<h3>Работа</h3>
+<table>
+<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>apply for a job</b></td><td>подать заявку на работу</td><td>I applied for a job at the bank.</td></tr>
+<tr><td><b>attend an interview</b></td><td>пройти собеседование</td><td>I have to attend an interview tomorrow.</td></tr>
+<tr><td><b>earn a salary</b></td><td>получать зарплату</td><td>She earns a good salary.</td></tr>
+<tr><td><b>get promoted</b></td><td>получить повышение</td><td>He got promoted last month.</td></tr>
+<tr><td><b>resign</b></td><td>уволиться</td><td>She resigned because of stress.</td></tr>
+<tr><td><b>retire</b></td><td>выйти на пенсию</td><td>My father will retire next year.</td></tr>
+<tr><td><b>colleague</b></td><td>коллега</td><td>My colleagues are very friendly.</td></tr>
+<tr><td><b>employer</b></td><td>работодатель</td><td>My employer pays for training.</td></tr>
+<tr><td><b>employee</b></td><td>сотрудник</td><td>The company has 100 employees.</td></tr>
+<tr><td><b>qualification</b></td><td>квалификация</td><td>You need qualifications for this job.</td></tr>
+<tr><td><b>deadline</b></td><td>срок сдачи</td><td>We have to meet a tight deadline.</td></tr>
+<tr><td><b>workload</b></td><td>рабочая нагрузка</td><td>My workload is very heavy this week.</td></tr>
+<tr><td><b>flexible hours</b></td><td>гибкий график</td><td>I prefer flexible hours.</td></tr>
+</table>
+<h3>Учёба</h3>
+<ul>
+<li><b>assignment</b> — задание</li>
+<li><b>degree</b> — диплом/степень</li>
+<li><b>pass/fail an exam</b> — сдать/провалить экзамен</li>
+<li><b>revise for a test</b> — готовиться к тесту</li>
+<li><b>make progress</b> — делать успехи</li>
+<li><b>concentrate on</b> — сосредоточиться на</li>
+</ul>
+<h3>Технологии</h3>
+<ul>
+<li><b>device</b> — устройство</li>
+<li><b>download/upload</b> — скачать/загрузить</li>
+<li><b>update</b> — обновление</li>
+<li><b>privacy</b> — конфиденциальность</li>
+<li><b>reliable connection</b> — надёжное соединение</li>
+<li><b>data</b> — данные</li>
+<li><b>search engine</b> — поисковая система</li>
+<li><b>artificial intelligence</b> — искусственный интеллект</li>
+</ul>
+<h3>Сочетания</h3>
+<ul>
+<li>meet a deadline — уложиться в срок</li>
+<li>gain experience — получить опыт</li>
+<li>do research — проводить исследование</li>
+<li>take notes — делать записи</li>
+<li>solve a problem — решить проблему</li>
+<li>back up data — сделать резервную копию данных</li>
+</ul>
+` },
+  { id: 493, level: "B1", category: "vocabulary", topic: "travel_home_env", title: "Путешествия, дом и экология", content: `
+<h3>Путешествия</h3>
+<table>
+<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>book accommodation</b></td><td>забронировать жильё</td><td>We booked accommodation online.</td></tr>
+<tr><td><b>check in/out</b></td><td>зарегистрироваться/выехать</td><td>We checked in at 2 pm.</td></tr>
+<tr><td><b>boarding pass</b></td><td>посадочный талон</td><td>Please show your boarding pass.</td></tr>
+<tr><td><b>delayed/cancelled</b></td><td>задержанный/отменённый</td><td>Our flight was delayed.</td></tr>
+<tr><td><b>destination</b></td><td>пункт назначения</td><td>What is your final destination?</td></tr>
+<tr><td><b>luggage</b></td><td>багаж</td><td>My luggage is very heavy.</td></tr>
+<tr><td><b>sightseeing</b></td><td>осмотр достопримечательностей</td><td>We went sightseeing in the morning.</td></tr>
+<tr><td><b>get lost</b></td><td>заблудиться</td><td>We got lost in the old town.</td></tr>
+<tr><td><b>miss a connection</b></td><td>опоздать на пересадку</td><td>We missed our connection in Paris.</td></tr>
+<tr><td><b>travel insurance</b></td><td>страховка</td><td>Always buy travel insurance.</td></tr>
+</table>
+<h3>Дом</h3>
+<ul>
+<li><b>rent</b> — арендовать</li>
+<li><b>landlord</b> — арендодатель</li>
+<li><b>tenant</b> — арендатор</li>
+<li><b>deposit</b> — залог</li>
+<li><b>bills</b> — счета</li>
+<li><b>spacious</b> — просторный</li>
+<li><b>cosy</b> — уютный</li>
+<li><b>furnished</b> — меблированный</li>
+<li><b>neighbourhood</b> — район</li>
+<li><b>household chores</b> — домашние обязанности</li>
+</ul>
+<h3>Экология</h3>
+<ul>
+<li><b>pollution</b> — загрязнение</li>
+<li><b>waste</b> — отходы</li>
+<li><b>recycle</b> — перерабатывать</li>
+<li><b>renewable energy</b> — возобновляемая энергия</li>
+<li><b>climate change</b> — изменение климата</li>
+<li><b>protect wildlife</b> — защищать дикую природу</li>
+<li><b>reduce emissions</b> — сокращать выбросы</li>
+<li><b>public transport</b> — общественный транспорт</li>
+<li><b>drought</b> — засуха</li>
+<li><b>flood</b> — наводнение</li>
+</ul>
+` },
+  { id: 494, level: "B1", category: "vocabulary", topic: "health_society", title: "Здоровье, эмоции и общество", content: `
+<h3>Здоровье</h3>
+<table>
+<tr><th>English</th><th>Перевод</th><th>Пример</th></tr>
+<tr><td><b>symptom</b></td><td>симптом</td><td>A cough is a common symptom.</td></tr>
+<tr><td><b>treatment</b></td><td>лечение</td><td>He is receiving treatment for his back.</td></tr>
+<tr><td><b>recover</b></td><td>выздоравливать</td><td>She is recovering from the flu.</td></tr>
+<tr><td><b>suffer from</b></td><td>страдать от</td><td>Many people suffer from allergies.</td></tr>
+<tr><td><b>injury</b></td><td>травма</td><td>He has a knee injury.</td></tr>
+<tr><td><b>prescription</b></td><td>рецепт</td><td>You need a prescription for this medicine.</td></tr>
+<tr><td><b>appointment</b></td><td>запись к врачу</td><td>I have a doctor's appointment at five.</td></tr>
+<tr><td><b>balanced diet</b></td><td>сбалансированное питание</td><td>Eat a balanced diet.</td></tr>
+<tr><td><b>get enough sleep</b></td><td>достаточно спать</td><td>You should get enough sleep.</td></tr>
+</table>
+<h3>Эмоции</h3>
+<ul>
+<li><b>delighted</b> — в восторге</li>
+<li><b>disappointed</b> — разочарованный</li>
+<li><b>embarrassed</b> — смущённый</li>
+<li><b>frustrated</b> — раздражённый</li>
+<li><b>relieved</b> — испытывающий облегчение</li>
+<li><b>anxious</b> — тревожный</li>
+<li><b>proud</b> — гордый</li>
+<li><b>confused</b> — растерянный</li>
+<li><b>exhausted</b> — измотанный</li>
+</ul>
+<h3>Общество</h3>
+<ul>
+<li><b>volunteer</b> — волонтёр / работать добровольно</li>
+<li><b>charity</b> — благотворительность</li>
+<li><b>community</b> — сообщество</li>
+<li><b>crime</b> — преступление</li>
+<li><b>witness</b> — свидетель</li>
+<li><b>raise awareness</b> — привлекать внимание</li>
+<li><b>take part</b> — участвовать</li>
+<li><b>donate</b> — жертвовать</li>
+<li><b>campaign</b> — кампания</li>
+</ul>
+<h3>Сочетания</h3>
+<ul>
+<li>feel relieved — чувствовать облегчение</li>
+<li>be proud of — гордиться чем-то</li>
+<li>be worried about — беспокоиться о</li>
+<li>take part in — принимать участие в</li>
+<li>raise money for charity — собрать деньги на благотворительность</li>
+<li>report a crime — сообщить о преступлении</li>
+</ul>
 ` }
 ];

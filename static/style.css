@@ -683,3 +683,32 @@ pre code {
         transition-duration: .01ms !important;
     }
 }
+
+.header-nav {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-btn {
+  background: transparent;
+  color: #cbd5e1;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.nav-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-btn.active {
+  background: #eba08e;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(225, 29, 72, 0.3);
+}

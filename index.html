@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#303e55">
+    <meta name="theme-color" content="#2c3e50">
     <title>English Learning</title>
     <link rel="stylesheet" href="static/style.css">
 </head>
@@ -13,11 +13,11 @@
             <h1 class="brand">
                 <a href="#" onclick="showHome(); return false;">English Learning</a>
             </h1>
-            <nav class="header-nav" aria-label="Основная навигация">
-                <a href="#" class="nav-btn active" onclick="showHome(); return false;">Главная</a>
-                <a href="#theory" class="nav-btn" onclick="showSection('theory'); return false;">Теория</a>
-                <a href="#practice" class="nav-btn" onclick="showSection('practice'); return false;">Практика</a>
-                <a href="#vocabulary" class="nav-btn" onclick="showSection('vocabulary'); return false;">Словарь</a>
+            <nav class="header-nav" id="topNav" aria-label="Основная навигация">
+                <button class="nav-btn active" data-section="home" onclick="showHome()">Главная</button>
+                <button class="nav-btn" data-section="theory" onclick="showSection('theory')">Теория</button>
+                <button class="nav-btn" data-section="practice" onclick="showSection('practice')">Практика</button>
+                <button class="nav-btn" data-section="vocabulary" onclick="showSection('vocabulary')">Словарь</button>
             </nav>
         </div>
     </header>

@@ -49,12 +49,13 @@ function showHome() {
 }
 
 function showSection(category) {
-  highlightNav(category); // Подсвечиваем кнопку в шапке
+  highlightNav(category);
   const names = { theory: 'Теория', practice: 'Практика', vocabulary: 'Словарь' };
   const name = names[category] || 'Материалы';
   const levels = getLevels().filter(level => articlesOf(level, category).length > 0);
 
-  let html = `<div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a><span>/ ${name}</span></div>
+  let html = `<button class="back-home-btn" onclick="showHome()">← На главную</button>
+              <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a><span>/ ${name}</span></div>
               <div class="section-heading">
                 <p class="eyebrow">ENGLISH LEARNING</p>
                 <h1>${name}</h1>
@@ -80,12 +81,13 @@ function showSection(category) {
 }
 
 function showLevel(level) {
-  highlightNav(''); // На обзоре уровня кнопки в шапке не подсвечиваются
+  highlightNav('');
   const theory = articlesOf(level, 'theory');
   const practice = articlesOf(level, 'practice');
   const vocab = articlesOf(level, 'vocabulary');
 
-  let html = `<div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> <span>/ ${level}</span></div>
+  let html = `<button class="back-home-btn" onclick="showHome()">← На главную</button>
+              <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> <span>/ ${level}</span></div>
               <h1>Раздел ${level}</h1>
               <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
                 <button class="card-btn" onclick="showLevelTab('${level}','theory')">
@@ -105,14 +107,16 @@ function showLevel(level) {
   }
   html += `</div>`;
   app.innerHTML = html;
+  window.scrollTo(0, 0);
 }
 
 function showLevelTab(level, tab) {
-  highlightNav(tab); // Подсвечиваем нужный раздел
+  highlightNav(tab);
   const items = articlesOf(level, tab);
   let tabName = tab === 'theory' ? 'Теория' : tab === 'practice' ? 'Практика' : 'Лексика';
 
-  let html = `<div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> / <a href="#" onclick="showLevel('${level}'); return false;">${level}</a> <span>/ ${tabName}</span></div>
+  let html = `<button class="back-home-btn" onclick="showLevel('${level}')">← Назад в раздел ${level}</button>
+              <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> / <a href="#" onclick="showLevel('${level}'); return false;">${level}</a> <span>/ ${tabName}</span></div>
               <h1>${level} — ${tabName}</h1>`;
   
   if (!items.length) {
@@ -125,13 +129,14 @@ function showLevelTab(level, tab) {
     html += '</div>';
   }
   app.innerHTML = html;
+  window.scrollTo(0, 0);
 }
 
 function showArticle(id) {
   const a = MATERIALS.find(m => m.id === id);
   if (!a) { app.innerHTML = '<p>Материал не найден.</p>'; return; }
   
-  highlightNav(a.category); // Оставляем подсветку
+  highlightNav(a.category);
 
   let content = a.content;
   if (a.category === 'practice' && content.includes('[[')) {
@@ -142,14 +147,15 @@ function showArticle(id) {
   let backLevel = (a.level === 'C1' || a.level === 'C2') ? 'C1–C2' : a.level;
 
   app.innerHTML = `
+    <button class="back-home-btn" onclick="showLevelTab('${backLevel}', '${a.category}')">← Назад к списку</button>
     <div class="crumbs">
       <a href="#" onclick="showHome(); return false;">Главная</a> /
       <a href="#" onclick="showLevel('${backLevel}'); return false;">${backLevel}</a> <span>/ ${catName}</span>
     </div>
     <h1>${a.title}</h1>
     <div class="article-content">${content}</div>
-    <div style="margin-top: 30px; display: flex; gap: 10px;">
-        <button class="btn btn-secondary" onclick="showLevelTab('${backLevel}', '${a.category}')">← Назад к списку</button>
+    <div style="margin-top: 30px; display: flex; gap: 10px; flex-wrap: wrap;">
+        <button class="btn btn-secondary" onclick="showLevelTab('${backLevel}', '${a.category}')">← К списку тем</button>
         ${a.category === 'practice' ? '<button class="btn btn-dark" onclick="checkAllInputs()">Проверить ответы</button>' : ''}
     </div>
   `;

@@ -3,22 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#303e55">
     <title>English Learning</title>
-    
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-    <header>
-        
-        <h1><a href="#" onclick="showHome(); return false;">English Learning</a></h1>
+    <header class="site-header">
+        <div class="header-inner">
+            <h1 class="brand">
+                <a href="#" onclick="showHome(); return false;">English Learning</a>
+            </h1>
+            <nav class="header-nav" aria-label="Основная навигация">
+                <a href="#" class="nav-btn active" onclick="showHome(); return false;">Главная</a>
+                <a href="#theory" class="nav-btn" onclick="showSection('theory'); return false;">Теория</a>
+                <a href="#practice" class="nav-btn" onclick="showSection('practice'); return false;">Практика</a>
+                <a href="#vocabulary" class="nav-btn" onclick="showSection('vocabulary'); return false;">Словарь</a>
+            </nav>
+        </div>
     </header>
 
-
     <div class="wrap">
-        <main id="app"></main>
+        <main id="app" aria-live="polite"></main>
     </div>
 
-    
+    <footer class="site-footer">
+        <span>English Learning</span>
+        <span>Учись в своём темпе</span>
+    </footer>
+
     <script src="data.js"></script>
     <script src="app.js"></script>
 </body>

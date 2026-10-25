@@ -323,3 +323,28 @@ code { font-family: 'Consolas', monospace; background: #f1f5f9; color: #db2777; 
   main { padding: 25px; }
   h1 { font-size: 26px; }
 }
+
+.article-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.article-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.article-nav .btn {
+    max-width: 48%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.article-nav .btn:last-child {
+    text-align: right;
+}

@@ -19,7 +19,17 @@ function articlesOf(level, category) {
   return MATERIALS.filter(m => m.level === level && m.category === category);
 }
 
+function highlightNav(section) {
+  document.querySelectorAll('.nav-btn').forEach(btn => {
+    btn.classList.remove('active');
+    if (btn.dataset.section === section) {
+      btn.classList.add('active');
+    }
+  });
+}
+
 function showHome() {
+  highlightNav('home');
   const levels = getLevels();
   let html = '<h1>Выберите уровень</h1><div class="grid">';
   
@@ -38,8 +48,8 @@ function showHome() {
   app.innerHTML = html;
 }
 
-
 function showSection(category) {
+  highlightNav(category);
   const names = { theory: 'Теория', practice: 'Практика', vocabulary: 'Словарь' };
   const name = names[category] || 'Материалы';
   const levels = getLevels().filter(level => articlesOf(level, category).length > 0);
@@ -70,6 +80,7 @@ function showSection(category) {
 }
 
 function showLevel(level) {
+  highlightNav(''); // Снимаем подсветку со всех кнопок, так как мы на обзоре
   const theory = articlesOf(level, 'theory');
   const practice = articlesOf(level, 'practice');
   const vocab = articlesOf(level, 'vocabulary');
@@ -97,6 +108,7 @@ function showLevel(level) {
 }
 
 function showLevelTab(level, tab) {
+  highlightNav(tab); // Подсвечиваем нужную вкладку
   const items = articlesOf(level, tab);
   let tabName = tab === 'theory' ? 'Теория' : tab === 'practice' ? 'Практика' : 'Лексика';
 
@@ -119,6 +131,8 @@ function showArticle(id) {
   const a = MATERIALS.find(m => m.id === id);
   if (!a) { app.innerHTML = '<p>Материал не найден.</p>'; return; }
   
+  highlightNav(a.category); // Оставляем подсветку на текущем разделе
+
   let content = a.content;
   if (a.category === 'practice' && content.includes('[[')) {
     content = renderInteractive(content);

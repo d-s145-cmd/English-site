@@ -111,6 +111,7 @@ function getAllValidAnswers(input) {
 }
 
 const STORAGE_KEY = 'english-learning-progress-v1';
+const VOCAB_STORAGE_KEY = 'english-learning-vocab-v1';
 
 const defaultProgress = {
   completedTopics: {},
@@ -146,6 +147,22 @@ function saveProgress() {
 }
 
 let PROGRESS = loadProgress();
+let VOCAB_STATE = {};
+
+function loadVocabState() {
+  try {
+    const raw = localStorage.getItem(VOCAB_STORAGE_KEY);
+    if (raw) VOCAB_STATE = JSON.parse(raw);
+  } catch {
+    VOCAB_STATE = {};
+  }
+}
+
+function saveVocabState() {
+  try {
+    localStorage.setItem(VOCAB_STORAGE_KEY, JSON.stringify(VOCAB_STATE));
+  } catch {}
+}
 
 function progressKey(material) {
   const level = (material.level === 'C1' || material.level === 'C2') ? 'C1–C2' : material.level;
@@ -214,13 +231,274 @@ function progressBadge(level, category) {
   return `<span class="progress-badge">✓ ${done}/${items.length}</span>`;
 }
 
+function stripHtml(html) {
+  const tmp = document.createElement("DIV");
+  tmp.innerHTML = html;
+  return tmp.textContent || tmp.innerText || "";
+}
+
+function highlightMatch(text, query) {
+  if (!query) return text;
+  const safeQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const regex = new RegExp(`(${safeQuery})`, 'gi');
+  return text.replace(regex, '<mark class="search-highlight">$1</mark>');
+}
+
+function getSnippet(text, query, radius = 40) {
+  const lowerText = text.toLowerCase();
+  const lowerQuery = query.toLowerCase();
+  const index = lowerText.indexOf(lowerQuery);
+  if (index === -1) return text.slice(0, radius * 2) + '...';
+  
+  let start = Math.max(0, index - radius);
+  let end = Math.min(text.length, index + lowerQuery.length + radius);
+  
+  let snippet = text.slice(start, end).trim();
+  if (start > 0) snippet = '...' + snippet;
+  if (end < text.length) snippet = snippet + '...';
+  return snippet;
+}
+
+function renderSearchBar() {
+  return `
+    <div class="search-wrap">
+      <input type="text" id="globalSearch" class="search-input" placeholder="Поиск по темам..." autocomplete="off">
+      <div id="searchResults" class="search-results" style="display:none;"></div>
+    </div>
+  `;
+}
+
+function initSearch() {
+  const input = document.getElementById('globalSearch');
+  const resultsBox = document.getElementById('searchResults');
+  if (!input || !resultsBox) return;
+
+  input.addEventListener('input', (e) => {
+    const query = e.target.value.trim();
+    if (query.length < 2) {
+      resultsBox.style.display = 'none';
+      resultsBox.innerHTML = '';
+      return;
+    }
+
+    const lowerQuery = query.toLowerCase();
+    const found = [];
+
+    MATERIALS.forEach(m => {
+      const cleanText = stripHtml(m.content);
+      const titleLower = m.title.toLowerCase();
+      const textLower = cleanText.toLowerCase();
+      
+      let score = 0;
+      if (titleLower.includes(lowerQuery)) score += 10;
+      if (textLower.includes(lowerQuery)) score += 1;
+      
+      if (score > 0) {
+        found.push({ material: m, score, cleanText });
+      }
+    });
+
+    found.sort((a, b) => b.score - a.score);
+
+    if (!found.length) {
+      resultsBox.innerHTML = '<div class="search-empty">Ничего не найдено</div>';
+      resultsBox.style.display = 'block';
+      return;
+    }
+
+    resultsBox.innerHTML = found.slice(0, 15).map(item => {
+      const m = item.material;
+      const level = (m.level === 'C1' || m.level === 'C2') ? 'C1–C2' : m.level;
+      const cat = m.category === 'theory' ? 'Теория' : m.category === 'practice' ? 'Практика' : 'Словарь';
+      
+      const highlightedTitle = highlightMatch(m.title, query);
+      const snippet = item.score === 10 ? '' : getSnippet(item.cleanText, query);
+      const highlightedSnippet = snippet ? highlightMatch(snippet, query) : '';
+
+      return `<div class="search-result-item" onclick="showArticle(${m.id})">
+                <span class="search-result-level">${level} · ${cat}</span>
+                <span class="search-result-title">${highlightedTitle}</span>
+                ${highlightedSnippet ? `<span class="search-result-snippet">${highlightedSnippet}</span>` : ''}
+              </div>`;
+    }).join('');
+    resultsBox.style.display = 'block';
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!input.contains(e.target) && !resultsBox.contains(e.target)) {
+      resultsBox.style.display = 'none';
+    }
+  });
+}
+
+function parseVocabTable(htmlContent) {
+  const tempDiv = document.createElement('div');
+  tempDiv.innerHTML = htmlContent;
+  const table = tempDiv.querySelector('table');
+  if (!table) return [];
+
+  const rows = Array.from(table.querySelectorAll('tr')).slice(1);
+  const words = [];
+
+  rows.forEach(row => {
+    const cells = Array.from(row.querySelectorAll('td'));
+    if (cells.length >= 2) {
+      const english = cells[0].textContent.trim();
+      const translation = cells[1].textContent.trim();
+      words.push({ english, translation });
+    }
+  });
+
+  return words;
+}
+
+function getAllVocab() {
+  const vocabArticles = MATERIALS.filter(m => m.category === 'vocabulary');
+  let allWords = [];
+  vocabArticles.forEach(m => {
+    const words = parseVocabTable(m.content);
+    words.forEach(w => {
+      allWords.push({
+        ...w,
+        id: `${m.level}|${m.topic}|${w.english}`,
+        materialId: m.id,
+        materialTitle: m.title
+      });
+    });
+  });
+  return allWords;
+}
+
+function getVocabCardState(cardId) {
+  return VOCAB_STATE[cardId] || { interval: 0, nextReview: 0 };
+}
+
+function updateVocabCardState(cardId, quality) {
+  const state = getVocabCardState(cardId);
+  let interval = state.interval || 0;
+
+  if (quality === 0) {
+    interval = 0;
+  } else if (quality === 1) {
+    interval = 1;
+  } else if (quality === 2) {
+    interval = interval === 0 ? 3 : interval * 1.5;
+  } else if (quality === 3) {
+    interval = interval === 0 ? 7 : interval * 2.5;
+  }
+
+  const nextReview = Date.now() + interval * 24 * 60 * 60 * 1000;
+  VOCAB_STATE[cardId] = { interval, nextReview };
+  saveVocabState();
+}
+
+function showVocabCards(level) {
+  highlightNav('vocabulary');
+  toggleVocabNavVisibility(true);
+  saveLastRoute('vocabCards', [level]);
+
+  const words = getAllVocab().filter(w => {
+    if (level === 'ALL') return true;
+    const wLevel = w.materialId ? MATERIALS.find(m => m.id === w.materialId).level : null;
+    return wLevel === level;
+  });
+
+  const now = Date.now();
+  const dueWords = words.filter(w => {
+    const state = getVocabCardState(w.id);
+    return state.nextReview <= now;
+  });
+
+  if (!dueWords.length) {
+    app.innerHTML = `
+      <button class="back-home-btn" onclick="showSection('vocabulary')">← Назад к словарю</button>
+      <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> / <a href="#" onclick="showSection('vocabulary'); return false;">Словарь</a> <span>/ ${level}</span></div>
+      <h1>Словарь — ${level === 'ALL' ? 'Все уровни' : level}</h1>
+      <div class="locked" style="margin-top: 40px;">
+        <p style="font-size: 24px; margin-bottom: 10px;">🎩 Отлично!</p>
+        <p>Нет карточек для повторения на сегодня.</p>
+        <button class="btn btn-secondary" style="margin-top: 20px;" onclick="showVocabCards('${level}')">Обновить</button>
+      </div>
+    `;
+    window.scrollTo(0, 0);
+    return;
+  }
+
+  renderFlashcard(level, dueWords, 0);
+}
+
+function renderFlashcard(level, dueWords, index) {
+  if (index >= dueWords.length) {
+    app.innerHTML = `
+      <button class="back-home-btn" onclick="showSection('vocabulary')">← Назад к словарю</button>
+      <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> / <a href="#" onclick="showSection('vocabulary'); return false;">Словарь</a> <span>/ ${level}</span></div>
+      <h1>Словарь — ${level === 'ALL' ? 'Все уровни' : level}</h1>
+      <div class="locked" style="margin-top: 40px; border-color: #2E7D5B; color: #2E7D5B;">
+        <p style="font-size: 24px; margin-bottom: 10px;">🎉 Сессия завершена!</p>
+        <p>Вы повторили ${dueWords.length} карточек.</p>
+        <button class="btn btn-dark" style="margin-top: 20px;" onclick="showVocabCards('${level}')">Продолжить</button>
+      </div>
+    `;
+    window.scrollTo(0, 0);
+    return;
+  }
+
+  const word = dueWords[index];
+
+  app.innerHTML = `
+    <button class="back-home-btn" onclick="showSection('vocabulary')">← Назад к словарю</button>
+    <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> / <a href="#" onclick="showSection('vocabulary'); return false;">Словарь</a> <span>/ ${level === 'ALL' ? 'Все уровни' : level}</span></div>
+    
+    <div class="flashcard-progress">
+      Карточка ${index + 1} из ${dueWords.length}
+    </div>
+
+    <div class="flashcard-container" id="flashcard" onclick="flipCard()">
+      <div class="flashcard-inner">
+        <div class="flashcard-front">
+          <div class="flashcard-word">${word.english}</div>
+          <div class="flashcard-hint">Нажмите, чтобы увидеть перевод</div>
+        </div>
+        <div class="flashcard-back">
+          <div class="flashcard-word">${word.translation}</div>
+          <div class="flashcard-hint">Нажмите, чтобы вернуться</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flashcard-controls" id="flashcardControls">
+      <button class="btn btn-danger" onclick="handleVocabResponse('${word.id}', 0)">Забыл (1)</button>
+      <button class="btn btn-warning" onclick="handleVocabResponse('${word.id}', 1)">Трудно (2)</button>
+      <button class="btn btn-success" onclick="handleVocabResponse('${word.id}', 2)">Хорошо (3)</button>
+      <button class="btn btn-primary" onclick="handleVocabResponse('${word.id}', 3)">Легко (4)</button>
+    </div>
+  `;
+  window.scrollTo(0, 0);
+  window.__currentFlashcard = { level, dueWords, index };
+}
+
+function flipCard() {
+  const card = document.getElementById('flashcard');
+  if (card) {
+    card.classList.toggle('flipped');
+  }
+}
+
+function handleVocabResponse(wordId, quality) {
+  updateVocabCardState(wordId, quality);
+  if (window.__currentFlashcard) {
+    const { level, dueWords, index } = window.__currentFlashcard;
+    renderFlashcard(level, dueWords, index + 1);
+  }
+}
+
 function showHome() {
   highlightNav('home');
   toggleVocabNavVisibility(true);
   saveLastRoute('home');
 
   const levels = getLevels();
-  let html = '';
+  let html = renderSearchBar();
 
   if (PROGRESS.lastOpened) {
     const last = MATERIALS.find(m => m.id === PROGRESS.lastOpened);
@@ -255,6 +533,7 @@ function showHome() {
 
   app.innerHTML = html;
   window.scrollTo(0, 0);
+  initSearch();
 }
 
 function renderProgressOverview() {
@@ -295,7 +574,9 @@ function renderProgressOverview() {
 function resetProgress() {
   if (!confirm('Сбросить весь прогресс? Это действие нельзя отменить.')) return;
   PROGRESS = cloneDefault();
+  VOCAB_STATE = {};
   saveProgress();
+  saveVocabState();
   showHome();
 }
 
@@ -305,31 +586,59 @@ function showSection(category) {
   saveLastRoute('section', [category]);
   const names = { theory: 'Теория', practice: 'Практика', vocabulary: 'Словарь' };
   const name = names[category] || 'Материалы';
-  const levels = getLevels().filter(level => articlesOf(level, category).length > 0);
-
+  
   let html = `<button class="back-home-btn" onclick="showHome()">← На главную</button>
               <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a><span>/ ${name}</span></div>
               <div class="section-heading">
                 <p class="eyebrow">ENGLISH LEARNING</p>
                 <h1>${name}</h1>
-                <p class="section-intro">Выберите уровень, чтобы открыть нужные материалы.</p>
-              </div>
-              <div class="grid">`;
+                <p class="section-intro">${category === 'vocabulary' ? 'Выберите уровень для карточек или начните повторение всех слов.' : 'Выберите уровень, чтобы открыть нужные материалы.'}</p>
+              </div>`;
 
-  if (!levels.length) {
-    html += `<div class="locked">Пока нет материалов в разделе «${name}».</div>`;
-  } else {
+  if (category === 'vocabulary') {
+    const levels = getLevels().filter(level => articlesOf(level, category).length > 0);
+    html += '<div class="grid">';
+    
+    if (levels.length > 0) {
+      html += `<button class="card-btn" onclick="showVocabCards('ALL')">
+                 <span class="card-icon">🧠</span>
+                 <span class="card-title">Все слова</span>
+                 <span class="card-subtitle">Интервальное повторение</span>
+               </button>`;
+    }
+
     levels.forEach(level => {
-      const count = articlesOf(level, category).length;
-      html += `<button class="card-btn" onclick="showLevelTab('${level}','${category}')">
-                 <span class="card-icon">${category === 'theory' ? '📚' : category === 'practice' ? '✍️' : '📖'}</span>
-                 ${progressBadge(level, category)}
+      const count = getAllVocab().filter(w => {
+        const m = MATERIALS.find(x => x.id === w.materialId);
+        return m && m.level === level;
+      }).length;
+      
+      html += `<button class="card-btn" onclick="showVocabCards('${level}')">
+                 <span class="card-icon">📖</span>
                  <span class="card-title">${level}</span>
-                 <span class="card-subtitle">${count} ${count === 1 ? 'материал' : count >= 2 && count <= 4 ? 'материала' : 'материалов'}</span>
+                 <span class="card-subtitle">${count} слов</span>
                </button>`;
     });
+    html += '</div>';
+  } else {
+    const levels = getLevels().filter(level => articlesOf(level, category).length > 0);
+    html += '<div class="grid">';
+    if (!levels.length) {
+      html += `<div class="locked">Пока нет материалов в разделе «${name}».</div>`;
+    } else {
+      levels.forEach(level => {
+        const count = articlesOf(level, category).length;
+        html += `<button class="card-btn" onclick="showLevelTab('${level}','${category}')">
+                   <span class="card-icon">${category === 'theory' ? '📚' : '✍️'}</span>
+                   ${progressBadge(level, category)}
+                   <span class="card-title">${level}</span>
+                   <span class="card-subtitle">${count} ${count === 1 ? 'материал' : count >= 2 && count <= 4 ? 'материала' : 'материалов'}</span>
+                 </button>`;
+      });
+    }
+    html += '</div>';
   }
-  html += '</div>';
+
   app.innerHTML = html;
   window.scrollTo(0, 0);
 }
@@ -342,7 +651,10 @@ function showLevel(level) {
 
   const theory = articlesOf(level, 'theory');
   const practice = articlesOf(level, 'practice');
-  const vocab = articlesOf(level, 'vocabulary');
+  const vocabCount = getAllVocab().filter(w => {
+    const m = MATERIALS.find(x => x.id === w.materialId);
+    return m && m.level === level;
+  }).length;
 
   let html = `<button class="back-home-btn" onclick="showHome()">← На главную</button>
               <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> <span>/ ${level}</span></div>
@@ -360,10 +672,9 @@ function showLevel(level) {
                 </button>`;
 
   if (!isExamOrICPC) {
-    html += `<button class="card-btn" onclick="showLevelTab('${level}','vocabulary')">
-                  ${progressBadge(level, 'vocabulary')}
+    html += `<button class="card-btn" onclick="showVocabCards('${level}')">
                   <span class="card-title">📖 Лексика</span>
-                  <span class="card-subtitle">${vocab.length} материалов</span>
+                  <span class="card-subtitle">${vocabCount} слов</span>
                 </button>`;
   }
   html += `</div>`;
@@ -667,6 +978,7 @@ function restoreLastRoute() {
       case 'level': return showLevel(route.args[0]);
       case 'levelTab': return showLevelTab(route.args[0], route.args[1]);
       case 'article': return showArticle(route.args[0]);
+      case 'vocabCards': return showVocabCards(route.args[0]);
       default: return showHome();
     }
   } catch {
@@ -707,6 +1019,7 @@ function toggleTheme() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  loadVocabState();
   updateThemeToggle();
   restoreLastRoute();
 });

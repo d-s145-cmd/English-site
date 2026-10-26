@@ -1,5 +1,5 @@
 const app = document.getElementById('app');
-const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1–C2', 'ICPC'];
+const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1–C2', 'EXAM', 'ICPC'];
 
 const CONTRACTION_MAP = [
   [/\bcan\s+not\b/g, 'cannot'],
@@ -196,6 +196,13 @@ function highlightNav(section) {
   });
 }
 
+function toggleVocabNavVisibility(show) {
+  const vocabNavBtn = document.querySelector('.nav-btn[data-section="vocabulary"]');
+  if (vocabNavBtn) {
+    vocabNavBtn.style.display = show ? '' : 'none';
+  }
+}
+
 function progressBadge(level, category) {
   const items = articlesOf(level, category);
   if (!items.length) return '';
@@ -209,6 +216,7 @@ function progressBadge(level, category) {
 
 function showHome() {
   highlightNav('home');
+  toggleVocabNavVisibility(true);
   saveLastRoute('home');
 
   const levels = getLevels();
@@ -293,6 +301,7 @@ function resetProgress() {
 
 function showSection(category) {
   highlightNav(category);
+  toggleVocabNavVisibility(category !== 'vocabulary');
   saveLastRoute('section', [category]);
   const names = { theory: 'Теория', practice: 'Практика', vocabulary: 'Словарь' };
   const name = names[category] || 'Материалы';
@@ -328,6 +337,9 @@ function showSection(category) {
 function showLevel(level) {
   highlightNav('');
   saveLastRoute('level', [level]);
+  const isExamOrICPC = (level === 'EXAM' || level === 'ICPC');
+  toggleVocabNavVisibility(!isExamOrICPC);
+
   const theory = articlesOf(level, 'theory');
   const practice = articlesOf(level, 'practice');
   const vocab = articlesOf(level, 'vocabulary');
@@ -347,7 +359,7 @@ function showLevel(level) {
                   <span class="card-subtitle">${practice.length} материалов</span>
                 </button>`;
 
-  if (level !== 'ICPC') {
+  if (!isExamOrICPC) {
     html += `<button class="card-btn" onclick="showLevelTab('${level}','vocabulary')">
                   ${progressBadge(level, 'vocabulary')}
                   <span class="card-title">📖 Лексика</span>
@@ -361,6 +373,7 @@ function showLevel(level) {
 
 function showLevelTab(level, tab) {
   highlightNav(tab);
+  toggleVocabNavVisibility(tab !== 'vocabulary');
   saveLastRoute('levelTab', [level, tab]);
   const items = articlesOf(level, tab);
   const tabName = tab === 'theory' ? 'Теория' : tab === 'practice' ? 'Практика' : 'Лексика';
@@ -397,6 +410,7 @@ function showArticle(id) {
   if (!a) { app.innerHTML = '<p>Материал не найден.</p>'; return; }
 
   highlightNav(a.category);
+  toggleVocabNavVisibility(a.category !== 'vocabulary');
   saveLastOpened(id);
   saveLastRoute('article', [id]);
 

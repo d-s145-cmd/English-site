@@ -1581,9 +1581,15 @@ html[data-theme="midnight"] .flashcard-back {
   font-family: 'Crimson Pro', serif;
   display: block;
 }
+
 .search-highlight {
-  background: rgba(201, 169, 97, 0.4);
+  background: transparent;
   color: var(--burgundy-dark);
-  border-radius: 2px;
-  padding: 0 2px;
+  font-weight: 600;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 1px;
+}
+html[data-theme="midnight"] .search-highlight {
+  color: var(--gold-light);
+  border-bottom-color: var(--gold);
 }

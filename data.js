@@ -3402,5 +3402,496 @@ const MATERIALS = [
 <li>raise money for charity — собрать деньги на благотворительность</li>
 <li>report a crime — сообщить о преступлении</li>
 </ul>
+` },
+  { id: 801, level: "EXAM", category: "theory", topic: "tenses_theory", title: "01. Все времена английского языка", content: `
+<h3>Обзор системы времён</h3>
+<p>В английском языке времена делятся на три группы: настоящее (Present), прошедшее (Past) и будущее (Future). В каждой группе есть четыре аспекта: Simple (простой), Continuous (длительный), Perfect (совершенный) и Perfect Continuous.</p>
+
+<h3>1.1. Present</h3>
+<table>
+<tr><th>Форма</th><th>Строение</th><th>Основное употребление</th><th>Пример</th></tr>
+<tr><td>Present Simple</td><td>V / V-s; do/does</td><td>привычки, факты, расписания</td><td>She works from home. — Она работает из дома.</td></tr>
+<tr><td>Present Continuous</td><td>am/is/are + V-ing</td><td>действие сейчас, временная ситуация, договорённость</td><td>I’m staying with my aunt this week. — На этой неделе я живу у тёти.</td></tr>
+<tr><td>Present Perfect</td><td>have/has + V3</td><td>опыт, результат к настоящему, период до сих пор</td><td>I’ve lost my keys. — Я потерял ключи.</td></tr>
+<tr><td>Present Perfect Continuous</td><td>have/has been + V-ing</td><td>длительность/процесс до настоящего момента</td><td>I’ve been waiting for an hour. — Я жду уже час.</td></tr>
+</table>
+<p><b>Сравнение:</b></p>
+<ul>
+<li><i>I live in Berlin.</i> — постоянный факт.</li>
+<li><i>I’m living in Berlin for a few months.</i> — временная ситуация.</li>
+<li><i>I’ve read the book.</i> — важен результат: книга прочитана.</li>
+<li><i>I’ve been reading the book all morning.</i> — важен процесс; книга может быть не закончена.</li>
+</ul>
+
+<h3>1.2. Past</h3>
+<table>
+<tr><th>Форма</th><th>Строение</th><th>Основное употребление</th><th>Пример</th></tr>
+<tr><td>Past Simple</td><td>V2 / did + V</td><td>завершённое действие в прошлом</td><td>We arrived late. — Мы приехали поздно.</td></tr>
+<tr><td>Past Continuous</td><td>was/were + V-ing</td><td>процесс в определённый момент прошлого; фон</td><td>I was cooking when he called. — Я готовил, когда он позвонил.</td></tr>
+<tr><td>Past Perfect</td><td>had + V3</td><td>действие произошло раньше другого прошлого действия</td><td>The train had left before we arrived. — Поезд ушёл до того, как мы приехали.</td></tr>
+<tr><td>Past Perfect Continuous</td><td>had been + V-ing</td><td>длительный процесс до момента в прошлом</td><td>She had been working for hours, so she was tired. — Она работала несколько часов, поэтому устала.</td></tr>
+</table>
+<p>Past Simple сообщает, что произошло; Past Continuous показывает процесс/фон; Past Perfect подчёркивает, что действие было раньше другого прошлого события.</p>
+
+<h3>1.3. Future</h3>
+<table>
+<tr><th>Форма</th><th>Строение</th><th>Основное употребление</th><th>Пример</th></tr>
+<tr><td>will</td><td>will + V</td><td>спонтанное решение, обещание, прогноз/мнение</td><td>I’ll help you. — Я помогу тебе.</td></tr>
+<tr><td>be going to</td><td>am/is/are going to + V</td><td>намерение или прогноз по очевидным признакам</td><td>Look at those clouds! It’s going to rain. — Посмотри на облака! Сейчас пойдёт дождь.</td></tr>
+<tr><td>Present Continuous</td><td>am/is/are + V-ing</td><td>личная договорённость</td><td>I’m meeting Sam at six. — Я встречаюсь с Сэмом в шесть.</td></tr>
+<tr><td>Present Simple</td><td>V / V-s</td><td>расписание</td><td>The plane leaves at 9:20. — Самолёт отправляется в 9:20.</td></tr>
+<tr><td>Future Continuous</td><td>will be + V-ing</td><td>процесс в конкретный момент будущего</td><td>This time tomorrow, I’ll be flying home. — Завтра в это время я буду лететь домой.</td></tr>
+<tr><td>Future Perfect</td><td>will have + V3</td><td>завершение к моменту в будущем</td><td>By Friday, I’ll have finished. — К пятнице я закончу.</td></tr>
+<tr><td>Future Perfect Continuous</td><td>will have been + V-ing</td><td>длительность процесса к будущему моменту</td><td>By June, he’ll have been working here for ten years. — К июню будет десять лет, как он здесь работает.</td></tr>
+</table>
+
+<h3>1.4. Важные маркеры и ограничения</h3>
+<ul>
+<li><b>Present Simple:</b> usually, often, every day, never.</li>
+<li><b>Present Continuous:</b> now, at the moment, currently, this week.</li>
+<li><b>Past Simple:</b> yesterday, last year, two days ago, in 2019.</li>
+<li><b>Present Perfect:</b> ever, never, just, already, yet, recently, so far, since, for.</li>
+<li><b>Past Perfect:</b> by the time, already, before.</li>
+<li><b>Future Perfect:</b> by tomorrow, by the time, before + будущий момент.</li>
+</ul>
+<p><b>since</b> = с какого момента; <b>for</b> = как долго.</p>
+<p>Обычно не употребляем Continuous с глаголами состояния (<i>know, believe, belong, need, prefer, understand</i>).</p>
+<p>После <i>when, as soon as, until, before, after, if</i> в придаточном о будущем обычно используется Present Simple: <i>I’ll call you when I arrive</i>.</p>
+
+<h3>1.5. Быстрый алгоритм выбора времени</h3>
+<ol>
+<li>Когда происходит событие: настоящее, прошлое или будущее?</li>
+<li>Важен факт/регулярность, процесс, результат или длительность?</li>
+<li>Есть ли второе событие, относительно которого нужно показать «раньше»?</li>
+<li>Период ещё продолжается или уже завершён?</li>
+<li>Не является ли выражение расписанием, договорённостью или намерением?</li>
+</ol>
+` },
+  { id: 802, level: "EXAM", category: "practice", topic: "tenses_practice", title: "01. Практика: Все времена", content: `
+<h3>Практика A. Выберите правильную форму</h3>
+<ol>
+<li>I usually [[walk]] (walk) to work, but today I [[am taking]] (take) the bus.</li>
+<li>She [[has known]] (know) Mark since primary school.</li>
+<li>We [[have been waiting]] (wait) for forty minutes and the doctor still hasn’t called us.</li>
+<li>When I got home, my family [[had]] already [[eaten]] (already / eat).</li>
+<li>At 8 p.m. tomorrow, I [[will be driving]] (drive) to the airport.</li>
+<li>By the end of this month, they [[will have completed]] (complete) the project.</li>
+<li>He [[worked]] (work) in Madrid in 2022.</li>
+<li>I [[haven't seen]] (not / see) that film yet.</li>
+<li>The phone rang while I [[was having]] (have) a shower.</li>
+<li>By next April, I [[will have been studying]] (study) English for three years.</li>
+<li>The museum [[opens]] (open) at ten tomorrow, according to the website.</li>
+<li>Look! That cyclist [[is going to fall]] (fall)!</li>
+<li>How long [[have]] you [[been learning]] (learn) English?</li>
+<li>She was exhausted because she [[had been running]] (run).</li>
+<li>I promise I [[won't tell]] (not / tell) anyone.</li>
+</ol>
+
+<h3>Практика B. Исправьте ошибки</h3>
+<ol>
+<li>I am knowing the answer. → [[I know the answer.]]</li>
+<li>We have visited Rome last summer. → [[We visited Rome last summer.]]</li>
+<li>When she will arrive, we’ll start dinner. → [[When she arrives, we'll start dinner.]]</li>
+<li>He works here since 2020. → [[He has worked here since 2020.|He has been working here since 2020.]]</li>
+<li>By the time I arrived, the meeting already started. → [[By the time I arrived, the meeting had already started.]]</li>
+<li>This time next week I will sit on the beach. → [[This time next week I will be sitting on the beach.]]</li>
+<li>I have been finishing the report, so you can read it now. → [[I have finished the report, so you can read it now.]]</li>
+<li>They didn’t went to the party. → [[They didn't go to the party.]]</li>
+<li>She has been owning this car for years. → [[She has owned this car for years.]]</li>
+<li>By 2030, scientists will discover a cure for every disease. → [[By 2030, scientists will have discovered a cure for every disease.]]</li>
+</ol>
+
+<h3>Практика C. Переведите на английский</h3>
+<ol>
+<li>Я живу здесь с 2021 года. → [[I have lived here since 2021.|I have been living here since 2021.]]</li>
+<li>Когда я позвонил, они обсуждали план. → [[When I called, they were discussing the plan.]]</li>
+<li>К тому времени, как мы добрались до станции, поезд уже ушёл. → [[By the time we got to the station, the train had already left.]]</li>
+<li>Завтра в это время я буду сдавать экзамен. → [[This time tomorrow, I'll be taking an exam.]]</li>
+<li>К пятнице она закончит отчёт. → [[She'll have finished the report by Friday.]]</li>
+<li>Ты когда-нибудь пробовал индийскую еду? → [[Have you ever tried Indian food?]]</li>
+<li>Я весь день занимаюсь, поэтому устал. → [[I've been studying all day, so I'm tired.]]</li>
+<li>Мы встречаемся с клиентом в три часа. → [[We're meeting the client at three.]]</li>
+<li>Если он опоздает, мы начнём без него. → [[If he is late, we'll start without him.]]</li>
+<li>Через месяц будет пять лет, как они работают вместе. → [[By next month, they'll have been working together for five years.]]</li>
+</ol>
+` },
+  { id: 803, level: "EXAM", category: "theory", topic: "passive_theory", title: "02. Passive Voice — пассивный залог", content: `
+<h3>Краткая теория</h3>
+<p>Пассив нужен, когда важнее действие или объект, чем исполнитель. Объект активного предложения становится подлежащим.</p>
+<p><b>Active:</b> Someone repaired the road.<br><b>Passive:</b> The road was repaired. — Дорогу отремонтировали.</p>
+<p>Формула: <b>be в нужном времени + V3</b>. Время выражается формой <i>be</i>:</p>
+<ul>
+<li>Present Simple: am/is/are + V3 — <i>The room is cleaned every day.</i></li>
+<li>Past Simple: was/were + V3 — <i>The bridge was built in 1998.</i></li>
+<li>Present Continuous: am/is/are being + V3 — <i>The road is being repaired.</i></li>
+<li>Past Continuous: was/were being + V3 — <i>The room was being painted.</i></li>
+<li>Present Perfect: have/has been + V3 — <i>The email has been sent.</i></li>
+<li>Past Perfect: had been + V3 — <i>The work had been finished before noon.</i></li>
+<li>Future Simple: will be + V3 — <i>The results will be announced tomorrow.</i></li>
+<li>Future Perfect: will have been + V3 — <i>The project will have been completed by June.</i></li>
+<li>Модальные глаголы: modal + be + V3 — <i>It must be done today.</i></li>
+<li>Инфинитив: to be + V3 — <i>The report needs to be checked.</i></li>
+</ul>
+<p>Исполнитель с <b>by</b> добавляется, если он важен: <i>The novel was written by Orwell.</i> Не всякий глагол образует пассив: обычно нужен переходный глагол с объектом.</p>
+` },
+  { id: 804, level: "EXAM", category: "practice", topic: "passive_practice", title: "02. Практика: Passive Voice", content: `
+<h3>Практика A. Преобразуйте в Passive</h3>
+<ol>
+<li>They clean the offices every evening. → [[The offices are cleaned every evening.]]</li>
+<li>Someone stole my bike yesterday. → [[My bike was stolen yesterday.]]</li>
+<li>The company is testing a new app. → [[A new app is being tested by the company.]]</li>
+<li>They have cancelled the meeting. → [[The meeting has been cancelled.]]</li>
+<li>The team had completed the work before the deadline. → [[The work had been completed before the deadline.]]</li>
+<li>They will publish the results tomorrow. → [[The results will be published tomorrow.]]</li>
+<li>You must wear a helmet. → [[A helmet must be worn.]]</li>
+<li>They are building a new hospital near here. → [[A new hospital is being built near here.]]</li>
+<li>Someone was following us. → [[We were being followed.]]</li>
+<li>They will have delivered all the packages by noon. → [[All the packages will have been delivered by noon.]]</li>
+<li>People speak Spanish in many countries. → [[Spanish is spoken in many countries.]]</li>
+<li>Nobody has told me the truth. → [[I haven't been told the truth.]]</li>
+</ol>
+
+<h3>Практика B. Вставьте правильную форму глагола в скобках</h3>
+<ol>
+<li>The invitations [[were sent]] (send) yesterday.</li>
+<li>This machine [[is used]] (use) every day.</li>
+<li>Our house [[is being painted]] (paint) at the moment.</li>
+<li>The problem [[has]] already [[been solved]] (solve).</li>
+<li>The documents must [[be signed]] (sign) before Friday.</li>
+<li>A new shopping centre [[was being built]] (build) when I moved here.</li>
+<li>The suspect [[is being questioned]] (question) by the police now.</li>
+<li>The work [[will be finished]] (finish) by the end of the week.</li>
+<li>The room [[hasn't been cleaned]] (not / clean) yet.</li>
+<li>When we arrived, the food [[had been prepared]] (prepare).</li>
+</ol>
+
+<h3>Практика C. Active или Passive? Выберите форму.</h3>
+<ol>
+<li>The chef [[prepared]] (prepared / was prepared) a special meal.</li>
+<li>The special meal [[was prepared]] (prepared / was prepared) for the guests.</li>
+<li>This book [[has been translated]] (has translated / has been translated) into twenty languages.</li>
+<li>They [[are interviewing]] (are interviewing / are being interviewed) three candidates today.</li>
+<li>The road [[will be closed]] (will close / will be closed) for repairs tonight.</li>
+<li>Someone [[has damaged]] (has damaged / has been damaged) my laptop.</li>
+<li>The results [[will be announced]] (announce / will be announced) next Monday.</li>
+<li>The manager [[gave]] (gave / was given) us clear instructions.</li>
+</ol>
+
+<h3>Практика D. Переведите на английский</h3>
+<ol>
+<li>Эти письма отправляют каждую пятницу. → [[These letters are sent every Friday.]]</li>
+<li>Мост строили, когда мы переехали сюда. → [[The bridge was being built when we moved here.]]</li>
+<li>Все билеты уже проданы. → [[All the tickets have already been sold.]]</li>
+<li>Решение объявят завтра. → [[The decision will be announced tomorrow.]]</li>
+<li>Эту проблему нужно решить немедленно. → [[This problem needs to be solved immediately.]]</li>
+<li>К июлю здание будет завершено. → [[The building will have been completed by July.]]</li>
+<li>Меня не предупредили об изменении. → [[I wasn't told about the change.]]</li>
+<li>Сейчас проверяют документы. → [[The documents are being checked now.]]</li>
+</ol>
+` },
+  { id: 805, level: "EXAM", category: "theory", topic: "conditionals_theory", title: "03. Conditionals — условные предложения", content: `
+<h3>Краткая теория</h3>
+<table>
+<tr><th>Тип</th><th>Значение</th><th>Формула</th><th>Пример</th></tr>
+<tr><td>Zero</td><td>факт, закономерность</td><td>If + Present, Present</td><td>If you heat ice, it melts. — Если нагреть лёд, он тает.</td></tr>
+<tr><td>First</td><td>реальное/возможное будущее</td><td>If + Present, will + V</td><td>If it rains, we’ll stay home. — Если пойдёт дождь, мы останемся дома.</td></tr>
+<tr><td>Second</td><td>воображаемое настоящее/будущее</td><td>If + Past, would + V</td><td>If I had more time, I’d travel. — Если бы у меня было больше времени, я бы путешествовал.</td></tr>
+<tr><td>Third</td><td>нереальное прошлое, сожаление</td><td>If + Past Perfect, would have + V3</td><td>If she’d left earlier, she’d have caught the train. — Если бы она вышла раньше, то успела бы на поезд.</td></tr>
+<tr><td>Mixed</td><td>прошлое влияет на настоящее или наоборот</td><td>комбинация форм</td><td>If I’d studied medicine, I’d be a doctor now. — Если бы я изучал медицину, сейчас был бы врачом.</td></tr>
+</table>
+<p>Не ставьте <b>will</b> в обычной придаточной части с <i>if</i>: <i>If I see him, I’ll tell him.</i></p>
+<p><b>Unless</b> = if … not: <i>Unless you hurry, you’ll miss the bus.</i></p>
+<p><b>Provided/providing that, as long as</b> = при условии, что.</p>
+<p><b>In case</b> = на случай, если; не равно обычному <i>if</i>: <i>Take an umbrella in case it rains.</i></p>
+` },
+  { id: 806, level: "EXAM", category: "practice", topic: "conditionals_practice", title: "03. Практика: Conditionals", content: `
+<h3>Практика A. Поставьте глаголы в правильную форму</h3>
+<ol>
+<li>If you [[mix]] (mix) blue and yellow, you [[get]] (get) green.</li>
+<li>If I [[see]] (see) Anna tomorrow, I [[will give]] (give) her your message.</li>
+<li>If he [[had]] (have) more confidence, he [[would apply]] (apply) for the job.</li>
+<li>If we [[had left]] (leave) earlier, we [[wouldn't have missed]] (not / miss) the train yesterday.</li>
+<li>If I [[hadn't spent]] (not / spend) so much money last month, I [[would have]] (have) more now.</li>
+<li>Unless you [[hurry]] (hurry), you [[will be]] (be) late.</li>
+<li>If she [[had listened]] (listen) to the instructions, she wouldn’t be making this mistake now.</li>
+<li>If I were you, I [[wouldn't accept]] (not / accept) the offer.</li>
+<li>If they [[had booked]] (book) in advance, they would have got cheaper tickets.</li>
+<li>If water [[reaches]] (reach) 100°C, it [[boils]] (boil) at sea level.</li>
+<li>We’ll go hiking provided that the weather [[is]] (be) good.</li>
+<li>If he hadn’t forgotten his passport, he [[would be]] (be) on the plane now.</li>
+</ol>
+
+<h3>Практика B. Перефразируйте, используя слово в скобках</h3>
+<ol>
+<li>Hurry up or you’ll miss the train. (IF) → [[If you don't hurry, you'll miss the train.]]</li>
+<li>I didn’t study, so I failed the test. (IF) → [[If I had studied, I wouldn't have failed the test.]]</li>
+<li>I don’t have a car, so I can’t drive to work. (IF) → [[If I had a car, I could drive to work.]]</li>
+<li>You can borrow my laptop, but you must be careful. (AS LONG AS) → [[You can borrow my laptop as long as you're careful.]]</li>
+<li>He didn’t train enough, so he isn’t fit now. (IF) → [[If he had trained more, he would be fitter now.]]</li>
+<li>You won’t understand unless you ask questions. (IF) → [[If you ask questions, you'll understand.|You won't understand if you don't ask questions.]]</li>
+<li>I regret not calling her. (IF) → [[If only I had called her.|I wish I had called her.]]</li>
+<li>You should take a map because you might get lost. (IN CASE) → [[Take a map in case you get lost.]]</li>
+</ol>
+
+<h3>Практика D. Переведите на английский</h3>
+<ol>
+<li>Если завтра будет солнечно, мы поедем за город. → [[If it's sunny tomorrow, we'll go to the countryside.]]</li>
+<li>Если бы я знал ответ, я бы тебе сказал. → [[If I knew the answer, I'd tell you.]]</li>
+<li>Если бы они проверили адрес, они бы не заблудились. → [[If they had checked the address, they wouldn't have got lost.]]</li>
+<li>Если бы я тогда принял эту работу, сейчас я жил бы в Лондоне. → [[If I had accepted that job then, I'd be living in London now.]]</li>
+<li>Если не поторопишься, опоздаешь. → [[Unless you hurry, you'll be late.]]</li>
+<li>Если бы она больше практиковалась, сейчас она говорила бы свободнее. → [[If she had practised more, she would speak more fluently now.]]</li>
+</ol>
+` },
+  { id: 807, level: "EXAM", category: "theory", topic: "wishes_theory", title: "04. Wishes, If only и похожие конструкции", content: `
+<h3>Краткая теория</h3>
+<ul>
+<li><b>wish / if only + Past Simple</b> — хочется, чтобы настоящее было другим: <i>I wish I lived near the sea.</i> — Хотелось бы жить у моря.</li>
+<li><b>wish / if only + Past Perfect</b> — сожаление о прошлом: <i>I wish I had studied harder.</i> — Жаль, что я не учился усерднее.</li>
+<li><b>wish + would + V</b> — раздражение или желание, чтобы кто-то изменил поведение/чтобы ситуация изменилась: <i>I wish you would stop shouting.</i> — Хотелось бы, чтобы ты перестал кричать.</li>
+<li><b>wish + could + V</b> — желание иметь возможность: <i>I wish I could drive.</i> — Хотелось бы уметь водить.</li>
+<li><b>If only</b> эмоциональнее, чем <i>wish</i>: <i>If only we had more time!</i></li>
+<li><b>would rather + subject + Past Simple</b> — предпочтение относительно другого человека сейчас/в будущем: <i>I’d rather you came tomorrow.</i></li>
+<li><b>It’s time + subject + Past Simple</b> — пора кому-то что-то сделать: <i>It’s time we left.</i></li>
+<li><b>I’d rather + V</b> — предпочитаю сам: <i>I’d rather stay home.</i></li>
+</ul>
+<p>Не путайте <i>wish</i> с <i>hope</i>: <i>I hope she passes the exam</i> — я надеюсь, что она сдаст экзамен (это реально возможно).</p>
+` },
+  { id: 808, level: "EXAM", category: "practice", topic: "wishes_practice", title: "04. Практика: Wishes и If only", content: `
+<h3>Практика A. Выберите форму</h3>
+<ol>
+<li>I wish I [[knew]] (know) how to fix this computer.</li>
+<li>She wishes she [[hadn't said]] (not / say) that yesterday.</li>
+<li>I wish you [[would stop]] (stop) interrupting me.</li>
+<li>If only we [[had]] (have) more money!</li>
+<li>He wishes he [[could]] (can) come to the concert.</li>
+<li>It’s time we [[went]] (go) home.</li>
+<li>I’d rather you [[didn't tell]] (not / tell) anyone about this.</li>
+<li>I wish it [[weren't raining]] (not / rain) right now.</li>
+<li>If only I [[had taken]] (take) your advice last year.</li>
+<li>I’d rather [[watch]] (watch) a film than go out tonight.</li>
+</ol>
+
+<h3>Практика B. Перепишите предложения с заданной конструкцией</h3>
+<ol>
+<li>I don’t speak French, and I regret it. (WISH) → [[I wish I spoke French.]]</li>
+<li>She spent all her money and now regrets it. (WISH) → [[She wishes she hadn't spent all her money.]]</li>
+<li>Please stop making so much noise. (I WISH YOU ...) → [[I wish you would stop making so much noise.]]</li>
+<li>We should leave now. (IT’S TIME ...) → [[It's time we left.]]</li>
+<li>I prefer you not to use my computer. (I’D RATHER ...) → [[I'd rather you didn't use my computer.]]</li>
+<li>I’m sorry I can’t come with you. (WISH) → [[I wish I could come with you.]]</li>
+<li>He regrets not accepting the invitation. (IF ONLY) → [[If only he had accepted the invitation.]]</li>
+<li>I want him to call me instead of texting. (I WISH ... WOULD) → [[I wish he would call me instead of texting.]]</li>
+</ol>
+
+<h3>Практика C. Переведите на английский</h3>
+<ol>
+<li>Жаль, что я не живу ближе к работе. → [[I wish I lived closer to work.]]</li>
+<li>Если бы только мы купили билеты раньше! → [[If only we had bought the tickets earlier!]]</li>
+<li>Хотелось бы, чтобы ты перестал опаздывать. → [[I wish you would stop being late.]]</li>
+<li>Жаль, что я не послушал твой совет. → [[I wish I had listened to your advice.]]</li>
+<li>Пора нам начинать. → [[It's time we started.]]</li>
+<li>Я бы предпочёл, чтобы ты пришёл пораньше. → [[I'd rather you came earlier.]]</li>
+<li>Хотелось бы, чтобы я мог остаться подольше. → [[I wish I could stay longer.]]</li>
+<li>Надеюсь, погода улучшится. → [[I hope the weather improves.]]</li>
+</ol>
+` },
+  { id: 809, level: "EXAM", category: "theory", topic: "reported_theory", title: "05. Reported Speech — косвенная речь", content: `
+<h3>Краткая теория</h3>
+<p>Косвенная речь передаёт чужие слова без точной цитаты.</p>
+<p><b>Прямая:</b> Tom said, “I am tired.”<br><b>Косвенная:</b> Tom said (that) he was tired. — Том сказал, что устал.</p>
+<h3>Типичные сдвиги времён</h3>
+<ul>
+<li>Present Simple → Past Simple</li>
+<li>Present Continuous → Past Continuous</li>
+<li>Past Simple → Past Perfect (часто, но не всегда обязательно, если последовательность и так ясна)</li>
+<li>Present Perfect → Past Perfect</li>
+<li>will → would</li>
+<li>can → could</li>
+<li>may → might</li>
+<li>must → had to (если речь об обязанности в прошлом)</li>
+</ul>
+<p>Если сообщение всё ещё актуально или факт универсален, сдвиг времени необязателен: <i>The teacher said that water boils at 100°C.</i></p>
+<h3>Местоимения и слова времени/места</h3>
+<ul>
+<li>I → he/she; my → his/her; we → they</li>
+<li>now → then; today → that day; yesterday → the day before; tomorrow → the next day</li>
+<li>here → there; this → that; these → those</li>
+</ul>
+<h3>Вопросы, просьбы и приказы</h3>
+<ul>
+<li>Общий вопрос: <b>asked + if/whether + subject + verb</b><br>“Are you ready?” → He asked if I was ready.</li>
+<li>Специальный вопрос: <b>asked + question word + subject + verb</b><br>“Where do you live?” → She asked where I lived.</li>
+<li>Просьба/приказ: <b>told/asked + object + (not) to + verb</b><br>“Please wait.” → He asked me to wait.<br>“Don’t touch it.” → She told me not to touch it.</li>
+</ul>
+<p>Не используйте порядок слов вопроса внутри косвенного вопроса: <i>She asked where I was</i>, не <i>where was I</i>.</p>
+` },
+  { id: 810, level: "EXAM", category: "practice", topic: "reported_practice", title: "05. Практика: Reported Speech", content: `
+<h3>Практика A. Переведите в косвенную речь</h3>
+<ol>
+<li>Emma said, “I am busy.” → [[Emma said that she was busy.]]</li>
+<li>He said, “I have finished the report.” → [[He said that he had finished the report.]]</li>
+<li>They said, “We will call you tomorrow.” → [[They said that they would call me the next day.]]</li>
+<li>Jack said, “I saw her yesterday.” → [[Jack said that he had seen her the day before.]]</li>
+<li>Mia said, “I can help you.” → [[Mia said that she could help me.]]</li>
+<li>The teacher said, “The Earth goes around the Sun.” → [[The teacher said that the Earth goes around the Sun.]]</li>
+<li>She asked me, “Do you like coffee?” → [[She asked me if I liked coffee.]]</li>
+<li>He asked, “Where did you buy this jacket?” → [[He asked where I had bought that jacket.]]</li>
+<li>Mum said to me, “Don’t stay up late.” → [[Mum told me not to stay up late.]]</li>
+<li>The receptionist said to us, “Please wait here.” → [[The receptionist asked us to wait there.]]</li>
+<li>He asked her, “Have you ever been to Spain?” → [[He asked her if she had ever been to Spain.]]</li>
+<li>Anna said, “I’m going to apply for a new job.” → [[Anna said that she was going to apply for a new job.]]</li>
+</ol>
+
+<h3>Практика B. Исправьте ошибки</h3>
+<ol>
+<li>He asked me where did I work. → [[He asked me where I worked.]]</li>
+<li>She said me that she was tired. → [[She told me that she was tired.|She said to me that she was tired.]]</li>
+<li>They told that they would arrive late. → [[They said that they would arrive late.|They told us that they would arrive late.]]</li>
+<li>He asked if was I ready. → [[He asked if I was ready.]]</li>
+<li>Mum told me don’t touch the oven. → [[Mum told me not to touch the oven.]]</li>
+<li>She asked me what I wanted. (Правильно) → [[She asked me what I wanted.]]</li>
+<li>He said that he has lost his wallet the day before. → [[He said that he had lost his wallet the day before.]]</li>
+<li>I asked him where he lived. (Правильно) → [[I asked him where he lived.]]</li>
+<li>The teacher told us to not talk. → [[The teacher told us not to talk.]]</li>
+<li>She asked me if I had seen her keys. (Правильно) → [[She asked me if I had seen her keys.]]</li>
+</ol>
+
+<h3>Практика C. Выберите правильный вариант</h3>
+<ol>
+<li>“I’m hungry,” he said. → He said he [[was]] (is / was) hungry.</li>
+<li>“Where are you going?” → She asked me where [[I was going]] (was I going / I was going).</li>
+<li>“Don’t be late.” → He told us [[not to be]] (not to be / to not be) late.</li>
+<li>“Can you help?” → She asked if I [[could]] (could / can) help.</li>
+<li>“I’ll see you next week.” → He said he would see me [[the following week]] (the following week / next week).</li>
+<li>“Have you finished?” → She asked whether I [[had finished]] (had finished / have finished).</li>
+</ol>
+
+<h3>Практика D. Переведите на английский</h3>
+<ol>
+<li>Она сказала, что никогда не была в Канаде. → [[She said that she had never been to Canada.]]</li>
+<li>Он спросил меня, знаю ли я дорогу. → [[He asked me if I knew the way.]]</li>
+<li>Учитель спросил, почему я опоздал. → [[The teacher asked why I had been late.]]</li>
+<li>Мама попросила меня закрыть окно. → [[Mum asked me to close the window.]]</li>
+<li>Они сказали, что приедут на следующий день. → [[They said that they would arrive the next day.]]</li>
+<li>Он велел нам не открывать дверь. → [[He told us not to open the door.]]</li>
+<li>Она спросила, закончил ли я работу. → [[She asked if I had finished the work.]]</li>
+<li>Я спросил его, где он купил телефон. → [[I asked him where he had bought the phone.]]</li>
+</ol>
+` },
+  { id: 811, level: "EXAM", category: "practice", topic: "mixed_exam", title: "06. Большой смешанный практикум", content: `
+<p>В этих заданиях темы намеренно перемешаны. Определите нужную конструкцию самостоятельно: времена, пассив, условные предложения, wishes или косвенная речь.</p>
+
+<h3>Блок A. Выберите правильный вариант</h3>
+<ol>
+<li>I [[have known]] her for ten years. (know / have known / am knowing)</li>
+<li>The new library [[will be opened]] next spring. (will open / will be opened / will have opening)</li>
+<li>If I [[were]] you, I’d apologise. (am / were / had been)</li>
+<li>He said he [[had sent]] the email the day before. (sent / had sent / has sent)</li>
+<li>I wish I [[hadn't spent]] so much money last weekend. (didn’t spend / hadn’t spent / wouldn’t spend)</li>
+<li>This time tomorrow, we [[will be flying]] over the Atlantic. (fly / will be flying / will have flown)</li>
+<li>If she had taken the medicine, she [[would feel]] better now. (would feel / would have felt / will feel)</li>
+<li>The documents [[are being checked]] at the moment. (are checking / are being checked / have checked)</li>
+<li>She asked me where I [[lived]]. (live / did live / lived)</li>
+<li>By 2035, many new technologies [[will have been developed]]. (will develop / will have been developed / are developing)</li>
+<li>If you [[heat]] ice, it melts. (will heat / heat / heated)</li>
+<li>I wish my neighbours [[wouldn't play]] loud music every night. (wouldn’t play / didn’t played / won’t play)</li>
+<li>The train [[had left]] before we got to the station. (left / had left / has left)</li>
+<li>If he [[had studied]] harder, he would have passed. (studied / had studied / would study)</li>
+<li>The manager told us [[not to use]] our phones. (not use / not to use / don’t use)</li>
+<li>I [[have been studying]] for two hours, so I need a break. (study / have studied / have been studying)</li>
+<li>If it [[rains]] tomorrow, the match will be cancelled. (will rain / rains / would rain)</li>
+<li>The house [[was being painted]] when we arrived. (was painting / was being painted / painted)</li>
+<li>She said that she [[couldn't]] come because she was ill. (can’t / couldn’t / won’t)</li>
+<li>It’s time you [[made]] a decision. (make / made / have made)</li>
+</ol>
+
+<h3>Блок B. Поставьте глаголы в скобках в правильную форму</h3>
+<ol>
+<li>By the time the ambulance arrived, the patient [[had lost]] (lose) consciousness.</li>
+<li>The new rules [[will be introduced]] (introduce) next month.</li>
+<li>If I [[had been]] (be) more organised, I wouldn’t have missed the appointment yesterday.</li>
+<li>He [[has been working]] (work) on this project since January.</li>
+<li>She asked me whether I [[had seen]] (see) her glasses.</li>
+<li>I wish I [[hadn't forgotten]] (not / forget) to save the file last night.</li>
+<li>While we [[were driving]] (drive) home, we saw an accident.</li>
+<li>If you [[don't water]] (not / water) plants, they die.</li>
+<li>The suspect [[was arrested]] (arrest) two days ago.</li>
+<li>By next December, I [[will have been living]] (live) here for five years.</li>
+<li>He said he [[would call]] (call) me the following day.</li>
+<li>If they had booked earlier, they [[would have paid]] (pay) less.</li>
+<li>I’d rather you [[kept]] (keep) this information private.</li>
+<li>The kitchen [[was being renovated]] (renovate) when they bought the house.</li>
+<li>I [[had]] never [[tried]] (try) sushi before I went to Japan.</li>
+<li>If she [[had taken]] (take) the job, she would be living abroad now.</li>
+<li>I’m sure you [[will enjoy]] (enjoy) the film.</li>
+<li>The report must [[be finished]] (finish) today.</li>
+<li>She [[hasn't replied]] (not / reply) to my message yet.</li>
+<li>He was tired because he [[had been running]] (run) for an hour.</li>
+</ol>
+
+<h3>Блок C. Исправьте одну ошибку в каждом предложении</h3>
+<ol>
+<li>I have seen him yesterday. → [[I saw him yesterday.]]</li>
+<li>If I will have time, I’ll call you. → [[If I have time, I'll call you.]]</li>
+<li>The room is cleaned right now. → [[The room is being cleaned right now.]]</li>
+<li>She asked me where was I going. → [[She asked me where I was going.]]</li>
+<li>I wish I would know the answer. → [[I wish I knew the answer.]]</li>
+<li>By the time we arrived, the film already started. → [[By the time we arrived, the film had already started.]]</li>
+<li>The invitations have sent already. → [[The invitations have already been sent.]]</li>
+<li>If he had listened, he wouldn’t make that mistake yesterday. → [[If he had listened, he wouldn't have made that mistake yesterday.]]</li>
+<li>She told me don’t worry. → [[She told me not to worry.]]</li>
+<li>I am working here since 2021. → [[I have been working here since 2021.|I have worked here since 2021.]]</li>
+<li>This time tomorrow, I will drive to Prague. → [[This time tomorrow, I will be driving to Prague.]]</li>
+<li>If only I didn’t say that at the meeting yesterday. → [[If only I hadn't said that at the meeting yesterday.]]</li>
+<li>The bridge is built in 1920. → [[The bridge was built in 1920.]]</li>
+<li>He asked me did I need any help. → [[He asked me if I needed any help.]]</li>
+<li>Unless you don’t hurry, you’ll miss the bus. → [[Unless you hurry, you'll miss the bus.|If you don't hurry, you'll miss the bus.]]</li>
+</ol>
+
+<h3>Блок D. Преобразуйте предложения, сохранив смысл</h3>
+<ol>
+<li>Someone has stolen my phone. (PASSIVE) → [[My phone has been stolen.]]</li>
+<li>“I can’t come today,” Lisa said. (REPORTED SPEECH) → [[Lisa said that she couldn't come that day.]]</li>
+<li>I didn’t save the document, so I lost my changes. (IF) → [[If I had saved the document, I wouldn't have lost my changes.]]</li>
+<li>I don’t have enough time to learn another language. (WISH) → [[I wish I had enough time to learn another language.]]</li>
+<li>They will announce the winner tomorrow. (PASSIVE) → [[The winner will be announced tomorrow.]]</li>
+<li>“Where have you been?” he asked me. (REPORTED SPEECH) → [[He asked me where I had been.]]</li>
+<li>I regret telling him the secret. (WISH) → [[I wish I hadn't told him the secret.]]</li>
+<li>You should leave now. (IT’S TIME) → [[It's time you left.]]</li>
+<li>She didn’t take the job, so she isn’t living in Paris now. (MIXED CONDITIONAL) → [[If she had taken the job, she would be living in Paris now.]]</li>
+<li>Don’t touch the equipment. (TOLD) → [[We were told not to touch the equipment.|They told us not to touch the equipment.]]</li>
+<li>Perhaps they’ll finish the work by Monday. (FUTURE PERFECT) → [[They will have finished the work by Monday.]]</li>
+<li>I prefer you to arrive before six. (I’D RATHER) → [[I'd rather you arrived before six.]]</li>
+</ol>
+
+<h3>Блок E. Переведите на английский</h3>
+<ol>
+<li>Я изучаю английский уже три года. → [[I have been learning English for three years.|I have learned English for three years.]]</li>
+<li>Когда мы пришли, ужин уже приготовили. → [[When we arrived, dinner had already been prepared.]]</li>
+<li>К концу года все документы будут проверены. → [[All the documents will have been checked by the end of the year.]]</li>
+<li>Если бы я был на твоём месте, я бы не соглашался. → [[If I were you, I wouldn't agree.]]</li>
+<li>Если бы она не забыла ключи, сейчас мы были бы уже дома. → [[If she hadn't forgotten the keys, we would be home by now.]]</li>
+<li>Жаль, что я не купил билеты заранее. → [[I wish I had bought the tickets in advance.]]</li>
+<li>Он спросил меня, видел ли я его брата накануне. → [[He asked me if I had seen his brother the day before.]]</li>
+<li>Меня попросили не пользоваться телефоном во время экзамена. → [[I was asked not to use my phone during the exam.]]</li>
+<li>Сейчас ремонтируют дорогу, поэтому автобусы идут в объезд. → [[The road is being repaired now, so buses are being diverted.]]</li>
+<li>Если завтра он позвонит, скажи ему, что я занят. → [[If he calls tomorrow, tell him I'm busy.]]</li>
+<li>К тому времени, как ты вернёшься, я закончу уборку. → [[By the time you come back, I'll have finished cleaning.]]</li>
+<li>Хотелось бы, чтобы соседи перестали шуметь по ночам. → [[I wish the neighbours would stop making noise at night.]]</li>
+<li>Она сказала, что работает здесь с 2020 года. → [[She said that she had been working there since 2020.]]</li>
+<li>Если не будешь практиковаться, прогресса не будет. → [[If you don't practise, you won't make progress.]]</li>
+<li>Пора нам обсудить эту проблему. → [[It's time we discussed this problem.]]</li>
+</ol>
+
+<h3>Блок F. Мини-тексты: выберите формы по контексту</h3>
+<h4>Текст 1</h4>
+<p>Last Friday, I [[was walking]] (1) (walk) home when I [[noticed]] (2) (notice) that my wallet was missing. I [[checked]] (3) (check) my bag several times, but it wasn’t there. I realised that I [[had left]] (4) (leave) it on the bus. Luckily, a passenger [[found]] (5) (find) it and [[handed]] (6) (hand) it to the driver. By the time I reached the bus station, my wallet [[had]] (7) already [[been returned]] (return) to the lost-property office.</p>
+
+<h4>Текст 2</h4>
+<p>Our office [[is being renovated]] (1) (renovate) this month, so everyone [[is working]] (2) (work) from home. The work [[will be finished]] (3) (finish) by the end of the month. Our manager said that we [[would receive]] (4) (receive) an email when the office was ready. If everything [[goes]] (5) (go) according to plan, we [[will move]] (6) (move) back in on the first Monday of next month.</p>
+
+<h4>Текст 3</h4>
+<p>I wish I [[had taken]] (1) (take) my teacher’s advice last year. If I [[had studied]] (2) (study) more consistently, I [[would feel]] (3) (feel) more confident now. My friend told me that I [[had improved]] (4) (improve) a lot already, but I know I need more practice. If I [[keep]] (5) (keep) working, I [[will have reached]] (6) (reach) my goal by next summer.</p>
 ` }
 ];

@@ -343,14 +343,7 @@ html[data-theme="midnight"] h1 {
 }
 
 h1::after {
-  content: '';
-  display: block;
-  width: 56px;
-  height: 2px;
-  background: var(--gold);
-  margin-top: 20px;
-  border-radius: 1px;
-  box-shadow: 0 0 8px rgba(201, 169, 97, 0.35);
+  display: none;
 }
 
 .section-heading { margin-bottom: 40px; }
@@ -719,8 +712,8 @@ html[data-theme="midnight"] .btn-secondary {
   margin-bottom: 20px;
   font-size: 27px;
   font-weight: 500;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--border-soft);
+  padding-bottom: 0;
+  border-bottom: none;
   position: relative;
   letter-spacing: 0;
   text-shadow:
@@ -740,7 +733,7 @@ html[data-theme="midnight"] .article-content h3 {
   font-size: 9px;
   position: absolute;
   left: -22px;
-  top: 16px;
+  top: 14px;
   text-shadow: 0 0 6px rgba(201, 169, 97, 0.4);
 }
 

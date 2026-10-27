@@ -453,7 +453,7 @@ function renderFlashcard(level, dueWords, index) {
       Карточка ${index + 1} из ${dueWords.length}
     </div>
 
-    <div class="flashcard-container" id="flashcard">
+    <div class="flashcard-container" id="flashcard" onclick="flipCard()">
       <div class="flashcard-inner">
         <div class="flashcard-front">
           <div class="flashcard-word">${word.english}</div>
@@ -467,33 +467,29 @@ function renderFlashcard(level, dueWords, index) {
     </div>
 
     <div class="flashcard-controls" id="flashcardControls">
-      <button class="btn btn-danger" data-quality="0">Забыл (1)</button>
-      <button class="btn btn-warning" data-quality="1">Трудно (2)</button>
-      <button class="btn btn-success" data-quality="2">Хорошо (3)</button>
-      <button class="btn btn-primary" data-quality="3">Легко (4)</button>
+      <button class="btn btn-danger" onclick="handleVocabResponse('${word.id.replace(/'/g, "\\'")}', 0)">Забыл (1)</button>
+      <button class="btn btn-warning" onclick="handleVocabResponse('${word.id.replace(/'/g, "\\'")}', 1)">Трудно (2)</button>
+      <button class="btn btn-success" onclick="handleVocabResponse('${word.id.replace(/'/g, "\\'")}', 2)">Хорошо (3)</button>
+      <button class="btn btn-primary" onclick="handleVocabResponse('${word.id.replace(/'/g, "\\'")}', 3)">Легко (4)</button>
     </div>
   `;
-
-  const card = document.getElementById('flashcard');
-  const controls = document.getElementById('flashcardControls');
-
-  if (card && controls) {
-    card.addEventListener('click', () => {
-      card.classList.toggle('flipped');
-      controls.classList.toggle('visible', card.classList.contains('flipped'));
-    });
-
-    controls.querySelectorAll('button').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const quality = parseInt(btn.dataset.quality, 10);
-        updateVocabCardState(word.id, quality);
-        renderFlashcard(level, dueWords, index + 1);
-      });
-    });
-  }
-
   window.scrollTo(0, 0);
+  window.__currentFlashcard = { level, dueWords, index };
+}
+
+function flipCard() {
+  const card = document.getElementById('flashcard');
+  if (card) {
+    card.classList.toggle('flipped');
+  }
+}
+
+function handleVocabResponse(wordId, quality) {
+  updateVocabCardState(wordId, quality);
+  if (window.__currentFlashcard) {
+    const { level, dueWords, index } = window.__currentFlashcard;
+    renderFlashcard(level, dueWords, index + 1);
+  }
 }
 
 function showHome() {
@@ -525,9 +521,10 @@ function showHome() {
       const count = MATERIALS.filter(m =>
         m.level === l || (l === 'C1–C2' && (m.level === 'C1' || m.level === 'C2'))
       ).length;
+      const word = pluralize(count, 'материал', 'материала', 'материалов');
       html += `<button class="card-btn" onclick="showLevel('${l}')">
                  <span class="card-title">${l}</span>
-                 <span class="card-subtitle">${count} материалов</span>
+                 <span class="card-subtitle">${count} ${word}</span>
                </button>`;
     });
   }
@@ -616,11 +613,12 @@ function showSection(category) {
         const m = MATERIALS.find(x => x.id === w.materialId);
         return m && m.level === level;
       }).length;
+      const word = pluralize(count, 'слово', 'слова', 'слов');
       
       html += `<button class="card-btn" onclick="showVocabCards('${level}')">
                  <span class="card-icon">📖</span>
                  <span class="card-title">${level}</span>
-                 <span class="card-subtitle">${count} слов</span>
+                 <span class="card-subtitle">${count} ${word}</span>
                </button>`;
     });
     html += '</div>';
@@ -632,11 +630,12 @@ function showSection(category) {
     } else {
       levels.forEach(level => {
         const count = articlesOf(level, category).length;
+        const word = pluralize(count, 'материал', 'материала', 'материалов');
         html += `<button class="card-btn" onclick="showLevelTab('${level}','${category}')">
                    <span class="card-icon">${category === 'theory' ? '📚' : '✍️'}</span>
                    ${progressBadge(level, category)}
                    <span class="card-title">${level}</span>
-                   <span class="card-subtitle">${count} ${count === 1 ? 'материал' : count >= 2 && count <= 4 ? 'материала' : 'материалов'}</span>
+                   <span class="card-subtitle">${count} ${word}</span>
                  </button>`;
       });
     }
@@ -660,6 +659,10 @@ function showLevel(level) {
     return m && m.level === level;
   }).length;
 
+  const theoryWord = pluralize(theory.length, 'материал', 'материала', 'материалов');
+  const practiceWord = pluralize(practice.length, 'материал', 'материала', 'материалов');
+  const vocabWord = pluralize(vocabCount, 'слово', 'слова', 'слов');
+
   let html = `<button class="back-home-btn" onclick="showHome()">← На главную</button>
               <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> <span>/ ${level}</span></div>
               <h1>Раздел ${level}</h1>
@@ -667,18 +670,18 @@ function showLevel(level) {
                 <button class="card-btn" onclick="showLevelTab('${level}','theory')">
                   ${progressBadge(level, 'theory')}
                   <span class="card-title">📚 Теория</span>
-                  <span class="card-subtitle">${theory.length} материалов</span>
+                  <span class="card-subtitle">${theory.length} ${theoryWord}</span>
                 </button>
                 <button class="card-btn" onclick="showLevelTab('${level}','practice')">
                   ${progressBadge(level, 'practice')}
                   <span class="card-title">✍️ Практика</span>
-                  <span class="card-subtitle">${practice.length} материалов</span>
+                  <span class="card-subtitle">${practice.length} ${practiceWord}</span>
                 </button>`;
 
   if (!isExamOrICPC) {
     html += `<button class="card-btn" onclick="showVocabCards('${level}')">
                   <span class="card-title">📖 Лексика</span>
-                  <span class="card-subtitle">${vocabCount} слов</span>
+                  <span class="card-subtitle">${vocabCount} ${vocabWord}</span>
                 </button>`;
   }
   html += `</div>`;

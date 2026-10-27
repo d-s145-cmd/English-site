@@ -453,7 +453,7 @@ function renderFlashcard(level, dueWords, index) {
       Карточка ${index + 1} из ${dueWords.length}
     </div>
 
-    <div class="flashcard-container" id="flashcard" onclick="flipCard()">
+    <div class="flashcard-container" id="flashcard">
       <div class="flashcard-inner">
         <div class="flashcard-front">
           <div class="flashcard-word">${word.english}</div>
@@ -467,29 +467,33 @@ function renderFlashcard(level, dueWords, index) {
     </div>
 
     <div class="flashcard-controls" id="flashcardControls">
-      <button class="btn btn-danger" onclick="handleVocabResponse('${word.id}', 0)">Забыл (1)</button>
-      <button class="btn btn-warning" onclick="handleVocabResponse('${word.id}', 1)">Трудно (2)</button>
-      <button class="btn btn-success" onclick="handleVocabResponse('${word.id}', 2)">Хорошо (3)</button>
-      <button class="btn btn-primary" onclick="handleVocabResponse('${word.id}', 3)">Легко (4)</button>
+      <button class="btn btn-danger" data-quality="0">Забыл (1)</button>
+      <button class="btn btn-warning" data-quality="1">Трудно (2)</button>
+      <button class="btn btn-success" data-quality="2">Хорошо (3)</button>
+      <button class="btn btn-primary" data-quality="3">Легко (4)</button>
     </div>
   `;
-  window.scrollTo(0, 0);
-  window.__currentFlashcard = { level, dueWords, index };
-}
 
-function flipCard() {
   const card = document.getElementById('flashcard');
-  if (card) {
-    card.classList.toggle('flipped');
-  }
-}
+  const controls = document.getElementById('flashcardControls');
 
-function handleVocabResponse(wordId, quality) {
-  updateVocabCardState(wordId, quality);
-  if (window.__currentFlashcard) {
-    const { level, dueWords, index } = window.__currentFlashcard;
-    renderFlashcard(level, dueWords, index + 1);
+  if (card && controls) {
+    card.addEventListener('click', () => {
+      card.classList.toggle('flipped');
+      controls.classList.toggle('visible', card.classList.contains('flipped'));
+    });
+
+    controls.querySelectorAll('button').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const quality = parseInt(btn.dataset.quality, 10);
+        updateVocabCardState(word.id, quality);
+        renderFlashcard(level, dueWords, index + 1);
+      });
+    });
   }
+
+  window.scrollTo(0, 0);
 }
 
 function showHome() {

@@ -1445,7 +1445,6 @@ html[data-theme="midnight"] .theme-toggle:hover {
   .list-btn { font-size: 18px; padding: 18px 8px 18px 34px; }
 }
 
-
 .flashcard-progress {
   font-family: 'Inter', sans-serif;
   font-size: 12px;
@@ -1545,7 +1544,7 @@ html[data-theme="midnight"] .flashcard-back {
   z-index: 10; 
 }
 
-.flashcard-container.flipped ~ .flashcard-controls {
+.flashcard-controls.visible {
   opacity: 1;
   visibility: visible;
 }
@@ -1573,6 +1572,7 @@ html[data-theme="midnight"] .flashcard-back {
   .flashcard-controls { gap: 8px; }
   .flashcard-controls .btn { flex: 1 1 40%; padding: 12px 10px; font-size: 11px; }
 }
+
 .search-result-snippet {
   font-size: 14px;
   color: var(--muted);

@@ -1579,6 +1579,7 @@ html[data-theme="midnight"] .search-highlight {
   border-bottom-color: var(--gold);
 }
 
+/* Стили для Справочника Слов (Directory) */
 .vocab-directory {
   display: flex;
   flex-direction: column;
@@ -1644,26 +1645,6 @@ html[data-theme="midnight"] .vocab-translation {
   color: var(--charcoal);
 }
 
-.audio-btn {
-  background: transparent;
-  border: 1px solid var(--border-gold);
-  color: var(--gold);
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  font-size: 16px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s;
-}
-
-.audio-btn:hover {
-  background: var(--gold);
-  color: var(--cream);
-  transform: scale(1.1);
-}
 
 @media (max-width: 600px) {
   .vocab-item {

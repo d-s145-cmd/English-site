@@ -64,6 +64,79 @@ const CONTRACTION_MAP = [
   [/\bn't\b/g, ' not']
 ];
 
+const IPA_DICTIONARY = {
+  // A1
+  "i": "aɪ", "you": "juː", "he": "hiː", "she": "ʃiː", "it": "ɪt", "we": "wiː", "they": "ðeɪ",
+  "my": "maɪ", "your": "jɔː", "his": "hɪz", "her": "hɜː", "its": "ɪts", "our": "aʊə", "their": "ðeə",
+  "hello": "həˈləʊ", "hi": "haɪ", "good": "ɡʊd", "morning": "ˈmɔːnɪŋ", "water": "ˈwɔːtə",
+  "tea": "tiː", "coffee": "ˈkɒfi", "bread": "bred", "apple": "ˈæpl", "family": "ˈfæmɪli",
+  "mother": "ˈmʌðə", "father": "ˈfɑːðə", "parents": "ˈpeərənts", "sister": "ˈsɪstə", "brother": "ˈbrʌðə",
+  "husband": "ˈhʌzbənd", "wife": "waɪf", "child": "tʃaɪld", "children": "ˈtʃɪldrən",
+  "house": "haʊs", "flat": "flæt", "apartment": "əˈpɑːtmənt", "room": "ruːm", "kitchen": "ˈkɪtʃɪn",
+  "bathroom": "ˈbɑːθruːm", "bedroom": "ˈbedruːm", "door": "dɔː", "window": "ˈwɪndəʊ",
+  "table": "ˈteɪbl", "chair": "tʃeə", "bed": "bed", "rice": "raɪs", "milk": "mɪlk",
+  "egg": "eɡ", "chicken": "ˈtʃɪkɪn", "fish": "fɪʃ", "breakfast": "ˈbrekfəst", "lunch": "lʌntʃ",
+  "dinner": "ˈdɪnə", "be": "biː", "have": "hæv", "live": "lɪv", "work": "wɜːk",
+  "study": "ˈstʌdi", "like": "laɪk", "want": "wɒnt", "need": "niːd", "go": "ɡəʊ",
+  "come": "kʌm", "eat": "iːt", "drink": "drɪŋk", "read": "riːd", "write": "raɪt",
+  "speak": "spiːk", "listen": "ˈlɪsn", "watch": "wɒtʃ", "play": "pleɪ", "bad": "bæd",
+  "big": "bɪɡ", "small": "smɔːl", "old": "əʊld", "new": "njuː", "young": "jʌŋ",
+  "happy": "ˈhæpi", "tired": "ˈtaɪəd", "hungry": "ˈhʌŋɡri", "thirsty": "ˈθɜːsti", "easy": "ˈiːzi",
+  "difficult": "ˈdɪfɪkəlt",
+  // A2
+  "friend": "frend", "routine": "ruːˈtiːn", "wake up": "weɪk ʌp", "have breakfast": "hæv ˈbrekfəst",
+  "go to work/school": "ɡəʊ tuː wɜːk", "come home": "kʌm həʊm", "watch tv": "wɒtʃ tiː viː",
+  "go to bed": "ɡəʊ tuː bed", "airport": "ˈeəpɔːt", "train station": "treɪn ˈsteɪʃn", "ticket": "ˈtɪkɪt",
+  "passport": "ˈpɑːspɔːt", "luggage": "ˈlʌɡɪdʒ", "flight": "flaɪt", "book a ticket": "bʊk ə ˈtɪkɪt",
+  "departure": "dɪˈpɑːtʃə", "arrival": "əˈraɪvl", "shop": "ʃɒp", "buy": "baɪ",
+  "price": "praɪs", "expensive": "ɪkˈspensɪv", "cheap": "tʃiːp", "menu": "ˈmenjuː",
+  "order": "ˈɔːdə", "waiter": "ˈweɪtə", "bill": "bɪl", "delicious": "dɪˈlɪʃəs",
+  "job": "dʒɒb", "profession": "prəˈfeʃn", "doctor": "ˈdɒktə", "teacher": "ˈtiːtʃə",
+  "engineer": "ˌendʒɪˈnɪə", "manager": "ˈmænɪdʒə", "office": "ˈɒfɪs", "meeting": "ˈmiːtɪŋ",
+  "responsibility": "rɪˌspɒnsəˈbɪləti", "hobby": "ˈhɒbi", "free time": "friː taɪm", "weekend": "ˌwiːkˈend",
+  "go out": "ɡəʊ aʊt", "play sports": "pleɪ spɔːts", "read books": "riːd bʊks", "watch movies": "wɒtʃ ˈmuːviz",
+  "listen to music": "ˈlɪsn tuː ˈmjuːzɪk", "travel": "ˈtrævl", "health": "helθ", "healthy": "ˈhelθi",
+  "exercise": "ˈeksəsaɪz", "diet": "ˈdaɪət", "medicine": "ˈmedsn", "feel sick": "fiːl sɪk",
+  "headache": "ˈhedeɪk", "sport": "spɔːt", "living room": "ˈlɪvɪŋ ruːm", "furniture": "ˈfɜːnɪtʃə",
+  "address": "əˈdres", "neighborhood": "ˈneɪbəhʊd", "weather": "ˈweðə", "sunny": "ˈsʌni",
+  "rainy": "ˈreɪni", "cloudy": "ˈklaʊdi", "windy": "ˈwɪndi", "hot": "hɒt", "cold": "kəʊld",
+  "temperature": "ˈtemprətʃə", "forecast": "ˈfɔːkɑːst", "climate": "ˈklaɪmət",
+  // B1
+  "career": "kəˈrɪə", "salary": "ˈsæləri", "colleague": "ˈkɒliːɡ", "employer": "ɪmˈplɔɪə",
+  "employee": "ɪmˈplɔɪiː", "apply for a job": "əˈplaɪ fɔːr ə dʒɒb", "job interview": "dʒɒb ˈɪntəvjuː",
+  "deadline": "ˈdedlaɪn", "overtime": "ˈəʊvətaɪm", "promotion": "prəˈməʊʃn", "resign": "rɪˈzaɪn",
+  "unemployed": "ˌʌnɪmˈplɔɪd", "destination": "ˌdestɪˈneɪʃn", "accommodation": "əˌkɒməˈdeɪʃn",
+  "boarding pass": "ˈbɔːdɪŋ pɑːs", "delay": "dɪˈleɪ", "sightseeing": "ˈsaɪtsiːɪŋ", "guided tour": "ˈɡaɪdɪd tʊə",
+  "local cuisine": "ˈləʊkl kwɪˈziːn", "souvenir": "ˌsuːvəˈnɪə", "return ticket": "rɪˈtɜːn ˈtɪkɪt",
+  "healthy diet": "ˈhelθi ˈdaɪət", "work out": "wɜːk aʊt", "keep fit": "kiːp fɪt", "symptom": "ˈsɪmptəm",
+  "prescription": "prɪˈskrɪpʃn", "appointment": "əˈpɔɪntmənt", "recover": "rɪˈkʌvə", "stress": "stres",
+  "balanced": "ˈbælənst", "give up": "ɡɪv ʌp", "pollution": "pəˈluːʃn", "recycle": "ˌriːˈsaɪkl",
+  "climate change": "ˈklaɪmət tʃeɪndʒ", "global warming": "ˈɡləʊbl ˈwɔːmɪŋ", "renewable energy": "rɪˈnjuːəbl ˈenədʒi",
+  "waste": "weɪst", "protect": "prəˈtekt", "environmentally friendly": "ɪnˌvaɪrənˈmentəli ˈfrendli",
+  "natural resources": "ˈnætʃrəl rɪˈsɔːsɪz", "endangered species": "ɪnˈdeɪndʒəd ˈspiːʃiːz", "device": "dɪˈvaɪs",
+  "screen": "skriːn", "charger": "ˈtʃɑːdʒə", "battery": "ˈbætri", "download": "ˌdaʊnˈləʊd",
+  "upload": "ˌʌpˈləʊd", "password": "ˈpɑːswɜːd", "account": "əˈkaʊnt", "social media": "ˈsəʊʃl ˈmiːdiə",
+  "log in": "lɒɡ ɪn", "log out": "lɒɡ aʊt", "update": "ˌʌpˈdeɪt", "degree": "dɪˈɡriː",
+  "university": "ˌjuːnɪˈvɜːsəti", "subject": "ˈsʌbdʒɪkt", "exam": "ɪɡˈzæm", "pass": "pɑːs",
+  "fail": "feɪl", "revise": "rɪˈvaɪz", "research": "rɪˈsɜːtʃ", "scholarship": "ˈskɒləʃɪp",
+  "graduate": "ˈɡrædʒuət", "attend": "əˈtend", "excited": "ɪkˈsaɪtɪd", "worried": "ˈwʌrid",
+  "nervous": "ˈnɜːvəs", "disappointed": "ˌdɪsəˈpɔɪntɪd", "proud": "praʊd", "jealous": "ˈdʒeləs",
+  "embarrassed": "ɪmˈbærəst", "relieved": "rɪˈliːvd", "frustrated": "frʌˈstreɪtɪd", "grateful": "ˈɡreɪtfl",
+  "suburb": "ˈsʌbɜːb", "facilities": "fəˈsɪlətiz", "public transport": "ˈpʌblɪk ˈtrænspɔːt", "traffic jam": "ˈtræfɪk dʒæm",
+  "pedestrian": "pəˈdestriən", "crossroads": "ˈkrɒsrəʊdz", "roundabout": "ˈraʊndəbaʊt", "pavement": "ˈpeɪvmənt",
+  "sidewalk": "ˈsaɪdwɔːk", "rent": "rent", "landlord": "ˈlændlɔːd",
+  // B2
+  "society": "səˈsaɪəti", "government": "ˈɡʌvənmənt", "election": "ɪˈlekʃn", "policy": "ˈpɒləsi",
+  "protest": "ˈprəʊtest", "equality": "iˈkwɒləti", "human rights": "ˈhjuːmən raɪts", "poverty": "ˈpɒvəti",
+  "wealth": "welθ", "tax": "tæks", "experiment": "ɪkˈsperɪmənt", "discovery": "dɪˈskʌvəri",
+  "invention": "ɪnˈvenʃn", "artificial intelligence": "ˌɑːtɪˈfɪʃl ɪnˈtelɪdʒəns", "breakthrough": "ˈbreɪkθruː",
+  "innovation": "ˌɪnəˈveɪʃn", "development": "dɪˈveləpmənt", "data": "ˈdeɪtə", "exhibition": "ˌeksɪˈbɪʃn",
+  "performance": "pəˈfɔːməns", "masterpiece": "ˈmɑːstəpiːs", "plot": "plɒt", "character": "ˈkærəktə",
+  "review": "rɪˈvjuː", "audience": "ˈɔːdiəns", "talent": "ˈtælənt", "creative": "kriˈeɪtɪv",
+  "inspiring": "ɪnˈspaɪərɪŋ", "deforestation": "ˌdiːˌfɒrɪˈsteɪʃn", "natural disaster": "ˈnætʃrəl dɪˈzɑːstə",
+  "hunger": "ˈhʌŋɡə", "war": "wɔː", "peace": "piːs", "sustainability": "səˌsteɪnəˈbɪləti"
+};
+
 function expandContractions(str) {
   let result = ' ' + str + ' ';
   CONTRACTION_MAP.forEach(([pattern, replacement]) => {
@@ -355,9 +428,15 @@ function parseVocabTable(htmlContent) {
 function getAllVocab() {
   const vocabArticles = MATERIALS.filter(m => m.category === 'vocabulary');
   let allWords = [];
+  const seen = new Set();
+
   vocabArticles.forEach(m => {
     const words = parseVocabTable(m.content);
     words.forEach(w => {
+      const key = w.english.toLowerCase().trim();
+      if (seen.has(key)) return;
+      
+      seen.add(key);
       allWords.push({
         ...w,
         id: `${m.level}|${m.topic}|${w.english}`,
@@ -497,6 +576,57 @@ function handleVocabResponse(wordId, quality) {
   }
 }
 
+function showVocabDirectory(level) {
+  highlightNav('vocabulary');
+  toggleVocabNavVisibility(true);
+  saveLastRoute('vocabDirectory', [level]);
+
+  const words = getAllVocab().filter(w => {
+    if (level === 'ALL') return true;
+    const wLevel = w.materialId ? MATERIALS.find(m => m.id === w.materialId).level : null;
+    return wLevel === level;
+  });
+
+  words.sort((a, b) => a.english.localeCompare(b.english));
+
+  let html = `
+    <button class="back-home-btn" onclick="showSection('vocabulary')">← Назад к словарю</button>
+    <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> / <a href="#" onclick="showSection('vocabulary'); return false;">Словарь</a> <span>/ Справочник (${level === 'ALL' ? 'Все уровни' : level})</span></div>
+    <div class="section-heading">
+      <p class="eyebrow">VOCABULARY DIRECTORY</p>
+      <h1>Справочник слов — ${level === 'ALL' ? 'Все уровни' : level}</h1>
+    </div>
+  `;
+
+  if (!words.length) {
+    html += `<div class="locked">Пока нет слов.</div>`;
+    app.innerHTML = html;
+    return;
+  }
+
+  html += `<div class="vocab-directory">`;
+  words.forEach(w => {
+    const cleanEnglish = w.english.toLowerCase().trim();
+    const ipa = IPA_DICTIONARY[cleanEnglish] || '';
+    
+    html += `
+      <div class="vocab-item">
+        <div class="vocab-item-main">
+          <span class="vocab-word">${w.english}</span>
+          ${ipa ? `<span class="vocab-ipa">/${ipa}/</span>` : ''}
+        </div>
+        <div class="vocab-item-side">
+          <span class="vocab-translation">${w.translation}</span>
+        </div>
+      </div>
+    `;
+  });
+  html += `</div>`;
+
+  app.innerHTML = html;
+  window.scrollTo(0, 0);
+}
+
 function showHome() {
   highlightNav('home');
   toggleVocabNavVisibility(true);
@@ -598,35 +728,45 @@ function showSection(category) {
               <div class="section-heading">
                 <p class="eyebrow">ENGLISH LEARNING</p>
                 <h1>${name}</h1>
-                <p class="section-intro">${category === 'vocabulary' ? 'Выберите уровень для карточек или начните повторение всех слов.' : 'Выберите уровень, чтобы открыть нужные материалы.'}</p>
+                <p class="section-intro">${category === 'vocabulary' ? 'Выберите режим: игра с карточками или справочник слов.' : 'Выберите уровень, чтобы открыть нужные материалы.'}</p>
               </div>`;
 
   if (category === 'vocabulary') {
-    const levels = getLevels().filter(level => articlesOf(level, category).length > 0);
     html += '<div class="grid">';
     
+    html += `<button class="card-btn" onclick="showVocabCards('ALL')">
+               <span class="card-icon">🧠</span>
+               <span class="card-title">Играть с карточками</span>
+               <span class="card-subtitle">Интервальное повторение</span>
+             </button>`;
+
+    html += `<button class="card-btn" onclick="showVocabDirectory('ALL')">
+               <span class="card-icon">📖</span>
+               <span class="card-title">Справочник слов</span>
+               <span class="card-subtitle">Транскрипция и перевод</span>
+             </button>`;
+
+    html += '</div>';
+
+    const levels = getLevels().filter(level => articlesOf(level, category).length > 0);
     if (levels.length > 0) {
-      html += `<button class="card-btn" onclick="showVocabCards('ALL')">
-                 <span class="card-icon">🧠</span>
-                 <span class="card-title">Все слова</span>
-                 <span class="card-subtitle">Интервальное повторение</span>
-               </button>`;
+       html += `<h3 style="margin-top: 50px; margin-bottom: 20px;">Играть по уровням:</h3>`;
+       html += '<div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));">';
+       levels.forEach(level => {
+         const count = getAllVocab().filter(w => {
+           const m = MATERIALS.find(x => x.id === w.materialId);
+           return m && m.level === level;
+         }).length;
+         const word = pluralize(count, 'слово', 'слова', 'слов');
+         
+         html += `<button class="card-btn" onclick="showVocabCards('${level}')" style="padding: 20px 10px;">
+                    <span class="card-title" style="font-size: 20px;">${level}</span>
+                    <span class="card-subtitle">${count} ${word}</span>
+                  </button>`;
+       });
+       html += '</div>';
     }
 
-    levels.forEach(level => {
-      const count = getAllVocab().filter(w => {
-        const m = MATERIALS.find(x => x.id === w.materialId);
-        return m && m.level === level;
-      }).length;
-      const word = pluralize(count, 'слово', 'слова', 'слов');
-      
-      html += `<button class="card-btn" onclick="showVocabCards('${level}')">
-                 <span class="card-icon">📖</span>
-                 <span class="card-title">${level}</span>
-                 <span class="card-subtitle">${count} ${word}</span>
-               </button>`;
-    });
-    html += '</div>';
   } else {
     const levels = getLevels().filter(level => articlesOf(level, category).length > 0);
     html += '<div class="grid">';
@@ -991,6 +1131,7 @@ function restoreLastRoute() {
       case 'levelTab': return showLevelTab(route.args[0], route.args[1]);
       case 'article': return showArticle(route.args[0]);
       case 'vocabCards': return showVocabCards(route.args[0]);
+      case 'vocabDirectory': return showVocabDirectory(route.args[0]);
       default: return showHome();
     }
   } catch {

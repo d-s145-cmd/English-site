@@ -485,6 +485,11 @@ function flipCard() {
 }
 
 function handleVocabResponse(wordId, quality) {
+  const card = document.getElementById('flashcard');
+  if (!card || !card.classList.contains('flipped')) {
+    return; 
+  }
+  
   updateVocabCardState(wordId, quality);
   if (window.__currentFlashcard) {
     const { level, dueWords, index } = window.__currentFlashcard;

@@ -65,7 +65,6 @@ const CONTRACTION_MAP = [
 ];
 
 const IPA_DICTIONARY = {
-
   "i": "aɪ", "you": "juː", "he": "hiː", "she": "ʃiː", "it": "ɪt", "we": "wiː", "they": "ðeɪ",
   "my": "maɪ", "your": "jɔː", "his": "hɪz", "her": "hɜː", "its": "ɪts", "our": "aʊə", "their": "ðeə",
   "hello": "həˈləʊ", "hi": "haɪ", "good": "ɡʊd", "morning": "ˈmɔːnɪŋ", "water": "ˈwɔːtə",
@@ -131,88 +130,7 @@ const IPA_DICTIONARY = {
   "performance": "pəˈfɔːməns", "masterpiece": "ˈmɑːstəpiːs", "plot": "plɒt", "character": "ˈkærəktə",
   "review": "rɪˈvjuː", "audience": "ˈɔːdiəns", "talent": "ˈtælənt", "creative": "kriˈeɪtɪv",
   "inspiring": "ɪnˈspaɪərɪŋ", "deforestation": "ˌdiːˌfɒrɪˈsteɪʃn", "natural disaster": "ˈnætʃrəl dɪˈzɑːstə",
-  "hunger": "ˈhʌŋɡə", "war": "wɔː", "peace": "piːs", "sustainability": "səˌsteɪnəˈbɪləti",
-  
-  "friendly": "ˈfrendli", "polite": "pəˈlaɪt", "honest": "ˈɒnɪst", "patient": "ˈpeɪʃnt",
-  "shy": "ʃaɪ", "confident": "ˈkɒnfɪdənt", "hard-working": "ˌhɑːdˈwɜːkɪŋ", "reliable": "rɪˈlaɪəbl",
-  "sociable": "ˈsəʊʃəbl", "generous": "ˈdʒenərəs", "neighbour": "ˈneɪbə", "relationship": "rɪˈleɪʃnʃɪp",
-  "argue": "ˈɑːɡjuː", "invite": "ɪnˈvaɪt", "shelf": "ʃelf", "cupboard": "ˈkʌbəd",
-  "drawer": "drɔː", "sink": "sɪŋk", "tidy": "ˈtaɪdi", "messy": "ˈmesi",
-  "repair": "rɪˈpeə", "do the laundry": "duː ðə ˈlɔːndri", "make the bed": "meɪk ðə bed",
-  "take out the rubbish": "teɪk aʊt ðə ˈrʌbɪʃ", "get ready": "ɡet ˈredi", "be in a hurry": "biː ɪn ə ˈhʌri",
-  "stay up late": "steɪ ʌp leɪt", "run out of": "rʌn aʊt ɒv",
-  "make friends": "meɪk frendz", "keep in touch": "kiːp ɪn tʌtʃ", "get on well with": "ɡet ɒn wel wɪð",
-  "spend time with someone": "spend taɪm wɪð ˈsʌmwʌn", "do someone a favour": "duː ˈsʌmwʌn ə ˈfeɪvə",
-  "make a mess": "meɪk ə mes", "save time": "seɪv taɪm", "waste time": "weɪst taɪm",
-
-  "ingredient": "ɪnˈɡriːdiənt", "recipe": "ˈresəpi", "meal": "miːl", "snack": "snæk",
-  "dish": "dɪʃ", "spicy": "ˈspaɪsi", "sour": "ˈsaʊə", "fresh": "freʃ",
-  "frozen": "ˈfrəʊzn", "boil": "bɔɪl", "fry": "fraɪ", "bake": "beɪk",
-  "discount": "ˈdɪskaʊnt", "receipt": "rɪˈsiːt", "cash": "kæʃ", "change": "tʃeɪndʒ",
-  "afford": "əˈfɔːd", "borrow": "ˈbɒrəʊ", "lend": "lend", "refund": "ˈriːfʌnd",
-  "exchange": "ɪksˈtʃeɪndʒ", "size": "saɪz", "fit": "fɪt", "customer": "ˈkʌstəmə",
-  "complain": "kəmˈpleɪn", "delivery": "dɪˈlɪvəri", "queue": "kjuː", "full-time": "ˌfʊlˈtaɪm",
-  "part-time": "ˌpɑːtˈtaɪm", "shift": "ʃɪft", "earn": "ɜːn", "task": "tɑːsk",
-  "experience": "ɪkˈspɪəriəns", "timetable": "ˈtaɪmteɪbl", "pass an exam": "pɑːs ən ɪɡˈzæm",
-  "fail an exam": "feɪl ən ɪɡˈzæm", "revise for a test": "rɪˈvaɪz fɔːr ə test", "take notes": "teɪk nəʊts",
-  "hand in homework": "hænd ɪn ˈhəʊmwɜːk", "improve": "ɪmˈpruːv", "skill": "skɪl", "make progress": "meɪk ˈprəʊɡres",
-
-  "journey": "ˈdʒɜːni", "suitcase": "ˈsuːtkeɪs", "booking": "ˈbʊkɪŋ", "reception": "rɪˈsepʃn",
-  "check in": "tʃek ɪn", "check out": "tʃek aʊt", "platform": "ˈplætfɔːm", "cancel": "ˈkænsl",
-  "miss a bus": "mɪs ə bʌs", "catch a train": "kætʃ ə treɪn", "hire a car": "ˈhaɪər ə kɑː",
-  "town/city centre": "taʊn ˈsentə", "square": "skweə", "crossing": "ˈkrɒsɪŋ", "corner": "ˈkɔːnə",
-  "entrance": "ˈentrəns", "exit": "ˈeksɪt", "car park": "kɑː pɑːk", "parking lot": "ˈpɑːkɪŋ lɒt",
-  "pharmacy": "ˈfɑːməsi", "chemist's": "ˈkemɪsts", "go straight on": "ɡəʊ streɪt ɒn",
-  "turn left/right": "tɜːn left", "go past": "ɡəʊ pɑːst", "go across": "ɡəʊ əˈkrɒs",
-  "at the end of the street": "æt ði end ɒv ðə striːt", "on your left/right": "ɒn jɔː left",
-  "opposite": "ˈɒpəzɪt", "nearby": "ˌnɪəˈbaɪ",
-  "feel unwell": "fiːl ʌnˈwel", "stomach ache": "ˈstʌmək eɪk", "sore throat": "sɔː θrəʊt",
-  "cough": "kɒf", "fever": "ˈfiːvə", "rest": "rest", "disappointed": "ˌdɪsəˈpɔɪntɪd", "exhausted": "ɪɡˈzɔːstɪd",
-  "tight": "taɪt", "loose": "luːs", "suit someone": "suːt ˈsʌmwʌn", "foggy": "ˈfɒɡi",
-  "storm": "stɔːm", "thunder": "ˈθʌndə", "lightning": "ˈlaɪtnɪŋ", "shower": "ˈʃaʊə",
-  "freezing": "ˈfriːzɪŋ", "boiling": "ˈbɔɪlɪŋ", "mild": "maɪld", "coast": "kəʊst",
-  "forest": "ˈfɒrɪst", "waterfall": "ˈwɔːtəfɔːl", "environment": "ɪnˈvaɪrənmənt",
-
-  "join": "dʒɔɪn", "take up": "teɪk ʌp", "performance": "pəˈfɔːməns", "exhibition": "ˌeksɪˈbɪʃn",
-  "audience": "ˈɔːdiəns", "entrance fee": "ˈentrəns fiː", "recommend": "ˌrekəˈmend", "review": "rɪˈvjuː",
-  "plot": "plɒt", "character": "ˈkærəktə", "ending": "ˈendɪŋ", "documentary": "ˌdɒkjuˈmentri",
-  "subtitles": "ˈsʌbtaɪtlz", "device": "dɪˈvaɪs", "screen": "skriːn", "charger": "ˈtʃɑːdʒə",
-  "battery": "ˈbætri", "download": "ˌdaʊnˈləʊd", "upload": "ˌʌpˈləʊd", "attachment": "əˈtætʃmənt",
-  "password": "ˈpɑːswɜːd", "account": "əˈkaʊnt", "website": "ˈwebsaɪt", "search for": "sɜːtʃ fɔː",
-  "save a file": "seɪv ə faɪl", "delete": "dɪˈliːt", "connection": "kəˈnekʃn", "log in": "lɒɡ ɪn",
-  "log out": "lɒɡ aʊt", "send an attachment": "send ən əˈtætʃmənt",
-  "in my opinion": "ɪn maɪ əˈpɪnjən", "i agree": "aɪ əˈɡriː", "i don't agree": "aɪ dəʊnt əˈɡriː",
-  "i'm not sure": "aɪm nɒt ʃɔː", "it depends": "ɪt dɪˈpendz", "that sounds good": "ðæt saʊndz ɡʊd",
-  "i see what you mean": "aɪ siː wɒt juː miːn", "i'd rather": "aɪd ˈrɑːðə", "i prefer a to b": "aɪ prɪˈfɜː eɪ tuː biː",
-  "i'm keen on": "aɪm kiːn ɒn", "i don't mind": "aɪ dəʊnt maɪnd", "i can't stand": "aɪ kɑːnt stænd",
-  "what a pity": "wɒt ə ˈpɪti", "never mind": "ˈnevə maɪnd", "i'm sorry to hear that": "aɪm ˈsɒri tuː hɪə ðæt",
-  "congratulations": "kənˌɡrætʃuˈleɪʃnz", "good luck": "ɡʊd lʌk",
-  "could you help me, please": "kʊd juː help miː pliːz", "would you mind opening the window": "wʊd juː maɪnd ˈəʊpnɪŋ ðə ˈwɪndəʊ",
-  "would you like to": "wʊd juː laɪk tuː", "shall we": "ʃæl wiː", "why don't we": "waɪ dəʊnt wiː",
-  "how about": "haʊ əˈbaʊt", "could you repeat that, please": "kʊd juː rɪˈpiːt ðæt pliːz",
-  "could you speak more slowly": "kʊd juː spiːk mɔː ˈsləʊli", "what does this word mean": "wɒt dʌz ðɪs wɜːd miːn",
-  "how do you spell that": "haʊ duː juː spel ðæt",
-
-  "decide": "dɪˈsaɪd", "agree": "əˈɡriː", "suggest": "səˈdʒest", "explain": "ɪkˈspleɪn",
-  "expect": "ɪkˈspekt", "seem": "siːm", "happen": "ˈhæpən", "manage": "ˈmænɪdʒ",
-  "avoid": "əˈvɔɪd", "refuse": "rɪˈfjuːz", "offer": "ˈɒfə", "promise": "ˈprɒmɪs",
-  "prefer": "prɪˈfɜː", "miss": "mɪs", "spend": "spend",
-  "get on with": "ɡet ɒn wɪð", "look after": "lʊk ˈɑːftə", "look for": "lʊk fɔː",
-  "find out": "faɪnd aʊt", "put off": "pʊt ɒf", "carry on": "ˈkæri ɒn",
-  "pick up": "pɪk ʌp", "set off": "set ɒf", "get back": "ɡet bæk",
-  "try on": "traɪ ɒn", "work out": "wɜːk aʊt", "turn on/off": "tɜːn ɒn/ɒf",
-  "take off": "teɪk ɒf", "run out of": "rʌn aʊt ɒv",
-  "make a decision": "meɪk ə dɪˈsɪʒn", "make a mistake": "meɪk ə mɪˈsteɪk", "do your best": "duː jɔː best",
-  "have a good time": "hæv ə ɡʊd taɪm", "have a rest": "hæv ə rest", "take a break": "teɪk ə breɪk",
-  "take a photo": "teɪk ə ˈfəʊtəʊ", "catch a bus/train": "kætʃ ə bʌs/treɪn", "miss a bus/train": "mɪs ə bʌs/treɪn",
-  "keep in touch": "kiːp ɪn tʌtʃ", "save money": "seɪv ˈmʌni", "spend money on": "spend ˈmʌni ɒn",
-  "pay attention to": "peɪ əˈtenʃn tuː", "tell the truth": "tel ðə truːθ", "give someone a hand": "ɡɪv ˈsʌmwʌn ə hænd",
-  "book a room": "bʊk ə ruːm", "pass/fail an exam": "pɑːs/feɪl ən ɪɡˈzæm",
-  "recently": "ˈriːsntli", "already": "ɔːlˈredi", "yet": "jet", "just": "dʒʌst",
-  "still": "stɪl", "soon": "suːn", "during": "ˈdjʊərɪŋ", "while": "waɪl",
-  "until": "ənˈtɪl", "as soon as": "əz suːn əz", "at first": "æt fɜːst", "in the end": "ɪn ði end",
-  "finally": "ˈfaɪnəli", "almost": "ˈɔːlməʊst", "enough": "ɪˈnʌf", "quite": "kwaɪt",
-  "hardly ever": "ˈhɑːdli ˈevə", "although": "ɔːlˈðəʊ", "for example": "fɔːr ɪɡˈzɑːmpl", "first of all": "fɜːst ɒv ɔːl"
+  "hunger": "ˈhʌŋɡə", "war": "wɔː", "peace": "piːs", "sustainability": "səˌsteɪnəˈbɪləti"
 };
 
 function expandContractions(str) {
@@ -506,16 +424,13 @@ function parseVocabTable(htmlContent) {
 function getAllVocab() {
   const vocabArticles = MATERIALS.filter(m => m.category === 'vocabulary');
   let allWords = [];
-  const seen = new Set(); 
+  const seen = new Set();
 
   vocabArticles.forEach(m => {
     const words = parseVocabTable(m.content);
     words.forEach(w => {
       const key = w.english.toLowerCase().trim();
-      
-      if (seen.has(key)) {
-        return;
-      }
+      if (seen.has(key)) return;
       
       seen.add(key);
       allWords.push({
@@ -526,7 +441,6 @@ function getAllVocab() {
       });
     });
   });
-  
   return allWords;
 }
 
@@ -827,6 +741,12 @@ function showSection(category) {
                <span class="card-title">Справочник слов</span>
                <span class="card-subtitle">Транскрипция и перевод</span>
              </button>`;
+    
+    html += `<button class="card-btn" onclick="resetVocabProgress()">
+               <span class="card-icon">🔄</span>
+               <span class="card-title">Сбросить карточки</span>
+               <span class="card-subtitle">Начать повторение заново</span>
+             </button>`;
 
     html += '</div>';
 
@@ -871,6 +791,13 @@ function showSection(category) {
 
   app.innerHTML = html;
   window.scrollTo(0, 0);
+}
+
+function resetVocabProgress() {
+  if (!confirm('Сбросить прогресс по карточкам? Результаты тестов останутся.')) return;
+  VOCAB_STATE = {};
+  saveVocabState();
+  showSection('vocabulary');
 }
 
 function showLevel(level) {

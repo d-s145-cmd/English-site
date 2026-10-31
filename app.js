@@ -378,7 +378,7 @@ function initSearch() {
     resultsBox.innerHTML = found.slice(0, 15).map(item => {
       const m = item.material;
       const level = (m.level === 'C1' || m.level === 'C2') ? 'C1–C2' : m.level;
-      const cat = m.category === 'theory' ? 'Теория' : m.category === 'practice' ? 'Практика' : 'Словарь';
+      const cat = m.category === 'theory' ? 'Теория': m.category === 'practice' ? 'Практика': m.category === 'reading' ? 'Чтение': 'Словарь';
       
       const highlightedTitle = highlightMatch(m.title, query);
       const snippet = item.score === 10 ? '' : getSnippet(item.cleanText, query);
@@ -716,7 +716,7 @@ function showSection(category) {
   highlightNav(category);
   toggleVocabNavVisibility(category !== 'vocabulary');
   saveLastRoute('section', [category]);
-  const names = { theory: 'Теория', practice: 'Практика', vocabulary: 'Словарь' };
+  const names = { theory: 'Теория', practice: 'Практика', vocabulary: 'Словарь', reading: 'Чтение' };
   const name = names[category] || 'Материалы';
   
   let html = `<button class="back-home-btn" onclick="showHome()">← На главную</button>
@@ -779,7 +779,7 @@ function showSection(category) {
         const count = articlesOf(level, category).length;
         const word = pluralize(count, 'материал', 'материала', 'материалов');
         html += `<button class="card-btn" onclick="showLevelTab('${level}','${category}')">
-                   <span class="card-icon">${category === 'theory' ? '📚' : '✍️'}</span>
+                   <span class="card-icon">${category === 'theory' ? '📚' : category === 'practice' ? '✍️' : '📖'}</span>
                    ${progressBadge(level, category)}
                    <span class="card-title">${level}</span>
                    <span class="card-subtitle">${count} ${word}</span>
@@ -808,6 +808,7 @@ function showLevel(level) {
 
   const theory = articlesOf(level, 'theory');
   const practice = articlesOf(level, 'practice');
+  const reading = articlesOf(level, 'reading');
   const vocabCount = getAllVocab().filter(w => {
     const m = MATERIALS.find(x => x.id === w.materialId);
     return m && m.level === level;
@@ -816,20 +817,26 @@ function showLevel(level) {
   const theoryWord = pluralize(theory.length, 'материал', 'материала', 'материалов');
   const practiceWord = pluralize(practice.length, 'материал', 'материала', 'материалов');
   const vocabWord = pluralize(vocabCount, 'слово', 'слова', 'слов');
+  const readingWord = pluralize(reading.length, 'текст', 'текста', 'текстов');
 
   let html = `<button class="back-home-btn" onclick="showHome()">← На главную</button>
               <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> <span>/ ${level}</span></div>
               <h1>Раздел ${level}</h1>
               <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
                 <button class="card-btn" onclick="showLevelTab('${level}','theory')">
-                  ${progressBadge(level, 'theory')}
+                 ${progressBadge(level, 'theory')}
                   <span class="card-title">📚 Теория</span>
                   <span class="card-subtitle">${theory.length} ${theoryWord}</span>
                 </button>
                 <button class="card-btn" onclick="showLevelTab('${level}','practice')">
                   ${progressBadge(level, 'practice')}
-                  <span class="card-title">✍️ Практика</span>
-                  <span class="card-subtitle">${practice.length} ${practiceWord}</span>
+                    <span class="card-title">✍️ Практика</span>
+                    <span class="card-subtitle">${practice.length} ${practiceWord}</span>
+                </button>
+                <button class="card-btn" onclick="showLevelTab('${level}','reading')">
+                  ${progressBadge(level, 'reading')}
+                   <span class="card-title">📖 Чтение</span>
+                   <span class="card-subtitle">${reading.length} ${readingWord}</span>
                 </button>`;
 
   if (!isExamOrICPC) {
@@ -848,8 +855,8 @@ function showLevelTab(level, tab) {
   toggleVocabNavVisibility(tab !== 'vocabulary');
   saveLastRoute('levelTab', [level, tab]);
   const items = articlesOf(level, tab);
-  const tabName = tab === 'theory' ? 'Теория' : tab === 'practice' ? 'Практика' : 'Лексика';
-
+  const tabName = tab === 'theory' ? 'Теория' : tab === 'practice' ? 'Практика' : tab === 'reading' ? 'Чтение' : 'Лексика';
+  
   let html = `<button class="back-home-btn" onclick="showLevel('${level}')">← Назад в раздел ${level}</button>
               <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> / <a href="#" onclick="showLevel('${level}'); return false;">${level}</a> <span>/ ${tabName}</span></div>
               <h1>${level} — ${tabName}</h1>`;
@@ -890,13 +897,26 @@ function showArticle(id) {
   const currentIndex = items.findIndex(item => item.id === a.id);
   const prevArticle = currentIndex > 0 ? items[currentIndex - 1] : null;
   const nextArticle = currentIndex < items.length - 1 ? items[currentIndex + 1] : null;
+  
+   let content = a.content;
 
-  let content = a.content;
-  if (a.category === 'practice' && content.includes('[[')) {
-    content = renderInteractive(content);
+  if (a.category === 'reading') {
+    content = content.replace(
+      /<div class="audio-placeholder" data-audio="([^"]+)">[\s\S]*?<\/div>/g,
+      '<audio controls preload="none" style="width:100%;margin-bottom:20px;" src="$1"></audio>'
+    );
+
+    
+    content = content.replace(
+      /<h3>\s*Перевод\s*<\/h3>([\s\S]*?)(?=<h3>|$)/i,
+      '<details class="translation-toggle"><summary>Показать перевод</summary>$1</details>'
+    );
   }
 
-  const catName = a.category === 'theory' ? 'Теория' : a.category === 'practice' ? 'Практика' : 'Лексика';
+  if ((a.category === 'practice' || a.category === 'reading') && content.includes('[[')) {
+    content = renderInteractive(content);
+  }
+  const catName = a.category === 'theory' ? 'Теория' : a.category === 'practice' ? 'Практика' : a.category === 'reading' ? 'Чтение' : 'Лексика';  
   const backLevel = (a.level === 'C1' || a.level === 'C2') ? 'C1–C2' : a.level;
 
   const key = progressKey(a);
@@ -913,13 +933,13 @@ function showArticle(id) {
     : '<span></span>';
   navHtml += '</div>';
 
-  const practiceButtons = a.category === 'practice'
-    ? `<button class="btn btn-dark" onclick="checkAllInputs()">Проверить ответы</button>
-       <button class="btn btn-secondary" onclick="showAllAnswers()">Показать ответы</button>
-       <button class="btn btn-secondary" onclick="retryMistakes()">Повторить ошибки</button>
-       <button class="btn btn-secondary" onclick="resetInputs()">Очистить</button>`
-    : '';
-
+  const practiceButtons = (a.category === 'practice' || a.category === 'reading')
+  ? `<button class="btn btn-dark" onclick="checkAllInputs()">Проверить ответы</button>
+     <button class="btn btn-secondary" onclick="showAllAnswers()">Показать ответы</button>
+     <button class="btn btn-secondary" onclick="retryMistakes()">Повторить ошибки</button>
+     <button class="btn btn-secondary" onclick="resetInputs()">Очистить</button>`
+  : '';
+  
   app.innerHTML = `
     <button class="back-home-btn" onclick="showLevelTab('${backLevel}', '${a.category}')">← Назад к списку</button>
     <div class="crumbs">

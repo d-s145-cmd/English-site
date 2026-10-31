@@ -1658,3 +1658,68 @@ html[data-theme="midnight"] .vocab-translation {
     justify-content: space-between;
   }
 }
+
+.audio-placeholder {
+  background: var(--parchment);
+  border: 1px dashed var(--border-gold);
+  padding: 14px 18px;
+  margin: 0 0 24px;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--muted);
+  letter-spacing: 0.3px;
+}
+html[data-theme="midnight"] .audio-placeholder {
+  background: #262232;
+}
+
+.translation-toggle {
+  margin: 20px 0 30px;
+  border: 1px solid var(--border-soft);
+  border-radius: 4px;
+  background: var(--parchment);
+  overflow: hidden;
+}
+
+.translation-toggle > summary {
+  cursor: pointer;
+  padding: 14px 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--burgundy);
+  list-style: none;
+  user-select: none;
+  transition: background 0.2s;
+}
+
+.translation-toggle > summary::-webkit-details-marker {
+  display: none;
+}
+
+.translation-toggle > summary::before {
+  content: '▸';
+  display: inline-block;
+  margin-right: 10px;
+  color: var(--gold);
+  transition: transform 0.2s;
+}
+
+.translation-toggle[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.translation-toggle > summary:hover {
+  background: rgba(201, 169, 97, 0.12);
+}
+
+.translation-toggle > p {
+  margin: 0 20px 16px;
+}
+
+html[data-theme="midnight"] .translation-toggle {
+  background: #262232;
+}

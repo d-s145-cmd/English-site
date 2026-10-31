@@ -3022,5 +3022,354 @@ const MATERIALS = [
         <tr><td>peace</td><td>мир</td></tr>
         <tr><td>sustainability</td><td>устойчивое развитие</td></tr>
       </table>
-    ` }
+    ` },
+      { id: 1101, level: "A1", category: "reading", topic: "reading-family", title: "01. My Family — Моя семья", content: `
+<div class="audio-placeholder" data-audio="audio/a1-my-family.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/a1-my-family.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>My name is Anna. I am twenty years old. I live in a small town with my family. My family is not very big. I have a mother, a father and a brother.</p>
+<p>My mother is a teacher. She works at a school. My father is a doctor. He works in a hospital. My brother is fifteen years old. He likes football and computer games.</p>
+<p>We have a cat. Its name is Fluffy. It is white and very friendly. I love my family very much.</p>
+
+<h3>Перевод</h3>
+<p>Меня зовут Анна. Мне двадцать лет. Я живу в маленьком городе со своей семьёй. Моя семья не очень большая. У меня есть мама, папа и брат.</p>
+<p>Моя мама — учительница. Она работает в школе. Мой папа — врач. Он работает в больнице. Моему брату пятнадцать лет. Он любит футбол и компьютерные игры.</p>
+<p>У нас есть кошка. Её зовут Флаффи. Она белая и очень дружелюбная. Я очень люблю свою семью.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>town</td><td>городок</td></tr>
+<tr><td>hospital</td><td>больница</td></tr>
+<tr><td>friendly</td><td>дружелюбный</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>How old is Anna?</li>
+<li>Where does her mother work?</li>
+<li>How old is her brother?</li>
+<li>What is the cat's name?</li>
+</ol>
+
+<h3>Exercise — True or False</h3>
+<ol>
+<li>Anna lives in a big city. → [[False]]</li>
+<li>Her mother is a teacher. → [[True]]</li>
+<li>Her father works at a school. → [[False]]</li>
+<li>Her brother likes football. → [[True]]</li>
+<li>The cat is black. → [[False]]</li>
+</ol>
+` },
+
+  { id: 1102, level: "A1", category: "reading", topic: "reading-routine", title: "02. My Daily Routine — Мой распорядок дня", content: `
+<div class="audio-placeholder" data-audio="audio/a1-my-routine.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/a1-my-routine.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>I usually get up at seven o'clock. I wash my face and brush my teeth. Then I have breakfast. I usually eat eggs and bread and drink tea.</p>
+<p>At eight o'clock I go to work. I work in an office. I have lunch at one o'clock. I usually eat soup or chicken with rice.</p>
+<p>I finish work at five o'clock. After work, I go home. Sometimes I watch TV or read a book. In the evening, I have dinner with my family.</p>
+<p>I go to bed at ten o'clock. I like my daily routine.</p>
+
+<h3>Перевод</h3>
+<p>Обычно я встаю в семь часов. Я умываюсь и чищу зубы. Затем я завтракаю. Обычно я ем яйца и хлеб и пью чай.</p>
+<p>В восемь часов я иду на работу. Я работаю в офисе. Я обедаю в час дня. Обычно я ем суп или курицу с рисом.</p>
+<p>Я заканчиваю работу в пять часов. После работы я иду домой. Иногда я смотрю телевизор или читаю книгу. Вечером я ужинаю со своей семьёй.</p>
+<p>Я ложусь спать в десять часов. Мне нравится мой распорядок дня.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>wash</td><td>мыть(ся)</td></tr>
+<tr><td>brush my teeth</td><td>чистить зубы</td></tr>
+<tr><td>finish</td><td>заканчивать</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>What time does the person get up?</li>
+<li>What does the person eat for breakfast?</li>
+<li>Where does the person work?</li>
+<li>What time does the person finish work?</li>
+<li>What does the person do in the evening?</li>
+</ol>
+
+<h3>Exercise — Complete the sentences</h3>
+<ol>
+<li>I usually [[get]] up at seven.</li>
+<li>I [[have]] breakfast in the morning.</li>
+<li>I go to work at [[eight]] o'clock.</li>
+<li>I [[watch]] TV in the evening.</li>
+<li>I go to [[bed]] at ten o'clock.</li>
+</ol>
+` },
+
+  { id: 1103, level: "A1", category: "reading", topic: "reading-house", title: "03. My House — Мой дом", content: `
+<div class="audio-placeholder" data-audio="audio/a1-my-house.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/a1-my-house.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>I live in a small house. My house has two bedrooms, a living room, a kitchen and a bathroom.</p>
+<p>The living room is big and comfortable. There is a sofa, a table and a TV. There are two windows in the room.</p>
+<p>My bedroom is small but nice. There is a bed near the window. There is a wardrobe next to the bed. My books are on the table.</p>
+<p>The kitchen is very clean. There is a fridge, a cooker and a small table. I like my house because it is warm and comfortable.</p>
+
+<h3>Перевод</h3>
+<p>Я живу в небольшом доме. В моём доме две спальни, гостиная, кухня и ванная комната.</p>
+<p>Гостиная большая и удобная. Там есть диван, стол и телевизор. В комнате два окна.</p>
+<p>Моя спальня маленькая, но красивая. Кровать находится возле окна. Рядом с кроватью стоит шкаф. Мои книги лежат на столе.</p>
+<p>Кухня очень чистая. Там есть холодильник, плита и небольшой стол. Мне нравится мой дом, потому что он тёплый и уютный.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>sofa</td><td>диван</td></tr>
+<tr><td>wardrobe</td><td>шкаф</td></tr>
+<tr><td>fridge</td><td>холодильник</td></tr>
+<tr><td>near</td><td>рядом, возле</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>How many bedrooms are there?</li>
+<li>What is there in the living room?</li>
+<li>Where is the bed?</li>
+<li>Where are the books?</li>
+<li>Why does the person like the house?</li>
+</ol>
+
+<h3>Exercise — Choose the correct option</h3>
+<ol>
+<li>There [[are]] (is / are) two bedrooms.</li>
+<li>There [[is]] (is / are) a sofa in the living room.</li>
+<li>The books are [[on]] (on / under) the table.</li>
+<li>The bed is [[near]] (near / in) the window.</li>
+</ol>
+` },
+
+  { id: 1104, level: "A1", category: "reading", topic: "reading-best-friend", title: "04. My Best Friend — Мой лучший друг", content: `
+<div class="audio-placeholder" data-audio="audio/a1-my-best-friend.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/a1-my-best-friend.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>My best friend's name is Tom. He is twenty-one years old. He is tall and slim. He has got short brown hair and blue eyes.</p>
+<p>Tom is very kind and funny. He likes music, films and sports. He can play the guitar, but he cannot play the piano.</p>
+<p>We often meet after work. We go to the park, drink coffee and talk about different things. At weekends, we sometimes watch films together.</p>
+<p>I am happy to have such a good friend.</p>
+
+<h3>Перевод</h3>
+<p>Моего лучшего друга зовут Том. Ему двадцать один год. Он высокий и стройный. У него короткие каштановые волосы и голубые глаза.</p>
+<p>Том очень добрый и весёлый. Он любит музыку, фильмы и спорт. Он умеет играть на гитаре, но не умеет играть на пианино.</p>
+<p>Мы часто встречаемся после работы. Мы ходим в парк, пьём кофе и разговариваем о разных вещах. По выходным мы иногда смотрим фильмы вместе.</p>
+<p>Я рад, что у меня есть такой хороший друг.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>slim</td><td>стройный</td></tr>
+<tr><td>kind</td><td>добрый</td></tr>
+<tr><td>funny</td><td>весёлый</td></tr>
+<tr><td>guitar</td><td>гитара</td></tr>
+<tr><td>together</td><td>вместе</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>How old is Tom?</li>
+<li>What colour are his eyes?</li>
+<li>Can he play the guitar?</li>
+<li>Where do the friends go?</li>
+<li>What do they do at weekends?</li>
+</ol>
+` },
+
+  { id: 1105, level: "A1", category: "reading", topic: "reading-food", title: "05. My Favourite Food — Моя любимая еда", content: `
+<div class="audio-placeholder" data-audio="audio/a1-my-favourite-food.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/a1-my-favourite-food.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>I love food. My favourite food is pizza. I like pizza with cheese, tomatoes and chicken. I also like pasta and vegetable soup.</p>
+<p>For breakfast, I usually eat porridge or eggs. I drink coffee with milk. For lunch, I often have rice with chicken or fish.</p>
+<p>I don't like onions or mushrooms. I never drink cola because I prefer water and fresh juice.</p>
+<p>On Sundays, I cook dinner with my mother. We make something delicious. Cooking is fun!</p>
+
+<h3>Перевод</h3>
+<p>Я люблю еду. Моё любимое блюдо — пицца. Мне нравится пицца с сыром, помидорами и курицей. Я также люблю макароны и овощной суп.</p>
+<p>На завтрак я обычно ем кашу или яйца. Я пью кофе с молоком. На обед я часто ем рис с курицей или рыбой.</p>
+<p>Я не люблю лук и грибы. Я никогда не пью колу, потому что предпочитаю воду и свежий сок.</p>
+<p>По воскресеньям я готовлю ужин с мамой. Мы готовим что-нибудь вкусное. Готовить весело!</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>pasta</td><td>макароны</td></tr>
+<tr><td>porridge</td><td>каша</td></tr>
+<tr><td>onion</td><td>лук</td></tr>
+<tr><td>mushroom</td><td>гриб</td></tr>
+<tr><td>fresh juice</td><td>свежий сок</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>What is the person's favourite food?</li>
+<li>What does the person eat for breakfast?</li>
+<li>Does the person like mushrooms?</li>
+<li>What does the person drink?</li>
+<li>Who does the person cook with?</li>
+</ol>
+` },
+
+  { id: 1106, level: "A1", category: "reading", topic: "reading-weekend", title: "06. My Weekend — Мои выходные", content: `
+<div class="audio-placeholder" data-audio="audio/a1-my-weekend.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/a1-my-weekend.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>I love weekends because I don't work on Saturday and Sunday.</p>
+<p>On Saturday, I usually get up late. I have breakfast and clean my room. Then I go shopping with my friend. We sometimes go to a café and drink tea.</p>
+<p>In the afternoon, I like walking in the park. I listen to music and take photos. In the evening, I watch films or play computer games.</p>
+<p>On Sunday, I visit my grandparents. We have lunch together and talk. Sometimes we play board games.</p>
+<p>My weekends are always interesting!</p>
+
+<h3>Перевод</h3>
+<p>Я люблю выходные, потому что не работаю в субботу и воскресенье.</p>
+<p>В субботу я обычно поздно встаю. Я завтракаю и убираю свою комнату. Затем я иду за покупками с другом. Иногда мы ходим в кафе и пьём чай.</p>
+<p>Днём я люблю гулять в парке. Я слушаю музыку и фотографирую. Вечером я смотрю фильмы или играю в компьютерные игры.</p>
+<p>В воскресенье я навещаю бабушку и дедушку. Мы вместе обедаем и разговариваем. Иногда мы играем в настольные игры.</p>
+<p>Мои выходные всегда интересные!</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>clean</td><td>убирать, чистить</td></tr>
+<tr><td>shopping</td><td>покупки</td></tr>
+<tr><td>take photos</td><td>фотографировать</td></tr>
+<tr><td>visit</td><td>навещать</td></tr>
+<tr><td>grandparents</td><td>бабушка и дедушка</td></tr>
+<tr><td>board games</td><td>настольные игры</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>Why does the person love weekends?</li>
+<li>What does the person do on Saturday morning?</li>
+<li>Who does the person go shopping with?</li>
+<li>Where does the person go on Sunday?</li>
+<li>What do they do together?</li>
+</ol>
+` },
+
+  { id: 1107, level: "A1", category: "reading", topic: "reading-london", title: "07. A Day in London — День в Лондоне", content: `
+<div class="audio-placeholder" data-audio="audio/a1-a-day-in-london.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/a1-a-day-in-london.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>My name is Alex. I am on holiday in London. London is a beautiful city. There are many interesting places here.</p>
+<p>Today I visit Big Ben and Buckingham Palace. I take many photos. The weather is sunny but a little cold.</p>
+<p>Then I go to a small café. I eat a sandwich and drink hot chocolate. There are many people in the café.</p>
+<p>In the afternoon, I take a red bus and go to the city centre. I buy some souvenirs for my family.</p>
+<p>I like London very much. I want to come here again!</p>
+
+<h3>Перевод</h3>
+<p>Меня зовут Алекс. Я на отдыхе в Лондоне. Лондон — красивый город. Здесь много интересных мест.</p>
+<p>Сегодня я посещаю Биг-Бен и Букингемский дворец. Я делаю много фотографий. Погода солнечная, но немного холодная.</p>
+<p>Затем я иду в небольшое кафе. Я ем бутерброд и пью горячий шоколад. В кафе много людей.</p>
+<p>Днём я сажусь на красный автобус и еду в центр города. Я покупаю несколько сувениров для своей семьи.</p>
+<p>Мне очень нравится Лондон. Я хочу приехать сюда снова!</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>holiday</td><td>отпуск, каникулы</td></tr>
+<tr><td>sandwich</td><td>бутерброд</td></tr>
+<tr><td>city centre</td><td>центр города</td></tr>
+<tr><td>souvenir</td><td>сувенир</td></tr>
+<tr><td>again</td><td>снова</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>Where is Alex?</li>
+<li>What places does he visit?</li>
+<li>What is the weather like?</li>
+<li>What does he eat and drink?</li>
+<li>What does he buy for his family?</li>
+</ol>
+` },
+
+  { id: 1108, level: "A1", category: "reading", topic: "reading-plans", title: "08. My Plans for Tomorrow — Мои планы на завтра", content: `
+<div class="audio-placeholder" data-audio="audio/a1-my-plans.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/a1-my-plans.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>Tomorrow is Saturday. I am going to have a busy day.</p>
+<p>In the morning, I am going to get up at eight o'clock. I am going to have breakfast and go to the supermarket. I need to buy some food.</p>
+<p>After that, I am going to meet my friend Sarah. We are going to walk in the park and take some photos.</p>
+<p>In the afternoon, I am going to clean my room and do my homework. In the evening, I am going to watch a new film with my family.</p>
+<p>I think tomorrow is going to be a great day!</p>
+
+<h3>Перевод</h3>
+<p>Завтра суббота. У меня будет насыщенный день.</p>
+<p>Утром я собираюсь встать в восемь часов. Я собираюсь позавтракать и пойти в супермаркет. Мне нужно купить немного еды.</p>
+<p>После этого я собираюсь встретиться с подругой Сарой. Мы собираемся гулять в парке и фотографироваться.</p>
+<p>Днём я собираюсь убрать свою комнату и сделать домашнее задание. Вечером я собираюсь посмотреть новый фильм с семьёй.</p>
+<p>Я думаю, завтра будет отличный день!</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>busy</td><td>занятый, насыщенный</td></tr>
+<tr><td>supermarket</td><td>супермаркет</td></tr>
+<tr><td>after that</td><td>после этого</td></tr>
+<tr><td>homework</td><td>домашнее задание</td></tr>
+<tr><td>plan</td><td>план</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>What day is tomorrow?</li>
+<li>What time is the person going to get up?</li>
+<li>Who is the person going to meet?</li>
+<li>What are they going to do in the park?</li>
+<li>What is the person going to do in the evening?</li>
+</ol>
+` },
+  { id: 1110, level: "A1", category: "vocabulary", topic: "reading-words", title: "Слова из текстов для чтения (A1)", content: `
+<p>Слова, которые встречаются в разделе «Чтение» и дополняют основной словарь.</p>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>town</td><td>городок</td></tr>
+<tr><td>hospital</td><td>больница</td></tr>
+<tr><td>brush my teeth</td><td>чистить зубы</td></tr>
+<tr><td>sofa</td><td>диван</td></tr>
+<tr><td>wardrobe</td><td>шкаф</td></tr>
+<tr><td>fridge</td><td>холодильник</td></tr>
+<tr><td>slim</td><td>стройный</td></tr>
+<tr><td>guitar</td><td>гитара</td></tr>
+<tr><td>pasta</td><td>макароны</td></tr>
+<tr><td>porridge</td><td>каша</td></tr>
+<tr><td>onion</td><td>лук</td></tr>
+<tr><td>mushroom</td><td>гриб</td></tr>
+<tr><td>fresh juice</td><td>свежий сок</td></tr>
+<tr><td>shopping</td><td>покупки</td></tr>
+<tr><td>take photos</td><td>фотографировать</td></tr>
+<tr><td>grandparents</td><td>бабушка и дедушка</td></tr>
+<tr><td>board games</td><td>настольные игры</td></tr>
+<tr><td>holiday</td><td>отпуск, каникулы</td></tr>
+<tr><td>sandwich</td><td>бутерброд</td></tr>
+<tr><td>souvenir</td><td>сувенир</td></tr>
+<tr><td>busy</td><td>занятый, насыщенный</td></tr>
+<tr><td>supermarket</td><td>супермаркет</td></tr>
+<tr><td>homework</td><td>домашнее задание</td></tr>
+</table>
+` },
 ];

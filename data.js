@@ -3048,10 +3048,10 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>How old is Anna?</li>
-<li>Where does her mother work?</li>
-<li>How old is her brother?</li>
-<li>What is the cat's name?</li>
+<li>How old is Anna? → [[twenty|20|twenty years old]]</li>
+<li>Where does her mother work? → [[at a school|at school|in a school]]</li>
+<li>How old is her brother? → [[fifteen|15|fifteen years old]]</li>
+<li>What is the cat's name? → [[Fluffy]]</li>
 </ol>
 
 <h3>Exercise — True or False</h3>
@@ -3091,11 +3091,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What time does the person get up?</li>
-<li>What does the person eat for breakfast?</li>
-<li>Where does the person work?</li>
-<li>What time does the person finish work?</li>
-<li>What does the person do in the evening?</li>
+<li>What time does the person get up? → [[seven|at seven|seven o'clock|at seven o'clock|7|at 7]]</li>
+<li>What does the person eat for breakfast? → [[eggs and bread|bread and eggs]]</li>
+<li>Where does the person work? → [[in an office|an office|office]]</li>
+<li>What time does the person finish work? → [[five|at five|five o'clock|at five o'clock|5|at 5]]</li>
+<li>What does the person do in the evening? → [[has dinner|have dinner|has dinner with the family|has dinner with family]]</li>
 </ol>
 
 <h3>Exercise — Complete the sentences</h3>
@@ -3136,11 +3136,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>How many bedrooms are there?</li>
-<li>What is there in the living room?</li>
-<li>Where is the bed?</li>
-<li>Where are the books?</li>
-<li>Why does the person like the house?</li>
+<li>How many bedrooms are there? → [[two|2]]</li>
+<li>What is there in the living room? → [[a sofa, a table and a TV|a sofa a table and a TV|sofa table TV]]</li>
+<li>Where is the bed? → [[near the window|by the window|next to the window]]</li>
+<li>Where are the books? → [[on the table]]</li>
+<li>Why does the person like the house? → [[because it is warm and comfortable|it is warm and comfortable|warm and comfortable]]</li>
 </ol>
 
 <h3>Exercise — Choose the correct option</h3>
@@ -3181,11 +3181,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>How old is Tom?</li>
-<li>What colour are his eyes?</li>
-<li>Can he play the guitar?</li>
-<li>Where do the friends go?</li>
-<li>What do they do at weekends?</li>
+<li>How old is Tom? → [[twenty-one|21|twenty one]]</li>
+<li>What colour are his eyes? → [[blue]]</li>
+<li>Can he play the guitar? → [[yes|yes he can]]</li>
+<li>Where do the friends go? → [[to the park|the park|park]]</li>
+<li>What do they do at weekends? → [[watch films|watch movies|they watch films|they watch movies]]</li>
 </ol>
 ` },
 
@@ -3218,11 +3218,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What is the person's favourite food?</li>
-<li>What does the person eat for breakfast?</li>
-<li>Does the person like mushrooms?</li>
-<li>What does the person drink?</li>
-<li>Who does the person cook with?</li>
+<li>What is the person's favourite food? → [[pizza]]</li>
+<li>What does the person eat for breakfast? → [[porridge or eggs|eggs or porridge]]</li>
+<li>Does the person like mushrooms? → [[no|no they don't]]</li>
+<li>What does the person drink? → [[water and fresh juice|fresh juice and water|coffee with milk|coffee]]</li>
+<li>Who does the person cook with? → [[mother|with mother|with my mother|mum|with mum]]</li>
 </ol>
 ` },
 
@@ -3258,11 +3258,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>Why does the person love weekends?</li>
-<li>What does the person do on Saturday morning?</li>
-<li>Who does the person go shopping with?</li>
-<li>Where does the person go on Sunday?</li>
-<li>What do they do together?</li>
+<li>Why does the person love weekends? → [[because they don't work|because I don't work|doesn't work|no work]]</li>
+<li>What does the person do on Saturday morning? → [[has breakfast and cleans the room|cleans the room|clean the room|gets up late]]</li>
+<li>Who does the person go shopping with? → [[a friend|with a friend|friend|my friend]]</li>
+<li>Where does the person go on Sunday? → [[to visit grandparents|visits grandparents|grandparents|visit grandparents]]</li>
+<li>What do they do together? → [[have lunch and talk|lunch and talk|talk and have lunch|play board games]]</li>
 </ol>
 ` },
 
@@ -3297,11 +3297,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>Where is Alex?</li>
-<li>What places does he visit?</li>
-<li>What is the weather like?</li>
-<li>What does he eat and drink?</li>
-<li>What does he buy for his family?</li>
+<li>Where is Alex? → [[in London|London]]</li>
+<li>What places does he visit? → [[Big Ben and Buckingham Palace|Buckingham Palace and Big Ben]]</li>
+<li>What is the weather like? → [[sunny but a little cold|sunny and cold|sunny but cold]]</li>
+<li>What does he eat and drink? → [[a sandwich and hot chocolate|hot chocolate and a sandwich|sandwich and hot chocolate]]</li>
+<li>What does he buy for his family? → [[souvenirs|souvenir|some souvenirs]]</li>
 </ol>
 ` },
 
@@ -3336,11 +3336,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What day is tomorrow?</li>
-<li>What time is the person going to get up?</li>
-<li>Who is the person going to meet?</li>
-<li>What are they going to do in the park?</li>
-<li>What is the person going to do in the evening?</li>
+<li>What day is tomorrow? → [[Saturday]]</li>
+<li>What time is the person going to get up? → [[eight|at eight|eight o'clock|at eight o'clock|8|at 8]]</li>
+<li>Who is the person going to meet? → [[Sarah|a friend Sarah|friend Sarah]]</li>
+<li>What are they going to do in the park? → [[walk and take photos|take photos|walk|walk and take some photos]]</li>
+<li>What is the person going to do in the evening? → [[watch a new film|watch a film|watch a movie|watch a new movie]]</li>
 </ol>
 ` },
   { id: 1110, level: "A1", category: "vocabulary", topic: "reading-words", title: "Слова из текстов для чтения (A1)", content: `

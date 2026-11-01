@@ -3372,4 +3372,649 @@ const MATERIALS = [
 <tr><td>homework</td><td>домашнее задание</td></tr>
 </table>
 ` },
+
+{ id: 1009, level: "A2", category: "theory", topic: "past-continuous", title: "Past Continuous (Прошедшее продолженное)", content: `
+  <p><strong>Что это?</strong> Past Continuous описывает процесс, который длился в определённый момент прошлого. Часто используется как фон для другого события.</p>
+
+  <h3>Формула</h3>
+  <ul>
+    <li><strong>Утверждение:</strong> Subject + was/were + V-ing</li>
+    <li><strong>Отрицание:</strong> Subject + was/were not + V-ing</li>
+    <li><strong>Вопрос:</strong> Was/Were + subject + V-ing?</li>
+  </ul>
+
+  <h3>Примеры</h3>
+  <div class="example">
+    <div class="en">I <strong>was walking</strong> home when it started to rain.</div>
+    <div class="ru">Я шёл домой, когда начался дождь.</div>
+  </div>
+  <div class="example">
+    <div class="en">They <strong>were playing</strong> football at 5 o'clock yesterday.</div>
+    <div class="ru">Вчера в 5 часов они играли в футбол.</div>
+  </div>
+  <div class="example">
+    <div class="en">She <strong>wasn't listening</strong> to the teacher.</div>
+    <div class="ru">Она не слушала учителя.</div>
+  </div>
+
+  <h3>Past Continuous vs Past Simple</h3>
+  <ul>
+    <li><b>Past Continuous</b> — процесс (фон): <i>We were walking along the path.</i></li>
+    <li><b>Past Simple</b> — завершённое событие, которое прерывает процесс: <i>The weather suddenly changed.</i></li>
+  </ul>
+
+  <h3>Маркеры времени</h3>
+  <ul>
+    <li>at 5 o'clock yesterday, at that moment</li>
+    <li>while, when (в комбинации с Past Simple)</li>
+    <li>all morning / all day yesterday</li>
+  </ul>
+` },
+
+{ id: 1010, level: "A2", category: "theory", topic: "present-perfect", title: "Present Perfect (Настоящее совершённое)", content: `
+  <p><strong>Что это?</strong> Present Perfect связывает прошлое с настоящим: важен результат или жизненный опыт, а не конкретное время действия.</p>
+
+  <h3>Формула</h3>
+  <ul>
+    <li><strong>Утверждение:</strong> Subject + have/has + V3</li>
+    <li><strong>Отрицание:</strong> Subject + have/has not + V3</li>
+    <li><strong>Вопрос:</strong> Have/Has + subject + V3?</li>
+  </ul>
+
+  <h3>Примеры</h3>
+  <div class="example">
+    <div class="en">I <strong>have lost</strong> my keys. (результат: не могу войти)</div>
+    <div class="ru">Я потерял ключи.</div>
+  </div>
+  <div class="example">
+    <div class="en">She <strong>has never been</strong> to London.</div>
+    <div class="ru">Она никогда не была в Лондоне. (опыт)</div>
+  </div>
+  <div class="example">
+    <div class="en"><strong>Have</strong> you <strong>finished</strong> your homework yet?</div>
+    <div class="ru">Ты уже закончил домашнюю работу?</div>
+  </div>
+
+  <h3>Present Perfect vs Past Simple</h3>
+  <ul>
+    <li><b>Present Perfect</b> — нет конкретного времени, важен результат: <i>I have bought a new phone.</i></li>
+    <li><b>Past Simple</b> — есть конкретное время в прошлом: <i>I bought a new phone yesterday.</i></li>
+  </ul>
+
+  <h3>Маркеры времени</h3>
+  <ul>
+    <li>ever, never, just, already, yet, recently, so far</li>
+    <li>since (с какого момента), for (как долго)</li>
+  </ul>
+` },
+
+{ id: 1019, level: "A2", category: "theory", topic: "infinitive-gerund", title: "Infinitive vs Gerund (Инфинитив и герундий)", content: `
+  <p><strong>Что это?</strong> После некоторых глаголов используется инфинитив с <b>to</b> (to + V1), после других — форма с <b>-ing</b> (V-ing).</p>
+
+  <h3>Глаголы + to + V1</h3>
+  <p>decide, want, need, hope, plan, promise, learn, try</p>
+  <div class="example">
+    <div class="en">I decided <strong>to learn</strong> how to cook. / She wants <strong>to become</strong> a manager.</div>
+  </div>
+
+  <h3>Глаголы + V-ing</h3>
+  <p>enjoy, mind, suggest, avoid, finish, keep, practise</p>
+  <div class="example">
+    <div class="en">I enjoy <strong>cooking</strong>. / He kept <strong>trying</strong>.</div>
+  </div>
+
+  <h3>После love / like / hate возможны обе формы</h3>
+  <div class="example">
+    <div class="en">I love <strong>cooking</strong>. = I love <strong>to cook</strong>.</div>
+  </div>
+
+  <h3>После предлогов всегда -ing</h3>
+  <p>good at <b>drawing</b>, interested in <b>learning</b>, before <b>leaving</b>.</p>
+` },
+
+{ id: 1020, level: "A2", category: "theory", topic: "countable-uncountable", title: "Countable / Uncountable (Исчисляемые и неисчисляемые)", content: `
+  <p><strong>Что это?</strong> Исчисляемые существительные можно посчитать (one book, two books). Неисчисляемые обычно не имеют множественного числа (water, information, money).</p>
+
+  <h3>Some / Any</h3>
+  <ul>
+    <li><b>Some</b> — в утвердительных предложениях: <i>I need some water.</i></li>
+    <li><b>Any</b> — в вопросах и отрицаниях: <i>Do you have any questions? / There aren't any apples.</i></li>
+  </ul>
+
+  <h3>Much / Many</h3>
+  <ul>
+    <li><b>Many</b> + исчисляемые: <i>many books, many people</i></li>
+    <li><b>Much</b> + неисчисляемые: <i>much water, much money</i></li>
+  </ul>
+
+  <h3>Примеры</h3>
+  <div class="example">
+    <div class="en">There are <strong>some</strong> notebooks in the box, but there aren't <strong>any</strong> headphones.</div>
+    <div class="ru">В коробке есть несколько тетрадей, но нет наушников.</div>
+  </div>
+  <div class="example">
+    <div class="en">How <strong>many</strong> items did you order? How <strong>much</strong> did you pay?</div>
+    <div class="ru">Сколько товаров ты заказал? Сколько ты заплатил?</div>
+  </div>
+` },
+
+{ id: 1029, level: "A2", category: "practice", topic: "past-continuous-practice", title: "Практика: Past Continuous", content: `
+  <p>Поставьте глагол в Past Continuous или Past Simple.</p>
+  <ol>
+    <li>I [[was walking]] (walk) home when I [[saw]] (see) an old friend.</li>
+    <li>They [[were playing]] (play) football at 5 o'clock yesterday.</li>
+    <li>She [[wasn't listening]] (not / listen) when the teacher asked a question.</li>
+    <li>While we [[were having]] (have) dinner, the phone [[rang]] (ring).</li>
+    <li>What [[were]] you [[doing]] (do) at 8 p.m. yesterday?</li>
+    <li>He [[was driving]] (drive) to work when the accident [[happened]] (happen).</li>
+  </ol>
+` },
+
+{ id: 1030, level: "A2", category: "practice", topic: "present-perfect-practice", title: "Практика: Present Perfect", content: `
+  <p>Поставьте глагол в Present Perfect или Past Simple.</p>
+  <ol>
+    <li>I [[have just finished]] (just / finish) my homework.</li>
+    <li>She [[visited]] (visit) Paris last summer.</li>
+    <li>[[Have]] you ever [[been]] (be) to London?</li>
+    <li>We [[haven't seen]] (not / see) that film yet.</li>
+    <li>He [[lost]] (lose) his keys yesterday.</li>
+    <li>They [[have lived]] (live) here since 2019.</li>
+    <li>I [[have never eaten]] (never / eat) sushi.</li>
+    <li>She [[has already sent]] (already / send) the email.</li>
+  </ol>
+` },
+
+{ id: 1031, level: "A2", category: "practice", topic: "infinitive-gerund-practice", title: "Практика: Infinitive vs Gerund", content: `
+  <p>Выберите правильную форму (to + V1 или V-ing).</p>
+  <ol>
+    <li>I decided [[to learn]] (learn) how to cook.</li>
+    <li>She enjoys [[baking]] (bake) cakes.</li>
+    <li>He wants [[to become]] (become) a manager.</li>
+    <li>They kept [[trying]] (try) even when it was difficult.</li>
+    <li>I don't mind [[waiting]] (wait) for a few minutes.</li>
+    <li>We hope [[to visit]] (visit) you next summer.</li>
+    <li>She suggested [[going]] (go) to the cinema.</li>
+    <li>He promised [[to help]] (help) me with the project.</li>
+  </ol>
+` },
+
+{ id: 1032, level: "A2", category: "practice", topic: "countable-uncountable-practice", title: "Практика: Countable / Uncountable", content: `
+  <p>Вставьте some, any, much или many.</p>
+  <ol>
+    <li>I need [[some]] water.</li>
+    <li>Do you have [[any]] questions?</li>
+    <li>There aren't [[any]] apples in the fridge.</li>
+    <li>How [[many]] books did you buy?</li>
+    <li>How [[much]] money do you need?</li>
+    <li>She has [[some]] good friends.</li>
+    <li>I don't have [[much]] time today.</li>
+    <li>There are [[many]] people in the park.</li>
+  </ol>
+` },
+
+{ id: 1201, level: "A2", category: "reading", topic: "reading-new-job", title: "01. A New Job — Новая работа", content: `
+<div class="audio-placeholder" data-audio="audio/a2-new-job.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/a2-new-job.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>My name is Daniel, and I work as a receptionist in a small hotel. I started this job six months ago. At first, everything was difficult because I had to learn many new things. Now I feel more confident and enjoy my work.</p>
+<p>I usually start at eight in the morning. I answer phone calls, welcome guests and help them with their questions. I also check reservations and give visitors information about the town.</p>
+<p>This week, our hotel is very busy because a large group of tourists is staying here. I am working longer hours than usual, but I don't mind. My colleagues are friendly, and we help each other.</p>
+<p>I would like to become a hotel manager one day. I know I need more experience, so I am trying to learn something new every day.</p>
+
+<h3>Перевод</h3>
+<p>Меня зовут Дэниел, и я работаю администратором в небольшом отеле. Я начал эту работу шесть месяцев назад. Сначала всё было трудно, потому что мне нужно было узнать много нового. Теперь я чувствую себя увереннее, и мне нравится моя работа.</p>
+<p>Обычно я начинаю работать в восемь утра. Я отвечаю на телефонные звонки, встречаю гостей и помогаю им с вопросами. Также я проверяю бронирования и даю посетителям информацию о городе.</p>
+<p>На этой неделе наш отель очень загружен, потому что здесь остановилась большая группа туристов. Я работаю дольше, чем обычно, но меня это не беспокоит. Мои коллеги дружелюбные, и мы помогаем друг другу.</p>
+<p>Однажды я хотел бы стать управляющим отеля. Я знаю, что мне нужно больше опыта, поэтому стараюсь узнавать что-то новое каждый день.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>receptionist</td><td>администратор на стойке регистрации</td></tr>
+<tr><td>at first</td><td>сначала</td></tr>
+<tr><td>confident</td><td>уверенный в себе</td></tr>
+<tr><td>welcome guests</td><td>встречать гостей</td></tr>
+<tr><td>reservation</td><td>бронирование</td></tr>
+<tr><td>colleague</td><td>коллега</td></tr>
+<tr><td>experience</td><td>опыт</td></tr>
+<tr><td>each other</td><td>друг другу</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>Where does Daniel work? → [[in a small hotel|a small hotel|small hotel]]</li>
+<li>When did he start this job? → [[six months ago|6 months ago]]</li>
+<li>What does he do at work? → [[answers phone calls welcomes guests and helps them|answers phone calls|welcomes guests]]</li>
+<li>Why is the hotel busy this week? → [[because a large group of tourists is staying here|a large group of tourists|tourists]]</li>
+<li>What would Daniel like to become? → [[a hotel manager|hotel manager]]</li>
+</ol>
+
+<h3>Exercise — True or False</h3>
+<ol>
+<li>Daniel has worked at the hotel for six months. → [[True]]</li>
+<li>He works as a cook. → [[False]]</li>
+<li>The hotel is busy because of a group of tourists. → [[True]]</li>
+<li>Daniel wants to learn more. → [[True]]</li>
+</ol>
+` },
+
+{ id: 1202, level: "A2", category: "reading", topic: "reading-unforgettable-weekend", title: "02. An Unforgettable Weekend — Незабываемые выходные", content: `
+<div class="audio-placeholder" data-audio="audio/a2-unforgettable-weekend.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/a2-unforgettable-weekend.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>Last weekend, my friends and I went to the mountains. We planned the trip for a long time, and we were very excited. We left home early on Saturday morning and travelled by train.</p>
+<p>While we were walking along a mountain path, the weather suddenly changed. It started raining heavily, and we couldn't see the path very well. We found a small wooden shelter and waited there for about twenty minutes.</p>
+<p>When the rain stopped, we continued our walk. We reached a beautiful lake in the afternoon and had lunch near the water. The view was amazing, so we took lots of photos.</p>
+<p>We came home late in the evening. We were tired, but we felt happy because we had spent a wonderful day together.</p>
+
+<h3>Перевод</h3>
+<p>В прошлые выходные мы с друзьями ездили в горы. Мы долго планировали эту поездку и очень волновались от предвкушения. В субботу рано утром мы вышли из дома и отправились на поезде.</p>
+<p>Пока мы шли по горной тропе, погода внезапно изменилась. Начался сильный дождь, и мы не могли хорошо видеть тропу. Мы нашли небольшое деревянное укрытие и ждали там около двадцати минут.</p>
+<p>Когда дождь закончился, мы продолжили прогулку. Днём мы добрались до красивого озера и пообедали у воды. Вид был потрясающий, поэтому мы сделали много фотографий.</p>
+<p>Мы вернулись домой поздно вечером. Мы устали, но были счастливы, потому что провели вместе замечательный день.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>unforgettable</td><td>незабываемый</td></tr>
+<tr><td>mountains</td><td>горы</td></tr>
+<tr><td>excited</td><td>взволнованный</td></tr>
+<tr><td>mountain path</td><td>горная тропа</td></tr>
+<tr><td>suddenly</td><td>внезапно</td></tr>
+<tr><td>heavily</td><td>сильно</td></tr>
+<tr><td>shelter</td><td>укрытие</td></tr>
+<tr><td>view</td><td>вид, пейзаж</td></tr>
+<tr><td>reach</td><td>добираться</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>Where did the friends go? → [[to the mountains|the mountains|mountains]]</li>
+<li>How did they travel? → [[by train|train]]</li>
+<li>What happened while they were walking? → [[the weather suddenly changed|it started raining|it started raining heavily]]</li>
+<li>Where did they wait for the rain to stop? → [[in a small wooden shelter|a small wooden shelter|wooden shelter]]</li>
+<li>How did they feel at the end of the day? → [[tired but happy|happy|tired and happy]]</li>
+</ol>
+
+<h3>Exercise — True or False</h3>
+<ol>
+<li>We went to the mountains by car. → [[False]]</li>
+<li>It started raining during the walk. → [[True]]</li>
+<li>They had lunch near a lake. → [[True]]</li>
+</ol>
+` },
+
+{ id: 1203, level: "A2", category: "reading", topic: "reading-healthy-lifestyle", title: "03. A Healthy Lifestyle — Здоровый образ жизни", content: `
+<div class="audio-placeholder" data-audio="audio/a2-healthy-lifestyle.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/a2-healthy-lifestyle.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>Many people want to feel healthier, but they don't know where to start. You don't need to change your whole life in one day. Small habits can make a big difference.</p>
+<p>First, you should drink enough water during the day. You should also eat fruit and vegetables and try not to eat too much fast food. It is important to have regular meals and not skip breakfast.</p>
+<p>Exercise is another important part of a healthy lifestyle. You don't have to go to the gym every day. You can walk to work, ride a bike or do some simple exercises at home. Try to be active for at least thirty minutes a day.</p>
+<p>You should also get enough sleep. Most adults need about seven or eight hours every night. If you feel tired, take a short break and relax. Remember: healthy habits take time, so don't give up.</p>
+
+<h3>Перевод</h3>
+<p>Многие люди хотят чувствовать себя здоровее, но не знают, с чего начать. Не нужно менять всю свою жизнь за один день. Небольшие привычки могут многое изменить.</p>
+<p>Во-первых, в течение дня следует пить достаточно воды. Также следует есть фрукты и овощи и стараться не употреблять слишком много фастфуда. Важно регулярно питаться и не пропускать завтрак.</p>
+<p>Физическая активность — ещё одна важная часть здорового образа жизни. Необязательно ходить в спортзал каждый день. Можно ходить на работу пешком, ездить на велосипеде или выполнять простые упражнения дома. Старайтесь быть активными хотя бы тридцать минут в день.</p>
+<p>Также следует достаточно спать. Большинству взрослых нужно около семи или восьми часов сна каждую ночь. Если вы чувствуете усталость, сделайте небольшой перерыв и отдохните. Помните: здоровые привычки требуют времени, поэтому не сдавайтесь.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>healthy</td><td>здоровый</td></tr>
+<tr><td>habit</td><td>привычка</td></tr>
+<tr><td>make a difference</td><td>иметь большое значение</td></tr>
+<tr><td>enough</td><td>достаточно</td></tr>
+<tr><td>skip breakfast</td><td>пропускать завтрак</td></tr>
+<tr><td>exercise</td><td>упражнение; физическая нагрузка</td></tr>
+<tr><td>at least</td><td>как минимум</td></tr>
+<tr><td>give up</td><td>сдаваться</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>Why can small habits be useful? → [[they can make a big difference|make a big difference]]</li>
+<li>What should people drink during the day? → [[enough water|water]]</li>
+<li>Do you have to go to the gym every day? → [[no|no you don't]]</li>
+<li>How long should people try to be active? → [[at least thirty minutes a day|thirty minutes|30 minutes]]</li>
+<li>How many hours of sleep do most adults need? → [[seven or eight|seven or eight hours|7 or 8]]</li>
+</ol>
+
+<h3>Exercise — True or False</h3>
+<ol>
+<li>You must change everything in one day. → [[False]]</li>
+<li>People should eat fruit and vegetables. → [[True]]</li>
+<li>Walking can be a form of exercise. → [[True]]</li>
+</ol>
+` },
+
+{ id: 1204, level: "A2", category: "reading", topic: "reading-trip-coast", title: "04. A Trip to the Coast — Поездка на побережье", content: `
+<div class="audio-placeholder" data-audio="audio/a2-trip-to-coast.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/a2-trip-to-coast.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>Last summer, my family spent a week in a small town by the sea. We usually go to the countryside, so this holiday was different from our usual trips.</p>
+<p>The town was smaller than our city, but it was much quieter and more relaxing. Our hotel was close to the beach, and the sea was warmer than we expected. Every morning, we went swimming before breakfast.</p>
+<p>One day, we visited the oldest part of the town. The streets were narrow, and there were many beautiful old buildings. We also tried the local fish. It was the most delicious meal of our holiday.</p>
+<p>I enjoyed this trip more than I expected. I think holidays by the sea are perfect when you want to relax and spend time with your family.</p>
+
+<h3>Перевод</h3>
+<p>Прошлым летом моя семья провела неделю в небольшом городке у моря. Обычно мы ездим за город, поэтому этот отпуск отличался от наших привычных поездок.</p>
+<p>Городок был меньше нашего города, но намного тише и спокойнее. Наш отель находился недалеко от пляжа, а море было теплее, чем мы ожидали. Каждое утро мы плавали перед завтраком.</p>
+<p>Однажды мы посетили самую старую часть города. Улицы были узкими, и там было много красивых старинных зданий. Мы также попробовали местную рыбу. Это было самое вкусное блюдо за весь отпуск.</p>
+<p>Мне понравилась эта поездка больше, чем я ожидал. Думаю, отдых на море идеально подходит, когда хочется расслабиться и провести время с семьёй.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>coast</td><td>побережье</td></tr>
+<tr><td>countryside</td><td>сельская местность</td></tr>
+<tr><td>quiet</td><td>тихий</td></tr>
+<tr><td>relaxing</td><td>расслабляющий</td></tr>
+<tr><td>expect</td><td>ожидать</td></tr>
+<tr><td>narrow</td><td>узкий</td></tr>
+<tr><td>local</td><td>местный</td></tr>
+<tr><td>delicious</td><td>вкусный</td></tr>
+<tr><td>spend time</td><td>проводить время</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>Where did the family spend their holiday? → [[in a small town by the sea|a small town by the sea|by the sea]]</li>
+<li>How was the town different from their city? → [[smaller quieter and more relaxing|smaller and quieter|quieter]]</li>
+<li>Where was the hotel? → [[close to the beach|near the beach]]</li>
+<li>What did they do every morning? → [[went swimming|swimming]]</li>
+<li>What was the most delicious meal? → [[the local fish|local fish|fish]]</li>
+</ol>
+
+<h3>Exercise — True or False</h3>
+<ol>
+<li>The family usually goes to the seaside. → [[False]]</li>
+<li>The sea was warmer than they expected. → [[True]]</li>
+<li>They visited the newest part of the town. → [[False]]</li>
+</ol>
+` },
+
+{ id: 1205, level: "A2", category: "reading", topic: "reading-missing-bag", title: "05. The Missing Bag — Потерянная сумка", content: `
+<div class="audio-placeholder" data-audio="audio/a2-missing-bag.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/a2-missing-bag.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>Emma has just arrived at the airport, but she can't find her suitcase. She has looked near the check-in desk and around the luggage area, but it isn't there.</p>
+<p>She went to the information desk and spoke to an airport assistant. Emma explained that she had travelled from Madrid and that her suitcase was dark blue with a small red label.</p>
+<p>The assistant asked her to complete a form and gave her a reference number. He said that the airport staff would look for the bag and contact her as soon as possible.</p>
+<p>Emma has never lost her luggage before, so she feels worried. However, she has already received a message from the airline. They have found a suitcase that looks like hers, and she is going to check it now.</p>
+
+<h3>Перевод</h3>
+<p>Эмма только что прибыла в аэропорт, но не может найти свой чемодан. Она уже посмотрела возле стойки регистрации и в зоне выдачи багажа, но его там нет.</p>
+<p>Она подошла к справочной стойке и поговорила с сотрудником аэропорта. Эмма объяснила, что прилетела из Мадрида и что её чемодан тёмно-синий с небольшой красной биркой.</p>
+<p>Сотрудник попросил её заполнить форму и дал ей номер обращения. Он сказал, что сотрудники аэропорта будут искать сумку и свяжутся с ней как можно скорее.</p>
+<p>Эмма никогда раньше не теряла багаж, поэтому она переживает. Однако она уже получила сообщение от авиакомпании. Они нашли чемодан, похожий на её, и сейчас она собирается его проверить.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>suitcase</td><td>чемодан</td></tr>
+<tr><td>luggage</td><td>багаж</td></tr>
+<tr><td>check-in desk</td><td>стойка регистрации</td></tr>
+<tr><td>information desk</td><td>справочная стойка</td></tr>
+<tr><td>complete a form</td><td>заполнить форму</td></tr>
+<tr><td>reference number</td><td>номер обращения</td></tr>
+<tr><td>as soon as possible</td><td>как можно скорее</td></tr>
+<tr><td>airline</td><td>авиакомпания</td></tr>
+<tr><td>worried</td><td>обеспокоенный</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>Where has Emma arrived? → [[at the airport|the airport|airport]]</li>
+<li>What colour is her suitcase? → [[dark blue|blue]]</li>
+<li>Where did she travel from? → [[Madrid|from Madrid]]</li>
+<li>What did the assistant give her? → [[a reference number|reference number]]</li>
+<li>What message has Emma received? → [[the airline has found a suitcase|they have found a suitcase|airline found a suitcase]]</li>
+</ol>
+
+<h3>Exercise — True or False</h3>
+<ol>
+<li>Emma can find her suitcase near the check-in desk. → [[False]]</li>
+<li>Her suitcase is dark blue. → [[True]]</li>
+<li>The airport has found a possible match. → [[True]]</li>
+</ol>
+` },
+
+{ id: 1206, level: "A2", category: "reading", topic: "reading-learning-new", title: "06. Learning Something New — Учиться новому", content: `
+<div class="audio-placeholder" data-audio="audio/a2-learning-something-new.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/a2-learning-something-new.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>Last year, I decided to learn how to cook. I enjoyed eating different dishes, but I couldn't prepare anything more difficult than an omelette.</p>
+<p>At first, I watched short videos and tried to follow the recipes. I made many mistakes. Sometimes I forgot to add an ingredient, and once I burned the rice. But I didn't stop practising.</p>
+<p>Now I can cook several simple meals. I love making vegetable soup and baking cakes for my friends. I also want to learn to prepare traditional dishes from other countries.</p>
+<p>Learning to cook has taught me to be patient. I understand that it is important to keep trying, even when something doesn't work the first time.</p>
+
+<h3>Перевод</h3>
+<p>В прошлом году я решил научиться готовить. Мне нравилось есть разные блюда, но я не умел готовить ничего сложнее омлета.</p>
+<p>Сначала я смотрел короткие видео и старался следовать рецептам. Я совершал много ошибок. Иногда я забывал добавить ингредиент, а однажды сжёг рис. Но я не перестал практиковаться.</p>
+<p>Теперь я умею готовить несколько простых блюд. Мне нравится готовить овощной суп и печь торты для друзей. Я также хочу научиться готовить традиционные блюда других стран.</p>
+<p>Обучение кулинарии научило меня быть терпеливым. Я понимаю, что важно продолжать попытки, даже если что-то не получается с первого раза.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>decide</td><td>решать</td></tr>
+<tr><td>prepare</td><td>готовить; подготавливать</td></tr>
+<tr><td>dish</td><td>блюдо</td></tr>
+<tr><td>recipe</td><td>рецепт</td></tr>
+<tr><td>ingredient</td><td>ингредиент</td></tr>
+<tr><td>burn</td><td>сжечь; подгореть</td></tr>
+<tr><td>practise</td><td>практиковаться</td></tr>
+<tr><td>bake</td><td>печь</td></tr>
+<tr><td>patient</td><td>терпеливый</td></tr>
+<tr><td>keep trying</td><td>продолжать пытаться</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>What did the person decide to learn last year? → [[to cook|cook|cooking]]</li>
+<li>What could the person cook before? → [[an omelette|omelette]]</li>
+<li>What mistakes did the person make? → [[forgot to add an ingredient and burned the rice|burned the rice|forgot an ingredient]]</li>
+<li>What meals can the person cook now? → [[vegetable soup and cakes|soup and cakes|vegetable soup]]</li>
+<li>What has cooking taught the person? → [[to be patient|patience|be patient]]</li>
+</ol>
+
+<h3>Exercise — True or False</h3>
+<ol>
+<li>The person already knew how to cook many dishes. → [[False]]</li>
+<li>The person once burned the rice. → [[True]]</li>
+<li>The person wants to learn dishes from other countries. → [[True]]</li>
+</ol>
+` },
+
+{ id: 1207, level: "A2", category: "reading", topic: "reading-problem-order", title: "07. A Problem with an Order — Проблема с заказом", content: `
+<div class="audio-placeholder" data-audio="audio/a2-problem-with-order.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/a2-problem-with-order.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>Yesterday, I ordered some things from an online shop. I needed a new phone case, two notebooks and a pair of headphones. The website looked simple, and the prices were reasonable.</p>
+<p>The parcel arrived this morning, but there was a problem. There were no headphones in the box, and one notebook was damaged. I checked the order confirmation and saw that I had paid for all the items.</p>
+<p>I contacted customer service and explained the situation. The assistant was polite and asked me to send a photo of the damaged notebook. She said they would send the missing headphones and replace the notebook.</p>
+<p>I hope everything will be fine. Shopping online is convenient, but sometimes you have to solve problems.</p>
+
+<h3>Перевод</h3>
+<p>Вчера я заказал несколько вещей в интернет-магазине. Мне был нужен новый чехол для телефона, две тетради и наушники. Сайт выглядел простым, а цены были разумными.</p>
+<p>Посылка пришла сегодня утром, но возникла проблема. В коробке не было наушников, а одна тетрадь была повреждена. Я проверил подтверждение заказа и увидел, что оплатил все товары.</p>
+<p>Я связался со службой поддержки и объяснил ситуацию. Сотрудница была вежливой и попросила меня отправить фотографию повреждённой тетради. Она сказала, что они отправят недостающие наушники и заменят тетрадь.</p>
+<p>Надеюсь, всё будет хорошо. Покупать онлайн удобно, но иногда приходится решать проблемы.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>online shop</td><td>интернет-магазин</td></tr>
+<tr><td>phone case</td><td>чехол для телефона</td></tr>
+<tr><td>headphones</td><td>наушники</td></tr>
+<tr><td>reasonable</td><td>разумный; приемлемый</td></tr>
+<tr><td>parcel</td><td>посылка</td></tr>
+<tr><td>damaged</td><td>повреждённый</td></tr>
+<tr><td>order confirmation</td><td>подтверждение заказа</td></tr>
+<tr><td>customer service</td><td>служба поддержки</td></tr>
+<tr><td>replace</td><td>заменять</td></tr>
+<tr><td>missing</td><td>недостающий</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>What did the person order? → [[a phone case two notebooks and headphones|a phone case|two notebooks|headphones]]</li>
+<li>When did the parcel arrive? → [[this morning|morning]]</li>
+<li>What was missing? → [[the headphones|headphones]]</li>
+<li>What was wrong with one notebook? → [[it was damaged|damaged]]</li>
+<li>What did customer service promise to do? → [[send the missing headphones and replace the notebook|send headphones and replace the notebook]]</li>
+</ol>
+
+<h3>Exercise — True or False</h3>
+<ol>
+<li>The person ordered a laptop. → [[False]]</li>
+<li>There were no headphones in the parcel. → [[True]]</li>
+<li>Customer service asked for a photo. → [[True]]</li>
+</ol>
+` },
+
+{ id: 1208, level: "A2", category: "reading", topic: "reading-future-city", title: "08. What Will Our City Be Like? — Каким будет наш город?", content: `
+<div class="audio-placeholder" data-audio="audio/a2-future-city.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/a2-future-city.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>Our city is changing quickly. New houses and shops are appearing, and the local government is planning to improve public transport. I think life in the city will be more comfortable in the future.</p>
+<p>There are going to be more cycle paths, so people will be able to travel around the centre more safely. The city is also going to plant hundreds of trees in parks and along the streets.</p>
+<p>I believe that many people will use electric buses instead of cars. This will help reduce air pollution. However, I don't think all problems will disappear. The city will still need more affordable homes and better schools.</p>
+<p>I hope these plans will make our city a cleaner and nicer place to live.</p>
+
+<h3>Перевод</h3>
+<p>Наш город быстро меняется. Появляются новые дома и магазины, а местные власти планируют улучшить общественный транспорт. Думаю, в будущем жизнь в городе станет комфортнее.</p>
+<p>Появится больше велосипедных дорожек, поэтому люди смогут безопаснее передвигаться по центру. Город также собирается посадить сотни деревьев в парках и вдоль улиц.</p>
+<p>Я считаю, что многие люди будут пользоваться электрическими автобусами вместо автомобилей. Это поможет уменьшить загрязнение воздуха. Однако я не думаю, что все проблемы исчезнут. Городу по-прежнему будет нужно больше доступного жилья и лучшие школы.</p>
+<p>Надеюсь, эти планы сделают наш город более чистым и приятным местом для жизни.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>local government</td><td>местные власти</td></tr>
+<tr><td>improve</td><td>улучшать</td></tr>
+<tr><td>public transport</td><td>общественный транспорт</td></tr>
+<tr><td>cycle path</td><td>велосипедная дорожка</td></tr>
+<tr><td>safely</td><td>безопасно</td></tr>
+<tr><td>plant trees</td><td>сажать деревья</td></tr>
+<tr><td>electric bus</td><td>электрический автобус</td></tr>
+<tr><td>reduce</td><td>уменьшать</td></tr>
+<tr><td>air pollution</td><td>загрязнение воздуха</td></tr>
+<tr><td>affordable</td><td>доступный по цене</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>How is the city changing? → [[new houses and shops are appearing|new houses and shops|changing quickly]]</li>
+<li>What is the local government planning to improve? → [[public transport|transport]]</li>
+<li>Why will cycle paths be useful? → [[people will be able to travel more safely|travel safely|safely]]</li>
+<li>How will electric buses help? → [[reduce air pollution|help reduce air pollution|reduce pollution]]</li>
+<li>What else will the city need? → [[affordable homes and better schools|more affordable homes and better schools|homes and schools]]</li>
+</ol>
+
+<h3>Exercise — True or False</h3>
+<ol>
+<li>The city is planning to remove all parks. → [[False]]</li>
+<li>There will be more cycle paths. → [[True]]</li>
+<li>The writer thinks every problem will disappear. → [[False]]</li>
+</ol>
+` },
+
+{ id: 1210, level: "A2", category: "vocabulary", topic: "reading-words", title: "Слова из текстов для чтения (A2)", content: `
+<p>Слова, которые встречаются в разделе «Чтение» уровня A2.</p>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>receptionist</td><td>администратор на стойке регистрации</td></tr>
+<tr><td>at first</td><td>сначала</td></tr>
+<tr><td>confident</td><td>уверенный в себе</td></tr>
+<tr><td>welcome guests</td><td>встречать гостей</td></tr>
+<tr><td>reservation</td><td>бронирование</td></tr>
+<tr><td>colleague</td><td>коллега</td></tr>
+<tr><td>experience</td><td>опыт</td></tr>
+<tr><td>each other</td><td>друг другу</td></tr>
+<tr><td>unforgettable</td><td>незабываемый</td></tr>
+<tr><td>mountains</td><td>горы</td></tr>
+<tr><td>excited</td><td>взволнованный</td></tr>
+<tr><td>mountain path</td><td>горная тропа</td></tr>
+<tr><td>suddenly</td><td>внезапно</td></tr>
+<tr><td>heavily</td><td>сильно</td></tr>
+<tr><td>shelter</td><td>укрытие</td></tr>
+<tr><td>view</td><td>вид, пейзаж</td></tr>
+<tr><td>reach</td><td>добираться</td></tr>
+<tr><td>healthy</td><td>здоровый</td></tr>
+<tr><td>habit</td><td>привычка</td></tr>
+<tr><td>make a difference</td><td>иметь большое значение</td></tr>
+<tr><td>enough</td><td>достаточно</td></tr>
+<tr><td>skip breakfast</td><td>пропускать завтрак</td></tr>
+<tr><td>exercise</td><td>упражнение; физическая нагрузка</td></tr>
+<tr><td>at least</td><td>как минимум</td></tr>
+<tr><td>give up</td><td>сдаваться</td></tr>
+<tr><td>coast</td><td>побережье</td></tr>
+<tr><td>countryside</td><td>сельская местность</td></tr>
+<tr><td>quiet</td><td>тихий</td></tr>
+<tr><td>relaxing</td><td>расслабляющий</td></tr>
+<tr><td>expect</td><td>ожидать</td></tr>
+<tr><td>narrow</td><td>узкий</td></tr>
+<tr><td>local</td><td>местный</td></tr>
+<tr><td>delicious</td><td>вкусный</td></tr>
+<tr><td>spend time</td><td>проводить время</td></tr>
+<tr><td>suitcase</td><td>чемодан</td></tr>
+<tr><td>luggage</td><td>багаж</td></tr>
+<tr><td>check-in desk</td><td>стойка регистрации</td></tr>
+<tr><td>information desk</td><td>справочная стойка</td></tr>
+<tr><td>complete a form</td><td>заполнить форму</td></tr>
+<tr><td>reference number</td><td>номер обращения</td></tr>
+<tr><td>as soon as possible</td><td>как можно скорее</td></tr>
+<tr><td>airline</td><td>авиакомпания</td></tr>
+<tr><td>worried</td><td>обеспокоенный</td></tr>
+<tr><td>decide</td><td>решать</td></tr>
+<tr><td>prepare</td><td>готовить; подготавливать</td></tr>
+<tr><td>dish</td><td>блюдо</td></tr>
+<tr><td>recipe</td><td>рецепт</td></tr>
+<tr><td>ingredient</td><td>ингредиент</td></tr>
+<tr><td>burn</td><td>сжечь; подгореть</td></tr>
+<tr><td>practise</td><td>практиковаться</td></tr>
+<tr><td>bake</td><td>печь</td></tr>
+<tr><td>patient</td><td>терпеливый</td></tr>
+<tr><td>keep trying</td><td>продолжать пытаться</td></tr>
+<tr><td>online shop</td><td>интернет-магазин</td></tr>
+<tr><td>phone case</td><td>чехол для телефона</td></tr>
+<tr><td>headphones</td><td>наушники</td></tr>
+<tr><td>reasonable</td><td>разумный; приемлемый</td></tr>
+<tr><td>parcel</td><td>посылка</td></tr>
+<tr><td>damaged</td><td>повреждённый</td></tr>
+<tr><td>order confirmation</td><td>подтверждение заказа</td></tr>
+<tr><td>customer service</td><td>служба поддержки</td></tr>
+<tr><td>replace</td><td>заменять</td></tr>
+<tr><td>missing</td><td>недостающий</td></tr>
+<tr><td>local government</td><td>местные власти</td></tr>
+<tr><td>improve</td><td>улучшать</td></tr>
+<tr><td>public transport</td><td>общественный транспорт</td></tr>
+<tr><td>cycle path</td><td>велосипедная дорожка</td></tr>
+<tr><td>safely</td><td>безопасно</td></tr>
+<tr><td>plant trees</td><td>сажать деревья</td></tr>
+<tr><td>electric bus</td><td>электрический автобус</td></tr>
+<tr><td>reduce</td><td>уменьшать</td></tr>
+<tr><td>air pollution</td><td>загрязнение воздуха</td></tr>
+<tr><td>affordable</td><td>доступный по цене</td></tr>
+</table>
+` },
 ];

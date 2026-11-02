@@ -883,6 +883,32 @@ function showLevelTab(level, tab) {
   app.innerHTML = html;
   window.scrollTo(0, 0);
 }
+function findRelatedPractice(theory) {
+  if (!theory || theory.category !== 'theory') return null;
+
+  const sameLevel = (m) => {
+    const tLevel = theory.level;
+    if (tLevel === 'C1' || tLevel === 'C2') {
+      return m.level === 'C1' || m.level === 'C2';
+    }
+    return m.level === tLevel;
+  };
+
+  
+  let match = MATERIALS.find(m =>
+    m.category === 'practice' && m.topic === theory.topic && sameLevel(m)
+  );
+  if (match) return match;
+
+  const theories = articlesOf(theory.level, 'theory');
+  const practices = articlesOf(theory.level, 'practice');
+  const idx = theories.findIndex(t => t.id === theory.id);
+  if (idx >= 0 && idx < practices.length) {
+    return practices[idx];
+  }
+
+  return null;
+}
 
 function showArticle(id) {
   const a = MATERIALS.find(m => m.id === id);
@@ -897,6 +923,7 @@ function showArticle(id) {
   const currentIndex = items.findIndex(item => item.id === a.id);
   const prevArticle = currentIndex > 0 ? items[currentIndex - 1] : null;
   const nextArticle = currentIndex < items.length - 1 ? items[currentIndex + 1] : null;
+  const relatedPractice = findRelatedPractice(a);
   
    let content = a.content;
 
@@ -939,6 +966,17 @@ function showArticle(id) {
      <button class="btn btn-secondary" onclick="retryMistakes()">Повторить ошибки</button>
      <button class="btn btn-secondary" onclick="resetInputs()">Очистить</button>`
   : '';
+   let practiceCta = '';
+  if (relatedPractice) {
+    practiceCta = `
+      <div class="theory-to-practice">
+        <div class="theory-to-practice-text">Готовы применить знания?</div>
+        <button class="btn btn-dark" onclick="showArticle(${relatedPractice.id})">
+          Перейти к практике по этой теме →
+        </button>
+      </div>
+    `;
+  }
   
   app.innerHTML = `
     <button class="back-home-btn" onclick="showLevelTab('${backLevel}', '${a.category}')">← Назад к списку</button>
@@ -947,7 +985,8 @@ function showArticle(id) {
       <a href="#" onclick="showLevel('${backLevel}'); return false;">${backLevel}</a> <span>/ ${catName}</span>
     </div>
     <h1>${a.title} ${doneBadge}</h1>
-    <div class="article-content">${content}</div>
+        <div class="article-content">${content}</div>
+    ${practiceCta}
 
     <div class="article-footer">
         <div class="article-actions">

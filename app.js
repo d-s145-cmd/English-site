@@ -910,6 +910,54 @@ function findRelatedPractice(theory) {
   return null;
 }
 
+function interleaveTranslation(content) {
+  const splitRegex = /<h3>\s*Перевод\s*<\/h3>/i;
+  if (!splitRegex.test(content)) return content;
+
+  const idx = content.search(splitRegex);
+  const englishPart = content.slice(0, idx);
+  const russianPart = content.slice(idx).replace(splitRegex, '');
+
+  const paraRegex = /<p\b[^>]*>[\s\S]*?<\/p>/gi;
+  const engParas = englishPart.match(paraRegex) || [];
+  const rusParas = russianPart.match(paraRegex) || [];
+
+  if (engParas.length < 2 || engParas.length !== rusParas.length) {
+    return content.replace(
+      /<h3>\s*Перевод\s*<\/h3>([\s\S]*?)(?=<h3>|$)/i,
+      '<details class="translation-toggle"><summary>Показать перевод</summary>$1</details>'
+    );
+  }
+
+  const posRegex = /<p\b[^>]*>[\s\S]*?<\/p>/gi;
+  const positions = [];
+  let m;
+  while ((m = posRegex.exec(englishPart)) !== null) {
+    positions.push({ start: m.index, end: m.index + m[0].length, text: m[0] });
+  }
+
+  let result = '';
+  let cursor = 0;
+  for (let i = 0; i < positions.length; i++) {
+    const pos = positions[i];
+    result += englishPart.slice(cursor, pos.start);
+    result += `<div class="paragraph-pair">
+      ${pos.text}
+      <details class="paragraph-translation">
+        <summary>Перевод</summary>
+        ${rusParas[i]}
+      </details>
+    </div>`;
+    cursor = pos.end;
+  }
+  result += englishPart.slice(cursor);
+
+  const extra = russianPart.replace(paraRegex, '').trim();
+  if (extra) result += extra;
+
+  return result;
+}
+
 function showArticle(id) {
   const a = MATERIALS.find(m => m.id === id);
   if (!a) { app.innerHTML = '<p>Материал не найден.</p>'; return; }
@@ -934,10 +982,7 @@ function showArticle(id) {
     );
 
     
-    content = content.replace(
-      /<h3>\s*Перевод\s*<\/h3>([\s\S]*?)(?=<h3>|$)/i,
-      '<details class="translation-toggle"><summary>Показать перевод</summary>$1</details>'
-    );
+    content = interleaveTranslation(content);
   }
 
   if ((a.category === 'practice' || a.category === 'reading') && content.includes('[[')) {
@@ -1000,20 +1045,147 @@ function showArticle(id) {
   window.__currentArticle = a;
 }
 
+function extractTopic(str) {
+  const m = String(str).match(/^(.*?)::([\w-]+)$/s);
+  if (m) return { content: m[1], topic: m[2] };
+  return { content: str, topic: null };
+}
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+function getQuizAnswer(wrap) {
+  const input = wrap.querySelector('.quiz-input');
+  if (input) return input.value.trim();
+
+  const mc = wrap.querySelector('.quiz-mc');
+  if (mc) {
+    const sel = mc.querySelector('.mc-option.selected');
+    return sel ? sel.dataset.value : '';
+  }
+
+  const order = wrap.querySelector('.quiz-order');
+  if (order) {
+    const tokens = order.querySelectorAll('.order-answer .order-token');
+    return Array.from(tokens).map(t => t.dataset.word).join(' ');
+  }
+  return '';
+}
+
+function getQuizValidAnswers(wrap) {
+  const input = wrap.querySelector('.quiz-input');
+  if (input) return getAllValidAnswers(input);
+
+  const mc = wrap.querySelector('.quiz-mc');
+  if (mc) return [mc.dataset.answer];
+
+  const order = wrap.querySelector('.quiz-order');
+  if (order) return [order.dataset.answer];
+
+  return [];
+}
+
+function findTheoryIdByTopic(topic, level) {
+  const mat = MATERIALS.find(m =>
+    m.category === 'theory' && m.topic === topic && m.level === level
+  );
+  return mat ? mat.id : null;
+}
+
+function findTopicTitle(topic, level) {
+  const mat = MATERIALS.find(m =>
+    m.category === 'theory' && m.topic === topic && m.level === level
+  );
+  return mat ? mat.title : `Тема ${topic}`;
+}
+
+function renderTopicBreakdown(topicResults, level) {
+  const entries = Object.entries(topicResults);
+  if (!entries.length) return '';
+  const weak = [], good = [];
+  entries.forEach(([topic, r]) => {
+    const pct = r.total ? r.correct / r.total : 0;
+    const item = { topic, ...r, pct };
+    if (pct < 0.7) weak.push(item); else good.push(item);
+  });
+  weak.sort((a, b) => a.pct - b.pct);
+
+  let html = '<div class="topic-breakdown">';
+  if (weak.length) {
+    html += '<h4 class="tb-heading tb-weak">Слабые места</h4><ul class="tb-list">';
+    weak.forEach(w => {
+      const theoryId = findTheoryIdByTopic(w.topic, level);
+      const title = findTopicTitle(w.topic, level);
+      html += `<li>
+        <span class="tb-title">${escapeAttr(title)}</span>
+        <span class="tb-score">${w.correct}/${w.total} (${Math.round(w.pct * 100)}%)</span>
+        ${theoryId != null ? `<button class="btn btn-secondary tb-link" onclick="showArticle(${theoryId})">Повторить теорию →</button>` : ''}
+      </li>`;
+    });
+    html += '</ul>';
+  }
+  if (good.length) {
+    html += '<h4 class="tb-heading tb-good">Хорошо усвоено</h4><ul class="tb-list">';
+    good.forEach(g => {
+      const title = findTopicTitle(g.topic, level);
+      html += `<li><span class="tb-title">${escapeAttr(title)}</span> <span class="tb-score">${g.correct}/${g.total}</span></li>`;
+    });
+    html += '</ul>';
+  }
+  html += '</div>';
+  return html;
+}
+
 function renderInteractive(html) {
   let counter = 0;
-  const processed = html.replace(/\[\[(.*?)\]\]/g, (match, answer) => {
+  const processed = html.replace(/\[\[([\s\S]*?)\]\]/g, (match, inner) => {
     counter++;
-    const parts = answer.split('|').map(s => s.trim());
+    const { content, topic } = extractTopic(inner);
+    const topicAttr = topic ? ` data-topic="${escapeAttr(topic)}"` : '';
+
+    if (content.startsWith('?mc:')) {
+      const parts = content.slice(4).split('|').map(s => s.trim()).filter(Boolean);
+      if (parts.length < 2) return match;
+      const correct = parts[0];
+      const options = shuffle(parts);
+      const buttons = options.map(opt =>
+        `<button type="button" class="mc-option" data-value="${escapeAttr(opt)}">${escapeAttr(opt)}</button>`
+      ).join('');
+      return `<span class="quiz-wrap" data-type="mc"${topicAttr}>
+        <span class="quiz-mc" data-answer="${escapeAttr(correct)}">${buttons}</span>
+      </span>`;
+    }
+
+    if (content.startsWith('?order:')) {
+      const words = content.slice(7).split('|').map(s => s.trim()).filter(Boolean);
+      if (words.length < 2) return match;
+      const correct = words.join(' ');
+      const shuffled = shuffle(words);
+      const tokens = shuffled.map(w =>
+        `<button type="button" class="order-token" data-word="${escapeAttr(w)}">${escapeAttr(w)}</button>`
+      ).join('');
+      return `<span class="quiz-wrap" data-type="order"${topicAttr}>
+        <span class="quiz-order" data-answer="${escapeAttr(correct)}">
+          <span class="order-answer"></span>
+          <span class="order-tokens">${tokens}</span>
+        </span>
+      </span>`;
+    }
+
+    const parts = content.split('|').map(s => s.trim());
     const mainAnswer = parts[0];
     const altAnswers = parts.slice(1).join('|');
     const widthClass = mainAnswer.length > 15 ? 'quiz-input wide' : 'quiz-input';
-
     const hint = mainAnswer.length > 3
       ? `${mainAnswer.slice(0, 3)}… (${mainAnswer.length} симв.)`
       : (mainAnswer.length ? `${mainAnswer.slice(0, 1)}…` : '');
 
-    return `<span class="quiz-wrap">
+    return `<span class="quiz-wrap" data-type="text"${topicAttr}>
       <input type="text" class="${widthClass}" id="input-${counter}"
              data-answer="${escapeAttr(mainAnswer)}"
              data-alt="${escapeAttr(altAnswers)}"
@@ -1047,43 +1219,76 @@ function showHint(btn, hint) {
 }
 
 function checkAllInputs() {
-  const inputs = document.querySelectorAll('.quiz-input');
-  if (!inputs.length) return;
+  const wraps = document.querySelectorAll('.quiz-wrap');
+  if (!wraps.length) return;
 
   let correctCount = 0;
+  const topicResults = {};
+  let hasTagged = false;
 
-  inputs.forEach(input => {
-    const userAnswer = input.value.trim();
-    input.classList.remove('correct', 'incorrect', 'revealed');
-    if (!userAnswer) return;
+  wraps.forEach(wrap => {
+    const answer = getQuizAnswer(wrap);
+    const valid = getQuizValidAnswers(wrap);
+    const isCorrect = !!answer && isAnswerCorrect(answer, valid);
 
-    const valid = getAllValidAnswers(input);
-    if (isAnswerCorrect(userAnswer, valid)) {
-      input.classList.add('correct');
-      correctCount++;
-    } else {
-      input.classList.add('incorrect');
+    const input = wrap.querySelector('.quiz-input');
+    const mc = wrap.querySelector('.quiz-mc');
+    const order = wrap.querySelector('.quiz-order');
+
+    if (input) input.classList.remove('correct', 'incorrect', 'revealed');
+    if (mc) mc.querySelectorAll('.mc-option').forEach(o => o.classList.remove('correct', 'incorrect'));
+    if (order) order.classList.remove('correct', 'incorrect');
+
+    if (answer) {
+      if (isCorrect) {
+        correctCount++;
+        if (input) input.classList.add('correct');
+        if (mc) mc.querySelectorAll('.mc-option').forEach(o => {
+          if (o.dataset.value === mc.dataset.answer) o.classList.add('correct');
+        });
+        if (order) order.classList.add('correct');
+      } else {
+        if (input) input.classList.add('incorrect');
+        if (mc) mc.querySelectorAll('.mc-option').forEach(o => {
+          if (o.classList.contains('selected')) o.classList.add('incorrect');
+        });
+        if (order) order.classList.add('incorrect');
+      }
+    }
+
+    const topic = wrap.dataset.topic;
+    if (topic) {
+      hasTagged = true;
+      if (!topicResults[topic]) topicResults[topic] = { correct: 0, total: 0 };
+      topicResults[topic].total++;
+      if (isCorrect) topicResults[topic].correct++;
     }
   });
 
   if (window.__currentArticle) {
-    saveArticleResult(window.__currentArticle, correctCount, inputs.length);
+    saveArticleResult(window.__currentArticle, correctCount, wraps.length);
   }
 
   const scoreDisplay = document.getElementById('score-display');
   if (scoreDisplay) {
     scoreDisplay.style.display = 'block';
-    const pct = inputs.length ? Math.round(correctCount / inputs.length * 100) : 0;
+    const pct = wraps.length ? Math.round(correctCount / wraps.length * 100) : 0;
     let message;
-    if (correctCount === inputs.length) message = '<span class="score-perfect">🎩 Блестяще! Все ответы верны.</span>';
+    if (correctCount === wraps.length) message = '<span class="score-perfect">🎩 Блестяще! Все ответы верны.</span>';
     else if (pct >= 70) message = '<span class="score-good">Хороший результат — почти всё верно.</span>';
     else if (pct >= 40) message = '<span class="score-ok">Неплохо, но есть над чем поработать.</span>';
     else message = '<span class="score-low">Стоит повторить материал и попробовать снова.</span>';
 
-    scoreDisplay.innerHTML = `
-      <div class="score-line">Ваш результат: <b>${correctCount} из ${inputs.length}</b> <span class="score-pct">(${pct}%)</span></div>
+    let html = `
+      <div class="score-line">Ваш результат: <b>${correctCount} из ${wraps.length}</b> <span class="score-pct">(${pct}%)</span></div>
       <div class="score-message">${message}</div>
     `;
+
+    if (hasTagged && window.__currentArticle) {
+      html += renderTopicBreakdown(topicResults, window.__currentArticle.level);
+    }
+
+    scoreDisplay.innerHTML = html;
     scoreDisplay.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 
@@ -1099,20 +1304,51 @@ function checkAllInputs() {
 }
 
 function showAllAnswers() {
-  const inputs = document.querySelectorAll('.quiz-input');
-  inputs.forEach(input => {
-    const valid = getAllValidAnswers(input);
+  const wraps = document.querySelectorAll('.quiz-wrap');
+  wraps.forEach(wrap => {
+    const valid = getQuizValidAnswers(wrap);
     const main = valid[0] || '';
-    input.classList.remove('correct', 'incorrect');
-    input.classList.add('revealed');
-    input.value = main;
 
-    const wrap = input.parentElement;
-    if (wrap && !wrap.querySelector('.revealed-label')) {
-      const label = document.createElement('span');
-      label.className = 'revealed-label';
-      label.textContent = 'ответ';
-      wrap.appendChild(label);
+    const input = wrap.querySelector('.quiz-input');
+    if (input) {
+      input.classList.remove('correct', 'incorrect');
+      input.classList.add('revealed');
+      input.value = main;
+      if (!wrap.querySelector('.revealed-label')) {
+        const label = document.createElement('span');
+        label.className = 'revealed-label';
+        label.textContent = 'ответ';
+        wrap.appendChild(label);
+      }
+      return;
+    }
+
+    const mc = wrap.querySelector('.quiz-mc');
+    if (mc) {
+      mc.querySelectorAll('.mc-option').forEach(o => {
+        o.classList.remove('correct', 'incorrect', 'selected');
+        if (o.dataset.value === mc.dataset.answer) o.classList.add('correct');
+        o.disabled = true;
+      });
+      return;
+    }
+
+    const order = wrap.querySelector('.quiz-order');
+    if (order) {
+      const answerEl = order.querySelector('.order-answer');
+      const tokensEl = order.querySelector('.order-tokens');
+      answerEl.innerHTML = '';
+      tokensEl.innerHTML = '';
+      main.split(' ').forEach(w => {
+        const t = document.createElement('button');
+        t.type = 'button';
+        t.className = 'order-token';
+        t.dataset.word = w;
+        t.textContent = w;
+        t.disabled = true;
+        answerEl.appendChild(t);
+      });
+      order.classList.add('correct');
     }
   });
 
@@ -1124,21 +1360,42 @@ function showAllAnswers() {
 }
 
 function retryMistakes() {
-  const inputs = document.querySelectorAll('.quiz-input');
+  const wraps = document.querySelectorAll('.quiz-wrap');
   let mistakeCount = 0;
 
-  inputs.forEach(input => {
-    if (input.classList.contains('incorrect')) {
+  wraps.forEach(wrap => {
+    const input = wrap.querySelector('.quiz-input');
+    const mc = wrap.querySelector('.quiz-mc');
+    const order = wrap.querySelector('.quiz-order');
+
+    const isWrong =
+      (input && input.classList.contains('incorrect')) ||
+      (mc && mc.querySelector('.mc-option.incorrect')) ||
+      (order && order.classList.contains('incorrect'));
+
+    if (!isWrong) return;
+
+    if (input) {
       input.value = '';
       input.classList.remove('incorrect', 'correct', 'revealed');
       input.classList.add('retry');
-      const wrap = input.parentElement;
-      if (wrap) {
-        const label = wrap.querySelector('.revealed-label');
-        if (label) label.remove();
-      }
-      mistakeCount++;
+      const label = wrap.querySelector('.revealed-label');
+      if (label) label.remove();
     }
+
+    if (mc) {
+      mc.querySelectorAll('.mc-option').forEach(o => o.classList.remove('correct', 'incorrect', 'selected'));
+    }
+
+    if (order) {
+      order.classList.remove('correct', 'incorrect');
+      order.querySelectorAll('.order-answer .order-token').forEach(t => {
+        t.disabled = false;
+        order.querySelector('.order-tokens').appendChild(t);
+      });
+    }
+
+    mistakeCount++;
   });
 
   const scoreDisplay = document.getElementById('score-display');
@@ -1147,7 +1404,7 @@ function retryMistakes() {
     if (mistakeCount === 0) {
       scoreDisplay.innerHTML = '<div class="score-line">Ошибок нет — нечего повторять. 🎩</div>';
     } else {
-      scoreDisplay.innerHTML = `<div class="score-line">Оставлено для повтора: <b>${mistakeCount}</b> ${pluralize(mistakeCount, 'поле', 'поля', 'полей')}.</div>`;
+      scoreDisplay.innerHTML = `<div class="score-line">Оставлено для повтора: <b>${mistakeCount}</b> ${pluralize(mistakeCount, 'задание', 'задания', 'заданий')}.</div>`;
     }
   }
 
@@ -1159,17 +1416,35 @@ function retryMistakes() {
 }
 
 function resetInputs() {
-  const inputs = document.querySelectorAll('.quiz-input');
-  inputs.forEach(input => {
-    input.value = '';
-    input.classList.remove('correct', 'incorrect', 'revealed', 'retry');
-    const wrap = input.parentElement;
-    if (wrap) {
-      const label = wrap.querySelector('.revealed-label');
-      if (label) label.remove();
-      const hint = wrap.querySelector('.hint-text');
-      if (hint) hint.remove();
+  const wraps = document.querySelectorAll('.quiz-wrap');
+  wraps.forEach(wrap => {
+    const input = wrap.querySelector('.quiz-input');
+    if (input) {
+      input.value = '';
+      input.classList.remove('correct', 'incorrect', 'revealed', 'retry');
     }
+
+    const mc = wrap.querySelector('.quiz-mc');
+    if (mc) {
+      mc.querySelectorAll('.mc-option').forEach(o => {
+        o.classList.remove('correct', 'incorrect', 'selected');
+        o.disabled = false;
+      });
+    }
+
+    const order = wrap.querySelector('.quiz-order');
+    if (order) {
+      order.classList.remove('correct', 'incorrect');
+      order.querySelectorAll('.order-answer .order-token').forEach(t => {
+        t.disabled = false;
+        order.querySelector('.order-tokens').appendChild(t);
+      });
+    }
+
+    const label = wrap.querySelector('.revealed-label');
+    if (label) label.remove();
+    const hint = wrap.querySelector('.hint-text');
+    if (hint) hint.remove();
   });
 
   const scoreDisplay = document.getElementById('score-display');
@@ -1243,4 +1518,27 @@ document.addEventListener('DOMContentLoaded', () => {
   loadVocabState();
   updateThemeToggle();
   restoreLastRoute();
+});
+
+document.addEventListener('click', (e) => {
+  const mcBtn = e.target.closest('.mc-option');
+  if (mcBtn && !mcBtn.disabled) {
+    const mc = mcBtn.closest('.quiz-mc');
+    mc.querySelectorAll('.mc-option').forEach(o => o.classList.remove('selected', 'correct', 'incorrect'));
+    mcBtn.classList.add('selected');
+    return;
+  }
+
+  const token = e.target.closest('.order-token');
+  if (token && !token.disabled) {
+    const order = token.closest('.quiz-order');
+    const answerEl = order.querySelector('.order-answer');
+    const tokensEl = order.querySelector('.order-tokens');
+    if (token.parentElement === tokensEl) {
+      answerEl.appendChild(token);
+    } else {
+      tokensEl.appendChild(token);
+    }
+    order.classList.remove('correct', 'incorrect');
+  }
 });

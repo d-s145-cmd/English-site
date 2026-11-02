@@ -809,9 +809,12 @@ function showLevel(level) {
   const theory = articlesOf(level, 'theory');
   const practice = articlesOf(level, 'practice');
   const reading = articlesOf(level, 'reading');
+  
   const vocabCount = getAllVocab().filter(w => {
     const m = MATERIALS.find(x => x.id === w.materialId);
-    return m && m.level === level;
+    if (!m) return false;
+    if (level === 'C1–C2') return m.level === 'C1' || m.level === 'C2';
+    return m.level === level;
   }).length;
 
   const theoryWord = pluralize(theory.length, 'материал', 'материала', 'материалов');
@@ -822,29 +825,39 @@ function showLevel(level) {
   let html = `<button class="back-home-btn" onclick="showHome()">← На главную</button>
               <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> <span>/ ${level}</span></div>
               <h1>Раздел ${level}</h1>
-              <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
-                <button class="card-btn" onclick="showLevelTab('${level}','theory')">
-                 ${progressBadge(level, 'theory')}
-                  <span class="card-title">📚 Теория</span>
-                  <span class="card-subtitle">${theory.length} ${theoryWord}</span>
-                </button>
-                <button class="card-btn" onclick="showLevelTab('${level}','practice')">
-                  ${progressBadge(level, 'practice')}
-                    <span class="card-title">✍️ Практика</span>
-                    <span class="card-subtitle">${practice.length} ${practiceWord}</span>
-                </button>
-                <button class="card-btn" onclick="showLevelTab('${level}','reading')">
-                  ${progressBadge(level, 'reading')}
-                   <span class="card-title">📖 Чтение</span>
-                   <span class="card-subtitle">${reading.length} ${readingWord}</span>
-                </button>`;
+              <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">`;
 
-  if (!isExamOrICPC) {
-    html += `<button class="card-btn" onclick="showVocabCards('${level}')">
-                  <span class="card-title">📖 Лексика</span>
-                  <span class="card-subtitle">${vocabCount} ${vocabWord}</span>
-                </button>`;
+  if (theory.length > 0) {
+    html += `<button class="card-btn" onclick="showLevelTab('${level}','theory')">
+              ${progressBadge(level, 'theory')}
+               <span class="card-title">📚 Теория</span>
+               <span class="card-subtitle">${theory.length} ${theoryWord}</span>
+             </button>`;
   }
+
+  if (practice.length > 0) {
+    html += `<button class="card-btn" onclick="showLevelTab('${level}','practice')">
+              ${progressBadge(level, 'practice')}
+                <span class="card-title">✍️ Практика</span>
+                <span class="card-subtitle">${practice.length} ${practiceWord}</span>
+            </button>`;
+  }
+
+  if (reading.length > 0) {
+    html += `<button class="card-btn" onclick="showLevelTab('${level}','reading')">
+              ${progressBadge(level, 'reading')}
+               <span class="card-title">📖 Чтение</span>
+               <span class="card-subtitle">${reading.length} ${readingWord}</span>
+            </button>`;
+  }
+
+  if (!isExamOrICPC && vocabCount > 0) {
+    html += `<button class="card-btn" onclick="showVocabCards('${level}')">
+              <span class="card-title">📖 Лексика</span>
+              <span class="card-subtitle">${vocabCount} ${vocabWord}</span>
+            </button>`;
+  }
+
   html += `</div>`;
   app.innerHTML = html;
   window.scrollTo(0, 0);
@@ -883,6 +896,7 @@ function showLevelTab(level, tab) {
   app.innerHTML = html;
   window.scrollTo(0, 0);
 }
+
 function findRelatedPractice(theory) {
   if (!theory || theory.category !== 'theory') return null;
 
@@ -894,11 +908,22 @@ function findRelatedPractice(theory) {
     return m.level === tLevel;
   };
 
-  
+  // 1) Прямое совпадение topic
   let match = MATERIALS.find(m =>
     m.category === 'practice' && m.topic === theory.topic && sameLevel(m)
   );
   if (match) return match;
+
+  // 2) Для ICPC: ищем практику с суффиксом _q (anatomy -> anatomy_q)
+  if (theory.level === 'ICPC') {
+    match = MATERIALS.find(m =>
+      m.category === 'practice' && m.topic === theory.topic + '_q' && m.level === 'ICPC'
+    );
+    if (match) return match;
+    
+    
+    return null;
+  }
 
   const theories = articlesOf(theory.level, 'theory');
   const practices = articlesOf(theory.level, 'practice');

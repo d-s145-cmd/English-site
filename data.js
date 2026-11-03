@@ -429,62 +429,83 @@ const MATERIALS = [
 <li>to them — им/к ним</li>
 </ul>
 ` },
-  { id: 11, level: "A1", category: "practice", topic: "p1", title: "01. Местоимения и to be", content: `
+    { id: 11, level: "A1", category: "practice", topic: "p1", title: "01. Местоимения и to be", content: `
 <h3>A. Вставьте am/is/are</h3>
 <ol>
 <li>I [[am]] happy.</li>
 <li>They [[are]] at home.</li>
 <li>She [[is]] my sister.</li>
 <li>We [[are]] not late.</li>
-<li>[[Is]] he a student?</li>
-<li>Where [[are]] you from?</li>
 </ol>
-<h3>B. Сделайте отрицание</h3>
+<h3>B. Выберите правильный вариант</h3>
+<ol>
+<li>[[?mc:Is|Are|Am]] he a student?</li>
+<li>Where [[?mc:are|is|am]] you from?</li>
+<li>It [[?mc:is|are|am]] a cat.</li>
+<li>We [[?mc:aren't|isn't|amn't]] late.</li>
+<li>[[?mc:Are|Is|Am]] they at home?</li>
+</ol>
+<h3>C. Сделайте отрицание</h3>
 <ol>
 <li>He is tired. → [[He isn't tired|He is not tired]]</li>
 <li>I'm from Spain. → [[I'm not from Spain|I am not from Spain]]</li>
 <li>They are ready. → [[They aren't ready|They are not ready]]</li>
 </ol>
-<h3>C. Переведите</h3>
+<h3>D. Соберите предложение из слов</h3>
+<ol>
+<li>[[?order:I|am|a|student]]</li>
+<li>[[?order:They|are|at|home]]</li>
+<li>[[?order:He|is|not|tired]]</li>
+<li>[[?order:Are|you|ready]]</li>
+<li>[[?order:She|is|my|sister]]</li>
+</ol>
+<h3>E. Переведите</h3>
 <ol>
 <li>Я студент. → [[I'm a student|I am a student]]</li>
 <li>Она не дома. → [[She isn't at home|She is not at home]]</li>
 <li>Вы готовы? → [[Are you ready?]]</li>
-<li>Мы из Польши. → [[We're from Poland|We are from Poland]]</li>
 </ol>
 ` },
+
   { id: 12, level: "A1", category: "practice", topic: "p2", title: "02. Артикли, множественное число и притяжательные", content: `
 <h3>A. Вставьте a/an/the</h3>
 <ol>
 <li>She's [[a]] teacher.</li>
 <li>I eat [[an]] apple every day.</li>
 <li>[[The]] sun is bright.</li>
-<li>He has [[a]] dog. [[The]] dog is black.</li>
 <li>It's [[an]] old house.</li>
 </ol>
-<h3>B. Напишите множественное число</h3>
+<h3>B. Выберите правильный вариант</h3>
+<ol>
+<li>I have two [[?mc:children|childs|childes]].</li>
+<li>[[?mc:These|This|Those]] are my books.</li>
+<li>That is [[?mc:his|he|him]] car.</li>
+<li>This is [[?mc:an|a|the]] apple.</li>
+<li>It's [[?mc:a|an|the]] university.</li>
+</ol>
+<h3>C. Напишите множественное число</h3>
 <ol>
 <li>book → [[books]]</li>
 <li>bus → [[buses]]</li>
 <li>city → [[cities]]</li>
 <li>child → [[children]]</li>
-<li>box → [[boxes]]</li>
-<li>woman → [[women]]</li>
 </ol>
-<h3>C. Выберите вариант</h3>
+<h3>D. Соберите предложение из слов</h3>
 <ol>
-<li>This is (my/mine) phone. → [[my]]</li>
-<li>(This/These) are my shoes. → [[These]]</li>
-<li>That is (his/he) car. → [[his]]</li>
-<li>(These/This) is my key. → [[This]]</li>
+<li>[[?order:This|is|my|book]]</li>
+<li>[[?order:These|are|my|shoes]]</li>
+<li>[[?order:He|has|a|dog]]</li>
+<li>[[?order:That|is|her|car]]</li>
+<li>[[?order:The|dog|is|black]]</li>
 </ol>
-<h3>D. Переведите</h3>
+<h3>E. Переведите</h3>
 <ol>
 <li>Это моя сумка. → [[This is my bag|This is my handbag]]</li>
 <li>Он учитель. → [[He is a teacher|He's a teacher]]</li>
 <li>Эти дети мои друзья. → [[These children are my friends]]</li>
 </ol>
 ` },
+
   { id: 13, level: "A1", category: "practice", topic: "p3", title: "03. Present Simple", content: `
 <h3>A. Поставьте глагол в нужную форму</h3>
 <ol>
@@ -492,110 +513,150 @@ const MATERIALS = [
 <li>I [[go]] (go) to school by bus.</li>
 <li>Tom [[studies]] (study) English.</li>
 <li>They [[don't like]] (not/like) coffee.</li>
-<li>He [[doesn't play]] (not/play) tennis.</li>
 </ol>
-<h3>B. Составьте вопросы</h3>
+<h3>B. Выберите правильный вариант</h3>
+<ol>
+<li>She [[?mc:works|work|working]] in a bank.</li>
+<li>They [[?mc:don't like|doesn't like|not like]] coffee.</li>
+<li>[[?mc:Does|Do|Is]] she live here?</li>
+<li>He [[?mc:goes|go|gos]] to school by bus.</li>
+<li>I [[?mc:study|studies|studying]] English every day.</li>
+</ol>
+<h3>C. Составьте вопросы</h3>
 <ol>
 <li>you / speak English → [[Do you speak English?]]</li>
 <li>she / live here → [[Does she live here?]]</li>
 <li>where / they / work → [[Where do they work?]]</li>
-<li>what time / he / get up → [[What time does he get up?]]</li>
 </ol>
-<h3>C. Переведите</h3>
+<h3>D. Соберите предложение из слов</h3>
+<ol>
+<li>[[?order:She|works|in|a|shop]]</li>
+<li>[[?order:Where|does|she|work]]</li>
+<li>[[?order:I|don't|like|coffee]]</li>
+<li>[[?order:Do|you|speak|English]]</li>
+<li>[[?order:He|doesn't|play|tennis]]</li>
+</ol>
+<h3>E. Переведите</h3>
 <ol>
 <li>Я обычно пью чай утром. → [[I usually drink tea in the morning]]</li>
 <li>Она не работает по воскресеньям. → [[She doesn't work on Sundays|She does not work on Sundays]]</li>
 <li>Где ты живёшь? → [[Where do you live?]]</li>
-<li>Мой брат ездит на работу на автобусе. → [[My brother goes to work by bus]]</li>
 </ol>
 ` },
+
   { id: 14, level: "A1", category: "practice", topic: "p4", title: "04. Вопросы, время, даты и предлоги", content: `
-<h3>A. Составьте вопросы</h3>
+<h3>A. Выберите правильный предлог (at/on/in)</h3>
+<ol>
+<li>[[?mc:on|at|in]] Monday</li>
+<li>[[?mc:at|on|in]] 8 o'clock</li>
+<li>[[?mc:in|on|at]] July</li>
+<li>[[?mc:in|at|on]] the morning</li>
+<li>[[?mc:on|in|at]] 12 June</li>
+</ol>
+<h3>B. Выберите правильный вариант</h3>
+<ol>
+<li>[[?mc:When|What|Where]] is your birthday?</li>
+<li>My birthday is [[?mc:in|on|at]] June.</li>
+<li>We have English lessons [[?mc:on|at|in]] Mondays.</li>
+<li>[[?mc:How old|How many|How much]] are you?</li>
+</ol>
+<h3>C. Составьте вопросы</h3>
 <ol>
 <li>your name / what → [[What is your name?|What's your name?]]</li>
 <li>you / where / live → [[Where do you live?]]</li>
 <li>she / how old → [[How old is she?]]</li>
-<li>the lesson / what time / start → [[What time does the lesson start?]]</li>
-<li>he / speak English → [[Does he speak English?]]</li>
 </ol>
-<h3>B. Вставьте at/on/in</h3>
+<h3>D. Соберите предложение из слов</h3>
 <ol>
-<li>[[on]] Monday</li>
-<li>[[at]] 8 o'clock</li>
-<li>[[in]] July</li>
-<li>[[in]] the morning</li>
-<li>[[at]] night</li>
-<li>[[on]] 12 June</li>
+<li>[[?order:What|is|your|name]]</li>
+<li>[[?order:How|old|are|you]]</li>
+<li>[[?order:Where|do|you|live]]</li>
+<li>[[?order:What|time|is|it]]</li>
+<li>[[?order:How|much|is|it]]</li>
 </ol>
-<h3>C. Напишите время словами</h3>
-<ol>
-<li>7:00 → [[seven o'clock]]</li>
-<li>7:15 → [[seven fifteen|quarter past seven]]</li>
-<li>9:30 → [[nine thirty|half past nine]]</li>
-<li>10:45 → [[ten forty-five|quarter to eleven]]</li>
-</ol>
-<h3>D. Переведите</h3>
+<h3>E. Переведите</h3>
 <ol>
 <li>Как тебя зовут? → [[What is your name?|What's your name?]]</li>
-<li>Во сколько начинается урок? → [[What time does the lesson start?]]</li>
 <li>Мой день рождения в июне. → [[My birthday is in June]]</li>
 <li>Сколько это стоит? → [[How much is it?]]</li>
 </ol>
 ` },
+
   { id: 15, level: "A1", category: "practice", topic: "p5", title: "05. There is/are, have got и предлоги места", content: `
-<h3>A. Вставьте there is/there are/is there/are there</h3>
+<h3>A. Вставьте there is / there are</h3>
 <ol>
 <li>[[There is]] a shop near my house.</li>
 <li>[[There are]] two bedrooms in the flat.</li>
 <li>[[Is there]] a bank near here?</li>
 <li>[[Are there]] any chairs in the room?</li>
 </ol>
-<h3>B. Вставьте have got/has got</h3>
+<h3>B. Выберите правильный вариант</h3>
+<ol>
+<li>She [[?mc:has got|have got|is got]] two brothers.</li>
+<li>The keys are [[?mc:on|in|at]] the table.</li>
+<li>[[?mc:Is there|Are there|There is]] a bank near here?</li>
+<li>My brother [[?mc:hasn't got|haven't got|isn't got]] a car.</li>
+<li>[[?mc:There is|There are|It is]] a shop near my house.</li>
+</ol>
+<h3>C. Вставьте have got / has got</h3>
 <ol>
 <li>I [[have got]] a sister.</li>
 <li>Mark [[has got]] blue eyes.</li>
-<li>[[Have]] you [[got]] a pet?</li>
 <li>She [[hasn't got|has not got]] a car.</li>
 </ol>
-<h3>C. Вставьте предлог</h3>
+<h3>D. Соберите предложение из слов</h3>
 <ol>
-<li>The book is [[on]] the table.</li>
-<li>The cat is [[under]] the chair (ниже).</li>
-<li>The bank is [[between]] the café and the hotel.</li>
-<li>The school is [[opposite]] the park (на другой стороне).</li>
-<li>My keys are [[in]] my bag.</li>
+<li>[[?order:There|is|a|shop|near|here]]</li>
+<li>[[?order:I|have|got|a|sister]]</li>
+<li>[[?order:The|cat|is|under|the|chair]]</li>
+<li>[[?order:Have|you|got|a|brother]]</li>
+<li>[[?order:There|are|two|bedrooms]]</li>
 </ol>
-<h3>D. Переведите</h3>
+<h3>E. Переведите</h3>
 <ol>
 <li>В квартире две спальни. → [[There are two bedrooms in the flat|There are two bedrooms in the apartment]]</li>
 <li>У тебя есть брат? → [[Have you got a brother?]]</li>
-<li>Кафе рядом с банком. → [[The café is next to the bank|The cafe is next to the bank]]</li>
 <li>Телефон в сумке. → [[The phone is in the bag]]</li>
 </ol>
 ` },
+
   { id: 16, level: "A1", category: "practice", topic: "p6", title: "06. Can/can't, просьбы и инструкции", content: `
-<h3>A. Вставьте can/can't</h3>
+<h3>A. Выберите правильный вариант</h3>
+<ol>
+<li>She [[?mc:can|can to|cans]] swim.</li>
+<li>[[?mc:Can|Do|Are]] you help me, please?</li>
+<li>[[?mc:Don't|Not|Doesn't]] open the window!</li>
+<li>I [[?mc:can't|cannot to|don't can]] drive a car.</li>
+<li>[[?mc:Could|Can|Are]] you repeat that, please?</li>
+</ol>
+<h3>B. Вставьте can / can't</h3>
 <ol>
 <li>Birds [[can]] fly.</li>
 <li>I [[can't]] drive; I haven't got a licence.</li>
-<li>[[Can]] you help me, please?</li>
 <li>[[Can]] I sit here?</li>
 </ol>
-<h3>B. Сделайте команды отрицательными</h3>
+<h3>C. Сделайте команды отрицательными</h3>
 <ol>
 <li>Run! → [[Don't run!|Do not run!]]</li>
 <li>Open the window! → [[Don't open the window!]]</li>
-<li>Worry! → [[Don't worry!]]</li>
 <li>Touch that! → [[Don't touch that!]]</li>
 </ol>
-<h3>C. Переведите</h3>
+<h3>D. Соберите предложение из слов</h3>
+<ol>
+<li>[[?order:I|can|swim]]</li>
+<li>[[?order:Can|you|help|me]]</li>
+<li>[[?order:Don't|open|the|window]]</li>
+<li>[[?order:She|can't|drive|a|car]]</li>
+<li>[[?order:Can|I|sit|here]]</li>
+</ol>
+<h3>E. Переведите</h3>
 <ol>
 <li>Я умею плавать, но не умею водить машину. → [[I can swim, but I can't drive|I can swim, but I cannot drive]]</li>
 <li>Откройте книгу, пожалуйста. → [[Open the book, please]]</li>
 <li>Можно мне стакан воды? → [[Can I have a glass of water, please?]]</li>
-<li>Повторите, пожалуйста, медленнее. → [[Could you repeat that more slowly, please?]]</li>
 </ol>
 ` },
+
   { id: 17, level: "A1", category: "practice", topic: "p7", title: "07. Present Continuous", content: `
 <h3>A. Поставьте глагол в Present Continuous</h3>
 <ol>
@@ -603,39 +664,53 @@ const MATERIALS = [
 <li>She [[is cooking]] (cook) dinner.</li>
 <li>They [[are playing]] (play) football at the moment.</li>
 <li>We [[aren't watching]] (not/watch) TV now.</li>
-<li>[[Are]] you [[listening]] (listen) to me?</li>
 </ol>
-<h3>B. Выберите Present Simple или Present Continuous</h3>
+<h3>B. Выберите правильный вариант</h3>
 <ol>
-<li>He usually (walk / is walking) to work. → [[walks]]</li>
-<li>Look! It (rains / is raining). → [[is raining]]</li>
-<li>I (study / am studying) every Monday. → [[study]]</li>
-<li>They (have / are having) lunch right now. → [[are having]]</li>
+<li>She [[?mc:is cooking|cooks|is cook]] dinner now.</li>
+<li>They [[?mc:are playing|play|is playing]] football at the moment.</li>
+<li>[[?mc:Are|Do|Is]] you listening to me?</li>
+<li>We [[?mc:aren't watching|don't watching|isn't watching]] TV now.</li>
+<li>Look! The cat [[?mc:is sleeping|sleeps|sleep]] on the sofa.</li>
 </ol>
-<h3>C. Переведите</h3>
+<h3>C. Выберите форму (Present Simple или Continuous)</h3>
+<ol>
+<li>He usually [[?mc:walks|is walking|walk]] to work.</li>
+<li>Look! It [[?mc:is raining|rains|rain]] .</li>
+<li>I [[?mc:study|am studying|studies]] every Monday.</li>
+<li>They [[?mc:are having|have|has]] lunch right now.</li>
+</ol>
+<h3>D. Соберите предложение из слов</h3>
+<ol>
+<li>[[?order:I|am|reading|now]]</li>
+<li>[[?order:She|is|cooking|dinner]]</li>
+<li>[[?order:What|are|you|doing]]</li>
+<li>[[?order:They|are|playing|football]]</li>
+<li>[[?order:We|aren't|watching|TV]]</li>
+</ol>
+<h3>E. Переведите</h3>
 <ol>
 <li>Я сейчас читаю. → [[I'm reading now|I am reading now]]</li>
 <li>Она работает в магазине (вообще). → [[She works in a shop]]</li>
 <li>Что ты делаешь сейчас? → [[What are you doing now?]]</li>
-<li>Мы не смотрим телевизор в данный момент. → [[We aren't watching TV at the moment|We are not watching TV at the moment]]</li>
 </ol>
 ` },
+
   { id: 18, level: "A1", category: "practice", topic: "p8", title: "08. Past Simple", content: `
-<h3>A. Вставьте was/were</h3>
+<h3>A. Выберите правильный вариант</h3>
+<ol>
+<li>We [[?mc:went|go|goed]] to the park yesterday.</li>
+<li>Did you [[?mc:see|saw|seen]] him?</li>
+<li>She [[?mc:didn't|doesn't|don't]] buy bread.</li>
+<li>They [[?mc:were|was|is]] tired.</li>
+<li>I [[?mc:saw|see|seen]] Anna yesterday.</li>
+</ol>
+<h3>B. Вставьте was/were</h3>
 <ol>
 <li>I [[was]] at home yesterday.</li>
 <li>They [[were]] tired.</li>
 <li>[[Was]] she at work?</li>
 <li>Where [[were]] you last night?</li>
-</ol>
-<h3>B. Поставьте глагол в Past Simple</h3>
-<ol>
-<li>We [[visited]] (visit) our friends last week.</li>
-<li>He [[went]] (go) to town yesterday.</li>
-<li>I [[saw]] (see) Anna.</li>
-<li>She [[didn't buy]] (not/buy) bread.</li>
-<li>[[Did]] you [[watch]] (watch) the film?</li>
-<li>Where [[did]] they [[go]] (go)?</li>
 </ol>
 <h3>C. Исправьте ошибки</h3>
 <ol>
@@ -643,14 +718,22 @@ const MATERIALS = [
 <li>Did you saw him? → [[Did you see him?]]</li>
 <li>They was tired. → [[They were tired]]</li>
 </ol>
-<h3>D. Переведите</h3>
+<h3>D. Соберите предложение из слов</h3>
+<ol>
+<li>[[?order:I|went|to|school|yesterday]]</li>
+<li>[[?order:Where|did|you|go]]</li>
+<li>[[?order:She|didn't|buy|bread]]</li>
+<li>[[?order:They|were|at|home]]</li>
+<li>[[?order:Did|you|see|the|film]]</li>
+</ol>
+<h3>E. Переведите</h3>
 <ol>
 <li>Вчера я был дома. → [[I was at home yesterday]]</li>
 <li>Мы ходили в парк на прошлой неделе. → [[We went to the park last week]]</li>
 <li>Она не купила хлеб. → [[She didn't buy any bread|She didn't buy bread]]</li>
-<li>Ты видел этот фильм? → [[Did you see this film?|Did you see this movie?]]</li>
 </ol>
 ` },
+
   { id: 19, level: "A1", category: "practice", topic: "p9", title: "09. Повседневная лексика и общение", content: `
 <h3>A. Вставьте слово</h3>
 <p>Слова: kitchen, thirsty, sister, bus, breakfast, bedroom, tired, water.</p>
@@ -658,112 +741,147 @@ const MATERIALS = [
 <li>I eat [[breakfast]] in the morning.</li>
 <li>I'm [[thirsty]]; I'd like a drink.</li>
 <li>My mother's daughter is my [[sister]].</li>
-<li>I go to work by [[bus]].</li>
 <li>I sleep in my [[bedroom]].</li>
-<li>I'm very [[tired]] after work.</li>
 <li>I cook in the [[kitchen]].</li>
-<li>Can I have some [[water]]?</li>
 </ol>
-<h3>B. Выберите ответ (напишите букву a или b)</h3>
+<h3>B. Выберите правильный ответ</h3>
 <ol>
-<li>“How are you?” — a) I'm fine, thanks. b) I'm 25. → [[a]]</li>
+<li>«How are you?» — [[?mc:I'm fine, thanks.|It's Monday.|I'm 25.]]</li>
+<li>«How much is it?» — [[?mc:It's five euros.|It's Monday.|I'm from Italy.]]</li>
+<li>«Where are you from?» — [[?mc:I'm from Italy.|I'm at home.|I'm fine.]]</li>
+<li>«Thank you.» — [[?mc:You're welcome.|Excuse me.|I'm sorry.]]</li>
+<li>«Excuse me, where is the toilet?» — [[?mc:It's over there.|I'm fine.|It's five euros.]]</li>
+</ol>
+<h3>C. Выберите ответ (напишите букву a или b)</h3>
+<ol>
 <li>“How much is it?” — a) It's Monday. b) It's five euros. → [[b]]</li>
 <li>“Where are you from?” — a) I'm from Italy. b) I'm at home. → [[a]]</li>
 <li>“Thank you.” — a) You're welcome. b) Excuse me. → [[a]]</li>
 </ol>
-<h3>C. Переведите</h3>
+<h3>D. Соберите предложение из слов</h3>
+<ol>
+<li>[[?order:Where|is|the|station]]</li>
+<li>[[?order:I|don't|understand]]</li>
+<li>[[?order:I|live|in|a|small|flat]]</li>
+<li>[[?order:Can|I|have|a|cup|of|tea]]</li>
+<li>[[?order:I|eat|breakfast|in|the|morning]]</li>
+</ol>
+<h3>E. Переведите</h3>
 <ol>
 <li>Извините, где вокзал? → [[Excuse me, where is the station?]]</li>
-<li>Я хотел(а) бы чашку чая, пожалуйста. → [[I'd like a cup of tea, please|I would like a cup of tea, please]]</li>
 <li>Я не понимаю. → [[I don't understand|I do not understand]]</li>
 <li>Я живу в небольшой квартире с сестрой. → [[I live in a small flat with my sister|I live in a small apartment with my sister]]</li>
 </ol>
 ` },
+
   { id: 20, level: "A1", category: "practice", topic: "p10", title: "10. Смешанная грамматика", content: `
-<h3>A. Поставьте глагол в правильную форму</h3>
+<p>Вопросы помечены номерами тем (01–09). После проверки внизу появится разбивка: где вы слабы и на какую теорию вернуться.</p>
+
+<h3>A. Выберите правильный вариант</h3>
 <ol>
-<li>My sister usually [[gets up]] (get up) at seven.</li>
-<li>Look! The children [[are playing]] (play) in the garden.</li>
-<li>We [[went]] (go) to the cinema yesterday.</li>
-<li>He [[doesn't like]] (not/like) fish.</li>
-<li>I [[was]] (be) at home last night.</li>
-<li>[[Do]] you [[speak]] (speak) English?</li>
-<li>She [[isn't watching]] (not/watch) TV now.</li>
-<li>Tom [[bought]] (buy) a phone last week.</li>
-<li>Where [[are]] your parents [[now]] (be) now?</li>
-<li>My dad [[drives]] (drive) to work every morning.</li>
-<li>I [[didn't go]] (not/go) to school yesterday.</li>
-<li>Listen! Someone [[is singing]] (sing).</li>
-<li>[[Was]] she [[at]] (be) at work yesterday?</li>
-<li>We usually [[don't eat]] (not/eat) dinner late.</li>
-<li>They [[have]] (have) breakfast at eight every day.</li>
+<li>She [[?mc:is|am|are::01]] my sister.</li>
+<li>I have [[?mc:an|a|the::02]] apple.</li>
+<li>He [[?mc:works|work|working::03]] in a bank.</li>
+<li>[[?mc:When|What|Where::04]] is your birthday?</li>
+<li>[[?mc:There is|There are|It is::05]] a shop near my house.</li>
+<li>[[?mc:Can|Do|Are::06]] you help me, please?</li>
+<li>She [[?mc:is cooking|cooks|is cook::07]] dinner now.</li>
+<li>We [[?mc:went|go|goed::08]] to the park yesterday.</li>
+<li>The keys are [[?mc:on|in|at::09]] the table.</li>
 </ol>
-<h3>B. Выберите правильный вариант (напишите выбранное слово)</h3>
+
+<h3>B. Соберите предложения из слов</h3>
 <ol>
-<li>He (works/is working) every Saturday. → [[works]]</li>
-<li>I (do/am doing) homework right now. → [[am doing]]</li>
-<li>They (was/were) happy yesterday. → [[were]]</li>
-<li>(Do/Are) you like coffee? → [[Do]]</li>
-<li>Did she (call/called) you? → [[call]]</li>
-<li>There (is/are) three apples. → [[are]]</li>
-<li>My brother (can/cans) swim. → [[can]]</li>
-<li>She doesn't (play/plays) tennis. → [[play]]</li>
-<li>We (have got/has got) a dog. → [[have got]]</li>
-<li>The keys are (in/at) my bag. → [[in]]</li>
+<li>[[?order:She|is|a|teacher::01]]</li>
+<li>[[?order:These|are|my|books::02]]</li>
+<li>[[?order:He|works|in|a|shop::03]]</li>
+<li>[[?order:Where|do|you|live::04]]</li>
+<li>[[?order:There|are|two|bedrooms::05]]</li>
+<li>[[?order:I|can|swim::06]]</li>
+<li>[[?order:She|is|reading|a|book::07]]</li>
+<li>[[?order:I|went|to|school|yesterday::08]]</li>
+<li>[[?order:The|book|is|on|the|table::09]]</li>
 </ol>
-<h3>C. Исправьте ошибки (введите правильное предложение)</h3>
+
+<h3>C. Исправьте ошибки</h3>
 <ol>
-<li>She go to work every day. → [[She goes to work every day]]</li>
-<li>I am play football now. → [[I am playing football now|I'm playing football now]]</li>
-<li>Did you went home? → [[Did you go home?]]</li>
-<li>He don't like tea. → [[He doesn't like tea]]</li>
-<li>There is two bedrooms. → [[There are two bedrooms]]</li>
-<li>They was at the cinema yesterday. → [[They were at the cinema yesterday]]</li>
-<li>Does he works here? → [[Does he work here?]]</li>
-<li>I didn't saw her. → [[I didn't see her]]</li>
-<li>She can to swim. → [[She can swim]]</li>
-<li>These is my books. → [[These are my books]]</li>
+<li>She go to work every day. → [[She goes to work every day::03]]</li>
+<li>I am play football now. → [[I am playing football now|I'm playing football now::07]]</li>
+<li>Did you went home? → [[Did you go home::08]]</li>
+<li>He don't like tea. → [[He doesn't like tea::03]]</li>
+<li>There is two bedrooms. → [[There are two bedrooms::05]]</li>
+</ol>
+
+<h3>D. Вставьте правильное слово</h3>
+<ol>
+<li>They [[?mc:don't like|doesn't like|not like::03]] fish.</li>
+<li>[[?mc:Does|Do|Is::03]] she speak English?</li>
+<li>The lesson starts [[?mc:at|in|on::04]] nine o'clock.</li>
+<li>She [[?mc:has got|have got|is got::05]] two brothers.</li>
+<li>[[?mc:Don't|Not|Doesn't::06]] open the window!</li>
+</ol>
+
+<h3>E. Выберите форму глагола</h3>
+<ol>
+<li>[[?mc:Are|Do|Is::07]] you listening to me?</li>
+<li>Did you [[?mc:see|saw|seen::08]] him?</li>
+<li>They [[?mc:were|was|is::08]] tired.</li>
+<li>The cat is [[?mc:under|in|on::09]] the chair.</li>
+<li>My birthday is [[?mc:in|on|at::09]] July.</li>
 </ol>
 ` },
+
   { id: 21, level: "A1", category: "practice", topic: "p11", title: "11. Итоговый тест A1", content: `
-<h3>A. Грамматика</h3>
+<p>30 вопросов по всем темам A1. После проверки внизу появится разбивка по темам: где вы слабы и к какой теории вернуться.</p>
+
+<h3>A. Грамматика (выбор варианта)</h3>
 <ol>
-<li>I [[am]] from Germany.</li>
-<li>She [[has got]] two brothers.</li>
-<li>He [[doesn't work]] (not/work) on Sundays.</li>
-<li>[[Do]] you speak English?</li>
-<li>Look! It [[is raining]] (rain).</li>
-<li>We [[were]] at home yesterday.</li>
-<li>Did they [[visit]] (visit) you?</li>
-<li>There [[are]] three books on the desk.</li>
-<li>My birthday is [[in]] May.</li>
-<li>The cat is [[under]] the table (ниже стола).</li>
-<li>She can [[swim]] (swim).</li>
-<li>These [[are]] my keys.</li>
-<li>I [[watch]] (watch) TV every evening.</li>
-<li>They [[aren't sleeping]] (not/sleep) now.</li>
-<li>[[Is]] there a shop near here?</li>
+<li>I [[?mc:am|is|are::01]] from Germany.</li>
+<li>She [[?mc:has got|have got|is got::05]] two brothers.</li>
+<li>He [[?mc:doesn't work|don't work|not work::03]] on Sundays.</li>
+<li>[[?mc:Do|Does|Is::03]] you speak English?</li>
+<li>Look! It [[?mc:is raining|rains|rain::07]] .</li>
+<li>We [[?mc:were|was|is::08]] at home yesterday.</li>
+<li>Did they [[?mc:visit|visited|visiting::08]] you?</li>
+<li>There [[?mc:are|is|am::05]] three books on the desk.</li>
+<li>My birthday is [[?mc:in|on|at::09]] May.</li>
+<li>The cat is [[?mc:under|in|on::09]] the table.</li>
 </ol>
-<h3>B. Переведите</h3>
+
+<h3>B. Лексика и фразы</h3>
 <ol>
-<li>Я студент. → [[I'm a student|I am a student]]</li>
-<li>Она не любит кофе. → [[She doesn't like coffee|She does not like coffee]]</li>
-<li>Где ты работаешь? → [[Where do you work?]]</li>
-<li>Сейчас мы готовим ужин. → [[We're cooking dinner now|We are cooking dinner now]]</li>
-<li>Вчера они были дома. → [[They were at home yesterday]]</li>
-<li>Ты купил хлеб вчера? → [[Did you buy bread yesterday?]]</li>
-<li>В моей квартире две комнаты. → [[There are two rooms in my flat|There are two rooms in my apartment]]</li>
-<li>Я умею плавать. → [[I can swim]]</li>
-<li>Мой отец обычно ездит на работу на автобусе. → [[My father usually goes to work by bus]]</li>
-<li>Повторите, пожалуйста. → [[Could you repeat that, please?|Could you repeat that please]]</li>
+<li>«How are you?» — [[?mc:I'm fine, thanks.|It's Monday.|I'm 25.::09]]</li>
+<li>«How much is it?» — [[?mc:It's five euros.|It's Monday.|I'm from Italy.::09]]</li>
+<li>This is [[?mc:an|a|the::02]] apple.</li>
+<li>I have two [[?mc:children|childs|childes::02]] .</li>
+<li>She [[?mc:is cooking|cooks|is cook::07]] dinner now.</li>
 </ol>
-<h3>C. Исправьте ошибку</h3>
+
+<h3>C. Выберите форму</h3>
 <ol>
-<li>He don't like apples. → [[He doesn't like apples]]</li>
-<li>She is work now. → [[She is working now]]</li>
-<li>Did you saw him? → [[Did you see him?]]</li>
-<li>There is three books. → [[There are three books]]</li>
-<li>They was tired yesterday. → [[They were tired yesterday]]</li>
+<li>She can [[?mc:swim|swims|to swim::06]] .</li>
+<li>These [[?mc:are|is|am::02]] my keys.</li>
+<li>I [[?mc:watch|watches|watching::03]] TV every evening.</li>
+<li>They [[?mc:aren't sleeping|don't sleeping|isn't sleeping::07]] now.</li>
+<li>[[?mc:Is there|Are there|There is::05]] a shop near here?</li>
+</ol>
+
+<h3>D. Соберите предложения</h3>
+<ol>
+<li>[[?order:I|am|a|student::01]]</li>
+<li>[[?order:Where|do|you|work::03]]</li>
+<li>[[?order:We|are|cooking|dinner|now::07]]</li>
+<li>[[?order:They|were|at|home|yesterday::08]]</li>
+<li>[[?order:There|are|two|rooms|in|my|flat::05]]</li>
+</ol>
+
+<h3>E. Соберите предложения (продолжение)</h3>
+<ol>
+<li>[[?order:I|can|swim::06]]</li>
+<li>[[?order:My|father|usually|goes|to|work|by|bus::03]]</li>
+<li>[[?order:Did|you|buy|bread|yesterday::08]]</li>
+<li>[[?order:The|book|is|on|the|table::09]]</li>
+<li>[[?order:She|doesn't|like|coffee::03]]</li>
 </ol>
 ` },
   { id: 31, level: "A1", category: "vocabulary", topic: "greetings", title: "Приветствия и базовые фразы", content: `
@@ -4016,5 +4134,5 @@ const MATERIALS = [
 <tr><td>air pollution</td><td>загрязнение воздуха</td></tr>
 <tr><td>affordable</td><td>доступный по цене</td></tr>
 </table>
-` },
+` }
 ];

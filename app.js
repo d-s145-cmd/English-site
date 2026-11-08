@@ -318,10 +318,10 @@ function getSnippet(text, query, radius = 40) {
   const lowerQuery = query.toLowerCase();
   const index = lowerText.indexOf(lowerQuery);
   if (index === -1) return text.slice(0, radius * 2) + '...';
-  
+
   let start = Math.max(0, index - radius);
   let end = Math.min(text.length, index + lowerQuery.length + radius);
-  
+
   let snippet = text.slice(start, end).trim();
   if (start > 0) snippet = '...' + snippet;
   if (end < text.length) snippet = snippet + '...';
@@ -357,11 +357,11 @@ function initSearch() {
       const cleanText = stripHtml(m.content);
       const titleLower = m.title.toLowerCase();
       const textLower = cleanText.toLowerCase();
-      
+
       let score = 0;
       if (titleLower.includes(lowerQuery)) score += 10;
       if (textLower.includes(lowerQuery)) score += 1;
-      
+
       if (score > 0) {
         found.push({ material: m, score, cleanText });
       }
@@ -378,8 +378,12 @@ function initSearch() {
     resultsBox.innerHTML = found.slice(0, 15).map(item => {
       const m = item.material;
       const level = (m.level === 'C1' || m.level === 'C2') ? 'C1–C2' : m.level;
-      const cat = m.category === 'theory' ? 'Теория': m.category === 'practice' ? 'Практика': m.category === 'reading' ? 'Чтение': 'Словарь';
-      
+      const cat = m.category === 'theory' ? 'Теория'
+                : m.category === 'practice' ? 'Практика'
+                : m.category === 'reading' ? 'Чтение'
+                : m.category === 'listening' ? 'Аудирование'
+                : 'Словарь';
+
       const highlightedTitle = highlightMatch(m.title, query);
       const snippet = item.score === 10 ? '' : getSnippet(item.cleanText, query);
       const highlightedSnippet = snippet ? highlightMatch(snippet, query) : '';
@@ -431,7 +435,7 @@ function getAllVocab() {
     words.forEach(w => {
       const key = w.english.toLowerCase().trim();
       if (seen.has(key)) return;
-      
+
       seen.add(key);
       allWords.push({
         ...w,
@@ -523,7 +527,7 @@ function renderFlashcard(level, dueWords, index) {
   app.innerHTML = `
     <button class="back-home-btn" onclick="showSection('vocabulary')">← Назад к словарю</button>
     <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> / <a href="#" onclick="showSection('vocabulary'); return false;">Словарь</a> <span>/ ${level === 'ALL' ? 'Все уровни' : level}</span></div>
-    
+
     <div class="flashcard-progress">
       Карточка ${index + 1} из ${dueWords.length}
     </div>
@@ -562,9 +566,9 @@ function flipCard() {
 function handleVocabResponse(wordId, quality) {
   const card = document.getElementById('flashcard');
   if (!card || !card.classList.contains('flipped')) {
-    return; 
+    return;
   }
-  
+
   updateVocabCardState(wordId, quality);
   if (window.__currentFlashcard) {
     const { level, dueWords, index } = window.__currentFlashcard;
@@ -604,7 +608,7 @@ function showVocabDirectory(level) {
   words.forEach(w => {
     const cleanEnglish = w.english.toLowerCase().trim();
     const ipa = IPA_DICTIONARY[cleanEnglish] || '';
-    
+
     html += `
       <div class="vocab-item">
         <div class="vocab-item-main">
@@ -716,9 +720,15 @@ function showSection(category) {
   highlightNav(category);
   toggleVocabNavVisibility(category !== 'vocabulary');
   saveLastRoute('section', [category]);
-  const names = { theory: 'Теория', practice: 'Практика', vocabulary: 'Словарь', reading: 'Чтение' };
+  const names = {
+    theory: 'Теория',
+    practice: 'Практика',
+    vocabulary: 'Словарь',
+    reading: 'Чтение',
+    listening: 'Аудирование'
+  };
   const name = names[category] || 'Материалы';
-  
+
   let html = `<button class="back-home-btn" onclick="showHome()">← На главную</button>
               <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a><span>/ ${name}</span></div>
               <div class="section-heading">
@@ -729,7 +739,7 @@ function showSection(category) {
 
   if (category === 'vocabulary') {
     html += '<div class="grid">';
-    
+
     html += `<button class="card-btn" onclick="showVocabCards('ALL')">
                <span class="card-icon">🧠</span>
                <span class="card-title">Играть с карточками</span>
@@ -741,7 +751,7 @@ function showSection(category) {
                <span class="card-title">Справочник слов</span>
                <span class="card-subtitle">Транскрипция и перевод</span>
              </button>`;
-    
+
     html += `<button class="card-btn" onclick="resetVocabProgress()">
                <span class="card-icon">🔄</span>
                <span class="card-title">Сбросить карточки</span>
@@ -760,7 +770,7 @@ function showSection(category) {
            return m && m.level === level;
          }).length;
          const word = pluralize(count, 'слово', 'слова', 'слов');
-         
+
          html += `<button class="card-btn" onclick="showVocabCards('${level}')" style="padding: 20px 10px;">
                     <span class="card-title" style="font-size: 20px;">${level}</span>
                     <span class="card-subtitle">${count} ${word}</span>
@@ -779,7 +789,7 @@ function showSection(category) {
         const count = articlesOf(level, category).length;
         const word = pluralize(count, 'материал', 'материала', 'материалов');
         html += `<button class="card-btn" onclick="showLevelTab('${level}','${category}')">
-                   <span class="card-icon">${category === 'theory' ? '📚' : category === 'practice' ? '✍️' : '📖'}</span>
+                   <span class="card-icon">${category === 'theory' ? '📚' : category === 'practice' ? '✍️' : category === 'listening' ? '🎧' : '📖'}</span>
                    ${progressBadge(level, category)}
                    <span class="card-title">${level}</span>
                    <span class="card-subtitle">${count} ${word}</span>
@@ -809,7 +819,8 @@ function showLevel(level) {
   const theory = articlesOf(level, 'theory');
   const practice = articlesOf(level, 'practice');
   const reading = articlesOf(level, 'reading');
-  
+  const listening = articlesOf(level, 'listening');
+
   const vocabCount = getAllVocab().filter(w => {
     const m = MATERIALS.find(x => x.id === w.materialId);
     if (!m) return false;
@@ -821,6 +832,7 @@ function showLevel(level) {
   const practiceWord = pluralize(practice.length, 'материал', 'материала', 'материалов');
   const vocabWord = pluralize(vocabCount, 'слово', 'слова', 'слов');
   const readingWord = pluralize(reading.length, 'текст', 'текста', 'текстов');
+  const listeningWord = pluralize(listening.length, 'материал', 'материала', 'материалов');
 
   let html = `<button class="back-home-btn" onclick="showHome()">← На главную</button>
               <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> <span>/ ${level}</span></div>
@@ -851,6 +863,14 @@ function showLevel(level) {
             </button>`;
   }
 
+  if (listening.length > 0) {
+    html += `<button class="card-btn" onclick="showLevelTab('${level}','listening')">
+              ${progressBadge(level, 'listening')}
+               <span class="card-title">🎧 Аудио</span>
+               <span class="card-subtitle">${listening.length} ${listeningWord}</span>
+            </button>`;
+  }
+
   if (!isExamOrICPC && vocabCount > 0) {
     html += `<button class="card-btn" onclick="showVocabCards('${level}')">
               <span class="card-title">📖 Лексика</span>
@@ -868,8 +888,13 @@ function showLevelTab(level, tab) {
   toggleVocabNavVisibility(tab !== 'vocabulary');
   saveLastRoute('levelTab', [level, tab]);
   const items = articlesOf(level, tab);
-  const tabName = tab === 'theory' ? 'Теория' : tab === 'practice' ? 'Практика' : tab === 'reading' ? 'Чтение' : 'Лексика';
-  
+  const tabName =
+    tab === 'theory' ? 'Теория'
+    : tab === 'practice' ? 'Практика'
+    : tab === 'reading' ? 'Чтение'
+    : tab === 'listening' ? 'Аудирование'
+    : 'Лексика';
+
   let html = `<button class="back-home-btn" onclick="showLevel('${level}')">← Назад в раздел ${level}</button>
               <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> / <a href="#" onclick="showLevel('${level}'); return false;">${level}</a> <span>/ ${tabName}</span></div>
               <h1>${level} — ${tabName}</h1>`;
@@ -908,20 +933,16 @@ function findRelatedPractice(theory) {
     return m.level === tLevel;
   };
 
-  // 1) Прямое совпадение topic
   let match = MATERIALS.find(m =>
     m.category === 'practice' && m.topic === theory.topic && sameLevel(m)
   );
   if (match) return match;
 
-  // 2) Для ICPC: ищем практику с суффиксом _q (anatomy -> anatomy_q)
   if (theory.level === 'ICPC') {
     match = MATERIALS.find(m =>
       m.category === 'practice' && m.topic === theory.topic + '_q' && m.level === 'ICPC'
     );
     if (match) return match;
-    
-    
     return null;
   }
 
@@ -983,6 +1004,285 @@ function interleaveTranslation(content) {
   return result;
 }
 
+function injectListeningStyles() {
+  if (document.getElementById('listening-enhance-styles')) return;
+  const style = document.createElement('style');
+  style.id = 'listening-enhance-styles';
+  style.textContent = `
+    .tf-question { margin: 0 0 10px; font-weight: 500; line-height: 1.45; color: #2b1a1a; }
+    .tf-options { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+    .tf-option { padding: 8px 16px; border: 1.5px solid #d6cbb8; background: #fff; border-radius: 8px; cursor: pointer; font-size: 15px; font-family: inherit; line-height: 1.3; color: #2b1a1a; transition: border-color .15s ease, background .15s ease, color .15s ease, transform .08s ease; }
+    .tf-option:hover { border-color: #6b1e2e; background: #fdf6f0; }
+    .tf-option:active { transform: scale(0.98); }
+    .tf-option.selected { border-color: #6b1e2e; background: #6b1e2e; color: #fff; }
+    .tf-option.selected:hover { background: #7d2436; }
+    .tf-option.correct { border-color: #2E7D5B; background: #e6f4ec; color: #1d5a3f; font-weight: 600; }
+    .tf-option.incorrect { border-color: #c0392b; background: #fbe9e7; color: #a2301f; }
+    .tf-option:disabled { cursor: default; opacity: 0.85; }
+    .listening-check-bar { margin: 28px 0 24px; padding: 20px 24px; background: #f7f3ea; border: 1.5px solid #e0d8c9; border-radius: 12px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+    .listening-check-bar .btn { margin: 0; }
+    .listening-warning { color: #a2301f; font-size: 14px; font-weight: 500; line-height: 1.4; }
+    .listening-result { font-size: 16px; line-height: 1.5; color: #2b1a1a; }
+    .listening-result b { color: #6b1e2e; font-weight: 700; }
+    details[data-locked="true"] { opacity: 0.55; pointer-events: none; }
+    details[data-locked="true"] > summary { pointer-events: none; cursor: not-allowed; list-style: none; }
+    details[data-locked="true"] > summary::-webkit-details-marker { display: none; }
+    details[data-locked="true"] > summary::before { content: "🔒 "; margin-right: 4px; }
+    details[data-locked="false"] { opacity: 1; pointer-events: auto; }
+    details[data-locked="false"] > summary { pointer-events: auto; cursor: pointer; }
+    details[data-locked="false"] > summary::before { content: ""; }
+    [data-theme="midnight"] .tf-question { color: #e8dfd4; }
+    [data-theme="midnight"] .tf-option { background: #2a1e22; border-color: #4a363c; color: #e8dfd4; }
+    [data-theme="midnight"] .tf-option:hover { border-color: #c9a04a; background: #3a262c; }
+    [data-theme="midnight"] .tf-option.selected { border-color: #c9a04a; background: #c9a04a; color: #1a0f12; }
+    [data-theme="midnight"] .tf-option.correct { border-color: #2E7D5B; background: #1c3a2b; color: #b3e6c9; }
+    [data-theme="midnight"] .tf-option.incorrect { border-color: #c0392b; background: #3a1c1a; color: #f4b8ad; }
+    [data-theme="midnight"] .listening-check-bar { background: #241a1e; border-color: #4a363c; }
+    [data-theme="midnight"] .listening-warning { color: #f4b8ad; }
+    [data-theme="midnight"] .listening-result { color: #e8dfd4; }
+    [data-theme="midnight"] .listening-result b { color: #c9a04a; }
+  `;
+  document.head.appendChild(style);
+}
+
+function blockSummaryClick(e) {
+  const summary = e.currentTarget;
+  const details = summary.parentElement;
+  if (details && details.getAttribute('data-locked') === 'true') {
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    return false;
+  }
+}
+
+function blockSummaryKeydown(e) {
+  const summary = e.currentTarget;
+  const details = summary.parentElement;
+  if (details && details.getAttribute('data-locked') === 'true') {
+    if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      return false;
+    }
+  }
+}
+
+function shouldEnhanceListening(a, content) {
+  return a.category === 'listening'
+    && /<details[\s>]/i.test(content)
+    && /Task\s*1/i.test(content)
+    && /Task\s*2/i.test(content);
+}
+
+function parseListeningAnswerKey(detailsEl) {
+  if (!detailsEl) return { ans1: [], ans2: [] };
+  const text = detailsEl.textContent || '';
+  const m1 = text.match(/Task\s*1\s*[:\-]?\s*([\s\S]*?)(?=Task\s*2|$)/i);
+  const m2 = text.match(/Task\s*2\s*[:\-]?\s*([\s\S]*?)$/i);
+
+  const extract = (str, letters) => {
+    if (!str) return [];
+    return str.split(/,\s*/).map(part => {
+      const m = part.match(new RegExp(`([${letters}])`, 'i'));
+      return m ? m[1].toLowerCase() : '';
+    }).filter(Boolean);
+  };
+
+  const ans1 = m1 ? extract(m1[1], 'abc') : [];
+  const ans2 = m2 ? extract(m2[1], 'tf') : [];
+  return { ans1, ans2 };
+}
+
+function findAnswersDetails(root) {
+  return Array.from(root.querySelectorAll('details')).find(d => {
+    const s = (d.querySelector('summary')?.textContent || '').toLowerCase();
+    const t = (d.textContent || '').toLowerCase();
+    return /answer|ответ/i.test(s) || /task\s*1\s*:/.test(t);
+  });
+}
+
+function parseMCQuestion(li) {
+  const html = li.innerHTML;
+  const parts = html.split(/<br\s*\/?>/i).map(s => s.trim()).filter(Boolean);
+  if (parts.length < 2) return null;
+  const question = parts[0];
+  const options = [];
+  for (let i = 1; i < parts.length; i++) {
+    const m = parts[i].match(/^\s*[-–—]?\s*([a-c])\s*[).\:]\s*(.+)$/i);
+    if (m) options.push({ letter: m[1].toLowerCase(), text: m[2].trim() });
+  }
+  if (options.length < 2) return null;
+  return { question, options };
+}
+
+function parseTFStatement(li) {
+  const raw = li.textContent
+    .replace(/[\s—–\-]*(True\s*\/\s*False|T\s*\/\s*F)\s*$/i, '')
+    .trim();
+  return raw || null;
+}
+
+function enhanceListeningContent(content) {
+  injectListeningStyles();
+  try {
+    const root = document.createElement('div');
+    root.innerHTML = content;
+
+    const answersDetails = findAnswersDetails(root);
+    const { ans1, ans2 } = answersDetails
+      ? parseListeningAnswerKey(answersDetails)
+      : { ans1: [], ans2: [] };
+
+    const findTaskHeading = (num) =>
+      Array.from(root.querySelectorAll('h1, h2, h3, h4, h5, h6, p, strong, b'))
+        .find(h => new RegExp(`^\\s*Task\\s*${num}`, 'i').test(h.textContent.trim()));
+
+    const resolveOL = (heading) => {
+      if (!heading) return null;
+      let el = heading.nextElementSibling;
+      while (el && !/^(OL|UL)$/.test(el.tagName)) {
+        if (el.querySelector && el.querySelector('ol, ul')) return el.querySelector('ol, ul');
+        el = el.nextElementSibling;
+      }
+      return el && /^(OL|UL)$/.test(el.tagName) ? el : null;
+    };
+
+    let transformed = 0;
+
+    const ol1 = resolveOL(findTaskHeading(1));
+    if (ol1) {
+      Array.from(ol1.querySelectorAll(':scope > li')).forEach((li, idx) => {
+        const parsed = parseMCQuestion(li);
+        if (!parsed) return;
+        const correct = ans1[idx] || '';
+        const buttons = parsed.options.map(opt =>
+          `<button type="button" class="tf-option" data-letter="${opt.letter}" data-correct="${correct}">${opt.letter}) ${opt.text}</button>`
+        ).join('');
+        li.innerHTML = `
+          <div class="tf-question">${parsed.question}</div>
+          <div class="tf-options">${buttons}</div>
+        `;
+        transformed++;
+      });
+    }
+
+    const ol2 = resolveOL(findTaskHeading(2));
+    if (ol2) {
+      Array.from(ol2.querySelectorAll(':scope > li')).forEach((li, idx) => {
+        const statement = parseTFStatement(li);
+        if (!statement) return;
+        const correct = (ans2[idx] === 't') ? 'True' : 'False';
+        li.innerHTML = `
+          <div class="tf-question">${statement}</div>
+          <div class="tf-options">
+            <button type="button" class="tf-option" data-value="True" data-correct="${correct}">True</button>
+            <button type="button" class="tf-option" data-value="False" data-correct="${correct}">False</button>
+          </div>
+        `;
+        transformed++;
+      });
+    }
+
+    root.querySelectorAll('details').forEach(d => {
+      d.classList.add('locked-details');
+      d.setAttribute('data-locked', 'true');
+      const summary = d.querySelector('summary');
+      if (summary) {
+        summary.setAttribute('tabindex', '-1');
+        summary.setAttribute('aria-disabled', 'true');
+        summary.addEventListener('click', blockSummaryClick, true);
+        summary.addEventListener('keydown', blockSummaryKeydown, true);
+      }
+    });
+
+    const bar = document.createElement('div');
+    bar.className = 'listening-check-bar';
+    bar.innerHTML = `
+      <button class="btn btn-dark" type="button" onclick="checkListeningTasks(this)">
+        ${transformed > 0 ? 'Проверить ответы и открыть текст' : 'Показать текст и ответы'}
+      </button>
+    `;
+
+    const firstDetails = root.querySelector('details');
+    if (firstDetails && firstDetails.parentNode) {
+      firstDetails.parentNode.insertBefore(bar, firstDetails);
+    } else {
+      root.appendChild(bar);
+    }
+
+    return root.innerHTML;
+  } catch (e) {
+    console.error('[listening] enhancement failed:', e);
+    return content;
+  }
+}
+
+function checkListeningTasks(btn) {
+  const content = btn.closest('.article-content');
+  if (!content) return;
+
+  const blocks = content.querySelectorAll('.tf-options');
+
+  let total = 0;
+  let correct = 0;
+  let unanswered = 0;
+
+  blocks.forEach(block => {
+    const options = block.querySelectorAll('.tf-option');
+    const selected = block.querySelector('.tf-option.selected');
+    options.forEach(o => o.classList.remove('correct', 'incorrect'));
+
+    if (!selected) { unanswered++; return; }
+    total++;
+
+    const chosen = selected.dataset.letter || selected.dataset.value;
+    const expected = selected.dataset.correct || '';
+    if (!expected) return;
+
+    if (chosen === expected) {
+      selected.classList.add('correct');
+      correct++;
+    } else {
+      selected.classList.add('incorrect');
+      options.forEach(o => {
+        const v = o.dataset.letter || o.dataset.value;
+        if (v === expected) o.classList.add('correct');
+      });
+    }
+  });
+
+  if (unanswered > 0) {
+    const bar = btn.closest('.listening-check-bar');
+    if (bar) {
+      let msg = bar.querySelector('.listening-warning');
+      if (!msg) {
+        msg = document.createElement('div');
+        msg.className = 'listening-warning';
+        bar.appendChild(msg);
+      }
+      msg.textContent = `Осталось ответить на ${unanswered} ${pluralize(unanswered, 'задание', 'задания', 'заданий')}.`;
+    }
+    return;
+  }
+
+  content.querySelectorAll('details[data-locked="true"]').forEach(d => {
+    d.setAttribute('data-locked', 'false');
+    d.classList.add('unlocked');
+    const summary = d.querySelector('summary');
+    if (summary) {
+      summary.removeAttribute('tabindex');
+      summary.removeAttribute('aria-disabled');
+    }
+  });
+
+  const bar = btn.closest('.listening-check-bar');
+  if (bar) {
+    bar.innerHTML = total > 0
+      ? `<div class="listening-result">Ваш результат: <b>${correct} из ${total}</b>. Текст и правильные ответы теперь доступны ниже.</div>`
+      : `<div class="listening-result">Задания выполнены. Текст и ответы теперь доступны ниже.</div>`;
+  }
+}
+
 function showArticle(id) {
   const a = MATERIALS.find(m => m.id === id);
   if (!a) { app.innerHTML = '<p>Материал не найден.</p>'; return; }
@@ -997,23 +1297,35 @@ function showArticle(id) {
   const prevArticle = currentIndex > 0 ? items[currentIndex - 1] : null;
   const nextArticle = currentIndex < items.length - 1 ? items[currentIndex + 1] : null;
   const relatedPractice = findRelatedPractice(a);
-  
-   let content = a.content;
 
-  if (a.category === 'reading') {
+  let content = a.content;
+
+  if (a.category === 'reading' || a.category === 'listening') {
     content = content.replace(
       /<div class="audio-placeholder" data-audio="([^"]+)">[\s\S]*?<\/div>/g,
       '<audio controls preload="none" style="width:100%;margin-bottom:20px;" src="$1"></audio>'
     );
+  }
 
-    
+  if (a.category === 'reading') {
     content = interleaveTranslation(content);
   }
 
-  if ((a.category === 'practice' || a.category === 'reading') && content.includes('[[')) {
+  if ((a.category === 'practice' || a.category === 'reading' || a.category === 'listening') && content.includes('[[')) {
     content = renderInteractive(content);
   }
-  const catName = a.category === 'theory' ? 'Теория' : a.category === 'practice' ? 'Практика' : a.category === 'reading' ? 'Чтение' : 'Лексика';  
+
+  if (shouldEnhanceListening(a, content)) {
+    content = enhanceListeningContent(content);
+  }
+
+  const catName =
+    a.category === 'theory' ? 'Теория'
+    : a.category === 'practice' ? 'Практика'
+    : a.category === 'reading' ? 'Чтение'
+    : a.category === 'listening' ? 'Аудирование'
+    : 'Лексика';
+
   const backLevel = (a.level === 'C1' || a.level === 'C2') ? 'C1–C2' : a.level;
 
   const key = progressKey(a);
@@ -1030,13 +1342,19 @@ function showArticle(id) {
     : '<span></span>';
   navHtml += '</div>';
 
-  const practiceButtons = (a.category === 'practice' || a.category === 'reading')
-  ? `<button class="btn btn-dark" onclick="checkAllInputs()">Проверить ответы</button>
-     <button class="btn btn-secondary" onclick="showAllAnswers()">Показать ответы</button>
-     <button class="btn btn-secondary" onclick="retryMistakes()">Повторить ошибки</button>
-     <button class="btn btn-secondary" onclick="resetInputs()">Очистить</button>`
-  : '';
-   let practiceCta = '';
+  const showQuizBtns =
+    a.category === 'practice' ||
+    a.category === 'reading' ||
+    (a.category === 'listening' && a.content.includes('[['));
+
+  const practiceButtons = showQuizBtns
+    ? `<button class="btn btn-dark" onclick="checkAllInputs()">Проверить ответы</button>
+       <button class="btn btn-secondary" onclick="showAllAnswers()">Показать ответы</button>
+       <button class="btn btn-secondary" onclick="retryMistakes()">Повторить ошибки</button>
+       <button class="btn btn-secondary" onclick="resetInputs()">Очистить</button>`
+    : '';
+
+  let practiceCta = '';
   if (relatedPractice) {
     practiceCta = `
       <div class="theory-to-practice">
@@ -1047,7 +1365,7 @@ function showArticle(id) {
       </div>
     `;
   }
-  
+
   app.innerHTML = `
     <button class="back-home-btn" onclick="showLevelTab('${backLevel}', '${a.category}')">← Назад к списку</button>
     <div class="crumbs">
@@ -1084,6 +1402,7 @@ function shuffle(arr) {
   }
   return a;
 }
+
 function getQuizAnswer(wrap) {
   const input = wrap.querySelector('.quiz-input');
   if (input) return input.value.trim();
@@ -1542,10 +1861,32 @@ function toggleTheme() {
 document.addEventListener('DOMContentLoaded', () => {
   loadVocabState();
   updateThemeToggle();
+  injectListeningStyles();
   restoreLastRoute();
 });
 
+document.addEventListener('toggle', (e) => {
+  const d = e.target;
+  if (d && d.tagName === 'DETAILS'
+      && d.getAttribute('data-locked') === 'true'
+      && d.open) {
+    d.open = false;
+  }
+}, true);
+
 document.addEventListener('click', (e) => {
+  const tfBtn = e.target.closest('.tf-option');
+  if (tfBtn && !tfBtn.disabled) {
+    const siblings = tfBtn.parentElement.querySelectorAll('.tf-option');
+    siblings.forEach(s => {
+      if (!s.classList.contains('correct') && !s.classList.contains('incorrect')) {
+        s.classList.remove('selected');
+      }
+    });
+    tfBtn.classList.add('selected');
+    return;
+  }
+
   const mcBtn = e.target.closest('.mc-option');
   if (mcBtn && !mcBtn.disabled) {
     const mc = mcBtn.closest('.quiz-mc');

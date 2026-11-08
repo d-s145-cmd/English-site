@@ -4134,5 +4134,2119 @@ const MATERIALS = [
 <tr><td>air pollution</td><td>загрязнение воздуха</td></tr>
 <tr><td>affordable</td><td>доступный по цене</td></tr>
 </table>
+` },
+
+  // ============================================================
+  // B1 READING — файлы в папке audio/
+  // ============================================================
+  { id: 2101, level: "B1", category: "reading", topic: "reading-difficult-decision", title: "01. A Difficult Decision — Трудное решение", content: `
+<div class="audio-placeholder" data-audio="audio/b1-difficult-decision.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/b1-difficult-decision.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>When Maria finished university, she had to make a difficult decision. She had studied economics, and her parents expected her to find a well-paid job in a bank. However, Maria had always dreamed of working with children. During her studies, she had volunteered at a local school every weekend, and she had discovered that teaching gave her more satisfaction than any other activity.</p>
+<p>Her parents were worried. They believed that teaching was not a serious career and that Maria would regret her choice later. They argued that she had wasted four years of her life studying economics. Maria listened carefully, but she felt strongly that she should follow her heart.</p>
+<p>In the end, Maria applied for a teaching qualification. The course was demanding, and she had to work part-time in a café to support herself. It was not an easy year, but she never doubted her decision. Today, she teaches at a primary school and says she has never been happier.</p>
+<p>Looking back, Maria believes that the hardest part was not the financial struggle, but the fear of disappointing her parents. She has learnt that making your own choices sometimes means accepting that not everyone will agree with you.</p>
+
+<h3>Перевод</h3>
+<p>Когда Мария закончила университет, ей пришлось принять трудное решение. Она изучала экономику, и родители ожидали, что она найдёт хорошо оплачиваемую работу в банке. Однако Мария всегда мечтала работать с детьми. Во время учёбы она каждые выходные работала волонтёром в местной школе и обнаружила, что преподавание приносит ей больше удовлетворения, чем любая другая деятельность.</p>
+<p>Её родители волновались. Они считали, что преподавание — не серьёзная карьера и что Мария позже пожалеет о своём выборе. Они утверждали, что она потратила четыре года жизни на изучение экономики. Мария внимательно слушала, но твёрдо чувствовала, что должна следовать зову сердца.</p>
+<p>В итоге Мария поступила на педагогические курсы. Программа была требовательной, и ей приходилось подрабатывать официанткой в кафе, чтобы содержать себя. Это был нелёгкий год, но она никогда не сомневалась в своём решении. Сегодня она преподаёт в начальной школе и говорит, что никогда не была счастливее.</p>
+<p>Оглядываясь назад, Мария считает, что самым трудным была не финансовая борьба, а страх разочаровать родителей. Она поняла, что делать собственный выбор иногда означает принимать то, что не все с тобой согласятся.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>well-paid</td><td>хорошо оплачиваемый</td></tr>
+<tr><td>volunteer</td><td>работать волонтёром</td></tr>
+<tr><td>satisfaction</td><td>удовлетворение</td></tr>
+<tr><td>regret</td><td>сожалеть</td></tr>
+<tr><td>waste</td><td>тратить впустую</td></tr>
+<tr><td>qualification</td><td>квалификация, диплом</td></tr>
+<tr><td>demanding</td><td>требовательный</td></tr>
+<tr><td>doubt</td><td>сомневаться</td></tr>
+<tr><td>struggle</td><td>борьба</td></tr>
+<tr><td>disappoint</td><td>разочаровать</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>What did Maria study at university? → [[economics]]</li>
+<li>What did her parents expect her to do? → [[find a well-paid job in a bank|work in a bank|find a job in a bank]]</li>
+<li>What had she done every weekend during her studies? → [[volunteered at a local school|volunteered at a school|volunteered]]</li>
+<li>Why did Maria work part-time in a café? → [[to support herself|support herself]]</li>
+<li>What does Maria believe was the hardest part? → [[the fear of disappointing her parents|fear of disappointing her parents|disappointing her parents]]</li>
+</ol>
+
+<h3>Exercise — True or False</h3>
+<ol>
+<li>Maria's parents wanted her to become a teacher. → [[False]]</li>
+<li>She volunteered at a school every weekend. → [[True]]</li>
+<li>She now works at a primary school. → [[True]]</li>
+<li>She regrets her decision. → [[False]]</li>
+</ol>
+` },
+
+  { id: 2102, level: "B1", category: "reading", topic: "reading-volunteering", title: "02. Why I Volunteer — Почему я занимаюсь волонтёрством", content: `
+<div class="audio-placeholder" data-audio="audio/b1-why-i-volunteer.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/b1-why-i-volunteer.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>Three years ago, I started volunteering at an animal shelter near my house. At first, I only went there once a month because I was busy with work. However, I soon realised that those few hours made me feel more energetic and positive about everything else in my life.</p>
+<p>My main tasks are simple: I clean the cages, feed the animals and walk the dogs. I also help the shelter staff when they receive new animals. Some of the dogs have been badly treated, and it takes time to earn their trust. When a frightened dog finally lets you touch it, it is a wonderful feeling.</p>
+<p>Volunteering has taught me a lot about patience and responsibility. It has also helped me meet people from different backgrounds. Interestingly, I have made some of my closest friends at the shelter, even though our daytime jobs have nothing in common.</p>
+<p>Some people ask me why I give up my free time without being paid. The answer is simple: volunteering has changed my life for the better. I would encourage anyone to try it, even for a few hours a month.</p>
+
+<h3>Перевод</h3>
+<p>Три года назад я начал работать волонтёром в приюте для животных рядом с домом. Сначала я ходил туда всего раз в месяц, потому что был занят работой. Однако вскоре я понял, что эти несколько часов дают мне больше энергии и позитива в отношении всего остального в жизни.</p>
+<p>Мои основные задачи просты: я убираю клетки, кормлю животных и выгуливаю собак. Ещё я помогаю сотрудникам приюта, когда к ним поступают новые животные. Некоторых собак плохо обращали, и завоевать их доверие требует времени. Когда испуганная собака наконец позволяет себя погладить — это удивительное чувство.</p>
+<p>Волонтёрство научило меня многому о терпении и ответственности. Оно также помогло мне познакомиться с людьми разного происхождения. Интересно, что некоторых своих самых близких друзей я нашёл именно в приюте, хотя наши основные работы не имеют между собой ничего общего.</p>
+<p>Некоторые спрашивают меня, зачем я отдаю своё свободное время без оплаты. Ответ прост: волонтёрство изменило мою жизнь к лучшему. Я бы посоветовал каждому попробовать, хотя бы несколько часов в месяц.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>shelter</td><td>приют</td></tr>
+<tr><td>energetic</td><td>энергичный</td></tr>
+<tr><td>cage</td><td>клетка</td></tr>
+<tr><td>treat</td><td>обращаться (с кем-то)</td></tr>
+<tr><td>earn trust</td><td>заслужить доверие</td></tr>
+<tr><td>frightened</td><td>испуганный</td></tr>
+<tr><td>patience</td><td>терпение</td></tr>
+<tr><td>responsibility</td><td>ответственность</td></tr>
+<tr><td>background</td><td>происхождение; опыт</td></tr>
+<tr><td>encourage</td><td>побуждать, советовать</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>Where does the person volunteer? → [[at an animal shelter|animal shelter|shelter]]</li>
+<li>How often did the person go there at first? → [[once a month|monthly]]</li>
+<li>Why do some dogs take time to trust people? → [[they have been badly treated|they were badly treated|badly treated]]</li>
+<li>What has volunteering taught the person? → [[patience and responsibility]]</li>
+<li>Why does the person recommend volunteering? → [[it has changed their life for the better|it changed their life|it changes your life]]</li>
+</ol>
+` },
+
+  { id: 2103, level: "B1", category: "reading", topic: "reading-letter-friend", title: "03. A Letter to a Friend — Письмо другу", content: `
+<div class="audio-placeholder" data-audio="audio/b1-letter-to-friend.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/b1-letter-to-friend.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>Dear Sophie,</p>
+<p>How are you? I hope everything is going well. It feels like ages since we last saw each other, and I have so much to tell you.</p>
+<p>I have some exciting news: I have finally moved into my new flat! It is much smaller than my old place, but it is cosy and close to the city centre. The best part is the balcony, where I can sit in the mornings and drink coffee. Of course, moving was not easy. I had to pack all my things, and I discovered that I had collected far too much over the years. I ended up giving away four boxes of books and old clothes.</p>
+<p>Work is going well too. Last month, my manager asked me to lead a small project team. I was nervous at first, but it has been a great experience. I have learnt how to organise meetings and support my colleagues when they need help.</p>
+<p>Anyway, I would love to hear your news. Why don't you come and visit me next month? There is a spare room in the flat, and I have already found a lovely café near my place. Let me know when you are free.</p>
+<p>Lots of love,<br>Emma</p>
+
+<h3>Перевод</h3>
+<p>Дорогая Софи,</p>
+<p>Как ты? Надеюсь, всё идёт хорошо. Кажется, прошла целая вечность с тех пор, как мы последний раз виделись, и мне так много нужно тебе рассказать.</p>
+<p>У меня есть волнующие новости: я наконец переехала в новую квартиру! Она намного меньше моей старой, но уютная и близко к центру города. Лучшее — это балкон, где я могу сидеть по утрам и пить кофе. Конечно, переезд был нелёгким. Мне пришлось упаковать все свои вещи, и я обнаружила, что за эти годы накопила слишком много. В итоге я отдала четыре коробки книг и старой одежды.</p>
+<p>Работа тоже идёт хорошо. В прошлом месяце менеджер попросил меня возглавить небольшую команду проекта. Сначала я нервничала, но это оказался отличный опыт. Я научилась организовывать встречи и поддерживать коллег, когда им нужна помощь.</p>
+<p>В общем, мне очень хочется услышать твои новости. Почему бы тебе не приехать ко мне в следующем месяце? В квартире есть свободная комната, и я уже нашла милое кафе рядом с домом. Дай знать, когда ты свободна.</p>
+<p>С любовью,<br>Эмма</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>it feels like ages</td><td>кажется, прошла целая вечность</td></tr>
+<tr><td>cosy</td><td>уютный</td></tr>
+<tr><td>pack</td><td>упаковывать</td></tr>
+<tr><td>end up</td><td>в итоге оказаться (где-то/с чем-то)</td></tr>
+<tr><td>give away</td><td>отдавать</td></tr>
+<tr><td>lead a team</td><td>возглавлять команду</td></tr>
+<tr><td>nervous</td><td>нервничать</td></tr>
+<tr><td>support</td><td>поддерживать</td></tr>
+<tr><td>spare room</td><td>свободная комната</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>Who wrote the letter and to whom? → [[Emma wrote to Sophie|Emma to Sophie|Emma, Sophie]]</li>
+<li>What is the best part of the new flat? → [[the balcony]]</li>
+<li>What did Emma give away? → [[four boxes of books and old clothes|books and old clothes]]</li>
+<li>What did her manager ask her to do? → [[lead a small project team|lead a project team|lead a team]]</li>
+<li>Why does Emma invite Sophie? → [[there is a spare room and a nice café|to visit her|to see the new flat]]</li>
+</ol>
+
+<h3>Exercise — True or False</h3>
+<ol>
+<li>The new flat is bigger than the old one. → [[False]]</li>
+<li>Emma gave away some books. → [[True]]</li>
+<li>Emma found leading the team easy from the start. → [[False]]</li>
+</ol>
+` },
+
+  { id: 2104, level: "B1", category: "reading", topic: "reading-little-cafe", title: "04. The Little Café — Маленькое кафе", content: `
+<div class="audio-placeholder" data-audio="audio/b1-little-cafe.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/b1-little-cafe.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>On the corner of a quiet street in my town, there is a small café called "The Blue Door". It is not a famous place, and it does not look special from the outside. However, if you visit it once, you will probably return many times.</p>
+<p>The owner, an elderly woman named Mrs. Patel, has been running the café for over twenty years. She bakes fresh cakes every morning and knows most of her customers by name. When you walk in, she smiles as if you are an old friend. There are only six tables, and the decoration has not changed since the 1990s. Somehow, this makes the café feel even more comfortable.</p>
+<p>What I like most about "The Blue Door" is the atmosphere. People go there to read, write, or simply escape from their busy lives for an hour. Nobody rushes you. You can order one cup of tea and sit for the whole afternoon without feeling guilty.</p>
+<p>In a world where everything is becoming faster and more digital, places like this café are becoming rare. I am grateful that Mrs. Patel has kept her little world exactly the way it is.</p>
+
+<h3>Перевод</h3>
+<p>На углу тихой улицы в моём городке есть маленькое кафе под названием «Голубая дверь». Это не известное место, и снаружи оно не выглядит особенным. Однако если вы зайдёте туда однажды, скорее всего, вы вернётесь много раз.</p>
+<p>Владелица, пожилая женщина по имени миссис Патель, управляет кафе более двадцати лет. Она печёт свежие торты каждое утро и знает большинство клиентов по имени. Когда вы входите, она улыбается так, будто вы — старый друг. Там всего шесть столиков, и обстановка не менялась с 1990-х. Почему-то это делает кафе ещё более уютным.</p>
+<p>Больше всего в «Голубой двери» мне нравится атмосфера. Люди приходят туда читать, писать или просто на час убежать от суетливой жизни. Никто вас не торопит. Вы можете заказать одну чашку чая и просидеть весь день, не чувствуя вины.</p>
+<p>В мире, где всё становится быстрее и цифровее, такие кафе становятся редкостью. Я благодарен миссис Патель за то, что она сохранила свой маленький мир точно таким, какой он есть.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>owner</td><td>владелец</td></tr>
+<tr><td>run a business</td><td>управлять делом</td></tr>
+<tr><td>bake</td><td>печь</td></tr>
+<tr><td>decoration</td><td>оформление, убранство</td></tr>
+<tr><td>atmosphere</td><td>атмосфера</td></tr>
+<tr><td>escape</td><td>убегать, спасаться</td></tr>
+<tr><td>rush</td><td>торопить</td></tr>
+<tr><td>guilty</td><td>виноватый</td></tr>
+<tr><td>rare</td><td>редкий</td></tr>
+<tr><td>grateful</td><td>благодарный</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>What is the café called? → [[The Blue Door]]</li>
+<li>How long has Mrs. Patel run it? → [[over twenty years|more than twenty years|20 years]]</li>
+<li>How many tables are there? → [[six|6]]</li>
+<li>What can people do in the café? → [[read, write, or escape from their busy lives|read and write|relax]]</li>
+<li>Why are such cafés becoming rare? → [[the world is becoming faster and more digital|everything is becoming faster|modern life]]</li>
+</ol>
+` },
+
+  { id: 2105, level: "B1", category: "reading", topic: "reading-habits", title: "05. The Power of Small Habits — Сила маленьких привычек", content: `
+<div class="audio-placeholder" data-audio="audio/b1-power-of-habits.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/b1-power-of-habits.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>Many people believe that big changes require big actions. However, researchers have found that small habits, repeated consistently, can have a surprising effect on our lives.</p>
+<p>Imagine that you want to read more. Instead of promising to read a book every week, you could start by reading just five pages a day. This goal is so easy that you cannot really fail. After a month, you will have read about 150 pages, and reading will have become a natural part of your daily routine.</p>
+<p>The same principle applies to exercise, learning a language or saving money. Small actions are easier to repeat, and repetition is what builds lasting change. Our brains are designed to save energy, so they prefer familiar behaviours. The key is to make the new habit so simple that it does not feel like a challenge.</p>
+<p>Another useful idea is to connect a new habit to an existing one. For example, you could drink a glass of water every time you make coffee. Over time, the two actions become linked, and you do not need to rely on willpower.</p>
+<p>Changing your life does not happen overnight. But if you are patient and consistent, small habits can quietly lead you to big results.</p>
+
+<h3>Перевод</h3>
+<p>Многие люди считают, что большие изменения требуют больших действий. Однако исследователи обнаружили, что маленькие привычки, повторяемые последовательно, могут оказывать удивительное влияние на нашу жизнь.</p>
+<p>Представьте, что вы хотите больше читать. Вместо того чтобы обещать себе читать книгу каждую неделю, начните с пяти страниц в день. Эта цель настолько проста, что вы практически не можете её не достичь. Через месяц вы прочтёте около 150 страниц, и чтение станет естественной частью вашей повседневности.</p>
+<p>Тот же принцип применим к спорту, изучению языка или накоплению денег. Маленькие действия легче повторять, а именно повторение создаёт устойчивые перемены. Наш мозг устроен так, чтобы экономить энергию, поэтому он предпочитает знакомое поведение. Главное — сделать новую привычку настолько простой, чтобы она не воспринималась как вызов.</p>
+<p>Ещё одна полезная идея — связать новую привычку с уже существующей. Например, вы можете выпивать стакан воды каждый раз, когда варите кофе. Со временем эти два действия связываются, и вам уже не нужно полагаться на силу воли.</p>
+<p>Изменение жизни не происходит за одну ночь. Но если вы терпеливы и последовательны, маленькие привычки могут тихо привести вас к большим результатам.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>consistently</td><td>последовательно, постоянно</td></tr>
+<tr><td>effect</td><td>эффект, влияние</td></tr>
+<tr><td>fail</td><td>потерпеть неудачу</td></tr>
+<tr><td>routine</td><td>распорядок; рутина</td></tr>
+<tr><td>principle</td><td>принцип</td></tr>
+<tr><td>lasting change</td><td>устойчивые перемены</td></tr>
+<tr><td>behaviour</td><td>поведение</td></tr>
+<tr><td>rely on</td><td>полагаться на</td></tr>
+<tr><td>willpower</td><td>сила воли</td></tr>
+<tr><td>overnight</td><td>за одну ночь</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>What do many people believe about change? → [[it requires big actions|big changes require big actions|big actions]]</li>
+<li>What example of a small goal is given? → [[reading five pages a day|five pages a day]]</li>
+<li>Why does the brain prefer familiar behaviours? → [[to save energy|it saves energy]]</li>
+<li>How can you connect a new habit to an existing one? → [[drink water when making coffee|drink a glass of water every time you make coffee]]</li>
+<li>What is the main message of the text? → [[small habits lead to big results|small habits matter|consistency matters]]</li>
+</ol>
+` },
+
+  { id: 2106, level: "B1", category: "reading", topic: "reading-plastic-problem", title: "06. A World Without Plastic? — Мир без пластика?", content: `
+<div class="audio-placeholder" data-audio="audio/b1-world-without-plastic.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/b1-world-without-plastic.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>Every year, millions of tons of plastic end up in the oceans. Marine animals often mistake small pieces of plastic for food, and this causes serious health problems. Environmental groups warn that unless we change our habits, the amount of plastic in the sea will continue to grow.</p>
+<p>However, the problem is not only about plastic itself. Many everyday products are wrapped in plastic that we throw away after using them only once. Supermarkets, for example, sell vegetables in plastic packaging, even though nature has already provided them with their own skin. Shops could offer paper bags, and customers could bring their own containers.</p>
+<p>Some governments have introduced taxes on single-use plastic bags. In several countries, this simple measure has reduced plastic waste by more than fifty percent. Other governments encourage companies to use recyclable materials and to design products that last longer.</p>
+<p>As consumers, we can also make a difference. Small actions, such as carrying a reusable bottle or refusing a plastic straw, may seem unimportant on their own. But if millions of people change their habits, the effect will be enormous. The planet does not need a few people who do everything perfectly. It needs millions of people who do something, even imperfectly.</p>
+
+<h3>Перевод</h3>
+<p>Каждый год миллионы тонн пластика попадают в океаны. Морские животные часто путают мелкие кусочки пластика с едой, и это вызывает серьёзные проблемы со здоровьем. Экологические организации предупреждают, что если мы не изменим свои привычки, количество пластика в море продолжит расти.</p>
+<p>Однако проблема не только в самом пластике. Многие повседневные товары завёрнуты в пластик, который выбрасывают после единственного использования. Супермаркеты, например, продают овощи в пластиковой упаковке, хотя природа уже дала им собственную кожуру. Магазины могли бы предлагать бумажные пакеты, а покупатели — приносить свои контейнеры.</p>
+<p>Некоторые правительства ввели налог на одноразовые пластиковые пакеты. В ряде стран эта простая мера сократила пластиковые отходы более чем на пятьдесят процентов. Другие правительства поощряют компании использовать перерабатываемые материалы и создавать товары, которые служат дольше.</p>
+<p>Как потребители, мы тоже можем внести свой вклад. Маленькие действия — например, носить многоразовую бутылку или отказываться от пластиковой трубочки — по отдельности могут показаться незначительными. Но если миллионы людей изменят свои привычки, эффект будет огромным. Планете не нужны несколько человек, которые делают всё идеально. Ей нужны миллионы людей, которые делают хоть что-то, даже несовершенно.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>marine</td><td>морской</td></tr>
+<tr><td>mistake A for B</td><td>принимать A за B</td></tr>
+<tr><td>environmental</td><td>экологический</td></tr>
+<tr><td>warn</td><td>предупреждать</td></tr>
+<tr><td>wrap</td><td>заворачивать</td></tr>
+<tr><td>packaging</td><td>упаковка</td></tr>
+<tr><td>single-use</td><td>одноразовый</td></tr>
+<tr><td>measure</td><td>мера</td></tr>
+<tr><td>recyclable</td><td>перерабатываемый</td></tr>
+<tr><td>reusable</td><td>многоразовый</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>What happens to plastic in the oceans? → [[marine animals mistake it for food|animals eat it|animals mistake it for food]]</li>
+<li>Why is plastic packaging a problem for vegetables? → [[nature already provided them with their own skin|it is unnecessary|vegetables have skin]]</li>
+<li>What happened after taxes on plastic bags? → [[plastic waste dropped by more than 50%|waste reduced|plastic waste reduced]]</li>
+<li>What can consumers do? → [[carry a reusable bottle and refuse plastic straws|small actions]]</li>
+<li>What is the main idea? → [[millions of people doing small things matters|small actions matter|collective action]]</li>
+</ol>
+` },
+
+  // ============================================================
+  // B2 READING — файлы в папке audio/
+  // ============================================================
+  { id: 3101, level: "B2", category: "reading", topic: "reading-future-of-work", title: "01. The Future of Work — Будущее работы", content: `
+<div class="audio-placeholder" data-audio="audio/b2-future-of-work.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/b2-future-of-work.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>The nature of work is changing more rapidly than at any point in modern history. Automation, artificial intelligence and remote technologies are reshaping not only what we do, but also how, when and where we do it. Some predict a future in which millions of traditional jobs disappear, while others argue that new roles will emerge to replace them.</p>
+<p>What is clear is that the skills employers value are shifting. Routine tasks are increasingly performed by machines, whereas creativity, critical thinking, emotional intelligence and adaptability are becoming more valuable than ever. In other words, the ability to keep learning may prove more important than any specific qualification.</p>
+<p>Remote work has also transformed expectations. Many employees now prioritise flexibility over a higher salary, and companies that refuse to offer hybrid arrangements risk losing talented staff. At the same time, remote work can blur the boundary between professional and personal life, leading to burnout if not managed carefully.</p>
+<p>Another concern is inequality. Highly skilled professionals can benefit enormously from global competition, whereas those without digital skills may find themselves increasingly excluded. Governments and educators therefore face a difficult task: preparing people not just for the jobs of today, but for those that do not yet exist.</p>
+<p>Ultimately, the future of work is not predetermined. It will depend on the choices made by companies, policymakers and workers themselves. The question is not whether work will change, but whether we can shape that change to benefit the many, not just the few.</p>
+
+<h3>Перевод</h3>
+<p>Природа работы меняется быстрее, чем когда-либо в современной истории. Автоматизация, искусственный интеллект и удалённые технологии меняют не только то, что мы делаем, но и как, когда и где. Некоторые предсказывают будущее, в котором исчезнут миллионы традиционных рабочих мест, другие утверждают, что появятся новые роли им на замену.</p>
+<p>Ясно одно: навыки, которые ценят работодатели, меняются. Рутинные задачи всё чаще выполняют машины, тогда как креативность, критическое мышление, эмоциональный интеллект и адаптивность становятся ценнее, чем когда-либо. Иными словами, способность постоянно учиться может оказаться важнее любой конкретной квалификации.</p>
+<p>Удалённая работа также изменила ожидания. Многие сотрудники теперь предпочитают гибкость более высокой зарплате, и компании, отказывающиеся предлагать гибридный формат, рискуют потерять талантливых специалистов. При этом удалённая работа может размыть границу между профессиональной и личной жизнью, что при неаккуратном управлении приводит к выгоранию.</p>
+<p>Ещё одна проблема — неравенство. Высококвалифицированные специалисты могут много выиграть от глобальной конкуренции, тогда как люди без цифровых навыков рискуют оказаться всё более исключёнными. Поэтому перед правительствами и преподавателями стоит трудная задача: готовить людей не только к сегодняшним профессиям, но и к тем, которые ещё не существуют.</p>
+<p>В конечном счёте будущее работы не предопределено. Оно будет зависеть от решений компаний, политиков и самих работников. Вопрос не в том, изменится ли работа, а в том, сможем ли мы направить эти изменения на пользу многим, а не только избранным.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>reshape</td><td>перекраивать, менять форму</td></tr>
+<tr><td>emerge</td><td>появляться</td></tr>
+<tr><td>employer</td><td>работодатель</td></tr>
+<tr><td>adaptability</td><td>адаптивность</td></tr>
+<tr><td>qualification</td><td>квалификация</td></tr>
+<tr><td>hybrid arrangements</td><td>гибридный формат (офис+дом)</td></tr>
+<tr><td>burnout</td><td>выгорание</td></tr>
+<tr><td>inequality</td><td>неравенство</td></tr>
+<tr><td>exclude</td><td>исключать</td></tr>
+<tr><td>predetermined</td><td>предопределённый</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>What forces are reshaping work? → [[automation, AI and remote technologies|automation and AI|technology]]</li>
+<li>Which skills are becoming more valuable? → [[creativity, critical thinking, emotional intelligence, adaptability]]</li>
+<li>What do many employees now prefer? → [[flexibility over a higher salary|flexibility]]</li>
+<li>What is the risk of unmanaged remote work? → [[burnout]]</li>
+<li>What is the main concern about inequality? → [[those without digital skills may be excluded|digital skills gap|people without digital skills]]</li>
+</ol>
+` },
+
+  { id: 3102, level: "B2", category: "reading", topic: "reading-cultural-shock", title: "02. Coping with Culture Shock — Преодоление культурного шока", content: `
+<div class="audio-placeholder" data-audio="audio/b2-culture-shock.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/b2-culture-shock.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>When people move to a new country, they often expect to feel excited. However, after the initial enthusiasm fades, many experience what psychologists call "culture shock". This phenomenon is not a sign of weakness; it is a natural reaction to losing the familiar frameworks that once guided everyday behaviour.</p>
+<p>Culture shock typically unfolds in several stages. The first is often called the "honeymoon phase", when everything seems new and fascinating. This is followed by a period of frustration, when small differences — from the way people queue to how they express disagreement — start to feel overwhelming. In the final stage, newcomers gradually adapt, developing a kind of bicultural identity: they can function comfortably in both their host culture and their own.</p>
+<p>What determines how quickly someone adapts? Research suggests that personality matters, but so do practical factors. Having a supportive social network, learning the language, and maintaining connections with one's own culture all make a significant difference. Interestingly, those who try to erase their original identity tend to struggle more than those who integrate both worlds.</p>
+<p>Employers increasingly recognise the value of supporting international staff through this process. Simple measures, such as mentoring programmes or informal social events, can help newcomers feel less isolated and more confident in their new environment.</p>
+<p>Ultimately, culture shock is not something to be avoided. It is a sign that someone is genuinely engaging with a new reality. The discomfort is temporary; the skills and perspective gained are not.</p>
+
+<h3>Перевод</h3>
+<p>Когда люди переезжают в новую страну, они часто ожидают почувствовать воодушевление. Однако, когда первоначальный энтузиазм угасает, многие переживают то, что психологи называют «культурным шоком». Это явление не является признаком слабости; это естественная реакция на утрату знакомых ориентиров, которые когда-то направляли повседневное поведение.</p>
+<p>Культурный шок обычно разворачивается в несколько этапов. Первый часто называют «фазой медового месяца», когда всё кажется новым и увлекательным. За ним следует период разочарования, когда мелкие различия — от того, как люди стоят в очереди, до того, как они выражают несогласие — начинают казаться непосильными. На последней стадии новички постепенно адаптируются, формируя бикультурную идентичность: они могут комфортно существовать как в принимающей культуре, так и в своей.</p>
+<p>Что определяет скорость адаптации? Исследования показывают, что важна личность, но важны и практические факторы. Поддерживающая социальная сеть, изучение языка и сохранение связей со своей культурой имеют большое значение. Интересно, что те, кто пытается стереть свою изначальную идентичность, обычно справляются труднее, чем те, кто интегрирует оба мира.</p>
+<p>Работодатели всё чаще признают ценность поддержки иностранных сотрудников в этом процессе. Простые меры, например программы наставничества или неформальные встречи, помогают новичкам чувствовать себя менее изолированными и более уверенными в новой среде.</p>
+<p>В конечном итоге культурный шок — это не то, чего следует избегать. Это признак того, что человек по-настоящему взаимодействует с новой реальностью. Дискомфорт временен; навыки и перспективы, полученные в процессе, — нет.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>initial</td><td>первоначальный</td></tr>
+<tr><td>fade</td><td>угасать</td></tr>
+<tr><td>weakness</td><td>слабость</td></tr>
+<tr><td>framework</td><td>структура, рамки</td></tr>
+<tr><td>honeymoon phase</td><td>фаза медового месяца</td></tr>
+<tr><td>overwhelming</td><td>непосильный, ошеломляющий</td></tr>
+<tr><td>adapt</td><td>адаптироваться</td></tr>
+<tr><td>identity</td><td>идентичность</td></tr>
+<tr><td>integrate</td><td>интегрировать</td></tr>
+<tr><td>isolated</td><td>изолированный</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>What is culture shock? → [[a natural reaction to losing familiar frameworks|natural reaction]]</li>
+<li>What are the three stages described? → [[honeymoon, frustration, adaptation|honeymoon frustration adaptation]]</li>
+<li>Which newcomers tend to struggle more? → [[those who try to erase their original identity|those who erase their identity]]</li>
+<li>What can employers do to help? → [[mentoring programmes or social events|support international staff|mentoring]]</li>
+<li>How does the author view culture shock? → [[not to be avoided|temporary, valuable|something to engage with]]</li>
+</ol>
+` },
+
+  { id: 3103, level: "B2", category: "reading", topic: "reading-benefits-of-reading", title: "03. The Case for Reading — В защиту чтения", content: `
+<div class="audio-placeholder" data-audio="audio/b2-case-for-reading.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/b2-case-for-reading.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>In an age dominated by screens and constant notifications, the habit of reading long-form texts seems to be in decline. Yet a growing body of research suggests that reading offers benefits that no other activity can replicate.</p>
+<p>First, reading fiction appears to strengthen empathy. When we follow characters through their struggles, we are essentially practising the skill of imagining another person's inner life. Studies have shown that regular readers of literary fiction score higher on tests measuring the ability to understand others' emotions. In a divided world, this capacity may be more valuable than ever.</p>
+<p>Reading also improves focus. Unlike social media, which trains the brain to switch attention rapidly, a book requires sustained concentration. This ability to focus deeply on a single task has become increasingly rare — and increasingly valuable — in the modern workplace.</p>
+<p>Some critics argue that reading is an outdated and even elitist activity. They point out that information is now available instantly, so why spend hours on a single book? But this argument misunderstands what reading is for. Reading is not merely a way of transferring information; it is a way of slowing down thought, of living inside another person's perspective, of discovering that complex ideas require patience.</p>
+<p>Perhaps that is why so many successful people, from scientists to entrepreneurs, describe reading as a lifelong habit. In a world that rewards speed, the slow, deliberate act of reading might be one of the most subversive things we can do.</p>
+
+<h3>Перевод</h3>
+<p>В век, где господствуют экраны и постоянные уведомления, привычка читать длинные тексты, кажется, идёт на спад. Однако всё больше исследований свидетельствуют о том, что чтение даёт преимущества, которые не может воспроизвести ни одна другая деятельность.</p>
+<p>Во-первых, чтение художественной литературы, по-видимому, укрепляет эмпатию. Когда мы следим за персонажами через их трудности, мы по сути тренируем навык воображать внутреннюю жизнь другого человека. Исследования показывают, что постоянные читатели литературной прозы набирают больше баллов в тестах на способность понимать чужие эмоции. В разделённом мире эта способность может быть ценнее, чем когда-либо.</p>
+<p>Чтение также улучшает концентрацию. В отличие от соцсетей, которые приучают мозг быстро переключать внимание, книга требует устойчивой сосредоточенности. Эта способность глубоко фокусироваться на одной задаче стала всё более редкой — и всё более ценной — на современном рабочем месте.</p>
+<p>Некоторые критики утверждают, что чтение — устаревшее и даже элитарное занятие. Они указывают, что информация теперь доступна мгновенно, так зачем тратить часы на одну книгу? Но этот аргумент неверно понимает, для чего нужно чтение. Чтение — не просто способ передачи информации; это способ замедлить мысль, пожить внутри чужой перспективы, обнаружить, что сложные идеи требуют терпения.</p>
+<p>Возможно, именно поэтому многие успешные люди — от учёных до предпринимателей — называют чтение привычкой на всю жизнь. В мире, который вознаграждает скорость, медленный, осознанный акт чтения может быть одним из самых подрывных действий, которые мы можем совершить.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>dominate</td><td>господствовать</td></tr>
+<tr><td>decline</td><td>спад, упадок</td></tr>
+<tr><td>replicate</td><td>воспроизводить</td></tr>
+<tr><td>empathy</td><td>эмпатия, сочувствие</td></tr>
+<tr><td>capacity</td><td>способность</td></tr>
+<tr><td>sustained concentration</td><td>устойчивая концентрация</td></tr>
+<tr><td>outdated</td><td>устаревший</td></tr>
+<tr><td>elitist</td><td>элитарный</td></tr>
+<tr><td>perspective</td><td>перспектива, точка зрения</td></tr>
+<tr><td>subversive</td><td>подрывной</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>What does reading fiction seem to strengthen? → [[empathy]]</li>
+<li>How does reading differ from social media? → [[it requires sustained concentration|sustained focus]]</li>
+<li>What do critics of reading claim? → [[it is outdated and elitist|outdated]]</li>
+<li>What does the author say reading really is? → [[a way of slowing down thought|not just information transfer|a way of slowing thought]]</li>
+<li>What is the author's overall stance? → [[reading is more valuable than ever|reading is valuable|in defence of reading]]</li>
+</ol>
+` },
+
+  { id: 3104, level: "B2", category: "reading", topic: "reading-privacy-tech", title: "04. Privacy in the Digital Age — Приватность в цифровую эпоху", content: `
+<div class="audio-placeholder" data-audio="audio/b2-privacy-digital-age.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/b2-privacy-digital-age.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>Every time we open an app, search the web or even walk down the street with a smartphone in our pocket, we leave a trail of data. Companies collect this information to personalise services, target advertising and improve their products. On the surface, this seems like a fair exchange: we give up some data, and in return we receive convenience.</p>
+<p>However, the scale of this exchange is greater than most people realise. The average user interacts with dozens of apps and services each day, and the terms of service they agree to are often impossible to read in full. A single click can grant access to location, contacts, microphone and much more. Few users understand exactly what they have consented to.</p>
+<p>The consequences extend beyond targeted advertising. Insurance companies may use health data to adjust premiums. Employers might check social media before hiring. Governments in some countries monitor communications on a massive scale. Individually, these practices may seem justified; collectively, they create a society in which being watched becomes the default.</p>
+<p>Some argue that privacy is dead and that we should simply accept it. But this resignation is dangerous. Privacy is not about hiding wrongdoing; it is about maintaining personal autonomy. Without it, individuals may begin to censor themselves, avoid legitimate activities and lose trust in institutions.</p>
+<p>Meaningful reform is possible, but it requires both regulatory action and individual awareness. Companies should be required to explain their practices in plain language. Users should be able to choose without losing access to essential services. And societies should debate openly what kind of digital world they actually want.</p>
+
+<h3>Перевод</h3>
+<p>Каждый раз, когда мы открываем приложение, ищем в интернете или даже идём по улице со смартфоном в кармане, мы оставляем след из данных. Компании собирают эту информацию, чтобы персонализировать сервисы, нацеливать рекламу и улучшать свои продукты. На первый взгляд это выглядит справедливым обменом: мы отдаём часть данных и взамен получаем удобство.</p>
+<p>Однако масштаб этого обмена больше, чем большинство людей осознают. Средний пользователь взаимодействует с десятками приложений и сервисов в день, а условия использования, которые он принимает, часто невозможно прочитать целиком. Один клик может предоставить доступ к местоположению, контактам, микрофону и многому другому. Мало кто понимает, на что именно он дал согласие.</p>
+<p>Последствия выходят за рамки таргетированной рекламы. Страховые компании могут использовать данные о здоровье для корректировки тарифов. Работодатели могут проверять соцсети перед наймом. Правительства в некоторых странах следят за коммуникациями в массовом масштабе. По отдельности эти практики могут казаться оправданными; в совокупности они создают общество, в котором наблюдение становится нормой.</p>
+<p>Некоторые утверждают, что приватность мертва и нам просто следует это принять. Но эта смиренность опасна. Приватность — не про сокрытие проступков; она про личную автономию. Без неё люди могут начать цензурировать себя, избегать законных занятий и терять доверие к институтам.</p>
+<p>Реальная реформа возможна, но она требует как регулирующих действий, так и осознанности самих людей. Компании должны быть обязаны объяснять свои практики простым языком. Пользователи должны иметь возможность выбора, не теряя доступа к необходимым сервисам. А общества должны открыто обсуждать, какой цифровой мир они на самом деле хотят.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>trail of data</td><td>след данных</td></tr>
+<tr><td>target advertising</td><td>нацеливать рекламу</td></tr>
+<tr><td>terms of service</td><td>условия использования</td></tr>
+<tr><td>consent</td><td>согласие</td></tr>
+<tr><td>consequence</td><td>последствие</td></tr>
+<tr><td>premium</td><td>страховой взнос</td></tr>
+<tr><td>surveillance</td><td>наблюдение, слежка</td></tr>
+<tr><td>default</td><td>норма, состояние по умолчанию</td></tr>
+<tr><td>resignation</td><td>смирение</td></tr>
+<tr><td>legitimate</td><td>законный</td></tr>
+<tr><td>reform</td><td>реформа</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>What do companies do with user data? → [[personalise services, target ads, improve products]]</li>
+<li>What does a single click on many apps do? → [[grant access to location, contacts, microphone|grant access]]</li>
+<li>Give one example of consequences beyond advertising. → [[insurance premiums, hiring checks, government surveillance]]</li>
+<li>Why is the idea that "privacy is dead" dangerous? → [[individuals may censor themselves|it undermines autonomy|it's dangerous]]</li>
+<li>What does the author propose? → [[regulatory action and individual awareness|reform and awareness]]</li>
+</ol>
+` },
+
+  { id: 3105, level: "B2", category: "reading", topic: "reading-learning-failure", title: "05. The Value of Failure — Ценность неудачи", content: `
+<div class="audio-placeholder" data-audio="audio/b2-value-of-failure.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/b2-value-of-failure.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>In many cultures, failure is treated as something shameful. Children are taught to avoid mistakes, and adults are encouraged to present only their successes to the world. Yet a growing number of psychologists, educators and entrepreneurs argue that this attitude is not only unhelpful — it is actively harmful.</p>
+<p>Consider the way we learn to walk. No child succeeds on the first attempt. Falling is an essential part of the process. Somehow, as we grow up, we forget this simple truth. We begin to treat failure as a verdict on our abilities rather than as information about what to try next.</p>
+<p>Research on learning supports this view. Studies show that students who are praised for their effort, rather than for their intelligence, are more willing to tackle difficult problems. Those praised for being "smart" tend to avoid challenges, because they fear that failure will undermine the identity they have been given.</p>
+<p>Some of the most successful innovators in history have failed repeatedly. Thomas Edison famously remarked that he had not failed; he had found ten thousand ways that did not work. More recently, many celebrated entrepreneurs describe their first companies as essential learning experiences.</p>
+<p>None of this means that failure is pleasant. It is not. But the difference between those who grow and those who stagnate often lies in how they interpret setbacks. If we can learn to treat failure as a teacher rather than a judge, we may find that it becomes one of our most valuable allies.</p>
+
+<h3>Перевод</h3>
+<p>Во многих культурах неудача воспринимается как нечто постыдное. Детей учат избегать ошибок, а взрослых поощряют показывать миру только свои успехи. Однако всё больше психологов, педагогов и предпринимателей утверждают, что такое отношение не только не помогает — оно активно вредит.</p>
+<p>Вспомните, как мы учимся ходить. Ни один ребёнок не достигает успеха с первой попытки. Падение — важная часть процесса. Почему-то, взрослея, мы забываем эту простую истину. Мы начинаем относиться к неудаче как к приговору нашим способностям, а не как к информации о том, что попробовать дальше.</p>
+<p>Исследования в области обучения подтверждают эту точку зрения. Учёные показывают, что ученики, которых хвалят за усилия, а не за интеллект, более охотно берутся за трудные задачи. Тех же, кого хвалят за то, что они «умные», склонны избегать вызовов, потому что боятся, что провал подорвёт данную им идентичность.</p>
+<p>Некоторые из самых успешных новаторов в истории проваливались неоднократно. Томас Эдисон заметил, что не потерпел неудачу; он нашёл десять тысяч способов, которые не работают. В последнее время многие известные предприниматели описывают свои первые компании как важнейший учебный опыт.</p>
+<p>Ничто из этого не означает, что неудача приятна. Это не так. Но разница между теми, кто растёт, и теми, кто застревает, часто заключается в том, как они интерпретируют неудачи. Если мы научимся относиться к провалу как к учителю, а не как к судье, мы можем обнаружить, что он становится одним из наших самых ценных союзников.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>shameful</td><td>постыдный</td></tr>
+<tr><td>attitude</td><td>отношение</td></tr>
+<tr><td>essential</td><td>неотъемлемый, важный</td></tr>
+<tr><td>verdict</td><td>приговор</td></tr>
+<tr><td>praise</td><td>хвалить</td></tr>
+<tr><td>tackle</td><td>браться за</td></tr>
+<tr><td>undermine</td><td>подрывать</td></tr>
+<tr><td>stagnate</td><td>застаиваться</td></tr>
+<tr><td>setback</td><td>неудача, шаг назад</td></tr>
+<tr><td>ally</td><td>союзник</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>How is failure often treated in many cultures? → [[as shameful|shameful]]</li>
+<li>What does the walking example illustrate? → [[falling is essential to learning|failure is part of learning]]</li>
+<li>Which students are more willing to face challenges? → [[those praised for effort|effort-praised]]</li>
+<li>What did Edison say about his failures? → [[he found ten thousand ways that didn't work]]</li>
+<li>What does the author suggest? → [[treat failure as a teacher|treat failure as teacher]]</li>
+</ol>
+` },
+
+  { id: 3106, level: "B2", category: "reading", topic: "reading-media-truth", title: "06. Media and Truth — Медиа и истина", content: `
+<div class="audio-placeholder" data-audio="audio/b2-media-and-truth.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/b2-media-and-truth.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>The relationship between the media and truth has always been complicated, but in the age of social networks, it has become more complex still. Anyone with an internet connection can now publish information to a global audience, and stories can spread faster than facts can be verified.</p>
+<p>This democratisation of information has obvious benefits. Ordinary citizens can document events that powerful institutions might prefer to hide. Independent journalists can reach audiences without depending on traditional gatekeepers. In many cases, this has strengthened accountability.</p>
+<p>At the same time, the speed and scale of modern media create new problems. Algorithms reward engagement, not accuracy. A provocative claim will often travel further than a careful correction. False information, once released, is notoriously difficult to retract; even when it is corrected, the correction rarely reaches the same audience.</p>
+<p>Some observers argue that the answer is better media literacy. If people were taught from an early age to check sources, question statistics and recognise manipulation, they would be less vulnerable to misinformation. Others argue that platforms themselves must take more responsibility, for example by labelling disputed content or slowing the spread of unverified claims.</p>
+<p>What seems clear is that no single solution will be sufficient. A healthy information environment requires educated citizens, responsible platforms and credible journalism. Each of us, in other words, has a role to play — first as a reader, and then as a person who decides what to share.</p>
+
+<h3>Перевод</h3>
+<p>Отношения между медиа и истиной всегда были сложными, но в эпоху социальных сетей они стали ещё сложнее. Любой, у кого есть подключение к интернету, может теперь публиковать информацию для глобальной аудитории, а истории могут распространяться быстрее, чем удаётся проверить факты.</p>
+<p>У этой демократизации информации есть очевидные плюсы. Обычные граждане могут документировать события, которые влиятельные институты предпочли бы скрыть. Независимые журналисты могут доходить до аудитории, не завися от традиционных «стражей». Во многих случаях это укрепило подотчётность.</p>
+<p>В то же время скорость и масштаб современных медиа создают новые проблемы. Алгоритмы вознаграждают вовлечённость, а не точность. Провокационное утверждение часто распространяется дальше, чем аккуратная поправка. Ложную информацию, однажды выпущенную, как известно, трудно отозвать; даже когда её исправляют, исправление редко достигает той же аудитории.</p>
+<p>Некоторые наблюдатели утверждают, что ответ — в лучшей медиаграмотности. Если бы людей с раннего возраста учили проверять источники, сомневаться в статистике и распознавать манипуляции, они были бы менее уязвимы к дезинформации. Другие утверждают, что сами платформы должны брать больше ответственности, например маркируя спорный контент или замедляя распространение непроверенных заявлений.</p>
+<p>Ясно одно: ни одно решение не будет достаточным. Здоровая информационная среда требует образованных граждан, ответственных платформ и надёжной журналистики. Каждый из нас, иными словами, играет свою роль — сначала как читатель, а затем как человек, решающий, чем поделиться.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>verify</td><td>проверять</td></tr>
+<tr><td>democratisation</td><td>демократизация</td></tr>
+<tr><td>institution</td><td>институт, учреждение</td></tr>
+<tr><td>gatekeeper</td><td>«страж» (контролирующий доступ)</td></tr>
+<tr><td>accountability</td><td>подотчётность</td></tr>
+<tr><td>engagement</td><td>вовлечённость</td></tr>
+<tr><td>accuracy</td><td>точность</td></tr>
+<tr><td>retract</td><td>отзывать</td></tr>
+<tr><td>literacy</td><td>грамотность</td></tr>
+<tr><td>misinformation</td><td>дезинформация</td></tr>
+<tr><td>unverified</td><td>непроверенный</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>What has changed with social networks? → [[anyone can publish and stories spread fast|information spreads fast|anyone can publish]]</li>
+<li>What benefit does democratisation of information bring? → [[citizens can document hidden events|accountability|independent journalism]]</li>
+<li>What do algorithms reward? → [[engagement, not accuracy|engagement]]</li>
+<li>What is one proposed solution? → [[media literacy|educated citizens|labelling disputed content]]</li>
+<li>What does the author think is needed? → [[educated citizens, responsible platforms, credible journalism|a combination of solutions]]</li>
+</ol>
+` },
+
+  // ============================================================
+  // C1 READING — файлы в папке audio/
+  // ============================================================
+  { id: 4101, level: "C1", category: "reading", topic: "reading-paradox-choice", title: "01. The Paradox of Choice — Парадокс выбора", content: `
+<div class="audio-placeholder" data-audio="audio/c1-paradox-of-choice.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/c1-paradox-of-choice.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>For much of human history, choice was a luxury reserved for the few. Today, it is a burden imposed on almost everyone. The average supermarket stocks tens of thousands of products; online platforms offer endless catalogues of films, books and potential partners. Conventional wisdom holds that more choice must be better, but a substantial body of psychological research suggests the opposite.</p>
+<p>The psychologist Barry Schwartz famously coined the term "the paradox of choice" to describe the counterintuitive finding that an abundance of options can lead to anxiety, indecision and, ultimately, dissatisfaction. In one well-known experiment, shoppers who were offered a tasting of six jams were ten times more likely to make a purchase than those who were presented with twenty-four. Too much choice, it seems, paralyses rather than liberates.</p>
+<p>There are several reasons for this. First, evaluating numerous options demands cognitive effort, and the resulting fatigue can lead people to defer decisions altogether. Second, the more alternatives we consider, the higher our expectations become, making it almost inevitable that the chosen option will fall short. Third, abundance increases the risk of regret: with so many possibilities, we can always imagine that a different choice might have been better.</p>
+<p>Schwartz distinguishes between "maximisers", who strive to identify the best possible option, and "satisficers", who settle for something that is good enough. Counterintuitively, maximisers tend to be less satisfied with their decisions, even when objectively they have chosen better. The pursuit of the perfect choice, it appears, is a reliable route to unhappiness.</p>
+<p>None of this implies that we should abandon choice altogether. Rather, it suggests that we might benefit from deliberately limiting our options, setting personal standards in advance and resisting the urge to keep searching once a decision has been made. In a world of infinite possibility, the greatest freedom may lie in knowing when to stop looking.</p>
+
+<h3>Перевод</h3>
+<p>На протяжении большей части человеческой истории выбор был роскошью, доступной немногим. Сегодня это бремя, возложенное почти на всех. Средний супермаркет предлагает десятки тысяч товаров; онлайн-платформы предлагают бесконечные каталоги фильмов, книг и потенциальных партнёров. Обыденная мудрость гласит, что больше выбора — всегда лучше, но значительный объём психологических исследований говорит об обратном.</p>
+<p>Психолог Барри Шварц ввёл термин «парадокс выбора», чтобы описать нелогичный на первый взгляд вывод: изобилие вариантов может вести к тревоге, нерешительности и, в конечном счёте, к неудовлетворённости. В одном известном эксперименте покупатели, которым предлагали попробовать шесть сортов варенья, делали покупку в десять раз чаще, чем те, кому предлагали двадцать четыре. Слишком большой выбор, по-видимому, парализует, а не освобождает.</p>
+<p>Причин тому несколько. Во-первых, оценка множества вариантов требует когнитивных усилий, и возникающая усталость может заставить людей вовсе отложить решение. Во-вторых, чем больше альтернатив мы рассматриваем, тем выше становятся наши ожидания, из-за чего выбранный вариант почти неизбежно оказывается хуже ожидаемого. В-третьих, изобилие повышает риск сожаления: при таком множестве возможностей мы всегда можем представить, что другой выбор был бы лучше.</p>
+<p>Шварц различает «максимизаторов», которые стремятся найти наилучший возможный вариант, и «сатисфайсеров», которые довольствуются достаточно хорошим. В противоположность интуиции, максимизаторы, как правило, менее удовлетворены своими решениями, даже когда объективно выбрали лучше. Погоня за идеальным выбором, судя по всему, — надёжный путь к несчастью.</p>
+<p>Ничто из этого не означает, что следует вовсе отказаться от выбора. Скорее, это говорит о том, что нам может пойти на пользу сознательное ограничение вариантов, установление личных стандартов заранее и сопротивление искушению продолжать искать после того, как решение принято. В мире бесконечных возможностей величайшая свобода может заключаться в умении вовремя остановиться.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>impose</td><td>навязывать</td></tr>
+<tr><td>counterintuitive</td><td>противоречащий интуиции</td></tr>
+<tr><td>abundance</td><td>изобилие</td></tr>
+<tr><td>paralyse</td><td>парализовать</td></tr>
+<tr><td>defer</td><td>откладывать</td></tr>
+<tr><td>inevitable</td><td>неизбежный</td></tr>
+<tr><td>fall short</td><td>не соответствовать (ожиданиям)</td></tr>
+<tr><td>maximiser / satisficer</td><td>максимизатор / сатисфайсер</td></tr>
+<tr><td>pursuit</td><td>погоня, стремление</td></tr>
+<tr><td>deliberately</td><td>сознательно</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>What did the jam experiment reveal? → [[fewer options led to more purchases|too much choice paralyses|less choice is better]]</li>
+<li>Why does abundance increase the risk of regret? → [[we can always imagine a better alternative|we imagine better options]]</li>
+<li>How do maximisers differ from satisficers? → [[maximisers seek the best option, satisficers settle for good enough]]</li>
+<li>Who tends to be less satisfied? → [[maximisers]]</li>
+<li>What does the author suggest we do? → [[limit options, set standards, stop searching once decided|deliberately limit choices]]</li>
+</ol>
+` },
+
+  { id: 4102, level: "C1", category: "reading", topic: "reading-language-identity", title: "02. Language and Identity — Язык и идентичность", content: `
+<div class="audio-placeholder" data-audio="audio/c1-language-and-identity.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/c1-language-and-identity.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>Few aspects of human experience are as intimately bound up with identity as language. The words we use, the accent we carry, even the grammatical structures we take for granted, all carry subtle information about who we are and where we come from. Yet the relationship between language and identity is far from straightforward.</p>
+<p>Consider the phenomenon of code-switching, in which bilingual speakers alternate between languages within a single conversation. Far from being a sign of confusion, code-switching is typically a sophisticated strategy: it allows speakers to signal solidarity with a particular group, to shift between social roles or to convey nuances that no single language can express. In this sense, multilingualism does not dilute identity; it multiplies the resources through which identity can be performed.</p>
+<p>Language also plays a crucial role in the construction of national identity. Governments have long understood that a shared language can serve as a powerful unifying force, and many have pursued aggressive policies of linguistic homogenisation. Such policies, however, have often come at a devastating cost to minority communities. When a language disappears, a unique way of perceiving the world disappears with it.</p>
+<p>Linguists estimate that roughly half of the world's seven thousand languages may vanish by the end of this century. Each loss diminishes our collective understanding of what human language is capable of. Encouragingly, many communities are now engaged in revitalisation efforts, from immersion schools to digital archives, in an attempt to ensure that their languages survive.</p>
+<p>The debate about language is not merely academic. It touches on questions of power, justice and belonging. To speak a language is to inhabit a world; to lose one is to lose a world. If we value diversity in any meaningful sense, we must value the languages that sustain it.</p>
+
+<h3>Перевод</h3>
+<p>Мало какие аспекты человеческого опыта так тесно связаны с идентичностью, как язык. Слова, которые мы используем, акцент, который мы несём, даже грамматические структуры, которые мы воспринимаем как само собой разумеющееся, — всё это содержит тонкую информацию о том, кто мы и откуда. Однако отношения между языком и идентичностью далеко не просты.</p>
+<p>Рассмотрим феномен переключения кодов, при котором двуязычные говорящие чередуют языки в рамках одной беседы. Вовсе не будучи признаком путаницы, переключение кодов обычно является изощрённой стратегией: оно позволяет говорящим сигнализировать солидарность с определённой группой, переключаться между социальными ролями или передавать нюансы, которые ни один язык не выразит. В этом смысле многоязычие не размывает идентичность; оно умножает ресурсы, через которые идентичность может быть явлена.</p>
+<p>Язык также играет решающую роль в конструировании национальной идентичности. Правительства давно поняли, что общий язык может служить мощной объединяющей силой, и многие проводили агрессивную политику языковой гомогенизации. Однако такая политика часто обходилась страшной ценой для сообществ меньшинств. Когда язык исчезает, вместе с ним исчезает и уникальный способ восприятия мира.</p>
+<p>Лингвисты оценивают, что примерно половина из семи тысяч языков мира может исчезнуть к концу этого столетия. Каждая утрата обедняет наше коллективное понимание того, на что способен человеческий язык. Обнадёживает то, что многие сообщества сейчас занимаются ревитализацией — от школ погружения до цифровых архивов — в попытке обеспечить выживание своих языков.</p>
+<p>Спор о языке — не просто академический. Он касается вопросов власти, справедливости и принадлежности. Говорить на языке — значит населять мир; потерять его — значит потерять мир. Если мы ценим разнообразие в сколько-нибудь осмысленном смысле, мы должны ценить языки, которые его поддерживают.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>intimately bound up</td><td>тесно связан</td></tr>
+<tr><td>take for granted</td><td>воспринимать как должное</td></tr>
+<tr><td>code-switching</td><td>переключение кодов</td></tr>
+<tr><td>solidarity</td><td>солидарность</td></tr>
+<tr><td>convey</td><td>передавать</td></tr>
+<tr><td>nuance</td><td>нюанс, оттенок</td></tr>
+<tr><td>dilute</td><td>размывать</td></tr>
+<tr><td>homogenisation</td><td>гомогенизация</td></tr>
+<tr><td>devastating</td><td>разрушительный</td></tr>
+<tr><td>revitalisation</td><td>ревитализация, оживление</td></tr>
+<tr><td>inhabit</td><td>населять</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>What is code-switching? → [[alternating between languages in one conversation|alternating languages]]</li>
+<li>How does the author view multilingualism? → [[it multiplies resources for identity|it enriches identity]]</li>
+<li>What is the cost of aggressive homogenisation? → [[devastating for minority communities|languages disappear|minority loss]]</li>
+<li>What is happening to the world's languages? → [[about half may vanish this century|half may vanish]]</li>
+<li>What does the author argue? → [[diversity requires valuing languages|we must value languages]]</li>
+</ol>
+` },
+
+  { id: 4103, level: "C1", category: "reading", topic: "reading-rethinking-education", title: "03. Rethinking Education — Переосмысляя образование", content: `
+<div class="audio-placeholder" data-audio="audio/c1-rethinking-education.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/c1-rethinking-education.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>The modern school system, with its rows of desks, standardised tests and division of knowledge into discrete subjects, is a surprisingly recent invention. It emerged in the nineteenth century to meet the needs of industrial society: punctuality, obedience and the ability to perform repetitive tasks. Whatever its merits, it was never designed for the world we now inhabit.</p>
+<p>Critics argue that today's education systems remain stubbornly industrial in spirit. Children are still sorted by age, taught in batches and assessed largely on their capacity to memorise information. The implicit message, as the education theorist Sir Ken Robinson famously observed, is that the most important thing is to get the right answer — which is precisely the wrong lesson in a world that rewards creativity, adaptability and problem-solving.</p>
+<p>Defenders of traditional education counter that structure and discipline are valuable in themselves. Learning to follow instructions, they argue, is not the same as being passive; it is a prerequisite for any sustained intellectual work. Moreover, standardised assessment, for all its limitations, provides a transparent means of comparing outcomes and identifying underperforming schools.</p>
+<p>Both positions contain important truths. The challenge is to design systems that cultivate curiosity without sacrificing rigour, that value collaboration without abandoning individual accountability. Some schools have experimented with project-based learning, mixed-age classrooms and reduced testing. The results have been mixed, but they suggest that meaningful reform is possible.</p>
+<p>Ultimately, the debate about education is a debate about what kind of society we want. If we want citizens who can think critically, work collaboratively and adapt to constant change, our schools must reflect these priorities. It is not enough to tinker with the curriculum; we may need to rethink the fundamental assumptions on which our educational institutions were built.</p>
+
+<h3>Перевод</h3>
+<p>Современная школьная система с рядами парт, стандартизированными тестами и разделением знания на отдельные предметы — изобретение на удивление недавнее. Она возникла в XIX веке, чтобы соответствовать нуждам индустриального общества: пунктуальность, послушание и способность выполнять повторяющиеся задачи. Как бы то ни было, она никогда не была задумана для мира, в котором мы живём сегодня.</p>
+<p>Критики утверждают, что сегодняшние образовательные системы остаются упорно индустриальными по духу. Детей всё ещё делят по возрасту, обучают партиями и оценивают в основном по способности запоминать информацию. Неявное послание, как метко заметил теоретик образования сэр Кен Робинсон, состоит в том, что важнее всего — дать правильный ответ. А это как раз не тот урок, который нужен миру, вознаграждающему творчество, адаптивность и умение решать проблемы.</p>
+<p>Защитники традиционного образования возражают, что структура и дисциплина ценны сами по себе. Учиться следовать инструкциям, утверждают они, — не то же самое, что быть пассивным; это предпосылка любой продолжительной интеллектуальной работы. Более того, стандартизированная оценка, при всех её ограничениях, обеспечивает прозрачный способ сравнивать результаты и выявлять слабые школы.</p>
+<p>Обе позиции содержат важную правду. Задача — разработать системы, которые культивируют любопытство, не жертвуя строгостью, ценят сотрудничество, не отказываясь от индивидуальной ответственности. Некоторые школы экспериментировали с проектным обучением, разновозрастными классами и сокращением тестирования. Результаты были неоднозначными, но они показывают, что осмысленная реформа возможна.</p>
+<p>В конечном счёте спор об образовании — это спор о том, какое общество мы хотим. Если мы хотим граждан, способных критически мыслить, работать совместно и адаптироваться к постоянным изменениям, наши школы должны отражать эти приоритеты. Недостаточно подправлять учебный план; возможно, нам придётся переосмыслить фундаментальные допущения, на которых построены наши образовательные институты.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>discrete</td><td>отдельный, дискретный</td></tr>
+<tr><td>punctuality</td><td>пунктуальность</td></tr>
+<tr><td>obedience</td><td>послушание</td></tr>
+<tr><td>stubbornly</td><td>упорно</td></tr>
+<tr><td>assess</td><td>оценивать</td></tr>
+<tr><td>implicit</td><td>неявный</td></tr>
+<tr><td>prerequisite</td><td>предпосылка</td></tr>
+<tr><td>rigour</td><td>строгость</td></tr>
+<tr><td>tinker with</td><td>подправлять, возиться</td></tr>
+<tr><td>assumption</td><td>допущение</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>What needs did the modern school system originally serve? → [[industrial society needs|industrial needs|punctuality and obedience]]</li>
+<li>What does the system still reward, according to critics? → [[memorising and right answers|the right answer|memory]]</li>
+<li>How do defenders respond? → [[structure and discipline are valuable|structure matters]]</li>
+<li>What have some schools experimented with? → [[project-based learning, mixed-age classes, less testing]]</li>
+<li>What does the author conclude? → [[we may need to rethink fundamental assumptions|fundamental reform needed|rethink assumptions]]</li>
+</ol>
+` },
+
+  { id: 4104, level: "C1", category: "reading", topic: "reading-ethics-ai", title: "04. The Ethics of Artificial Intelligence — Этика ИИ", content: `
+<div class="audio-placeholder" data-audio="audio/c1-ethics-ai.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/c1-ethics-ai.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>Artificial intelligence has moved from the realm of science fiction to the centre of everyday life with remarkable speed. Algorithms now determine which news we see, which candidates are invited to interviews and even which medical treatments are recommended. The question is no longer whether AI will shape our societies, but on what principles it should do so.</p>
+<p>One of the most pressing concerns is bias. Machine learning systems learn from historical data, and if that data reflects existing inequalities, the resulting models will reproduce and even amplify them. Facial recognition software, for instance, has been shown to perform less accurately on darker-skinned faces, largely because the training datasets were skewed. The danger is that such systems, presented as objective, may entrench discrimination behind a veneer of mathematical neutrality.</p>
+<p>Another issue is accountability. When an autonomous vehicle causes an accident, or an algorithm denies someone a loan, who is responsible? The engineer who wrote the code? The company that deployed it? The dataset that shaped it? Existing legal frameworks, designed for a world of human decision-makers, struggle to answer such questions.</p>
+<p>There is also the matter of transparency. Many of the most powerful AI systems are "black boxes": even their creators cannot fully explain why they produce a particular output. In high-stakes domains such as medicine or criminal justice, this opacity is deeply troubling. A decision that cannot be explained cannot be properly challenged.</p>
+<p>Some argue that these problems will be solved by better technology, but this is optimistic. Ethics is not a technical problem; it is a political and philosophical one. It requires public deliberation, robust regulation and a willingness to accept that some applications of AI may be simply too dangerous to pursue. The future of AI will be determined not by what is technically possible, but by what we, as a society, choose to permit.</p>
+
+<h3>Перевод</h3>
+<p>Искусственный интеллект с поразительной скоростью перешёл из области научной фантастики в центр повседневной жизни. Алгоритмы теперь определяют, какие новости мы видим, каких кандидатов приглашают на собеседования и даже какое лечение рекомендуется. Вопрос уже не в том, будет ли ИИ формировать наши общества, а в том, на каких принципах он должен это делать.</p>
+<p>Одна из самых острых проблем — предвзятость. Системы машинного обучения учатся на исторических данных, и если эти данные отражают существующее неравенство, полученные модели будут его воспроизводить и даже усиливать. Программы распознавания лиц, например, как было показано, работают менее точно на лицах с более тёмной кожей, во многом потому что обучающие наборы данных были смещены. Опасность в том, что такие системы, представленные как объективные, могут закреплять дискриминацию под покровом математической нейтральности.</p>
+<p>Ещё одна проблема — подотчётность. Когда беспилотный автомобиль становится причиной аварии или алгоритм отказывает кому-то в кредите, кто несёт ответственность? Инженер, написавший код? Компания, развернувшая систему? Набор данных, который её сформировал? Существующие правовые рамки, созданные для мира, где решения принимают люди, с трудом отвечают на такие вопросы.</p>
+<p>Есть и вопрос прозрачности. Многие из самых мощных систем ИИ — это «чёрные ящики»: даже их создатели не могут полностью объяснить, почему они выдают тот или иной результат. В сферах с высокими ставками, таких как медицина или уголовное правосудие, эта непрозрачность глубоко тревожит. Решение, которое нельзя объяснить, нельзя и должным образом оспорить.</p>
+<p>Некоторые утверждают, что эти проблемы будут решены лучшими технологиями, но это оптимизм. Этика — не техническая проблема, а политическая и философская. Она требует публичного обсуждения, надёжного регулирования и готовности признать, что некоторые применения ИИ могут быть просто слишком опасны, чтобы их разрабатывать. Будущее ИИ будет определяться не тем, что технически возможно, а тем, что мы как общество решим позволить.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>realm</td><td>сфера, область</td></tr>
+<tr><td>bias</td><td>предвзятость</td></tr>
+<tr><td>amplify</td><td>усиливать</td></tr>
+<tr><td>skewed</td><td>смещённый</td></tr>
+<tr><td>entrench</td><td>закреплять</td></tr>
+<tr><td>veneer</td><td>покров, видимость</td></tr>
+<tr><td>accountability</td><td>подотчётность</td></tr>
+<tr><td>deploy</td><td>развертывать, внедрять</td></tr>
+<tr><td>opacity</td><td>непрозрачность</td></tr>
+<tr><td>deliberation</td><td>обсуждение, совещание</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>Why is bias in AI a problem? → [[training data may reflect existing inequalities|data reflects inequalities|training data bias]]</li>
+<li>What example of bias is given? → [[facial recognition less accurate on darker skin|facial recognition]]</li>
+<li>What is the accountability issue? → [[unclear who is responsible when an AI harms someone|who is responsible]]</li>
+<li>What does "black box" mean in this context? → [[the output can't be fully explained|unexplainable output]]</li>
+<li>What does the author conclude? → [[the future of AI depends on what society permits|we must choose what to allow]]</li>
+</ol>
+` },
+
+  // ============================================================
+  // C2 READING — файлы в папке audio/
+  // ============================================================
+  { id: 5101, level: "C2", category: "reading", topic: "reading-architecture-memory", title: "01. The Architecture of Memory — Архитектура памяти", content: `
+<div class="audio-placeholder" data-audio="audio/c2-architecture-memory.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/c2-architecture-memory.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>There is a particular kind of house that exists only in memory. It has no precise address; its rooms are neither perfectly proportioned nor reliably lit. Yet it is more vivid than any building I have ever entered, and its corridors open onto feelings I cannot otherwise locate. I have come to suspect that such houses are not remembered at all, but rather fabricated by the act of remembering — a palimpsest of half-observed details, overlaid with the long sediment of childhood.</p>
+<p>My grandmother's house, for example, was small and unremarkable from the street. But inside, space behaved according to its own logic. The kitchen seemed to expand at dusk, absorbing the dining room, the hallway, even the garden beyond the window. The staircase, by contrast, compressed whenever I climbed it, so that by the time I reached the landing I had the sensation of emerging into a different climate altogether. These distortions, I now realise, were not perceptual errors. They were the house's true architecture — the architecture of belonging.</p>
+<p>What is the function of such memories? Some would argue that they are merely nostalgic indulgence, a sentimental retreat from the demands of the present. But I am inclined to think otherwise. These remembered spaces are not escapes; they are foundations. They provide the imaginative vocabulary through which we interpret every subsequent room we enter, every door we close behind us. To lose them would be to lose not only a past, but a language.</p>
+<p>The house itself has long since been sold, repainted, subdivided. Strangers sleep in what was once my bedroom. Yet it remains intact in a place more durable than brick: in the mind that keeps returning to it. Perhaps that is the only architecture that truly endures — not the one we build, but the one we carry.</p>
+
+<h3>Перевод</h3>
+<p>Существует особый вид дома, который существует только в памяти. У него нет точного адреса; его комнаты не идеально пропорциональны и не надёжно освещены. И всё же он ярче любого здания, в которое я когда-либо входил, а его коридоры открываются в чувства, которые иначе я не могу локализовать. Я начинаю подозревать, что такие дома вовсе не вспоминаются, а создаются самим актом воспоминания — палимпсест полузамеченных деталей, поверх которого лёг долгий осадок детства.</p>
+<p>Дом моей бабушки, например, был небольшим и непримечательным с улицы. Но внутри пространство вело себя по собственной логике. Кухня, казалось, расширялась в сумерках, поглощая столовую, прихожую, даже сад за окном. Лестница, напротив, сжималась всякий раз, когда я по ней поднимался, так что к моменту, когда я достигал площадки, у меня было ощущение, что я выхожу в совершенно другой климат. Эти искажения, как я теперь понимаю, не были ошибками восприятия. Они были подлинной архитектурой дома — архитектурой принадлежности.</p>
+<p>Какова функция таких воспоминаний? Некоторые стали бы утверждать, что это просто ностальгическое потакание себе, сентиментальное бегство от требований настоящего. Но я склонен думать иначе. Эти вспоминаемые пространства — не побеги; это фундаменты. Они дают тот воображаемый словарь, через который мы интерпретируем каждую последующую комнату, в которую входим, каждую дверь, которую закрываем за собой. Потерять их означало бы потерять не только прошлое, но и язык.</p>
+<p>Сам дом давно продан, перекрашен, разделён на части. Незнакомцы спят в том, что когда-то было моей спальней. И всё же он остаётся нетронутым в месте более долговечном, чем кирпич: в сознании, которое продолжает к нему возвращаться. Возможно, это единственная архитектура, которая по-настоящему сохраняется — не та, которую мы строим, а та, которую мы несём с собой.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>proportioned</td><td>пропорциональный</td></tr>
+<tr><td>palimpsest</td><td>палимпсест (многослойная запись)</td></tr>
+<tr><td>sediment</td><td>осадок, отложение</td></tr>
+<tr><td>distortion</td><td>искажение</td></tr>
+<tr><td>perceptual</td><td>перцептивный, относящийся к восприятию</td></tr>
+<tr><td>nostalgic</td><td>ностальгический</td></tr>
+<tr><td>indulgence</td><td>потакание, баловство</td></tr>
+<tr><td>retreat</td><td>отступление, убежище</td></tr>
+<tr><td>durable</td><td>долговечный, прочный</td></tr>
+<tr><td>endure</td><td>выдерживать, сохраняться</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>According to the author, what are houses in memory? → [[fabricated by the act of remembering|created by memory]]</li>
+<li>How does the grandmother's kitchen behave in memory? → [[it expands at dusk|it expands]]</li>
+<li>What does the author reject about nostalgic memories? → [[the idea that they are mere indulgence|that they're just nostalgia|escapism]]</li>
+<li>What function do these memories serve? → [[they provide foundations and a vocabulary|foundations|they ground us]]</li>
+<li>What kind of architecture endures? → [[the one we carry in the mind|the one in memory]]</li>
+</ol>
+` },
+
+  { id: 5102, level: "C2", category: "reading", topic: "reading-in-defence-difficulty", title: "02. In Defence of Difficulty — В защиту сложности", content: `
+<div class="audio-placeholder" data-audio="audio/c2-in-defence-of-difficulty.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/c2-in-defence-of-difficulty.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>There is a prevailing assumption in contemporary culture that difficulty is a defect — something to be eliminated, circumvented or apologised for. Instructions must be simplified; texts must be made "accessible"; arguments must be reduced to bullet points. The underlying premise is that comprehension should be effortless, and that anything requiring sustained effort is, by definition, exclusionary.</p>
+<p>This assumption is, I want to suggest, both mistaken and pernicious. To claim that difficulty is inherently a barrier is to confuse two quite different things: the difficulty of access and the difficulty of substance. A book written in impenetrable jargon is genuinely exclusionary, but a book written with precision and complexity is not. The first withholds meaning; the second demands that we rise to meet it. The difference is not one of ease, but of generosity.</p>
+<p>Consider the experience of reading a genuinely difficult work — a philosophical treatise, a dense novel, a poem that resists paraphrase. The initial encounter is often frustrating. We lose the thread, we reread passages, we suspect ourselves of missing something obvious. And then, gradually, something shifts. The text begins to yield. What was opaque becomes legible, not because the text has changed, but because we have. The understanding we arrive at is not merely information; it is a transformation of the reader.</p>
+<p>Such transformations are, by their very nature, inefficient. They cannot be accelerated, standardised or measured on a rubric. They take time, and time is precisely what our culture of optimisation resists. But to eliminate difficulty in the name of accessibility is to deprive people of the very experiences that make intellectual life worthwhile. It is to mistake the removal of obstacles for the achievement of ends.</p>
+<p>The defence of difficulty is not a defence of obscurity. There is no virtue in making things hard for their own sake. But there is considerable virtue in refusing to make them easy when ease would mean shallowness. The task of the serious writer, teacher or thinker is not to lower the bar, but to make the height of the bar feel worth reaching.</p>
+
+<h3>Перевод</h3>
+<p>В современной культуре существует распространённое допущение, что сложность — это дефект, который нужно устранить, обойти или за который надо извиняться. Инструкции должны быть упрощены; тексты должны быть «доступными»; аргументы должны быть сведены к маркированным спискам. В основе лежит предпосылка, что понимание должно быть без усилий, а всё, что требует продолжительных усилий, по определению является исключающим.</p>
+<p>Это допущение, как я хочу показать, и ошибочно, и пагубно. Утверждать, что сложность по своей сути является барьером, — значит путать две совершенно разные вещи: сложность доступа и сложность содержания. Книга, написанная непроницаемым жаргоном, действительно исключает; но книга, написанная с точностью и глубиной, — нет. Первая скрывает смысл; вторая требует, чтобы мы поднялись к ней навстречу. Разница не в лёгкости, а в щедрости.</p>
+<p>Вспомните опыт чтения действительно сложного произведения — философского трактата, плотного романа, стихотворения, сопротивляющегося пересказу. Первая встреча часто разочаровывает. Мы теряем нить, перечитываем фрагменты, подозреваем себя в том, что упускаем что-то очевидное. И затем постепенно что-то меняется. Текст начинает уступать. То, что было непрозрачным, становится читаемым — не потому, что текст изменился, а потому, что изменились мы. Понимание, к которому мы приходим, — не просто информация; это преображение читателя.</p>
+<p>Такие преображения по своей природе неэффективны. Их нельзя ускорить, стандартизировать или измерить по рубрике. Они требуют времени, а время — именно то, чему сопротивляется наша культура оптимизации. Но устранять сложность во имя доступности — значит лишать людей самих тех опытов, которые делают интеллектуальную жизнь стоящей. Это значит путать устранение препятствий с достижением цели.</p>
+<p>Защита сложности — не защита туманности. Нет добродетели в том, чтобы делать вещи трудными ради них самих. Но есть немалая добродетель в том, чтобы отказываться делать их лёгкими, когда лёгкость означала бы поверхностность. Задача серьёзного писателя, учителя или мыслителя — не опускать планку, а делать высоту планки достойной того, чтобы к ней тянуться.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>prevailing</td><td>господствующий, преобладающий</td></tr>
+<tr><td>circumvent</td><td>обходить</td></tr>
+<tr><td>underlying</td><td>лежащий в основе</td></tr>
+<tr><td>pernicious</td><td>пагубный</td></tr>
+<tr><td>inherently</td><td>по своей сути</td></tr>
+<tr><td>impenetrable</td><td>непроницаемый</td></tr>
+<tr><td>jargon</td><td>жаргон</td></tr>
+<tr><td>paraphrase</td><td>пересказ</td></tr>
+<tr><td>opaque</td><td>непрозрачный</td></tr>
+<tr><td>legible</td><td>читаемый, разборчивый</td></tr>
+<tr><td>rubric</td><td>рубрика, критерий оценивания</td></tr>
+<tr><td>shallowness</td><td>поверхностность</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>What is the prevailing assumption about difficulty? → [[it is a defect|that it should be removed|that it is a barrier]]</li>
+<li>What distinction does the author draw? → [[difficulty of access vs difficulty of substance|access vs substance]]</li>
+<li>What happens when we read a difficult work? → [[we change, and the text yields|the reader is transformed|gradual understanding]]</li>
+<li>Why does the author resist eliminating difficulty? → [[it would deprive people of transformative experiences|it would be shallowness]]</li>
+<li>What is the author not defending? → [[obscurity for its own sake|obscurity]]</li>
+</ol>
+` },
+
+  { id: 5103, level: "C2", category: "reading", topic: "reading-cartography-belonging", title: "03. The Cartography of Belonging — Картография принадлежности", content: `
+<div class="audio-placeholder" data-audio="audio/c2-cartography-belonging.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/c2-cartography-belonging.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>Every map is a lie of omission. To render the world legible, the cartographer must decide what to include and what to discard: rivers but not rainfall, roads but not footpaths, borders but not the histories that made them. What remains on the page is not the territory, but a particular argument about the territory — an argument advanced by whoever held the pen.</p>
+<p>The maps we carry inside us are no different. Each of us navigates by an internal cartography, assembled from fragments of experience, inherited stories and the quiet instructions of those who raised us. These maps are not neutral. They privilege certain routes over others, marking some places as home and others as foreign, some people as familiar and others as strange. And like all maps, they become most visible precisely when they fail us.</p>
+<p>I have been thinking about this in the context of belonging. To belong somewhere is not merely to occupy a location; it is to possess a map that renders that location meaningful. The émigré who returns to a childhood city discovers that the map no longer matches the territory. Streets have been renamed, buildings demolished, languages shifted. The disorientation is not spatial but cartographic: the internal map has become illegible against the external world.</p>
+<p>Some respond to this dislocation by redrawing the map — by learning new routes, new landmarks, new ways of being. Others cling to the old cartography and live, in effect, in exile even at home. Neither response is simply right or wrong. What matters, perhaps, is the willingness to acknowledge that the map is not the territory, and that belonging is not a place we find but a practice we sustain.</p>
+<p>The most honest maps, in the end, are those that confess their own incompleteness. They leave blank spaces at the edges. They mark uncertain regions with the old cartographic warning: <i>hic sunt dracones</i> — here be dragons. To belong, perhaps, is to be at peace with the dragons at the edge of the map, to accept that the territory will always exceed our capacity to describe it.</p>
+
+<h3>Перевод</h3>
+<p>Любая карта — это ложь умолчания. Чтобы сделать мир читаемым, картограф должен решить, что включить, а что отбросить: реки, но не осадки, дороги, но не тропы, границы, но не истории, их создавшие. То, что остаётся на странице, — не территория, а определённый довод о территории, довод, выдвинутый тем, кто держал перо.</p>
+<p>Карты, которые мы носим внутри себя, ничем не отличаются. Каждый из нас ориентируется по внутренней картографии, собранной из фрагментов опыта, унаследованных историй и тихих наставлений тех, кто нас растил. Эти карты не нейтральны. Они отдают предпочтение одним маршрутам перед другими, отмечая одни места как дом, а другие как чужбину, одних людей как знакомых, а других как странных. И, как и все карты, они становятся наиболее заметными именно тогда, когда подводят нас.</p>
+<p>Я размышлял об этом в контексте принадлежности. Принадлежать куда-то — не просто занимать место; это обладать картой, которая делает это место осмысленным. Эмигрант, возвращающийся в город детства, обнаруживает, что карта больше не соответствует территории. Улицы переименованы, здания снесены, языки сместились. Дезориентация не пространственная, а картографическая: внутренняя карта стала нечитаемой относительно внешнего мира.</p>
+<p>Некоторые отвечают на эту дислокацию перерисовкой карты — изучением новых маршрутов, новых ориентиров, новых способов быть. Другие цепляются за старую картографию и живут, по сути, в изгнании даже у себя дома. Ни один ответ не является просто правильным или неправильным. Важно, пожалуй, готовность признать, что карта — не территория, и что принадлежность — не место, которое мы находим, а практика, которую мы поддерживаем.</p>
+<p>Самые честные карты, в конечном счёте, — те, что признают собственную неполноту. Они оставляют пустые пространства по краям. Они отмечают неопределённые области старым картографическим предупреждением: <i>hic sunt dracones</i> — здесь драконы. Принадлежать, возможно, — значит быть в мире с драконами на краю карты, принимать, что территория всегда будет превосходить нашу способность её описать.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>omission</td><td>умолчание, пропуск</td></tr>
+<tr><td>render</td><td>представлять, делать</td></tr>
+<tr><td>legible</td><td>читаемый</td></tr>
+<tr><td>cartographer</td><td>картограф</td></tr>
+<tr><td>discard</td><td>отбрасывать</td></tr>
+<tr><td>privilege</td><td>отдавать предпочтение</td></tr>
+<tr><td>émigré</td><td>эмигрант</td></tr>
+<tr><td>demolish</td><td>сносить</td></tr>
+<tr><td>disorientation</td><td>дезориентация</td></tr>
+<tr><td>dislocation</td><td>смещение, дислокация</td></tr>
+<tr><td>cling to</td><td>цепляться за</td></tr>
+<tr><td>exile</td><td>изгнание</td></tr>
+<tr><td>acknowledge</td><td>признавать</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>What does the author mean by "a map is a lie of omission"? → [[cartographers choose what to include and exclude|maps omit things]]</li>
+<li>What is internal cartography? → [[a mental map assembled from experience and stories|mental map]]</li>
+<li>Why does the émigré feel disoriented? → [[the internal map no longer matches the changed city|the city changed]]</li>
+<li>What are the two possible responses to dislocation? → [[redraw the map or cling to the old one|redraw or cling]]</li>
+<li>What does "hic sunt dracones" symbolise here? → [[accepting the limits of our maps|the unknown at the edges|incompleteness]]</li>
+</ol>
+` },
+
+  { id: 5104, level: "C2", category: "reading", topic: "reading-on-progress", title: "04. On the Nature of Progress — О природе прогресса", content: `
+<div class="audio-placeholder" data-audio="audio/c2-on-nature-of-progress.mp3">
+  🔊 <i>Аудио: будет добавлено (audio/c2-on-nature-of-progress.mp3)</i>
+</div>
+
+<h3>English</h3>
+<p>The idea of progress is one of the most seductive narratives of modernity. It promises that tomorrow will be better than today, that history moves in a discernible direction, and that human effort, properly applied, can be counted upon to yield cumulative improvement. Yet the longer one examines this idea, the more it appears less like a description of reality and more like a secular article of faith.</p>
+<p>To be sure, certain forms of progress are undeniable. Life expectancy has risen dramatically; literacy has spread; diseases that once decimated populations have been largely contained. These achievements are real and should not be dismissed. But they are also uneven, reversible and, in many cases, accompanied by costs that were not anticipated. The same technologies that extend life also produce new forms of alienation. The same systems that distribute goods also concentrate power.</p>
+<p>The philosopher Theodor Adorno observed that progress, as commonly conceived, tends to obscure the ways in which it is entangled with regression. Every advance in mastery over nature, he argued, is also an advance in mastery over human beings. The tools we invent to liberate ourselves become the instruments of new servitudes. This is not pessimism for its own sake; it is a warning against the complacency that progress narratives encourage.</p>
+<p>A more honest account of progress would be dialectical: it would acknowledge that gains and losses are often inseparable, that the direction of history is contested, and that what counts as improvement depends on values that cannot themselves be derived from empirical observation. Progress, in other words, is not a fact about the world; it is a judgement we make about the world.</p>
+<p>None of this requires us to abandon hope. It asks only that we hold our hopes with the appropriate measure of humility — recognising that the future is not a destination to be reached, but a condition to be negotiated, always imperfectly, always with costs that we may not yet see.</p>
+
+<h3>Перевод</h3>
+<p>Идея прогресса — один из самых соблазнительных нарративов современности. Она обещает, что завтра будет лучше, чем сегодня, что история движется в различимом направлении, и что человеческие усилия, должным образом приложенные, можно рассчитывать, дадут накопительное улучшение. Однако чем дольше исследуешь эту идею, тем больше она кажется не описанием реальности, а мирским символом веры.</p>
+<p>Разумеется, некоторые формы прогресса неоспоримы. Продолжительность жизни резко возросла; грамотность распространилась; болезни, некогда опустошавшие население, в значительной мере сдерживаются. Эти достижения реальны, и их не следует отрицать. Но они также неравномерны, обратимы и во многих случаях сопровождаются издержками, которые не были предусмотрены. Те же технологии, что продлевают жизнь, порождают новые формы отчуждения. Те же системы, что распределяют блага, концентрируют власть.</p>
+<p>Философ Теодор Адорно заметил, что прогресс в его обычном понимании склонен скрывать то, как он переплетён с регрессом. Всякий шаг в овладении природой, утверждал он, есть также шаг в овладении людьми. Инструменты, которые мы изобретаем, чтобы освободить себя, становятся орудиями новых форм зависимости. Это не пессимизм ради пессимизма; это предупреждение против самодовольства, которое поощряют нарративы прогресса.</p>
+<p>Более честный отчёт о прогрессе был бы диалектическим: он признавал бы, что приобретения и потери часто неразделимы, что направление истории оспаривается, и что то, что считается улучшением, зависит от ценностей, которые сами не могут быть выведены из эмпирического наблюдения. Прогресс, иными словами, — не факт о мире; это суждение, которое мы выносим о мире.</p>
+<p>Ничто из этого не требует от нас отказа от надежды. Это просит лишь о том, чтобы мы держали свои надежды с должной мерой смирения — признавая, что будущее — не пункт назначения, которого нужно достичь, а состояние, о котором нужно договариваться, всегда несовершенно, всегда с издержками, которых мы, возможно, ещё не видим.</p>
+
+<h3>Новые слова</h3>
+<table>
+<tr><th>English</th><th>Русский</th></tr>
+<tr><td>seductive</td><td>соблазнительный</td></tr>
+<tr><td>discernible</td><td>различимый</td></tr>
+<tr><td>cumulative</td><td>накопительный</td></tr>
+<tr><td>secular</td><td>светский</td></tr>
+<tr><td>decimate</td><td>опустошать, уничтожать</td></tr>
+<tr><td>reversible</td><td>обратимый</td></tr>
+<tr><td>alienation</td><td>отчуждение</td></tr>
+<tr><td>entangled</td><td>переплетённый</td></tr>
+<tr><td>regression</td><td>регресс</td></tr>
+<tr><td>servitude</td><td>зависимость, рабство</td></tr>
+<tr><td>complacency</td><td>самодовольство, самоуспокоенность</td></tr>
+<tr><td>dialectical</td><td>диалектический</td></tr>
+<tr><td>empirical</td><td>эмпирический</td></tr>
+</table>
+
+<h3>Questions</h3>
+<ol>
+<li>What is the author's initial critique of the idea of progress? → [[it is more faith than fact|it's an article of faith]]</li>
+<li>What undeniable achievements are mentioned? → [[life expectancy, literacy, disease control|life expectancy and literacy]]</li>
+<li>What did Adorno argue? → [[every advance in mastery over nature is also mastery over people|mastery over nature is mastery over people]]</li>
+<li>What does the author mean by "dialectical"? → [[gains and losses are often inseparable|inseparable gains and losses]]</li>
+<li>What does the author ask of us? → [[hold hope with humility|hope with humility]]</li>
+</ol>
+` },
+
+  { id: 1306, level: "A1", category: "listening", topic: "listening-airport-checkin", title: "01. At the Airport Check-in — Регистрация в аэропорту", content: `
+<div class="audio-placeholder" data-audio="listening/a1-airport-checkin.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/a1-airport-checkin.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>Where is the customer flying to?<br>a) Paris<br>b) Rome<br>c) London</li>
+<li>How many bags does the customer check in?<br>a) One<br>b) Two<br>c) Three</li>
+<li>Where would the customer prefer to sit?<br>a) Window<br>b) Aisle<br>c) Doesn't matter</li>
+<li>What time does boarding start?<br>a) 10:15<br>b) 10:30<br>c) 10:45</li>
+<li>What is the gate number?<br>a) 12<br>b) 14<br>c) 18</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The customer is flying to Rome. — True / False</li>
+<li>The customer has two bags. — True / False</li>
+<li>The customer prefers a window seat. — True / False</li>
+<li>Boarding starts at 10:15. — True / False</li>
+<li>The gate number is 14. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Agent:</b> Good morning. May I see your passport, please?</p>
+<p><b>Customer:</b> Yes, here you are.</p>
+<p><b>Agent:</b> Thank you. Where are you flying today?</p>
+<p><b>Customer:</b> To Rome.</p>
+<p><b>Agent:</b> How many bags are you checking in?</p>
+<p><b>Customer:</b> Just one, please.</p>
+<p><b>Agent:</b> Would you like a window or an aisle seat?</p>
+<p><b>Customer:</b> A window seat, please. I like looking outside.</p>
+<p><b>Agent:</b> Of course. Boarding starts at ten thirty, and your gate is fourteen.</p>
+<p><b>Customer:</b> Thanks very much.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-b, 2-a, 3-a, 4-b, 5-b</p>
+<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
+</details>
+` },
+
+  { id: 1307, level: "A1", category: "listening", topic: "listening-hotel-checkin", title: "02. At the Hotel — В гостинице", content: `
+<div class="audio-placeholder" data-audio="listening/a1-hotel-checkin.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/a1-hotel-checkin.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What is the customer's name?<br>a) Mr. Brown<br>b) Mr. Green<br>c) Mr. Smith</li>
+<li>How many nights will the customer stay?<br>a) Two<br>b) Three<br>c) Five</li>
+<li>What time is breakfast?<br>a) From 7 to 9<br>b) From 7 to 10<br>c) From 8 to 10</li>
+<li>What floor is the room on?<br>a) Second<br>b) Third<br>c) Fourth</li>
+<li>What is the Wi-Fi password?<br>a) hotel123<br>b) welcome123<br>c) guest2024</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The customer's name is Mr. Brown. — True / False</li>
+<li>The customer is staying for three nights. — True / False</li>
+<li>Breakfast is from 7 to 10. — True / False</li>
+<li>The room is on the third floor. — True / False</li>
+<li>The Wi-Fi password is hotel123. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Receptionist:</b> Good evening. Do you have a reservation?</p>
+<p><b>Customer:</b> Yes, my name is Mr. Green.</p>
+<p><b>Receptionist:</b> Let me see... Mr. Green, yes. You're staying for three nights.</p>
+<p><b>Customer:</b> That's right. What time is breakfast?</p>
+<p><b>Receptionist:</b> Breakfast is from seven to ten in the restaurant on the ground floor.</p>
+<p><b>Customer:</b> Great. And what floor is my room on?</p>
+<p><b>Receptionist:</b> The third floor, room 312. And the Wi-Fi password is welcome123.</p>
+<p><b>Customer:</b> Thank you very much.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-b, 2-b, 3-b, 4-b, 5-b</p>
+<p><b>Task 2:</b> 1-F, 2-T, 3-T, 4-T, 5-F</p>
+</details>
+` },
+
+  { id: 1308, level: "A1", category: "listening", topic: "listening-weather-forecast", title: "03. Weather Forecast — Прогноз погоды", content: `
+<div class="audio-placeholder" data-audio="listening/a1-weather-forecast.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/a1-weather-forecast.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What is the weather like in the north this morning?<br>a) Sunny<br>b) Rainy<br>c) Cloudy</li>
+<li>What will the temperature be in the south this afternoon?<br>a) 15<br>b) 20<br>c) 25</li>
+<li>When will it rain in the west?<br>a) This morning<br>b) This afternoon<br>c) This evening</li>
+<li>What will the weather be like tomorrow in the east?<br>a) Snowy<br>b) Sunny<br>c) Windy</li>
+<li>What is the announcer's advice?<br>a) Take an umbrella<br>b) Wear a coat<br>c) Stay at home</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>In the north, it's sunny this morning. — True / False</li>
+<li>In the south, the temperature will be 25 degrees. — True / False</li>
+<li>It will rain in the west this evening. — True / False</li>
+<li>In the east, it will snow tomorrow. — True / False</li>
+<li>The announcer says to stay at home. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Announcer:</b> Good morning, and here is today's weather. In the north, it's cloudy this morning, but it will be sunny this afternoon. In the south, it will be very warm — around twenty-five degrees. In the west, it will rain this evening, so take an umbrella if you go out. And tomorrow in the east, we can expect snow. So, keep warm, everyone!</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-c, 2-c, 3-c, 4-a, 5-a</p>
+<p><b>Task 2:</b> 1-F, 2-T, 3-T, 4-T, 5-F</p>
+</details>
+` },
+
+  { id: 1309, level: "A1", category: "listening", topic: "listening-my-weekend", title: "04. My Weekend — Мои выходные", content: `
+<div class="audio-placeholder" data-audio="listening/a1-my-weekend.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/a1-my-weekend.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What does Tom do on Saturday morning?<br>a) Plays football<br>b) Goes shopping<br>c) Visits family</li>
+<li>Who does he visit on Saturday afternoon?<br>a) His parents<br>b) His friends<br>c) His brother</li>
+<li>What does he do on Sunday morning?<br>a) Reads a book<br>b) Cleans the house<br>c) Watches TV</li>
+<li>What sport does he play on Sunday afternoon?<br>a) Tennis<br>b) Football<br>c) Basketball</li>
+<li>What does he do in the evening?<br>a) Cooks dinner<br>b) Goes to bed early<br>c) Watches a film</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>Tom goes shopping with his sister on Saturday morning. — True / False</li>
+<li>Tom's parents live in the city. — True / False</li>
+<li>Tom cleans the house on Sunday morning. — True / False</li>
+<li>Tom plays tennis on Sunday afternoon. — True / False</li>
+<li>Tom cooks dinner and watches a film in the evening. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Tom:</b> Hi, I'm Tom. On Saturday morning, I usually go shopping with my sister. In the afternoon, I visit my parents. They live in the countryside. On Sunday morning, I clean the house, and in the afternoon I play football with my friends. In the evening, I usually cook dinner and watch a film on TV. I love weekends!</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-b, 2-a, 3-b, 4-b, 5-c</p>
+<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
+</details>
+` },
+
+  { id: 1310, level: "A1", category: "listening", topic: "listening-doctor-simple", title: "05. At the Doctor — У врача", content: `
+<div class="audio-placeholder" data-audio="listening/a1-doctor-simple.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/a1-doctor-simple.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What is the patient's problem?<br>a) A headache<br>b) A stomach ache<br>c) A cold</li>
+<li>How long has the patient had the problem?<br>a) One day<br>b) Two days<br>c) Three days</li>
+<li>What does the doctor tell the patient to do?<br>a) Stay in bed<br>b) Drink coffee<br>c) Go to work</li>
+<li>How often should the patient take the medicine?<br>a) Once a day<br>b) Twice a day<br>c) Three times a day</li>
+<li>When should the patient come back?<br>a) In one day<br>b) In three days<br>c) In a week</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The patient has a cold. — True / False</li>
+<li>The patient has had symptoms for two days. — True / False</li>
+<li>The doctor tells the patient to drink coffee. — True / False</li>
+<li>The medicine should be taken twice a day. — True / False</li>
+<li>The patient should come back in one week. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Doctor:</b> Good morning. What's the problem?</p>
+<p><b>Patient:</b> I have a bad cold.</p>
+<p><b>Doctor:</b> How long have you had it?</p>
+<p><b>Patient:</b> For two days.</p>
+<p><b>Doctor:</b> You should stay in bed and drink lots of tea. And take this medicine twice a day.</p>
+<p><b>Patient:</b> OK, thank you.</p>
+<p><b>Doctor:</b> Come back in three days if you don't feel better.</p>
+<p><b>Patient:</b> Alright, thank you, doctor.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-c, 2-b, 3-a, 4-b, 5-b</p>
+<p><b>Task 2:</b> 1-T, 2-T, 3-F, 4-T, 5-F</p>
+</details>
+` },
+
+  { id: 1406, level: "A2", category: "listening", topic: "listening-flat-viewing", title: "01. Viewing a Flat — Осмотр квартиры", content: `
+<div class="audio-placeholder" data-audio="listening/a2-flat-viewing.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/a2-flat-viewing.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>Where is the flat located?<br>a) In the city centre<br>b) In the suburbs<br>c) Near the park</li>
+<li>How much is the monthly rent?<br>a) £600<br>b) £700<br>c) £800</li>
+<li>How many bedrooms does the flat have?<br>a) One<br>b) Two<br>c) Three</li>
+<li>What is NOT included in the rent?<br>a) Water<br>b) Heating<br>c) Internet</li>
+<li>When can the tenant move in?<br>a) This weekend<br>b) Next month<br>c) In two weeks</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The flat is in the city centre. — True / False</li>
+<li>The monthly rent is £700. — True / False</li>
+<li>The flat has two bedrooms. — True / False</li>
+<li>Internet is included in the rent. — True / False</li>
+<li>The tenant can move in next month. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Agent:</b> Good afternoon. Thanks for coming to see the flat.</p>
+<p><b>Tenant:</b> Thank you. Can you tell me a bit about it?</p>
+<p><b>Agent:</b> Of course. It's in the suburbs, about fifteen minutes from the city centre by bus. The rent is seven hundred pounds a month.</p>
+<p><b>Tenant:</b> How many bedrooms are there?</p>
+<p><b>Agent:</b> Two bedrooms, a large living room, and a modern kitchen.</p>
+<p><b>Tenant:</b> That sounds good. What's included in the rent?</p>
+<p><b>Agent:</b> Water and heating are included, but internet is not — you'd need to set that up yourself.</p>
+<p><b>Tenant:</b> OK. And when can I move in?</p>
+<p><b>Agent:</b> From next month, the first of the month.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-b, 2-b, 3-b, 4-c, 5-b</p>
+<p><b>Task 2:</b> 1-F, 2-T, 3-T, 4-F, 5-T</p>
+</details>
+` },
+
+  { id: 1407, level: "A2", category: "listening", topic: "listening-cinema-tickets", title: "02. At the Cinema — В кино", content: `
+<div class="audio-placeholder" data-audio="listening/a2-cinema-tickets.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/a2-cinema-tickets.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What type of film does the customer want to see?<br>a) A comedy<br>b) A thriller<br>c) A documentary</li>
+<li>What time does the film start?<br>a) 6:15<br>b) 7:30<br>c) 8:00</li>
+<li>How many tickets does the customer buy?<br>a) One<br>b) Two<br>c) Three</li>
+<li>How much do the tickets cost in total?<br>a) £12<br>b) £16<br>c) £20</li>
+<li>Where are the seats?<br>a) In the front row<br>b) In the middle<br>c) At the back</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The customer wants to see a thriller. — True / False</li>
+<li>The film starts at 6:15. — True / False</li>
+<li>The customer buys two tickets. — True / False</li>
+<li>The total cost is £20. — True / False</li>
+<li>The seats are in the middle of the cinema. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Cashier:</b> Hi, what can I get you?</p>
+<p><b>Customer:</b> Two tickets for the thriller, please. What time does it start?</p>
+<p><b>Cashier:</b> It starts at half past seven.</p>
+<p><b>Customer:</b> Great. And how much is it?</p>
+<p><b>Cashier:</b> That's eight pounds per ticket — sixteen pounds in total.</p>
+<p><b>Customer:</b> Here you are. Where are the seats?</p>
+<p><b>Cashier:</b> Middle of the cinema, row G. Enjoy the film!</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-b, 2-b, 3-b, 4-b, 5-b</p>
+<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
+</details>
+` },
+
+  { id: 1408, level: "A2", category: "listening", topic: "listening-phone-friend", title: "03. A Phone Call — Звонок другу", content: `
+<div class="audio-placeholder" data-audio="listening/a2-phone-call.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/a2-phone-call.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>Why is Anna calling?<br>a) To invite Ben to dinner<br>b) To cancel a plan<br>c) To ask for help</li>
+<li>Why can't Ben come tonight?<br>a) He's working late<br>b) He's ill<br>c) He's on holiday</li>
+<li>What day is the new arrangement?<br>a) Friday<br>b) Saturday<br>c) Sunday</li>
+<li>What time does Anna suggest?<br>a) Six o'clock<br>b) Seven o'clock<br>c) Eight o'clock</li>
+<li>Where will they meet?<br>a) At the restaurant<br>b) At Anna's house<br>c) At the cinema</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>Anna is inviting Ben for dinner. — True / False</li>
+<li>Ben can come this evening. — True / False</li>
+<li>They agree to meet on Saturday. — True / False</li>
+<li>Ben suggests eight o'clock. — True / False</li>
+<li>They will meet at the restaurant. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Anna:</b> Hi Ben, it's Anna. Are you free this evening?</p>
+<p><b>Ben:</b> Hi Anna! I'm sorry, I can't come tonight. I have to work late.</p>
+<p><b>Anna:</b> Oh no! Would Saturday work instead?</p>
+<p><b>Ben:</b> Yes, Saturday is fine. What time?</p>
+<p><b>Anna:</b> How about seven o'clock at the Italian restaurant near the park?</p>
+<p><b>Ben:</b> Perfect. See you Saturday at seven. Bye!</p>
+<p><b>Anna:</b> Bye!</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-a, 2-a, 3-b, 4-b, 5-a</p>
+<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
+</details>
+` },
+
+  { id: 1409, level: "A2", category: "listening", topic: "listening-gym", title: "04. At the Gym — В спортзале", content: `
+<div class="audio-placeholder" data-audio="listening/a2-gym.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/a2-gym.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What does the visitor want?<br>a) A one-day pass<br>b) A monthly membership<br>c) A personal trainer</li>
+<li>How much is the monthly membership?<br>a) £20<br>b) £30<br>c) £45</li>
+<li>Which facilities are included?<br>a) Gym only<br>b) Gym, pool and sauna<br>c) Pool and sauna</li>
+<li>When does the gym open?<br>a) 6 AM<br>b) 7 AM<br>c) 8 AM</li>
+<li>What does the receptionist offer to show first?<br>a) The gym<br>b) The sauna<br>c) The changing rooms</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The visitor wants to join the gym. — True / False</li>
+<li>The monthly membership is £20. — True / False</li>
+<li>The membership includes the pool and sauna. — True / False</li>
+<li>The gym opens at 7 AM. — True / False</li>
+<li>The receptionist offers to show the gym. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Receptionist:</b> Good morning! Is this your first time at our gym?</p>
+<p><b>Visitor:</b> Yes, I'm thinking of joining. How much is a monthly membership?</p>
+<p><b>Receptionist:</b> It's thirty pounds a month. That includes the gym, the pool and the sauna.</p>
+<p><b>Visitor:</b> That's great. What time do you open?</p>
+<p><b>Receptionist:</b> We open at six in the morning and close at ten at night.</p>
+<p><b>Visitor:</b> Perfect. Can I have a look around?</p>
+<p><b>Receptionist:</b> Of course! Let me show you the gym first.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-b, 2-b, 3-b, 4-a, 5-a</p>
+<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
+</details>
+` },
+
+  { id: 1410, level: "A2", category: "listening", topic: "listening-taxi-booking", title: "05. Booking a Taxi — Заказ такси", content: `
+<div class="audio-placeholder" data-audio="listening/a2-taxi-booking.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/a2-taxi-booking.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>Where is the customer going?<br>a) To the airport<br>b) To the train station<br>c) To a hotel</li>
+<li>When does the customer want the taxi?<br>a) At 5:00<br>b) At 5:30<br>c) At 6:00</li>
+<li>How many people are travelling?<br>a) One<br>b) Two<br>c) Three</li>
+<li>How much luggage does the customer have?<br>a) No luggage<br>b) Two large bags<br>c) Three bags</li>
+<li>How will the customer pay?<br>a) By card<br>b) In cash<br>c) Online</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The customer is going to the airport. — True / False</li>
+<li>The taxi is booked for 5:30 AM. — True / False</li>
+<li>There are two passengers. — True / False</li>
+<li>The customer has two large bags. — True / False</li>
+<li>The customer will pay in cash. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Operator:</b> Good evening, City Taxi. How can I help?</p>
+<p><b>Customer:</b> Hi, I'd like to book a taxi to the airport, please.</p>
+<p><b>Operator:</b> Certainly. What time would you like it?</p>
+<p><b>Customer:</b> At five o'clock tomorrow morning. My flight is at seven.</p>
+<p><b>Operator:</b> And how many passengers?</p>
+<p><b>Customer:</b> Two adults. And we have two large bags.</p>
+<p><b>Operator:</b> No problem. We'll send a bigger car. How would you like to pay?</p>
+<p><b>Customer:</b> By card, please.</p>
+<p><b>Operator:</b> Great. See you tomorrow at five.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-a, 2-a, 3-b, 4-b, 5-a</p>
+<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-T, 5-F</p>
+</details>
+` },
+
+  { id: 2306, level: "B1", category: "listening", topic: "listening-library-join", title: "01. Joining the Library — Запись в библиотеку", content: `
+<div class="audio-placeholder" data-audio="listening/b1-library-join.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/b1-library-join.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What does the visitor want to do?<br>a) Borrow books<br>b) Join the library<br>c) Return a book</li>
+<li>What document is required?<br>a) A passport<br>b) A student card<br>c) Proof of address</li>
+<li>How many books can a member borrow at once?<br>a) Three<br>b) Five<br>c) Ten</li>
+<li>How long can a book be kept?<br>a) Two weeks<br>b) Three weeks<br>c) One month</li>
+<li>What happens if a book is returned late?<br>a) A fine is charged<br>b) The card is cancelled<br>c) Nothing happens</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The visitor wants to join the library. — True / False</li>
+<li>A passport is required to join. — True / False</li>
+<li>Members can borrow up to five books at once. — True / False</li>
+<li>Books can be kept for two weeks. — True / False</li>
+<li>There is a fine for late returns. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Librarian:</b> Good morning! Can I help you?</p>
+<p><b>Visitor:</b> Yes, I'd like to join the library, please.</p>
+<p><b>Librarian:</b> Certainly. I just need a document that proves your address — a utility bill or a bank statement will do.</p>
+<p><b>Visitor:</b> I have a bank statement here. How many books can I borrow at once?</p>
+<p><b>Librarian:</b> Up to five books at a time, and you can keep each one for three weeks.</p>
+<p><b>Visitor:</b> Great. And what happens if I return a book late?</p>
+<p><b>Librarian:</b> There's a small fine — twenty pence per day. But if you renew online before the due date, there's no charge.</p>
+<p><b>Visitor:</b> Perfect, thank you very much.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-b, 2-c, 3-b, 4-b, 5-a</p>
+<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
+</details>
+` },
+
+  { id: 2307, level: "B1", category: "listening", topic: "listening-lost-property", title: "02. Lost Property Office — Бюро находок", content: `
+<div class="audio-placeholder" data-audio="listening/b1-lost-property.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/b1-lost-property.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What did the passenger lose?<br>a) A suitcase<br>b) A backpack<br>c) A handbag</li>
+<li>Where did they leave it?<br>a) On the bus<br>b) On the train<br>c) At the station</li>
+<li>What colour was the bag?<br>a) Black<br>b) Blue<br>c) Brown</li>
+<li>What was inside the bag?<br>a) A laptop<br>b) A passport<br>c) A camera</li>
+<li>What does the officer ask the passenger to do?<br>a) Fill in a form<br>b) Come back tomorrow<br>c) Pay a fee</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The passenger lost a backpack. — True / False</li>
+<li>The bag was left on the bus. — True / False</li>
+<li>The bag is black with a red logo. — True / False</li>
+<li>The passenger's passport was in the bag. — True / False</li>
+<li>The passenger needs to fill in a form. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Officer:</b> Good afternoon. What can I do for you?</p>
+<p><b>Passenger:</b> Hi, I think I left my backpack on the train this morning.</p>
+<p><b>Officer:</b> Can you describe it?</p>
+<p><b>Passenger:</b> Yes, it's black, medium-sized, with a red logo on the front.</p>
+<p><b>Officer:</b> And what was inside?</p>
+<p><b>Passenger:</b> My laptop and some books. No passport, thank goodness.</p>
+<p><b>Officer:</b> OK. Could you fill in this form with your details and a description of the bag? We'll call you if we find it.</p>
+<p><b>Passenger:</b> Of course. Thank you so much.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-b, 2-b, 3-a, 4-a, 5-a</p>
+<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
+</details>
+` },
+
+  { id: 2308, level: "B1", category: "listening", topic: "listening-university-open-day", title: "03. University Open Day — День открытых дверей", content: `
+<div class="audio-placeholder" data-audio="listening/b1-university-open-day.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/b1-university-open-day.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What is the student interested in studying?<br>a) Engineering<br>b) Business<br>c) Psychology</li>
+<li>What does the university offer for international students?<br>a) A scholarship<br>b) Free accommodation<br>c) Language support courses</li>
+<li>What is the entry requirement?<br>a) IELTS 6.0<br>b) IELTS 6.5<br>c) IELTS 7.0</li>
+<li>When does the course start?<br>a) September<br>b) October<br>c) January</li>
+<li>What does the student want to do next?<br>a) Take an entrance exam<br>b) Visit the campus<br>c) Meet a professor</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The student is interested in business. — True / False</li>
+<li>The university offers free accommodation for international students. — True / False</li>
+<li>The entry requirement is IELTS 6.5. — True / False</li>
+<li>The course starts in September. — True / False</li>
+<li>The student wants to visit the campus. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Advisor:</b> Welcome to our open day! What would you like to study?</p>
+<p><b>Student:</b> I'm interested in business, and I'd like to know more about your international programmes.</p>
+<p><b>Advisor:</b> Our business course is very popular. For international students, we offer language support courses during the first term.</p>
+<p><b>Student:</b> What are the entry requirements?</p>
+<p><b>Advisor:</b> You need IELTS 6.5 overall. The course starts in October, so there's plenty of time to prepare.</p>
+<p><b>Student:</b> Could I visit the campus? I'd like to see the business building and the library.</p>
+<p><b>Advisor:</b> Absolutely. I'll arrange a tour for you at two o'clock.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-b, 2-c, 3-b, 4-b, 5-b</p>
+<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
+</details>
+` },
+
+  { id: 2309, level: "B1", category: "listening", topic: "listening-doctor-followup", title: "04. Medical Follow-up — Повторный приём у врача", content: `
+<div class="audio-placeholder" data-audio="listening/b1-doctor-followup.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/b1-doctor-followup.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What was the original problem?<br>a) A back injury<br>b) A skin allergy<br>c) High blood pressure</li>
+<li>How does the patient feel now?<br>a) Much better<br>b) The same<br>c) Worse</li>
+<li>What exercise does the patient do?<br>a) Swimming<br>b) Daily walks<br>c) Cycling</li>
+<li>What should the patient reduce?<br>a) Coffee<br>b) Salt<br>c) Exercise</li>
+<li>When is the next appointment?<br>a) In two weeks<br>b) In one month<br>c) In three months</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The original problem was high blood pressure. — True / False</li>
+<li>The patient feels worse now. — True / False</li>
+<li>The patient is walking daily. — True / False</li>
+<li>The doctor recommends reducing salt. — True / False</li>
+<li>The next appointment is in three months. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Doctor:</b> Good morning. How have you been since your last visit?</p>
+<p><b>Patient:</b> Much better, actually. The medication seems to be working. My blood pressure is lower.</p>
+<p><b>Doctor:</b> That's excellent news. Are you still doing the daily walks I recommended?</p>
+<p><b>Patient:</b> Yes, thirty minutes every morning.</p>
+<p><b>Doctor:</b> Perfect. Keep that up. And try to reduce salt in your diet — that makes a real difference.</p>
+<p><b>Patient:</b> I'll do my best. And should I keep taking the tablets?</p>
+<p><b>Doctor:</b> Yes, continue with the same dose. Let's have another check-up in one month.</p>
+<p><b>Patient:</b> OK. Thank you, doctor.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-c, 2-a, 3-b, 4-b, 5-b</p>
+<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-T, 5-F</p>
+</details>
+` },
+
+  { id: 2310, level: "B1", category: "listening", topic: "listening-returning-product", title: "05. Returning a Faulty Product — Возврат товара", content: `
+<div class="audio-placeholder" data-audio="listening/b1-returning-product.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/b1-returning-product.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What did the customer buy?<br>a) Headphones<br>b) A laptop<br>c) A phone</li>
+<li>What is the problem?<br>a) The screen is broken<br>b) The sound doesn't work<br>c) The battery is dead</li>
+<li>When did the customer buy it?<br>a) Yesterday<br>b) Last week<br>c) Last month</li>
+<li>Where is the receipt?<br>a) On paper<br>b) At home<br>c) On their phone</li>
+<li>What does the customer choose?<br>a) A full refund<br>b) A repair<br>c) An exchange</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The customer bought headphones. — True / False</li>
+<li>Only one side of the headphones works. — True / False</li>
+<li>The customer bought them last month. — True / False</li>
+<li>The customer has a paper receipt. — True / False</li>
+<li>The customer chooses an exchange. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Assistant:</b> Good morning. How can I help?</p>
+<p><b>Customer:</b> I bought these headphones here last week, and they've stopped working. Only one side plays sound.</p>
+<p><b>Assistant:</b> I'm sorry to hear that. Do you have the receipt?</p>
+<p><b>Customer:</b> Yes, it's on my phone. Here it is.</p>
+<p><b>Assistant:</b> Thank you. Since they're faulty, you can have a refund or an exchange.</p>
+<p><b>Customer:</b> I'd prefer an exchange, actually — if you have the same model in black.</p>
+<p><b>Assistant:</b> Let me check the stock. Yes, we have one. I'll get it for you now.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-a, 2-b, 3-b, 4-c, 5-c</p>
+<p><b>Task 2:</b> 1-T, 2-T, 3-F, 4-F, 5-T</p>
+</details>
+` },
+
+  { id: 3306, level: "B2", category: "listening", topic: "listening-job-offer", title: "01. Negotiating a Job Offer — Переговоры о работе", content: `
+<div class="audio-placeholder" data-audio="listening/b2-job-offer.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/b2-job-offer.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What is the candidate mainly concerned about?<br>a) The starting salary<br>b) The holiday allowance<br>c) The job location</li>
+<li>What is the company's initial offer?<br>a) £40,000<br>b) £42,000<br>c) £45,000</li>
+<li>What does the candidate reference as leverage?<br>a) A competing offer<br>b) Extensive experience<br>c) A personal connection</li>
+<li>What does the company offer instead of a higher salary?<br>a) A one-off bonus<br>b) Extra holiday<br>c) Flexible working</li>
+<li>What does the candidate decide to do?<br>a) Accept the offer<br>b) Reject the offer<br>c) Ask for time to think</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The company initially offers £42,000. — True / False</li>
+<li>The candidate wants £45,000. — True / False</li>
+<li>The company offers a higher salary than requested. — True / False</li>
+<li>The company offers flexible working after probation. — True / False</li>
+<li>The candidate accepts immediately. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>HR Manager:</b> We're delighted to offer you the position. The starting salary is forty-two thousand pounds.</p>
+<p><b>Candidate:</b> Thank you. I'm very interested, but I was hoping for something closer to forty-five thousand, given my experience.</p>
+<p><b>HR Manager:</b> I appreciate that. Unfortunately, forty-two is the top of the band for this role. That said, we could offer a one-off signing bonus of three thousand pounds, and flexible working after the probation period.</p>
+<p><b>Candidate:</b> That's a good offer. Could I have a couple of days to think about it and come back to you?</p>
+<p><b>HR Manager:</b> Of course. Take until Friday — but I'd encourage you to make a decision soon.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-a, 2-b, 3-b, 4-a, 5-c</p>
+<p><b>Task 2:</b> 1-T, 2-T, 3-F, 4-T, 5-F</p>
+</details>
+` },
+
+  { id: 3307, level: "B2", category: "listening", topic: "listening-remote-learning", title: "02. Debating Remote Learning — Дебаты об онлайн-обучении", content: `
+<div class="audio-placeholder" data-audio="listening/b2-remote-learning.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/b2-remote-learning.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What is the main topic of the debate?<br>a) School uniforms<br>b) Online learning<br>c) Exam reform</li>
+<li>What does Sarah say about remote learning?<br>a) It is always effective<br>b) It cannot replace face-to-face teaching<br>c) It is cheaper for schools</li>
+<li>What does James argue?<br>a) Online learning should replace classrooms<br>b) A hybrid model is needed<br>c) Remote learning should be abolished</li>
+<li>What does Sarah suggest should happen?<br>a) A hybrid model<br>b) A full return to in-person<br>c) A complete switch to online</li>
+<li>What do both speakers agree on?<br>a) Technology is useless<br>b) Teachers are essential<br>c) The debate is pointless</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>Sarah is sceptical about remote learning. — True / False</li>
+<li>Sarah argues remote learning completely failed. — True / False</li>
+<li>James supports a hybrid model. — True / False</li>
+<li>Both speakers agree teachers are essential. — True / False</li>
+<li>Sarah wants to abolish remote learning entirely. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Moderator:</b> Tonight's debate: is remote learning here to stay? Sarah, you're sceptical.</p>
+<p><b>Sarah:</b> Very sceptical. Yes, technology made it possible to continue during the pandemic, but we've seen the damage. Students miss the social dimension of learning, teachers can't easily spot confusion, and results suffered. Remote learning can complement the classroom, but it cannot replace it.</p>
+<p><b>Moderator:</b> And James, you take a different view?</p>
+<p><b>James:</b> I do. Look, for students in rural areas or with caring responsibilities, remote learning is a lifeline. It's not about replacing teachers — it's about reaching people who would otherwise be excluded. What we need is a hybrid model, thoughtfully implemented.</p>
+<p><b>Sarah:</b> I'd agree with that. My concern is when it's used as a cost-cutting measure, replacing real human interaction.</p>
+<p><b>James:</b> On that, we completely agree.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-b, 2-b, 3-b, 4-a, 5-b</p>
+<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-T, 5-F</p>
+</details>
+` },
+
+  { id: 3308, level: "B2", category: "listening", topic: "listening-customs", title: "03. At Customs — На таможне", content: `
+<div class="audio-placeholder" data-audio="listening/b2-customs.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/b2-customs.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>Where has the traveller come from?<br>a) Spain<br>b) France<br>c) Italy</li>
+<li>What is the purpose of the trip?<br>a) Business<br>b) Tourism<br>c) Study</li>
+<li>How long will the traveller stay?<br>a) One week<br>b) Two weeks<br>c) One month</li>
+<li>What is the traveller carrying?<br>a) Only clothes<br>b) Some gifts for friends<br>c) Commercial samples</li>
+<li>What does the officer ask the traveller to do?<br>a) Pay a fine<br>b) Open the suitcase<br>c) Return to customs</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The traveller is from Barcelona. — True / False</li>
+<li>The traveller is on business. — True / False</li>
+<li>The traveller is staying for one month. — True / False</li>
+<li>The traveller has gifts for friends. — True / False</li>
+<li>The officer asks the traveller to open the suitcase. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Officer:</b> Good afternoon. Passport, please. Where have you come from today?</p>
+<p><b>Traveller:</b> From Barcelona. I flew in this morning.</p>
+<p><b>Officer:</b> And what's the purpose of your visit?</p>
+<p><b>Traveller:</b> Tourism. I'm here for two weeks — I want to see the museums and the countryside.</p>
+<p><b>Officer:</b> Very good. Are you carrying any goods to declare? Anything for business, or over the duty-free limits?</p>
+<p><b>Traveller:</b> No, just clothes and a few small gifts for friends.</p>
+<p><b>Officer:</b> Could you open your suitcase, please? Just a routine check.</p>
+<p><b>Traveller:</b> Of course. Here you are.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-a, 2-b, 3-b, 4-b, 5-b</p>
+<p><b>Task 2:</b> 1-T, 2-F, 3-F, 4-T, 5-T</p>
+</details>
+` },
+
+  { id: 3309, level: "B2", category: "listening", topic: "listening-documentary", title: "04. Discussing a Documentary — Обсуждаем документальный фильм", content: `
+<div class="audio-placeholder" data-audio="listening/b2-documentary.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/b2-documentary.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What is the documentary about?<br>a) The Amazon rainforest<br>b) The Great Barrier Reef<br>c) Mount Everest</li>
+<li>What did the speakers disagree on?<br>a) The cinematography<br>b) The scientific depth<br>c) The narration</li>
+<li>Why was Ben disappointed?<br>a) The documentary was too short<br>b) The scientific content was shallow<br>c) The film was boring</li>
+<li>What did Anna appreciate?<br>a) The drone footage<br>b) The interviews with scientists<br>c) The soundtrack</li>
+<li>What did they agree on?<br>a) That it was a masterpiece<br>b) That it was worth watching<br>c) That it should be longer</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The documentary is about the Great Barrier Reef. — True / False</li>
+<li>Ben was disappointed by the scientific content. — True / False</li>
+<li>Anna thought the documentary was a masterpiece. — True / False</li>
+<li>Ben appreciated the cinematography. — True / False</li>
+<li>Both agree the documentary is worth watching. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Anna:</b> So, what did you think of the documentary?</p>
+<p><b>Ben:</b> Honestly, I was a bit disappointed. The cinematography is stunning — those drone shots of the reef are incredible — but the scientific content is very shallow. It feels more like entertainment than education.</p>
+<p><b>Anna:</b> I see what you mean, but I thought the interviews with the marine biologists were well done. It's clearly aimed at a general audience, not specialists.</p>
+<p><b>Ben:</b> Fair enough. I suppose for someone who doesn't know much about coral bleaching, it's a useful introduction. I just wanted more depth.</p>
+<p><b>Anna:</b> Well, on that we agree — it's a good starting point, but it's not going to satisfy someone with a scientific background.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-b, 2-b, 3-b, 4-b, 5-b</p>
+<p><b>Task 2:</b> 1-T, 2-T, 3-F, 4-T, 5-T</p>
+</details>
+` },
+
+  { id: 3310, level: "B2", category: "listening", topic: "listening-medical-consultation", title: "05. A Medical Consultation — Медицинская консультация", content: `
+<div class="audio-placeholder" data-audio="listening/b2-medical-consultation.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/b2-medical-consultation.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What is the patient's main symptom?<br>a) Dizziness<br>b) Chest pain<br>c) Nausea</li>
+<li>When does the symptom occur?<br>a) At night<br>b) In the mornings<br>c) After eating</li>
+<li>What does the patient consume too much of?<br>a) Meat and salt<br>b) Sugar and coffee<br>c) Fruit and vegetables</li>
+<li>What does the doctor recommend first?<br>a) Medication<br>b) Diet changes<br>c) Surgery</li>
+<li>What test does the doctor suggest?<br>a) A blood test<br>b) An X-ray<br>c) An MRI</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The patient has chest pain in the mornings. — True / False</li>
+<li>The patient also has shortness of breath. — True / False</li>
+<li>The patient eats a lot of salt. — True / False</li>
+<li>The doctor prescribes medication immediately. — True / False</li>
+<li>The doctor recommends a blood test. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Doctor:</b> Come in, have a seat. What brings you here today?</p>
+<p><b>Patient:</b> I've been having chest pain in the mornings. It usually starts when I get up.</p>
+<p><b>Doctor:</b> Any other symptoms? Shortness of breath, dizziness?</p>
+<p><b>Patient:</b> No, just the pain. It goes away after an hour or so.</p>
+<p><b>Doctor:</b> I see. Can you tell me about your diet?</p>
+<p><b>Patient:</b> I eat a lot of meat, and I suppose I add quite a lot of salt to my food.</p>
+<p><b>Doctor:</b> That's likely a contributing factor. Before we consider medication, I'd like you to try reducing salt and saturated fat. And let's do a blood test to check your cholesterol.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-b, 2-b, 3-a, 4-b, 5-a</p>
+<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
+</details>
+` },
+
+  { id: 4306, level: "C1", category: "listening", topic: "listening-urban-loneliness", title: "01. Urban Loneliness — Городское одиночество", content: `
+<div class="audio-placeholder" data-audio="listening/c1-urban-loneliness.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/c1-urban-loneliness.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What paradox does the guest identify?<br>a) Cities are crowded, yet people feel isolated<br>b) People avoid each other on purpose<br>c) Loneliness is a rural problem</li>
+<li>What does the guest say about modern architecture?<br>a) It encourages community<br>b) It can isolate residents<br>c) It is irrelevant to loneliness</li>
+<li>What does the guest suggest would help?<br>a) Shared public spaces<br>b) Cheaper housing<br>c) Fewer skyscrapers</li>
+<li>What is the host's response?<br>a) Agreement<br>b) Scepticism<br>c) Indifference</li>
+<li>What example does the guest give?<br>a) Barcelona's superblocks<br>b) Tokyo's capsule hotels<br>c) New York's high-rises</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The guest argues urban loneliness is structural. — True / False</li>
+<li>The host fully agrees with the guest. — True / False</li>
+<li>The guest cites Barcelona's superblocks as an example. — True / False</li>
+<li>The guest thinks modern cities encourage community contact. — True / False</li>
+<li>The guest believes the principle can be adapted to different cities. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Host:</b> Loneliness is often framed as an individual problem. You argue it's structural.</p>
+<p><b>Guest:</b> Precisely. Cities are the greatest concentration of human beings in history, yet an astonishing proportion of urban residents report chronic loneliness. That's the paradox. The infrastructure we've built — high-rise apartments, private transport, anonymous commercial spaces — actively discourages casual contact.</p>
+<p><b>Host:</b> But isn't that a romanticisation of the past? Villages had their own forms of isolation.</p>
+<p><b>Guest:</b> I'd push back on that. It's not about romanticising anything. It's about asking what kinds of environments make community possible. Barcelona's superblocks — where traffic is restricted and streets are reclaimed for pedestrians — have measurably strengthened neighbourhood ties. That's not nostalgia, it's urban design.</p>
+<p><b>Host:</b> And do you think that's transferable?</p>
+<p><b>Guest:</b> The principle is. The specific interventions have to be adapted to each city. But the underlying logic — that shared public space creates opportunities for unplanned interaction — is universal.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-a, 2-b, 3-a, 4-b, 5-a</p>
+<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
+</details>
+` },
+
+  { id: 4307, level: "C1", category: "listening", topic: "listening-homework-debate", title: "02. Debate on Homework — Дебаты о домашних заданиях", content: `
+<div class="audio-placeholder" data-audio="listening/c1-homework-debate.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/c1-homework-debate.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What is the first speaker's position?<br>a) Homework is essential<br>b) Homework is largely counterproductive<br>c) Homework should be doubled</li>
+<li>What evidence does the first speaker cite?<br>a) Studies showing no clear benefit for younger pupils<br>b) Economic data<br>c) Parent surveys</li>
+<li>What does the second speaker argue?<br>a) Homework should be abolished completely<br>b) Meaningful assignments build independence<br>c) Students should choose their own homework</li>
+<li>What compromise is proposed?<br>a) A complete ban<br>b) Fewer, more meaningful assignments<br>c) Only weekend homework</li>
+<li>What do both agree on?<br>a) That homework is useless<br>b) That the quality of homework matters<br>c) That teachers assign too little</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The first speaker argues homework is counterproductive for primary children. — True / False</li>
+<li>The first speaker wants to abolish homework for all ages. — True / False</li>
+<li>The second speaker agrees that quantity matters. — True / False</li>
+<li>Both speakers think quality matters. — True / False</li>
+<li>The second speaker wants to triple homework. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Debater 1:</b> My position is straightforward: for primary-school children, homework is largely counterproductive. The research is fairly consistent — there's no clear academic benefit, and there's often a real cost in terms of free play, family time and, frankly, stress.</p>
+<p><b>Debater 2:</b> I understand the concern, but I think we're conflating quantity with quality. Yes, twenty maths problems every night is unhelpful. But a single thoughtful assignment — reading a chapter, preparing a question — can build independence and consolidate learning.</p>
+<p><b>Debater 1:</b> I'd agree that quality matters enormously. My objection is to the ritual, the assumption that more is better. If homework is going to exist at all, it should be limited, meaningful and never a punishment.</p>
+<p><b>Debater 2:</b> On that, we're aligned. The problem isn't homework per se, it's the way it's designed and the way it's assessed.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-b, 2-a, 3-b, 4-b, 5-b</p>
+<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-T, 5-F</p>
+</details>
+` },
+
+  { id: 4308, level: "C1", category: "listening", topic: "listening-intellectual-property", title: "03. Intellectual Property — Интеллектуальная собственность", content: `
+<div class="audio-placeholder" data-audio="listening/c1-intellectual-property.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/c1-intellectual-property.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What does the first speaker argue about current IP law?<br>a) It protects creators well<br>b) It has become excessively restrictive<br>c) It should be abolished entirely</li>
+<li>What example does the first speaker give?<br>a) Pharmaceuticals and software patents<br>b) Music streaming<br>c) Books</li>
+<li>What does the second speaker argue?<br>a) Creators need protection to survive<br>b) IP law is irrelevant<br>c) Copyright should be unlimited</li>
+<li>What compromise does the first speaker suggest?<br>a) A two-tier system<br>b) Shorter, renewable terms<br>c) No copyright at all</li>
+<li>What does the second speaker concede?<br>a) That copyright terms may be too long<br>b) That creators earn too much<br>c) That all IP should be abolished</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The first speaker wants to abolish IP law entirely. — True / False</li>
+<li>The first speaker cites pharmaceuticals and software patents as examples. — True / False</li>
+<li>The second speaker argues that strong IP protection is necessary for creators. — True / False</li>
+<li>The first speaker proposes shorter, renewable terms. — True / False</li>
+<li>The second speaker completely rejects any reform. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>First speaker:</b> My argument is that intellectual property law, as it currently stands, has drifted far from its original purpose. It was meant to incentivise creativity, but today it functions largely as a tool for entrenching market power. Consider pharmaceuticals and software patents: the terms are so long that innovation is actively stifled.</p>
+<p><b>Second speaker:</b> I'd push back on that. Without strong protection, creators — writers, musicians, small studios — simply cannot survive. The market rewards those who can afford to give their work away.</p>
+<p><b>First speaker:</b> I'm not suggesting abolition. I'm suggesting reform. Shorter terms, renewable in exchange for genuine use, and broader exemptions for education and research.</p>
+<p><b>Second speaker:</b> I'd accept that the terms may be excessive in some areas. But we should be careful — every exception you carve out is a hole through which creators fall.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-b, 2-a, 3-a, 4-b, 5-a</p>
+<p><b>Task 2:</b> 1-F, 2-T, 3-T, 4-T, 5-F</p>
+</details>
+` },
+
+  { id: 4309, level: "C1", category: "listening", topic: "listening-conference-qa", title: "04. Conference Q&A — Вопросы на конференции", content: `
+<div class="audio-placeholder" data-audio="listening/c1-conference-qa.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/c1-conference-qa.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What was the presenter's main claim?<br>a) The data clearly support the hypothesis<br>b) The data are inconclusive<br>c) The data are irrelevant</li>
+<li>What was the questioner's main concern?<br>a) The methodology<br>b) The sample size<br>c) The interpretation of results</li>
+<li>What did the presenter concede?<br>a) That the sample was small<br>b) That the analysis may need revising<br>c) That the hypothesis was wrong</li>
+<li>What future work does the presenter propose?<br>a) A larger replication study<br>b) A different methodology<br>c) Ending the project</li>
+<li>What was the tone of the exchange?<br>a) Hostile<br>b) Collegial but rigorous<br>c) Dismissive</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The presenter claimed the data clearly support the hypothesis. — True / False</li>
+<li>The questioner thought the sample was too small. — True / False</li>
+<li>The presenter completely rejected the criticism. — True / False</li>
+<li>The presenter plans a larger replication study. — True / False</li>
+<li>The exchange was hostile. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Questioner:</b> Thank you for the presentation. Your claim is that the data clearly support the hypothesis, but I'm not convinced. The sample is small and the confidence intervals overlap considerably.</p>
+<p><b>Presenter:</b> I appreciate the challenge. You're right that the sample is modest, and I should be more cautious in my language. I'd say the data are suggestive, not conclusive.</p>
+<p><b>Questioner:</b> Would you agree that a replication study is warranted before any strong claims are made?</p>
+<p><b>Presenter:</b> Absolutely. In fact, I'm planning a larger study for next year. The methodology will be similar, but with a much broader sample.</p>
+<p><b>Questioner:</b> That's reassuring. I look forward to seeing the results.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-a, 2-b, 3-b, 4-a, 5-b</p>
+<p><b>Task 2:</b> 1-T, 2-T, 3-F, 4-T, 5-F</p>
+</details>
+` },
+
+  { id: 4310, level: "C1", category: "listening", topic: "listening-linguistic-relativity", title: "05. Linguistic Relativity — Лингвистическая относительность", content: `
+<div class="audio-placeholder" data-audio="listening/c1-linguistic-relativity.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/c1-linguistic-relativity.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What does the speaker discuss?<br>a) The relationship between language and thought<br>b) The history of linguistics<br>c) How to learn new languages</li>
+<li>What is the strong version of the Sapir-Whorf hypothesis?<br>a) Language shapes thought<br>b) Language determines thought<br>c) Language reflects thought</li>
+<li>What does the speaker say about the strong version?<br>a) It is widely accepted<br>b) It is largely discredited<br>c) It is untestable</li>
+<li>What example does the speaker give?<br>a) Colour perception<br>b) Grammar structures<br>c) Time metaphors</li>
+<li>What does the speaker argue about the weaker version?<br>a) It has empirical support<br>b) It is meaningless<br>c) It is political</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The strong version of Sapir-Whorf says language determines thought. — True / False</li>
+<li>The speaker fully endorses the strong version. — True / False</li>
+<li>The speaker mentions colour perception as an example. — True / False</li>
+<li>The speaker argues language imprisons thought. — True / False</li>
+<li>The speaker supports a weaker version of the hypothesis. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Speaker:</b> The question of whether language shapes thought is one of the most enduring in linguistics. The strong version of the Sapir-Whorf hypothesis — that language determines thought — is now largely discredited. If it were true, translation would be impossible, and bilingual speakers would inhabit two incompatible mental worlds. Clearly that's not the case.</p>
+<p>But a weaker version is more defensible: language may subtly influence certain cognitive processes. Consider colour perception: some languages have many more colour terms than others, and speakers of those languages tend to distinguish certain shades more quickly. That doesn't mean they see the world differently, but it does suggest that language provides a habitual framework for attention.</p>
+<p>So my argument is not that language imprisons thought, but that it inclines it.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-a, 2-b, 3-b, 4-a, 5-a</p>
+<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
+</details>
+` },
+
+
+  { id: 5306, level: "C2", category: "listening", topic: "listening-poststructuralism", title: "01. A Poststructuralism Dialogue — Диалог о постструктурализме", content: `
+<div class="audio-placeholder" data-audio="listening/c2-poststructuralism.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/c2-poststructuralism.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What does Alice object to?<br>a) The obscurity of poststructuralist writing<br>b) The political implications of poststructuralism<br>c) The lack of empirical rigour</li>
+<li>What does Ben defend?<br>a) The difficulty as productive<br>b) The political neutrality of the movement<br>c) The clarity of the style</li>
+<li>What does Alice say about the defence of difficulty?<br>a) It's a convenient excuse<br>b) It's a valid methodological choice<br>c) It's a political stance</li>
+<li>Who does Ben cite as an example?<br>a) Derrida<br>b) Foucault<br>c) Saussure</li>
+<li>What does Ben concede?<br>a) That some writing is genuinely obscurantist<br>b) That poststructuralism is irrelevant<br>c) That clarity is impossible</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>Alice objects to the obscurity of poststructuralist writing. — True / False</li>
+<li>Ben argues that difficulty is incidental to the argument. — True / False</li>
+<li>Ben concedes that some writing is genuinely obscurantist. — True / False</li>
+<li>Alice accepts that Foucault is an exception. — True / False</li>
+<li>Alice and Ben completely agree. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Alice:</b> I have to say, I find the whole poststructuralist project exasperating. The prose is deliberately obscure, and obscurity functions as a shield against criticism. If you can't say clearly what you mean, you can't be shown to be wrong.</p>
+<p><b>Ben:</b> That's a familiar charge, but I think it misses what the writing is trying to do. The difficulty isn't incidental — it's part of the argument. If you're claiming that meaning is unstable, then to write as if it were perfectly stable would contradict your thesis.</p>
+<p><b>Alice:</b> But that's a convenient excuse, isn't it? One could make the same argument about any intellectual work. It doesn't exempt you from the basic obligations of clarity and evidence.</p>
+<p><b>Ben:</b> I'd concede that some writing in this tradition is genuinely obscurantist. There's a difference between difficulty that repays effort and difficulty that conceals the absence of argument. But the best work — Foucault, for instance — is demanding in a way that's justified.</p>
+<p><b>Alice:</b> I'll grant you Foucault. But he's the exception, not the rule.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-a, 2-a, 3-a, 4-b, 5-a</p>
+<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-T, 5-F</p>
+</details>
+` },
+
+  { id: 5307, level: "C2", category: "listening", topic: "listening-memory-ethics", title: "02. The Ethics of Memory Editing — Этика редактирования памяти", content: `
+<div class="audio-placeholder" data-audio="listening/c2-memory-ethics.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/c2-memory-ethics.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What is the main topic?<br>a) The science of memory<br>b) The ethics of memory editing<br>c) The history of trauma</li>
+<li>What does the first speaker say about memory editing?<br>a) It is purely beneficial<br>b) It raises serious ethical questions<br>c) It should be banned immediately</li>
+<li>What does the second speaker argue?<br>a) Memory editing could reduce suffering<br>b) Memory editing is impossible<br>c) Memory editing is always wrong</li>
+<li>What distinction does the first speaker make?<br>a) Between therapeutic and enhancement uses<br>b) Between past and future memories<br>c) Between voluntary and involuntary memories</li>
+<li>What does the second speaker concede?<br>a) That regulation will be difficult<br>b) That memory editing is impossible<br>c) That the technology should be banned</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The discussion is about the ethics of memory editing. — True / False</li>
+<li>The first speaker believes memory editing has no potential benefits. — True / False</li>
+<li>The second speaker argues memory editing could help people with PTSD. — True / False</li>
+<li>The first speaker distinguishes between therapeutic and enhancement uses. — True / False</li>
+<li>The second speaker thinks regulation will be straightforward. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Moderator:</b> Memory editing — erasing or altering traumatic memories — is no longer science fiction. Is it ethical?</p>
+<p><b>First speaker:</b> The technology is genuinely remarkable, and I don't doubt its therapeutic potential. But we're talking about altering the very substance of personal identity. Our memories are what make us who we are. To edit them, even with the best intentions, is to intervene in something that goes far beyond medicine.</p>
+<p><b>Second speaker:</b> I understand the concern, but let's be clear about what's at stake. For someone with severe PTSD, whose memories are a source of daily torment, memory editing might be the only path back to a tolerable life. Refusing to develop it on abstract grounds seems to me a failure of compassion.</p>
+<p><b>First speaker:</b> I'm not refusing anything. I'm distinguishing two uses. Therapeutic memory editing, carefully regulated and consensually administered, is one thing. Enhancement — erasing painful memories of a bad breakup, say — is another. The line is essential.</p>
+<p><b>Second speaker:</b> On that, I agree. But drawing the line will be far harder than you imply.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-b, 2-b, 3-a, 4-a, 5-a</p>
+<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-T, 5-F</p>
+</details>
+` },
+
+  { id: 5308, level: "C2", category: "listening", topic: "listening-philosophy-math", title: "03. Philosophy of Mathematics — Философия математики", content: `
+<div class="audio-placeholder" data-audio="listening/c2-philosophy-math.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/c2-philosophy-math.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What position does the first speaker defend?<br>a) Formalism<br>b) Mathematical Platonism<br>c) Intuitionism</li>
+<li>What does the second speaker object to?<br>a) Platonism's ontological commitments<br>b) Platonism's logical structure<br>c) Platonism's practical applications</li>
+<li>Whose observation does the first speaker cite?<br>a) Wigner's<br>b) Einstein's<br>c) Hilbert's</li>
+<li>What is the second speaker's counter-argument to the effectiveness argument?<br>a) That mathematics has been refined to be effective<br>b) That mathematics is not actually effective<br>c) That physics is more fundamental</li>
+<li>What does the first speaker say the second speaker's position reduces mathematics to?<br>a) A human invention<br>b) A cosmic accident<br>c) A mathematical miracle</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The first speaker defends mathematical Platonism. — True / False</li>
+<li>The second speaker thinks Platonism is parsimonious. — True / False</li>
+<li>The first speaker cites Wigner's observation. — True / False</li>
+<li>The second speaker argues mathematics is effective because we've refined it. — True / False</li>
+<li>The first speaker thinks Platonism makes mathematics into an accident. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>First speaker:</b> I want to defend a version of mathematical Platonism. Mathematical truths — that two and two make four, that there are infinitely many primes — are not inventions. They are discoveries. They exist independently of any human mind, in a realm of abstract objects.</p>
+<p><b>Second speaker:</b> That's a lot of metaphysical baggage. You're postulating a whole other realm of entities, just to explain why our mathematical beliefs happen to be true. Isn't that deeply unparsimonious?</p>
+<p><b>First speaker:</b> Parsimony is a virtue, but not the only one. Consider the alternative: if mathematics is purely a human construction, why is it so astonishingly effective in describing the physical world? Wigner called this the "unreasonable effectiveness of mathematics." Platonism explains it; formalism doesn't.</p>
+<p><b>Second speaker:</b> I think the effectiveness argument is weaker than it looks. Mathematics is effective because we've refined it to be so. We've been tinkering for centuries, and the successes are the ones that survived.</p>
+<p><b>First speaker:</b> That's a reasonable position, but it seems to concede more than it should. It makes the applicability of mathematics into a kind of cosmic accident.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-b, 2-a, 3-a, 4-a, 5-b</p>
+<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-T, 5-F</p>
+</details>
+` },
+
+  { id: 5309, level: "C2", category: "listening", topic: "listening-institutional-trust", title: "04. Institutional Trust — Доверие к институтам", content: `
+<div class="audio-placeholder" data-audio="listening/c2-institutional-trust.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/c2-institutional-trust.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What does the first speaker argue about institutional trust?<br>a) It has always been low<br>b) It has declined in recent decades<br>c) It is impossible to measure</li>
+<li>What reasons does the first speaker give?<br>a) Economic inequality alone<br>b) Scandals and transparency failures<br>c) Media distortion only</li>
+<li>What does the second speaker argue?<br>a) Trust is a matter of perception<br>b) Trust depends on institutional performance<br>c) Trust should be abolished</li>
+<li>What example does the second speaker give?<br>a) Healthcare<br>b) Banking<br>c) Education</li>
+<li>What do both speakers agree on?<br>a) That trust is a complex problem<br>b) That trust is irrelevant<br>c) That institutions should be privatised</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>Institutional trust has declined in recent decades. — True / False</li>
+<li>The first speaker blames only media distortion. — True / False</li>
+<li>The second speaker argues trust depends on institutional performance. — True / False</li>
+<li>The second speaker cites healthcare as an example. — True / False</li>
+<li>Both speakers agree that rebuilding trust will be difficult. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Moderator:</b> Institutional trust is widely reported to be in crisis. Is that accurate?</p>
+<p><b>First speaker:</b> I think it is. Surveys consistently show that confidence in governments, media, banks and even scientific institutions has declined over the past three decades. And there are good reasons for that decline — repeated scandals, opaque decision-making, and a growing sense that institutions serve elites rather than the public.</p>
+<p><b>Second speaker:</b> I'd push back on the framing. Trust isn't a free-floating attitude; it's calibrated to performance. If trust has declined, that might be less a crisis of perception than a signal that institutions genuinely haven't performed. Healthcare, for example — where systems have been underfunded for years — trust has fallen precisely in line with declining access and quality.</p>
+<p><b>First speaker:</b> That's a fair point. But I'd argue that even when institutions perform well, they're increasingly distrusted. Part of this is political polarisation, part is the way media amplifies scandals.</p>
+<p><b>Second speaker:</b> Agreed. So trust isn't just about performance — it's about the information environment through which performance is perceived. That's a much harder problem to solve.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-b, 2-b, 3-b, 4-a, 5-a</p>
+<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-T, 5-T</p>
+</details>
+` },
+
+  { id: 5310, level: "C2", category: "listening", topic: "listening-literary-translation", title: "05. Literary Translation — Художественный перевод", content: `
+<div class="audio-placeholder" data-audio="listening/c2-literary-translation.mp3">
+  🔊 <i>Аудио: будет добавлено (listening/c2-literary-translation.mp3)</i>
+</div>
+
+<h3>Task 1 — Choose the correct option</h3>
+<ol>
+<li>What is the main topic?<br>a) The art of literary translation<br>b) The history of a novel<br>c) The economics of publishing</li>
+<li>What does the first speaker argue?<br>a) Translation is a form of betrayal<br>b) Translation is a form of creation<br>c) Translation should be literal</li>
+<li>What does the second speaker say about fidelity?<br>a) It is the only criterion<br>b) It is more complex than it appears<br>c) It is irrelevant</li>
+<li>What example is given?<br>a) A translation of a poem by Rilke<br>b) A translation of a Russian novel<br>c) A translation of a German play</li>
+<li>What do both agree on?<br>a) That translation is impossible<br>b) That translation involves trade-offs<br>c) That translation is trivial</li>
+</ol>
+
+<h3>Task 2 — True or False</h3>
+<ol>
+<li>The first speaker argues that translation is a form of creation. — True / False</li>
+<li>The second speaker says fidelity is simple. — True / False</li>
+<li>The first speaker cites Rilke as an example. — True / False</li>
+<li>Both speakers agree that translation is impossible. — True / False</li>
+<li>Both speakers agree that translations involve trade-offs. — True / False</li>
+</ol>
+
+<details>
+<summary>📄 Show transcript</summary>
+<p><b>Moderator:</b> Literary translation has been called both an art and a betrayal. Where do you stand?</p>
+<p><b>First speaker:</b> Firmly on the side of art. The translator is not a copyist but a creator. To translate a novel is to write it again in another language, with all the interpretive choices that implies. The fantasy of the "faithful" translation is just that — a fantasy.</p>
+<p><b>Second speaker:</b> I'd agree that fidelity is more complicated than it sounds, but I'd resist the framing that translation is pure creation. There's a responsibility to the original, and to the reader who comes to it through your work.</p>
+<p><b>First speaker:</b> Of course. But consider translating Rilke. You cannot reproduce both the rhyme and the meaning. You choose. And in choosing, you impose an interpretation. Every translation is a reading.</p>
+<p><b>Second speaker:</b> I'd accept that — every translation involves trade-offs. But the best translations are those that make their trade-offs visible, that don't pretend to be the original.</p>
+<p><b>First speaker:</b> On that, we completely agree.</p>
+</details>
+
+<details>
+<summary>✅ Show answers</summary>
+<p><b>Task 1:</b> 1-a, 2-b, 3-b, 4-a, 5-b</p>
+<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
+</details>
 ` }
-];
+]

@@ -133,6 +133,53 @@ const IPA_DICTIONARY = {
   "hunger": "ˈhʌŋɡə", "war": "wɔː", "peace": "piːs", "sustainability": "səˌsteɪnəˈbɪləti"
 };
 
+const STORAGE_KEY = 'english-learning-progress-v1';
+const VOCAB_STORAGE_KEY = 'english-learning-vocab-v1';
+const STREAK_KEY = 'english-learning-streak-v1';
+const MASTERED_INTERVAL = 21;
+
+function getTodayISO() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function loadStreakDates() {
+  try {
+    const raw = localStorage.getItem(STREAK_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+}
+
+function recordStudySession() {
+  const dates = loadStreakDates();
+  const today = getTodayISO();
+  if (!dates.includes(today)) {
+    dates.push(today);
+    try { localStorage.setItem(STREAK_KEY, JSON.stringify(dates)); } catch {}
+  }
+}
+
+function getStreak() {
+  const dates = loadStreakDates();
+  if (!dates.length) return 0;
+  const set = new Set(dates);
+  let count = 0;
+  const d = new Date();
+  while (set.has(d.toISOString().slice(0, 10))) {
+    count++;
+    d.setDate(d.getDate() - 1);
+  }
+  return count;
+}
+
+function splitTranslations(raw) {
+  return String(raw || '')
+    .split(/[,/]/)
+    .map(s => s.trim())
+    .filter(Boolean);
+}
+
 function expandContractions(str) {
   let result = ' ' + str + ' ';
   CONTRACTION_MAP.forEach(([pattern, replacement]) => {
@@ -178,9 +225,6 @@ function getAllValidAnswers(input) {
     .map(s => s.trim())
     .filter(Boolean);
 }
-
-const STORAGE_KEY = 'english-learning-progress-v1';
-const VOCAB_STORAGE_KEY = 'english-learning-vocab-v1';
 
 const defaultProgress = {
   completedTopics: {},
@@ -418,7 +462,8 @@ function parseVocabTable(htmlContent) {
     if (cells.length >= 2) {
       const english = cells[0].textContent.trim();
       const translation = cells[1].textContent.trim();
-      words.push({ english, translation });
+      const example = cells[2] ? cells[2].textContent.trim() : '';
+      words.push({ english, translation, example });
     }
   });
 
@@ -435,10 +480,19 @@ function getAllVocab() {
     words.forEach(w => {
       const key = w.english.toLowerCase().trim();
       if (seen.has(key)) return;
-
       seen.add(key);
+
+      const translations = splitTranslations(w.translation);
+      const isPhrase = /\s/.test(w.english) || /[!?]/.test(w.english);
+      const ipa = IPA_DICTIONARY[w.english.toLowerCase().trim()] || '';
+
       allWords.push({
-        ...w,
+        english: w.english,
+        translation: w.translation,
+        example: w.example || '',
+        translations,
+        isPhrase,
+        ipa,
         id: `${m.level}|${m.topic}|${w.english}`,
         materialId: m.id,
         materialTitle: m.title
@@ -456,66 +510,95 @@ function updateVocabCardState(cardId, quality) {
   const state = getVocabCardState(cardId);
   let interval = state.interval || 0;
 
-  if (quality === 0) {
-    interval = 0;
-  } else if (quality === 1) {
-    interval = 1;
-  } else if (quality === 2) {
-    interval = interval === 0 ? 3 : interval * 1.5;
-  } else if (quality === 3) {
-    interval = interval === 0 ? 7 : interval * 2.5;
-  }
+  if (quality === 0) interval = 0;
+  else if (quality === 1) interval = 1;
+  else if (quality === 2) interval = interval === 0 ? 3 : Math.round(interval * 1.5);
+  else if (quality === 3) interval = interval === 0 ? 7 : Math.round(interval * 2.5);
 
   const nextReview = Date.now() + interval * 24 * 60 * 60 * 1000;
   VOCAB_STATE[cardId] = { interval, nextReview };
   saveVocabState();
+  recordStudySession();
 }
 
-function showVocabCards(level) {
+function getVocabStats(level) {
+  const words = getAllVocab().filter(w => {
+    if (!level || level === 'ALL') return true;
+    const m = w.materialId ? MATERIALS.find(x => x.id === w.materialId) : null;
+    return m && m.level === level;
+  });
+  let known = 0, learning = 0, fresh = 0;
+  words.forEach(w => {
+    const s = getVocabCardState(w.id);
+    if (!s || (!s.interval && !s.nextReview)) fresh++;
+    else if (s.interval >= MASTERED_INTERVAL) known++;
+    else learning++;
+  });
+  return { known, learning, fresh, total: words.length };
+}
+
+function renderStatsRow(stats) {
+  const streak = getStreak();
+  return `
+    <div class="vocab-stats">
+      <div class="vocab-stat"><span class="vs-num">${stats.known}</span><span class="vs-lbl">выучено</span></div>
+      <div class="vocab-stat"><span class="vs-num">${stats.learning}</span><span class="vs-lbl">на повторении</span></div>
+      <div class="vocab-stat"><span class="vs-num">${stats.fresh}</span><span class="vs-lbl">новых</span></div>
+      <div class="vocab-stat streak"><span class="vs-num">🔥 ${streak}</span><span class="vs-lbl">${pluralize(streak, 'день', 'дня', 'дней')} подряд</span></div>
+    </div>
+  `;
+}
+
+function showVocabCards(level, direction, onlyPhrases) {
+  direction = direction || 'EN→RU';
   highlightNav('vocabulary');
   toggleVocabNavVisibility(true);
-  saveLastRoute('vocabCards', [level]);
+  saveLastRoute('vocabCards', [level, direction, onlyPhrases]);
 
-  const words = getAllVocab().filter(w => {
+  const all = getAllVocab().filter(w => {
+    if (onlyPhrases === 'phrases' && !w.isPhrase) return false;
+    if (onlyPhrases === 'words' && w.isPhrase) return false;
     if (level === 'ALL') return true;
-    const wLevel = w.materialId ? MATERIALS.find(m => m.id === w.materialId).level : null;
-    return wLevel === level;
+    const m = w.materialId ? MATERIALS.find(x => x.id === w.materialId) : null;
+    return m && m.level === level;
   });
 
   const now = Date.now();
-  const dueWords = words.filter(w => {
-    const state = getVocabCardState(w.id);
-    return state.nextReview <= now;
-  });
+  const dueWords = all.filter(w => getVocabCardState(w.id).nextReview <= now);
 
   if (!dueWords.length) {
     app.innerHTML = `
       <button class="back-home-btn" onclick="showSection('vocabulary')">← Назад к словарю</button>
-      <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> / <a href="#" onclick="showSection('vocabulary'); return false;">Словарь</a> <span>/ ${level}</span></div>
+      <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> / <a href="#" onclick="showSection('vocabulary'); return false;">Словарь</a> <span>/ ${level === 'ALL' ? 'Все уровни' : level}</span></div>
       <h1>Словарь — ${level === 'ALL' ? 'Все уровни' : level}</h1>
+      ${renderStatsRow(getVocabStats(level))}
       <div class="locked" style="margin-top: 40px;">
         <p style="font-size: 24px; margin-bottom: 10px;">🎩 Отлично!</p>
         <p>Нет карточек для повторения на сегодня.</p>
-        <button class="btn btn-secondary" style="margin-top: 20px;" onclick="showVocabCards('${level}')">Обновить</button>
+        <button class="btn btn-secondary" style="margin-top: 20px;" onclick="showVocabCards('${level}', '${direction}', ${onlyPhrases ? `'${onlyPhrases}'` : 'null'})">Обновить</button>
       </div>
     `;
     window.scrollTo(0, 0);
     return;
   }
 
-  renderFlashcard(level, dueWords, 0);
+  renderFlashcard(level, dueWords.slice(), 0, direction);
 }
 
-function renderFlashcard(level, dueWords, index) {
+function renderFlashcard(level, dueWords, index, direction) {
+  direction = direction || 'EN→RU';
+  window.__currentFlashcard = { level, dueWords, index, direction };
+
   if (index >= dueWords.length) {
     app.innerHTML = `
       <button class="back-home-btn" onclick="showSection('vocabulary')">← Назад к словарю</button>
-      <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> / <a href="#" onclick="showSection('vocabulary'); return false;">Словарь</a> <span>/ ${level}</span></div>
+      <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> / <a href="#" onclick="showSection('vocabulary'); return false;">Словарь</a> <span>/ ${level === 'ALL' ? 'Все уровни' : level}</span></div>
       <h1>Словарь — ${level === 'ALL' ? 'Все уровни' : level}</h1>
+      ${renderStatsRow(getVocabStats(level))}
       <div class="locked" style="margin-top: 40px; border-color: #2E7D5B; color: #2E7D5B;">
         <p style="font-size: 24px; margin-bottom: 10px;">🎉 Сессия завершена!</p>
         <p>Вы повторили ${dueWords.length} карточек.</p>
-        <button class="btn btn-dark" style="margin-top: 20px;" onclick="showVocabCards('${level}')">Продолжить</button>
+        <button class="btn btn-dark" style="margin-top: 20px;" onclick="showVocabCards('${level}', '${direction}')">Продолжить</button>
       </div>
     `;
     window.scrollTo(0, 0);
@@ -523,57 +606,109 @@ function renderFlashcard(level, dueWords, index) {
   }
 
   const word = dueWords[index];
+  const isReverse = direction === 'RU→EN';
+  const frontText = isReverse ? word.translation : word.english;
+  const backText = isReverse ? word.english : word.translation;
+
+  const ipaLine = word.ipa
+    ? `<div class="flashcard-ipa">/${escapeAttr(word.ipa)}/</div>`
+    : '';
+  const exampleLine = (!isReverse && word.example)
+    ? `<div class="flashcard-example">${escapeAttr(word.example)}</div>`
+    : '';
+
+  const inputBlock = isReverse
+    ? `<div class="fc-input-wrap">
+         <input id="fc-input" type="text" class="fc-input" placeholder="Введите английское слово" autocomplete="off" spellcheck="false">
+       </div>`
+    : '';
 
   app.innerHTML = `
     <button class="back-home-btn" onclick="showSection('vocabulary')">← Назад к словарю</button>
     <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> / <a href="#" onclick="showSection('vocabulary'); return false;">Словарь</a> <span>/ ${level === 'ALL' ? 'Все уровни' : level}</span></div>
 
     <div class="flashcard-progress">
-      Карточка ${index + 1} из ${dueWords.length}
+      Карточка ${index + 1} из ${dueWords.length} · ${direction}
     </div>
 
     <div class="flashcard-container" id="flashcard" onclick="flipCard()">
       <div class="flashcard-inner">
         <div class="flashcard-front">
-          <div class="flashcard-word">${word.english}</div>
-          <div class="flashcard-hint">Нажмите, чтобы увидеть перевод</div>
+          <div class="flashcard-word">${escapeAttr(frontText)}</div>
+          ${inputBlock}
+          <div class="flashcard-hint">${isReverse ? 'Введите ответ и нажмите Enter или «Проверить»' : 'Нажмите или пробел, чтобы увидеть перевод'}</div>
         </div>
         <div class="flashcard-back">
-          <div class="flashcard-word">${word.translation}</div>
-          <div class="flashcard-hint">Нажмите, чтобы вернуться</div>
+          <div class="flashcard-word">${escapeAttr(backText)}</div>
+          ${ipaLine}
+          ${exampleLine}
+          <div id="fc-feedback" class="fc-feedback"></div>
+          <div class="flashcard-hint">1–4 — оценить</div>
         </div>
       </div>
     </div>
 
-    <div class="flashcard-controls" id="flashcardControls">
-      <button class="btn btn-danger" onclick="handleVocabResponse('${word.id.replace(/'/g, "\\'")}', 0)">Забыл (1)</button>
-      <button class="btn btn-warning" onclick="handleVocabResponse('${word.id.replace(/'/g, "\\'")}', 1)">Трудно (2)</button>
-      <button class="btn btn-success" onclick="handleVocabResponse('${word.id.replace(/'/g, "\\'")}', 2)">Хорошо (3)</button>
-      <button class="btn btn-primary" onclick="handleVocabResponse('${word.id.replace(/'/g, "\\'")}', 3)">Легко (4)</button>
+    <div class="flashcard-controls locked" id="flashcardControls">
+      <button class="btn btn-danger" disabled data-id="${escapeAttr(word.id)}" onclick="handleVocabResponse(this.dataset.id, 0)">Забыл (1)</button>
+      <button class="btn btn-warning" disabled data-id="${escapeAttr(word.id)}" onclick="handleVocabResponse(this.dataset.id, 1)">Трудно (2)</button>
+      <button class="btn btn-success" disabled data-id="${escapeAttr(word.id)}" onclick="handleVocabResponse(this.dataset.id, 2)">Хорошо (3)</button>
+      <button class="btn btn-primary" disabled data-id="${escapeAttr(word.id)}" onclick="handleVocabResponse(this.dataset.id, 3)">Легко (4)</button>
     </div>
   `;
   window.scrollTo(0, 0);
-  window.__currentFlashcard = { level, dueWords, index };
 }
 
 function flipCard() {
   const card = document.getElementById('flashcard');
-  if (card) {
-    card.classList.toggle('flipped');
+  if (!card || card.classList.contains('flipped')) return;
+  card.classList.add('flipped');
+
+  const controls = document.getElementById('flashcardControls');
+  if (controls) {
+    controls.classList.remove('locked');
+    controls.querySelectorAll('button').forEach(b => (b.disabled = false));
+  }
+
+  const fc = window.__currentFlashcard;
+  if (fc && fc.direction === 'RU→EN') {
+    const input = document.getElementById('fc-input');
+    if (input) input.blur();
+    const feedback = document.getElementById('fc-feedback');
+    const word = fc.dueWords[fc.index];
+    if (!word || !feedback) return;
+    const user = (input?.value || '').trim().toLowerCase();
+    const correct = String(word.english).toLowerCase();
+    if (!user) {
+      feedback.textContent = '';
+      feedback.className = 'fc-feedback';
+    } else if (user === correct) {
+      feedback.textContent = '✅ Верно!';
+      feedback.className = 'fc-feedback correct';
+    } else {
+      feedback.innerHTML = `❌ Правильно: <b>${escapeAttr(word.english)}</b>`;
+      feedback.className = 'fc-feedback incorrect';
+    }
   }
 }
 
 function handleVocabResponse(wordId, quality) {
   const card = document.getElementById('flashcard');
-  if (!card || !card.classList.contains('flipped')) {
-    return;
+  if (!card || !card.classList.contains('flipped')) return;
+
+  const fc = window.__currentFlashcard;
+  if (!fc) return;
+  const { level, dueWords, index, direction } = fc;
+
+  if (quality === 0) {
+    const current = dueWords[index];
+    const repeatCount = current.__repeatCount || 0;
+    if (repeatCount < 2) {
+      dueWords.push({ ...current, __repeat: true, __repeatCount: repeatCount + 1 });
+    }
   }
 
   updateVocabCardState(wordId, quality);
-  if (window.__currentFlashcard) {
-    const { level, dueWords, index } = window.__currentFlashcard;
-    renderFlashcard(level, dueWords, index + 1);
-  }
+  renderFlashcard(level, dueWords, index + 1, direction);
 }
 
 function showVocabDirectory(level) {
@@ -583,7 +718,7 @@ function showVocabDirectory(level) {
 
   const words = getAllVocab().filter(w => {
     if (level === 'ALL') return true;
-    const wLevel = w.materialId ? MATERIALS.find(m => m.id === w.materialId).level : null;
+    const wLevel = w.materialId ? MATERIALS.find(m => m.id === w.materialId)?.level : null;
     return wLevel === level;
   });
 
@@ -606,17 +741,14 @@ function showVocabDirectory(level) {
 
   html += `<div class="vocab-directory">`;
   words.forEach(w => {
-    const cleanEnglish = w.english.toLowerCase().trim();
-    const ipa = IPA_DICTIONARY[cleanEnglish] || '';
-
     html += `
       <div class="vocab-item">
         <div class="vocab-item-main">
-          <span class="vocab-word">${w.english}</span>
-          ${ipa ? `<span class="vocab-ipa">/${ipa}/</span>` : ''}
+          <span class="vocab-word">${escapeAttr(w.english)}</span>
+          ${w.ipa ? `<span class="vocab-ipa">/${escapeAttr(w.ipa)}/</span>` : ''}
         </div>
         <div class="vocab-item-side">
-          <span class="vocab-translation">${w.translation}</span>
+          <span class="vocab-translation">${escapeAttr(w.translation)}</span>
         </div>
       </div>
     `;
@@ -713,6 +845,7 @@ function resetProgress() {
   VOCAB_STATE = {};
   saveProgress();
   saveVocabState();
+  try { localStorage.removeItem(STREAK_KEY); } catch {}
   showHome();
 }
 
@@ -742,8 +875,26 @@ function showSection(category) {
 
     html += `<button class="card-btn" onclick="showVocabCards('ALL')">
                <span class="card-icon">🧠</span>
-               <span class="card-title">Играть с карточками</span>
+               <span class="card-title">EN→RU</span>
                <span class="card-subtitle">Интервальное повторение</span>
+             </button>`;
+
+    html += `<button class="card-btn" onclick="showVocabCards('ALL', 'RU→EN')">
+               <span class="card-icon">🔁</span>
+               <span class="card-title">RU→EN</span>
+               <span class="card-subtitle">Ввод с клавиатуры</span>
+             </button>`;
+
+    html += `<button class="card-btn" onclick="showVocabCards('ALL', 'EN→RU', 'words')">
+               <span class="card-icon">📝</span>
+               <span class="card-title">Только слова</span>
+               <span class="card-subtitle">Без фраз</span>
+             </button>`;
+
+    html += `<button class="card-btn" onclick="showVocabCards('ALL', 'EN→RU', 'phrases')">
+               <span class="card-icon">💬</span>
+               <span class="card-title">Только фразы</span>
+               <span class="card-subtitle">Разговорные выражения</span>
              </button>`;
 
     html += `<button class="card-btn" onclick="showVocabDirectory('ALL')">
@@ -807,6 +958,7 @@ function resetVocabProgress() {
   if (!confirm('Сбросить прогресс по карточкам? Результаты тестов останутся.')) return;
   VOCAB_STATE = {};
   saveVocabState();
+  try { localStorage.removeItem(STREAK_KEY); } catch {}
   showSection('vocabulary');
 }
 
@@ -836,8 +988,13 @@ function showLevel(level) {
 
   let html = `<button class="back-home-btn" onclick="showHome()">← На главную</button>
               <div class="crumbs"><a href="#" onclick="showHome(); return false;">Главная</a> <span>/ ${level}</span></div>
-              <h1>Раздел ${level}</h1>
-              <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">`;
+              <h1>Раздел ${level}</h1>`;
+
+  if (!isExamOrICPC && vocabCount > 0) {
+    html += renderStatsRow(getVocabStats(level));
+  }
+
+  html += `<div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">`;
 
   if (theory.length > 0) {
     html += `<button class="card-btn" onclick="showLevelTab('${level}','theory')">
@@ -1212,7 +1369,6 @@ function enhanceListeningContent(content) {
 
     return root.innerHTML;
   } catch (e) {
-    console.error('[listening] enhancement failed:', e);
     return content;
   }
 }
@@ -1817,7 +1973,7 @@ function restoreLastRoute() {
       case 'level': return showLevel(route.args[0]);
       case 'levelTab': return showLevelTab(route.args[0], route.args[1]);
       case 'article': return showArticle(route.args[0]);
-      case 'vocabCards': return showVocabCards(route.args[0]);
+      case 'vocabCards': return showVocabCards(route.args[0], route.args[1], route.args[2]);
       case 'vocabDirectory': return showVocabDirectory(route.args[0]);
       default: return showHome();
     }
@@ -1906,5 +2062,35 @@ document.addEventListener('click', (e) => {
       tokensEl.appendChild(token);
     }
     order.classList.remove('correct', 'incorrect');
+  }
+});
+
+document.addEventListener('keydown', (e) => {
+  const fc = window.__currentFlashcard;
+  if (!fc) return;
+  const card = document.getElementById('flashcard');
+  if (!card) return;
+
+  const tag = (e.target.tagName || '').toUpperCase();
+  if (tag === 'INPUT' || tag === 'TEXTAREA') {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      flipCard();
+    }
+    return;
+  }
+
+  if (e.key === ' ' || e.code === 'Space') {
+    e.preventDefault();
+    flipCard();
+    return;
+  }
+
+  if (['1', '2', '3', '4'].includes(e.key)) {
+    if (!card.classList.contains('flipped')) return;
+    const word = fc.dueWords[fc.index];
+    if (!word) return;
+    e.preventDefault();
+    handleVocabResponse(word.id, Number(e.key) - 1);
   }
 });

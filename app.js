@@ -636,24 +636,26 @@ function renderFlashcard(level, dueWords, index, direction) {
         <div class="flashcard-front">
           <div class="flashcard-word">${escapeAttr(frontText)}</div>
           ${inputBlock}
-          <div class="flashcard-hint">${isReverse ? 'Введите ответ и нажмите Enter или «Проверить»' : 'Нажмите или пробел, чтобы увидеть перевод'}</div>
+          <div class="flashcard-hint">${isReverse ? 'Введите ответ и нажмите Enter' : 'Пробел или клик — перевернуть'}</div>
         </div>
         <div class="flashcard-back">
           <div class="flashcard-word">${escapeAttr(backText)}</div>
           ${ipaLine}
           ${exampleLine}
           <div id="fc-feedback" class="fc-feedback"></div>
-          <div class="flashcard-hint">1–4 — оценить</div>
+          <div class="flashcard-hint">1–2 — повторить · 3–4 — дальше</div>
         </div>
       </div>
     </div>
 
     <div class="flashcard-controls locked" id="flashcardControls">
-      <button class="btn btn-danger" disabled data-id="${escapeAttr(word.id)}" onclick="handleVocabResponse(this.dataset.id, 0)">Забыл (1)</button>
-      <button class="btn btn-warning" disabled data-id="${escapeAttr(word.id)}" onclick="handleVocabResponse(this.dataset.id, 1)">Трудно (2)</button>
-      <button class="btn btn-success" disabled data-id="${escapeAttr(word.id)}" onclick="handleVocabResponse(this.dataset.id, 2)">Хорошо (3)</button>
-      <button class="btn btn-primary" disabled data-id="${escapeAttr(word.id)}" onclick="handleVocabResponse(this.dataset.id, 3)">Легко (4)</button>
+      <button class="btn btn-danger" disabled data-id="${escapeAttr(word.id)}" onclick="handleVocabResponse(this.dataset.id, 0)">Забыл (1) · повтор</button>
+      <button class="btn btn-warning" disabled data-id="${escapeAttr(word.id)}" onclick="handleVocabResponse(this.dataset.id, 1)">Трудно (2) · повтор</button>
+      <button class="btn btn-success" disabled data-id="${escapeAttr(word.id)}" onclick="handleVocabResponse(this.dataset.id, 2)">Хорошо (3) · дальше</button>
+      <button class="btn btn-primary" disabled data-id="${escapeAttr(word.id)}" onclick="handleVocabResponse(this.dataset.id, 3)">Легко (4) · дальше</button>
     </div>
+
+    <div class="flashcard-controls-hint" id="flashcardControlsHint">🔒 Переверните карточку, чтобы оценить</div>
   `;
   window.scrollTo(0, 0);
 }
@@ -668,6 +670,9 @@ function flipCard() {
     controls.classList.remove('locked');
     controls.querySelectorAll('button').forEach(b => (b.disabled = false));
   }
+
+  const hint = document.getElementById('flashcardControlsHint');
+  if (hint) hint.remove();
 
   const fc = window.__currentFlashcard;
   if (fc && fc.direction === 'RU→EN') {
@@ -699,15 +704,23 @@ function handleVocabResponse(wordId, quality) {
   if (!fc) return;
   const { level, dueWords, index, direction } = fc;
 
-  if (quality === 0) {
-    const current = dueWords[index];
-    const repeatCount = current.__repeatCount || 0;
-    if (repeatCount < 2) {
-      dueWords.push({ ...current, __repeat: true, __repeatCount: repeatCount + 1 });
+  updateVocabCardState(wordId, quality);
+
+  if (quality <= 1) {
+    if (quality === 0) {
+      const current = dueWords[index];
+      const currentOriginalId = current.__originalId || current.id;
+      const alreadyQueued = dueWords
+        .slice(index + 1)
+        .some(w => (w.__originalId || w.id) === currentOriginalId);
+      if (!alreadyQueued) {
+        dueWords.push({ ...current, __repeat: true, __originalId: currentOriginalId });
+      }
     }
+    renderFlashcard(level, dueWords, index, direction);
+    return;
   }
 
-  updateVocabCardState(wordId, quality);
   renderFlashcard(level, dueWords, index + 1, direction);
 }
 
@@ -1188,6 +1201,21 @@ function injectListeningStyles() {
     details[data-locked="false"] { opacity: 1; pointer-events: auto; }
     details[data-locked="false"] > summary { pointer-events: auto; cursor: pointer; }
     details[data-locked="false"] > summary::before { content: ""; }
+    .flashcard-controls.locked .btn { opacity: 0.35; cursor: not-allowed; pointer-events: none; }
+    .flashcard-controls-hint { text-align: center; color: #8a6a4a; font-size: 14px; margin-top: 10px; }
+    .flashcard-ipa { font-family: 'Lucida Sans', 'DejaVu Sans', sans-serif; color: #8a6a4a; font-size: 15px; margin-top: 6px; letter-spacing: 0.5px; }
+    .flashcard-example { margin-top: 14px; font-style: italic; font-size: 14px; color: #555; max-width: 90%; line-height: 1.4; }
+    .fc-input-wrap { margin-top: 14px; width: 100%; display: flex; justify-content: center; }
+    .fc-input { width: 80%; max-width: 320px; padding: 10px 14px; border: 2px solid #d6cbb8; border-radius: 10px; font-size: 16px; font-family: inherit; text-align: center; }
+    .fc-input:focus { outline: none; border-color: #6b1e2e; }
+    .fc-feedback { margin-top: 12px; font-size: 15px; font-weight: 600; min-height: 22px; }
+    .fc-feedback.correct { color: #2E7D5B; }
+    .fc-feedback.incorrect { color: #c0392b; }
+    .vocab-stats { display: flex; flex-wrap: wrap; gap: 16px; margin: 20px 0 28px; }
+    .vocab-stat { flex: 1 1 130px; background: #f7f3ea; border: 1.5px solid #e0d8c9; border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+    .vocab-stat .vs-num { font-size: 24px; font-weight: 700; color: #6b1e2e; }
+    .vocab-stat .vs-lbl { font-size: 13px; color: #555; margin-top: 4px; }
+    .vocab-stat.streak { border-color: #f0c060; background: #fff8e6; }
     [data-theme="midnight"] .tf-question { color: #e8dfd4; }
     [data-theme="midnight"] .tf-option { background: #2a1e22; border-color: #4a363c; color: #e8dfd4; }
     [data-theme="midnight"] .tf-option:hover { border-color: #c9a04a; background: #3a262c; }
@@ -1198,6 +1226,15 @@ function injectListeningStyles() {
     [data-theme="midnight"] .listening-warning { color: #f4b8ad; }
     [data-theme="midnight"] .listening-result { color: #e8dfd4; }
     [data-theme="midnight"] .listening-result b { color: #c9a04a; }
+    [data-theme="midnight"] .flashcard-controls-hint { color: #c9a04a; }
+    [data-theme="midnight"] .flashcard-ipa { color: #c9a04a; }
+    [data-theme="midnight"] .flashcard-example { color: #bfb3a4; }
+    [data-theme="midnight"] .fc-input { background: #2a1e22; border-color: #4a363c; color: #e8dfd4; }
+    [data-theme="midnight"] .fc-input:focus { border-color: #c9a04a; }
+    [data-theme="midnight"] .vocab-stat { background: #241a1e; border-color: #4a363c; }
+    [data-theme="midnight"] .vocab-stat .vs-num { color: #c9a04a; }
+    [data-theme="midnight"] .vocab-stat .vs-lbl { color: #bfb3a4; }
+    [data-theme="midnight"] .vocab-stat.streak { border-color: #8a6a2a; background: #2a1f0d; }
   `;
   document.head.appendChild(style);
 }

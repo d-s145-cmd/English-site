@@ -1,6 +1,10 @@
 const app = document.getElementById('app');
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1–C2', 'EXAM', 'ICPC'];
+
+const IS_TESTER_MODE = true; 
+
 let isGuestMode = false;
+let isTesterMode = false;
 
 const LEVEL_TEST = [
   { q: "I ___ a student.", options: ["am", "is", "are"], answer: 0 },
@@ -264,7 +268,10 @@ function toggleHeaderNav(isLanding) {
     document.querySelector('.header-nav').appendChild(authBtn);
   }
 
-  if (isLanding) {
+  if (isTesterMode) {
+    navButtons.forEach(btn => btn.style.display = 'none');
+    authBtn.style.display = 'none';
+  } else if (isLanding) {
     navButtons.forEach(btn => { if (btn.dataset.section !== 'home') btn.style.display = 'none'; });
     authBtn.style.display = 'inline-flex';
   } else if (isGuestMode) {
@@ -285,7 +292,7 @@ function toggleHeaderNav(isLanding) {
 function toggleVocabNavVisibility(show) {
   const vocabNavBtn = document.querySelector('.nav-btn[data-section="vocabulary"]');
   if (vocabNavBtn) {
-    if (isGuestMode) {
+    if (isGuestMode || isTesterMode) {
       vocabNavBtn.style.display = 'none';
     } else {
       vocabNavBtn.style.display = show ? '' : 'none';
@@ -430,6 +437,11 @@ function showVocabCards(level, direction, onlyPhrases) {
     showRegistration();
     return;
   }
+  if (isTesterMode) {
+    alert('В режиме тестировщика этот раздел недоступен.');
+    showTesterDashboard();
+    return;
+  }
   toggleHeaderNav(false);
   direction = direction || 'EN→RU';
   highlightNav('vocabulary'); toggleVocabNavVisibility(true); saveLastRoute('vocabCards', [level, direction, onlyPhrases]);
@@ -513,6 +525,11 @@ function showVocabDirectory(level) {
     showRegistration();
     return;
   }
+  if (isTesterMode) {
+    alert('В режиме тестировщика этот раздел недоступен.');
+    showTesterDashboard();
+    return;
+  }
   toggleHeaderNav(false);
   highlightNav('vocabulary'); toggleVocabNavVisibility(true); saveLastRoute('vocabDirectory', [level]);
   const words = getAllVocab().filter(w => {
@@ -530,8 +547,39 @@ function showVocabDirectory(level) {
   app.innerHTML = html; window.scrollTo(0, 0);
 }
 
+function showTesterDashboard() {
+  isTesterMode = true;
+  isGuestMode = false;
+  toggleHeaderNav(true);
+  highlightNav('');
+  
+  let html = `
+    <button class="back-home-btn" onclick="isTesterMode = false; showHome()">← Выйти из режима тестировщика</button>
+    <div class="section-heading" style="text-align: center; margin-bottom: 40px;">
+      <p class="eyebrow">TESTER DASHBOARD</p>
+      <h1>🛠 Режим тестировщика</h1>
+      <p class="section-intro">Вам доступны только разделы EXAM и ICPC. Остальные уровни скрыты.</p>
+    </div>
+    <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
+      <button class="card-btn" onclick="showLevel('EXAM')">
+        <span class="card-icon">📝</span>
+        <span class="card-title">EXAM</span>
+        <span class="card-subtitle">Экзаменационные материалы</span>
+      </button>
+      <button class="card-btn" onclick="showLevel('ICPC')">
+        <span class="card-icon">🏆</span>
+        <span class="card-title">ICPC</span>
+        <span class="card-subtitle">Английский для олимпиад</span>
+      </button>
+    </div>
+  `;
+  app.innerHTML = html;
+  window.scrollTo(0, 0);
+}
+
 function startGuestMode() {
   isGuestMode = true;
+  isTesterMode = false;
   showSection('theory');
 }
 
@@ -673,6 +721,11 @@ function checkLevelTest() {
 }
 
 function showHome() {
+  if (isTesterMode) {
+    showTesterDashboard();
+    return;
+  }
+  
   isGuestMode = false;
   highlightNav('home');
   toggleVocabNavVisibility(true);
@@ -726,6 +779,16 @@ function showHome() {
     </div>
   `;
 
+  if (IS_TESTER_MODE) {
+    html += `
+      <div class="home-section" style="text-align: center; padding: 20px; border: 2px dashed var(--gold); border-radius: 8px; background: rgba(201, 169, 97, 0.05);">
+        <p style="color: var(--burgundy); font-weight: 600; margin-bottom: 10px; font-family: 'Inter', sans-serif; text-transform: uppercase; letter-spacing: 1px; font-size: 14px;">🛠 Режим тестировщика (временно)</p>
+        <p style="font-size: 15px; color: var(--charcoal); margin-bottom: 15px;">Доступ только к разделам EXAM и ICPC. Остальные уровни скрыты.</p>
+        <button class="btn btn-dark" onclick="showTesterDashboard()">Войти как тестировщик</button>
+      </div>
+    `;
+  }
+
   html += `
     <div class="home-section" style="text-align: center;">
       <h2 style="margin-bottom: 20px;">Что вас ждет внутри?</h2>
@@ -776,6 +839,11 @@ function resetProgress() {
 }
 
 function showSection(category) {
+  if (isTesterMode) {
+    alert('В режиме тестировщика доступны только EXAM и ICPC. Пожалуйста, выберите их на панели тестировщика.');
+    showTesterDashboard();
+    return;
+  }
   if (isGuestMode && category !== 'theory') {
     alert('Эта функция доступна только после регистрации. Пожалуйста, создайте аккаунт.');
     showRegistration();
@@ -820,6 +888,11 @@ function resetVocabProgress() {
 }
 
 function showLevel(level) {
+  if (isTesterMode && level !== 'EXAM' && level !== 'ICPC') {
+    alert('В режиме тестировщика доступны только EXAM и ICPC.');
+    showTesterDashboard();
+    return;
+  }
   toggleHeaderNav(false);
   highlightNav(''); saveLastRoute('level', [level]);
   const isExamOrICPC = (level === 'EXAM' || level === 'ICPC');
@@ -847,6 +920,11 @@ function showLevelTab(level, tab) {
   if (isGuestMode && tab !== 'theory') {
     alert('Этот раздел доступен только после регистрации.');
     showRegistration();
+    return;
+  }
+  if (isTesterMode && level !== 'EXAM' && level !== 'ICPC') {
+    alert('В режиме тестировщика доступны только EXAM и ICPC.');
+    showTesterDashboard();
     return;
   }
   toggleHeaderNav(false);
@@ -1042,6 +1120,12 @@ function checkListeningTasks(btn) {
 function showArticle(id) {
   const a = MATERIALS.find(m => m.id === id);
   if (!a) { app.innerHTML = '<p>Материал не найден.</p>'; return; }
+  
+  if (isTesterMode && a.level !== 'EXAM' && a.level !== 'ICPC') {
+    alert('В режиме тестировщика доступны только материалы EXAM и ICPC.');
+    showTesterDashboard();
+    return;
+  }
   
   if (isGuestMode && a.category !== 'theory') {
     alert('Материалы этого раздела доступны только после регистрации.');

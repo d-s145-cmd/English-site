@@ -1,5 +1,6 @@
 const app = document.getElementById('app');
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1–C2', 'EXAM', 'ICPC'];
+let isGuestMode = false;
 
 const LEVEL_TEST = [
   { q: "I ___ a student.", options: ["am", "is", "are"], answer: 0 },
@@ -247,33 +248,49 @@ function highlightNav(section) {
 
 function toggleHeaderNav(isLanding) {
   const navButtons = document.querySelectorAll('.header-nav .nav-btn');
+  let authBtn = document.getElementById('headerAuthBtn');
+
+  if (!authBtn) {
+    authBtn = document.createElement('button');
+    authBtn.id = 'headerAuthBtn';
+    authBtn.className = 'btn btn-secondary';
+    authBtn.style.marginLeft = '15px';
+    authBtn.style.padding = '8px 16px';
+    authBtn.style.fontSize = '11px';
+    authBtn.style.borderColor = 'var(--gold-light)';
+    authBtn.style.color = 'var(--gold-light)';
+    authBtn.innerHTML = 'Войти / Регистрация';
+    authBtn.onclick = () => showRegistration();
+    document.querySelector('.header-nav').appendChild(authBtn);
+  }
+
   if (isLanding) {
     navButtons.forEach(btn => { if (btn.dataset.section !== 'home') btn.style.display = 'none'; });
-    let authBtn = document.getElementById('headerAuthBtn');
-    if (!authBtn) {
-      authBtn = document.createElement('button');
-      authBtn.id = 'headerAuthBtn';
-      authBtn.className = 'btn btn-secondary';
-      authBtn.style.marginLeft = '15px';
-      authBtn.style.padding = '8px 16px';
-      authBtn.style.fontSize = '11px';
-      authBtn.style.borderColor = 'var(--gold-light)';
-      authBtn.style.color = 'var(--gold-light)';
-      authBtn.innerHTML = 'Войти / Регистрация';
-      authBtn.onclick = () => showRegistration();
-      document.querySelector('.header-nav').appendChild(authBtn);
-    }
+    authBtn.style.display = 'inline-flex';
+  } else if (isGuestMode) {
+    navButtons.forEach(btn => {
+      if (btn.dataset.section === 'home' || btn.dataset.section === 'theory') {
+        btn.style.display = '';
+      } else {
+        btn.style.display = 'none';
+      }
+    });
     authBtn.style.display = 'inline-flex';
   } else {
     navButtons.forEach(btn => btn.style.display = '');
-    const authBtn = document.getElementById('headerAuthBtn');
-    if (authBtn) authBtn.style.display = 'none';
+    authBtn.style.display = 'none';
   }
 }
 
 function toggleVocabNavVisibility(show) {
   const vocabNavBtn = document.querySelector('.nav-btn[data-section="vocabulary"]');
-  if (vocabNavBtn) vocabNavBtn.style.display = show ? '' : 'none';
+  if (vocabNavBtn) {
+    if (isGuestMode) {
+      vocabNavBtn.style.display = 'none';
+    } else {
+      vocabNavBtn.style.display = show ? '' : 'none';
+    }
+  }
 }
 function progressBadge(level, category) {
   const items = articlesOf(level, category);
@@ -408,6 +425,11 @@ function renderStatsRow(stats) {
 }
 
 function showVocabCards(level, direction, onlyPhrases) {
+  if (isGuestMode) {
+    alert('Флеш-карточки доступны только после регистрации.');
+    showRegistration();
+    return;
+  }
   toggleHeaderNav(false);
   direction = direction || 'EN→RU';
   highlightNav('vocabulary'); toggleVocabNavVisibility(true); saveLastRoute('vocabCards', [level, direction, onlyPhrases]);
@@ -486,6 +508,11 @@ function handleVocabResponse(wordId, quality) {
 }
 
 function showVocabDirectory(level) {
+  if (isGuestMode) {
+    alert('Справочник доступен только после регистрации.');
+    showRegistration();
+    return;
+  }
   toggleHeaderNav(false);
   highlightNav('vocabulary'); toggleVocabNavVisibility(true); saveLastRoute('vocabDirectory', [level]);
   const words = getAllVocab().filter(w => {
@@ -501,6 +528,11 @@ function showVocabDirectory(level) {
   });
   html += `</div>`;
   app.innerHTML = html; window.scrollTo(0, 0);
+}
+
+function startGuestMode() {
+  isGuestMode = true;
+  showSection('theory');
 }
 
 function showRegistration() {
@@ -531,7 +563,7 @@ function showRegistration() {
           <span>или</span>
         </div>
 
-        <button class="btn btn-secondary" style="width: 100%; justify-content: center;" onclick="showSection('theory')">
+        <button class="btn btn-secondary" style="width: 100%; justify-content: center;" onclick="startGuestMode()">
           Продолжить как гость
         </button>
 
@@ -626,7 +658,7 @@ function checkLevelTest() {
           
           <div style="display: flex; gap: 15px; justify-content: center; margin-top: 20px; flex-wrap: wrap;">
             <button class="btn btn-primary" style="background: var(--gold); color: var(--burgundy-dark);" onclick="showRegistration()">Создать аккаунт</button>
-            <button class="btn btn-secondary" onclick="showLevel('${level}')">Продолжить как гость</button>
+            <button class="btn btn-secondary" onclick="startGuestMode()">Продолжить как гость</button>
           </div>
           <p style="font-size: 13px; margin-top: 15px; opacity: 0.8;">Регистрация полностью бесплатная.</p>
         </div>
@@ -641,6 +673,7 @@ function checkLevelTest() {
 }
 
 function showHome() {
+  isGuestMode = false;
   highlightNav('home');
   toggleVocabNavVisibility(true);
   saveLastRoute('home');
@@ -685,7 +718,7 @@ function showHome() {
         </ul>
         <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 20px;">
           <button class="btn btn-primary" onclick="showRegistration()">Создать аккаунт</button>
-          <button class="btn btn-secondary" onclick="showSection('theory')">Продолжить как гость</button>
+          <button class="btn btn-secondary" onclick="startGuestMode()">Продолжить как гость</button>
         </div>
         <p style="font-size: 13px; margin-top: 15px; opacity: 0.8;">Регистрация полностью бесплатная.</p>
       </div>
@@ -743,6 +776,11 @@ function resetProgress() {
 }
 
 function showSection(category) {
+  if (isGuestMode && category !== 'theory') {
+    alert('Эта функция доступна только после регистрации. Пожалуйста, создайте аккаунт.');
+    showRegistration();
+    return;
+  }
   toggleHeaderNav(false);
   highlightNav(category); toggleVocabNavVisibility(category !== 'vocabulary'); saveLastRoute('section', [category]);
   const names = { theory: 'Теория', practice: 'Практика', vocabulary: 'Словарь', reading: 'Чтение', listening: 'Аудирование' };
@@ -806,6 +844,11 @@ function showLevel(level) {
 }
 
 function showLevelTab(level, tab) {
+  if (isGuestMode && tab !== 'theory') {
+    alert('Этот раздел доступен только после регистрации.');
+    showRegistration();
+    return;
+  }
   toggleHeaderNav(false);
   highlightNav(tab); toggleVocabNavVisibility(tab !== 'vocabulary'); saveLastRoute('levelTab', [level, tab]);
   const items = articlesOf(level, tab);
@@ -997,9 +1040,16 @@ function checkListeningTasks(btn) {
 }
 
 function showArticle(id) {
-  toggleHeaderNav(false);
   const a = MATERIALS.find(m => m.id === id);
   if (!a) { app.innerHTML = '<p>Материал не найден.</p>'; return; }
+  
+  if (isGuestMode && a.category !== 'theory') {
+    alert('Материалы этого раздела доступны только после регистрации.');
+    showRegistration();
+    return;
+  }
+
+  toggleHeaderNav(false);
   highlightNav(a.category); toggleVocabNavVisibility(a.category !== 'vocabulary'); saveLastOpened(id); saveLastRoute('article', [id]);
   const items = articlesOf(a.level, a.category);
   const currentIndex = items.findIndex(item => item.id === a.id);

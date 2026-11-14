@@ -432,305 +432,305 @@ const MATERIALS = [
     { id: 11, level: "A1", category: "practice", topic: "p1", title: "01. Местоимения и to be", content: `
 <h3>A. Вставьте am/is/are</h3>
 <ol>
-<li>I [[am]] happy.</li>
-<li>They [[are]] at home.</li>
-<li>She [[is]] my sister.</li>
-<li>We [[are]] not late.</li>
+<li>I [[am##Для I (я) всегда используем am]] happy.</li>
+<li>They [[are##Для they (они) используем are]] at home.</li>
+<li>She [[is##Для she (она) используем is]] my sister.</li>
+<li>We [[are##Для we (мы) используем are]] not late.</li>
 </ol>
 <h3>B. Выберите правильный вариант</h3>
 <ol>
-<li>[[?mc:Is|Are|Am]] he a student?</li>
-<li>Where [[?mc:are|is|am]] you from?</li>
-<li>It [[?mc:is|are|am]] a cat.</li>
-<li>We [[?mc:aren't|isn't|amn't]] late.</li>
-<li>[[?mc:Are|Is|Am]] they at home?</li>
+<li>[[?mc:Is##Вопрос к he/she/it начинается с Is|Are|Am]] he a student?</li>
+<li>Where [[?mc:are##С местоимением you используем are|is|am]] you from?</li>
+<li>It [[?mc:is##Для it используем is|are|am]] a cat.</li>
+<li>We [[?mc:aren't##Отрицание для we are — aren't|isn't|amn't]] late.</li>
+<li>[[?mc:Are##Вопрос к they начинается с Are|Is|Am]] they at home?</li>
 </ol>
 <h3>C. Сделайте отрицание</h3>
 <ol>
-<li>He is tired. → [[He isn't tired|He is not tired]]</li>
-<li>I'm from Spain. → [[I'm not from Spain|I am not from Spain]]</li>
-<li>They are ready. → [[They aren't ready|They are not ready]]</li>
+<li>He is tired. → [[He isn't tired##Добавляем not после is: isn't|He is not tired]]</li>
+<li>I'm from Spain. → [[I'm not from Spain##Отрицание для I am — I'm not|I am not from Spain]]</li>
+<li>They are ready. → [[They aren't ready##Отрицание для they are — aren't|They are not ready]]</li>
 </ol>
 <h3>D. Соберите предложение из слов</h3>
 <ol>
-<li>[[?order:I|am|a|student]]</li>
-<li>[[?order:They|are|at|home]]</li>
-<li>[[?order:He|is|not|tired]]</li>
-<li>[[?order:Are|you|ready]]</li>
-<li>[[?order:She|is|my|sister]]</li>
+<li>[[?order:I|am|a|student##Порядок: Подлежащее + to be + существительное]]</li>
+<li>[[?order:They|are|at|home##Порядок: They + are + предлог + место]]</li>
+<li>[[?order:He|is|not|tired##Отрицание: He + is + not + прилагательное]]</li>
+<li>[[?order:Are|you|ready##Вопрос: Are + подлежащее + прилагательное]]</li>
+<li>[[?order:She|is|my|sister##Порядок: She + is + притяжательное + существительное]]</li>
 </ol>
 <h3>E. Переведите</h3>
 <ol>
-<li>Я студент. → [[I'm a student|I am a student]]</li>
-<li>Она не дома. → [[She isn't at home|She is not at home]]</li>
-<li>Вы готовы? → [[Are you ready?]]</li>
+<li>Я студент. → [[I'm a student##I am a student|I am a student]]</li>
+<li>Она не дома. → [[She isn't at home##She is not at home|She is not at home]]</li>
+<li>Вы готовы? → [[Are you ready?##Вопрос к you: Are you...?]]</li>
 </ol>
 ` },
 
   { id: 12, level: "A1", category: "practice", topic: "p2", title: "02. Артикли, множественное число и притяжательные", content: `
 <h3>A. Вставьте a/an/the</h3>
 <ol>
-<li>She's [[a]] teacher.</li>
-<li>I eat [[an]] apple every day.</li>
-<li>[[The]] sun is bright.</li>
-<li>It's [[an]] old house.</li>
+<li>She's [[a##Перед согласным звуком ставим a]] teacher.</li>
+<li>I eat [[an##Перед гласным звуком apple ставим an]] apple every day.</li>
+<li>[[The##Определённый артикль для уникальных предметов (солнце)]] sun is bright.</li>
+<li>It's [[an##Перед гласным звуком old ставим an]] old house.</li>
 </ol>
 <h3>B. Выберите правильный вариант</h3>
 <ol>
-<li>I have two [[?mc:children|childs|childes]].</li>
-<li>[[?mc:These|This|Those]] are my books.</li>
-<li>That is [[?mc:his|he|him]] car.</li>
-<li>This is [[?mc:an|a|the]] apple.</li>
-<li>It's [[?mc:a|an|the]] university.</li>
+<li>I have two [[?mc:children##Множественное число от child — children|childs|childes]].</li>
+<li>[[?mc:These##Множественное число, рядом — These|This|Those]] are my books.</li>
+<li>That is [[?mc:his##Притяжательное местоимение для he — his|he|him]] car.</li>
+<li>This is [[?mc:an##Перед гласным звуком ставим an|a|the]] apple.</li>
+<li>It's [[?mc:a##Перед звуком /j/ ставим a|an|the]] university.</li>
 </ol>
 <h3>C. Напишите множественное число</h3>
 <ol>
-<li>book → [[books]]</li>
-<li>bus → [[buses]]</li>
-<li>city → [[cities]]</li>
-<li>child → [[children]]</li>
+<li>book → [[books##Обычно добавляем -s]]</li>
+<li>bus → [[buses##После -s добавляем -es]]</li>
+<li>city → [[cities##Согласная + y меняется на -ies]]</li>
+<li>child → [[children##Неправильная форма множественного числа]]</li>
 </ol>
 <h3>D. Соберите предложение из слов</h3>
 <ol>
-<li>[[?order:This|is|my|book]]</li>
-<li>[[?order:These|are|my|shoes]]</li>
-<li>[[?order:He|has|a|dog]]</li>
-<li>[[?order:That|is|her|car]]</li>
-<li>[[?order:The|dog|is|black]]</li>
+<li>[[?order:This|is|my|book##Указательное + to be + притяжательное + существительное]]</li>
+<li>[[?order:These|are|my|shoes##Множественное число: These + are + my + сущ.]]</li>
+<li>[[?order:He|has|a|dog##He + has + артикль + существительное]]</li>
+<li>[[?order:That|is|her|car##That + is + притяжательное + существительное]]</li>
+<li>[[?order:The|dog|is|black##Определённый артикль + существительное + is + прилагательное]]</li>
 </ol>
 <h3>E. Переведите</h3>
 <ol>
-<li>Это моя сумка. → [[This is my bag|This is my handbag]]</li>
-<li>Он учитель. → [[He is a teacher|He's a teacher]]</li>
-<li>Эти дети мои друзья. → [[These children are my friends]]</li>
+<li>Это моя сумка. → [[This is my bag##This is my bag|This is my handbag]]</li>
+<li>Он учитель. → [[He is a teacher##He is a teacher|He's a teacher]]</li>
+<li>Эти дети мои друзья. → [[These children are my friends##These + множественное число + are + my + друзья]]</li>
 </ol>
 ` },
 
   { id: 13, level: "A1", category: "practice", topic: "p3", title: "03. Present Simple", content: `
 <h3>A. Поставьте глагол в нужную форму</h3>
 <ol>
-<li>She [[works]] (work) in a shop.</li>
-<li>I [[go]] (go) to school by bus.</li>
-<li>Tom [[studies]] (study) English.</li>
-<li>They [[don't like]] (not/like) coffee.</li>
+<li>She [[works##Для he/she/it добавляем -s]] (work) in a shop.</li>
+<li>I [[go##Для I используем базовую форму]] (go) to school by bus.</li>
+<li>Tom [[studies##Согласная + y меняется на -ies для he/she/it]] (study) English.</li>
+<li>They [[don't like##Отрицание для they: don't + глагол]] (not/like) coffee.</li>
 </ol>
 <h3>B. Выберите правильный вариант</h3>
 <ol>
-<li>She [[?mc:works|work|working]] in a bank.</li>
-<li>They [[?mc:don't like|doesn't like|not like]] coffee.</li>
-<li>[[?mc:Does|Do|Is]] she live here?</li>
-<li>He [[?mc:goes|go|gos]] to school by bus.</li>
-<li>I [[?mc:study|studies|studying]] English every day.</li>
+<li>She [[?mc:works##Для she добавляем -s|work|working]] in a bank.</li>
+<li>They [[?mc:don't like##Отрицание для they: don't + глагол|doesn't like|not like]] coffee.</li>
+<li>[[?mc:Does##Вопрос к she: Does + глагол|Do|Is]] she live here?</li>
+<li>He [[?mc:goes##Для he добавляем -es к go|go|gos]] to school by bus.</li>
+<li>I [[?mc:study##Для I используем базовую форму|studies|studying]] English every day.</li>
 </ol>
 <h3>C. Составьте вопросы</h3>
 <ol>
-<li>you / speak English → [[Do you speak English?]]</li>
-<li>she / live here → [[Does she live here?]]</li>
-<li>where / they / work → [[Where do they work?]]</li>
+<li>you / speak English → [[Do you speak English?##Вопрос к you: Do + you + глагол]]</li>
+<li>she / live here → [[Does she live here?##Вопрос к she: Does + she + глагол]]</li>
+<li>where / they / work → [[Where do they work?##Спец. вопрос: Where + do + they + глагол]]</li>
 </ol>
 <h3>D. Соберите предложение из слов</h3>
 <ol>
-<li>[[?order:She|works|in|a|shop]]</li>
-<li>[[?order:Where|does|she|work]]</li>
-<li>[[?order:I|don't|like|coffee]]</li>
-<li>[[?order:Do|you|speak|English]]</li>
-<li>[[?order:He|doesn't|play|tennis]]</li>
+<li>[[?order:She|works|in|a|shop##She + works + предлог + место]]</li>
+<li>[[?order:Where|does|she|work##Спец. вопрос: Where + does + she + глагол]]</li>
+<li>[[?order:I|don't|like|coffee##I + don't + глагол + существительное]]</li>
+<li>[[?order:Do|you|speak|English##Вопрос: Do + you + глагол + язык]]</li>
+<li>[[?order:He|doesn't|play|tennis##He + doesn't + глагол + существительное]]</li>
 </ol>
 <h3>E. Переведите</h3>
 <ol>
-<li>Я обычно пью чай утром. → [[I usually drink tea in the morning]]</li>
-<li>Она не работает по воскресеньям. → [[She doesn't work on Sundays|She does not work on Sundays]]</li>
-<li>Где ты живёшь? → [[Where do you live?]]</li>
+<li>Я обычно пью чай утром. → [[I usually drink tea in the morning##Наречие частотности перед глаголом]]</li>
+<li>Она не работает по воскресеньям. → [[She doesn't work on Sundays##She doesn't + глагол|She does not work on Sundays]]</li>
+<li>Где ты живёшь? → [[Where do you live?##Where + do + you + live]]</li>
 </ol>
 ` },
 
   { id: 14, level: "A1", category: "practice", topic: "p4", title: "04. Вопросы, время, даты и предлоги", content: `
 <h3>A. Выберите правильный предлог (at/on/in)</h3>
 <ol>
-<li>[[?mc:on|at|in]] Monday</li>
-<li>[[?mc:at|on|in]] 8 o'clock</li>
-<li>[[?mc:in|on|at]] July</li>
-<li>[[?mc:in|at|on]] the morning</li>
-<li>[[?mc:on|in|at]] 12 June</li>
+<li>[[?mc:on##С днями недели используем on|at|in]] Monday</li>
+<li>[[?mc:at##С точным временем используем at|on|in]] 8 o'clock</li>
+<li>[[?mc:in##С месяцами используем in|on|at]] July</li>
+<li>[[?mc:in##С частями дня используем in|at|on]] the morning</li>
+<li>[[?mc:on##С датами используем on|in|at]] 12 June</li>
 </ol>
 <h3>B. Выберите правильный вариант</h3>
 <ol>
-<li>[[?mc:When|What|Where]] is your birthday?</li>
-<li>My birthday is [[?mc:in|on|at]] June.</li>
-<li>We have English lessons [[?mc:on|at|in]] Mondays.</li>
-<li>[[?mc:How old|How many|How much]] are you?</li>
+<li>[[?mc:When##Вопрос о времени — When|What|Where]] is your birthday?</li>
+<li>My birthday is [[?mc:in##С месяцами используем in|on|at]] June.</li>
+<li>We have English lessons [[?mc:on##С днями недели используем on|at|in]] Mondays.</li>
+<li>[[?mc:How old##Вопрос о возрасте — How old|How many|How much]] are you?</li>
 </ol>
 <h3>C. Составьте вопросы</h3>
 <ol>
-<li>your name / what → [[What is your name?|What's your name?]]</li>
-<li>you / where / live → [[Where do you live?]]</li>
-<li>she / how old → [[How old is she?]]</li>
+<li>your name / what → [[What is your name?##What + is + your + name|What's your name?]]</li>
+<li>you / where / live → [[Where do you live?##Where + do + you + live]]</li>
+<li>she / how old → [[How old is she?##How old + is + she]]</li>
 </ol>
 <h3>D. Соберите предложение из слов</h3>
 <ol>
-<li>[[?order:What|is|your|name]]</li>
-<li>[[?order:How|old|are|you]]</li>
-<li>[[?order:Where|do|you|live]]</li>
-<li>[[?order:What|time|is|it]]</li>
-<li>[[?order:How|much|is|it]]</li>
+<li>[[?order:What|is|your|name##What + is + your + name]]</li>
+<li>[[?order:How|old|are|you##How old + are + you]]</li>
+<li>[[?order:Where|do|you|live##Where + do + you + live]]</li>
+<li>[[?order:What|time|is|it##What time + is + it]]</li>
+<li>[[?order:How|much|is|it##How much + is + it]]</li>
 </ol>
 <h3>E. Переведите</h3>
 <ol>
-<li>Как тебя зовут? → [[What is your name?|What's your name?]]</li>
-<li>Мой день рождения в июне. → [[My birthday is in June]]</li>
-<li>Сколько это стоит? → [[How much is it?]]</li>
+<li>Как тебя зовут? → [[What is your name?##What is your name?|What's your name?]]</li>
+<li>Мой день рождения в июне. → [[My birthday is in June##С месяцами используем in]]</li>
+<li>Сколько это стоит? → [[How much is it?##Вопрос о цене — How much]]</li>
 </ol>
 ` },
 
   { id: 15, level: "A1", category: "practice", topic: "p5", title: "05. There is/are, have got и предлоги места", content: `
 <h3>A. Вставьте there is / there are</h3>
 <ol>
-<li>[[There is]] a shop near my house.</li>
-<li>[[There are]] two bedrooms in the flat.</li>
-<li>[[Is there]] a bank near here?</li>
-<li>[[Are there]] any chairs in the room?</li>
+<li>[[There is##Единственное число — There is]] a shop near my house.</li>
+<li>[[There are##Множественное число — There are]] two bedrooms in the flat.</li>
+<li>[[Is there##Вопрос к единственному числу — Is there]] a bank near here?</li>
+<li>[[Are there##Вопрос к множественному числу — Are there]] any chairs in the room?</li>
 </ol>
 <h3>B. Выберите правильный вариант</h3>
 <ol>
-<li>She [[?mc:has got|have got|is got]] two brothers.</li>
-<li>The keys are [[?mc:on|in|at]] the table.</li>
-<li>[[?mc:Is there|Are there|There is]] a bank near here?</li>
-<li>My brother [[?mc:hasn't got|haven't got|isn't got]] a car.</li>
-<li>[[?mc:There is|There are|It is]] a shop near my house.</li>
+<li>She [[?mc:has got##Для she используем has got|have got|is got]] two brothers.</li>
+<li>The keys are [[?mc:on##На поверхности — on|in|at]] the table.</li>
+<li>[[?mc:Is there##Единственное число: Is there|Are there|There is]] a bank near here?</li>
+<li>My brother [[?mc:hasn't got##Отрицание для he: hasn't got|haven't got|isn't got]] a car.</li>
+<li>[[?mc:There is##Единственное число: There is|There are|It is]] a shop near my house.</li>
 </ol>
 <h3>C. Вставьте have got / has got</h3>
 <ol>
-<li>I [[have got]] a sister.</li>
-<li>Mark [[has got]] blue eyes.</li>
-<li>She [[hasn't got|has not got]] a car.</li>
+<li>I [[have got##Для I используем have got]] a sister.</li>
+<li>Mark [[has got##Для he/she/it используем has got]] blue eyes.</li>
+<li>She [[hasn't got##Отрицание для she: hasn't got|has not got]] a car.</li>
 </ol>
 <h3>D. Соберите предложение из слов</h3>
 <ol>
-<li>[[?order:There|is|a|shop|near|here]]</li>
-<li>[[?order:I|have|got|a|sister]]</li>
-<li>[[?order:The|cat|is|under|the|chair]]</li>
-<li>[[?order:Have|you|got|a|brother]]</li>
-<li>[[?order:There|are|two|bedrooms]]</li>
+<li>[[?order:There|is|a|shop|near|here##There is + артикль + сущ. + место]]</li>
+<li>[[?order:I|have|got|a|sister##I have got + артикль + сущ.]]</li>
+<li>[[?order:The|cat|is|under|the|chair##The + сущ. + is + предлог + the + сущ.]]</li>
+<li>[[?order:Have|you|got|a|brother##Вопрос: Have + you + got + сущ.]]</li>
+<li>[[?order:There|are|two|bedrooms##There are + количество + сущ.]]</li>
 </ol>
 <h3>E. Переведите</h3>
 <ol>
-<li>В квартире две спальни. → [[There are two bedrooms in the flat|There are two bedrooms in the apartment]]</li>
-<li>У тебя есть брат? → [[Have you got a brother?]]</li>
-<li>Телефон в сумке. → [[The phone is in the bag]]</li>
+<li>В квартире две спальни. → [[There are two bedrooms in the flat##There are + множественное число|There are two bedrooms in the apartment]]</li>
+<li>У тебя есть брат? → [[Have you got a brother?##Have you got + сущ.]]</li>
+<li>Телефон в сумке. → [[The phone is in the bag##The + сущ. + is + предлог + the + сущ.]]</li>
 </ol>
 ` },
 
   { id: 16, level: "A1", category: "practice", topic: "p6", title: "06. Can/can't, просьбы и инструкции", content: `
 <h3>A. Выберите правильный вариант</h3>
 <ol>
-<li>She [[?mc:can|can to|cans]] swim.</li>
-<li>[[?mc:Can|Do|Are]] you help me, please?</li>
-<li>[[?mc:Don't|Not|Doesn't]] open the window!</li>
-<li>I [[?mc:can't|cannot to|don't can]] drive a car.</li>
-<li>[[?mc:Could|Can|Are]] you repeat that, please?</li>
+<li>She [[?mc:can##После can глагол без to|can to|cans]] swim.</li>
+<li>[[?mc:Can##Просьба: Can + you|Do|Are]] you help me, please?</li>
+<li>[[?mc:Don't##Отрицательный императив: Don't + глагол|Not|Doesn't]] open the window!</li>
+<li>I [[?mc:can't##Отрицание: can't|cannot to|don't can]] drive a car.</li>
+<li>[[?mc:Could##Вежливая просьба: Could|Can|Are]] you repeat that, please?</li>
 </ol>
 <h3>B. Вставьте can / can't</h3>
 <ol>
-<li>Birds [[can]] fly.</li>
-<li>I [[can't]] drive; I haven't got a licence.</li>
-<li>[[Can]] I sit here?</li>
+<li>Birds [[can##Умение — can]] fly.</li>
+<li>I [[can't##Неумение — can't]] drive; I haven't got a licence.</li>
+<li>[[Can##Разрешение: Can + I]] I sit here?</li>
 </ol>
 <h3>C. Сделайте команды отрицательными</h3>
 <ol>
-<li>Run! → [[Don't run!|Do not run!]]</li>
-<li>Open the window! → [[Don't open the window!]]</li>
-<li>Touch that! → [[Don't touch that!]]</li>
+<li>Run! → [[Don't run!##Отрицание: Don't + глагол|Do not run!]]</li>
+<li>Open the window! → [[Don't open the window!##Отрицание: Don't + глагол]]</li>
+<li>Touch that! → [[Don't touch that!##Отрицание: Don't + глагол]]</li>
 </ol>
 <h3>D. Соберите предложение из слов</h3>
 <ol>
-<li>[[?order:I|can|swim]]</li>
-<li>[[?order:Can|you|help|me]]</li>
-<li>[[?order:Don't|open|the|window]]</li>
-<li>[[?order:She|can't|drive|a|car]]</li>
-<li>[[?order:Can|I|sit|here]]</li>
+<li>[[?order:I|can|swim##I + can + глагол]]</li>
+<li>[[?order:Can|you|help|me##Can + you + глагол + me]]</li>
+<li>[[?order:Don't|open|the|window##Don't + глагол + the + сущ.]]</li>
+<li>[[?order:She|can't|drive|a|car##She + can't + глагол + артикль + сущ.]]</li>
+<li>[[?order:Can|I|sit|here##Can + I + глагол + место]]</li>
 </ol>
 <h3>E. Переведите</h3>
 <ol>
-<li>Я умею плавать, но не умею водить машину. → [[I can swim, but I can't drive|I can swim, but I cannot drive]]</li>
-<li>Откройте книгу, пожалуйста. → [[Open the book, please]]</li>
-<li>Можно мне стакан воды? → [[Can I have a glass of water, please?]]</li>
+<li>Я умею плавать, но не умею водить машину. → [[I can swim, but I can't drive##Can и can't для умений|I can swim, but I cannot drive]]</li>
+<li>Откройте книгу, пожалуйста. → [[Open the book, please##Императив: глагол + сущ.]]</li>
+<li>Можно мне стакан воды? → [[Can I have a glass of water, please?##Разрешение: Can I have...?]]</li>
 </ol>
 ` },
 
   { id: 17, level: "A1", category: "practice", topic: "p7", title: "07. Present Continuous", content: `
 <h3>A. Поставьте глагол в Present Continuous</h3>
 <ol>
-<li>I [[am reading]] (read) now.</li>
-<li>She [[is cooking]] (cook) dinner.</li>
-<li>They [[are playing]] (play) football at the moment.</li>
-<li>We [[aren't watching]] (not/watch) TV now.</li>
+<li>I [[am reading##I + am + глагол-ing]] (read) now.</li>
+<li>She [[is cooking##She + is + глагол-ing]] (cook) dinner.</li>
+<li>They [[are playing##They + are + глагол-ing]] (play) football at the moment.</li>
+<li>We [[aren't watching##Отрицание: we + aren't + глагол-ing]] (not/watch) TV now.</li>
 </ol>
 <h3>B. Выберите правильный вариант</h3>
 <ol>
-<li>She [[?mc:is cooking|cooks|is cook]] dinner now.</li>
-<li>They [[?mc:are playing|play|is playing]] football at the moment.</li>
-<li>[[?mc:Are|Do|Is]] you listening to me?</li>
-<li>We [[?mc:aren't watching|don't watching|isn't watching]] TV now.</li>
-<li>Look! The cat [[?mc:is sleeping|sleeps|sleep]] on the sofa.</li>
+<li>She [[?mc:is cooking##She + is + глагол-ing|cooks|is cook]] dinner now.</li>
+<li>They [[?mc:are playing##They + are + глагол-ing|play|is playing]] football at the moment.</li>
+<li>[[?mc:Are##Вопрос к you: Are|Do|Is]] you listening to me?</li>
+<li>We [[?mc:aren't watching##Отрицание: we + aren't + глагол-ing|don't watching|isn't watching]] TV now.</li>
+<li>Look! The cat [[?mc:is sleeping##The cat + is + глагол-ing|sleeps|sleep]] on the sofa.</li>
 </ol>
 <h3>C. Выберите форму (Present Simple или Continuous)</h3>
 <ol>
-<li>He usually [[?mc:walks|is walking|walk]] to work.</li>
-<li>Look! It [[?mc:is raining|rains|rain]] .</li>
-<li>I [[?mc:study|am studying|studies]] every Monday.</li>
-<li>They [[?mc:are having|have|has]] lunch right now.</li>
+<li>He usually [[?mc:walks##Привычка: Present Simple|is walking|walk]] to work.</li>
+<li>Look! It [[?mc:is raining##Действие сейчас: Present Continuous|rains|rain]] .</li>
+<li>I [[?mc:study##Регулярное действие: Present Simple|am studying|studies]] every Monday.</li>
+<li>They [[?mc:are having##Действие сейчас: Present Continuous|have|has]] lunch right now.</li>
 </ol>
 <h3>D. Соберите предложение из слов</h3>
 <ol>
-<li>[[?order:I|am|reading|now]]</li>
-<li>[[?order:She|is|cooking|dinner]]</li>
-<li>[[?order:What|are|you|doing]]</li>
-<li>[[?order:They|are|playing|football]]</li>
-<li>[[?order:We|aren't|watching|TV]]</li>
+<li>[[?order:I|am|reading|now##I + am + глагол-ing + now]]</li>
+<li>[[?order:She|is|cooking|dinner##She + is + глагол-ing + сущ.]]</li>
+<li>[[?order:What|are|you|doing##What + are + you + глагол-ing]]</li>
+<li>[[?order:They|are|playing|football##They + are + глагол-ing + сущ.]]</li>
+<li>[[?order:We|aren't|watching|TV##We + aren't + глагол-ing + сущ.]]</li>
 </ol>
 <h3>E. Переведите</h3>
 <ol>
-<li>Я сейчас читаю. → [[I'm reading now|I am reading now]]</li>
-<li>Она работает в магазине (вообще). → [[She works in a shop]]</li>
-<li>Что ты делаешь сейчас? → [[What are you doing now?]]</li>
+<li>Я сейчас читаю. → [[I'm reading now##I am reading now|I am reading now]]</li>
+<li>Она работает в магазине (вообще). → [[She works in a shop##Постоянный факт: Present Simple]]</li>
+<li>Что ты делаешь сейчас? → [[What are you doing now?##Действие сейчас: Present Continuous]]</li>
 </ol>
 ` },
 
   { id: 18, level: "A1", category: "practice", topic: "p8", title: "08. Past Simple", content: `
 <h3>A. Выберите правильный вариант</h3>
 <ol>
-<li>We [[?mc:went|go|goed]] to the park yesterday.</li>
-<li>Did you [[?mc:see|saw|seen]] him?</li>
-<li>She [[?mc:didn't|doesn't|don't]] buy bread.</li>
-<li>They [[?mc:were|was|is]] tired.</li>
-<li>I [[?mc:saw|see|seen]] Anna yesterday.</li>
+<li>We [[?mc:went##Past Simple от go|go|goed]] to the park yesterday.</li>
+<li>Did you [[?mc:see##После did — начальная форма|saw|seen]] him?</li>
+<li>She [[?mc:didn't##Отрицание в прошлом: didn't|doesn't|don't]] buy bread.</li>
+<li>They [[?mc:were##They + were (мн. число)|was|is]] tired.</li>
+<li>I [[?mc:saw##Past Simple от see|see|seen]] Anna yesterday.</li>
 </ol>
 <h3>B. Вставьте was/were</h3>
 <ol>
-<li>I [[was]] at home yesterday.</li>
-<li>They [[were]] tired.</li>
-<li>[[Was]] she at work?</li>
-<li>Where [[were]] you last night?</li>
+<li>I [[was##I + was]] at home yesterday.</li>
+<li>They [[were##They + were]] tired.</li>
+<li>[[Was##Вопрос к she: Was]] she at work?</li>
+<li>Where [[were##Вопрос к you: were]] you last night?</li>
 </ol>
 <h3>C. Исправьте ошибки</h3>
 <ol>
-<li>She didn't went home. → [[She didn't go home]]</li>
-<li>Did you saw him? → [[Did you see him?]]</li>
-<li>They was tired. → [[They were tired]]</li>
+<li>She didn't went home. → [[She didn't go home##После didn't — начальная форма]]</li>
+<li>Did you saw him? → [[Did you see him?##После did — начальная форма]]</li>
+<li>They was tired. → [[They were tired##They + were]]</li>
 </ol>
 <h3>D. Соберите предложение из слов</h3>
 <ol>
-<li>[[?order:I|went|to|school|yesterday]]</li>
-<li>[[?order:Where|did|you|go]]</li>
-<li>[[?order:She|didn't|buy|bread]]</li>
-<li>[[?order:They|were|at|home]]</li>
-<li>[[?order:Did|you|see|the|film]]</li>
+<li>[[?order:I|went|to|school|yesterday##I + went + to + school + yesterday]]</li>
+<li>[[?order:Where|did|you|go##Where + did + you + go]]</li>
+<li>[[?order:She|didn't|buy|bread##She + didn't + buy + bread]]</li>
+<li>[[?order:They|were|at|home##They + were + at + home]]</li>
+<li>[[?order:Did|you|see|the|film##Did + you + see + the + film]]</li>
 </ol>
 <h3>E. Переведите</h3>
 <ol>
-<li>Вчера я был дома. → [[I was at home yesterday]]</li>
-<li>Мы ходили в парк на прошлой неделе. → [[We went to the park last week]]</li>
-<li>Она не купила хлеб. → [[She didn't buy any bread|She didn't buy bread]]</li>
+<li>Вчера я был дома. → [[I was at home yesterday##I + was + at home + yesterday]]</li>
+<li>Мы ходили в парк на прошлой неделе. → [[We went to the park last week##Past Simple от go — went]]</li>
+<li>Она не купила хлеб. → [[She didn't buy any bread##She didn't + buy + bread|She didn't buy bread]]</li>
 </ol>
 ` },
 
@@ -738,39 +738,39 @@ const MATERIALS = [
 <h3>A. Вставьте слово</h3>
 <p>Слова: kitchen, thirsty, sister, bus, breakfast, bedroom, tired, water.</p>
 <ol>
-<li>I eat [[breakfast]] in the morning.</li>
-<li>I'm [[thirsty]]; I'd like a drink.</li>
-<li>My mother's daughter is my [[sister]].</li>
-<li>I sleep in my [[bedroom]].</li>
-<li>I cook in the [[kitchen]].</li>
+<li>I eat [[breakfast##Приём пищи утром — breakfast]] in the morning.</li>
+<li>I'm [[thirsty##Хочу пить — thirsty]]; I'd like a drink.</li>
+<li>My mother's daughter is my [[sister##Сестра — sister]].</li>
+<li>I sleep in my [[bedroom##Комната для сна — bedroom]].</li>
+<li>I cook in the [[kitchen##Комната для готовки — kitchen]].</li>
 </ol>
 <h3>B. Выберите правильный ответ</h3>
 <ol>
-<li>«How are you?» — [[?mc:I'm fine, thanks.|It's Monday.|I'm 25.]]</li>
-<li>«How much is it?» — [[?mc:It's five euros.|It's Monday.|I'm from Italy.]]</li>
-<li>«Where are you from?» — [[?mc:I'm from Italy.|I'm at home.|I'm fine.]]</li>
-<li>«Thank you.» — [[?mc:You're welcome.|Excuse me.|I'm sorry.]]</li>
-<li>«Excuse me, where is the toilet?» — [[?mc:It's over there.|I'm fine.|It's five euros.]]</li>
+<li>«How are you?» — [[?mc:I'm fine, thanks.##Ответ на How are you|It's Monday.|I'm 25.]]</li>
+<li>«How much is it?» — [[?mc:It's five euros.##Ответ о цене|It's Monday.|I'm from Italy.]]</li>
+<li>«Where are you from?» — [[?mc:I'm from Italy.##Ответ о происхождении|I'm at home.|I'm fine.]]</li>
+<li>«Thank you.» — [[?mc:You're welcome.##Ответ на благодарность|Excuse me.|I'm sorry.]]</li>
+<li>«Excuse me, where is the toilet?» — [[?mc:It's over there.##Указание направления|I'm fine.|It's five euros.]]</li>
 </ol>
 <h3>C. Выберите ответ (напишите букву a или b)</h3>
 <ol>
-<li>“How much is it?” — a) It's Monday. b) It's five euros. → [[b]]</li>
-<li>“Where are you from?” — a) I'm from Italy. b) I'm at home. → [[a]]</li>
-<li>“Thank you.” — a) You're welcome. b) Excuse me. → [[a]]</li>
+<li>“How much is it?” — a) It's Monday. b) It's five euros. → [[b##Ответ о цене]]</li>
+<li>“Where are you from?” — a) I'm from Italy. b) I'm at home. → [[a##Ответ о происхождении]]</li>
+<li>“Thank you.” — a) You're welcome. b) Excuse me. → [[a##Ответ на благодарность]]</li>
 </ol>
 <h3>D. Соберите предложение из слов</h3>
 <ol>
-<li>[[?order:Where|is|the|station]]</li>
-<li>[[?order:I|don't|understand]]</li>
-<li>[[?order:I|live|in|a|small|flat]]</li>
-<li>[[?order:Can|I|have|a|cup|of|tea]]</li>
-<li>[[?order:I|eat|breakfast|in|the|morning]]</li>
+<li>[[?order:Where|is|the|station##Where + is + the + station]]</li>
+<li>[[?order:I|don't|understand##I + don't + understand]]</li>
+<li>[[?order:I|live|in|a|small|flat##I + live + in + a + small + flat]]</li>
+<li>[[?order:Can|I|have|a|cup|of|tea##Can + I + have + a + cup + of + tea]]</li>
+<li>[[?order:I|eat|breakfast|in|the|morning##I + eat + breakfast + in + the + morning]]</li>
 </ol>
 <h3>E. Переведите</h3>
 <ol>
-<li>Извините, где вокзал? → [[Excuse me, where is the station?]]</li>
-<li>Я не понимаю. → [[I don't understand|I do not understand]]</li>
-<li>Я живу в небольшой квартире с сестрой. → [[I live in a small flat with my sister|I live in a small apartment with my sister]]</li>
+<li>Извините, где вокзал? → [[Excuse me, where is the station?##Excuse me + where is + the station]]</li>
+<li>Я не понимаю. → [[I don't understand##I + don't + understand|I do not understand]]</li>
+<li>Я живу в небольшой квартире с сестрой. → [[I live in a small flat with my sister##I live in a small flat with my sister|I live in a small apartment with my sister]]</li>
 </ol>
 ` },
 
@@ -779,55 +779,55 @@ const MATERIALS = [
 
 <h3>A. Выберите правильный вариант</h3>
 <ol>
-<li>She [[?mc:is|am|are::01]] my sister.</li>
-<li>I have [[?mc:an|a|the::02]] apple.</li>
-<li>He [[?mc:works|work|working::03]] in a bank.</li>
-<li>[[?mc:When|What|Where::04]] is your birthday?</li>
-<li>[[?mc:There is|There are|It is::05]] a shop near my house.</li>
-<li>[[?mc:Can|Do|Are::06]] you help me, please?</li>
-<li>She [[?mc:is cooking|cooks|is cook::07]] dinner now.</li>
-<li>We [[?mc:went|go|goed::08]] to the park yesterday.</li>
-<li>The keys are [[?mc:on|in|at::09]] the table.</li>
+<li>She [[?mc:is##Для she используем is|am|are::01]] my sister.</li>
+<li>I have [[?mc:an##Перед гласным звуком apple — an|a|the::02]] apple.</li>
+<li>He [[?mc:works##Для he добавляем -s|work|working::03]] in a bank.</li>
+<li>[[?mc:When##Вопрос о времени|What|Where::04]] is your birthday?</li>
+<li>[[?mc:There is##Единственное число|There are|It is::05]] a shop near my house.</li>
+<li>[[?mc:Can##Просьба|Do|Are::06]] you help me, please?</li>
+<li>She [[?mc:is cooking##Действие сейчас|cooks|is cook::07]] dinner now.</li>
+<li>We [[?mc:went##Past Simple от go|go|goed::08]] to the park yesterday.</li>
+<li>The keys are [[?mc:on##На поверхности|in|at::09]] the table.</li>
 </ol>
 
 <h3>B. Соберите предложения из слов</h3>
 <ol>
-<li>[[?order:She|is|a|teacher::01]]</li>
-<li>[[?order:These|are|my|books::02]]</li>
-<li>[[?order:He|works|in|a|shop::03]]</li>
-<li>[[?order:Where|do|you|live::04]]</li>
-<li>[[?order:There|are|two|bedrooms::05]]</li>
-<li>[[?order:I|can|swim::06]]</li>
-<li>[[?order:She|is|reading|a|book::07]]</li>
-<li>[[?order:I|went|to|school|yesterday::08]]</li>
-<li>[[?order:The|book|is|on|the|table::09]]</li>
+<li>[[?order:She|is|a|teacher::01##She + is + a + teacher]]</li>
+<li>[[?order:These|are|my|books::02##These + are + my + books]]</li>
+<li>[[?order:He|works|in|a|shop::03##He + works + in + a + shop]]</li>
+<li>[[?order:Where|do|you|live::04##Where + do + you + live]]</li>
+<li>[[?order:There|are|two|bedrooms::05##There are + two + bedrooms]]</li>
+<li>[[?order:I|can|swim::06##I + can + swim]]</li>
+<li>[[?order:She|is|reading|a|book::07##She + is + reading + a + book]]</li>
+<li>[[?order:I|went|to|school|yesterday::08##I + went + to + school + yesterday]]</li>
+<li>[[?order:The|book|is|on|the|table::09##The + book + is + on + the + table]]</li>
 </ol>
 
 <h3>C. Исправьте ошибки</h3>
 <ol>
-<li>She go to work every day. → [[She goes to work every day::03]]</li>
-<li>I am play football now. → [[I am playing football now|I'm playing football now::07]]</li>
-<li>Did you went home? → [[Did you go home::08]]</li>
-<li>He don't like tea. → [[He doesn't like tea::03]]</li>
-<li>There is two bedrooms. → [[There are two bedrooms::05]]</li>
+<li>She go to work every day. → [[She goes to work every day::03##She + goes (Present Simple)]]</li>
+<li>I am play football now. → [[I am playing football now::07##am + playing (Continuous)|I'm playing football now::07]]</li>
+<li>Did you went home? → [[Did you go home::08##После did — начальная форма]]</li>
+<li>He don't like tea. → [[He doesn't like tea::03##He + doesn't + like]]</li>
+<li>There is two bedrooms. → [[There are two bedrooms::05##There are + множественное число]]</li>
 </ol>
 
 <h3>D. Вставьте правильное слово</h3>
 <ol>
-<li>They [[?mc:don't like|doesn't like|not like::03]] fish.</li>
-<li>[[?mc:Does|Do|Is::03]] she speak English?</li>
-<li>The lesson starts [[?mc:at|in|on::04]] nine o'clock.</li>
-<li>She [[?mc:has got|have got|is got::05]] two brothers.</li>
-<li>[[?mc:Don't|Not|Doesn't::06]] open the window!</li>
+<li>They [[?mc:don't like##Отрицание для they|doesn't like|not like::03]] fish.</li>
+<li>[[?mc:Does##Вопрос к she|Do|Is::03]] she speak English?</li>
+<li>The lesson starts [[?mc:at##С точным временем|in|on::04]] nine o'clock.</li>
+<li>She [[?mc:has got##Для she|have got|is got::05]] two brothers.</li>
+<li>[[?mc:Don't##Отрицательный императив|Not|Doesn't::06]] open the window!</li>
 </ol>
 
 <h3>E. Выберите форму глагола</h3>
 <ol>
-<li>[[?mc:Are|Do|Is::07]] you listening to me?</li>
-<li>Did you [[?mc:see|saw|seen::08]] him?</li>
-<li>They [[?mc:were|was|is::08]] tired.</li>
-<li>The cat is [[?mc:under|in|on::09]] the chair.</li>
-<li>My birthday is [[?mc:in|on|at::09]] July.</li>
+<li>[[?mc:Are##Вопрос к you|Do|Is::07]] you listening to me?</li>
+<li>Did you [[?mc:see##После did — начальная форма|saw|seen::08]] him?</li>
+<li>They [[?mc:were##They + were|was|is::08]] tired.</li>
+<li>The cat is [[?mc:under##Под — under|in|on::09]] the chair.</li>
+<li>My birthday is [[?mc:in##С месяцами — in|on|at::09]] July.</li>
 </ol>
 ` },
 
@@ -836,52 +836,52 @@ const MATERIALS = [
 
 <h3>A. Грамматика (выбор варианта)</h3>
 <ol>
-<li>I [[?mc:am|is|are::01]] from Germany.</li>
-<li>She [[?mc:has got|have got|is got::05]] two brothers.</li>
-<li>He [[?mc:doesn't work|don't work|not work::03]] on Sundays.</li>
-<li>[[?mc:Do|Does|Is::03]] you speak English?</li>
-<li>Look! It [[?mc:is raining|rains|rain::07]] .</li>
-<li>We [[?mc:were|was|is::08]] at home yesterday.</li>
-<li>Did they [[?mc:visit|visited|visiting::08]] you?</li>
-<li>There [[?mc:are|is|am::05]] three books on the desk.</li>
-<li>My birthday is [[?mc:in|on|at::09]] May.</li>
-<li>The cat is [[?mc:under|in|on::09]] the table.</li>
+<li>I [[?mc:am##Для I|is|are::01]] from Germany.</li>
+<li>She [[?mc:has got##Для she|have got|is got::05]] two brothers.</li>
+<li>He [[?mc:doesn't work##Для he|don't work|not work::03]] on Sundays.</li>
+<li>[[?mc:Do##Вопрос к you|Does|Is::03]] you speak English?</li>
+<li>Look! It [[?mc:is raining##Действие сейчас|rains|rain::07]] .</li>
+<li>We [[?mc:were##Для we|was|is::08]] at home yesterday.</li>
+<li>Did they [[?mc:visit##После did — начальная форма|visited|visiting::08]] you?</li>
+<li>There [[?mc:are##Множественное число|is|am::05]] three books on the desk.</li>
+<li>My birthday is [[?mc:in##С месяцами|on|at::09]] May.</li>
+<li>The cat is [[?mc:under##Под|in|on::09]] the table.</li>
 </ol>
 
 <h3>B. Лексика и фразы</h3>
 <ol>
-<li>«How are you?» — [[?mc:I'm fine, thanks.|It's Monday.|I'm 25.::09]]</li>
-<li>«How much is it?» — [[?mc:It's five euros.|It's Monday.|I'm from Italy.::09]]</li>
-<li>This is [[?mc:an|a|the::02]] apple.</li>
-<li>I have two [[?mc:children|childs|childes::02]] .</li>
-<li>She [[?mc:is cooking|cooks|is cook::07]] dinner now.</li>
+<li>«How are you?» — [[?mc:I'm fine, thanks.##Ответ на How are you|It's Monday.|I'm 25.::09]]</li>
+<li>«How much is it?» — [[?mc:It's five euros.##Ответ о цене|It's Monday.|I'm from Italy.::09]]</li>
+<li>This is [[?mc:an##Перед гласным|a|the::02]] apple.</li>
+<li>I have two [[?mc:children##Множественное число|childs|childes::02]] .</li>
+<li>She [[?mc:is cooking##Действие сейчас|cooks|is cook::07]] dinner now.</li>
 </ol>
 
 <h3>C. Выберите форму</h3>
 <ol>
-<li>She can [[?mc:swim|swims|to swim::06]] .</li>
-<li>These [[?mc:are|is|am::02]] my keys.</li>
-<li>I [[?mc:watch|watches|watching::03]] TV every evening.</li>
-<li>They [[?mc:aren't sleeping|don't sleeping|isn't sleeping::07]] now.</li>
-<li>[[?mc:Is there|Are there|There is::05]] a shop near here?</li>
+<li>She can [[?mc:swim##После can — без to|swims|to swim::06]] .</li>
+<li>These [[?mc:are##Множественное число|is|am::02]] my keys.</li>
+<li>I [[?mc:watch##Для I|watches|watching::03]] TV every evening.</li>
+<li>They [[?mc:aren't sleeping##Отрицание: aren't|don't sleeping|isn't sleeping::07]] now.</li>
+<li>[[?mc:Is there##Единственное число|Are there|There is::05]] a shop near here?</li>
 </ol>
 
 <h3>D. Соберите предложения</h3>
 <ol>
-<li>[[?order:I|am|a|student::01]]</li>
-<li>[[?order:Where|do|you|work::03]]</li>
-<li>[[?order:We|are|cooking|dinner|now::07]]</li>
-<li>[[?order:They|were|at|home|yesterday::08]]</li>
-<li>[[?order:There|are|two|rooms|in|my|flat::05]]</li>
+<li>[[?order:I|am|a|student::01##I + am + a + student]]</li>
+<li>[[?order:Where|do|you|work::03##Where + do + you + work]]</li>
+<li>[[?order:We|are|cooking|dinner|now::07##We + are + cooking + dinner + now]]</li>
+<li>[[?order:They|were|at|home|yesterday::08##They + were + at + home + yesterday]]</li>
+<li>[[?order:There|are|two|rooms|in|my|flat::05##There + are + two + rooms + in + my + flat]]</li>
 </ol>
 
 <h3>E. Соберите предложения (продолжение)</h3>
 <ol>
-<li>[[?order:I|can|swim::06]]</li>
-<li>[[?order:My|father|usually|goes|to|work|by|bus::03]]</li>
-<li>[[?order:Did|you|buy|bread|yesterday::08]]</li>
-<li>[[?order:The|book|is|on|the|table::09]]</li>
-<li>[[?order:She|doesn't|like|coffee::03]]</li>
+<li>[[?order:I|can|swim::06##I + can + swim]]</li>
+<li>[[?order:My|father|usually|goes|to|work|by|bus::03##My + father + usually + goes + to + work + by + bus]]</li>
+<li>[[?order:Did|you|buy|bread|yesterday::08##Did + you + buy + bread + yesterday]]</li>
+<li>[[?order:The|book|is|on|the|table::09##The + book + is + on + the + table]]</li>
+<li>[[?order:She|doesn't|like|coffee::03##She + doesn't + like + coffee]]</li>
 </ol>
 ` },
   { id: 31, level: "A1", category: "vocabulary", topic: "greetings", title: "Приветствия и базовые фразы", content: `
@@ -1249,20 +1249,20 @@ const MATERIALS = [
 
       <h3>Упражнение 1</h3>
       <ol>
-        <li>He [[goes]] to work by bus. (go)</li>
-        <li>They [[do not like|don't like]] pizza. (not like)</li>
-        <li>[[Does]] she [[speak]] French? (speak)</li>
-        <li>I [[wake up]] at 7 o'clock every day. (wake up)</li>
-        <li>My sister [[watches]] TV in the evening. (watch)</li>
+        <li>He [[goes##Для he добавляем -es|goes to work by bus]] to work by bus. (go)</li>
+        <li>They [[do not like##Отрицание для they: don't|don't like]] pizza. (not like)</li>
+        <li>[[Does##Вопрос к she: Does]] she [[speak##После Does — начальная форма]] French? (speak)</li>
+        <li>I [[wake up##Для I — базовая форма]] at 7 o'clock every day. (wake up)</li>
+        <li>My sister [[watches##Для she добавляем -es|watches]] TV in the evening. (watch)</li>
       </ol>
 
       <h3>Упражнение 2</h3>
       <p>Выберите правильный вариант: <code>do</code> или <code>does</code>.</p>
       <ol>
-        <li>[[Do]] you like coffee?</li>
-        <li>[[Does]] he play football?</li>
-        <li>[[Do]] they live in London?</li>
-        <li>[[Does]] she work in an office?</li>
+        <li>[[Do##Вопрос к you: Do]] you like coffee?</li>
+        <li>[[Does##Вопрос к he: Does]] he play football?</li>
+        <li>[[Do##Вопрос к they: Do]] they live in London?</li>
+        <li>[[Does##Вопрос к she: Does]] she work in an office?</li>
       </ol>
     ` },
   { id: 1012, level: "A2", category: "practice", topic: "present-continuous-practice", title: "Практика: Present Continuous", content: `
@@ -1270,19 +1270,19 @@ const MATERIALS = [
 
       <h3>Упражнение 1</h3>
       <ol>
-        <li>Look! The cat [[is sleeping]] on the sofa. (sleep)</li>
-        <li>I [[am not watching]] TV now. (not watch)</li>
-        <li>[[Is]] he [[working]] today? (work)</li>
-        <li>She [[is reading]] a book at the moment. (read)</li>
-        <li>They [[are playing]] football now. (play)</li>
+        <li>Look! The cat [[is sleeping##The cat + is + глагол-ing]] on the sofa. (sleep)</li>
+        <li>I [[am not watching##Отрицание: am not + глагол-ing]] TV now. (not watch)</li>
+        <li>[[Is##Вопрос к he: Is]] he [[working##После is — глагол-ing]] today? (work)</li>
+        <li>She [[is reading##She + is + глагол-ing]] a book at the moment. (read)</li>
+        <li>They [[are playing##They + are + глагол-ing]] football now. (play)</li>
       </ol>
 
       <h3>Упражнение 2</h3>
       <p>Выберите правильную форму: Present Simple или Present Continuous.</p>
       <ol>
-        <li>I usually [[go]] to school by bus, but today I [[am walking]]. (go / walk)</li>
-        <li>She [[is cooking]] dinner right now. (cook)</li>
-        <li>They [[play]] tennis every weekend. (play)</li>
+        <li>I usually [[go##Привычка: Present Simple]] to school by bus, but today I [[am walking##Действие сегодня: Present Continuous]]. (go / walk)</li>
+        <li>She [[is cooking##Действие сейчас: Present Continuous]] dinner right now. (cook)</li>
+        <li>They [[play##Регулярное действие: Present Simple]] tennis every weekend. (play)</li>
       </ol>
     ` },
   { id: 1013, level: "A2", category: "practice", topic: "past-simple-practice", title: "Практика: Past Simple", content: `
@@ -1290,19 +1290,19 @@ const MATERIALS = [
 
       <h3>Упражнение 1</h3>
       <ol>
-        <li>They [[went]] to the park yesterday. (go)</li>
-        <li>I [[did not eat|didn't eat]] breakfast this morning. (not eat)</li>
-        <li>[[Did]] she [[call]] you last night? (call)</li>
-        <li>We [[visited]] our grandparents last weekend. (visit)</li>
-        <li>He [[saw]] a good film two days ago. (see)</li>
+        <li>They [[went##Past Simple от go]] to the park yesterday. (go)</li>
+        <li>I [[did not eat##Отрицание: didn't + глагол|didn't eat]] breakfast this morning. (not eat)</li>
+        <li>[[Did##Вопрос в прошлом: Did]] she [[call##После Did — начальная форма]] you last night? (call)</li>
+        <li>We [[visited##Правильный глагол: + -ed]] our grandparents last weekend. (visit)</li>
+        <li>He [[saw##Past Simple от see]] a good film two days ago. (see)</li>
       </ol>
 
       <h3>Упражнение 2</h3>
       <p>Выберите правильную форму неправильного глагола.</p>
       <ol>
-        <li>I [[went]] to the cinema yesterday. (go — went / goed)</li>
-        <li>She [[bought]] a new dress last week. (buy — bought / buyed)</li>
-        <li>They [[had]] a great time at the party. (have — had / haved)</li>
+        <li>I [[went##Past Simple от go]] to the cinema yesterday. (go — went / goed)</li>
+        <li>She [[bought##Past Simple от buy]] a new dress last week. (buy — bought / buyed)</li>
+        <li>They [[had##Past Simple от have]] a great time at the party. (have — had / haved)</li>
       </ol>
     ` },
   { id: 1014, level: "A2", category: "practice", topic: "future-practice", title: "Практика: Future (will / going to)", content: `
@@ -1310,19 +1310,19 @@ const MATERIALS = [
 
       <h3>Упражнение 1</h3>
       <ol>
-        <li>I think it [[will be]] sunny tomorrow. (be — предсказание)</li>
-        <li>We [[are going to visit]] our grandparents next weekend. (visit — план)</li>
-        <li>She [[will help]] you with your homework. (help — обещание)</li>
-        <li>Look at those clouds! It [[is going to rain]]. (rain — предсказание на основе доказательств)</li>
-        <li>I [[will call]] you later, I promise. (call — обещание)</li>
+        <li>I think it [[will be##Предсказание (мнение)]] sunny tomorrow. (be — предсказание)</li>
+        <li>We [[are going to visit##Запланированное действие]] our grandparents next weekend. (visit — план)</li>
+        <li>She [[will help##Обещание]] you with your homework. (help — обещание)</li>
+        <li>Look at those clouds! It [[is going to rain##Предсказание на основе доказательств]]. (rain — предсказание на основе доказательств)</li>
+        <li>I [[will call##Спонтанное решение/обещание]] you later, I promise. (call — обещание)</li>
       </ol>
 
       <h3>Упражнение 2</h3>
       <p>Поставьте глагол в правильную форму будущего времени.</p>
       <ol>
-        <li>I [[am going to study]] English next year. (study — план)</li>
-        <li>Don't worry, I [[will help]] you. (help — спонтанное решение)</li>
-        <li>They [[are going to buy]] a new car soon. (buy — план)</li>
+        <li>I [[am going to study##План на будущее]] English next year. (study — план)</li>
+        <li>Don't worry, I [[will help##Спонтанное решение]] you. (help — спонтанное решение)</li>
+        <li>They [[are going to buy##План на будущее]] a new car soon. (buy — план)</li>
       </ol>
     ` },
   { id: 1015, level: "A2", category: "practice", topic: "modal-verbs-practice", title: "Практика: Modal Verbs", content: `
@@ -1330,19 +1330,19 @@ const MATERIALS = [
 
       <h3>Упражнение 1</h3>
       <ol>
-        <li>You [[must]] finish your homework before dinner. (обязанность)</li>
-        <li>[[Can]] I borrow your pen, please? (разрешение)</li>
-        <li>You [[should]] see a doctor if you feel sick. (совет)</li>
-        <li>I [[have to]] wear a uniform at work. (вынужденность)</li>
-        <li>[[Could]] you help me with this box, please? (вежливая просьба)</li>
+        <li>You [[must##Строгая обязанность]] finish your homework before dinner. (обязанность)</li>
+        <li>[[Can##Разрешение]] I borrow your pen, please? (разрешение)</li>
+        <li>You [[should##Совет]] see a doctor if you feel sick. (совет)</li>
+        <li>I [[have to##Вынужденность]] wear a uniform at work. (вынужденность)</li>
+        <li>[[Could##Вежливая просьба]] you help me with this box, please? (вежливая просьба)</li>
       </ol>
 
       <h3>Упражнение 2</h3>
       <p>Выберите правильный модальный глагол.</p>
       <ol>
-        <li>You look tired. You [[should]] go to bed. (совет)</li>
-        <li>[[Can]] you speak French? (возможность)</li>
-        <li>I [[must]] go now, I'm late. (строгая обязанность)</li>
+        <li>You look tired. You [[should##Совет]] go to bed. (совет)</li>
+        <li>[[Can##Возможность]] you speak French? (возможность)</li>
+        <li>I [[must##Строгая обязанность]] go now, I'm late. (строгая обязанность)</li>
       </ol>
     ` },
   { id: 1016, level: "A2", category: "practice", topic: "comparatives-practice", title: "Практика: Comparatives and Superlatives", content: `
@@ -1350,19 +1350,19 @@ const MATERIALS = [
 
       <h3>Упражнение 1</h3>
       <ol>
-        <li>She is [[taller]] than her sister. (tall)</li>
-        <li>This is the [[best]] restaurant in town. (good)</li>
-        <li>My car is [[faster]] than yours. (fast)</li>
-        <li>This book is [[more interesting]] than that one. (interesting)</li>
-        <li>He is the [[tallest]] boy in our class. (tall)</li>
+        <li>She is [[taller##Сравнительная степень: tall + er]] than her sister. (tall)</li>
+        <li>This is the [[best##Превосходная степень от good]] restaurant in town. (good)</li>
+        <li>My car is [[faster##Сравнительная степень: fast + er]] than yours. (fast)</li>
+        <li>This book is [[more interesting##Длинное прилагательное: more + adj]] than that one. (interesting)</li>
+        <li>He is the [[tallest##Превосходная степень: the + tall + est]] boy in our class. (tall)</li>
       </ol>
 
       <h3>Упражнение 2</h3>
       <p>Выберите правильную форму.</p>
       <ol>
-        <li>This is the [[worst]] film I have ever seen. (bad — worse / worst)</li>
-        <li>My bag is [[heavier]] than yours. (heavy — heavier / more heavy)</li>
-        <li>She is the [[most beautiful]] girl in the room. (beautiful — beautifullest / most beautiful)</li>
+        <li>This is the [[worst##Превосходная степень от bad]] film I have ever seen. (bad — worse / worst)</li>
+        <li>My bag is [[heavier##Согласная + y: heavy -> heavier]] than yours. (heavy — heavier / more heavy)</li>
+        <li>She is the [[most beautiful##Длинное прилагательное: the most + adj]] girl in the room. (beautiful — beautifullest / most beautiful)</li>
       </ol>
     ` },
   { id: 1017, level: "A2", category: "practice", topic: "passive-practice", title: "Практика: Present Simple Passive", content: `
@@ -1370,19 +1370,19 @@ const MATERIALS = [
 
       <h3>Упражнение 1</h3>
       <ol>
-        <li>The letter [[is sent]] every day. (send)</li>
-        <li>English [[is spoken]] in many countries. (speak)</li>
-        <li>These cars [[are made]] in Germany. (make)</li>
-        <li>This room [[is cleaned]] every morning. (clean)</li>
-        <li>Bread [[is sold]] in this shop. (sell)</li>
+        <li>The letter [[is sent##Passive: is + V3]] every day. (send)</li>
+        <li>English [[is spoken##Passive: is + V3]] in many countries. (speak)</li>
+        <li>These cars [[are made##Passive: are + V3]] in Germany. (make)</li>
+        <li>This room [[is cleaned##Passive: is + V3]] every morning. (clean)</li>
+        <li>Bread [[is sold##Passive: is + V3]] in this shop. (sell)</li>
       </ol>
 
       <h3>Упражнение 2</h3>
       <p>Выберите правильную форму пассивного залога.</p>
       <ol>
-        <li>The book [[is written]] by a famous author. (write)</li>
-        <li>These houses [[are built]] every year. (build)</li>
-        <li>Coffee [[is grown]] in Brazil. (grow)</li>
+        <li>The book [[is written##Passive: is + V3]] by a famous author. (write)</li>
+        <li>These houses [[are built##Passive: are + V3]] every year. (build)</li>
+        <li>Coffee [[is grown##Passive: is + V3]] in Brazil. (grow)</li>
       </ol>
     ` },
   { id: 1018, level: "A2", category: "practice", topic: "prepositions-practice", title: "Практика: Prepositions", content: `
@@ -1390,20 +1390,20 @@ const MATERIALS = [
 
       <h3>Упражнение 1</h3>
       <ol>
-        <li>The book is [[on]] the table.</li>
-        <li>We have a meeting [[at]] 3 p.m.</li>
-        <li>I was born [[in]] 1990.</li>
-        <li>The cat is [[under]] the chair.</li>
-        <li>The bank is [[next to]] the supermarket.</li>
+        <li>The book is [[on##На поверхности]] the table.</li>
+        <li>We have a meeting [[at##С точным временем]] 3 p.m.</li>
+        <li>I was born [[in##С годом]] 1990.</li>
+        <li>The cat is [[under##Под]] the chair.</li>
+        <li>The bank is [[next to##Рядом с]] the supermarket.</li>
       </ol>
 
       <h3>Упражнение 2</h3>
       <p>Выберите правильный предлог.</p>
       <ol>
-        <li>My birthday is [[in]] July.</li>
-        <li>We have English lessons [[on]] Mondays.</li>
-        <li>She is [[at]] home now.</li>
-        <li>The keys are [[in]] my bag.</li>
+        <li>My birthday is [[in##С месяцами]] July.</li>
+        <li>We have English lessons [[on##С днями недели]] Mondays.</li>
+        <li>She is [[at##At home — устойчивое выражение]] home now.</li>
+        <li>The keys are [[in##Внутри]] my bag.</li>
       </ol>
     ` },
 
@@ -1856,64 +1856,64 @@ const MATERIALS = [
 <li>2) 2 секунды на каждый тест</li>
 <li>3) 2 секунды на чтение ввода</li>
 </ul>
-<p>Ответ: [[2]] (per test = «на тест»)</p>
+<p>Ответ: [[2##per test = «на тест»]] (per test = «на тест»)</p>
 <p><b>Вопрос 2.</b> <code>The first line contains a single integer t (1 ≤ t ≤ 10<sup>4</sup>) — the number of test cases.</code> Как понимать тире «—»?</p>
 <ul>
 <li>1) «t — это количество тестовых наборов»</li>
 <li>2) «t минус количество тестов»</li>
 <li>3) «После тире — необязательный комментарий»</li>
 </ul>
-<p>Ответ: [[1]] (Тире после переменной = «— это», определение)</p>
+<p>Ответ: [[1##Тире после переменной = «— это», определение]] (Тире после переменной = «— это», определение)</p>
 <p><b>Вопрос 3.</b> <code>If there are multiple answers, print any of them.</code> Ваш ответ отличается от примера, но корректен. Что будет?</p>
 <ul>
 <li>1) WA</li>
 <li>2) Принят</li>
 <li>3) Нужно вывести все ответы</li>
 </ul>
-<p>Ответ: [[2]] (any of them = «любой из них»)</p>
+<p>Ответ: [[2##any of them = «любой из них»]] (any of them = «любой из них»)</p>
 ` },
   { id: 752, level: "ICPC", category: "practice", topic: "numbers_q", title: "Практика: числа и ограничения", content: `
 <p><b>Вопрос 1.</b> <code>You are given a positive integer n.</code> Может ли n быть 0? (напиши <code>yes</code> или <code>no</code>)</p>
-<p>Ответ: [[no]] (positive — строго больше нуля)</p>
+<p>Ответ: [[no##positive — строго больше нуля]] (positive — строго больше нуля)</p>
 <p><b>Вопрос 2.</b> <code>You can perform at most k operations.</code> Сколько операций можно сделать? (введи цифру)</p>
 <ul>
 <li>1) Ровно k</li>
 <li>2) От 0 до k</li>
 <li>3) Строго больше k</li>
 </ul>
-<p>Ответ: [[2]] (at most = ≤)</p>
+<p>Ответ: [[2##at most = ≤]] (at most = ≤)</p>
 <p><b>Вопрос 3.</b> <code>Find the number of indices i such that a<sub>i</sub> is strictly greater than a<sub>i−1</sub>.</code> Если a<sub>i</sub> = a<sub>i−1</sub>, индекс засчитывается? (напиши <code>yes</code> или <code>no</code>)</p>
-<p>Ответ: [[no]] (strictly — строго)</p>
+<p>Ответ: [[no##strictly — строго]] (strictly — строго)</p>
 ` },
   { id: 753, level: "ICPC", category: "practice", topic: "arrays_q", title: "Практика: массивы и строки", content: `
 <p><b>Вопрос 1.</b> Что из этого — subarray массива [1, 2, 3, 4, 5]? (введи цифру)</p>
 <ul><li>1) [1, 3, 5]</li><li>2) [2, 3, 4]</li><li>3) [4, 2]</li></ul>
-<p>Ответ: [[2]] (subarray — элементы подряд)</p>
+<p>Ответ: [[2##subarray — элементы подряд]] (subarray — элементы подряд)</p>
 <p><b>Вопрос 2.</b> Что из этого — subsequence, но не subarray? (введи цифру)</p>
 <ul><li>1) [2, 3]</li><li>2) [1, 3, 5]</li><li>3) [3, 1]</li></ul>
-<p>Ответ: [[2]] (Порядок сохранён, но элементы не подряд)</p>
+<p>Ответ: [[2##Порядок сохранён, но элементы не подряд]] (Порядок сохранён, но элементы не подряд)</p>
 <p><b>Вопрос 3.</b> Какой массив non-decreasing, но не strictly increasing? (введи цифру)</p>
 <ul><li>1) [1, 2, 3]</li><li>2) [1, 1, 2]</li><li>3) [3, 2, 1]</li></ul>
-<p>Ответ: [[2]] (non-decreasing разрешает равных соседей)</p>
+<p>Ответ: [[2##non-decreasing разрешает равных соседей]] (non-decreasing разрешает равных соседей)</p>
 ` },
   { id: 754, level: "ICPC", category: "practice", topic: "graphs_q", title: "Практика: графы", content: `
 <p><b>Вопрос 1.</b> Единственное число от «vertices»? (введи цифру)</p>
 <ul><li>1) vertice</li><li>2) vertex</li><li>3) vertic</li></ul>
-<p>Ответ: [[2]] (vertex → vertices)</p>
+<p>Ответ: [[2##vertex → vertices]] (vertex → vertices)</p>
 <p><b>Вопрос 2.</b> <code>The graph is undirected. The i-th edge connects u<sub>i</sub> and v<sub>i</sub>.</code> Можно ли пройти из v<sub>i</sub> в u<sub>i</sub>? (напиши <code>yes</code> или <code>no</code>)</p>
-<p>Ответ: [[yes]] (undirected — в обе стороны)</p>
+<p>Ответ: [[yes##undirected — в обе стороны]] (undirected — в обе стороны)</p>
 <p><b>Вопрос 3.</b> Сколько рёбер в tree из 7 вершин? (введи цифру)</p>
-<p>Ответ: [[6]] (В дереве из n вершин ровно n − 1 ребро)</p>
+<p>Ответ: [[6##В дереве из n вершин ровно n − 1 ребро]] (В дереве из n вершин ровно n − 1 ребро)</p>
 ` },
   { id: 755, level: "ICPC", category: "practice", topic: "conditionals_q", title: "Практика: условия", content: `
 <p><b>Вопрос 1.</b> «unless X» означает… (введи цифру)</p>
 <ul><li>1) if X</li><li>2) if not X</li><li>3) because X</li></ul>
-<p>Ответ: [[2]] (unless = «если не»)</p>
+<p>Ответ: [[2##unless = «если не»]] (unless = «если не»)</p>
 <p><b>Вопрос 2.</b> <code>The robot moves right unless the next cell is blocked.</code> Следующая клетка свободна. Что делает робот? (введи цифру)</p>
 <ul><li>1) Двигается вправо</li><li>2) Стоит на месте</li><li>3) Двигается влево</li></ul>
-<p>Ответ: [[1]] (Клетка не занята — условие «unless» не сработало)</p>
+<p>Ответ: [[1##Клетка не занята — условие «unless» не сработало]] (Клетка не занята — условие «unless» не сработало)</p>
 <p><b>Вопрос 3.</b> <code>Print YES if s is a palindrome, and NO otherwise.</code> s = "ab". Что вывести? (введи слово)</p>
-<p>Ответ: [[no]] («ab» не палиндром)</p>
+<p>Ответ: [[no##«ab» не палиндром]] («ab» не палиндром)</p>
 ` },
 
   { id: 801, level: "EXAM", category: "theory", topic: "tenses_theory", title: "01. Все времена английского языка", content: `
@@ -1983,49 +1983,49 @@ const MATERIALS = [
   { id: 802, level: "EXAM", category: "practice", topic: "tenses_practice", title: "01. Практика: Все времена", content: `
 <h3>Практика A. Выберите правильную форму</h3>
 <ol>
-<li>I usually [[walk]] (walk) to work, but today I [[am taking]] (take) the bus.</li>
-<li>She [[has known]] (know) Mark since primary school.</li>
-<li>We [[have been waiting]] (wait) for forty minutes and the doctor still hasn’t called us.</li>
-<li>When I got home, my family [[had]] already [[eaten]] (already / eat).</li>
-<li>At 8 p.m. tomorrow, I [[will be driving]] (drive) to the airport.</li>
-<li>By the end of this month, they [[will have completed]] (complete) the project.</li>
-<li>He [[worked]] (work) in Madrid in 2022.</li>
-<li>I [[haven't seen]] (not / see) that film yet.</li>
-<li>The phone rang while I [[was having]] (have) a shower.</li>
-<li>By next April, I [[will have been studying]] (study) English for three years.</li>
-<li>The museum [[opens]] (open) at ten tomorrow, according to the website.</li>
-<li>Look! That cyclist [[is going to fall]] (fall)!</li>
-<li>How long [[have]] you [[been learning]] (learn) English?</li>
-<li>She was exhausted because she [[had been running]] (run).</li>
-<li>I promise I [[won't tell]] (not / tell) anyone.</li>
+<li>I usually [[walk##Привычка: Present Simple]] (walk) to work, but today I [[am taking##Временная ситуация: Present Continuous]] (take) the bus.</li>
+<li>She [[has known##Опыт, связь с настоящим: Present Perfect]] (know) Mark since primary school.</li>
+<li>We [[have been waiting##Длительность до настоящего: Present Perfect Continuous]] (wait) for forty minutes and the doctor still hasn’t called us.</li>
+<li>When I got home, my family [[had]] already [[eaten##Действие раньше другого в прошлом: Past Perfect]] (already / eat).</li>
+<li>At 8 p.m. tomorrow, I [[will be driving##Процесс в будущем: Future Continuous]] (drive) to the airport.</li>
+<li>By the end of this month, they [[will have completed##Завершение к будущему: Future Perfect]] (complete) the project.</li>
+<li>He [[worked##Завершённое действие с датой: Past Simple]] (work) in Madrid in 2022.</li>
+<li>I [[haven't seen##Опыт до сих пор: Present Perfect]] (not / see) that film yet.</li>
+<li>The phone rang while I [[was having##Фон в прошлом: Past Continuous]] (have) a shower.</li>
+<li>By next April, I [[will have been studying##Длительность к будущему: Future Perfect Continuous]] (study) English for three years.</li>
+<li>The museum [[opens##Расписание: Present Simple]] (open) at ten tomorrow, according to the website.</li>
+<li>Look! That cyclist [[is going to fall##Предсказание на основе доказательств: going to]] (fall)!</li>
+<li>How long [[have]] you [[been learning##Длительность до настоящего: Present Perfect Continuous]] (learn) English?</li>
+<li>She was exhausted because she [[had been running##Длительный процесс до прошлого: Past Perfect Continuous]] (run).</li>
+<li>I promise I [[won't tell##Обещание: will]] (not / tell) anyone.</li>
 </ol>
 
 <h3>Практика B. Исправьте ошибки</h3>
 <ol>
-<li>I am knowing the answer. → [[I know the answer.]]</li>
-<li>We have visited Rome last summer. → [[We visited Rome last summer.]]</li>
-<li>When she will arrive, we’ll start dinner. → [[When she arrives, we'll start dinner.]]</li>
-<li>He works here since 2020. → [[He has worked here since 2020.|He has been working here since 2020.]]</li>
-<li>By the time I arrived, the meeting already started. → [[By the time I arrived, the meeting had already started.]]</li>
-<li>This time next week I will sit on the beach. → [[This time next week I will be sitting on the beach.]]</li>
-<li>I have been finishing the report, so you can read it now. → [[I have finished the report, so you can read it now.]]</li>
-<li>They didn’t went to the party. → [[They didn't go to the party.]]</li>
-<li>She has been owning this car for years. → [[She has owned this car for years.]]</li>
-<li>By 2030, scientists will discover a cure for every disease. → [[By 2030, scientists will have discovered a cure for every disease.]]</li>
+<li>I am knowing the answer. → [[I know the answer.##Глаголы состояния не употребляются в Continuous]]</li>
+<li>We have visited Rome last summer. → [[We visited Rome last summer.##С конкретным временем в прошлом — Past Simple]]</li>
+<li>When she will arrive, we’ll start dinner. → [[When she arrives, we'll start dinner.##После when о будущем — Present Simple]]</li>
+<li>He works here since 2020. → [[He has worked here since 2020.##Since требует Present Perfect|He has been working here since 2020.]]</li>
+<li>By the time I arrived, the meeting already started. → [[By the time I arrived, the meeting had already started.##Действие раньше другого в прошлом — Past Perfect]]</li>
+<li>This time next week I will sit on the beach. → [[This time next week I will be sitting on the beach.##Процесс в конкретный момент будущего — Future Continuous]]</li>
+<li>I have been finishing the report, so you can read it now. → [[I have finished the report, so you can read it now.##Важен результат, а не процесс — Present Perfect]]</li>
+<li>They didn’t went to the party. → [[They didn't go to the party.##После didn't — начальная форма]]</li>
+<li>She has been owning this car for years. → [[She has owned this car for years.##Own — глагол состояния, не употребляется в Continuous]]</li>
+<li>By 2030, scientists will discover a cure for every disease. → [[By 2030, scientists will have discovered a cure for every disease.##By + будущее время требует Future Perfect]]</li>
 </ol>
 
 <h3>Практика C. Переведите на английский</h3>
 <ol>
-<li>Я живу здесь с 2021 года. → [[I have lived here since 2021.|I have been living here since 2021.]]</li>
-<li>Когда я позвонил, они обсуждали план. → [[When I called, they were discussing the plan.]]</li>
-<li>К тому времени, как мы добрались до станции, поезд уже ушёл. → [[By the time we got to the station, the train had already left.]]</li>
-<li>Завтра в это время я буду сдавать экзамен. → [[This time tomorrow, I'll be taking an exam.]]</li>
-<li>К пятнице она закончит отчёт. → [[She'll have finished the report by Friday.]]</li>
-<li>Ты когда-нибудь пробовал индийскую еду? → [[Have you ever tried Indian food?]]</li>
-<li>Я весь день занимаюсь, поэтому устал. → [[I've been studying all day, so I'm tired.]]</li>
-<li>Мы встречаемся с клиентом в три часа. → [[We're meeting the client at three.]]</li>
-<li>Если он опоздает, мы начнём без него. → [[If he is late, we'll start without him.]]</li>
-<li>Через месяц будет пять лет, как они работают вместе. → [[By next month, they'll have been working together for five years.]]</li>
+<li>Я живу здесь с 2021 года. → [[I have lived here since 2021.##Since + Present Perfect|I have been living here since 2021.]]</li>
+<li>Когда я позвонил, они обсуждали план. → [[When I called, they were discussing the plan.##Фон в прошлом: Past Continuous]]</li>
+<li>К тому времени, как мы добрались до станции, поезд уже ушёл. → [[By the time we got to the station, the train had already left.##Действие раньше другого в прошлом: Past Perfect]]</li>
+<li>Завтра в это время я буду сдавать экзамен. → [[This time tomorrow, I'll be taking an exam.##Процесс в будущем: Future Continuous]]</li>
+<li>К пятнице она закончит отчёт. → [[She'll have finished the report by Friday.##Завершение к будущему: Future Perfect]]</li>
+<li>Ты когда-нибудь пробовал индийскую еду? → [[Have you ever tried Indian food?##Опыт: Present Perfect]]</li>
+<li>Я весь день занимаюсь, поэтому устал. → [[I've been studying all day, so I'm tired.##Длительность до настоящего: Present Perfect Continuous]]</li>
+<li>Мы встречаемся с клиентом в три часа. → [[We're meeting the client at three.##Договорённость: Present Continuous]]</li>
+<li>Если он опоздает, мы начнём без него. → [[If he is late, we'll start without him.##В придаточном условия о будущем — Present Simple]]</li>
+<li>Через месяц будет пять лет, как они работают вместе. → [[By next month, they'll have been working together for five years.##Длительность к будущему: Future Perfect Continuous]]</li>
 </ol>
 ` },
   { id: 803, level: "EXAM", category: "theory", topic: "passive_theory", title: "02. Passive Voice — пассивный залог", content: `
@@ -2050,56 +2050,56 @@ const MATERIALS = [
   { id: 804, level: "EXAM", category: "practice", topic: "passive_practice", title: "02. Практика: Passive Voice", content: `
 <h3>Практика A. Преобразуйте в Passive</h3>
 <ol>
-<li>They clean the offices every evening. → [[The offices are cleaned every evening.]]</li>
-<li>Someone stole my bike yesterday. → [[My bike was stolen yesterday.]]</li>
-<li>The company is testing a new app. → [[A new app is being tested by the company.]]</li>
-<li>They have cancelled the meeting. → [[The meeting has been cancelled.]]</li>
-<li>The team had completed the work before the deadline. → [[The work had been completed before the deadline.]]</li>
-<li>They will publish the results tomorrow. → [[The results will be published tomorrow.]]</li>
-<li>You must wear a helmet. → [[A helmet must be worn.]]</li>
-<li>They are building a new hospital near here. → [[A new hospital is being built near here.]]</li>
-<li>Someone was following us. → [[We were being followed.]]</li>
-<li>They will have delivered all the packages by noon. → [[All the packages will have been delivered by noon.]]</li>
-<li>People speak Spanish in many countries. → [[Spanish is spoken in many countries.]]</li>
-<li>Nobody has told me the truth. → [[I haven't been told the truth.]]</li>
+<li>They clean the offices every evening. → [[The offices are cleaned every evening.##Present Simple Passive: are + V3]]</li>
+<li>Someone stole my bike yesterday. → [[My bike was stolen yesterday.##Past Simple Passive: was + V3]]</li>
+<li>The company is testing a new app. → [[A new app is being tested by the company.##Present Continuous Passive: is being + V3]]</li>
+<li>They have cancelled the meeting. → [[The meeting has been cancelled.##Present Perfect Passive: has been + V3]]</li>
+<li>The team had completed the work before the deadline. → [[The work had been completed before the deadline.##Past Perfect Passive: had been + V3]]</li>
+<li>They will publish the results tomorrow. → [[The results will be published tomorrow.##Future Simple Passive: will be + V3]]</li>
+<li>You must wear a helmet. → [[A helmet must be worn.##Modal + be + V3]]</li>
+<li>They are building a new hospital near here. → [[A new hospital is being built near here.##Present Continuous Passive: is being + V3]]</li>
+<li>Someone was following us. → [[We were being followed.##Past Continuous Passive: were being + V3]]</li>
+<li>They will have delivered all the packages by noon. → [[All the packages will have been delivered by noon.##Future Perfect Passive: will have been + V3]]</li>
+<li>People speak Spanish in many countries. → [[Spanish is spoken in many countries.##Present Simple Passive: is + V3]]</li>
+<li>Nobody has told me the truth. → [[I haven't been told the truth.##Present Perfect Passive (отрицание): haven't been + V3]]</li>
 </ol>
 
 <h3>Практика B. Вставьте правильную форму глагола в скобках</h3>
 <ol>
-<li>The invitations [[were sent]] (send) yesterday.</li>
-<li>This machine [[is used]] (use) every day.</li>
-<li>Our house [[is being painted]] (paint) at the moment.</li>
-<li>The problem [[has]] already [[been solved]] (solve).</li>
-<li>The documents must [[be signed]] (sign) before Friday.</li>
-<li>A new shopping centre [[was being built]] (build) when I moved here.</li>
-<li>The suspect [[is being questioned]] (question) by the police now.</li>
-<li>The work [[will be finished]] (finish) by the end of the week.</li>
-<li>The room [[hasn't been cleaned]] (not / clean) yet.</li>
-<li>When we arrived, the food [[had been prepared]] (prepare).</li>
+<li>The invitations [[were sent##Past Simple Passive]] (send) yesterday.</li>
+<li>This machine [[is used##Present Simple Passive]] (use) every day.</li>
+<li>Our house [[is being painted##Present Continuous Passive]] (paint) at the moment.</li>
+<li>The problem [[has]] already [[been solved##Present Perfect Passive]] (solve).</li>
+<li>The documents must [[be signed##Modal + be + V3]] (sign) before Friday.</li>
+<li>A new shopping centre [[was being built##Past Continuous Passive]] (build) when I moved here.</li>
+<li>The suspect [[is being questioned##Present Continuous Passive]] (question) by the police now.</li>
+<li>The work [[will be finished##Future Simple Passive]] (finish) by the end of the week.</li>
+<li>The room [[hasn't been cleaned##Present Perfect Passive (отрицание)]] (not / clean) yet.</li>
+<li>When we arrived, the food [[had been prepared##Past Perfect Passive]] (prepare).</li>
 </ol>
 
 <h3>Практика C. Active или Passive? Выберите форму.</h3>
 <ol>
-<li>The chef [[prepared]] (prepared / was prepared) a special meal.</li>
-<li>The special meal [[was prepared]] (prepared / was prepared) for the guests.</li>
-<li>This book [[has been translated]] (has translated / has been translated) into twenty languages.</li>
-<li>They [[are interviewing]] (are interviewing / are being interviewed) three candidates today.</li>
-<li>The road [[will be closed]] (will close / will be closed) for repairs tonight.</li>
-<li>Someone [[has damaged]] (has damaged / has been damaged) my laptop.</li>
-<li>The results [[will be announced]] (announce / will be announced) next Monday.</li>
-<li>The manager [[gave]] (gave / was given) us clear instructions.</li>
+<li>The chef [[prepared##Active: подлежащее выполняет действие]] (prepared / was prepared) a special meal.</li>
+<li>The special meal [[was prepared##Passive: действие над подлежащим]] (prepared / was prepared) for the guests.</li>
+<li>This book [[has been translated##Passive: Present Perfect]] (has translated / has been translated) into twenty languages.</li>
+<li>They [[are interviewing##Active: они берут интервью]] (are interviewing / are being interviewed) three candidates today.</li>
+<li>The road [[will be closed##Passive: Future Simple]] (will close / will be closed) for repairs tonight.</li>
+<li>Someone [[has damaged##Active: кто-то повредил]] (has damaged / has been damaged) my laptop.</li>
+<li>The results [[will be announced##Passive: Future Simple]] (announce / will be announced) next Monday.</li>
+<li>The manager [[gave##Active: менеджер дал]] (gave / was given) us clear instructions.</li>
 </ol>
 
 <h3>Практика D. Переведите на английский</h3>
 <ol>
-<li>Эти письма отправляют каждую пятницу. → [[These letters are sent every Friday.]]</li>
-<li>Мост строили, когда мы переехали сюда. → [[The bridge was being built when we moved here.]]</li>
-<li>Все билеты уже проданы. → [[All the tickets have already been sold.]]</li>
-<li>Решение объявят завтра. → [[The decision will be announced tomorrow.]]</li>
-<li>Эту проблему нужно решить немедленно. → [[This problem needs to be solved immediately.]]</li>
-<li>К июлю здание будет завершено. → [[The building will have been completed by July.]]</li>
-<li>Меня не предупредили об изменении. → [[I wasn't told about the change.]]</li>
-<li>Сейчас проверяют документы. → [[The documents are being checked now.]]</li>
+<li>Эти письма отправляют каждую пятницу. → [[These letters are sent every Friday.##Present Simple Passive]]</li>
+<li>Мост строили, когда мы переехали сюда. → [[The bridge was being built when we moved here.##Past Continuous Passive]]</li>
+<li>Все билеты уже проданы. → [[All the tickets have already been sold.##Present Perfect Passive]]</li>
+<li>Решение объявят завтра. → [[The decision will be announced tomorrow.##Future Simple Passive]]</li>
+<li>Эту проблему нужно решить немедленно. → [[This problem needs to be solved immediately.##Инфинитив пассива: to be + V3]]</li>
+<li>К июлю здание будет завершено. → [[The building will have been completed by July.##Future Perfect Passive]]</li>
+<li>Меня не предупредили об изменении. → [[I wasn't told about the change.##Past Simple Passive (отрицание)]]</li>
+<li>Сейчас проверяют документы. → [[The documents are being checked now.##Present Continuous Passive]]</li>
 </ol>
 ` },
   { id: 805, level: "EXAM", category: "theory", topic: "conditionals_theory", title: "03. Conditionals — условные предложения", content: `
@@ -2120,40 +2120,40 @@ const MATERIALS = [
   { id: 806, level: "EXAM", category: "practice", topic: "conditionals_practice", title: "03. Практика: Conditionals", content: `
 <h3>Практика A. Поставьте глаголы в правильную форму</h3>
 <ol>
-<li>If you [[mix]] (mix) blue and yellow, you [[get]] (get) green.</li>
-<li>If I [[see]] (see) Anna tomorrow, I [[will give]] (give) her your message.</li>
-<li>If he [[had]] (have) more confidence, he [[would apply]] (apply) for the job.</li>
-<li>If we [[had left]] (leave) earlier, we [[wouldn't have missed]] (not / miss) the train yesterday.</li>
-<li>If I [[hadn't spent]] (not / spend) so much money last month, I [[would have]] (have) more now.</li>
-<li>Unless you [[hurry]] (hurry), you [[will be]] (be) late.</li>
-<li>If she [[had listened]] (listen) to the instructions, she wouldn’t be making this mistake now.</li>
-<li>If I were you, I [[wouldn't accept]] (not / accept) the offer.</li>
-<li>If they [[had booked]] (book) in advance, they would have got cheaper tickets.</li>
-<li>If water [[reaches]] (reach) 100°C, it [[boils]] (boil) at sea level.</li>
-<li>We’ll go hiking provided that the weather [[is]] (be) good.</li>
-<li>If he hadn’t forgotten his passport, he [[would be]] (be) on the plane now.</li>
+<li>If you [[mix##Zero Conditional: Present Simple]] (mix) blue and yellow, you [[get##Zero Conditional: Present Simple]] (get) green.</li>
+<li>If I [[see##First Conditional: Present Simple]] (see) Anna tomorrow, I [[will give##First Conditional: will + V1]] (give) her your message.</li>
+<li>If he [[had##Second Conditional: Past Simple]] (have) more confidence, he [[would apply##Second Conditional: would + V1]] (apply) for the job.</li>
+<li>If we [[had left##Third Conditional: Past Perfect]] (leave) earlier, we [[wouldn't have missed##Third Conditional: would have + V3]] (not / miss) the train yesterday.</li>
+<li>If I [[hadn't spent##Mixed Conditional (прошлое -> настоящее): Past Perfect]] (not / spend) so much money last month, I [[would have##Mixed Conditional: would + V1]] (have) more now.</li>
+<li>Unless you [[hurry##First Conditional: Present Simple]] (hurry), you [[will be##First Conditional: will + V1]] (be) late.</li>
+<li>If she [[had listened##Mixed Conditional (прошлое -> настоящее): Past Perfect]] (listen) to the instructions, she wouldn’t be making this mistake now.</li>
+<li>If I were you, I [[wouldn't accept##Second Conditional: would + V1]] (not / accept) the offer.</li>
+<li>If they [[had booked##Third Conditional: Past Perfect]] (book) in advance, they would have got cheaper tickets.</li>
+<li>If water [[reaches##Zero Conditional: Present Simple]] (reach) 100°C, it [[boils##Zero Conditional: Present Simple]] (boil) at sea level.</li>
+<li>We’ll go hiking provided that the weather [[is##First Conditional: Present Simple]] (be) good.</li>
+<li>If he hadn’t forgotten his passport, he [[would be##Mixed Conditional (прошлое -> настоящее): would + V1]] (be) on the plane now.</li>
 </ol>
 
 <h3>Практика B. Перефразируйте, используя слово в скобках</h3>
 <ol>
-<li>Hurry up or you’ll miss the train. (IF) → [[If you don't hurry, you'll miss the train.]]</li>
-<li>I didn’t study, so I failed the test. (IF) → [[If I had studied, I wouldn't have failed the test.]]</li>
-<li>I don’t have a car, so I can’t drive to work. (IF) → [[If I had a car, I could drive to work.]]</li>
-<li>You can borrow my laptop, but you must be careful. (AS LONG AS) → [[You can borrow my laptop as long as you're careful.]]</li>
-<li>He didn’t train enough, so he isn’t fit now. (IF) → [[If he had trained more, he would be fitter now.]]</li>
-<li>You won’t understand unless you ask questions. (IF) → [[If you ask questions, you'll understand.|You won't understand if you don't ask questions.]]</li>
-<li>I regret not calling her. (IF) → [[If only I had called her.|I wish I had called her.]]</li>
-<li>You should take a map because you might get lost. (IN CASE) → [[Take a map in case you get lost.]]</li>
+<li>Hurry up or you’ll miss the train. (IF) → [[If you don't hurry, you'll miss the train.##First Conditional]]</li>
+<li>I didn’t study, so I failed the test. (IF) → [[If I had studied, I wouldn't have failed the test.##Third Conditional]]</li>
+<li>I don’t have a car, so I can’t drive to work. (IF) → [[If I had a car, I could drive to work.##Second Conditional]]</li>
+<li>You can borrow my laptop, but you must be careful. (AS LONG AS) → [[You can borrow my laptop as long as you're careful.##As long as = при условии что]]</li>
+<li>He didn’t train enough, so he isn’t fit now. (IF) → [[If he had trained more, he would be fitter now.##Mixed Conditional]]</li>
+<li>You won’t understand unless you ask questions. (IF) → [[If you ask questions, you'll understand.##Unless = if not|You won't understand if you don't ask questions.]]</li>
+<li>I regret not calling her. (IF) → [[If only I had called her.##Сожаление о прошлом|I wish I had called her.]]</li>
+<li>You should take a map because you might get lost. (IN CASE) → [[Take a map in case you get lost.##In case = на случай если]]</li>
 </ol>
 
 <h3>Практика D. Переведите на английский</h3>
 <ol>
-<li>Если завтра будет солнечно, мы поедем за город. → [[If it's sunny tomorrow, we'll go to the countryside.]]</li>
-<li>Если бы я знал ответ, я бы тебе сказал. → [[If I knew the answer, I'd tell you.]]</li>
-<li>Если бы они проверили адрес, они бы не заблудились. → [[If they had checked the address, they wouldn't have got lost.]]</li>
-<li>Если бы я тогда принял эту работу, сейчас я жил бы в Лондоне. → [[If I had accepted that job then, I'd be living in London now.]]</li>
-<li>Если не поторопишься, опоздаешь. → [[Unless you hurry, you'll be late.]]</li>
-<li>Если бы она больше практиковалась, сейчас она говорила бы свободнее. → [[If she had practised more, she would speak more fluently now.]]</li>
+<li>Если завтра будет солнечно, мы поедем за город. → [[If it's sunny tomorrow, we'll go to the countryside.##First Conditional]]</li>
+<li>Если бы я знал ответ, я бы тебе сказал. → [[If I knew the answer, I'd tell you.##Second Conditional]]</li>
+<li>Если бы они проверили адрес, они бы не заблудились. → [[If they had checked the address, they wouldn't have got lost.##Third Conditional]]</li>
+<li>Если бы я тогда принял эту работу, сейчас я жил бы в Лондоне. → [[If I had accepted that job then, I'd be living in London now.##Mixed Conditional]]</li>
+<li>Если не поторопишься, опоздаешь. → [[Unless you hurry, you'll be late.##Unless = if not]]</li>
+<li>Если бы она больше практиковалась, сейчас она говорила бы свободнее. → [[If she had practised more, she would speak more fluently now.##Mixed Conditional]]</li>
 </ol>
 ` },
   { id: 807, level: "EXAM", category: "theory", topic: "wishes_theory", title: "04. Wishes, If only и похожие конструкции", content: `
@@ -2173,40 +2173,40 @@ const MATERIALS = [
   { id: 808, level: "EXAM", category: "practice", topic: "wishes_practice", title: "04. Практика: Wishes и If only", content: `
 <h3>Практика A. Выберите форму</h3>
 <ol>
-<li>I wish I [[knew]] (know) how to fix this computer.</li>
-<li>She wishes she [[hadn't said]] (not / say) that yesterday.</li>
-<li>I wish you [[would stop]] (stop) interrupting me.</li>
-<li>If only we [[had]] (have) more money!</li>
-<li>He wishes he [[could]] (can) come to the concert.</li>
-<li>It’s time we [[went]] (go) home.</li>
-<li>I’d rather you [[didn't tell]] (not / tell) anyone about this.</li>
-<li>I wish it [[weren't raining]] (not / rain) right now.</li>
-<li>If only I [[had taken]] (take) your advice last year.</li>
-<li>I’d rather [[watch]] (watch) a film than go out tonight.</li>
+<li>I wish I [[knew##Wish + Past Simple (настоящее)]] (know) how to fix this computer.</li>
+<li>She wishes she [[hadn't said##Wish + Past Perfect (прошлое)]] (not / say) that yesterday.</li>
+<li>I wish you [[would stop##Wish + would (раздражение)]] (stop) interrupting me.</li>
+<li>If only we [[had##If only + Past Simple (настоящее)]] (have) more money!</li>
+<li>He wishes he [[could##Wish + could (возможность)]] (can) come to the concert.</li>
+<li>It’s time we [[went##It's time + Past Simple]] (go) home.</li>
+<li>I’d rather you [[didn't tell##I'd rather + Past Simple (о другом)]] (not / tell) anyone about this.</li>
+<li>I wish it [[weren't raining##Wish + Past Continuous (сейчас)]] (not / rain) right now.</li>
+<li>If only I [[had taken##If only + Past Perfect (прошлое)]] (take) your advice last year.</li>
+<li>I’d rather [[watch##I'd rather + V1 (о себе)]] (watch) a film than go out tonight.</li>
 </ol>
 
 <h3>Практика B. Перепишите предложения с заданной конструкцией</h3>
 <ol>
-<li>I don’t speak French, and I regret it. (WISH) → [[I wish I spoke French.]]</li>
-<li>She spent all her money and now regrets it. (WISH) → [[She wishes she hadn't spent all her money.]]</li>
-<li>Please stop making so much noise. (I WISH YOU ...) → [[I wish you would stop making so much noise.]]</li>
-<li>We should leave now. (IT’S TIME ...) → [[It's time we left.]]</li>
-<li>I prefer you not to use my computer. (I’D RATHER ...) → [[I'd rather you didn't use my computer.]]</li>
-<li>I’m sorry I can’t come with you. (WISH) → [[I wish I could come with you.]]</li>
-<li>He regrets not accepting the invitation. (IF ONLY) → [[If only he had accepted the invitation.]]</li>
-<li>I want him to call me instead of texting. (I WISH ... WOULD) → [[I wish he would call me instead of texting.]]</li>
+<li>I don’t speak French, and I regret it. (WISH) → [[I wish I spoke French.##Wish + Past Simple]]</li>
+<li>She spent all her money and now regrets it. (WISH) → [[She wishes she hadn't spent all her money.##Wish + Past Perfect]]</li>
+<li>Please stop making so much noise. (I WISH YOU ...) → [[I wish you would stop making so much noise.##Wish + would]]</li>
+<li>We should leave now. (IT’S TIME ...) → [[It's time we left.##It's time + Past Simple]]</li>
+<li>I prefer you not to use my computer. (I’D RATHER ...) → [[I'd rather you didn't use my computer.##I'd rather + Past Simple]]</li>
+<li>I’m sorry I can’t come with you. (WISH) → [[I wish I could come with you.##Wish + could]]</li>
+<li>He regrets not accepting the invitation. (IF ONLY) → [[If only he had accepted the invitation.##If only + Past Perfect]]</li>
+<li>I want him to call me instead of texting. (I WISH ... WOULD) → [[I wish he would call me instead of texting.##Wish + would]]</li>
 </ol>
 
 <h3>Практика C. Переведите на английский</h3>
 <ol>
-<li>Жаль, что я не живу ближе к работе. → [[I wish I lived closer to work.]]</li>
-<li>Если бы только мы купили билеты раньше! → [[If only we had bought the tickets earlier!]]</li>
-<li>Хотелось бы, чтобы ты перестал опаздывать. → [[I wish you would stop being late.]]</li>
-<li>Жаль, что я не послушал твой совет. → [[I wish I had listened to your advice.]]</li>
-<li>Пора нам начинать. → [[It's time we started.]]</li>
-<li>Я бы предпочёл, чтобы ты пришёл пораньше. → [[I'd rather you came earlier.]]</li>
-<li>Хотелось бы, чтобы я мог остаться подольше. → [[I wish I could stay longer.]]</li>
-<li>Надеюсь, погода улучшится. → [[I hope the weather improves.]]</li>
+<li>Жаль, что я не живу ближе к работе. → [[I wish I lived closer to work.##Wish + Past Simple]]</li>
+<li>Если бы только мы купили билеты раньше! → [[If only we had bought the tickets earlier!##If only + Past Perfect]]</li>
+<li>Хотелось бы, чтобы ты перестал опаздывать. → [[I wish you would stop being late.##Wish + would]]</li>
+<li>Жаль, что я не послушал твой совет. → [[I wish I had listened to your advice.##Wish + Past Perfect]]</li>
+<li>Пора нам начинать. → [[It's time we started.##It's time + Past Simple]]</li>
+<li>Я бы предпочёл, чтобы ты пришёл пораньше. → [[I'd rather you came earlier.##I'd rather + Past Simple]]</li>
+<li>Хотелось бы, чтобы я мог остаться подольше. → [[I wish I could stay longer.##Wish + could]]</li>
+<li>Надеюсь, погода улучшится. → [[I hope the weather improves.##Hope + Present]]</li>
 </ol>
 ` },
   { id: 809, level: "EXAM", category: "theory", topic: "reported_theory", title: "05. Reported Speech — косвенная речь", content: `
@@ -2242,54 +2242,54 @@ const MATERIALS = [
   { id: 810, level: "EXAM", category: "practice", topic: "reported_practice", title: "05. Практика: Reported Speech", content: `
 <h3>Практика A. Переведите в косвенную речь</h3>
 <ol>
-<li>Emma said, “I am busy.” → [[Emma said that she was busy.]]</li>
-<li>He said, “I have finished the report.” → [[He said that he had finished the report.]]</li>
-<li>They said, “We will call you tomorrow.” → [[They said that they would call me the next day.]]</li>
-<li>Jack said, “I saw her yesterday.” → [[Jack said that he had seen her the day before.]]</li>
-<li>Mia said, “I can help you.” → [[Mia said that she could help me.]]</li>
-<li>The teacher said, “The Earth goes around the Sun.” → [[The teacher said that the Earth goes around the Sun.]]</li>
-<li>She asked me, “Do you like coffee?” → [[She asked me if I liked coffee.]]</li>
-<li>He asked, “Where did you buy this jacket?” → [[He asked where I had bought that jacket.]]</li>
-<li>Mum said to me, “Don’t stay up late.” → [[Mum told me not to stay up late.]]</li>
-<li>The receptionist said to us, “Please wait here.” → [[The receptionist asked us to wait there.]]</li>
-<li>He asked her, “Have you ever been to Spain?” → [[He asked her if she had ever been to Spain.]]</li>
-<li>Anna said, “I’m going to apply for a new job.” → [[Anna said that she was going to apply for a new job.]]</li>
+<li>Emma said, “I am busy.” → [[Emma said that she was busy.##Present Simple -> Past Simple]]</li>
+<li>He said, “I have finished the report.” → [[He said that he had finished the report.##Present Perfect -> Past Perfect]]</li>
+<li>They said, “We will call you tomorrow.” → [[They said that they would call me the next day.##Will -> would, tomorrow -> the next day]]</li>
+<li>Jack said, “I saw her yesterday.” → [[Jack said that he had seen her the day before.##Past Simple -> Past Perfect, yesterday -> the day before]]</li>
+<li>Mia said, “I can help you.” → [[Mia said that she could help me.##Can -> could]]</li>
+<li>The teacher said, “The Earth goes around the Sun.” → [[The teacher said that the Earth goes around the Sun.##Универсальный факт — время не меняется]]</li>
+<li>She asked me, “Do you like coffee?” → [[She asked me if I liked coffee.##Общий вопрос: asked if + Past Simple]]</li>
+<li>He asked, “Where did you buy this jacket?” → [[He asked where I had bought that jacket.##Спец. вопрос: asked where + Past Perfect]]</li>
+<li>Mum said to me, “Don’t stay up late.” → [[Mum told me not to stay up late.##Приказ: told + not to + V1]]</li>
+<li>The receptionist said to us, “Please wait here.” → [[The receptionist asked us to wait there.##Просьба: asked + to + V1, here -> there]]</li>
+<li>He asked her, “Have you ever been to Spain?” → [[He asked her if she had ever been to Spain.##Общий вопрос: asked if + Past Perfect]]</li>
+<li>Anna said, “I’m going to apply for a new job.” → [[Anna said that she was going to apply for a new job.##Present Continuous -> Past Continuous]]</li>
 </ol>
 
 <h3>Практика B. Исправьте ошибки</h3>
 <ol>
-<li>He asked me where did I work. → [[He asked me where I worked.]]</li>
-<li>She said me that she was tired. → [[She told me that she was tired.|She said to me that she was tired.]]</li>
-<li>They told that they would arrive late. → [[They said that they would arrive late.|They told us that they would arrive late.]]</li>
-<li>He asked if was I ready. → [[He asked if I was ready.]]</li>
-<li>Mum told me don’t touch the oven. → [[Mum told me not to touch the oven.]]</li>
-<li>She asked me what I wanted. (Правильно) → [[She asked me what I wanted.]]</li>
-<li>He said that he has lost his wallet the day before. → [[He said that he had lost his wallet the day before.]]</li>
-<li>I asked him where he lived. (Правильно) → [[I asked him where he lived.]]</li>
-<li>The teacher told us to not talk. → [[The teacher told us not to talk.]]</li>
-<li>She asked me if I had seen her keys. (Правильно) → [[She asked me if I had seen her keys.]]</li>
+<li>He asked me where did I work. → [[He asked me where I worked.##Косвенный вопрос: прямой порядок слов]]</li>
+<li>She said me that she was tired. → [[She told me that she was tired.##Tell + object|She said to me that she was tired.]]</li>
+<li>They told that they would arrive late. → [[They said that they would arrive late.##Say без объекта|They told us that they would arrive late.]]</li>
+<li>He asked if was I ready. → [[He asked if I was ready.##Косвенный вопрос: прямой порядок слов]]</li>
+<li>Mum told me don’t touch the oven. → [[Mum told me not to touch the oven.##Отрицательный инфинитив: not to + V1]]</li>
+<li>She asked me what I wanted. (Правильно) → [[She asked me what I wanted.##Здесь ошибки нет]]</li>
+<li>He said that he has lost his wallet the day before. → [[He said that he had lost his wallet the day before.##Согласование времен: Past Perfect]]</li>
+<li>I asked him where he lived. (Правильно) → [[I asked him where he lived.##Здесь ошибки нет]]</li>
+<li>The teacher told us to not talk. → [[The teacher told us not to talk.##Отрицательный инфинитив: not to]]</li>
+<li>She asked me if I had seen her keys. (Правильно) → [[She asked me if I had seen her keys.##Здесь ошибки нет]]</li>
 </ol>
 
 <h3>Практика C. Выберите правильный вариант</h3>
 <ol>
-<li>“I’m hungry,” he said. → He said he [[was]] (is / was) hungry.</li>
-<li>“Where are you going?” → She asked me where [[I was going]] (was I going / I was going).</li>
-<li>“Don’t be late.” → He told us [[not to be]] (not to be / to not be) late.</li>
-<li>“Can you help?” → She asked if I [[could]] (could / can) help.</li>
-<li>“I’ll see you next week.” → He said he would see me [[the following week]] (the following week / next week).</li>
-<li>“Have you finished?” → She asked whether I [[had finished]] (had finished / have finished).</li>
+<li>“I’m hungry,” he said. → He said he [[was##Согласование времен: is -> was]] (is / was) hungry.</li>
+<li>“Where are you going?” → She asked me where [[I was going##Прямой порядок слов в косвенном вопросе]] (was I going / I was going).</li>
+<li>“Don’t be late.” → He told us [[not to be##Отрицательный инфинитив]] (not to be / to not be) late.</li>
+<li>“Can you help?” → She asked if I [[could##Согласование времен: can -> could]] (could / can) help.</li>
+<li>“I’ll see you next week.” → He said he would see me [[the following week##Tomorrow/next week -> the following week]] (the following week / next week).</li>
+<li>“Have you finished?” → She asked whether I [[had finished##Согласование времен: Present Perfect -> Past Perfect]] (had finished / have finished).</li>
 </ol>
 
 <h3>Практика D. Переведите на английский</h3>
 <ol>
-<li>Она сказала, что никогда не была в Канаде. → [[She said that she had never been to Canada.]]</li>
-<li>Он спросил меня, знаю ли я дорогу. → [[He asked me if I knew the way.]]</li>
-<li>Учитель спросил, почему я опоздал. → [[The teacher asked why I had been late.]]</li>
-<li>Мама попросила меня закрыть окно. → [[Mum asked me to close the window.]]</li>
-<li>Они сказали, что приедут на следующий день. → [[They said that they would arrive the next day.]]</li>
-<li>Он велел нам не открывать дверь. → [[He told us not to open the door.]]</li>
-<li>Она спросила, закончил ли я работу. → [[She asked if I had finished the work.]]</li>
-<li>Я спросил его, где он купил телефон. → [[I asked him where he had bought the phone.]]</li>
+<li>Она сказала, что никогда не была в Канаде. → [[She said that she had never been to Canada.##Present Perfect -> Past Perfect]]</li>
+<li>Он спросил меня, знаю ли я дорогу. → [[He asked me if I knew the way.##Общий вопрос: if + Past Simple]]</li>
+<li>Учитель спросил, почему я опоздал. → [[The teacher asked why I had been late.##Спец. вопрос + согласование времен]]</li>
+<li>Мама попросила меня закрыть окно. → [[Mum asked me to close the window.##Просьба: asked + to + V1]]</li>
+<li>Они сказали, что приедут на следующий день. → [[They said that they would arrive the next day.##Will -> would, tomorrow -> the next day]]</li>
+<li>Он велел нам не открывать дверь. → [[He told us not to open the door.##Приказ: told + not to + V1]]</li>
+<li>Она спросила, закончил ли я работу. → [[She asked if I had finished the work.##Общий вопрос: if + Past Perfect]]</li>
+<li>Я спросил его, где он купил телефон. → [[I asked him where he had bought the phone.##Спец. вопрос + согласование времен]]</li>
 </ol>
 ` },
   { id: 811, level: "EXAM", category: "practice", topic: "mixed_exam", title: "06. Большой смешанный практикум", content: `
@@ -2297,115 +2297,115 @@ const MATERIALS = [
 
 <h3>Блок A. Выберите правильный вариант</h3>
 <ol>
-<li>I [[have known]] her for ten years. (know / have known / am knowing)</li>
-<li>The new library [[will be opened]] next spring. (will open / will be opened / will have opening)</li>
-<li>If I [[were]] you, I’d apologise. (am / were / had been)</li>
-<li>He said he [[had sent]] the email the day before. (sent / had sent / has sent)</li>
-<li>I wish I [[hadn't spent]] so much money last weekend. (didn’t spend / hadn’t spent / wouldn’t spend)</li>
-<li>This time tomorrow, we [[will be flying]] over the Atlantic. (fly / will be flying / will have flown)</li>
-<li>If she had taken the medicine, she [[would feel]] better now. (would feel / would have felt / will feel)</li>
-<li>The documents [[are being checked]] at the moment. (are checking / are being checked / have checked)</li>
-<li>She asked me where I [[lived]]. (live / did live / lived)</li>
-<li>By 2035, many new technologies [[will have been developed]]. (will develop / will have been developed / are developing)</li>
-<li>If you [[heat]] ice, it melts. (will heat / heat / heated)</li>
-<li>I wish my neighbours [[wouldn't play]] loud music every night. (wouldn’t play / didn’t played / won’t play)</li>
-<li>The train [[had left]] before we got to the station. (left / had left / has left)</li>
-<li>If he [[had studied]] harder, he would have passed. (studied / had studied / would study)</li>
-<li>The manager told us [[not to use]] our phones. (not use / not to use / don’t use)</li>
-<li>I [[have been studying]] for two hours, so I need a break. (study / have studied / have been studying)</li>
-<li>If it [[rains]] tomorrow, the match will be cancelled. (will rain / rains / would rain)</li>
-<li>The house [[was being painted]] when we arrived. (was painting / was being painted / painted)</li>
-<li>She said that she [[couldn't]] come because she was ill. (can’t / couldn’t / won’t)</li>
-<li>It’s time you [[made]] a decision. (make / made / have made)</li>
+<li>I [[have known##Опыт: Present Perfect]] her for ten years. (know / have known / am knowing)</li>
+<li>The new library [[will be opened##Passive: Future Simple]] next spring. (will open / will be opened / will have opening)</li>
+<li>If I [[were##Second Conditional]] you, I’d apologise. (am / were / had been)</li>
+<li>He said he [[had sent##Reported Speech: Past Perfect]] the email the day before. (sent / had sent / has sent)</li>
+<li>I wish I [[hadn't spent##Wish + Past Perfect (прошлое)]] so much money last weekend. (didn’t spend / hadn’t spent / wouldn’t spend)</li>
+<li>This time tomorrow, we [[will be flying##Future Continuous]] over the Atlantic. (fly / will be flying / will have flown)</li>
+<li>If she had taken the medicine, she [[would feel##Mixed Conditional]] better now. (would feel / would have felt / will feel)</li>
+<li>The documents [[are being checked##Passive: Present Continuous]] at the moment. (are checking / are being checked / have checked)</li>
+<li>She asked me where I [[lived##Reported Speech: прямой порядок слов]]. (live / did live / lived)</li>
+<li>By 2035, many new technologies [[will have been developed##Passive: Future Perfect]]. (will develop / will have been developed / are developing)</li>
+<li>If you [[heat##Zero Conditional]] ice, it melts. (will heat / heat / heated)</li>
+<li>I wish my neighbours [[wouldn't play##Wish + would (раздражение)]] loud music every night. (wouldn’t play / didn’t played / won’t play)</li>
+<li>The train [[had left##Past Perfect (раньше другого события)]] before we got to the station. (left / had left / has left)</li>
+<li>If he [[had studied##Third Conditional]] harder, he would have passed. (studied / had studied / would study)</li>
+<li>The manager told us [[not to use##Приказ: told + not to + V1]] our phones. (not use / not to use / don’t use)</li>
+<li>I [[have been studying##Длительность: Present Perfect Continuous]] for two hours, so I need a break. (study / have studied / have been studying)</li>
+<li>If it [[rains##First Conditional]] tomorrow, the match will be cancelled. (will rain / rains / would rain)</li>
+<li>The house [[was being painted##Passive: Past Continuous]] when we arrived. (was painting / was being painted / painted)</li>
+<li>She said that she [[couldn't##Согласование: can -> could]] come because she was ill. (can’t / couldn’t / won’t)</li>
+<li>It’s time you [[made##It's time + Past Simple]] a decision. (make / made / have made)</li>
 </ol>
 
 <h3>Блок B. Поставьте глаголы в скобках в правильную форму</h3>
 <ol>
-<li>By the time the ambulance arrived, the patient [[had lost]] (lose) consciousness.</li>
-<li>The new rules [[will be introduced]] (introduce) next month.</li>
-<li>If I [[had been]] (be) more organised, I wouldn’t have missed the appointment yesterday.</li>
-<li>He [[has been working]] (work) on this project since January.</li>
-<li>She asked me whether I [[had seen]] (see) her glasses.</li>
-<li>I wish I [[hadn't forgotten]] (not / forget) to save the file last night.</li>
-<li>While we [[were driving]] (drive) home, we saw an accident.</li>
-<li>If you [[don't water]] (not / water) plants, they die.</li>
-<li>The suspect [[was arrested]] (arrest) two days ago.</li>
-<li>By next December, I [[will have been living]] (live) here for five years.</li>
-<li>He said he [[would call]] (call) me the following day.</li>
-<li>If they had booked earlier, they [[would have paid]] (pay) less.</li>
-<li>I’d rather you [[kept]] (keep) this information private.</li>
-<li>The kitchen [[was being renovated]] (renovate) when they bought the house.</li>
-<li>I [[had]] never [[tried]] (try) sushi before I went to Japan.</li>
-<li>If she [[had taken]] (take) the job, she would be living abroad now.</li>
-<li>I’m sure you [[will enjoy]] (enjoy) the film.</li>
-<li>The report must [[be finished]] (finish) today.</li>
-<li>She [[hasn't replied]] (not / reply) to my message yet.</li>
-<li>He was tired because he [[had been running]] (run) for an hour.</li>
+<li>By the time the ambulance arrived, the patient [[had lost##Past Perfect]] (lose) consciousness.</li>
+<li>The new rules [[will be introduced##Passive: Future Simple]] (introduce) next month.</li>
+<li>If I [[had been##Third Conditional]] (be) more organised, I wouldn’t have missed the appointment yesterday.</li>
+<li>He [[has been working##Present Perfect Continuous]] (work) on this project since January.</li>
+<li>She asked me whether I [[had seen##Reported Speech: Past Perfect]] (see) her glasses.</li>
+<li>I wish I [[hadn't forgotten##Wish + Past Perfect]] (not / forget) to save the file last night.</li>
+<li>While we [[were driving##Past Continuous]] (drive) home, we saw an accident.</li>
+<li>If you [[don't water##Zero Conditional]] (not / water) plants, they die.</li>
+<li>The suspect [[was arrested##Passive: Past Simple]] (arrest) two days ago.</li>
+<li>By next December, I [[will have been living##Future Perfect Continuous]] (live) here for five years.</li>
+<li>He said he [[would call##Reported Speech: will -> would]] (call) me the following day.</li>
+<li>If they had booked earlier, they [[would have paid##Third Conditional]] (pay) less.</li>
+<li>I’d rather you [[kept##I'd rather + Past Simple]] (keep) this information private.</li>
+<li>The kitchen [[was being renovated##Passive: Past Continuous]] (renovate) when they bought the house.</li>
+<li>I [[had]] never [[tried##Past Perfect]] (try) sushi before I went to Japan.</li>
+<li>If she [[had taken##Mixed Conditional]] (take) the job, she would be living abroad now.</li>
+<li>I’m sure you [[will enjoy##Future Simple]] (enjoy) the film.</li>
+<li>The report must [[be finished##Passive: Modal + be + V3]] (finish) today.</li>
+<li>She [[hasn't replied##Present Perfect]] (not / reply) to my message yet.</li>
+<li>He was tired because he [[had been running##Past Perfect Continuous]] (run) for an hour.</li>
 </ol>
 
 <h3>Блок C. Исправьте одну ошибку в каждом предложении</h3>
 <ol>
-<li>I have seen him yesterday. → [[I saw him yesterday.]]</li>
-<li>If I will have time, I’ll call you. → [[If I have time, I'll call you.]]</li>
-<li>The room is cleaned right now. → [[The room is being cleaned right now.]]</li>
-<li>She asked me where was I going. → [[She asked me where I was going.]]</li>
-<li>I wish I would know the answer. → [[I wish I knew the answer.]]</li>
-<li>By the time we arrived, the film already started. → [[By the time we arrived, the film had already started.]]</li>
-<li>The invitations have sent already. → [[The invitations have already been sent.]]</li>
-<li>If he had listened, he wouldn’t make that mistake yesterday. → [[If he had listened, he wouldn't have made that mistake yesterday.]]</li>
-<li>She told me don’t worry. → [[She told me not to worry.]]</li>
-<li>I am working here since 2021. → [[I have been working here since 2021.|I have worked here since 2021.]]</li>
-<li>This time tomorrow, I will drive to Prague. → [[This time tomorrow, I will be driving to Prague.]]</li>
-<li>If only I didn’t say that at the meeting yesterday. → [[If only I hadn't said that at the meeting yesterday.]]</li>
-<li>The bridge is built in 1920. → [[The bridge was built in 1920.]]</li>
-<li>He asked me did I need any help. → [[He asked me if I needed any help.]]</li>
-<li>Unless you don’t hurry, you’ll miss the bus. → [[Unless you hurry, you'll miss the bus.|If you don't hurry, you'll miss the bus.]]</li>
+<li>I have seen him yesterday. → [[I saw him yesterday.##С конкретным временем — Past Simple]]</li>
+<li>If I will have time, I’ll call you. → [[If I have time, I'll call you.##В придаточном условия — Present Simple]]</li>
+<li>The room is cleaned right now. → [[The room is being cleaned right now.##Действие сейчас — Present Continuous Passive]]</li>
+<li>She asked me where was I going. → [[She asked me where I was going.##Косвенный вопрос — прямой порядок слов]]</li>
+<li>I wish I would know the answer. → [[I wish I knew the answer.##Wish + Past Simple (настоящее)]]</li>
+<li>By the time we arrived, the film already started. → [[By the time we arrived, the film had already started.##Действие раньше другого — Past Perfect]]</li>
+<li>The invitations have sent already. → [[The invitations have already been sent.##Passive: Present Perfect]]</li>
+<li>If he had listened, he wouldn’t make that mistake yesterday. → [[If he had listened, he wouldn't have made that mistake yesterday.##Third Conditional]]</li>
+<li>She told me don’t worry. → [[She told me not to worry.##Отрицательный инфинитив]]</li>
+<li>I am working here since 2021. → [[I have been working here since 2021.##Since + Present Perfect Continuous|I have worked here since 2021.]]</li>
+<li>This time tomorrow, I will drive to Prague. → [[This time tomorrow, I will be driving to Prague.##Процесс в будущем — Future Continuous]]</li>
+<li>If only I didn’t say that at the meeting yesterday. → [[If only I hadn't said that at the meeting yesterday.##Сожаление о прошлом — Past Perfect]]</li>
+<li>The bridge is built in 1920. → [[The bridge was built in 1920.##Past Simple Passive]]</li>
+<li>He asked me did I need any help. → [[He asked me if I needed any help.##Косвенный вопрос — прямой порядок слов]]</li>
+<li>Unless you don’t hurry, you’ll miss the bus. → [[Unless you hurry, you'll miss the bus.##Unless = if not|If you don't hurry, you'll miss the bus.]]</li>
 </ol>
 
 <h3>Блок D. Преобразуйте предложения, сохранив смысл</h3>
 <ol>
-<li>Someone has stolen my phone. (PASSIVE) → [[My phone has been stolen.]]</li>
-<li>“I can’t come today,” Lisa said. (REPORTED SPEECH) → [[Lisa said that she couldn't come that day.]]</li>
-<li>I didn’t save the document, so I lost my changes. (IF) → [[If I had saved the document, I wouldn't have lost my changes.]]</li>
-<li>I don’t have enough time to learn another language. (WISH) → [[I wish I had enough time to learn another language.]]</li>
-<li>They will announce the winner tomorrow. (PASSIVE) → [[The winner will be announced tomorrow.]]</li>
-<li>“Where have you been?” he asked me. (REPORTED SPEECH) → [[He asked me where I had been.]]</li>
-<li>I regret telling him the secret. (WISH) → [[I wish I hadn't told him the secret.]]</li>
-<li>You should leave now. (IT’S TIME) → [[It's time you left.]]</li>
-<li>She didn’t take the job, so she isn’t living in Paris now. (MIXED CONDITIONAL) → [[If she had taken the job, she would be living in Paris now.]]</li>
-<li>Don’t touch the equipment. (TOLD) → [[We were told not to touch the equipment.|They told us not to touch the equipment.]]</li>
-<li>Perhaps they’ll finish the work by Monday. (FUTURE PERFECT) → [[They will have finished the work by Monday.]]</li>
-<li>I prefer you to arrive before six. (I’D RATHER) → [[I'd rather you arrived before six.]]</li>
+<li>Someone has stolen my phone. (PASSIVE) → [[My phone has been stolen.##Passive: Present Perfect]]</li>
+<li>“I can’t come today,” Lisa said. (REPORTED SPEECH) → [[Lisa said that she couldn't come that day.##Can -> could, today -> that day]]</li>
+<li>I didn’t save the document, so I lost my changes. (IF) → [[If I had saved the document, I wouldn't have lost my changes.##Third Conditional]]</li>
+<li>I don’t have enough time to learn another language. (WISH) → [[I wish I had enough time to learn another language.##Wish + Past Simple]]</li>
+<li>They will announce the winner tomorrow. (PASSIVE) → [[The winner will be announced tomorrow.##Passive: Future Simple]]</li>
+<li>“Where have you been?” he asked me. (REPORTED SPEECH) → [[He asked me where I had been.##Спец. вопрос + Past Perfect]]</li>
+<li>I regret telling him the secret. (WISH) → [[I wish I hadn't told him the secret.##Сожаление о прошлом]]</li>
+<li>You should leave now. (IT’S TIME) → [[It's time you left.##It's time + Past Simple]]</li>
+<li>She didn’t take the job, so she isn’t living in Paris now. (MIXED CONDITIONAL) → [[If she had taken the job, she would be living in Paris now.##Mixed Conditional]]</li>
+<li>Don’t touch the equipment. (TOLD) → [[We were told not to touch the equipment.##Passive + инфинитив|They told us not to touch the equipment.]]</li>
+<li>Perhaps they’ll finish the work by Monday. (FUTURE PERFECT) → [[They will have finished the work by Monday.##Future Perfect]]</li>
+<li>I prefer you to arrive before six. (I’D RATHER) → [[I'd rather you arrived before six.##I'd rather + Past Simple]]</li>
 </ol>
 
 <h3>Блок E. Переведите на английский</h3>
 <ol>
-<li>Я изучаю английский уже три года. → [[I have been learning English for three years.|I have learned English for three years.]]</li>
-<li>Когда мы пришли, ужин уже приготовили. → [[When we arrived, dinner had already been prepared.]]</li>
-<li>К концу года все документы будут проверены. → [[All the documents will have been checked by the end of the year.]]</li>
-<li>Если бы я был на твоём месте, я бы не соглашался. → [[If I were you, I wouldn't agree.]]</li>
-<li>Если бы она не забыла ключи, сейчас мы были бы уже дома. → [[If she hadn't forgotten the keys, we would be home by now.]]</li>
-<li>Жаль, что я не купил билеты заранее. → [[I wish I had bought the tickets in advance.]]</li>
-<li>Он спросил меня, видел ли я его брата накануне. → [[He asked me if I had seen his brother the day before.]]</li>
-<li>Меня попросили не пользоваться телефоном во время экзамена. → [[I was asked not to use my phone during the exam.]]</li>
-<li>Сейчас ремонтируют дорогу, поэтому автобусы идут в объезд. → [[The road is being repaired now, so buses are being diverted.]]</li>
-<li>Если завтра он позвонит, скажи ему, что я занят. → [[If he calls tomorrow, tell him I'm busy.]]</li>
-<li>К тому времени, как ты вернёшься, я закончу уборку. → [[By the time you come back, I'll have finished cleaning.]]</li>
-<li>Хотелось бы, чтобы соседи перестали шуметь по ночам. → [[I wish the neighbours would stop making noise at night.]]</li>
-<li>Она сказала, что работает здесь с 2020 года. → [[She said that she had been working there since 2020.]]</li>
-<li>Если не будешь практиковаться, прогресса не будет. → [[If you don't practise, you won't make progress.]]</li>
-<li>Пора нам обсудить эту проблему. → [[It's time we discussed this problem.]]</li>
+<li>Я изучаю английский уже три года. → [[I have been learning English for three years.##Present Perfect Continuous|I have learned English for three years.]]</li>
+<li>Когда мы пришли, ужин уже приготовили. → [[When we arrived, dinner had already been prepared.##Past Perfect Passive]]</li>
+<li>К концу года все документы будут проверены. → [[All the documents will have been checked by the end of the year.##Future Perfect Passive]]</li>
+<li>Если бы я был на твоём месте, я бы не соглашался. → [[If I were you, I wouldn't agree.##Second Conditional]]</li>
+<li>Если бы она не забыла ключи, сейчас мы были бы уже дома. → [[If she hadn't forgotten the keys, we would be home by now.##Mixed Conditional]]</li>
+<li>Жаль, что я не купил билеты заранее. → [[I wish I had bought the tickets in advance.##Wish + Past Perfect]]</li>
+<li>Он спросил меня, видел ли я его брата накануне. → [[He asked me if I had seen his brother the day before.##Reported Speech]]</li>
+<li>Меня попросили не пользоваться телефоном во время экзамена. → [[I was asked not to use my phone during the exam.##Passive + инфинитив]]</li>
+<li>Сейчас ремонтируют дорогу, поэтому автобусы идут в объезд. → [[The road is being repaired now, so buses are being diverted.##Present Continuous Passive]]</li>
+<li>Если завтра он позвонит, скажи ему, что я занят. → [[If he calls tomorrow, tell him I'm busy.##First Conditional]]</li>
+<li>К тому времени, как ты вернёшься, я закончу уборку. → [[By the time you come back, I'll have finished cleaning.##Future Perfect]]</li>
+<li>Хотелось бы, чтобы соседи перестали шуметь по ночам. → [[I wish the neighbours would stop making noise at night.##Wish + would]]</li>
+<li>Она сказала, что работает здесь с 2020 года. → [[She said that she had been working there since 2020.##Reported Speech + Past Perfect Continuous]]</li>
+<li>Если не будешь практиковаться, прогресса не будет. → [[If you don't practise, you won't make progress.##First Conditional]]</li>
+<li>Пора нам обсудить эту проблему. → [[It's time we discussed this problem.##It's time + Past Simple]]</li>
 </ol>
 
 <h3>Блок F. Мини-тексты: выберите формы по контексту</h3>
 <h4>Текст 1</h4>
-<p>Last Friday, I [[was walking]] (1) (walk) home when I [[noticed]] (2) (notice) that my wallet was missing. I [[checked]] (3) (check) my bag several times, but it wasn’t there. I realised that I [[had left]] (4) (leave) it on the bus. Luckily, a passenger [[found]] (5) (find) it and [[handed]] (6) (hand) it to the driver. By the time I reached the bus station, my wallet [[had]] (7) already [[been returned]] (return) to the lost-property office.</p>
+<p>Last Friday, I [[was walking##Past Continuous: фон]] (1) (walk) home when I [[noticed##Past Simple: короткое действие]] (2) (notice) that my wallet was missing. I [[checked##Past Simple]] (3) (check) my bag several times, but it wasn’t there. I realised that I [[had left##Past Perfect: раньше другого действия]] (4) (leave) it on the bus. Luckily, a passenger [[found##Past Simple]] (5) (find) it and [[handed##Past Simple]] (6) (hand) it to the driver. By the time I reached the bus station, my wallet [[had]] (7) already [[been returned##Past Perfect Passive]] (return) to the lost-property office.</p>
 
 <h4>Текст 2</h4>
-<p>Our office [[is being renovated]] (1) (renovate) this month, so everyone [[is working]] (2) (work) from home. The work [[will be finished]] (3) (finish) by the end of the month. Our manager said that we [[would receive]] (4) (receive) an email when the office was ready. If everything [[goes]] (5) (go) according to plan, we [[will move]] (6) (move) back in on the first Monday of next month.</p>
+<p>Our office [[is being renovated##Present Continuous Passive]] (1) (renovate) this month, so everyone [[is working##Present Continuous]] (2) (work) from home. The work [[will be finished##Future Simple Passive]] (3) (finish) by the end of the month. Our manager said that we [[would receive##Reported Speech: will -> would]] (4) (receive) an email when the office was ready. If everything [[goes##First Conditional]] (5) (go) according to plan, we [[will move##First Conditional]] (6) (move) back in on the first Monday of next month.</p>
 
 <h4>Текст 3</h4>
-<p>I wish I [[had taken]] (1) (take) my teacher’s advice last year. If I [[had studied]] (2) (study) more consistently, I [[would feel]] (3) (feel) more confident now. My friend told me that I [[had improved]] (4) (improve) a lot already, but I know I need more practice. If I [[keep]] (5) (keep) working, I [[will have reached]] (6) (reach) my goal by next summer.</p>
+<p>I wish I [[had taken##Wish + Past Perfect]] (1) (take) my teacher’s advice last year. If I [[had studied##Third Conditional]] (2) (study) more consistently, I [[would feel##Mixed Conditional]] (3) (feel) more confident now. My friend told me that I [[had improved##Reported Speech: Past Perfect]] (4) (improve) a lot already, but I know I need more practice. If I [[keep##First Conditional]] (5) (keep) working, I [[will have reached##Future Perfect]] (6) (reach) my goal by next summer.</p>
 ` },
   // ============================================================
   // УРОВЕНЬ B1 (Intermediate) - НОВЫЙ МАТЕРИАЛ
@@ -2555,96 +2555,96 @@ const MATERIALS = [
   { id: 2011, level: "B1", category: "practice", topic: "present-perfect-past-simple-practice", title: "Практика: Present Perfect vs Past Simple", content: `
       <p>Выберите правильную форму.</p>
       <ol>
-        <li>I [[have visited]] (visit) Paris three times.</li>
-        <li>I [[visited]] (visit) Paris last year.</li>
-        <li>She [[has just finished]] (just / finish) her homework.</li>
-        <li>We [[went]] (go) to the cinema yesterday.</li>
-        <li>[[Have]] you ever [[been]] (be) to London?</li>
-        <li>He [[has lived]] (live) here since 2010.</li>
-        <li>They [[didn't come]] (not / come) to the party last night.</li>
-        <li>I [[haven't seen]] (not / see) him yet.</li>
-        <li>When [[did]] you [[buy]] (buy) that car?</li>
-        <li>She [[has already eaten]] (already / eat).</li>
+        <li>I [[have visited##Опыт: Present Perfect]] (visit) Paris three times.</li>
+        <li>I [[visited##Конкретное время: Past Simple]] (visit) Paris last year.</li>
+        <li>She [[has just finished##Недавний результат: Present Perfect]] (just / finish) her homework.</li>
+        <li>We [[went##Конкретное время: Past Simple]] (go) to the cinema yesterday.</li>
+        <li>[[Have]] you ever [[been##Опыт: Present Perfect]] (be) to London?</li>
+        <li>He [[has lived##Началось в прошлом и длится: Present Perfect]] (live) here since 2010.</li>
+        <li>They [[didn't come##Конкретное время: Past Simple]] (not / come) to the party last night.</li>
+        <li>I [[haven't seen##Ещё не: Present Perfect]] (not / see) him yet.</li>
+        <li>When [[did]] you [[buy##Конкретное время: Past Simple]] (buy) that car?</li>
+        <li>She [[has already eaten##Уже: Present Perfect]] (already / eat).</li>
       </ol>
     ` },
   { id: 2012, level: "B1", category: "practice", topic: "used-to-practice", title: "Практика: Used to", content: `
       <p>Перепишите предложения, используя <b>used to</b>.</p>
       <ol>
-        <li>I played football when I was a child. → I [[used to play]] football.</li>
-        <li>She didn't like coffee, but now she does. → She [[didn't use to like]] coffee.</li>
-        <li>Did you live in London? → [[Did]] you [[use to live]] in London?</li>
-        <li>He had long hair. → He [[used to have]] long hair.</li>
-        <li>They didn't have a car. → They [[didn't use to have]] a car.</li>
+        <li>I played football when I was a child. → I [[used to play##Past habit: used to + V1]] football.</li>
+        <li>She didn't like coffee, but now she does. → She [[didn't use to like##Отрицание: didn't use to + V1]] coffee.</li>
+        <li>Did you live in London? → [[Did]] you [[use to live##Вопрос: Did + use to + V1]] in London?</li>
+        <li>He had long hair. → He [[used to have##Past state: used to + V1]] long hair.</li>
+        <li>They didn't have a car. → They [[didn't use to have##Отрицание: didn't use to + V1]] a car.</li>
       </ol>
     ` },
   { id: 2013, level: "B1", category: "practice", topic: "conditionals-practice", title: "Практика: Conditionals", content: `
       <p>Поставьте глагол в правильную форму (First или Second Conditional).</p>
       <ol>
-        <li>If it [[rains]] (rain), we will stay at home.</li>
-        <li>If I [[were]] (be) you, I would apologize.</li>
-        <li>She [[will pass]] (pass) the exam if she studies hard.</li>
-        <li>If I [[had]] (have) more time, I would learn Spanish.</li>
-        <li>We [[will go]] (go) to the beach if the weather is good.</li>
-        <li>If he [[knew]] (know) the answer, he would tell us.</li>
-        <li>I [[would buy]] (buy) a new car if I had enough money.</li>
-        <li>If you [[don't hurry]] (not / hurry), you will miss the bus.</li>
+        <li>If it [[rains##First Conditional: Present Simple]] (rain), we will stay at home.</li>
+        <li>If I [[were##Second Conditional: were для всех лиц]] (be) you, I would apologize.</li>
+        <li>She [[will pass##First Conditional: will + V1]] (pass) the exam if she studies hard.</li>
+        <li>If I [[had##Second Conditional: Past Simple]] (have) more time, I would learn Spanish.</li>
+        <li>We [[will go##First Conditional: will + V1]] (go) to the beach if the weather is good.</li>
+        <li>If he [[knew##Second Conditional: Past Simple]] (know) the answer, he would tell us.</li>
+        <li>I [[would buy##Second Conditional: would + V1]] (buy) a new car if I had enough money.</li>
+        <li>If you [[don't hurry##First Conditional: Present Simple]] (not / hurry), you will miss the bus.</li>
       </ol>
     ` },
   { id: 2014, level: "B1", category: "practice", topic: "passive-practice", title: "Практика: Passive Voice", content: `
       <p>Преобразуйте предложения в пассивный залог.</p>
       <ol>
-        <li>They built this house in 1990. → This house [[was built]] in 1990.</li>
-        <li>Someone has stolen my bike. → My bike [[has been stolen]].</li>
-        <li>They will announce the results tomorrow. → The results [[will be announced]] tomorrow.</li>
-        <li>They are repairing the road now. → The road [[is being repaired]] now.</li>
-        <li>People speak English all over the world. → English [[is spoken]] all over the world.</li>
-        <li>They didn't invite me to the party. → I [[wasn't invited]] to the party.</li>
+        <li>They built this house in 1990. → This house [[was built##Past Simple Passive]] in 1990.</li>
+        <li>Someone has stolen my bike. → My bike [[has been stolen##Present Perfect Passive]].</li>
+        <li>They will announce the results tomorrow. → The results [[will be announced##Future Simple Passive]] tomorrow.</li>
+        <li>They are repairing the road now. → The road [[is being repaired##Present Continuous Passive]] now.</li>
+        <li>People speak English all over the world. → English [[is spoken##Present Simple Passive]] all over the world.</li>
+        <li>They didn't invite me to the party. → I [[wasn't invited##Past Simple Passive (отрицание)]] to the party.</li>
       </ol>
     ` },
   { id: 2015, level: "B1", category: "practice", topic: "reported-speech-practice", title: "Практика: Reported Speech", content: `
       <p>Переведите в косвенную речь.</p>
       <ol>
-        <li>He said, "I am tired." → He said he [[was tired]].</li>
-        <li>She said, "I will call you." → She said she [[would call]] me.</li>
-        <li>They said, "We have finished." → They said they [[had finished]].</li>
-        <li>He asked, "Do you like coffee?" → He asked [[if I liked]] coffee.</li>
-        <li>She asked, "Where do you live?" → She asked [[where I lived]].</li>
-        <li>Mum said, "Don't be late." → Mum told me [[not to be]] late.</li>
+        <li>He said, "I am tired." → He said he [[was tired##Present Simple -> Past Simple]].</li>
+        <li>She said, "I will call you." → She said she [[would call##Will -> would]] me.</li>
+        <li>They said, "We have finished." → They said they [[had finished##Present Perfect -> Past Perfect]].</li>
+        <li>He asked, "Do you like coffee?" → He asked [[if I liked##Общий вопрос: if + Past Simple]] coffee.</li>
+        <li>She asked, "Where do you live?" → She asked [[where I lived##Спец. вопрос: прямой порядок слов]].</li>
+        <li>Mum said, "Don't be late." → Mum told me [[not to be##Приказ: told + not to + V1]] late.</li>
       </ol>
     ` },
   { id: 2016, level: "B1", category: "practice", topic: "modal-verbs-practice", title: "Практика: Modal Verbs", content: `
       <p>Вставьте подходящий модальный глагол (must, mustn't, have to, don't have to, should).</p>
       <ol>
-        <li>You [[mustn't]] smoke here. It's forbidden.</li>
-        <li>I [[have to]] wear a uniform at work. It's the rule.</li>
-        <li>You [[don't have to]] come early. The meeting starts at 10.</li>
-        <li>You [[should]] see a doctor. You look sick.</li>
-        <li>I [[must]] finish this report tonight. I promised.</li>
-        <li>You [[shouldn't]] eat so much sugar.</li>
+        <li>You [[mustn't##Запрет: mustn't]] smoke here. It's forbidden.</li>
+        <li>I [[have to##Вынужденность: have to]] wear a uniform at work. It's the rule.</li>
+        <li>You [[don't have to##Отсутствие необходимости: don't have to]] come early. The meeting starts at 10.</li>
+        <li>You [[should##Совет: should]] see a doctor. You look sick.</li>
+        <li>I [[must##Сильная обязанность: must]] finish this report tonight. I promised.</li>
+        <li>You [[shouldn't##Совет (отрицание): shouldn't]] eat so much sugar.</li>
       </ol>
     ` },
   { id: 2017, level: "B1", category: "practice", topic: "relative-clauses-practice", title: "Практика: Relative Clauses", content: `
       <p>Вставьте правильное относительное местоимение (who, which, where, whose).</p>
       <ol>
-        <li>The man [[who]] lives next door is a doctor.</li>
-        <li>The book [[which]] I bought is very interesting.</li>
-        <li>The cafe [[where]] we met is closed now.</li>
-        <li>That's the girl [[whose]] brother is a famous singer.</li>
-        <li>The film [[that]] we watched was boring.</li>
-        <li>I have a friend [[who]] speaks five languages.</li>
+        <li>The man [[who##Для людей: who]] lives next door is a doctor.</li>
+        <li>The book [[which##Для предметов: which]] I bought is very interesting.</li>
+        <li>The cafe [[where##Для мест: where]] we met is closed now.</li>
+        <li>That's the girl [[whose##Принадлежность: whose]] brother is a famous singer.</li>
+        <li>The film [[that##Для людей и предметов: that]] we watched was boring.</li>
+        <li>I have a friend [[who##Для людей: who]] speaks five languages.</li>
       </ol>
     ` },
   { id: 2018, level: "B1", category: "practice", topic: "gerund-infinitive-practice", title: "Практика: Gerund vs Infinitive", content: `
       <p>Выберите правильную форму (to + V1 или V-ing).</p>
       <ol>
-        <li>I enjoy [[reading]] (read) books.</li>
-        <li>She wants [[to learn]] (learn) French.</li>
-        <li>We decided [[to stay]] (stay) at home.</li>
-        <li>He suggested [[going]] (go) to the cinema.</li>
-        <li>I'm good at [[drawing]] (draw).</li>
-        <li>They hope [[to visit]] (visit) us next year.</li>
-        <li>Would you mind [[opening]] (open) the window?</li>
-        <li>She promised [[to help]] (help) me.</li>
+        <li>I enjoy [[reading##Enjoy + V-ing]] (read) books.</li>
+        <li>She wants [[to learn##Want + to + V1]] (learn) French.</li>
+        <li>We decided [[to stay##Decide + to + V1]] (stay) at home.</li>
+        <li>He suggested [[going##Suggest + V-ing]] (go) to the cinema.</li>
+        <li>I'm good at [[drawing##После предлога: V-ing]] (draw).</li>
+        <li>They hope [[to visit##Hope + to + V1]] (visit) us next year.</li>
+        <li>Would you mind [[opening##Mind + V-ing]] (open) the window?</li>
+        <li>She promised [[to help##Promise + to + V1]] (help) me.</li>
       </ol>
     ` },
 
@@ -2997,83 +2997,83 @@ const MATERIALS = [
   { id: 3011, level: "B2", category: "practice", topic: "mixed-conditionals-practice", title: "Практика: Mixed Conditionals", content: `
       <p>Поставьте глагол в правильную форму.</p>
       <ol>
-        <li>If I [[had studied]] (study) harder at school, I [[would have]] (have) a better job now.</li>
-        <li>If she [[were]] (be) more careful, she [[wouldn't have made]] (not / make) that mistake yesterday.</li>
-        <li>If he [[had taken]] (take) the medicine, he [[would feel]] (feel) better now.</li>
-        <li>If I [[didn't have]] (not / have) so much work, I [[would have gone]] (go) to the party last night.</li>
-        <li>If we [[had left]] (leave) earlier, we [[would be]] (be) there by now.</li>
+        <li>If I [[had studied##Mixed (прошлое -> настоящее): Past Perfect]] (study) harder at school, I [[would have##Mixed (прошлое -> настоящее): would + V1]] (have) a better job now.</li>
+        <li>If she [[were##Mixed (настоящее -> прошлое): Past Simple]] (be) more careful, she [[wouldn't have made##Mixed (настоящее -> прошлое): would have + V3]] (not / make) that mistake yesterday.</li>
+        <li>If he [[had taken##Mixed (прошлое -> настоящее): Past Perfect]] (take) the medicine, he [[would feel##Mixed (прошлое -> настоящее): would + V1]] (feel) better now.</li>
+        <li>If I [[didn't have##Mixed (настоящее -> прошлое): Past Simple]] (not / have) so much work, I [[would have gone##Mixed (настоящее -> прошлое): would have + V3]] (go) to the party last night.</li>
+        <li>If we [[had left##Mixed (прошлое -> настоящее): Past Perfect]] (leave) earlier, we [[would be##Mixed (прошлое -> настоящее): would + V1]] (be) there by now.</li>
       </ol>
     ` },
   { id: 3012, level: "B2", category: "practice", topic: "inversion-practice", title: "Практика: Inversion", content: `
       <p>Перепишите предложения, используя инверсию.</p>
       <ol>
-        <li>I have never seen such a beautiful place. → [[Never have I seen]] such a beautiful place.</li>
-        <li>He had hardly arrived when the phone rang. → [[Hardly had he arrived]] when the phone rang.</li>
-        <li>I only realized the truth later. → [[Only later did I realize]] the truth.</li>
-        <li>If I had known, I would have helped. → [[Had I known]], I would have helped.</li>
-        <li>She not only sings but also dances. → [[Not only does she sing]], but she also dances.</li>
+        <li>I have never seen such a beautiful place. → [[Never have I seen##Инверсия после Never: Never + have + I + V3]] such a beautiful place.</li>
+        <li>He had hardly arrived when the phone rang. → [[Hardly had he arrived##Инверсия после Hardly: Hardly + had + he + V3]] when the phone rang.</li>
+        <li>I only realized the truth later. → [[Only later did I realize##Инверсия после Only: Only + later + did + I + V1]] the truth.</li>
+        <li>If I had known, I would have helped. → [[Had I known##Условная инверсия: Had + I + V3]], I would have helped.</li>
+        <li>She not only sings but also dances. → [[Not only does she sing##Инверсия после Not only: Not only + does + she + V1]], but she also dances.</li>
       </ol>
     ` },
   { id: 3013, level: "B2", category: "practice", topic: "modals-past-practice", title: "Практика: Modals in the Past", content: `
       <p>Вставьте правильную конструкцию: should have, shouldn't have, could have, must have.</p>
       <ol>
-        <li>You [[should have told]] (tell) me about the meeting. I missed it.</li>
-        <li>I [[shouldn't have eaten]] (not / eat) so much cake. I feel sick.</li>
-        <li>We [[could have won]] (win) the game, but we made a mistake.</li>
-        <li>He [[must have forgotten]] (forget) my birthday.</li>
-        <li>She [[could have taken]] (take) a taxi, but she walked.</li>
+        <li>You [[should have told##Сожаление/критика: should have + V3]] (tell) me about the meeting. I missed it.</li>
+        <li>I [[shouldn't have eaten##Критика: shouldn't have + V3]] (not / eat) so much cake. I feel sick.</li>
+        <li>We [[could have won##Неиспользованная возможность: could have + V3]] (win) the game, but we made a mistake.</li>
+        <li>He [[must have forgotten##Уверенная догадка: must have + V3]] (forget) my birthday.</li>
+        <li>She [[could have taken##Неиспользованная возможность: could have + V3]] (take) a taxi, but she walked.</li>
       </ol>
     ` },
   { id: 3014, level: "B2", category: "practice", topic: "linking-practice", title: "Практика: Linking Structures", content: `
       <p>Выберите правильную связку (although, despite, however, because of, therefore).</p>
       <ol>
-        <li>[[Although]] it was raining, we went for a walk.</li>
-        <li>[[Despite]] the bad weather, the flight was on time.</li>
-        <li>The service was slow; [[however]], the food was delicious.</li>
-        <li>He was late [[because of]] the traffic.</li>
-        <li>She didn't study; [[therefore]], she failed the exam.</li>
+        <li>[[Although##Хотя + придаточное предложение]] it was raining, we went for a walk.</li>
+        <li>[[Despite##Несмотря на + существительное]] the bad weather, the flight was on time.</li>
+        <li>The service was slow; [[however##Однако (перед запятой или в начале предложения)]], the food was delicious.</li>
+        <li>He was late [[because of##Из-за + существительное]] the traffic.</li>
+        <li>She didn't study; [[therefore##Следовательно]], she failed the exam.</li>
       </ol>
     ` },
   { id: 3015, level: "B2", category: "practice", topic: "formal-informal-practice", title: "Практика: Formal vs Informal", content: `
       <p>Перепишите предложения в формальном стиле (без сокращений, с формальной лексикой).</p>
       <ol>
-        <li>I can't come to the meeting. → [[I am unable to attend the meeting.]]</li>
-        <li>Thanks for your email. → [[Thank you for your email.]]</li>
-        <li>I'm writing to ask about the job. → [[I am writing to enquire about the position.]]</li>
-        <li>Write back soon! → [[I look forward to hearing from you.]]</li>
-        <li>Don't forget to send the report. → [[Please remember to send the report.]]</li>
+        <li>I can't come to the meeting. → [[I am unable to attend the meeting.##Формальный стиль: без сокращений]]</li>
+        <li>Thanks for your email. → [[Thank you for your email.##Формальный стиль: без сокращений]]</li>
+        <li>I'm writing to ask about the job. → [[I am writing to enquire about the position.##Формальная лексика: enquire]]</li>
+        <li>Write back soon! → [[I look forward to hearing from you.##Формальное завершение письма]]</li>
+        <li>Don't forget to send the report. → [[Please remember to send the report.##Вежливая просьба]]</li>
       </ol>
     ` },
   { id: 3016, level: "B2", category: "practice", topic: "idioms-practice", title: "Практика: Idioms & Phrasal Verbs", content: `
       <p>Вставьте подходящее слово из списка: up, off, out, in, around, moon, weather, disguise.</p>
       <ol>
-        <li>She was brought [[up]] by her grandparents.</li>
-        <li>The plane took [[off]] on time.</li>
-        <li>It turned [[out]] to be a great day.</li>
-        <li>Don't beat [[around]] the bush. Tell me the truth.</li>
-        <li>I feel a bit under the [[weather]] today.</li>
-        <li>Losing that job was a blessing in [[disguise]].</li>
+        <li>She was brought [[up##bring up = воспитывать]] by her grandparents.</li>
+        <li>The plane took [[off##take off = взлетать]] on time.</li>
+        <li>It turned [[out##turn out = оказаться]] to be a great day.</li>
+        <li>Don't beat [[around##beat around the bush = ходить вокруг да около]] the bush. Tell me the truth.</li>
+        <li>I feel a bit under the [[weather##under the weather = плохо себя чувствовать]] today.</li>
+        <li>Losing that job was a blessing in [[disguise##a blessing in disguise = неприятность, обернувшаяся удачей]].</li>
       </ol>
     ` },
   { id: 3017, level: "B2", category: "practice", topic: "collocations-practice", title: "Практика: Collocations", content: `
       <p>Вставьте правильный глагол (make, do, have).</p>
       <ol>
-        <li>I need to [[make]] a decision.</li>
-        <li>She [[did]] her homework before dinner.</li>
-        <li>We [[had]] an argument about money.</li>
-        <li>He [[made]] a mistake in the report.</li>
-        <li>They [[did]] their best to help us.</li>
-        <li>I [[had]] a good time at the party.</li>
+        <li>I need to [[make##make a decision]] a decision.</li>
+        <li>She [[did##do homework]] her homework before dinner.</li>
+        <li>We [[had##have an argument]] an argument about money.</li>
+        <li>He [[made##make a mistake]] a mistake in the report.</li>
+        <li>They [[did##do their best]] their best to help us.</li>
+        <li>I [[had##have a good time]] a good time at the party.</li>
       </ol>
     ` },
   { id: 3018, level: "B2", category: "practice", topic: "synonyms-practice", title: "Практика: Synonyms & Antonyms", content: `
       <p>Замените выделенные слова на более точные синонимы.</p>
       <ol>
-        <li>The film was very good. → The film was [[excellent|outstanding|superb]].</li>
-        <li>I am very tired. → I am [[exhausted]].</li>
-        <li>It is very cold outside. → It is [[freezing]] outside.</li>
-        <li>The food was very bad. → The food was [[awful|terrible|dreadful]].</li>
-        <li>She is very happy. → She is [[delighted|thrilled|overjoyed]].</li>
+        <li>The film was very good. → The film was [[excellent##Синоним very good|outstanding|superb]].</li>
+        <li>I am very tired. → I am [[exhausted##Синоним very tired]].</li>
+        <li>It is very cold outside. → It is [[freezing##Синоним very cold]] outside.</li>
+        <li>The food was very bad. → The food was [[awful##Синоним very bad|terrible|dreadful]].</li>
+        <li>She is very happy. → She is [[delighted##Синоним very happy|thrilled|overjoyed]].</li>
       </ol>
     ` },
 
@@ -3166,19 +3166,19 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>How old is Anna? → [[twenty|20|twenty years old]]</li>
-<li>Where does her mother work? → [[at a school|at school|in a school]]</li>
-<li>How old is her brother? → [[fifteen|15|fifteen years old]]</li>
-<li>What is the cat's name? → [[Fluffy]]</li>
+<li>How old is Anna? → [[twenty##В тексте: I am twenty years old|20|twenty years old]]</li>
+<li>Where does her mother work? → [[at a school##В тексте: She works at a school|at school|in a school]]</li>
+<li>How old is her brother? → [[fifteen##В тексте: My brother is fifteen years old|15|fifteen years old]]</li>
+<li>What is the cat's name? → [[Fluffy##В тексте: Its name is Fluffy]]</li>
 </ol>
 
 <h3>Exercise — True or False</h3>
 <ol>
-<li>Anna lives in a big city. → [[False]]</li>
-<li>Her mother is a teacher. → [[True]]</li>
-<li>Her father works at a school. → [[False]]</li>
-<li>Her brother likes football. → [[True]]</li>
-<li>The cat is black. → [[False]]</li>
+<li>Anna lives in a big city. → [[False##В тексте: I live in a small town]]</li>
+<li>Her mother is a teacher. → [[True##В тексте: My mother is a teacher]]</li>
+<li>Her father works at a school. → [[False##В тексте: He works in a hospital]]</li>
+<li>Her brother likes football. → [[True##В тексте: He likes football]]</li>
+<li>The cat is black. → [[False##В тексте: It is white]]</li>
 </ol>
 ` },
 
@@ -3209,20 +3209,20 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What time does the person get up? → [[seven|at seven|seven o'clock|at seven o'clock|7|at 7]]</li>
-<li>What does the person eat for breakfast? → [[eggs and bread|bread and eggs]]</li>
-<li>Where does the person work? → [[in an office|an office|office]]</li>
-<li>What time does the person finish work? → [[five|at five|five o'clock|at five o'clock|5|at 5]]</li>
-<li>What does the person do in the evening? → [[has dinner|have dinner|has dinner with the family|has dinner with family]]</li>
+<li>What time does the person get up? → [[seven##В тексте: get up at seven o'clock|at seven|seven o'clock|at seven o'clock|7|at 7]]</li>
+<li>What does the person eat for breakfast? → [[eggs and bread##В тексте: eat eggs and bread|bread and eggs]]</li>
+<li>Where does the person work? → [[in an office##В тексте: I work in an office|an office|office]]</li>
+<li>What time does the person finish work? → [[five##В тексте: I finish work at five o'clock|at five|five o'clock|at five o'clock|5|at 5]]</li>
+<li>What does the person do in the evening? → [[has dinner##В тексте: In the evening, I have dinner with my family|have dinner|has dinner with the family|has dinner with family]]</li>
 </ol>
 
 <h3>Exercise — Complete the sentences</h3>
 <ol>
-<li>I usually [[get]] up at seven.</li>
-<li>I [[have]] breakfast in the morning.</li>
-<li>I go to work at [[eight]] o'clock.</li>
-<li>I [[watch]] TV in the evening.</li>
-<li>I go to [[bed]] at ten o'clock.</li>
+<li>I usually [[get##get up = вставать]] up at seven.</li>
+<li>I [[have##have breakfast = завтракать]] breakfast in the morning.</li>
+<li>I go to work at [[eight##В тексте: At eight o'clock I go to work]] o'clock.</li>
+<li>I [[watch##watch TV = смотреть телевизор]] TV in the evening.</li>
+<li>I go to [[bed##go to bed = ложиться спать]] at ten o'clock.</li>
 </ol>
 ` },
 
@@ -3254,19 +3254,19 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>How many bedrooms are there? → [[two|2]]</li>
-<li>What is there in the living room? → [[a sofa, a table and a TV|a sofa a table and a TV|sofa table TV]]</li>
-<li>Where is the bed? → [[near the window|by the window|next to the window]]</li>
-<li>Where are the books? → [[on the table]]</li>
-<li>Why does the person like the house? → [[because it is warm and comfortable|it is warm and comfortable|warm and comfortable]]</li>
+<li>How many bedrooms are there? → [[two##В тексте: My house has two bedrooms|2]]</li>
+<li>What is there in the living room? → [[a sofa, a table and a TV##В тексте: There is a sofa, a table and a TV|a sofa a table and a TV|sofa table TV]]</li>
+<li>Where is the bed? → [[near the window##В тексте: There is a bed near the window|by the window|next to the window]]</li>
+<li>Where are the books? → [[on the table##В тексте: My books are on the table]]</li>
+<li>Why does the person like the house? → [[because it is warm and comfortable##В тексте: because it is warm and comfortable|it is warm and comfortable|warm and comfortable]]</li>
 </ol>
 
 <h3>Exercise — Choose the correct option</h3>
 <ol>
-<li>There [[are]] (is / are) two bedrooms.</li>
-<li>There [[is]] (is / are) a sofa in the living room.</li>
-<li>The books are [[on]] (on / under) the table.</li>
-<li>The bed is [[near]] (near / in) the window.</li>
+<li>There [[are##Множественное число: two bedrooms]] (is / are) two bedrooms.</li>
+<li>There [[is##Единственное число: a sofa]] (is / are) a sofa in the living room.</li>
+<li>The books are [[on##На поверхности]] (on / under) the table.</li>
+<li>The bed is [[near##Рядом с]] (near / in) the window.</li>
 </ol>
 ` },
 
@@ -3299,11 +3299,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>How old is Tom? → [[twenty-one|21|twenty one]]</li>
-<li>What colour are his eyes? → [[blue]]</li>
-<li>Can he play the guitar? → [[yes|yes he can]]</li>
-<li>Where do the friends go? → [[to the park|the park|park]]</li>
-<li>What do they do at weekends? → [[watch films|watch movies|they watch films|they watch movies]]</li>
+<li>How old is Tom? → [[twenty-one##В тексте: He is twenty-one years old|21|twenty one]]</li>
+<li>What colour are his eyes? → [[blue##В тексте: blue eyes]]</li>
+<li>Can he play the guitar? → [[yes##В тексте: He can play the guitar|yes he can]]</li>
+<li>Where do the friends go? → [[to the park##В тексте: We go to the park|the park|park]]</li>
+<li>What do they do at weekends? → [[watch films##В тексте: we sometimes watch films together|watch movies|they watch films|they watch movies]]</li>
 </ol>
 ` },
 
@@ -3336,11 +3336,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What is the person's favourite food? → [[pizza]]</li>
-<li>What does the person eat for breakfast? → [[porridge or eggs|eggs or porridge]]</li>
-<li>Does the person like mushrooms? → [[no|no they don't]]</li>
-<li>What does the person drink? → [[water and fresh juice|fresh juice and water|coffee with milk|coffee]]</li>
-<li>Who does the person cook with? → [[mother|with mother|with my mother|mum|with mum]]</li>
+<li>What is the person's favourite food? → [[pizza##В тексте: My favourite food is pizza]]</li>
+<li>What does the person eat for breakfast? → [[porridge or eggs##В тексте: I usually eat porridge or eggs|eggs or porridge]]</li>
+<li>Does the person like mushrooms? → [[no##В тексте: I don't like onions or mushrooms|no they don't]]</li>
+<li>What does the person drink? → [[water and fresh juice##В тексте: prefer water and fresh juice|fresh juice and water|coffee with milk|coffee]]</li>
+<li>Who does the person cook with? → [[mother##В тексте: I cook dinner with my mother|with mother|with my mother|mum|with mum]]</li>
 </ol>
 ` },
 
@@ -3376,11 +3376,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>Why does the person love weekends? → [[because they don't work|because I don't work|doesn't work|no work]]</li>
-<li>What does the person do on Saturday morning? → [[has breakfast and cleans the room|cleans the room|clean the room|gets up late]]</li>
-<li>Who does the person go shopping with? → [[a friend|with a friend|friend|my friend]]</li>
-<li>Where does the person go on Sunday? → [[to visit grandparents|visits grandparents|grandparents|visit grandparents]]</li>
-<li>What do they do together? → [[have lunch and talk|lunch and talk|talk and have lunch|play board games]]</li>
+<li>Why does the person love weekends? → [[because they don't work##В тексте: because I don't work on Saturday and Sunday|because I don't work|doesn't work|no work]]</li>
+<li>What does the person do on Saturday morning? → [[has breakfast and cleans the room##В тексте: I have breakfast and clean my room|cleans the room|clean the room|gets up late]]</li>
+<li>Who does the person go shopping with? → [[a friend##В тексте: I go shopping with my friend|with a friend|friend|my friend]]</li>
+<li>Where does the person go on Sunday? → [[to visit grandparents##В тексте: On Sunday, I visit my grandparents|visits grandparents|grandparents|visit grandparents]]</li>
+<li>What do they do together? → [[have lunch and talk##В тексте: We have lunch together and talk|lunch and talk|talk and have lunch|play board games]]</li>
 </ol>
 ` },
 
@@ -3415,11 +3415,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>Where is Alex? → [[in London|London]]</li>
-<li>What places does he visit? → [[Big Ben and Buckingham Palace|Buckingham Palace and Big Ben]]</li>
-<li>What is the weather like? → [[sunny but a little cold|sunny and cold|sunny but cold]]</li>
-<li>What does he eat and drink? → [[a sandwich and hot chocolate|hot chocolate and a sandwich|sandwich and hot chocolate]]</li>
-<li>What does he buy for his family? → [[souvenirs|souvenir|some souvenirs]]</li>
+<li>Where is Alex? → [[in London##В тексте: I am on holiday in London|London]]</li>
+<li>What places does he visit? → [[Big Ben and Buckingham Palace##В тексте: Today I visit Big Ben and Buckingham Palace|Buckingham Palace and Big Ben]]</li>
+<li>What is the weather like? → [[sunny but a little cold##В тексте: The weather is sunny but a little cold|sunny and cold|sunny but cold]]</li>
+<li>What does he eat and drink? → [[a sandwich and hot chocolate##В тексте: I eat a sandwich and drink hot chocolate|hot chocolate and a sandwich|sandwich and hot chocolate]]</li>
+<li>What does he buy for his family? → [[souvenirs##В тексте: I buy some souvenirs for my family|souvenir|some souvenirs]]</li>
 </ol>
 ` },
 
@@ -3454,11 +3454,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What day is tomorrow? → [[Saturday]]</li>
-<li>What time is the person going to get up? → [[eight|at eight|eight o'clock|at eight o'clock|8|at 8]]</li>
-<li>Who is the person going to meet? → [[Sarah|a friend Sarah|friend Sarah]]</li>
-<li>What are they going to do in the park? → [[walk and take photos|take photos|walk|walk and take some photos]]</li>
-<li>What is the person going to do in the evening? → [[watch a new film|watch a film|watch a movie|watch a new movie]]</li>
+<li>What day is tomorrow? → [[Saturday##В тексте: Tomorrow is Saturday]]</li>
+<li>What time is the person going to get up? → [[eight##В тексте: I am going to get up at eight o'clock|at eight|eight o'clock|at eight o'clock|8|at 8]]</li>
+<li>Who is the person going to meet? → [[Sarah##В тексте: I am going to meet my friend Sarah|a friend Sarah|friend Sarah]]</li>
+<li>What are they going to do in the park? → [[walk and take photos##В тексте: We are going to walk in the park and take some photos|take photos|walk|walk and take some photos]]</li>
+<li>What is the person going to do in the evening? → [[watch a new film##В тексте: I am going to watch a new film with my family|watch a film|watch a movie|watch a new movie]]</li>
 </ol>
 ` },
   { id: 1110, level: "A1", category: "vocabulary", topic: "reading-words", title: "Слова из текстов для чтения (A1)", content: `
@@ -3619,54 +3619,54 @@ const MATERIALS = [
 { id: 1029, level: "A2", category: "practice", topic: "past-continuous-practice", title: "Практика: Past Continuous", content: `
   <p>Поставьте глагол в Past Continuous или Past Simple.</p>
   <ol>
-    <li>I [[was walking]] (walk) home when I [[saw]] (see) an old friend.</li>
-    <li>They [[were playing]] (play) football at 5 o'clock yesterday.</li>
-    <li>She [[wasn't listening]] (not / listen) when the teacher asked a question.</li>
-    <li>While we [[were having]] (have) dinner, the phone [[rang]] (ring).</li>
-    <li>What [[were]] you [[doing]] (do) at 8 p.m. yesterday?</li>
-    <li>He [[was driving]] (drive) to work when the accident [[happened]] (happen).</li>
+    <li>I [[was walking##Past Continuous (фон)]] (walk) home when I [[saw##Past Simple (короткое действие)]] (see) an old friend.</li>
+    <li>They [[were playing##Past Continuous]] (play) football at 5 o'clock yesterday.</li>
+    <li>She [[wasn't listening##Past Continuous (отрицание)]] (not / listen) when the teacher asked a question.</li>
+    <li>While we [[were having##Past Continuous (фон)]] (have) dinner, the phone [[rang##Past Simple (короткое действие)]] (ring).</li>
+    <li>What [[were]] you [[doing##Past Continuous (вопрос)]] (do) at 8 p.m. yesterday?</li>
+    <li>He [[was driving##Past Continuous (фон)]] (drive) to work when the accident [[happened##Past Simple (короткое действие)]] (happen).</li>
   </ol>
 ` },
 
 { id: 1030, level: "A2", category: "practice", topic: "present-perfect-practice", title: "Практика: Present Perfect", content: `
   <p>Поставьте глагол в Present Perfect или Past Simple.</p>
   <ol>
-    <li>I [[have just finished]] (just / finish) my homework.</li>
-    <li>She [[visited]] (visit) Paris last summer.</li>
-    <li>[[Have]] you ever [[been]] (be) to London?</li>
-    <li>We [[haven't seen]] (not / see) that film yet.</li>
-    <li>He [[lost]] (lose) his keys yesterday.</li>
-    <li>They [[have lived]] (live) here since 2019.</li>
-    <li>I [[have never eaten]] (never / eat) sushi.</li>
-    <li>She [[has already sent]] (already / send) the email.</li>
+    <li>I [[have just finished##Just + Present Perfect]] (just / finish) my homework.</li>
+    <li>She [[visited##Past Simple (last summer)]] (visit) Paris last summer.</li>
+    <li>[[Have]] you ever [[been##Ever + Present Perfect]] (be) to London?</li>
+    <li>We [[haven't seen##Yet + Present Perfect (отрицание)]] (not / see) that film yet.</li>
+    <li>He [[lost##Past Simple (yesterday)]] (lose) his keys yesterday.</li>
+    <li>They [[have lived##Since + Present Perfect]] (live) here since 2019.</li>
+    <li>I [[have never eaten##Never + Present Perfect]] (never / eat) sushi.</li>
+    <li>She [[has already sent##Already + Present Perfect]] (already / send) the email.</li>
   </ol>
 ` },
 
 { id: 1031, level: "A2", category: "practice", topic: "infinitive-gerund-practice", title: "Практика: Infinitive vs Gerund", content: `
   <p>Выберите правильную форму (to + V1 или V-ing).</p>
   <ol>
-    <li>I decided [[to learn]] (learn) how to cook.</li>
-    <li>She enjoys [[baking]] (bake) cakes.</li>
-    <li>He wants [[to become]] (become) a manager.</li>
-    <li>They kept [[trying]] (try) even when it was difficult.</li>
-    <li>I don't mind [[waiting]] (wait) for a few minutes.</li>
-    <li>We hope [[to visit]] (visit) you next summer.</li>
-    <li>She suggested [[going]] (go) to the cinema.</li>
-    <li>He promised [[to help]] (help) me with the project.</li>
+    <li>I decided [[to learn##Decide + to + V1]] (learn) how to cook.</li>
+    <li>She enjoys [[baking##Enjoy + V-ing]] (bake) cakes.</li>
+    <li>He wants [[to become##Want + to + V1]] (become) a manager.</li>
+    <li>They kept [[trying##Keep + V-ing]] (try) even when it was difficult.</li>
+    <li>I don't mind [[waiting##Mind + V-ing]] (wait) for a few minutes.</li>
+    <li>We hope [[to visit##Hope + to + V1]] (visit) you next summer.</li>
+    <li>She suggested [[going##Suggest + V-ing]] (go) to the cinema.</li>
+    <li>He promised [[to help##Promise + to + V1]] (help) me with the project.</li>
   </ol>
 ` },
 
 { id: 1032, level: "A2", category: "practice", topic: "countable-uncountable-practice", title: "Практика: Countable / Uncountable", content: `
   <p>Вставьте some, any, much или many.</p>
   <ol>
-    <li>I need [[some]] water.</li>
-    <li>Do you have [[any]] questions?</li>
-    <li>There aren't [[any]] apples in the fridge.</li>
-    <li>How [[many]] books did you buy?</li>
-    <li>How [[much]] money do you need?</li>
-    <li>She has [[some]] good friends.</li>
-    <li>I don't have [[much]] time today.</li>
-    <li>There are [[many]] people in the park.</li>
+    <li>I need [[some##Утвердительное предложение]] water.</li>
+    <li>Do you have [[any##Вопрос]] questions?</li>
+    <li>There aren't [[any##Отрицание]] apples in the fridge.</li>
+    <li>How [[many##Исчисляемые (books)]] books did you buy?</li>
+    <li>How [[much##Неисчисляемые (money)]] money do you need?</li>
+    <li>She has [[some##Утвердительное предложение]] good friends.</li>
+    <li>I don't have [[much##Неисчисляемые (time)]] time today.</li>
+    <li>There are [[many##Исчисляемые (people)]] people in the park.</li>
   </ol>
 ` },
 
@@ -3702,19 +3702,19 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>Where does Daniel work? → [[in a small hotel|a small hotel|small hotel]]</li>
-<li>When did he start this job? → [[six months ago|6 months ago]]</li>
-<li>What does he do at work? → [[answers phone calls welcomes guests and helps them|answers phone calls|welcomes guests]]</li>
-<li>Why is the hotel busy this week? → [[because a large group of tourists is staying here|a large group of tourists|tourists]]</li>
-<li>What would Daniel like to become? → [[a hotel manager|hotel manager]]</li>
+<li>Where does Daniel work? → [[in a small hotel##В тексте: I work as a receptionist in a small hotel|a small hotel|small hotel]]</li>
+<li>When did he start this job? → [[six months ago##В тексте: I started this job six months ago|6 months ago]]</li>
+<li>What does he do at work? → [[answers phone calls welcomes guests and helps them##В тексте: answer phone calls, welcome guests and help them|answers phone calls|welcomes guests]]</li>
+<li>Why is the hotel busy this week? → [[because a large group of tourists is staying here##В тексте: because a large group of tourists is staying here|a large group of tourists|tourists]]</li>
+<li>What would Daniel like to become? → [[a hotel manager##В тексте: I would like to become a hotel manager one day|hotel manager]]</li>
 </ol>
 
 <h3>Exercise — True or False</h3>
 <ol>
-<li>Daniel has worked at the hotel for six months. → [[True]]</li>
-<li>He works as a cook. → [[False]]</li>
-<li>The hotel is busy because of a group of tourists. → [[True]]</li>
-<li>Daniel wants to learn more. → [[True]]</li>
+<li>Daniel has worked at the hotel for six months. → [[True##В тексте: I started this job six months ago]]</li>
+<li>He works as a cook. → [[False##В тексте: I work as a receptionist]]</li>
+<li>The hotel is busy because of a group of tourists. → [[True##В тексте: because a large group of tourists is staying here]]</li>
+<li>Daniel wants to learn more. → [[True##В тексте: I am trying to learn something new every day]]</li>
 </ol>
 ` },
 
@@ -3751,18 +3751,18 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>Where did the friends go? → [[to the mountains|the mountains|mountains]]</li>
-<li>How did they travel? → [[by train|train]]</li>
-<li>What happened while they were walking? → [[the weather suddenly changed|it started raining|it started raining heavily]]</li>
-<li>Where did they wait for the rain to stop? → [[in a small wooden shelter|a small wooden shelter|wooden shelter]]</li>
-<li>How did they feel at the end of the day? → [[tired but happy|happy|tired and happy]]</li>
+<li>Where did the friends go? → [[to the mountains##В тексте: my friends and I went to the mountains|the mountains|mountains]]</li>
+<li>How did they travel? → [[by train##В тексте: travelled by train|train]]</li>
+<li>What happened while they were walking? → [[the weather suddenly changed##В тексте: the weather suddenly changed|it started raining|it started raining heavily]]</li>
+<li>Where did they wait for the rain to stop? → [[in a small wooden shelter##В тексте: We found a small wooden shelter|a small wooden shelter|wooden shelter]]</li>
+<li>How did they feel at the end of the day? → [[tired but happy##В тексте: We were tired, but we felt happy|happy|tired and happy]]</li>
 </ol>
 
 <h3>Exercise — True or False</h3>
 <ol>
-<li>We went to the mountains by car. → [[False]]</li>
-<li>It started raining during the walk. → [[True]]</li>
-<li>They had lunch near a lake. → [[True]]</li>
+<li>We went to the mountains by car. → [[False##В тексте: travelled by train]]</li>
+<li>It started raining during the walk. → [[True##В тексте: While we were walking... It started raining heavily]]</li>
+<li>They had lunch near a lake. → [[True##В тексте: reached a beautiful lake in the afternoon and had lunch near the water]]</li>
 </ol>
 ` },
 
@@ -3798,18 +3798,18 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>Why can small habits be useful? → [[they can make a big difference|make a big difference]]</li>
-<li>What should people drink during the day? → [[enough water|water]]</li>
-<li>Do you have to go to the gym every day? → [[no|no you don't]]</li>
-<li>How long should people try to be active? → [[at least thirty minutes a day|thirty minutes|30 minutes]]</li>
-<li>How many hours of sleep do most adults need? → [[seven or eight|seven or eight hours|7 or 8]]</li>
+<li>Why can small habits be useful? → [[they can make a big difference##В тексте: Small habits can make a big difference|make a big difference]]</li>
+<li>What should people drink during the day? → [[enough water##В тексте: you should drink enough water|water]]</li>
+<li>Do you have to go to the gym every day? → [[no##В тексте: You don't have to go to the gym every day|no you don't]]</li>
+<li>How long should people try to be active? → [[at least thirty minutes a day##В тексте: for at least thirty minutes a day|thirty minutes|30 minutes]]</li>
+<li>How many hours of sleep do most adults need? → [[seven or eight##В тексте: about seven or eight hours|seven or eight hours|7 or 8]]</li>
 </ol>
 
 <h3>Exercise — True or False</h3>
 <ol>
-<li>You must change everything in one day. → [[False]]</li>
-<li>People should eat fruit and vegetables. → [[True]]</li>
-<li>Walking can be a form of exercise. → [[True]]</li>
+<li>You must change everything in one day. → [[False##В тексте: You don't need to change your whole life in one day]]</li>
+<li>People should eat fruit and vegetables. → [[True##В тексте: You should also eat fruit and vegetables]]</li>
+<li>Walking can be a form of exercise. → [[True##В тексте: You can walk to work... Try to be active]]</li>
 </ol>
 ` },
 
@@ -3846,18 +3846,18 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>Where did the family spend their holiday? → [[in a small town by the sea|a small town by the sea|by the sea]]</li>
-<li>How was the town different from their city? → [[smaller quieter and more relaxing|smaller and quieter|quieter]]</li>
-<li>Where was the hotel? → [[close to the beach|near the beach]]</li>
-<li>What did they do every morning? → [[went swimming|swimming]]</li>
-<li>What was the most delicious meal? → [[the local fish|local fish|fish]]</li>
+<li>Where did the family spend their holiday? → [[in a small town by the sea##В тексте: spent a week in a small town by the sea|a small town by the sea|by the sea]]</li>
+<li>How was the town different from their city? → [[smaller quieter and more relaxing##В тексте: smaller than our city, but it was much quieter and more relaxing|smaller and quieter|quieter]]</li>
+<li>Where was the hotel? → [[close to the beach##В тексте: Our hotel was close to the beach|near the beach]]</li>
+<li>What did they do every morning? → [[went swimming##В тексте: Every morning, we went swimming|swimming]]</li>
+<li>What was the most delicious meal? → [[the local fish##В тексте: We also tried the local fish. It was the most delicious meal|local fish|fish]]</li>
 </ol>
 
 <h3>Exercise — True or False</h3>
 <ol>
-<li>The family usually goes to the seaside. → [[False]]</li>
-<li>The sea was warmer than they expected. → [[True]]</li>
-<li>They visited the newest part of the town. → [[False]]</li>
+<li>The family usually goes to the seaside. → [[False##В тексте: We usually go to the countryside]]</li>
+<li>The sea was warmer than they expected. → [[True##В тексте: the sea was warmer than we expected]]</li>
+<li>They visited the newest part of the town. → [[False##В тексте: we visited the oldest part of the town]]</li>
 </ol>
 ` },
 
@@ -3894,18 +3894,18 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>Where has Emma arrived? → [[at the airport|the airport|airport]]</li>
-<li>What colour is her suitcase? → [[dark blue|blue]]</li>
-<li>Where did she travel from? → [[Madrid|from Madrid]]</li>
-<li>What did the assistant give her? → [[a reference number|reference number]]</li>
-<li>What message has Emma received? → [[the airline has found a suitcase|they have found a suitcase|airline found a suitcase]]</li>
+<li>Where has Emma arrived? → [[at the airport##В тексте: Emma has just arrived at the airport|the airport|airport]]</li>
+<li>What colour is her suitcase? → [[dark blue##В тексте: her suitcase was dark blue|blue]]</li>
+<li>Where did she travel from? → [[Madrid##В тексте: she had travelled from Madrid|from Madrid]]</li>
+<li>What did the assistant give her? → [[a reference number##В тексте: gave her a reference number|reference number]]</li>
+<li>What message has Emma received? → [[the airline has found a suitcase##В тексте: They have found a suitcase that looks like hers|they have found a suitcase|airline found a suitcase]]</li>
 </ol>
 
 <h3>Exercise — True or False</h3>
 <ol>
-<li>Emma can find her suitcase near the check-in desk. → [[False]]</li>
-<li>Her suitcase is dark blue. → [[True]]</li>
-<li>The airport has found a possible match. → [[True]]</li>
+<li>Emma can find her suitcase near the check-in desk. → [[False##В тексте: She has looked near the check-in desk... but it isn't there]]</li>
+<li>Her suitcase is dark blue. → [[True##В тексте: her suitcase was dark blue]]</li>
+<li>The airport has found a possible match. → [[True##В тексте: They have found a suitcase that looks like hers]]</li>
 </ol>
 ` },
 
@@ -3943,18 +3943,18 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What did the person decide to learn last year? → [[to cook|cook|cooking]]</li>
-<li>What could the person cook before? → [[an omelette|omelette]]</li>
-<li>What mistakes did the person make? → [[forgot to add an ingredient and burned the rice|burned the rice|forgot an ingredient]]</li>
-<li>What meals can the person cook now? → [[vegetable soup and cakes|soup and cakes|vegetable soup]]</li>
-<li>What has cooking taught the person? → [[to be patient|patience|be patient]]</li>
+<li>What did the person decide to learn last year? → [[to cook##В тексте: I decided to learn how to cook|cook|cooking]]</li>
+<li>What could the person cook before? → [[an omelette##В тексте: I couldn't prepare anything more difficult than an omelette|omelette]]</li>
+<li>What mistakes did the person make? → [[forgot to add an ingredient and burned the rice##В тексте: I forgot to add an ingredient, and once I burned the rice|burned the rice|forgot an ingredient]]</li>
+<li>What meals can the person cook now? → [[vegetable soup and cakes##В тексте: I love making vegetable soup and baking cakes|soup and cakes|vegetable soup]]</li>
+<li>What has cooking taught the person? → [[to be patient##В тексте: Learning to cook has taught me to be patient|patience|be patient]]</li>
 </ol>
 
 <h3>Exercise — True or False</h3>
 <ol>
-<li>The person already knew how to cook many dishes. → [[False]]</li>
-<li>The person once burned the rice. → [[True]]</li>
-<li>The person wants to learn dishes from other countries. → [[True]]</li>
+<li>The person already knew how to cook many dishes. → [[False##В тексте: I couldn't prepare anything more difficult than an omelette]]</li>
+<li>The person once burned the rice. → [[True##В тексте: once I burned the rice]]</li>
+<li>The person wants to learn dishes from other countries. → [[True##В тексте: I also want to learn to prepare traditional dishes from other countries]]</li>
 </ol>
 ` },
 
@@ -3992,18 +3992,18 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What did the person order? → [[a phone case two notebooks and headphones|a phone case|two notebooks|headphones]]</li>
-<li>When did the parcel arrive? → [[this morning|morning]]</li>
-<li>What was missing? → [[the headphones|headphones]]</li>
-<li>What was wrong with one notebook? → [[it was damaged|damaged]]</li>
-<li>What did customer service promise to do? → [[send the missing headphones and replace the notebook|send headphones and replace the notebook]]</li>
+<li>What did the person order? → [[a phone case two notebooks and headphones##В тексте: I needed a new phone case, two notebooks and a pair of headphones|a phone case|two notebooks|headphones]]</li>
+<li>When did the parcel arrive? → [[this morning##В тексте: The parcel arrived this morning|morning]]</li>
+<li>What was missing? → [[the headphones##В тексте: There were no headphones in the box|headphones]]</li>
+<li>What was wrong with one notebook? → [[it was damaged##В тексте: one notebook was damaged|damaged]]</li>
+<li>What did customer service promise to do? → [[send the missing headphones and replace the notebook##В тексте: they would send the missing headphones and replace the notebook|send headphones and replace the notebook]]</li>
 </ol>
 
 <h3>Exercise — True or False</h3>
 <ol>
-<li>The person ordered a laptop. → [[False]]</li>
-<li>There were no headphones in the parcel. → [[True]]</li>
-<li>Customer service asked for a photo. → [[True]]</li>
+<li>The person ordered a laptop. → [[False##В тексте: ordered a new phone case, two notebooks and a pair of headphones]]</li>
+<li>There were no headphones in the parcel. → [[True##В тексте: There were no headphones in the box]]</li>
+<li>Customer service asked for a photo. → [[True##В тексте: asked me to send a photo of the damaged notebook]]</li>
 </ol>
 ` },
 
@@ -4041,18 +4041,18 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>How is the city changing? → [[new houses and shops are appearing|new houses and shops|changing quickly]]</li>
-<li>What is the local government planning to improve? → [[public transport|transport]]</li>
-<li>Why will cycle paths be useful? → [[people will be able to travel more safely|travel safely|safely]]</li>
-<li>How will electric buses help? → [[reduce air pollution|help reduce air pollution|reduce pollution]]</li>
-<li>What else will the city need? → [[affordable homes and better schools|more affordable homes and better schools|homes and schools]]</li>
+<li>How is the city changing? → [[new houses and shops are appearing##В тексте: New houses and shops are appearing|new houses and shops|changing quickly]]</li>
+<li>What is the local government planning to improve? → [[public transport##В тексте: planning to improve public transport|transport]]</li>
+<li>Why will cycle paths be useful? → [[people will be able to travel more safely##В тексте: so people will be able to travel around the centre more safely|travel safely|safely]]</li>
+<li>How will electric buses help? → [[reduce air pollution##В тексте: This will help reduce air pollution|help reduce air pollution|reduce pollution]]</li>
+<li>What else will the city need? → [[affordable homes and better schools##В тексте: The city will still need more affordable homes and better schools|more affordable homes and better schools|homes and schools]]</li>
 </ol>
 
 <h3>Exercise — True or False</h3>
 <ol>
-<li>The city is planning to remove all parks. → [[False]]</li>
-<li>There will be more cycle paths. → [[True]]</li>
-<li>The writer thinks every problem will disappear. → [[False]]</li>
+<li>The city is planning to remove all parks. → [[False##В тексте: going to plant hundreds of trees in parks]]</li>
+<li>There will be more cycle paths. → [[True##В тексте: There are going to be more cycle paths]]</li>
+<li>The writer thinks every problem will disappear. → [[False##В тексте: I don't think all problems will disappear]]</li>
 </ol>
 ` },
 
@@ -4173,19 +4173,19 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What did Maria study at university? → [[economics]]</li>
-<li>What did her parents expect her to do? → [[find a well-paid job in a bank|work in a bank|find a job in a bank]]</li>
-<li>What had she done every weekend during her studies? → [[volunteered at a local school|volunteered at a school|volunteered]]</li>
-<li>Why did Maria work part-time in a café? → [[to support herself|support herself]]</li>
-<li>What does Maria believe was the hardest part? → [[the fear of disappointing her parents|fear of disappointing her parents|disappointing her parents]]</li>
+<li>What did Maria study at university? → [[economics##В тексте: She had studied economics]]</li>
+<li>What did her parents expect her to do? → [[find a well-paid job in a bank##В тексте: parents expected her to find a well-paid job in a bank|work in a bank|find a job in a bank]]</li>
+<li>What had she done every weekend during her studies? → [[volunteered at a local school##В тексте: she had volunteered at a local school every weekend|volunteered at a school|volunteered]]</li>
+<li>Why did Maria work part-time in a café? → [[to support herself##В тексте: work part-time in a café to support herself|support herself]]</li>
+<li>What does Maria believe was the hardest part? → [[the fear of disappointing her parents##В тексте: the hardest part was not the financial struggle, but the fear of disappointing her parents|fear of disappointing her parents|disappointing her parents]]</li>
 </ol>
 
 <h3>Exercise — True or False</h3>
 <ol>
-<li>Maria's parents wanted her to become a teacher. → [[False]]</li>
-<li>She volunteered at a school every weekend. → [[True]]</li>
-<li>She now works at a primary school. → [[True]]</li>
-<li>She regrets her decision. → [[False]]</li>
+<li>Maria's parents wanted her to become a teacher. → [[False##В тексте: her parents expected her to find a well-paid job in a bank]]</li>
+<li>She volunteered at a school every weekend. → [[True##В тексте: she had volunteered at a local school every weekend]]</li>
+<li>She now works at a primary school. → [[True##В тексте: Today, she teaches at a primary school]]</li>
+<li>She regrets her decision. → [[False##В тексте: she never doubted her decision]]</li>
 </ol>
 ` },
 
@@ -4223,11 +4223,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>Where does the person volunteer? → [[at an animal shelter|animal shelter|shelter]]</li>
-<li>How often did the person go there at first? → [[once a month|monthly]]</li>
-<li>Why do some dogs take time to trust people? → [[they have been badly treated|they were badly treated|badly treated]]</li>
-<li>What has volunteering taught the person? → [[patience and responsibility]]</li>
-<li>Why does the person recommend volunteering? → [[it has changed their life for the better|it changed their life|it changes your life]]</li>
+<li>Where does the person volunteer? → [[at an animal shelter##В тексте: I started volunteering at an animal shelter|animal shelter|shelter]]</li>
+<li>How often did the person go there at first? → [[once a month##В тексте: I only went there once a month|monthly]]</li>
+<li>Why do some dogs take time to trust people? → [[they have been badly treated##В тексте: Some of the dogs have been badly treated|they were badly treated|badly treated]]</li>
+<li>What has volunteering taught the person? → [[patience and responsibility##В тексте: Volunteering has taught me a lot about patience and responsibility]]</li>
+<li>Why does the person recommend volunteering? → [[it has changed their life for the better##В тексте: volunteering has changed my life for the better|it changed their life|it changes your life]]</li>
 </ol>
 ` },
 
@@ -4268,18 +4268,18 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>Who wrote the letter and to whom? → [[Emma wrote to Sophie|Emma to Sophie|Emma, Sophie]]</li>
-<li>What is the best part of the new flat? → [[the balcony]]</li>
-<li>What did Emma give away? → [[four boxes of books and old clothes|books and old clothes]]</li>
-<li>What did her manager ask her to do? → [[lead a small project team|lead a project team|lead a team]]</li>
-<li>Why does Emma invite Sophie? → [[there is a spare room and a nice café|to visit her|to see the new flat]]</li>
+<li>Who wrote the letter and to whom? → [[Emma wrote to Sophie##В тексте: Dear Sophie... Lots of love, Emma|Emma to Sophie|Emma, Sophie]]</li>
+<li>What is the best part of the new flat? → [[the balcony##В тексте: The best part is the balcony]]</li>
+<li>What did Emma give away? → [[four boxes of books and old clothes##В тексте: giving away four boxes of books and old clothes|books and old clothes]]</li>
+<li>What did her manager ask her to do? → [[lead a small project team##В тексте: my manager asked me to lead a small project team|lead a project team|lead a team]]</li>
+<li>Why does Emma invite Sophie? → [[there is a spare room and a nice café##В тексте: There is a spare room in the flat... found a lovely café|to visit her|to see the new flat]]</li>
 </ol>
 
 <h3>Exercise — True or False</h3>
 <ol>
-<li>The new flat is bigger than the old one. → [[False]]</li>
-<li>Emma gave away some books. → [[True]]</li>
-<li>Emma found leading the team easy from the start. → [[False]]</li>
+<li>The new flat is bigger than the old one. → [[False##В тексте: It is much smaller than my old place]]</li>
+<li>Emma gave away some books. → [[True##В тексте: giving away four boxes of books]]</li>
+<li>Emma found leading the team easy from the start. → [[False##В тексте: I was nervous at first]]</li>
 </ol>
 ` },
 
@@ -4317,11 +4317,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What is the café called? → [[The Blue Door]]</li>
-<li>How long has Mrs. Patel run it? → [[over twenty years|more than twenty years|20 years]]</li>
-<li>How many tables are there? → [[six|6]]</li>
-<li>What can people do in the café? → [[read, write, or escape from their busy lives|read and write|relax]]</li>
-<li>Why are such cafés becoming rare? → [[the world is becoming faster and more digital|everything is becoming faster|modern life]]</li>
+<li>What is the café called? → [[The Blue Door##В тексте: a small café called "The Blue Door"]]</li>
+<li>How long has Mrs. Patel run it? → [[over twenty years##В тексте: has been running the café for over twenty years|more than twenty years|20 years]]</li>
+<li>How many tables are there? → [[six##В тексте: There are only six tables|6]]</li>
+<li>What can people do in the café? → [[read, write, or escape from their busy lives##В тексте: People go there to read, write, or simply escape from their busy lives|read and write|relax]]</li>
+<li>Why are such cafés becoming rare? → [[the world is becoming faster and more digital##В тексте: In a world where everything is becoming faster and more digital, places like this café are becoming rare|everything is becoming faster|modern life]]</li>
 </ol>
 ` },
 
@@ -4361,11 +4361,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What do many people believe about change? → [[it requires big actions|big changes require big actions|big actions]]</li>
-<li>What example of a small goal is given? → [[reading five pages a day|five pages a day]]</li>
-<li>Why does the brain prefer familiar behaviours? → [[to save energy|it saves energy]]</li>
-<li>How can you connect a new habit to an existing one? → [[drink water when making coffee|drink a glass of water every time you make coffee]]</li>
-<li>What is the main message of the text? → [[small habits lead to big results|small habits matter|consistency matters]]</li>
+<li>What do many people believe about change? → [[it requires big actions##В тексте: Many people believe that big changes require big actions|big changes require big actions|big actions]]</li>
+<li>What example of a small goal is given? → [[reading five pages a day##В тексте: reading just five pages a day|five pages a day]]</li>
+<li>Why does the brain prefer familiar behaviours? → [[to save energy##В тексте: Our brains are designed to save energy|it saves energy]]</li>
+<li>How can you connect a new habit to an existing one? → [[drink water when making coffee##В тексте: drink a glass of water every time you make coffee|drink a glass of water every time you make coffee]]</li>
+<li>What is the main message of the text? → [[small habits lead to big results##Главная мысль текста|small habits matter|consistency matters]]</li>
 </ol>
 ` },
 
@@ -4403,11 +4403,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What happens to plastic in the oceans? → [[marine animals mistake it for food|animals eat it|animals mistake it for food]]</li>
-<li>Why is plastic packaging a problem for vegetables? → [[nature already provided them with their own skin|it is unnecessary|vegetables have skin]]</li>
-<li>What happened after taxes on plastic bags? → [[plastic waste dropped by more than 50%|waste reduced|plastic waste reduced]]</li>
-<li>What can consumers do? → [[carry a reusable bottle and refuse plastic straws|small actions]]</li>
-<li>What is the main idea? → [[millions of people doing small things matters|small actions matter|collective action]]</li>
+<li>What happens to plastic in the oceans? → [[marine animals mistake it for food##В тексте: Marine animals often mistake small pieces of plastic for food|animals eat it|animals mistake it for food]]</li>
+<li>Why is plastic packaging a problem for vegetables? → [[nature already provided them with their own skin##В тексте: even though nature has already provided them with their own skin|it is unnecessary|vegetables have skin]]</li>
+<li>What happened after taxes on plastic bags? → [[plastic waste dropped by more than 50%##В тексте: reduced plastic waste by more than fifty percent|waste reduced|plastic waste reduced]]</li>
+<li>What can consumers do? → [[carry a reusable bottle and refuse plastic straws##В тексте: carrying a reusable bottle or refusing a plastic straw|small actions]]</li>
+<li>What is the main idea? → [[millions of people doing small things matters##В тексте: It needs millions of people who do something|small actions matter|collective action]]</li>
 </ol>
 ` },
 
@@ -4450,11 +4450,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What forces are reshaping work? → [[automation, AI and remote technologies|automation and AI|technology]]</li>
-<li>Which skills are becoming more valuable? → [[creativity, critical thinking, emotional intelligence, adaptability]]</li>
-<li>What do many employees now prefer? → [[flexibility over a higher salary|flexibility]]</li>
-<li>What is the risk of unmanaged remote work? → [[burnout]]</li>
-<li>What is the main concern about inequality? → [[those without digital skills may be excluded|digital skills gap|people without digital skills]]</li>
+<li>What forces are reshaping work? → [[automation, AI and remote technologies##В тексте: Automation, artificial intelligence and remote technologies are reshaping|automation and AI|technology]]</li>
+<li>Which skills are becoming more valuable? → [[creativity, critical thinking, emotional intelligence, adaptability##В тексте: creativity, critical thinking, emotional intelligence and adaptability are becoming more valuable]]</li>
+<li>What do many employees now prefer? → [[flexibility over a higher salary##В тексте: Many employees now prioritise flexibility over a higher salary|flexibility]]</li>
+<li>What is the risk of unmanaged remote work? → [[burnout##В тексте: leading to burnout if not managed carefully]]</li>
+<li>What is the main concern about inequality? → [[those without digital skills may be excluded##В тексте: those without digital skills may find themselves increasingly excluded|digital skills gap|people without digital skills]]</li>
 </ol>
 ` },
 
@@ -4494,11 +4494,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What is culture shock? → [[a natural reaction to losing familiar frameworks|natural reaction]]</li>
-<li>What are the three stages described? → [[honeymoon, frustration, adaptation|honeymoon frustration adaptation]]</li>
-<li>Which newcomers tend to struggle more? → [[those who try to erase their original identity|those who erase their identity]]</li>
-<li>What can employers do to help? → [[mentoring programmes or social events|support international staff|mentoring]]</li>
-<li>How does the author view culture shock? → [[not to be avoided|temporary, valuable|something to engage with]]</li>
+<li>What is culture shock? → [[a natural reaction to losing familiar frameworks##В тексте: it is a natural reaction to losing the familiar frameworks|natural reaction]]</li>
+<li>What are the three stages described? → [[honeymoon, frustration, adaptation##В тексте: honeymoon phase, frustration, adapt|honeymoon frustration adaptation]]</li>
+<li>Which newcomers tend to struggle more? → [[those who try to erase their original identity##В тексте: those who try to erase their original identity tend to struggle more|those who erase their identity]]</li>
+<li>What can employers do to help? → [[mentoring programmes or social events##В тексте: mentoring programmes or informal social events|support international staff|mentoring]]</li>
+<li>How does the author view culture shock? → [[not to be avoided##В тексте: culture shock is not something to be avoided|temporary, valuable|something to engage with]]</li>
 </ol>
 ` },
 
@@ -4538,11 +4538,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What does reading fiction seem to strengthen? → [[empathy]]</li>
-<li>How does reading differ from social media? → [[it requires sustained concentration|sustained focus]]</li>
-<li>What do critics of reading claim? → [[it is outdated and elitist|outdated]]</li>
-<li>What does the author say reading really is? → [[a way of slowing down thought|not just information transfer|a way of slowing thought]]</li>
-<li>What is the author's overall stance? → [[reading is more valuable than ever|reading is valuable|in defence of reading]]</li>
+<li>What does reading fiction seem to strengthen? → [[empathy##В тексте: reading fiction appears to strengthen empathy]]</li>
+<li>How does reading differ from social media? → [[it requires sustained concentration##В тексте: a book requires sustained concentration|sustained focus]]</li>
+<li>What do critics of reading claim? → [[it is outdated and elitist##В тексте: reading is an outdated and even elitist activity|outdated]]</li>
+<li>What does the author say reading really is? → [[a way of slowing down thought##В тексте: a way of slowing down thought|not just information transfer|a way of slowing thought]]</li>
+<li>What is the author's overall stance? → [[reading is more valuable than ever##В тексте: this capacity may be more valuable than ever|reading is valuable|in defence of reading]]</li>
 </ol>
 ` },
 
@@ -4583,11 +4583,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What do companies do with user data? → [[personalise services, target ads, improve products]]</li>
-<li>What does a single click on many apps do? → [[grant access to location, contacts, microphone|grant access]]</li>
-<li>Give one example of consequences beyond advertising. → [[insurance premiums, hiring checks, government surveillance]]</li>
-<li>Why is the idea that "privacy is dead" dangerous? → [[individuals may censor themselves|it undermines autonomy|it's dangerous]]</li>
-<li>What does the author propose? → [[regulatory action and individual awareness|reform and awareness]]</li>
+<li>What do companies do with user data? → [[personalise services, target ads, improve products##В тексте: personalise services, target advertising and improve their products]]</li>
+<li>What does a single click on many apps do? → [[grant access to location, contacts, microphone##В тексте: grant access to location, contacts, microphone|grant access]]</li>
+<li>Give one example of consequences beyond advertising. → [[insurance premiums, hiring checks, government surveillance##В тексте: Insurance companies... Employers... Governments]]</li>
+<li>Why is the idea that "privacy is dead" dangerous? → [[individuals may censor themselves##В тексте: individuals may begin to censor themselves|it undermines autonomy|it's dangerous]]</li>
+<li>What does the author propose? → [[regulatory action and individual awareness##В тексте: requires both regulatory action and individual awareness|reform and awareness]]</li>
 </ol>
 ` },
 
@@ -4627,11 +4627,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>How is failure often treated in many cultures? → [[as shameful|shameful]]</li>
-<li>What does the walking example illustrate? → [[falling is essential to learning|failure is part of learning]]</li>
-<li>Which students are more willing to face challenges? → [[those praised for effort|effort-praised]]</li>
-<li>What did Edison say about his failures? → [[he found ten thousand ways that didn't work]]</li>
-<li>What does the author suggest? → [[treat failure as a teacher|treat failure as teacher]]</li>
+<li>How is failure often treated in many cultures? → [[as shameful##В тексте: failure is treated as something shameful|shameful]]</li>
+<li>What does the walking example illustrate? → [[falling is essential to learning##В тексте: Falling is an essential part of the process|failure is part of learning]]</li>
+<li>Which students are more willing to face challenges? → [[those praised for effort##В тексте: students who are praised for their effort... are more willing to tackle difficult problems|effort-praised]]</li>
+<li>What did Edison say about his failures? → [[he found ten thousand ways that didn't work##В тексте: he had found ten thousand ways that did not work]]</li>
+<li>What does the author suggest? → [[treat failure as a teacher##В тексте: learn to treat failure as a teacher rather than a judge|treat failure as teacher]]</li>
 </ol>
 ` },
 
@@ -4672,17 +4672,15 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What has changed with social networks? → [[anyone can publish and stories spread fast|information spreads fast|anyone can publish]]</li>
-<li>What benefit does democratisation of information bring? → [[citizens can document hidden events|accountability|independent journalism]]</li>
-<li>What do algorithms reward? → [[engagement, not accuracy|engagement]]</li>
-<li>What is one proposed solution? → [[media literacy|educated citizens|labelling disputed content]]</li>
-<li>What does the author think is needed? → [[educated citizens, responsible platforms, credible journalism|a combination of solutions]]</li>
+<li>What has changed with social networks? → [[anyone can publish and stories spread fast##В тексте: Anyone with an internet connection can now publish information... stories can spread faster|information spreads fast|anyone can publish]]</li>
+<li>What benefit does democratisation of information bring? → [[citizens can document hidden events##В тексте: Ordinary citizens can document events that powerful institutions might prefer to hide|accountability|independent journalism]]</li>
+<li>What do algorithms reward? → [[engagement, not accuracy##В тексте: Algorithms reward engagement, not accuracy|engagement]]</li>
+<li>What is one proposed solution? → [[media literacy##В тексте: the answer is better media literacy|educated citizens|labelling disputed content]]</li>
+<li>What does the author think is needed? → [[educated citizens, responsible platforms, credible journalism##В тексте: requires educated citizens, responsible platforms and credible journalism|a combination of solutions]]</li>
 </ol>
 ` },
 
-  // ============================================================
-  // C1 READING — файлы в папке audio/
-  // ============================================================
+
   { id: 4101, level: "C1", category: "reading", topic: "reading-paradox-choice", title: "01. The Paradox of Choice — Парадокс выбора", content: `
 <div class="audio-placeholder" data-audio="audio/c1-paradox-of-choice.mp3">
   🔊 <i>Аудио: будет добавлено (audio/c1-paradox-of-choice.mp3)</i>
@@ -4719,11 +4717,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What did the jam experiment reveal? → [[fewer options led to more purchases|too much choice paralyses|less choice is better]]</li>
-<li>Why does abundance increase the risk of regret? → [[we can always imagine a better alternative|we imagine better options]]</li>
-<li>How do maximisers differ from satisficers? → [[maximisers seek the best option, satisficers settle for good enough]]</li>
-<li>Who tends to be less satisfied? → [[maximisers]]</li>
-<li>What does the author suggest we do? → [[limit options, set standards, stop searching once decided|deliberately limit choices]]</li>
+<li>What did the jam experiment reveal? → [[fewer options led to more purchases##В тексте: shoppers who were offered a tasting of six jams were ten times more likely to make a purchase|too much choice paralyses|less choice is better]]</li>
+<li>Why does abundance increase the risk of regret? → [[we can always imagine a better alternative##В тексте: we can always imagine that a different choice might have been better|we imagine better options]]</li>
+<li>How do maximisers differ from satisficers? → [[maximisers seek the best option, satisficers settle for good enough##В тексте: maximisers strive to identify the best possible option, satisficers settle for something that is good enough]]</li>
+<li>Who tends to be less satisfied? → [[maximisers##В тексте: maximisers tend to be less satisfied with their decisions]]</li>
+<li>What does the author suggest we do? → [[limit options, set standards, stop searching once decided##В тексте: deliberately limiting our options, setting personal standards in advance|deliberately limit choices]]</li>
 </ol>
 ` },
 
@@ -4764,11 +4762,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What is code-switching? → [[alternating between languages in one conversation|alternating languages]]</li>
-<li>How does the author view multilingualism? → [[it multiplies resources for identity|it enriches identity]]</li>
-<li>What is the cost of aggressive homogenisation? → [[devastating for minority communities|languages disappear|minority loss]]</li>
-<li>What is happening to the world's languages? → [[about half may vanish this century|half may vanish]]</li>
-<li>What does the author argue? → [[diversity requires valuing languages|we must value languages]]</li>
+<li>What is code-switching? → [[alternating between languages in one conversation##В тексте: bilingual speakers alternate between languages within a single conversation|alternating languages]]</li>
+<li>How does the author view multilingualism? → [[it multiplies resources for identity##В тексте: it multiplies the resources through which identity can be performed|it enriches identity]]</li>
+<li>What is the cost of aggressive homogenisation? → [[devastating for minority communities##В тексте: have often come at a devastating cost to minority communities|languages disappear|minority loss]]</li>
+<li>What is happening to the world's languages? → [[about half may vanish this century##В тексте: roughly half of the world's seven thousand languages may vanish by the end of this century|half may vanish]]</li>
+<li>What does the author argue? → [[diversity requires valuing languages##В тексте: If we value diversity... we must value the languages that sustain it|we must value languages]]</li>
 </ol>
 ` },
 
@@ -4808,11 +4806,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What needs did the modern school system originally serve? → [[industrial society needs|industrial needs|punctuality and obedience]]</li>
-<li>What does the system still reward, according to critics? → [[memorising and right answers|the right answer|memory]]</li>
-<li>How do defenders respond? → [[structure and discipline are valuable|structure matters]]</li>
-<li>What have some schools experimented with? → [[project-based learning, mixed-age classes, less testing]]</li>
-<li>What does the author conclude? → [[we may need to rethink fundamental assumptions|fundamental reform needed|rethink assumptions]]</li>
+<li>What needs did the modern school system originally serve? → [[industrial society needs##В тексте: It emerged in the nineteenth century to meet the needs of industrial society|industrial needs|punctuality and obedience]]</li>
+<li>What does the system still reward, according to critics? → [[memorising and right answers##В тексте: assessed largely on their capacity to memorise information|the right answer|memory]]</li>
+<li>How do defenders respond? → [[structure and discipline are valuable##В тексте: structure and discipline are valuable in themselves|structure matters]]</li>
+<li>What have some schools experimented with? → [[project-based learning, mixed-age classes, less testing##В тексте: project-based learning, mixed-age classrooms and reduced testing]]</li>
+<li>What does the author conclude? → [[we may need to rethink fundamental assumptions##В тексте: we may need to rethink the fundamental assumptions|fundamental reform needed|rethink assumptions]]</li>
 </ol>
 ` },
 
@@ -4852,17 +4850,15 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>Why is bias in AI a problem? → [[training data may reflect existing inequalities|data reflects inequalities|training data bias]]</li>
-<li>What example of bias is given? → [[facial recognition less accurate on darker skin|facial recognition]]</li>
-<li>What is the accountability issue? → [[unclear who is responsible when an AI harms someone|who is responsible]]</li>
-<li>What does "black box" mean in this context? → [[the output can't be fully explained|unexplainable output]]</li>
-<li>What does the author conclude? → [[the future of AI depends on what society permits|we must choose what to allow]]</li>
+<li>Why is bias in AI a problem? → [[training data may reflect existing inequalities##В тексте: if that data reflects existing inequalities, the resulting models will reproduce and even amplify them|data reflects inequalities|training data bias]]</li>
+<li>What example of bias is given? → [[facial recognition less accurate on darker skin##В тексте: Facial recognition software... perform less accurately on darker-skinned faces|facial recognition]]</li>
+<li>What is the accountability issue? → [[unclear who is responsible when an AI harms someone##В тексте: who is responsible? The engineer... The company...|who is responsible]]</li>
+<li>What does "black box" mean in this context? → [[the output can't be fully explained##В тексте: even their creators cannot fully explain why they produce a particular output|unexplainable output]]</li>
+<li>What does the author conclude? → [[the future of AI depends on what society permits##В тексте: by what we, as a society, choose to permit|we must choose what to allow]]</li>
 </ol>
 ` },
 
-  // ============================================================
-  // C2 READING — файлы в папке audio/
-  // ============================================================
+
   { id: 5101, level: "C2", category: "reading", topic: "reading-architecture-memory", title: "01. The Architecture of Memory — Архитектура памяти", content: `
 <div class="audio-placeholder" data-audio="audio/c2-architecture-memory.mp3">
   🔊 <i>Аудио: будет добавлено (audio/c2-architecture-memory.mp3)</i>
@@ -4897,11 +4893,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>According to the author, what are houses in memory? → [[fabricated by the act of remembering|created by memory]]</li>
-<li>How does the grandmother's kitchen behave in memory? → [[it expands at dusk|it expands]]</li>
-<li>What does the author reject about nostalgic memories? → [[the idea that they are mere indulgence|that they're just nostalgia|escapism]]</li>
-<li>What function do these memories serve? → [[they provide foundations and a vocabulary|foundations|they ground us]]</li>
-<li>What kind of architecture endures? → [[the one we carry in the mind|the one in memory]]</li>
+<li>According to the author, what are houses in memory? → [[fabricated by the act of remembering##В тексте: fabricated by the act of remembering|created by memory]]</li>
+<li>How does the grandmother's kitchen behave in memory? → [[it expands at dusk##В тексте: The kitchen seemed to expand at dusk|it expands]]</li>
+<li>What does the author reject about nostalgic memories? → [[the idea that they are mere indulgence##В тексте: they are merely nostalgic indulgence... I am inclined to think otherwise|that they're just nostalgia|escapism]]</li>
+<li>What function do these memories serve? → [[they provide foundations and a vocabulary##В тексте: they are foundations. They provide the imaginative vocabulary|foundations|they ground us]]</li>
+<li>What kind of architecture endures? → [[the one we carry in the mind##В тексте: the one we carry|the one in memory]]</li>
 </ol>
 ` },
 
@@ -4943,11 +4939,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What is the prevailing assumption about difficulty? → [[it is a defect|that it should be removed|that it is a barrier]]</li>
-<li>What distinction does the author draw? → [[difficulty of access vs difficulty of substance|access vs substance]]</li>
-<li>What happens when we read a difficult work? → [[we change, and the text yields|the reader is transformed|gradual understanding]]</li>
-<li>Why does the author resist eliminating difficulty? → [[it would deprive people of transformative experiences|it would be shallowness]]</li>
-<li>What is the author not defending? → [[obscurity for its own sake|obscurity]]</li>
+<li>What is the prevailing assumption about difficulty? → [[it is a defect##В тексте: difficulty is a defect — something to be eliminated|that it should be removed|that it is a barrier]]</li>
+<li>What distinction does the author draw? → [[difficulty of access vs difficulty of substance##В тексте: the difficulty of access and the difficulty of substance|access vs substance]]</li>
+<li>What happens when we read a difficult work? → [[we change, and the text yields##В тексте: not because the text has changed, but because we have|the reader is transformed|gradual understanding]]</li>
+<li>Why does the author resist eliminating difficulty? → [[it would deprive people of transformative experiences##В тексте: deprive people of the very experiences that make intellectual life worthwhile|it would be shallowness]]</li>
+<li>What is the author not defending? → [[obscurity for its own sake##В тексте: The defence of difficulty is not a defence of obscurity|obscurity]]</li>
 </ol>
 ` },
 
@@ -4990,11 +4986,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What does the author mean by "a map is a lie of omission"? → [[cartographers choose what to include and exclude|maps omit things]]</li>
-<li>What is internal cartography? → [[a mental map assembled from experience and stories|mental map]]</li>
-<li>Why does the émigré feel disoriented? → [[the internal map no longer matches the changed city|the city changed]]</li>
-<li>What are the two possible responses to dislocation? → [[redraw the map or cling to the old one|redraw or cling]]</li>
-<li>What does "hic sunt dracones" symbolise here? → [[accepting the limits of our maps|the unknown at the edges|incompleteness]]</li>
+<li>What does the author mean by "a map is a lie of omission"? → [[cartographers choose what to include and exclude##В тексте: the cartographer must decide what to include and what to discard|maps omit things]]</li>
+<li>What is internal cartography? → [[a mental map assembled from experience and stories##В тексте: an internal cartography, assembled from fragments of experience|mental map]]</li>
+<li>Why does the émigré feel disoriented? → [[the internal map no longer matches the changed city##В тексте: discovers that the map no longer matches the territory|the city changed]]</li>
+<li>What are the two possible responses to dislocation? → [[redraw the map or cling to the old one##В тексте: redrawing the map... Others cling to the old cartography|redraw or cling]]</li>
+<li>What does "hic sunt dracones" symbolise here? → [[accepting the limits of our maps##В тексте: accept that the territory will always exceed our capacity to describe it|the unknown at the edges|incompleteness]]</li>
 </ol>
 ` },
 
@@ -5037,1216 +5033,11 @@ const MATERIALS = [
 
 <h3>Questions</h3>
 <ol>
-<li>What is the author's initial critique of the idea of progress? → [[it is more faith than fact|it's an article of faith]]</li>
-<li>What undeniable achievements are mentioned? → [[life expectancy, literacy, disease control|life expectancy and literacy]]</li>
-<li>What did Adorno argue? → [[every advance in mastery over nature is also mastery over people|mastery over nature is mastery over people]]</li>
-<li>What does the author mean by "dialectical"? → [[gains and losses are often inseparable|inseparable gains and losses]]</li>
-<li>What does the author ask of us? → [[hold hope with humility|hope with humility]]</li>
+<li>What is the author's initial critique of the idea of progress? → [[it is more faith than fact##В тексте: more like a secular article of faith|it's an article of faith]]</li>
+<li>What undeniable achievements are mentioned? → [[life expectancy, literacy, disease control##В тексте: Life expectancy has risen dramatically; literacy has spread; diseases... contained|life expectancy and literacy]]</li>
+<li>What did Adorno argue? → [[every advance in mastery over nature is also mastery over people##В тексте: Every advance in mastery over nature... is also an advance in mastery over human beings|mastery over nature is mastery over people]]</li>
+<li>What does the author mean by "dialectical"? → [[gains and losses are often inseparable##В тексте: gains and losses are often inseparable|inseparable gains and losses]]</li>
+<li>What does the author ask of us? → [[hold hope with humility##В тексте: hold our hopes with the appropriate measure of humility|hope with humility]]</li>
 </ol>
-` },
-
-  { id: 1306, level: "A1", category: "listening", topic: "listening-airport-checkin", title: "01. At the Airport Check-in — Регистрация в аэропорту", content: `
-<div class="audio-placeholder" data-audio="listening/a1-airport-checkin.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/a1-airport-checkin.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>Where is the customer flying to?<br>a) Paris<br>b) Rome<br>c) London</li>
-<li>How many bags does the customer check in?<br>a) One<br>b) Two<br>c) Three</li>
-<li>Where would the customer prefer to sit?<br>a) Window<br>b) Aisle<br>c) Doesn't matter</li>
-<li>What time does boarding start?<br>a) 10:15<br>b) 10:30<br>c) 10:45</li>
-<li>What is the gate number?<br>a) 12<br>b) 14<br>c) 18</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The customer is flying to Rome. — True / False</li>
-<li>The customer has two bags. — True / False</li>
-<li>The customer prefers a window seat. — True / False</li>
-<li>Boarding starts at 10:15. — True / False</li>
-<li>The gate number is 14. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Agent:</b> Good morning. May I see your passport, please?</p>
-<p><b>Customer:</b> Yes, here you are.</p>
-<p><b>Agent:</b> Thank you. Where are you flying today?</p>
-<p><b>Customer:</b> To Rome.</p>
-<p><b>Agent:</b> How many bags are you checking in?</p>
-<p><b>Customer:</b> Just one, please.</p>
-<p><b>Agent:</b> Would you like a window or an aisle seat?</p>
-<p><b>Customer:</b> A window seat, please. I like looking outside.</p>
-<p><b>Agent:</b> Of course. Boarding starts at ten thirty, and your gate is fourteen.</p>
-<p><b>Customer:</b> Thanks very much.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-b, 2-a, 3-a, 4-b, 5-b</p>
-<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
-</details>
-` },
-
-  { id: 1307, level: "A1", category: "listening", topic: "listening-hotel-checkin", title: "02. At the Hotel — В гостинице", content: `
-<div class="audio-placeholder" data-audio="listening/a1-hotel-checkin.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/a1-hotel-checkin.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What is the customer's name?<br>a) Mr. Brown<br>b) Mr. Green<br>c) Mr. Smith</li>
-<li>How many nights will the customer stay?<br>a) Two<br>b) Three<br>c) Five</li>
-<li>What time is breakfast?<br>a) From 7 to 9<br>b) From 7 to 10<br>c) From 8 to 10</li>
-<li>What floor is the room on?<br>a) Second<br>b) Third<br>c) Fourth</li>
-<li>What is the Wi-Fi password?<br>a) hotel123<br>b) welcome123<br>c) guest2024</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The customer's name is Mr. Brown. — True / False</li>
-<li>The customer is staying for three nights. — True / False</li>
-<li>Breakfast is from 7 to 10. — True / False</li>
-<li>The room is on the third floor. — True / False</li>
-<li>The Wi-Fi password is hotel123. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Receptionist:</b> Good evening. Do you have a reservation?</p>
-<p><b>Customer:</b> Yes, my name is Mr. Green.</p>
-<p><b>Receptionist:</b> Let me see... Mr. Green, yes. You're staying for three nights.</p>
-<p><b>Customer:</b> That's right. What time is breakfast?</p>
-<p><b>Receptionist:</b> Breakfast is from seven to ten in the restaurant on the ground floor.</p>
-<p><b>Customer:</b> Great. And what floor is my room on?</p>
-<p><b>Receptionist:</b> The third floor, room 312. And the Wi-Fi password is welcome123.</p>
-<p><b>Customer:</b> Thank you very much.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-b, 2-b, 3-b, 4-b, 5-b</p>
-<p><b>Task 2:</b> 1-F, 2-T, 3-T, 4-T, 5-F</p>
-</details>
-` },
-
-  { id: 1308, level: "A1", category: "listening", topic: "listening-weather-forecast", title: "03. Weather Forecast — Прогноз погоды", content: `
-<div class="audio-placeholder" data-audio="listening/a1-weather-forecast.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/a1-weather-forecast.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What is the weather like in the north this morning?<br>a) Sunny<br>b) Rainy<br>c) Cloudy</li>
-<li>What will the temperature be in the south this afternoon?<br>a) 15<br>b) 20<br>c) 25</li>
-<li>When will it rain in the west?<br>a) This morning<br>b) This afternoon<br>c) This evening</li>
-<li>What will the weather be like tomorrow in the east?<br>a) Snowy<br>b) Sunny<br>c) Windy</li>
-<li>What is the announcer's advice?<br>a) Take an umbrella<br>b) Wear a coat<br>c) Stay at home</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>In the north, it's sunny this morning. — True / False</li>
-<li>In the south, the temperature will be 25 degrees. — True / False</li>
-<li>It will rain in the west this evening. — True / False</li>
-<li>In the east, it will snow tomorrow. — True / False</li>
-<li>The announcer says to stay at home. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Announcer:</b> Good morning, and here is today's weather. In the north, it's cloudy this morning, but it will be sunny this afternoon. In the south, it will be very warm — around twenty-five degrees. In the west, it will rain this evening, so take an umbrella if you go out. And tomorrow in the east, we can expect snow. So, keep warm, everyone!</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-c, 2-c, 3-c, 4-a, 5-a</p>
-<p><b>Task 2:</b> 1-F, 2-T, 3-T, 4-T, 5-F</p>
-</details>
-` },
-
-  { id: 1309, level: "A1", category: "listening", topic: "listening-my-weekend", title: "04. My Weekend — Мои выходные", content: `
-<div class="audio-placeholder" data-audio="listening/a1-my-weekend.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/a1-my-weekend.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What does Tom do on Saturday morning?<br>a) Plays football<br>b) Goes shopping<br>c) Visits family</li>
-<li>Who does he visit on Saturday afternoon?<br>a) His parents<br>b) His friends<br>c) His brother</li>
-<li>What does he do on Sunday morning?<br>a) Reads a book<br>b) Cleans the house<br>c) Watches TV</li>
-<li>What sport does he play on Sunday afternoon?<br>a) Tennis<br>b) Football<br>c) Basketball</li>
-<li>What does he do in the evening?<br>a) Cooks dinner<br>b) Goes to bed early<br>c) Watches a film</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>Tom goes shopping with his sister on Saturday morning. — True / False</li>
-<li>Tom's parents live in the city. — True / False</li>
-<li>Tom cleans the house on Sunday morning. — True / False</li>
-<li>Tom plays tennis on Sunday afternoon. — True / False</li>
-<li>Tom cooks dinner and watches a film in the evening. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Tom:</b> Hi, I'm Tom. On Saturday morning, I usually go shopping with my sister. In the afternoon, I visit my parents. They live in the countryside. On Sunday morning, I clean the house, and in the afternoon I play football with my friends. In the evening, I usually cook dinner and watch a film on TV. I love weekends!</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-b, 2-a, 3-b, 4-b, 5-c</p>
-<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
-</details>
-` },
-
-  { id: 1310, level: "A1", category: "listening", topic: "listening-doctor-simple", title: "05. At the Doctor — У врача", content: `
-<div class="audio-placeholder" data-audio="listening/a1-doctor-simple.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/a1-doctor-simple.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What is the patient's problem?<br>a) A headache<br>b) A stomach ache<br>c) A cold</li>
-<li>How long has the patient had the problem?<br>a) One day<br>b) Two days<br>c) Three days</li>
-<li>What does the doctor tell the patient to do?<br>a) Stay in bed<br>b) Drink coffee<br>c) Go to work</li>
-<li>How often should the patient take the medicine?<br>a) Once a day<br>b) Twice a day<br>c) Three times a day</li>
-<li>When should the patient come back?<br>a) In one day<br>b) In three days<br>c) In a week</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The patient has a cold. — True / False</li>
-<li>The patient has had symptoms for two days. — True / False</li>
-<li>The doctor tells the patient to drink coffee. — True / False</li>
-<li>The medicine should be taken twice a day. — True / False</li>
-<li>The patient should come back in one week. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Doctor:</b> Good morning. What's the problem?</p>
-<p><b>Patient:</b> I have a bad cold.</p>
-<p><b>Doctor:</b> How long have you had it?</p>
-<p><b>Patient:</b> For two days.</p>
-<p><b>Doctor:</b> You should stay in bed and drink lots of tea. And take this medicine twice a day.</p>
-<p><b>Patient:</b> OK, thank you.</p>
-<p><b>Doctor:</b> Come back in three days if you don't feel better.</p>
-<p><b>Patient:</b> Alright, thank you, doctor.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-c, 2-b, 3-a, 4-b, 5-b</p>
-<p><b>Task 2:</b> 1-T, 2-T, 3-F, 4-T, 5-F</p>
-</details>
-` },
-
-  { id: 1406, level: "A2", category: "listening", topic: "listening-flat-viewing", title: "01. Viewing a Flat — Осмотр квартиры", content: `
-<div class="audio-placeholder" data-audio="listening/a2-flat-viewing.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/a2-flat-viewing.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>Where is the flat located?<br>a) In the city centre<br>b) In the suburbs<br>c) Near the park</li>
-<li>How much is the monthly rent?<br>a) £600<br>b) £700<br>c) £800</li>
-<li>How many bedrooms does the flat have?<br>a) One<br>b) Two<br>c) Three</li>
-<li>What is NOT included in the rent?<br>a) Water<br>b) Heating<br>c) Internet</li>
-<li>When can the tenant move in?<br>a) This weekend<br>b) Next month<br>c) In two weeks</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The flat is in the city centre. — True / False</li>
-<li>The monthly rent is £700. — True / False</li>
-<li>The flat has two bedrooms. — True / False</li>
-<li>Internet is included in the rent. — True / False</li>
-<li>The tenant can move in next month. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Agent:</b> Good afternoon. Thanks for coming to see the flat.</p>
-<p><b>Tenant:</b> Thank you. Can you tell me a bit about it?</p>
-<p><b>Agent:</b> Of course. It's in the suburbs, about fifteen minutes from the city centre by bus. The rent is seven hundred pounds a month.</p>
-<p><b>Tenant:</b> How many bedrooms are there?</p>
-<p><b>Agent:</b> Two bedrooms, a large living room, and a modern kitchen.</p>
-<p><b>Tenant:</b> That sounds good. What's included in the rent?</p>
-<p><b>Agent:</b> Water and heating are included, but internet is not — you'd need to set that up yourself.</p>
-<p><b>Tenant:</b> OK. And when can I move in?</p>
-<p><b>Agent:</b> From next month, the first of the month.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-b, 2-b, 3-b, 4-c, 5-b</p>
-<p><b>Task 2:</b> 1-F, 2-T, 3-T, 4-F, 5-T</p>
-</details>
-` },
-
-  { id: 1407, level: "A2", category: "listening", topic: "listening-cinema-tickets", title: "02. At the Cinema — В кино", content: `
-<div class="audio-placeholder" data-audio="listening/a2-cinema-tickets.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/a2-cinema-tickets.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What type of film does the customer want to see?<br>a) A comedy<br>b) A thriller<br>c) A documentary</li>
-<li>What time does the film start?<br>a) 6:15<br>b) 7:30<br>c) 8:00</li>
-<li>How many tickets does the customer buy?<br>a) One<br>b) Two<br>c) Three</li>
-<li>How much do the tickets cost in total?<br>a) £12<br>b) £16<br>c) £20</li>
-<li>Where are the seats?<br>a) In the front row<br>b) In the middle<br>c) At the back</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The customer wants to see a thriller. — True / False</li>
-<li>The film starts at 6:15. — True / False</li>
-<li>The customer buys two tickets. — True / False</li>
-<li>The total cost is £20. — True / False</li>
-<li>The seats are in the middle of the cinema. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Cashier:</b> Hi, what can I get you?</p>
-<p><b>Customer:</b> Two tickets for the thriller, please. What time does it start?</p>
-<p><b>Cashier:</b> It starts at half past seven.</p>
-<p><b>Customer:</b> Great. And how much is it?</p>
-<p><b>Cashier:</b> That's eight pounds per ticket — sixteen pounds in total.</p>
-<p><b>Customer:</b> Here you are. Where are the seats?</p>
-<p><b>Cashier:</b> Middle of the cinema, row G. Enjoy the film!</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-b, 2-b, 3-b, 4-b, 5-b</p>
-<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
-</details>
-` },
-
-  { id: 1408, level: "A2", category: "listening", topic: "listening-phone-friend", title: "03. A Phone Call — Звонок другу", content: `
-<div class="audio-placeholder" data-audio="listening/a2-phone-call.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/a2-phone-call.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>Why is Anna calling?<br>a) To invite Ben to dinner<br>b) To cancel a plan<br>c) To ask for help</li>
-<li>Why can't Ben come tonight?<br>a) He's working late<br>b) He's ill<br>c) He's on holiday</li>
-<li>What day is the new arrangement?<br>a) Friday<br>b) Saturday<br>c) Sunday</li>
-<li>What time does Anna suggest?<br>a) Six o'clock<br>b) Seven o'clock<br>c) Eight o'clock</li>
-<li>Where will they meet?<br>a) At the restaurant<br>b) At Anna's house<br>c) At the cinema</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>Anna is inviting Ben for dinner. — True / False</li>
-<li>Ben can come this evening. — True / False</li>
-<li>They agree to meet on Saturday. — True / False</li>
-<li>Ben suggests eight o'clock. — True / False</li>
-<li>They will meet at the restaurant. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Anna:</b> Hi Ben, it's Anna. Are you free this evening?</p>
-<p><b>Ben:</b> Hi Anna! I'm sorry, I can't come tonight. I have to work late.</p>
-<p><b>Anna:</b> Oh no! Would Saturday work instead?</p>
-<p><b>Ben:</b> Yes, Saturday is fine. What time?</p>
-<p><b>Anna:</b> How about seven o'clock at the Italian restaurant near the park?</p>
-<p><b>Ben:</b> Perfect. See you Saturday at seven. Bye!</p>
-<p><b>Anna:</b> Bye!</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-a, 2-a, 3-b, 4-b, 5-a</p>
-<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
-</details>
-` },
-
-  { id: 1409, level: "A2", category: "listening", topic: "listening-gym", title: "04. At the Gym — В спортзале", content: `
-<div class="audio-placeholder" data-audio="listening/a2-gym.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/a2-gym.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What does the visitor want?<br>a) A one-day pass<br>b) A monthly membership<br>c) A personal trainer</li>
-<li>How much is the monthly membership?<br>a) £20<br>b) £30<br>c) £45</li>
-<li>Which facilities are included?<br>a) Gym only<br>b) Gym, pool and sauna<br>c) Pool and sauna</li>
-<li>When does the gym open?<br>a) 6 AM<br>b) 7 AM<br>c) 8 AM</li>
-<li>What does the receptionist offer to show first?<br>a) The gym<br>b) The sauna<br>c) The changing rooms</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The visitor wants to join the gym. — True / False</li>
-<li>The monthly membership is £20. — True / False</li>
-<li>The membership includes the pool and sauna. — True / False</li>
-<li>The gym opens at 7 AM. — True / False</li>
-<li>The receptionist offers to show the gym. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Receptionist:</b> Good morning! Is this your first time at our gym?</p>
-<p><b>Visitor:</b> Yes, I'm thinking of joining. How much is a monthly membership?</p>
-<p><b>Receptionist:</b> It's thirty pounds a month. That includes the gym, the pool and the sauna.</p>
-<p><b>Visitor:</b> That's great. What time do you open?</p>
-<p><b>Receptionist:</b> We open at six in the morning and close at ten at night.</p>
-<p><b>Visitor:</b> Perfect. Can I have a look around?</p>
-<p><b>Receptionist:</b> Of course! Let me show you the gym first.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-b, 2-b, 3-b, 4-a, 5-a</p>
-<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
-</details>
-` },
-
-  { id: 1410, level: "A2", category: "listening", topic: "listening-taxi-booking", title: "05. Booking a Taxi — Заказ такси", content: `
-<div class="audio-placeholder" data-audio="listening/a2-taxi-booking.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/a2-taxi-booking.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>Where is the customer going?<br>a) To the airport<br>b) To the train station<br>c) To a hotel</li>
-<li>When does the customer want the taxi?<br>a) At 5:00<br>b) At 5:30<br>c) At 6:00</li>
-<li>How many people are travelling?<br>a) One<br>b) Two<br>c) Three</li>
-<li>How much luggage does the customer have?<br>a) No luggage<br>b) Two large bags<br>c) Three bags</li>
-<li>How will the customer pay?<br>a) By card<br>b) In cash<br>c) Online</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The customer is going to the airport. — True / False</li>
-<li>The taxi is booked for 5:30 AM. — True / False</li>
-<li>There are two passengers. — True / False</li>
-<li>The customer has two large bags. — True / False</li>
-<li>The customer will pay in cash. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Operator:</b> Good evening, City Taxi. How can I help?</p>
-<p><b>Customer:</b> Hi, I'd like to book a taxi to the airport, please.</p>
-<p><b>Operator:</b> Certainly. What time would you like it?</p>
-<p><b>Customer:</b> At five o'clock tomorrow morning. My flight is at seven.</p>
-<p><b>Operator:</b> And how many passengers?</p>
-<p><b>Customer:</b> Two adults. And we have two large bags.</p>
-<p><b>Operator:</b> No problem. We'll send a bigger car. How would you like to pay?</p>
-<p><b>Customer:</b> By card, please.</p>
-<p><b>Operator:</b> Great. See you tomorrow at five.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-a, 2-a, 3-b, 4-b, 5-a</p>
-<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-T, 5-F</p>
-</details>
-` },
-
-  { id: 2306, level: "B1", category: "listening", topic: "listening-library-join", title: "01. Joining the Library — Запись в библиотеку", content: `
-<div class="audio-placeholder" data-audio="listening/b1-library-join.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/b1-library-join.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What does the visitor want to do?<br>a) Borrow books<br>b) Join the library<br>c) Return a book</li>
-<li>What document is required?<br>a) A passport<br>b) A student card<br>c) Proof of address</li>
-<li>How many books can a member borrow at once?<br>a) Three<br>b) Five<br>c) Ten</li>
-<li>How long can a book be kept?<br>a) Two weeks<br>b) Three weeks<br>c) One month</li>
-<li>What happens if a book is returned late?<br>a) A fine is charged<br>b) The card is cancelled<br>c) Nothing happens</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The visitor wants to join the library. — True / False</li>
-<li>A passport is required to join. — True / False</li>
-<li>Members can borrow up to five books at once. — True / False</li>
-<li>Books can be kept for two weeks. — True / False</li>
-<li>There is a fine for late returns. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Librarian:</b> Good morning! Can I help you?</p>
-<p><b>Visitor:</b> Yes, I'd like to join the library, please.</p>
-<p><b>Librarian:</b> Certainly. I just need a document that proves your address — a utility bill or a bank statement will do.</p>
-<p><b>Visitor:</b> I have a bank statement here. How many books can I borrow at once?</p>
-<p><b>Librarian:</b> Up to five books at a time, and you can keep each one for three weeks.</p>
-<p><b>Visitor:</b> Great. And what happens if I return a book late?</p>
-<p><b>Librarian:</b> There's a small fine — twenty pence per day. But if you renew online before the due date, there's no charge.</p>
-<p><b>Visitor:</b> Perfect, thank you very much.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-b, 2-c, 3-b, 4-b, 5-a</p>
-<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
-</details>
-` },
-
-  { id: 2307, level: "B1", category: "listening", topic: "listening-lost-property", title: "02. Lost Property Office — Бюро находок", content: `
-<div class="audio-placeholder" data-audio="listening/b1-lost-property.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/b1-lost-property.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What did the passenger lose?<br>a) A suitcase<br>b) A backpack<br>c) A handbag</li>
-<li>Where did they leave it?<br>a) On the bus<br>b) On the train<br>c) At the station</li>
-<li>What colour was the bag?<br>a) Black<br>b) Blue<br>c) Brown</li>
-<li>What was inside the bag?<br>a) A laptop<br>b) A passport<br>c) A camera</li>
-<li>What does the officer ask the passenger to do?<br>a) Fill in a form<br>b) Come back tomorrow<br>c) Pay a fee</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The passenger lost a backpack. — True / False</li>
-<li>The bag was left on the bus. — True / False</li>
-<li>The bag is black with a red logo. — True / False</li>
-<li>The passenger's passport was in the bag. — True / False</li>
-<li>The passenger needs to fill in a form. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Officer:</b> Good afternoon. What can I do for you?</p>
-<p><b>Passenger:</b> Hi, I think I left my backpack on the train this morning.</p>
-<p><b>Officer:</b> Can you describe it?</p>
-<p><b>Passenger:</b> Yes, it's black, medium-sized, with a red logo on the front.</p>
-<p><b>Officer:</b> And what was inside?</p>
-<p><b>Passenger:</b> My laptop and some books. No passport, thank goodness.</p>
-<p><b>Officer:</b> OK. Could you fill in this form with your details and a description of the bag? We'll call you if we find it.</p>
-<p><b>Passenger:</b> Of course. Thank you so much.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-b, 2-b, 3-a, 4-a, 5-a</p>
-<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
-</details>
-` },
-
-  { id: 2308, level: "B1", category: "listening", topic: "listening-university-open-day", title: "03. University Open Day — День открытых дверей", content: `
-<div class="audio-placeholder" data-audio="listening/b1-university-open-day.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/b1-university-open-day.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What is the student interested in studying?<br>a) Engineering<br>b) Business<br>c) Psychology</li>
-<li>What does the university offer for international students?<br>a) A scholarship<br>b) Free accommodation<br>c) Language support courses</li>
-<li>What is the entry requirement?<br>a) IELTS 6.0<br>b) IELTS 6.5<br>c) IELTS 7.0</li>
-<li>When does the course start?<br>a) September<br>b) October<br>c) January</li>
-<li>What does the student want to do next?<br>a) Take an entrance exam<br>b) Visit the campus<br>c) Meet a professor</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The student is interested in business. — True / False</li>
-<li>The university offers free accommodation for international students. — True / False</li>
-<li>The entry requirement is IELTS 6.5. — True / False</li>
-<li>The course starts in September. — True / False</li>
-<li>The student wants to visit the campus. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Advisor:</b> Welcome to our open day! What would you like to study?</p>
-<p><b>Student:</b> I'm interested in business, and I'd like to know more about your international programmes.</p>
-<p><b>Advisor:</b> Our business course is very popular. For international students, we offer language support courses during the first term.</p>
-<p><b>Student:</b> What are the entry requirements?</p>
-<p><b>Advisor:</b> You need IELTS 6.5 overall. The course starts in October, so there's plenty of time to prepare.</p>
-<p><b>Student:</b> Could I visit the campus? I'd like to see the business building and the library.</p>
-<p><b>Advisor:</b> Absolutely. I'll arrange a tour for you at two o'clock.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-b, 2-c, 3-b, 4-b, 5-b</p>
-<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
-</details>
-` },
-
-  { id: 2309, level: "B1", category: "listening", topic: "listening-doctor-followup", title: "04. Medical Follow-up — Повторный приём у врача", content: `
-<div class="audio-placeholder" data-audio="listening/b1-doctor-followup.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/b1-doctor-followup.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What was the original problem?<br>a) A back injury<br>b) A skin allergy<br>c) High blood pressure</li>
-<li>How does the patient feel now?<br>a) Much better<br>b) The same<br>c) Worse</li>
-<li>What exercise does the patient do?<br>a) Swimming<br>b) Daily walks<br>c) Cycling</li>
-<li>What should the patient reduce?<br>a) Coffee<br>b) Salt<br>c) Exercise</li>
-<li>When is the next appointment?<br>a) In two weeks<br>b) In one month<br>c) In three months</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The original problem was high blood pressure. — True / False</li>
-<li>The patient feels worse now. — True / False</li>
-<li>The patient is walking daily. — True / False</li>
-<li>The doctor recommends reducing salt. — True / False</li>
-<li>The next appointment is in three months. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Doctor:</b> Good morning. How have you been since your last visit?</p>
-<p><b>Patient:</b> Much better, actually. The medication seems to be working. My blood pressure is lower.</p>
-<p><b>Doctor:</b> That's excellent news. Are you still doing the daily walks I recommended?</p>
-<p><b>Patient:</b> Yes, thirty minutes every morning.</p>
-<p><b>Doctor:</b> Perfect. Keep that up. And try to reduce salt in your diet — that makes a real difference.</p>
-<p><b>Patient:</b> I'll do my best. And should I keep taking the tablets?</p>
-<p><b>Doctor:</b> Yes, continue with the same dose. Let's have another check-up in one month.</p>
-<p><b>Patient:</b> OK. Thank you, doctor.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-c, 2-a, 3-b, 4-b, 5-b</p>
-<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-T, 5-F</p>
-</details>
-` },
-
-  { id: 2310, level: "B1", category: "listening", topic: "listening-returning-product", title: "05. Returning a Faulty Product — Возврат товара", content: `
-<div class="audio-placeholder" data-audio="listening/b1-returning-product.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/b1-returning-product.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What did the customer buy?<br>a) Headphones<br>b) A laptop<br>c) A phone</li>
-<li>What is the problem?<br>a) The screen is broken<br>b) The sound doesn't work<br>c) The battery is dead</li>
-<li>When did the customer buy it?<br>a) Yesterday<br>b) Last week<br>c) Last month</li>
-<li>Where is the receipt?<br>a) On paper<br>b) At home<br>c) On their phone</li>
-<li>What does the customer choose?<br>a) A full refund<br>b) A repair<br>c) An exchange</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The customer bought headphones. — True / False</li>
-<li>Only one side of the headphones works. — True / False</li>
-<li>The customer bought them last month. — True / False</li>
-<li>The customer has a paper receipt. — True / False</li>
-<li>The customer chooses an exchange. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Assistant:</b> Good morning. How can I help?</p>
-<p><b>Customer:</b> I bought these headphones here last week, and they've stopped working. Only one side plays sound.</p>
-<p><b>Assistant:</b> I'm sorry to hear that. Do you have the receipt?</p>
-<p><b>Customer:</b> Yes, it's on my phone. Here it is.</p>
-<p><b>Assistant:</b> Thank you. Since they're faulty, you can have a refund or an exchange.</p>
-<p><b>Customer:</b> I'd prefer an exchange, actually — if you have the same model in black.</p>
-<p><b>Assistant:</b> Let me check the stock. Yes, we have one. I'll get it for you now.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-a, 2-b, 3-b, 4-c, 5-c</p>
-<p><b>Task 2:</b> 1-T, 2-T, 3-F, 4-F, 5-T</p>
-</details>
-` },
-
-  { id: 3306, level: "B2", category: "listening", topic: "listening-job-offer", title: "01. Negotiating a Job Offer — Переговоры о работе", content: `
-<div class="audio-placeholder" data-audio="listening/b2-job-offer.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/b2-job-offer.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What is the candidate mainly concerned about?<br>a) The starting salary<br>b) The holiday allowance<br>c) The job location</li>
-<li>What is the company's initial offer?<br>a) £40,000<br>b) £42,000<br>c) £45,000</li>
-<li>What does the candidate reference as leverage?<br>a) A competing offer<br>b) Extensive experience<br>c) A personal connection</li>
-<li>What does the company offer instead of a higher salary?<br>a) A one-off bonus<br>b) Extra holiday<br>c) Flexible working</li>
-<li>What does the candidate decide to do?<br>a) Accept the offer<br>b) Reject the offer<br>c) Ask for time to think</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The company initially offers £42,000. — True / False</li>
-<li>The candidate wants £45,000. — True / False</li>
-<li>The company offers a higher salary than requested. — True / False</li>
-<li>The company offers flexible working after probation. — True / False</li>
-<li>The candidate accepts immediately. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>HR Manager:</b> We're delighted to offer you the position. The starting salary is forty-two thousand pounds.</p>
-<p><b>Candidate:</b> Thank you. I'm very interested, but I was hoping for something closer to forty-five thousand, given my experience.</p>
-<p><b>HR Manager:</b> I appreciate that. Unfortunately, forty-two is the top of the band for this role. That said, we could offer a one-off signing bonus of three thousand pounds, and flexible working after the probation period.</p>
-<p><b>Candidate:</b> That's a good offer. Could I have a couple of days to think about it and come back to you?</p>
-<p><b>HR Manager:</b> Of course. Take until Friday — but I'd encourage you to make a decision soon.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-a, 2-b, 3-b, 4-a, 5-c</p>
-<p><b>Task 2:</b> 1-T, 2-T, 3-F, 4-T, 5-F</p>
-</details>
-` },
-
-  { id: 3307, level: "B2", category: "listening", topic: "listening-remote-learning", title: "02. Debating Remote Learning — Дебаты об онлайн-обучении", content: `
-<div class="audio-placeholder" data-audio="listening/b2-remote-learning.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/b2-remote-learning.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What is the main topic of the debate?<br>a) School uniforms<br>b) Online learning<br>c) Exam reform</li>
-<li>What does Sarah say about remote learning?<br>a) It is always effective<br>b) It cannot replace face-to-face teaching<br>c) It is cheaper for schools</li>
-<li>What does James argue?<br>a) Online learning should replace classrooms<br>b) A hybrid model is needed<br>c) Remote learning should be abolished</li>
-<li>What does Sarah suggest should happen?<br>a) A hybrid model<br>b) A full return to in-person<br>c) A complete switch to online</li>
-<li>What do both speakers agree on?<br>a) Technology is useless<br>b) Teachers are essential<br>c) The debate is pointless</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>Sarah is sceptical about remote learning. — True / False</li>
-<li>Sarah argues remote learning completely failed. — True / False</li>
-<li>James supports a hybrid model. — True / False</li>
-<li>Both speakers agree teachers are essential. — True / False</li>
-<li>Sarah wants to abolish remote learning entirely. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Moderator:</b> Tonight's debate: is remote learning here to stay? Sarah, you're sceptical.</p>
-<p><b>Sarah:</b> Very sceptical. Yes, technology made it possible to continue during the pandemic, but we've seen the damage. Students miss the social dimension of learning, teachers can't easily spot confusion, and results suffered. Remote learning can complement the classroom, but it cannot replace it.</p>
-<p><b>Moderator:</b> And James, you take a different view?</p>
-<p><b>James:</b> I do. Look, for students in rural areas or with caring responsibilities, remote learning is a lifeline. It's not about replacing teachers — it's about reaching people who would otherwise be excluded. What we need is a hybrid model, thoughtfully implemented.</p>
-<p><b>Sarah:</b> I'd agree with that. My concern is when it's used as a cost-cutting measure, replacing real human interaction.</p>
-<p><b>James:</b> On that, we completely agree.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-b, 2-b, 3-b, 4-a, 5-b</p>
-<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-T, 5-F</p>
-</details>
-` },
-
-  { id: 3308, level: "B2", category: "listening", topic: "listening-customs", title: "03. At Customs — На таможне", content: `
-<div class="audio-placeholder" data-audio="listening/b2-customs.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/b2-customs.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>Where has the traveller come from?<br>a) Spain<br>b) France<br>c) Italy</li>
-<li>What is the purpose of the trip?<br>a) Business<br>b) Tourism<br>c) Study</li>
-<li>How long will the traveller stay?<br>a) One week<br>b) Two weeks<br>c) One month</li>
-<li>What is the traveller carrying?<br>a) Only clothes<br>b) Some gifts for friends<br>c) Commercial samples</li>
-<li>What does the officer ask the traveller to do?<br>a) Pay a fine<br>b) Open the suitcase<br>c) Return to customs</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The traveller is from Barcelona. — True / False</li>
-<li>The traveller is on business. — True / False</li>
-<li>The traveller is staying for one month. — True / False</li>
-<li>The traveller has gifts for friends. — True / False</li>
-<li>The officer asks the traveller to open the suitcase. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Officer:</b> Good afternoon. Passport, please. Where have you come from today?</p>
-<p><b>Traveller:</b> From Barcelona. I flew in this morning.</p>
-<p><b>Officer:</b> And what's the purpose of your visit?</p>
-<p><b>Traveller:</b> Tourism. I'm here for two weeks — I want to see the museums and the countryside.</p>
-<p><b>Officer:</b> Very good. Are you carrying any goods to declare? Anything for business, or over the duty-free limits?</p>
-<p><b>Traveller:</b> No, just clothes and a few small gifts for friends.</p>
-<p><b>Officer:</b> Could you open your suitcase, please? Just a routine check.</p>
-<p><b>Traveller:</b> Of course. Here you are.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-a, 2-b, 3-b, 4-b, 5-b</p>
-<p><b>Task 2:</b> 1-T, 2-F, 3-F, 4-T, 5-T</p>
-</details>
-` },
-
-  { id: 3309, level: "B2", category: "listening", topic: "listening-documentary", title: "04. Discussing a Documentary — Обсуждаем документальный фильм", content: `
-<div class="audio-placeholder" data-audio="listening/b2-documentary.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/b2-documentary.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What is the documentary about?<br>a) The Amazon rainforest<br>b) The Great Barrier Reef<br>c) Mount Everest</li>
-<li>What did the speakers disagree on?<br>a) The cinematography<br>b) The scientific depth<br>c) The narration</li>
-<li>Why was Ben disappointed?<br>a) The documentary was too short<br>b) The scientific content was shallow<br>c) The film was boring</li>
-<li>What did Anna appreciate?<br>a) The drone footage<br>b) The interviews with scientists<br>c) The soundtrack</li>
-<li>What did they agree on?<br>a) That it was a masterpiece<br>b) That it was worth watching<br>c) That it should be longer</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The documentary is about the Great Barrier Reef. — True / False</li>
-<li>Ben was disappointed by the scientific content. — True / False</li>
-<li>Anna thought the documentary was a masterpiece. — True / False</li>
-<li>Ben appreciated the cinematography. — True / False</li>
-<li>Both agree the documentary is worth watching. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Anna:</b> So, what did you think of the documentary?</p>
-<p><b>Ben:</b> Honestly, I was a bit disappointed. The cinematography is stunning — those drone shots of the reef are incredible — but the scientific content is very shallow. It feels more like entertainment than education.</p>
-<p><b>Anna:</b> I see what you mean, but I thought the interviews with the marine biologists were well done. It's clearly aimed at a general audience, not specialists.</p>
-<p><b>Ben:</b> Fair enough. I suppose for someone who doesn't know much about coral bleaching, it's a useful introduction. I just wanted more depth.</p>
-<p><b>Anna:</b> Well, on that we agree — it's a good starting point, but it's not going to satisfy someone with a scientific background.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-b, 2-b, 3-b, 4-b, 5-b</p>
-<p><b>Task 2:</b> 1-T, 2-T, 3-F, 4-T, 5-T</p>
-</details>
-` },
-
-  { id: 3310, level: "B2", category: "listening", topic: "listening-medical-consultation", title: "05. A Medical Consultation — Медицинская консультация", content: `
-<div class="audio-placeholder" data-audio="listening/b2-medical-consultation.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/b2-medical-consultation.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What is the patient's main symptom?<br>a) Dizziness<br>b) Chest pain<br>c) Nausea</li>
-<li>When does the symptom occur?<br>a) At night<br>b) In the mornings<br>c) After eating</li>
-<li>What does the patient consume too much of?<br>a) Meat and salt<br>b) Sugar and coffee<br>c) Fruit and vegetables</li>
-<li>What does the doctor recommend first?<br>a) Medication<br>b) Diet changes<br>c) Surgery</li>
-<li>What test does the doctor suggest?<br>a) A blood test<br>b) An X-ray<br>c) An MRI</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The patient has chest pain in the mornings. — True / False</li>
-<li>The patient also has shortness of breath. — True / False</li>
-<li>The patient eats a lot of salt. — True / False</li>
-<li>The doctor prescribes medication immediately. — True / False</li>
-<li>The doctor recommends a blood test. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Doctor:</b> Come in, have a seat. What brings you here today?</p>
-<p><b>Patient:</b> I've been having chest pain in the mornings. It usually starts when I get up.</p>
-<p><b>Doctor:</b> Any other symptoms? Shortness of breath, dizziness?</p>
-<p><b>Patient:</b> No, just the pain. It goes away after an hour or so.</p>
-<p><b>Doctor:</b> I see. Can you tell me about your diet?</p>
-<p><b>Patient:</b> I eat a lot of meat, and I suppose I add quite a lot of salt to my food.</p>
-<p><b>Doctor:</b> That's likely a contributing factor. Before we consider medication, I'd like you to try reducing salt and saturated fat. And let's do a blood test to check your cholesterol.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-b, 2-b, 3-a, 4-b, 5-a</p>
-<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
-</details>
-` },
-
-  { id: 4306, level: "C1", category: "listening", topic: "listening-urban-loneliness", title: "01. Urban Loneliness — Городское одиночество", content: `
-<div class="audio-placeholder" data-audio="listening/c1-urban-loneliness.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/c1-urban-loneliness.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What paradox does the guest identify?<br>a) Cities are crowded, yet people feel isolated<br>b) People avoid each other on purpose<br>c) Loneliness is a rural problem</li>
-<li>What does the guest say about modern architecture?<br>a) It encourages community<br>b) It can isolate residents<br>c) It is irrelevant to loneliness</li>
-<li>What does the guest suggest would help?<br>a) Shared public spaces<br>b) Cheaper housing<br>c) Fewer skyscrapers</li>
-<li>What is the host's response?<br>a) Agreement<br>b) Scepticism<br>c) Indifference</li>
-<li>What example does the guest give?<br>a) Barcelona's superblocks<br>b) Tokyo's capsule hotels<br>c) New York's high-rises</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The guest argues urban loneliness is structural. — True / False</li>
-<li>The host fully agrees with the guest. — True / False</li>
-<li>The guest cites Barcelona's superblocks as an example. — True / False</li>
-<li>The guest thinks modern cities encourage community contact. — True / False</li>
-<li>The guest believes the principle can be adapted to different cities. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Host:</b> Loneliness is often framed as an individual problem. You argue it's structural.</p>
-<p><b>Guest:</b> Precisely. Cities are the greatest concentration of human beings in history, yet an astonishing proportion of urban residents report chronic loneliness. That's the paradox. The infrastructure we've built — high-rise apartments, private transport, anonymous commercial spaces — actively discourages casual contact.</p>
-<p><b>Host:</b> But isn't that a romanticisation of the past? Villages had their own forms of isolation.</p>
-<p><b>Guest:</b> I'd push back on that. It's not about romanticising anything. It's about asking what kinds of environments make community possible. Barcelona's superblocks — where traffic is restricted and streets are reclaimed for pedestrians — have measurably strengthened neighbourhood ties. That's not nostalgia, it's urban design.</p>
-<p><b>Host:</b> And do you think that's transferable?</p>
-<p><b>Guest:</b> The principle is. The specific interventions have to be adapted to each city. But the underlying logic — that shared public space creates opportunities for unplanned interaction — is universal.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-a, 2-b, 3-a, 4-b, 5-a</p>
-<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
-</details>
-` },
-
-  { id: 4307, level: "C1", category: "listening", topic: "listening-homework-debate", title: "02. Debate on Homework — Дебаты о домашних заданиях", content: `
-<div class="audio-placeholder" data-audio="listening/c1-homework-debate.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/c1-homework-debate.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What is the first speaker's position?<br>a) Homework is essential<br>b) Homework is largely counterproductive<br>c) Homework should be doubled</li>
-<li>What evidence does the first speaker cite?<br>a) Studies showing no clear benefit for younger pupils<br>b) Economic data<br>c) Parent surveys</li>
-<li>What does the second speaker argue?<br>a) Homework should be abolished completely<br>b) Meaningful assignments build independence<br>c) Students should choose their own homework</li>
-<li>What compromise is proposed?<br>a) A complete ban<br>b) Fewer, more meaningful assignments<br>c) Only weekend homework</li>
-<li>What do both agree on?<br>a) That homework is useless<br>b) That the quality of homework matters<br>c) That teachers assign too little</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The first speaker argues homework is counterproductive for primary children. — True / False</li>
-<li>The first speaker wants to abolish homework for all ages. — True / False</li>
-<li>The second speaker agrees that quantity matters. — True / False</li>
-<li>Both speakers think quality matters. — True / False</li>
-<li>The second speaker wants to triple homework. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Debater 1:</b> My position is straightforward: for primary-school children, homework is largely counterproductive. The research is fairly consistent — there's no clear academic benefit, and there's often a real cost in terms of free play, family time and, frankly, stress.</p>
-<p><b>Debater 2:</b> I understand the concern, but I think we're conflating quantity with quality. Yes, twenty maths problems every night is unhelpful. But a single thoughtful assignment — reading a chapter, preparing a question — can build independence and consolidate learning.</p>
-<p><b>Debater 1:</b> I'd agree that quality matters enormously. My objection is to the ritual, the assumption that more is better. If homework is going to exist at all, it should be limited, meaningful and never a punishment.</p>
-<p><b>Debater 2:</b> On that, we're aligned. The problem isn't homework per se, it's the way it's designed and the way it's assessed.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-b, 2-a, 3-b, 4-b, 5-b</p>
-<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-T, 5-F</p>
-</details>
-` },
-
-  { id: 4308, level: "C1", category: "listening", topic: "listening-intellectual-property", title: "03. Intellectual Property — Интеллектуальная собственность", content: `
-<div class="audio-placeholder" data-audio="listening/c1-intellectual-property.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/c1-intellectual-property.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What does the first speaker argue about current IP law?<br>a) It protects creators well<br>b) It has become excessively restrictive<br>c) It should be abolished entirely</li>
-<li>What example does the first speaker give?<br>a) Pharmaceuticals and software patents<br>b) Music streaming<br>c) Books</li>
-<li>What does the second speaker argue?<br>a) Creators need protection to survive<br>b) IP law is irrelevant<br>c) Copyright should be unlimited</li>
-<li>What compromise does the first speaker suggest?<br>a) A two-tier system<br>b) Shorter, renewable terms<br>c) No copyright at all</li>
-<li>What does the second speaker concede?<br>a) That copyright terms may be too long<br>b) That creators earn too much<br>c) That all IP should be abolished</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The first speaker wants to abolish IP law entirely. — True / False</li>
-<li>The first speaker cites pharmaceuticals and software patents as examples. — True / False</li>
-<li>The second speaker argues that strong IP protection is necessary for creators. — True / False</li>
-<li>The first speaker proposes shorter, renewable terms. — True / False</li>
-<li>The second speaker completely rejects any reform. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>First speaker:</b> My argument is that intellectual property law, as it currently stands, has drifted far from its original purpose. It was meant to incentivise creativity, but today it functions largely as a tool for entrenching market power. Consider pharmaceuticals and software patents: the terms are so long that innovation is actively stifled.</p>
-<p><b>Second speaker:</b> I'd push back on that. Without strong protection, creators — writers, musicians, small studios — simply cannot survive. The market rewards those who can afford to give their work away.</p>
-<p><b>First speaker:</b> I'm not suggesting abolition. I'm suggesting reform. Shorter terms, renewable in exchange for genuine use, and broader exemptions for education and research.</p>
-<p><b>Second speaker:</b> I'd accept that the terms may be excessive in some areas. But we should be careful — every exception you carve out is a hole through which creators fall.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-b, 2-a, 3-a, 4-b, 5-a</p>
-<p><b>Task 2:</b> 1-F, 2-T, 3-T, 4-T, 5-F</p>
-</details>
-` },
-
-  { id: 4309, level: "C1", category: "listening", topic: "listening-conference-qa", title: "04. Conference Q&A — Вопросы на конференции", content: `
-<div class="audio-placeholder" data-audio="listening/c1-conference-qa.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/c1-conference-qa.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What was the presenter's main claim?<br>a) The data clearly support the hypothesis<br>b) The data are inconclusive<br>c) The data are irrelevant</li>
-<li>What was the questioner's main concern?<br>a) The methodology<br>b) The sample size<br>c) The interpretation of results</li>
-<li>What did the presenter concede?<br>a) That the sample was small<br>b) That the analysis may need revising<br>c) That the hypothesis was wrong</li>
-<li>What future work does the presenter propose?<br>a) A larger replication study<br>b) A different methodology<br>c) Ending the project</li>
-<li>What was the tone of the exchange?<br>a) Hostile<br>b) Collegial but rigorous<br>c) Dismissive</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The presenter claimed the data clearly support the hypothesis. — True / False</li>
-<li>The questioner thought the sample was too small. — True / False</li>
-<li>The presenter completely rejected the criticism. — True / False</li>
-<li>The presenter plans a larger replication study. — True / False</li>
-<li>The exchange was hostile. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Questioner:</b> Thank you for the presentation. Your claim is that the data clearly support the hypothesis, but I'm not convinced. The sample is small and the confidence intervals overlap considerably.</p>
-<p><b>Presenter:</b> I appreciate the challenge. You're right that the sample is modest, and I should be more cautious in my language. I'd say the data are suggestive, not conclusive.</p>
-<p><b>Questioner:</b> Would you agree that a replication study is warranted before any strong claims are made?</p>
-<p><b>Presenter:</b> Absolutely. In fact, I'm planning a larger study for next year. The methodology will be similar, but with a much broader sample.</p>
-<p><b>Questioner:</b> That's reassuring. I look forward to seeing the results.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-a, 2-b, 3-b, 4-a, 5-b</p>
-<p><b>Task 2:</b> 1-T, 2-T, 3-F, 4-T, 5-F</p>
-</details>
-` },
-
-  { id: 4310, level: "C1", category: "listening", topic: "listening-linguistic-relativity", title: "05. Linguistic Relativity — Лингвистическая относительность", content: `
-<div class="audio-placeholder" data-audio="listening/c1-linguistic-relativity.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/c1-linguistic-relativity.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What does the speaker discuss?<br>a) The relationship between language and thought<br>b) The history of linguistics<br>c) How to learn new languages</li>
-<li>What is the strong version of the Sapir-Whorf hypothesis?<br>a) Language shapes thought<br>b) Language determines thought<br>c) Language reflects thought</li>
-<li>What does the speaker say about the strong version?<br>a) It is widely accepted<br>b) It is largely discredited<br>c) It is untestable</li>
-<li>What example does the speaker give?<br>a) Colour perception<br>b) Grammar structures<br>c) Time metaphors</li>
-<li>What does the speaker argue about the weaker version?<br>a) It has empirical support<br>b) It is meaningless<br>c) It is political</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The strong version of Sapir-Whorf says language determines thought. — True / False</li>
-<li>The speaker fully endorses the strong version. — True / False</li>
-<li>The speaker mentions colour perception as an example. — True / False</li>
-<li>The speaker argues language imprisons thought. — True / False</li>
-<li>The speaker supports a weaker version of the hypothesis. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Speaker:</b> The question of whether language shapes thought is one of the most enduring in linguistics. The strong version of the Sapir-Whorf hypothesis — that language determines thought — is now largely discredited. If it were true, translation would be impossible, and bilingual speakers would inhabit two incompatible mental worlds. Clearly that's not the case.</p>
-<p>But a weaker version is more defensible: language may subtly influence certain cognitive processes. Consider colour perception: some languages have many more colour terms than others, and speakers of those languages tend to distinguish certain shades more quickly. That doesn't mean they see the world differently, but it does suggest that language provides a habitual framework for attention.</p>
-<p>So my argument is not that language imprisons thought, but that it inclines it.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-a, 2-b, 3-b, 4-a, 5-a</p>
-<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
-</details>
-` },
-
-
-  { id: 5306, level: "C2", category: "listening", topic: "listening-poststructuralism", title: "01. A Poststructuralism Dialogue — Диалог о постструктурализме", content: `
-<div class="audio-placeholder" data-audio="listening/c2-poststructuralism.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/c2-poststructuralism.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What does Alice object to?<br>a) The obscurity of poststructuralist writing<br>b) The political implications of poststructuralism<br>c) The lack of empirical rigour</li>
-<li>What does Ben defend?<br>a) The difficulty as productive<br>b) The political neutrality of the movement<br>c) The clarity of the style</li>
-<li>What does Alice say about the defence of difficulty?<br>a) It's a convenient excuse<br>b) It's a valid methodological choice<br>c) It's a political stance</li>
-<li>Who does Ben cite as an example?<br>a) Derrida<br>b) Foucault<br>c) Saussure</li>
-<li>What does Ben concede?<br>a) That some writing is genuinely obscurantist<br>b) That poststructuralism is irrelevant<br>c) That clarity is impossible</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>Alice objects to the obscurity of poststructuralist writing. — True / False</li>
-<li>Ben argues that difficulty is incidental to the argument. — True / False</li>
-<li>Ben concedes that some writing is genuinely obscurantist. — True / False</li>
-<li>Alice accepts that Foucault is an exception. — True / False</li>
-<li>Alice and Ben completely agree. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Alice:</b> I have to say, I find the whole poststructuralist project exasperating. The prose is deliberately obscure, and obscurity functions as a shield against criticism. If you can't say clearly what you mean, you can't be shown to be wrong.</p>
-<p><b>Ben:</b> That's a familiar charge, but I think it misses what the writing is trying to do. The difficulty isn't incidental — it's part of the argument. If you're claiming that meaning is unstable, then to write as if it were perfectly stable would contradict your thesis.</p>
-<p><b>Alice:</b> But that's a convenient excuse, isn't it? One could make the same argument about any intellectual work. It doesn't exempt you from the basic obligations of clarity and evidence.</p>
-<p><b>Ben:</b> I'd concede that some writing in this tradition is genuinely obscurantist. There's a difference between difficulty that repays effort and difficulty that conceals the absence of argument. But the best work — Foucault, for instance — is demanding in a way that's justified.</p>
-<p><b>Alice:</b> I'll grant you Foucault. But he's the exception, not the rule.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-a, 2-a, 3-a, 4-b, 5-a</p>
-<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-T, 5-F</p>
-</details>
-` },
-
-  { id: 5307, level: "C2", category: "listening", topic: "listening-memory-ethics", title: "02. The Ethics of Memory Editing — Этика редактирования памяти", content: `
-<div class="audio-placeholder" data-audio="listening/c2-memory-ethics.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/c2-memory-ethics.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What is the main topic?<br>a) The science of memory<br>b) The ethics of memory editing<br>c) The history of trauma</li>
-<li>What does the first speaker say about memory editing?<br>a) It is purely beneficial<br>b) It raises serious ethical questions<br>c) It should be banned immediately</li>
-<li>What does the second speaker argue?<br>a) Memory editing could reduce suffering<br>b) Memory editing is impossible<br>c) Memory editing is always wrong</li>
-<li>What distinction does the first speaker make?<br>a) Between therapeutic and enhancement uses<br>b) Between past and future memories<br>c) Between voluntary and involuntary memories</li>
-<li>What does the second speaker concede?<br>a) That regulation will be difficult<br>b) That memory editing is impossible<br>c) That the technology should be banned</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The discussion is about the ethics of memory editing. — True / False</li>
-<li>The first speaker believes memory editing has no potential benefits. — True / False</li>
-<li>The second speaker argues memory editing could help people with PTSD. — True / False</li>
-<li>The first speaker distinguishes between therapeutic and enhancement uses. — True / False</li>
-<li>The second speaker thinks regulation will be straightforward. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Moderator:</b> Memory editing — erasing or altering traumatic memories — is no longer science fiction. Is it ethical?</p>
-<p><b>First speaker:</b> The technology is genuinely remarkable, and I don't doubt its therapeutic potential. But we're talking about altering the very substance of personal identity. Our memories are what make us who we are. To edit them, even with the best intentions, is to intervene in something that goes far beyond medicine.</p>
-<p><b>Second speaker:</b> I understand the concern, but let's be clear about what's at stake. For someone with severe PTSD, whose memories are a source of daily torment, memory editing might be the only path back to a tolerable life. Refusing to develop it on abstract grounds seems to me a failure of compassion.</p>
-<p><b>First speaker:</b> I'm not refusing anything. I'm distinguishing two uses. Therapeutic memory editing, carefully regulated and consensually administered, is one thing. Enhancement — erasing painful memories of a bad breakup, say — is another. The line is essential.</p>
-<p><b>Second speaker:</b> On that, I agree. But drawing the line will be far harder than you imply.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-b, 2-b, 3-a, 4-a, 5-a</p>
-<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-T, 5-F</p>
-</details>
-` },
-
-  { id: 5308, level: "C2", category: "listening", topic: "listening-philosophy-math", title: "03. Philosophy of Mathematics — Философия математики", content: `
-<div class="audio-placeholder" data-audio="listening/c2-philosophy-math.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/c2-philosophy-math.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What position does the first speaker defend?<br>a) Formalism<br>b) Mathematical Platonism<br>c) Intuitionism</li>
-<li>What does the second speaker object to?<br>a) Platonism's ontological commitments<br>b) Platonism's logical structure<br>c) Platonism's practical applications</li>
-<li>Whose observation does the first speaker cite?<br>a) Wigner's<br>b) Einstein's<br>c) Hilbert's</li>
-<li>What is the second speaker's counter-argument to the effectiveness argument?<br>a) That mathematics has been refined to be effective<br>b) That mathematics is not actually effective<br>c) That physics is more fundamental</li>
-<li>What does the first speaker say the second speaker's position reduces mathematics to?<br>a) A human invention<br>b) A cosmic accident<br>c) A mathematical miracle</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The first speaker defends mathematical Platonism. — True / False</li>
-<li>The second speaker thinks Platonism is parsimonious. — True / False</li>
-<li>The first speaker cites Wigner's observation. — True / False</li>
-<li>The second speaker argues mathematics is effective because we've refined it. — True / False</li>
-<li>The first speaker thinks Platonism makes mathematics into an accident. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>First speaker:</b> I want to defend a version of mathematical Platonism. Mathematical truths — that two and two make four, that there are infinitely many primes — are not inventions. They are discoveries. They exist independently of any human mind, in a realm of abstract objects.</p>
-<p><b>Second speaker:</b> That's a lot of metaphysical baggage. You're postulating a whole other realm of entities, just to explain why our mathematical beliefs happen to be true. Isn't that deeply unparsimonious?</p>
-<p><b>First speaker:</b> Parsimony is a virtue, but not the only one. Consider the alternative: if mathematics is purely a human construction, why is it so astonishingly effective in describing the physical world? Wigner called this the "unreasonable effectiveness of mathematics." Platonism explains it; formalism doesn't.</p>
-<p><b>Second speaker:</b> I think the effectiveness argument is weaker than it looks. Mathematics is effective because we've refined it to be so. We've been tinkering for centuries, and the successes are the ones that survived.</p>
-<p><b>First speaker:</b> That's a reasonable position, but it seems to concede more than it should. It makes the applicability of mathematics into a kind of cosmic accident.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-b, 2-a, 3-a, 4-a, 5-b</p>
-<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-T, 5-F</p>
-</details>
-` },
-
-  { id: 5309, level: "C2", category: "listening", topic: "listening-institutional-trust", title: "04. Institutional Trust — Доверие к институтам", content: `
-<div class="audio-placeholder" data-audio="listening/c2-institutional-trust.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/c2-institutional-trust.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What does the first speaker argue about institutional trust?<br>a) It has always been low<br>b) It has declined in recent decades<br>c) It is impossible to measure</li>
-<li>What reasons does the first speaker give?<br>a) Economic inequality alone<br>b) Scandals and transparency failures<br>c) Media distortion only</li>
-<li>What does the second speaker argue?<br>a) Trust is a matter of perception<br>b) Trust depends on institutional performance<br>c) Trust should be abolished</li>
-<li>What example does the second speaker give?<br>a) Healthcare<br>b) Banking<br>c) Education</li>
-<li>What do both speakers agree on?<br>a) That trust is a complex problem<br>b) That trust is irrelevant<br>c) That institutions should be privatised</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>Institutional trust has declined in recent decades. — True / False</li>
-<li>The first speaker blames only media distortion. — True / False</li>
-<li>The second speaker argues trust depends on institutional performance. — True / False</li>
-<li>The second speaker cites healthcare as an example. — True / False</li>
-<li>Both speakers agree that rebuilding trust will be difficult. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Moderator:</b> Institutional trust is widely reported to be in crisis. Is that accurate?</p>
-<p><b>First speaker:</b> I think it is. Surveys consistently show that confidence in governments, media, banks and even scientific institutions has declined over the past three decades. And there are good reasons for that decline — repeated scandals, opaque decision-making, and a growing sense that institutions serve elites rather than the public.</p>
-<p><b>Second speaker:</b> I'd push back on the framing. Trust isn't a free-floating attitude; it's calibrated to performance. If trust has declined, that might be less a crisis of perception than a signal that institutions genuinely haven't performed. Healthcare, for example — where systems have been underfunded for years — trust has fallen precisely in line with declining access and quality.</p>
-<p><b>First speaker:</b> That's a fair point. But I'd argue that even when institutions perform well, they're increasingly distrusted. Part of this is political polarisation, part is the way media amplifies scandals.</p>
-<p><b>Second speaker:</b> Agreed. So trust isn't just about performance — it's about the information environment through which performance is perceived. That's a much harder problem to solve.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-b, 2-b, 3-b, 4-a, 5-a</p>
-<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-T, 5-T</p>
-</details>
-` },
-
-  { id: 5310, level: "C2", category: "listening", topic: "listening-literary-translation", title: "05. Literary Translation — Художественный перевод", content: `
-<div class="audio-placeholder" data-audio="listening/c2-literary-translation.mp3">
-  🔊 <i>Аудио: будет добавлено (listening/c2-literary-translation.mp3)</i>
-</div>
-
-<h3>Task 1 — Choose the correct option</h3>
-<ol>
-<li>What is the main topic?<br>a) The art of literary translation<br>b) The history of a novel<br>c) The economics of publishing</li>
-<li>What does the first speaker argue?<br>a) Translation is a form of betrayal<br>b) Translation is a form of creation<br>c) Translation should be literal</li>
-<li>What does the second speaker say about fidelity?<br>a) It is the only criterion<br>b) It is more complex than it appears<br>c) It is irrelevant</li>
-<li>What example is given?<br>a) A translation of a poem by Rilke<br>b) A translation of a Russian novel<br>c) A translation of a German play</li>
-<li>What do both agree on?<br>a) That translation is impossible<br>b) That translation involves trade-offs<br>c) That translation is trivial</li>
-</ol>
-
-<h3>Task 2 — True or False</h3>
-<ol>
-<li>The first speaker argues that translation is a form of creation. — True / False</li>
-<li>The second speaker says fidelity is simple. — True / False</li>
-<li>The first speaker cites Rilke as an example. — True / False</li>
-<li>Both speakers agree that translation is impossible. — True / False</li>
-<li>Both speakers agree that translations involve trade-offs. — True / False</li>
-</ol>
-
-<details>
-<summary>📄 Show transcript</summary>
-<p><b>Moderator:</b> Literary translation has been called both an art and a betrayal. Where do you stand?</p>
-<p><b>First speaker:</b> Firmly on the side of art. The translator is not a copyist but a creator. To translate a novel is to write it again in another language, with all the interpretive choices that implies. The fantasy of the "faithful" translation is just that — a fantasy.</p>
-<p><b>Second speaker:</b> I'd agree that fidelity is more complicated than it sounds, but I'd resist the framing that translation is pure creation. There's a responsibility to the original, and to the reader who comes to it through your work.</p>
-<p><b>First speaker:</b> Of course. But consider translating Rilke. You cannot reproduce both the rhyme and the meaning. You choose. And in choosing, you impose an interpretation. Every translation is a reading.</p>
-<p><b>Second speaker:</b> I'd accept that — every translation involves trade-offs. But the best translations are those that make their trade-offs visible, that don't pretend to be the original.</p>
-<p><b>First speaker:</b> On that, we completely agree.</p>
-</details>
-
-<details>
-<summary>✅ Show answers</summary>
-<p><b>Task 1:</b> 1-a, 2-b, 3-b, 4-a, 5-b</p>
-<p><b>Task 2:</b> 1-T, 2-F, 3-T, 4-F, 5-T</p>
-</details>
 ` }
 ]

@@ -556,6 +556,7 @@ function renderStatsRow(stats) {
 }
 
 function showVocabCards(level, direction, onlyPhrases) {
+  toggleHeaderNav(false);
   direction = direction || 'EN→RU';
   highlightNav('vocabulary');
   toggleVocabNavVisibility(true);
@@ -778,49 +779,125 @@ function showVocabDirectory(level) {
   window.scrollTo(0, 0);
 }
 
+function toggleHeaderNav(isLanding) {
+  const navButtons = document.querySelectorAll('.header-nav .nav-btn');
+  
+  if (isLanding) {
+    navButtons.forEach(btn => {
+      if (btn.dataset.section !== 'home') btn.style.display = 'none';
+    });
+    
+    let authBtn = document.getElementById('headerAuthBtn');
+    if (!authBtn) {
+      authBtn = document.createElement('button');
+      authBtn.id = 'headerAuthBtn';
+      authBtn.className = 'btn btn-secondary';
+      authBtn.style.marginLeft = '15px';
+      authBtn.style.padding = '8px 16px';
+      authBtn.style.fontSize = '11px';
+      authBtn.style.borderColor = 'var(--gold-light)';
+      authBtn.style.color = 'var(--gold-light)';
+      authBtn.innerHTML = 'Войти / Регистрация';
+      authBtn.onclick = () => alert('Функция регистрации появится в ближайшем обновлении!');
+      document.querySelector('.header-nav').appendChild(authBtn);
+    }
+    authBtn.style.display = 'inline-flex';
+  } else {
+    navButtons.forEach(btn => btn.style.display = '');
+    
+    const authBtn = document.getElementById('headerAuthBtn');
+    if (authBtn) authBtn.style.display = 'none';
+  }
+}
+
+
 function showHome() {
   highlightNav('home');
   toggleVocabNavVisibility(true);
   saveLastRoute('home');
+  toggleHeaderNav(true); 
 
-  const levels = getLevels();
-  let html = renderSearchBar();
+  let html = '';
 
-  if (PROGRESS.lastOpened) {
-    const last = MATERIALS.find(m => m.id === PROGRESS.lastOpened);
-    if (last) {
-      html += `<div class="continue-banner">
-        <span class="continue-label">Продолжить с того места</span>
-        <button class="continue-btn" onclick="showArticle(${last.id})">
-          ${last.title} →
-        </button>
-      </div>`;
-    }
-  }
+ 
+  html += `
+    <div class="hero-section">
+      <h1>Учите английский по-настоящему</h1>
+      <p>Интерактивные уроки, чтение, аудио и подготовка к EXAM / ICPC. Всё в одном месте, без лишней воды.</p>
+      <div class="hero-actions">
+        <button class="btn btn-dark" onclick="document.getElementById('level-test-block').scrollIntoView({behavior: 'smooth'})">🎯 Определить уровень</button>
+        <button class="btn btn-secondary" onclick="showSection('theory')">📚 Сразу к обучению</button>
+      </div>
+    </div>
+  `;
 
-  html += '<h1>Выберите уровень</h1><div class="grid">';
+  
+  html += `
+    <div id="level-test-block" class="home-section">
+      <div class="section-heading" style="text-align: center; margin-bottom: 30px;">
+        <h2>Не знаете, с чего начать?</h2>
+        <p class="section-intro">Пройдите короткий тест, и мы подберем для вас идеальный стартовый уровень.</p>
+      </div>
+      <div class="test-placeholder-card">
+        <div class="test-icon">🎯</div>
+        <h3>Тест на определение уровня</h3>
+        <p>Ответьте на 10 вопросов, чтобы узнать свой текущий уровень (A1–C2).</p>
+        <button class="btn btn-dark" onclick="showLevelTest()">Начать тест</button>
+      </div>
+    </div>
+  `;
 
-  if (!levels.length) {
-    html += '<p>В <code>data.js</code> пока нет материалов.</p>';
-  } else {
-    levels.forEach(l => {
-      const count = MATERIALS.filter(m =>
-        m.level === l || (l === 'C1–C2' && (m.level === 'C1' || m.level === 'C2'))
-      ).length;
-      const word = pluralize(count, 'материал', 'материала', 'материалов');
-      html += `<button class="card-btn" onclick="showLevel('${l}')">
-                 <span class="card-title">${l}</span>
-                 <span class="card-subtitle">${count} ${word}</span>
-               </button>`;
-    });
-  }
-  html += '</div>';
+  html += `
+    <div class="home-section registration-cta">
+      <div class="reg-content">
+        <h2>Синхронизируйте свой прогресс</h2>
+        <p>Сейчас ваш прогресс хранится только в этом браузере. Создайте аккаунт, чтобы не потерять результаты, повторять слова на телефоне и получать персональные рекомендации.</p>
+        <ul class="reg-benefits">
+          <li>✅ Облачное сохранение прогресса</li>
+          <li>✅ Синхронизация между устройствами</li>
+          <li>✅ Доступ к закрытым материалам</li>
+        </ul>
+        <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 20px;">
+          <button class="btn btn-primary" onclick="alert('Функция регистрации появится в следующем обновлении!')">Создать аккаунт</button>
+          <!-- ТЕПЕРЬ СТИЛИ УБРАНЫ, ИХ ПОДХВАТИТ CSS-ФАЙЛ -->
+          <button class="btn btn-secondary" onclick="showSection('theory')">Продолжить как гость</button>
+        </div>
+        <p style="font-size: 13px; margin-top: 15px; opacity: 0.8;">Регистрация полностью бесплатная.</p>
+      </div>
+      <div class="reg-decoration">👑</div>
+    </div>
+  `;
 
-  html += renderProgressOverview();
+  html += `
+    <div class="home-section" style="text-align: center;">
+      <h2 style="margin-bottom: 20px;">Что вас ждет внутри?</h2>
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+        <div class="card-btn" style="cursor: default;">
+          <span class="card-icon">📚</span>
+          <span class="card-title" style="font-size: 20px;">Теория</span>
+          <span class="card-subtitle">Без воды</span>
+        </div>
+        <div class="card-btn" style="cursor: default;">
+          <span class="card-icon">✍️</span>
+          <span class="card-title" style="font-size: 20px;">Практика</span>
+          <span class="card-subtitle">С автопроверкой</span>
+        </div>
+        <div class="card-btn" style="cursor: default;">
+          <span class="card-icon">📖</span>
+          <span class="card-title" style="font-size: 20px;">Чтение</span>
+          <span class="card-subtitle">С переводом</span>
+        </div>
+        <div class="card-btn" style="cursor: default;">
+          <span class="card-icon">🎧</span>
+          <span class="card-title" style="font-size: 20px;">Аудио</span>
+          <span class="card-subtitle">С транскриптами</span>
+        </div>
+      </div>
+    </div>
+  `;
 
   app.innerHTML = html;
   window.scrollTo(0, 0);
-  initSearch();
 }
 
 function renderProgressOverview() {
@@ -869,6 +946,7 @@ function resetProgress() {
 }
 
 function showSection(category) {
+  toggleHeaderNav(false);
   highlightNav(category);
   toggleVocabNavVisibility(category !== 'vocabulary');
   saveLastRoute('section', [category]);
@@ -982,6 +1060,7 @@ function resetVocabProgress() {
 }
 
 function showLevel(level) {
+  toggleHeaderNav(false);
   highlightNav('');
   saveLastRoute('level', [level]);
   const isExamOrICPC = (level === 'EXAM' || level === 'ICPC');
@@ -1060,6 +1139,7 @@ function showLevel(level) {
 }
 
 function showLevelTab(level, tab) {
+  toggleHeaderNav(false);
   highlightNav(tab);
   toggleVocabNavVisibility(tab !== 'vocabulary');
   saveLastRoute('levelTab', [level, tab]);
@@ -1485,7 +1565,7 @@ function checkListeningTasks(btn) {
 function showArticle(id) {
   const a = MATERIALS.find(m => m.id === id);
   if (!a) { app.innerHTML = '<p>Материал не найден.</p>'; return; }
-
+  toggleHeaderNav(false);
   highlightNav(a.category);
   toggleVocabNavVisibility(a.category !== 'vocabulary');
   saveLastOpened(id);
@@ -1550,7 +1630,6 @@ function showArticle(id) {
 
   const practiceButtons = showQuizBtns
     ? `<button class="btn btn-dark" onclick="checkAllInputs()">Проверить ответы</button>
-       <button class="btn btn-secondary" onclick="showAllAnswers()">Показать ответы</button>
        <button class="btn btn-secondary" onclick="retryMistakes()">Повторить ошибки</button>
        <button class="btn btn-secondary" onclick="resetInputs()">Очистить</button>`
     : '';
@@ -1690,8 +1769,13 @@ function renderInteractive(html) {
   let counter = 0;
   const processed = html.replace(/\[\[([\s\S]*?)\]\]/g, (match, inner) => {
     counter++;
-    const { content, topic } = extractTopic(inner);
+    const { content: contentWithTopic, topic } = extractTopic(inner);
+    const partsWithExp = contentWithTopic.split('##');
+    const content = partsWithExp[0];
+    const explanation = partsWithExp[1] ? partsWithExp[1].trim() : '';
+    
     const topicAttr = topic ? ` data-topic="${escapeAttr(topic)}"` : '';
+    const expAttr = explanation ? ` data-explanation="${escapeAttr(explanation)}"` : '';
 
     if (content.startsWith('?mc:')) {
       const parts = content.slice(4).split('|').map(s => s.trim()).filter(Boolean);
@@ -1701,7 +1785,7 @@ function renderInteractive(html) {
       const buttons = options.map(opt =>
         `<button type="button" class="mc-option" data-value="${escapeAttr(opt)}">${escapeAttr(opt)}</button>`
       ).join('');
-      return `<span class="quiz-wrap" data-type="mc"${topicAttr}>
+      return `<span class="quiz-wrap" data-type="mc"${topicAttr}${expAttr}>
         <span class="quiz-mc" data-answer="${escapeAttr(correct)}">${buttons}</span>
       </span>`;
     }
@@ -1714,7 +1798,7 @@ function renderInteractive(html) {
       const tokens = shuffled.map(w =>
         `<button type="button" class="order-token" data-word="${escapeAttr(w)}">${escapeAttr(w)}</button>`
       ).join('');
-      return `<span class="quiz-wrap" data-type="order"${topicAttr}>
+      return `<span class="quiz-wrap" data-type="order"${topicAttr}${expAttr}>
         <span class="quiz-order" data-answer="${escapeAttr(correct)}">
           <span class="order-answer"></span>
           <span class="order-tokens">${tokens}</span>
@@ -1730,7 +1814,7 @@ function renderInteractive(html) {
       ? `${mainAnswer.slice(0, 3)}… (${mainAnswer.length} симв.)`
       : (mainAnswer.length ? `${mainAnswer.slice(0, 1)}…` : '');
 
-    return `<span class="quiz-wrap" data-type="text"${topicAttr}>
+    return `<span class="quiz-wrap" data-type="text"${topicAttr}${expAttr}>
       <input type="text" class="${widthClass}" id="input-${counter}"
              data-answer="${escapeAttr(mainAnswer)}"
              data-alt="${escapeAttr(altAnswers)}"
@@ -1763,6 +1847,18 @@ function showHint(btn, hint) {
   wrap.appendChild(hintEl);
 }
 
+function toggleExplanation(btn) {
+  const textEl = btn.nextElementSibling;
+  if (!textEl) return;
+  if (textEl.classList.contains('visible')) {
+    textEl.classList.remove('visible');
+    btn.innerHTML = '💡 Пояснить';
+  } else {
+    textEl.classList.add('visible');
+    btn.innerHTML = '💡 Скрыть';
+  }
+}
+
 function checkAllInputs() {
   const wraps = document.querySelectorAll('.quiz-wrap');
   if (!wraps.length) return;
@@ -1780,8 +1876,8 @@ function checkAllInputs() {
     const mc = wrap.querySelector('.quiz-mc');
     const order = wrap.querySelector('.quiz-order');
 
-    const oldHint = wrap.querySelector('.correct-answer-hint');
-    if (oldHint) oldHint.remove();
+    const oldFeedback = wrap.querySelector('.answer-feedback-wrapper');
+    if (oldFeedback) oldFeedback.remove();
 
     if (input) input.classList.remove('correct', 'incorrect', 'revealed');
     if (mc) mc.querySelectorAll('.mc-option').forEach(o => o.classList.remove('correct', 'incorrect'));
@@ -1796,19 +1892,33 @@ function checkAllInputs() {
         });
         if (order) order.classList.add('correct');
       } else {
-        if (input) {
-          input.classList.add('incorrect');
-          if (valid[0]) {
-            const hint = document.createElement('span');
-            hint.className = 'correct-answer-hint';
-            hint.textContent = `→ ${valid[0]}`;
-            wrap.appendChild(hint);
-          }
+        const exp = wrap.dataset.explanation || '';
+        
+        let expHtml = '';
+        if (exp) {
+          expHtml = `<span class="explanation-container">
+                       <button type="button" class="btn-explanation" onclick="toggleExplanation(this)">💡 Пояснить</button>
+                       <span class="answer-explanation">${escapeAttr(exp)}</span>
+                     </span>`;
         }
+
+        if (input) input.classList.add('incorrect');
         if (mc) mc.querySelectorAll('.mc-option').forEach(o => {
           if (o.classList.contains('selected')) o.classList.add('incorrect');
         });
         if (order) order.classList.add('incorrect');
+
+        if ((input && valid[0]) || expHtml) {
+          const fbWrapper = document.createElement('span');
+          fbWrapper.className = 'answer-feedback-wrapper';
+          
+          if (input && valid[0]) {
+            fbWrapper.innerHTML += `<span class="correct-answer-hint">→ ${escapeAttr(valid[0])}</span>`;
+          }
+          fbWrapper.innerHTML += expHtml;
+          
+          wrap.appendChild(fbWrapper);
+        }
       }
     }
 
@@ -1859,65 +1969,6 @@ function checkAllInputs() {
   }
 }
 
-function showAllAnswers() {
-  const wraps = document.querySelectorAll('.quiz-wrap');
-  wraps.forEach(wrap => {
-    const oldHint = wrap.querySelector('.correct-answer-hint');
-    if (oldHint) oldHint.remove();
-
-    const valid = getQuizValidAnswers(wrap);
-    const main = valid[0] || '';
-
-    const input = wrap.querySelector('.quiz-input');
-    if (input) {
-      input.classList.remove('correct', 'incorrect');
-      input.classList.add('revealed');
-      input.value = main;
-      if (!wrap.querySelector('.revealed-label')) {
-        const label = document.createElement('span');
-        label.className = 'revealed-label';
-        label.textContent = 'ответ';
-        wrap.appendChild(label);
-      }
-      return;
-    }
-
-    const mc = wrap.querySelector('.quiz-mc');
-    if (mc) {
-      mc.querySelectorAll('.mc-option').forEach(o => {
-        o.classList.remove('correct', 'incorrect', 'selected');
-        if (o.dataset.value === mc.dataset.answer) o.classList.add('correct');
-        o.disabled = true;
-      });
-      return;
-    }
-
-    const order = wrap.querySelector('.quiz-order');
-    if (order) {
-      const answerEl = order.querySelector('.order-answer');
-      const tokensEl = order.querySelector('.order-tokens');
-      answerEl.innerHTML = '';
-      tokensEl.innerHTML = '';
-      main.split(' ').forEach(w => {
-        const t = document.createElement('button');
-        t.type = 'button';
-        t.className = 'order-token';
-        t.dataset.word = w;
-        t.textContent = w;
-        t.disabled = true;
-        answerEl.appendChild(t);
-      });
-      order.classList.add('correct');
-    }
-  });
-
-  const scoreDisplay = document.getElementById('score-display');
-  if (scoreDisplay) {
-    scoreDisplay.style.display = 'block';
-    scoreDisplay.innerHTML = '<div class="score-line">Ответы показаны. Попробуйте пройти снова без подсказок.</div>';
-  }
-}
-
 function retryMistakes() {
   const wraps = document.querySelectorAll('.quiz-wrap');
   let mistakeCount = 0;
@@ -1934,8 +1985,8 @@ function retryMistakes() {
 
     if (!isWrong) return;
 
-    const hint = wrap.querySelector('.correct-answer-hint');
-    if (hint) hint.remove();
+    const feedback = wrap.querySelector('.answer-feedback-wrapper');
+    if (feedback) feedback.remove();
 
     if (input) {
       input.value = '';
@@ -1980,8 +2031,8 @@ function retryMistakes() {
 function resetInputs() {
   const wraps = document.querySelectorAll('.quiz-wrap');
   wraps.forEach(wrap => {
-    const correctHint = wrap.querySelector('.correct-answer-hint');
-    if (correctHint) correctHint.remove();
+    const feedback = wrap.querySelector('.answer-feedback-wrapper');
+    if (feedback) feedback.remove();
 
     const input = wrap.querySelector('.quiz-input');
     if (input) {

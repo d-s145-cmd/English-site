@@ -350,6 +350,12 @@ function stripHtml(html) {
   return tmp.textContent || tmp.innerText || "";
 }
 
+function estimateReadingTime(content) {
+  const words = stripHtml(content).split(/\s+/).filter(Boolean).length;
+  if (words < 50) return null;
+  return Math.max(1, Math.round(words / 160));
+}
+
 function highlightMatch(text, query) {
   if (!query) return text;
   const safeQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -1525,6 +1531,8 @@ function showArticle(id) {
   const doneBadge = PROGRESS.completedTopics[key]
     ? '<span class="article-done-badge">✓ Пройдено</span>'
     : '';
+  const estMin = estimateReadingTime(a.content);
+  const timeBadge = estMin ? `<span class="article-time">~${estMin} мин</span>` : '';
 
   let navHtml = '<div class="article-nav">';
   navHtml += prevArticle
@@ -1565,7 +1573,7 @@ function showArticle(id) {
       <a href="#" onclick="showHome(); return false;">Главная</a> /
       <a href="#" onclick="showLevel('${backLevel}'); return false;">${backLevel}</a> <span>/ ${catName}</span>
     </div>
-    <h1>${a.title} ${doneBadge}</h1>
+    <h1>${a.title} ${doneBadge}${timeBadge}</h1>
         <div class="article-content">${content}</div>
     ${practiceCta}
 
@@ -1772,6 +1780,9 @@ function checkAllInputs() {
     const mc = wrap.querySelector('.quiz-mc');
     const order = wrap.querySelector('.quiz-order');
 
+    const oldHint = wrap.querySelector('.correct-answer-hint');
+    if (oldHint) oldHint.remove();
+
     if (input) input.classList.remove('correct', 'incorrect', 'revealed');
     if (mc) mc.querySelectorAll('.mc-option').forEach(o => o.classList.remove('correct', 'incorrect'));
     if (order) order.classList.remove('correct', 'incorrect');
@@ -1785,7 +1796,15 @@ function checkAllInputs() {
         });
         if (order) order.classList.add('correct');
       } else {
-        if (input) input.classList.add('incorrect');
+        if (input) {
+          input.classList.add('incorrect');
+          if (valid[0]) {
+            const hint = document.createElement('span');
+            hint.className = 'correct-answer-hint';
+            hint.textContent = `→ ${valid[0]}`;
+            wrap.appendChild(hint);
+          }
+        }
         if (mc) mc.querySelectorAll('.mc-option').forEach(o => {
           if (o.classList.contains('selected')) o.classList.add('incorrect');
         });
@@ -1843,6 +1862,9 @@ function checkAllInputs() {
 function showAllAnswers() {
   const wraps = document.querySelectorAll('.quiz-wrap');
   wraps.forEach(wrap => {
+    const oldHint = wrap.querySelector('.correct-answer-hint');
+    if (oldHint) oldHint.remove();
+
     const valid = getQuizValidAnswers(wrap);
     const main = valid[0] || '';
 
@@ -1912,6 +1934,9 @@ function retryMistakes() {
 
     if (!isWrong) return;
 
+    const hint = wrap.querySelector('.correct-answer-hint');
+    if (hint) hint.remove();
+
     if (input) {
       input.value = '';
       input.classList.remove('incorrect', 'correct', 'revealed');
@@ -1955,6 +1980,9 @@ function retryMistakes() {
 function resetInputs() {
   const wraps = document.querySelectorAll('.quiz-wrap');
   wraps.forEach(wrap => {
+    const correctHint = wrap.querySelector('.correct-answer-hint');
+    if (correctHint) correctHint.remove();
+
     const input = wrap.querySelector('.quiz-input');
     if (input) {
       input.value = '';

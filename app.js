@@ -880,28 +880,46 @@ function renderInteractive(html) {
   const processed = html.replace(/\[\[([\s\S]*?)\]\]/g, (match, inner) => {
     counter++;
     const { content: contentWithTopic, topic } = extractTopic(inner);
-    const partsWithExp = contentWithTopic.split('##');
-    const content = partsWithExp[0];
-    const explanation = partsWithExp[1] ? partsWithExp[1].trim() : '';
     const topicAttr = topic ? ` data-topic="${escapeAttr(topic)}"` : '';
-    const expAttr = explanation ? ` data-explanation="${escapeAttr(explanation)}"` : '';
-    if (content.startsWith('?mc:')) {
-      const parts = content.slice(4).split('|').map(s => s.trim()).filter(Boolean);
+
+    if (contentWithTopic.startsWith('?mc:')) {
+      const parts = contentWithTopic.slice(4).split('|').map(s => s.trim()).filter(Boolean);
       if (parts.length < 2) return match;
-      const options = shuffle(parts);
-      return `<span class="quiz-wrap" data-type="mc"${topicAttr}${expAttr}><span class="quiz-mc" data-answer="${escapeAttr(parts[0])}">${options.map(opt => `<button type="button" class="mc-option" data-value="${escapeAttr(opt)}">${escapeAttr(opt)}</button>`).join('')}</span></span>`;
+
+      const firstParts = parts[0].split('##');
+      const correctAnswer = firstParts[0].trim();
+      const explanation = firstParts[1] ? firstParts[1].trim() : '';
+      const expAttr = explanation ? ` data-explanation="${escapeAttr(explanation)}"` : '';
+
+      const shuffledOptions = shuffle(parts.map(p => p.split('##')[0].trim()));
+
+      return `<span class="quiz-wrap" data-type="mc"${topicAttr}${expAttr}><span class="quiz-mc" data-answer="${escapeAttr(correctAnswer)}">${shuffledOptions.map(opt => `<button type="button" class="mc-option" data-value="${escapeAttr(opt)}">${escapeAttr(opt)}</button>`).join('')}</span></span>`;
     }
-    if (content.startsWith('?order:')) {
+
+    if (contentWithTopic.startsWith('?order:')) {
+      const partsWithExp = contentWithTopic.split('##');
+      const content = partsWithExp[0];
+      const explanation = partsWithExp[1] ? partsWithExp[1].trim() : '';
+      const expAttr = explanation ? ` data-explanation="${escapeAttr(explanation)}"` : '';
+
       const words = content.slice(7).split('|').map(s => s.trim()).filter(Boolean);
       if (words.length < 2) return match;
+
       const tokens = shuffle(words).map(w => `<button type="button" class="order-token" data-word="${escapeAttr(w)}">${escapeAttr(w)}</button>`).join('');
       return `<span class="quiz-wrap" data-type="order"${topicAttr}${expAttr}><span class="quiz-order" data-answer="${escapeAttr(words.join(' '))}"><span class="order-answer"></span><span class="order-tokens">${tokens}</span></span></span>`;
     }
+
+    const partsWithExp = contentWithTopic.split('##');
+    const content = partsWithExp[0];
+    const explanation = partsWithExp[1] ? partsWithExp[1].trim() : '';
+    const expAttr = explanation ? ` data-explanation="${escapeAttr(explanation)}"` : '';
+
     const parts = content.split('|').map(s => s.trim());
     const mainAnswer = parts[0];
     const altAnswers = parts.slice(1).join('|');
     const widthClass = mainAnswer.length > 15 ? 'quiz-input wide' : 'quiz-input';
     const hint = mainAnswer.length > 3 ? `${mainAnswer.slice(0, 3)}… (${mainAnswer.length} симв.)` : (mainAnswer.length ? `${mainAnswer.slice(0, 1)}…` : '');
+
     return `<span class="quiz-wrap" data-type="text"${topicAttr}${expAttr}><input type="text" class="${widthClass}" id="input-${counter}" data-answer="${escapeAttr(mainAnswer)}" data-alt="${escapeAttr(altAnswers)}" placeholder="..." autocomplete="off" spellcheck="false"><button class="hint-btn" type="button" title="Подсказка" onclick="showHint(this, '${escapeAttr(hint)}')">?</button></span>`;
   });
   return processed + `<div id="score-display" style="display:none"></div>`;
